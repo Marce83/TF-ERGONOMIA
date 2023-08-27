@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9ACA3651-2DA4-4098-92DD-68C60AD20365}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TF.WIN</RootNamespace>
+    <AssemblyName>TF.WIN</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.13\lib\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBuscarEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarEmpleados.Designer.cs">
+      <DependentUpon>frmBuscarEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarEmpresa.Designer.cs">
+      <DependentUpon>frmBuscarEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditUsrAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditUsrAdmin.Designer.cs">
+      <DependentUpon>frmEditUsrAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresa.Designer.cs">
+      <DependentUpon>frmEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpleados.Designer.cs">
+      <DependentUpon>frmEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadisticas.Designer.cs">
+      <DependentUpon>frmEstadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInformes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformes.Designer.cs">
+      <DependentUpon>frmInformes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerfilUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfilUsuarios.Designer.cs">
+      <DependentUpon>frmPerfilUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecuperarClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecuperarClave.Designer.cs">
+      <DependentUpon>frmRecuperarClave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos.Designer.cs">
+      <DependentUpon>Metodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoUsuario.Designer.cs">
+      <DependentUpon>frmNuevoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RULA_PORTADA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RULA_PORTADA.Designer.cs">
+      <DependentUpon>RULA_PORTADA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RULA1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RULA1.Designer.cs">
+      <DependentUpon>RULA1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RULA2.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RULA2.Designer.cs">
+      <DependentUpon>RULA2.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RULA3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RULA3.Designer.cs">
+      <DependentUpon>RULA3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RULARESULTADO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RULARESULTADO.Designer.cs">
+      <DependentUpon>RULARESULTADO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValidarCorreo.cs" />
+    <EmbeddedResource Include="frmBuscarEmpleados.resx">
+      <DependentUpon>frmBuscarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarEmpresa.resx">
+      <DependentUpon>frmBuscarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditUsrAdmin.resx">
+      <DependentUpon>frmEditUsrAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresa.resx">
+      <DependentUpon>frmEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpleados.resx">
+      <DependentUpon>frmEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadisticas.resx">
+      <DependentUpon>frmEstadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformes.resx">
+      <DependentUpon>frmInformes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfilUsuarios.resx">
+      <DependentUpon>frmPerfilUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecuperarClave.resx">
+      <DependentUpon>frmRecuperarClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos.resx">
+      <DependentUpon>Metodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoUsuario.resx">
+      <DependentUpon>frmNuevoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RULA_PORTADA.resx">
+      <DependentUpon>RULA_PORTADA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RULA1.resx">
+      <DependentUpon>RULA1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RULA2.resx">
+      <DependentUpon>RULA2.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RULA3.resx">
+      <DependentUpon>RULA3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RULARESULTADO.resx">
+      <DependentUpon>RULARESULTADO.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TF-IDENTIDAD\TF.ENTITIES.csproj">
+      <Project>{cc39d109-c2d9-4eaf-874d-078e1d525d7d}</Project>
+      <Name>TF.ENTITIES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TF-NEGOCIO\TF.BC.csproj">
+      <Project>{88abfd29-3459-4165-9d14-9b63064e0c7c}</Project>
+      <Name>TF.BC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TF.COMMON\TF.COMMON.csproj">
+      <Project>{58fc01e5-724d-4eda-b33f-88f6939b7128}</Project>
+      <Name>TF.COMMON</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analisis brazo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\antebrazo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntuacion muneca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntuacion giro muneca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntuacion tipo de actividad manual.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntuacion carga fuerza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntuacion del cuello.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntuacion tronco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntuacion pierna.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actividad muscular grupo B.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARGA FUERZA GRUPO B.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\plantilla.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ergo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
