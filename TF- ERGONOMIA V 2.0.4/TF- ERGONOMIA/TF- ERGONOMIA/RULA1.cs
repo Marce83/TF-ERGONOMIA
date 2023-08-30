@@ -91,6 +91,26 @@ namespace TF.WIN
             muñecadesviado.SelectedItem = DatosCompartidos.DatoComboBox7;
             cbogiroMuñeca.SelectedItem = DatosCompartidos.DatoComboBox8;
 
+            // Puntuacion tipo actividad manual ( grupo A)
+            cboactmanuala.Items.Add(new ComboBoxOption("0", 0));
+            cboactmanuala.Items.Add(new ComboBoxOption("1", 1));
+
+            // Puntuacion Carga/Fuerza
+            cbocargafuerza.Items.Add(new ComboBoxOption("0", 0));
+            cbocargafuerza.Items.Add(new ComboBoxOption("1", 1));
+            cbocargafuerza.Items.Add(new ComboBoxOption("2", 2));
+            cbocargafuerza.Items.Add(new ComboBoxOption("3", 3));
+
+            // Puntuacion del Cuello
+            cuellopuntuacion.Items.Add(new ComboBoxOption("1", 1));
+            cuellopuntuacion.Items.Add(new ComboBoxOption("2", 2));
+            cuellopuntuacion.Items.Add(new ComboBoxOption("3", 3));
+            cuellopuntuacion.Items.Add(new ComboBoxOption("4", 4));
+            cuelloposicion.Items.Add(new ComboBoxOption("Normal", 0));
+            cuelloposicion.Items.Add(new ComboBoxOption("Rotado", 1));
+            cuelloposicion.Items.Add(new ComboBoxOption("Lateral", 1));
+            cuelloposicion.Items.Add(new ComboBoxOption("Rotado y Lateral", 2));
+
             ObtenerMaximoIdRula();
         }
 
@@ -98,7 +118,6 @@ namespace TF.WIN
         private void cboBrazoposicion_SelectedIndexChanged(object sender, EventArgs e)
         {
             MostrarResultado1();
-
         }
 
         private void cboBrazoAbdApo_SelectedIndexChanged(object sender, EventArgs e)
@@ -111,6 +130,87 @@ namespace TF.WIN
             MostrarResultado1();
         }
 
+        private void cboactmanuala_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoGA();
+        }
+
+        private void MostrarResultadoGA()
+        {
+            int resultadoGA = ObtenerNumeroSeleccionado(cboactmanuala);
+
+            if (resultadoGA == 0)
+            {
+                resultadoGA = 0;
+            }
+
+            actividadgrupoAfinal.Text = resultadoGA.ToString();
+        }
+
+        private void cbocargafuerza_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoCF();
+        }
+
+        private void MostrarResultadoCF()
+        {
+            int resultadoCF = ObtenerNumeroSeleccionado(cbocargafuerza);
+
+            if (resultadoCF == 0)
+            {
+                resultadoCF = 0;
+            }
+
+            txtcargafuerzafinal.Text = resultadoCF.ToString();
+        }
+
+        private void cuellopuntuacion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoCuello();
+        }
+        
+        private void cuelloposicion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoCuello();
+        }
+        private void MostrarResultadoCuello()
+        {
+            int resultadoCuello = ObtenerNumeroSeleccionadoCuello(cuellopuntuacion) + ObtenerNumeroSeleccionadoCuello(cuelloposicion);
+
+            if (resultadoCuello == 0)
+            {
+                resultadoCuello = 0;
+            }
+
+            txtcuellofinal.Text = resultadoCuello.ToString();
+        }
+        private int ObtenerNumeroSeleccionadoCuello(MaterialComboBox comboBox)
+        {
+            if (comboBox.SelectedItem != null)
+            {
+                ComboBoxOption selectedOption = comboBox.SelectedItem as ComboBoxOption;
+
+                if (selectedOption != null)
+                {
+                    return selectedOption.Numero;
+                }
+            }
+
+            return 0;
+        }
+        public void ObtenerMaximoIdRula()
+        {
+            RulaBC oRulaBC = new RulaBC();
+            Rula oRula = new Rula();
+            DataTable dt = oRulaBC.RulaIdMaxBC(oRula);
+
+            if (dt.Rows.Count > 0)
+            {
+                int maxId = Convert.ToInt32(dt.Rows[0]["cargaid"]);
+                txtcargaid.Text = maxId.ToString();
+            }
+
+        }
         private void MostrarResultado1()
         {
             int resultado1 = ObtenerNumeroSeleccionado(cboBrazoposicion) + ObtenerNumeroSeleccionado(cboBrazoAbdApo) + ObtenerNumeroSeleccionado(cbobrazoHombro);
@@ -223,7 +323,6 @@ namespace TF.WIN
 
             Close();
 
-
         }
 
         public void ObtenerMaximoIdRula()
@@ -237,7 +336,6 @@ namespace TF.WIN
                 int maxId = Convert.ToInt32(dt.Rows[0]["cargaid"]);
                 txtcargaid.Text = maxId.ToString();
             }
-
         }
 
         private void btncerrar_Click(object sender, EventArgs e)
