@@ -65,7 +65,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnpagsig = new System.Windows.Forms.Button();
             this.btnpagant = new System.Windows.Forms.Button();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.txtcargafuerzafinal = new MaterialSkin.Controls.MaterialTextBox2();
@@ -775,22 +774,6 @@
             this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 166;
             this.textBox1.Visible = false;
-            // 
-            // btnpagsig
-            // 
-            this.btnpagsig.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnpagsig.FlatAppearance.BorderSize = 0;
-            this.btnpagsig.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnpagsig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpagsig.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpagsig.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnpagsig.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnpagsig.Location = new System.Drawing.Point(528, 1601);
-            this.btnpagsig.Name = "btnpagsig";
-            this.btnpagsig.Size = new System.Drawing.Size(116, 35);
-            this.btnpagsig.TabIndex = 165;
-            this.btnpagsig.Text = "Guardar y  Siguiente";
-            this.btnpagsig.UseVisualStyleBackColor = false;
             // 
             // btnpagant
             // 
@@ -1758,7 +1741,6 @@
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnpagsig);
             this.Controls.Add(this.btnpagant);
             this.Controls.Add(this.materialLabel11);
             this.Controls.Add(this.txtcargafuerzafinal);
@@ -1875,7 +1857,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnpagsig;
         private System.Windows.Forms.Button btnpagant;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
         private MaterialSkin.Controls.MaterialTextBox2 txtcargafuerzafinal;
