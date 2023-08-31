@@ -63,10 +63,7 @@
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.txtgirofinal = new MaterialSkin.Controls.MaterialTextBox2();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnpagsig = new System.Windows.Forms.Button();
-            this.btnpagant = new System.Windows.Forms.Button();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.txtcargafuerzafinal = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
@@ -750,22 +747,6 @@
             this.pictureBox3.TabIndex = 134;
             this.pictureBox3.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(283, 1601);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 35);
-            this.button1.TabIndex = 167;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -775,38 +756,6 @@
             this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 166;
             this.textBox1.Visible = false;
-            // 
-            // btnpagsig
-            // 
-            this.btnpagsig.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnpagsig.FlatAppearance.BorderSize = 0;
-            this.btnpagsig.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnpagsig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpagsig.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpagsig.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnpagsig.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnpagsig.Location = new System.Drawing.Point(528, 1601);
-            this.btnpagsig.Name = "btnpagsig";
-            this.btnpagsig.Size = new System.Drawing.Size(116, 35);
-            this.btnpagsig.TabIndex = 165;
-            this.btnpagsig.Text = "Guardar y  Siguiente";
-            this.btnpagsig.UseVisualStyleBackColor = false;
-            // 
-            // btnpagant
-            // 
-            this.btnpagant.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnpagant.FlatAppearance.BorderSize = 0;
-            this.btnpagant.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnpagant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpagant.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpagant.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnpagant.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnpagant.Location = new System.Drawing.Point(405, 1601);
-            this.btnpagant.Name = "btnpagant";
-            this.btnpagant.Size = new System.Drawing.Size(116, 35);
-            this.btnpagant.TabIndex = 164;
-            this.btnpagant.Text = "Página Anterior";
-            this.btnpagant.UseVisualStyleBackColor = false;
             // 
             // materialLabel11
             // 
@@ -1756,10 +1705,7 @@
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnpagsig);
-            this.Controls.Add(this.btnpagant);
             this.Controls.Add(this.materialLabel11);
             this.Controls.Add(this.txtcargafuerzafinal);
             this.Controls.Add(this.materialLabel10);
@@ -1873,10 +1819,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialTextBox2 txtgirofinal;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnpagsig;
-        private System.Windows.Forms.Button btnpagant;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
         private MaterialSkin.Controls.MaterialTextBox2 txtcargafuerzafinal;
         private MaterialSkin.Controls.MaterialLabel materialLabel10;
