@@ -297,19 +297,6 @@ namespace TF.WIN
             return 0;
         }
 
-        public void ObtenerMaximoIdRula()
-        {
-            RulaBC oRulaBC = new RulaBC();
-            Rula oRula = new Rula();
-            DataTable dt = oRulaBC.RulaIdMaxBC(oRula);
-
-            if (dt.Rows.Count > 0)
-            {
-                int maxId = Convert.ToInt32(dt.Rows[0]["cargaid"]);
-                txtcargaid.Text = maxId.ToString();
-            }
-
-        }
 
         //private void btnpagina2_Click(object sender, EventArgs e)
         //{
