@@ -325,7 +325,7 @@ namespace TF.WIN
 
         }
 
-        public void ObtenerMaximoIdRula()
+        public void ObtenerMaximoIdRula() //hay que ver esta llamada en donde se repite
         {
             RulaBC oRulaBC = new RulaBC();
             Rula oRula = new Rula();

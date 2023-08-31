@@ -389,7 +389,7 @@
             this.txtBrazoFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtBrazoFinal.HideSelection = true;
             this.txtBrazoFinal.LeadingIcon = null;
-            this.txtBrazoFinal.Location = new System.Drawing.Point(709, 195);
+            this.txtBrazoFinal.Location = new System.Drawing.Point(711, 198);
             this.txtBrazoFinal.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrazoFinal.MaxLength = 32767;
             this.txtBrazoFinal.MouseState = MaterialSkin.MouseState.OUT;
