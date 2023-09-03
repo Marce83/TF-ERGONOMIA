@@ -8,6 +8,6 @@ namespace TF.DAC
 {
     internal class ConnectionStringManager
     {
-        public static string ConectionString { get; } = "Data Source=MARCELO-PC;Initial Catalog=ProyectoFinal;Integrated Security=True";
+        public static string ConectionString { get; } = "Data Source=Joaquin\\SQLEXPRESS;Initial Catalog=ProyectoFinal;Integrated Security=True";
     }
 }

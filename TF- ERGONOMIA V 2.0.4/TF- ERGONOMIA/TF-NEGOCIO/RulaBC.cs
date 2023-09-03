@@ -25,18 +25,18 @@ namespace TF.BC
             return oRulaDAC.UpdateRula1DAC(oRula);
         }
 
-        public int UpdateRula2BC(Rula oRula)
-        {
-            RulaDAC oRulaDAC = new RulaDAC();
-            return oRulaDAC.UpdateRula2DAC(oRula);
-        }
+        //public int UpdateRula2BC(Rula oRula)
+        //{
+        //    RulaDAC oRulaDAC = new RulaDAC();
+        //    return oRulaDAC.UpdateRula2DAC(oRula);
+        //}
 
 
-        public int UpdateRula3BC(Rula oRula)
-        {
-            RulaDAC oRulaDAC = new RulaDAC();
-            return oRulaDAC.UpdateRula3DAC(oRula);
-        }
+        //public int UpdateRula3BC(Rula oRula)
+        //{
+        //    RulaDAC oRulaDAC = new RulaDAC();
+        //    return oRulaDAC.UpdateRula3DAC(oRula);
+        //}
 
 
         public DataTable RULABC_GetAllBC()

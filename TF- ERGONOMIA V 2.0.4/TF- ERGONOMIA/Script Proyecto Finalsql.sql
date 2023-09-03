@@ -346,15 +346,22 @@ GO
 use ProyectoFinal
 go
 
-CREATE PROCEDURE SP_Rula_updateRula1
+CREATE or Alter PROCEDURE SP_Rula_updateRula1
 @cargaId Int,
 @Brazo int,
 @Antebrazo int,
 @Muneca  INT,
-@Giro INT
+@Giro INT,
+@Actividadmusculara int,
+@Cargafuerzaa int,
+@Cuellob int,
+@Tronco int,
+@Piernas int,
+@Actividadmuscularb int,
+@Cargafuerzab int
 AS
 BEGIN
-	update RulaTablaCompleta set Brazo=@Brazo, Antebrazo=@Antebrazo, Muneca=@Muneca ,Giro=@Giro 
+	update RulaTablaCompleta set Brazo=@Brazo, Antebrazo=@Antebrazo, Muneca=@Muneca ,Giro=@Giro, Actividadmusculara=@Actividadmusculara , Cargafuerzaa  =@Cargafuerzaa , Cuellob = @Cuellob, Tronco=@Tronco , Piernas=@Piernas , Actividadmuscularb=@Actividadmuscularb, Cargafuerzab=@Cargafuerzab
 	where cargaId=@cargaId
 END
 GO
