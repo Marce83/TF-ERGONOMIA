@@ -43,8 +43,8 @@ namespace TF.WIN
 
 
             // Puntuación Ante Brazo  
-            antebrazoposicion.Items.Add(new ComboBoxOption("2", 2));
             antebrazoposicion.Items.Add(new ComboBoxOption("1", 1));
+            antebrazoposicion.Items.Add(new ComboBoxOption("2", 2));
             antebrazocruza.Items.Add(new ComboBoxOption("Normal", 0));
             antebrazocruza.Items.Add(new ComboBoxOption("Despejado del Cuerpo", 1));
             antebrazocruza.Items.Add(new ComboBoxOption("Cruza Línea del Cuerpo", 1));
@@ -410,13 +410,20 @@ namespace TF.WIN
             oRula.cargaId = int.Parse(txtcargaid.Text);
             oRula.Muneca = int.Parse(txtmunecafinal.Text);
             oRula.Giro = int.Parse(txtgirofinal.Text);
+            oRula.Actividadmusculara = int.Parse(actividadgrupoAfinal.Text);
+            oRula.Cargafuerzaa = int.Parse(txtcargafuerzafinal.Text);
+            oRula.Cuellob = int.Parse(txtcuellofinal.Text);
+            oRula.Tronco = int.Parse(txttroncofinal.Text);
+            oRula.Piernas = int.Parse(txtpiernasfinal.Text);
+            oRula.Actividadmuscularb = int.Parse(txtmuscular2.Text);
+            oRula.Cargafuerzab = int.Parse(txtcargafuerza2.Text);
 
             var res = oRulaBC.UpdateRula1BC(oRula);
             MessageBox.Show("Carga Guardada");
 
             // Pasar al siguiente formulario
-            RULA2 ORULA2 = new RULA2();
-            ORULA2.Show();
+            RULARESULTADO ORULARESULTADO = new RULARESULTADO();
+            ORULARESULTADO.Show();
 
             Close();
 

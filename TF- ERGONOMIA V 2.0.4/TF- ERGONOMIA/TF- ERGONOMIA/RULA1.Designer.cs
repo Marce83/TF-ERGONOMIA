@@ -144,8 +144,8 @@
             this.btncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncerrar.ForeColor = System.Drawing.Color.AliceBlue;
             this.btncerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncerrar.Location = new System.Drawing.Point(604, 2972);
-            this.btncerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btncerrar.Location = new System.Drawing.Point(765, 2962);
+            this.btncerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(155, 43);
             this.btncerrar.TabIndex = 133;
@@ -156,7 +156,7 @@
             // txtcargaid
             // 
             this.txtcargaid.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtcargaid.Location = new System.Drawing.Point(447, 2972);
+            this.txtcargaid.Location = new System.Drawing.Point(615, 2972);
             this.txtcargaid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargaid.Name = "txtcargaid";
             this.txtcargaid.Size = new System.Drawing.Size(100, 22);
@@ -172,13 +172,14 @@
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(786, 2972);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Location = new System.Drawing.Point(969, 2962);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(155, 43);
             this.btnGuardar.TabIndex = 131;
-            this.btnGuardar.Text = "Guardar y Página Siguiente";
+            this.btnGuardar.Text = "Guardar y Obtener Resultado";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label6
             // 
@@ -222,7 +223,7 @@
             this.antebrazoposicion.MaxDropDownItems = 4;
             this.antebrazoposicion.MouseState = MaterialSkin.MouseState.OUT;
             this.antebrazoposicion.Name = "antebrazoposicion";
-            this.antebrazoposicion.Size = new System.Drawing.Size(201, 49);
+            this.antebrazoposicion.Size = new System.Drawing.Size(361, 49);
             this.antebrazoposicion.StartIndex = 0;
             this.antebrazoposicion.TabIndex = 128;
             this.antebrazoposicion.SelectedIndexChanged += new System.EventHandler(this.antebrazoposicion_SelectedIndexChanged);
@@ -280,7 +281,7 @@
             this.cboBrazoAbdApo.MaxDropDownItems = 4;
             this.cboBrazoAbdApo.MouseState = MaterialSkin.MouseState.OUT;
             this.cboBrazoAbdApo.Name = "cboBrazoAbdApo";
-            this.cboBrazoAbdApo.Size = new System.Drawing.Size(204, 49);
+            this.cboBrazoAbdApo.Size = new System.Drawing.Size(356, 49);
             this.cboBrazoAbdApo.StartIndex = 0;
             this.cboBrazoAbdApo.TabIndex = 124;
             this.cboBrazoAbdApo.SelectedIndexChanged += new System.EventHandler(this.cboBrazoAbdApo_SelectedIndexChanged);
@@ -307,7 +308,7 @@
             this.cbobrazoHombro.MaxDropDownItems = 4;
             this.cbobrazoHombro.MouseState = MaterialSkin.MouseState.OUT;
             this.cbobrazoHombro.Name = "cbobrazoHombro";
-            this.cbobrazoHombro.Size = new System.Drawing.Size(204, 49);
+            this.cbobrazoHombro.Size = new System.Drawing.Size(356, 49);
             this.cbobrazoHombro.StartIndex = 0;
             this.cbobrazoHombro.TabIndex = 123;
             this.cbobrazoHombro.SelectedIndexChanged += new System.EventHandler(this.cbobrazoHombro_SelectedIndexChanged);
@@ -346,7 +347,7 @@
             this.txtantebrazofinal.SelectionLength = 0;
             this.txtantebrazofinal.SelectionStart = 0;
             this.txtantebrazofinal.ShortcutsEnabled = true;
-            this.txtantebrazofinal.Size = new System.Drawing.Size(201, 48);
+            this.txtantebrazofinal.Size = new System.Drawing.Size(363, 48);
             this.txtantebrazofinal.TabIndex = 121;
             this.txtantebrazofinal.TabStop = false;
             this.txtantebrazofinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -387,7 +388,7 @@
             this.txtBrazoFinal.SelectionLength = 0;
             this.txtBrazoFinal.SelectionStart = 0;
             this.txtBrazoFinal.ShortcutsEnabled = true;
-            this.txtBrazoFinal.Size = new System.Drawing.Size(204, 48);
+            this.txtBrazoFinal.Size = new System.Drawing.Size(356, 48);
             this.txtBrazoFinal.TabIndex = 119;
             this.txtBrazoFinal.TabStop = false;
             this.txtBrazoFinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -465,7 +466,7 @@
             this.antebrazocruza.MaxDropDownItems = 4;
             this.antebrazocruza.MouseState = MaterialSkin.MouseState.OUT;
             this.antebrazocruza.Name = "antebrazocruza";
-            this.antebrazocruza.Size = new System.Drawing.Size(201, 49);
+            this.antebrazocruza.Size = new System.Drawing.Size(361, 49);
             this.antebrazocruza.StartIndex = 0;
             this.antebrazocruza.TabIndex = 114;
             this.antebrazocruza.SelectedIndexChanged += new System.EventHandler(this.antebrazocruza_SelectedIndexChanged);
@@ -494,7 +495,7 @@
             this.cboBrazoposicion.MaxDropDownItems = 4;
             this.cboBrazoposicion.MouseState = MaterialSkin.MouseState.OUT;
             this.cboBrazoposicion.Name = "cboBrazoposicion";
-            this.cboBrazoposicion.Size = new System.Drawing.Size(204, 49);
+            this.cboBrazoposicion.Size = new System.Drawing.Size(359, 49);
             this.cboBrazoposicion.StartIndex = 0;
             this.cboBrazoposicion.TabIndex = 113;
             this.cboBrazoposicion.SelectedIndexChanged += new System.EventHandler(this.cboBrazoposicion_SelectedIndexChanged);
@@ -555,7 +556,7 @@
             this.txtmunecafinal.SelectionLength = 0;
             this.txtmunecafinal.SelectionStart = 0;
             this.txtmunecafinal.ShortcutsEnabled = true;
-            this.txtmunecafinal.Size = new System.Drawing.Size(201, 48);
+            this.txtmunecafinal.Size = new System.Drawing.Size(359, 48);
             this.txtmunecafinal.TabIndex = 143;
             this.txtmunecafinal.TabStop = false;
             this.txtmunecafinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -584,7 +585,7 @@
             this.cbogiroMuñeca.MaxDropDownItems = 4;
             this.cbogiroMuñeca.MouseState = MaterialSkin.MouseState.OUT;
             this.cbogiroMuñeca.Name = "cbogiroMuñeca";
-            this.cbogiroMuñeca.Size = new System.Drawing.Size(201, 49);
+            this.cbogiroMuñeca.Size = new System.Drawing.Size(359, 49);
             this.cbogiroMuñeca.StartIndex = 0;
             this.cbogiroMuñeca.TabIndex = 142;
             this.cbogiroMuñeca.SelectedIndexChanged += new System.EventHandler(this.cbogiroMuñeca_SelectedIndexChanged);
@@ -643,7 +644,7 @@
             this.muñecaposicion.MaxDropDownItems = 4;
             this.muñecaposicion.MouseState = MaterialSkin.MouseState.OUT;
             this.muñecaposicion.Name = "muñecaposicion";
-            this.muñecaposicion.Size = new System.Drawing.Size(201, 49);
+            this.muñecaposicion.Size = new System.Drawing.Size(362, 49);
             this.muñecaposicion.StartIndex = 0;
             this.muñecaposicion.TabIndex = 138;
             this.muñecaposicion.SelectedIndexChanged += new System.EventHandler(this.muñecaposicion_SelectedIndexChanged);
@@ -670,7 +671,7 @@
             this.muñecadesviado.MaxDropDownItems = 4;
             this.muñecadesviado.MouseState = MaterialSkin.MouseState.OUT;
             this.muñecadesviado.Name = "muñecadesviado";
-            this.muñecadesviado.Size = new System.Drawing.Size(201, 49);
+            this.muñecadesviado.Size = new System.Drawing.Size(362, 49);
             this.muñecadesviado.StartIndex = 0;
             this.muñecadesviado.TabIndex = 137;
             this.muñecadesviado.SelectedIndexChanged += new System.EventHandler(this.muñecadesviado_SelectedIndexChanged);
@@ -709,7 +710,7 @@
             this.txtgirofinal.SelectionLength = 0;
             this.txtgirofinal.SelectionStart = 0;
             this.txtgirofinal.ShortcutsEnabled = true;
-            this.txtgirofinal.Size = new System.Drawing.Size(201, 48);
+            this.txtgirofinal.Size = new System.Drawing.Size(359, 48);
             this.txtgirofinal.TabIndex = 135;
             this.txtgirofinal.TabStop = false;
             this.txtgirofinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -732,7 +733,7 @@
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(775, 1556);
+            this.materialLabel11.Location = new System.Drawing.Point(771, 1563);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(82, 19);
@@ -748,7 +749,7 @@
             this.txtcargafuerzafinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtcargafuerzafinal.HideSelection = true;
             this.txtcargafuerzafinal.LeadingIcon = null;
-            this.txtcargafuerzafinal.Location = new System.Drawing.Point(772, 1577);
+            this.txtcargafuerzafinal.Location = new System.Drawing.Point(761, 1584);
             this.txtcargafuerzafinal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargafuerzafinal.MaxLength = 32767;
             this.txtcargafuerzafinal.MouseState = MaterialSkin.MouseState.OUT;
@@ -761,7 +762,7 @@
             this.txtcargafuerzafinal.SelectionLength = 0;
             this.txtcargafuerzafinal.SelectionStart = 0;
             this.txtcargafuerzafinal.ShortcutsEnabled = true;
-            this.txtcargafuerzafinal.Size = new System.Drawing.Size(194, 48);
+            this.txtcargafuerzafinal.Size = new System.Drawing.Size(365, 48);
             this.txtcargafuerzafinal.TabIndex = 162;
             this.txtcargafuerzafinal.TabStop = false;
             this.txtcargafuerzafinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -802,7 +803,7 @@
             this.actividadgrupoAfinal.SelectionLength = 0;
             this.actividadgrupoAfinal.SelectionStart = 0;
             this.actividadgrupoAfinal.ShortcutsEnabled = true;
-            this.actividadgrupoAfinal.Size = new System.Drawing.Size(207, 48);
+            this.actividadgrupoAfinal.Size = new System.Drawing.Size(365, 48);
             this.actividadgrupoAfinal.TabIndex = 160;
             this.actividadgrupoAfinal.TabStop = false;
             this.actividadgrupoAfinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -869,7 +870,7 @@
             this.cuelloposicion.MaxDropDownItems = 4;
             this.cuelloposicion.MouseState = MaterialSkin.MouseState.OUT;
             this.cuelloposicion.Name = "cuelloposicion";
-            this.cuelloposicion.Size = new System.Drawing.Size(195, 49);
+            this.cuelloposicion.Size = new System.Drawing.Size(353, 49);
             this.cuelloposicion.StartIndex = 0;
             this.cuelloposicion.TabIndex = 156;
             this.cuelloposicion.SelectedIndexChanged += new System.EventHandler(this.cuelloposicion_SelectedIndexChanged);
@@ -896,7 +897,7 @@
             this.txtcuellofinal.SelectionLength = 0;
             this.txtcuellofinal.SelectionStart = 0;
             this.txtcuellofinal.ShortcutsEnabled = true;
-            this.txtcuellofinal.Size = new System.Drawing.Size(196, 48);
+            this.txtcuellofinal.Size = new System.Drawing.Size(354, 48);
             this.txtcuellofinal.TabIndex = 155;
             this.txtcuellofinal.TabStop = false;
             this.txtcuellofinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -927,7 +928,7 @@
             this.cuellopuntuacion.MaxDropDownItems = 4;
             this.cuellopuntuacion.MouseState = MaterialSkin.MouseState.OUT;
             this.cuellopuntuacion.Name = "cuellopuntuacion";
-            this.cuellopuntuacion.Size = new System.Drawing.Size(199, 49);
+            this.cuellopuntuacion.Size = new System.Drawing.Size(357, 49);
             this.cuellopuntuacion.StartIndex = 0;
             this.cuellopuntuacion.TabIndex = 154;
             this.cuellopuntuacion.SelectedIndexChanged += new System.EventHandler(this.cuellopuntuacion_SelectedIndexChanged);
@@ -951,12 +952,12 @@
             this.cbocargafuerza.FormattingEnabled = true;
             this.cbocargafuerza.IntegralHeight = false;
             this.cbocargafuerza.ItemHeight = 43;
-            this.cbocargafuerza.Location = new System.Drawing.Point(771, 1496);
+            this.cbocargafuerza.Location = new System.Drawing.Point(761, 1503);
             this.cbocargafuerza.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbocargafuerza.MaxDropDownItems = 4;
             this.cbocargafuerza.MouseState = MaterialSkin.MouseState.OUT;
             this.cbocargafuerza.Name = "cbocargafuerza";
-            this.cbocargafuerza.Size = new System.Drawing.Size(195, 49);
+            this.cbocargafuerza.Size = new System.Drawing.Size(365, 49);
             this.cbocargafuerza.StartIndex = 0;
             this.cbocargafuerza.TabIndex = 153;
             this.cbocargafuerza.SelectedIndexChanged += new System.EventHandler(this.cbocargafuerza_SelectedIndexChanged);
@@ -983,7 +984,7 @@
             this.cboactmanuala.MaxDropDownItems = 4;
             this.cboactmanuala.MouseState = MaterialSkin.MouseState.OUT;
             this.cboactmanuala.Name = "cboactmanuala";
-            this.cboactmanuala.Size = new System.Drawing.Size(203, 49);
+            this.cboactmanuala.Size = new System.Drawing.Size(361, 49);
             this.cboactmanuala.StartIndex = 0;
             this.cboactmanuala.TabIndex = 152;
             this.cboactmanuala.SelectedIndexChanged += new System.EventHandler(this.cboactmanuala_SelectedIndexChanged);
@@ -1053,7 +1054,7 @@
             this.pictureBox6.Location = new System.Drawing.Point(12, 1475);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(747, 161);
+            this.pictureBox6.Size = new System.Drawing.Size(747, 160);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 146;
             this.pictureBox6.TabStop = false;
@@ -1103,7 +1104,7 @@
             this.txtcargafuerza2.SelectionLength = 0;
             this.txtcargafuerza2.SelectionStart = 0;
             this.txtcargafuerza2.ShortcutsEnabled = true;
-            this.txtcargafuerza2.Size = new System.Drawing.Size(201, 48);
+            this.txtcargafuerza2.Size = new System.Drawing.Size(359, 48);
             this.txtcargafuerza2.TabIndex = 190;
             this.txtcargafuerza2.TabStop = false;
             this.txtcargafuerza2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1134,7 +1135,7 @@
             this.cbocargafuerza2.MaxDropDownItems = 4;
             this.cbocargafuerza2.MouseState = MaterialSkin.MouseState.OUT;
             this.cbocargafuerza2.Name = "cbocargafuerza2";
-            this.cbocargafuerza2.Size = new System.Drawing.Size(201, 49);
+            this.cbocargafuerza2.Size = new System.Drawing.Size(359, 49);
             this.cbocargafuerza2.StartIndex = 0;
             this.cbocargafuerza2.TabIndex = 189;
             this.cbocargafuerza2.SelectedIndexChanged += new System.EventHandler(this.cbocargafuerza2_SelectedIndexChanged);
@@ -1184,7 +1185,7 @@
             this.txtmuscular2.SelectionLength = 0;
             this.txtmuscular2.SelectionStart = 0;
             this.txtmuscular2.ShortcutsEnabled = true;
-            this.txtmuscular2.Size = new System.Drawing.Size(200, 48);
+            this.txtmuscular2.Size = new System.Drawing.Size(358, 48);
             this.txtmuscular2.TabIndex = 186;
             this.txtmuscular2.TabStop = false;
             this.txtmuscular2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1225,7 +1226,7 @@
             this.txtpiernasfinal.SelectionLength = 0;
             this.txtpiernasfinal.SelectionStart = 0;
             this.txtpiernasfinal.ShortcutsEnabled = true;
-            this.txtpiernasfinal.Size = new System.Drawing.Size(201, 48);
+            this.txtpiernasfinal.Size = new System.Drawing.Size(359, 48);
             this.txtpiernasfinal.TabIndex = 184;
             this.txtpiernasfinal.TabStop = false;
             this.txtpiernasfinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1268,7 +1269,7 @@
             this.cbotroncotorcion.MaxDropDownItems = 4;
             this.cbotroncotorcion.MouseState = MaterialSkin.MouseState.OUT;
             this.cbotroncotorcion.Name = "cbotroncotorcion";
-            this.cbotroncotorcion.Size = new System.Drawing.Size(195, 49);
+            this.cbotroncotorcion.Size = new System.Drawing.Size(353, 49);
             this.cbotroncotorcion.StartIndex = 0;
             this.cbotroncotorcion.TabIndex = 182;
             this.cbotroncotorcion.SelectedIndexChanged += new System.EventHandler(this.cbotroncotorcion_SelectedIndexChanged);
@@ -1278,7 +1279,7 @@
             this.materialLabel22.AutoSize = true;
             this.materialLabel22.Depth = 0;
             this.materialLabel22.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel22.Location = new System.Drawing.Point(769, 2033);
+            this.materialLabel22.Location = new System.Drawing.Point(767, 2019);
             this.materialLabel22.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel22.Name = "materialLabel22";
             this.materialLabel22.Size = new System.Drawing.Size(62, 19);
@@ -1319,7 +1320,7 @@
             this.txttroncofinal.SelectionLength = 0;
             this.txttroncofinal.SelectionStart = 0;
             this.txttroncofinal.ShortcutsEnabled = true;
-            this.txttroncofinal.Size = new System.Drawing.Size(195, 48);
+            this.txttroncofinal.Size = new System.Drawing.Size(353, 48);
             this.txttroncofinal.TabIndex = 179;
             this.txttroncofinal.TabStop = false;
             this.txttroncofinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1331,7 +1332,7 @@
             this.materialLabel24.AutoSize = true;
             this.materialLabel24.Depth = 0;
             this.materialLabel24.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel24.Location = new System.Drawing.Point(13, 1996);
+            this.materialLabel24.Location = new System.Drawing.Point(11, 1985);
             this.materialLabel24.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel24.Name = "materialLabel24";
             this.materialLabel24.Size = new System.Drawing.Size(161, 19);
@@ -1396,7 +1397,7 @@
             this.cboactmuscular2.MaxDropDownItems = 4;
             this.cboactmuscular2.MouseState = MaterialSkin.MouseState.OUT;
             this.cboactmuscular2.Name = "cboactmuscular2";
-            this.cboactmuscular2.Size = new System.Drawing.Size(201, 49);
+            this.cboactmuscular2.Size = new System.Drawing.Size(359, 49);
             this.cboactmuscular2.StartIndex = 0;
             this.cboactmuscular2.TabIndex = 174;
             this.cboactmuscular2.SelectedIndexChanged += new System.EventHandler(this.cboactmuscular2_SelectedIndexChanged);
@@ -1423,7 +1424,7 @@
             this.cbopiernas.MaxDropDownItems = 4;
             this.cbopiernas.MouseState = MaterialSkin.MouseState.OUT;
             this.cbopiernas.Name = "cbopiernas";
-            this.cbopiernas.Size = new System.Drawing.Size(197, 49);
+            this.cbopiernas.Size = new System.Drawing.Size(355, 49);
             this.cbopiernas.StartIndex = 0;
             this.cbopiernas.TabIndex = 173;
             this.cbopiernas.SelectedIndexChanged += new System.EventHandler(this.cbopiernas_SelectedIndexChanged);
@@ -1447,12 +1448,12 @@
             this.cbotronco.FormattingEnabled = true;
             this.cbotronco.IntegralHeight = false;
             this.cbotronco.ItemHeight = 43;
-            this.cbotronco.Location = new System.Drawing.Point(771, 2053);
+            this.cbotronco.Location = new System.Drawing.Point(769, 2039);
             this.cbotronco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbotronco.MaxDropDownItems = 4;
             this.cbotronco.MouseState = MaterialSkin.MouseState.OUT;
             this.cbotronco.Name = "cbotronco";
-            this.cbotronco.Size = new System.Drawing.Size(195, 49);
+            this.cbotronco.Size = new System.Drawing.Size(353, 49);
             this.cbotronco.StartIndex = 0;
             this.cbotronco.TabIndex = 172;
             this.cbotronco.SelectedIndexChanged += new System.EventHandler(this.cbotronco_SelectedIndexChanged);
@@ -1482,10 +1483,10 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::TF.WIN.Properties.Resources.puntuacion_tronco;
-            this.pictureBox11.Location = new System.Drawing.Point(14, 2029);
+            this.pictureBox11.Location = new System.Drawing.Point(14, 2019);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(747, 230);
+            this.pictureBox11.Size = new System.Drawing.Size(747, 240);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 169;
             this.pictureBox11.TabStop = false;
@@ -1514,7 +1515,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label11.Location = new System.Drawing.Point(767, 1470);
+            this.label11.Location = new System.Drawing.Point(763, 1477);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(66, 18);
             this.label11.TabIndex = 198;
@@ -1563,7 +1564,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1030, 921);
+            this.ClientSize = new System.Drawing.Size(1269, 921);
             this.Controls.Add(this.materialLabel30);
             this.Controls.Add(this.materialLabel29);
             this.Controls.Add(this.materialLabel28);
