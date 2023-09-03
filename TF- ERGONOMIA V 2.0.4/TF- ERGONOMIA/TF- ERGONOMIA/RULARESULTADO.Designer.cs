@@ -82,12 +82,11 @@ namespace TF.WIN
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(280, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(373, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 31);
+            this.label1.Size = new System.Drawing.Size(316, 38);
             this.label1.TabIndex = 79;
-            this.label1.Text = "RULA - PAGINA 4 - 4";
+            this.label1.Text = "RESULTADO RULA";
             // 
             // txtgiromuneca
             // 
@@ -100,8 +99,8 @@ namespace TF.WIN
             this.txtgiromuneca.HideSelection = true;
             this.txtgiromuneca.LeadingIcon = null;
             this.txtgiromuneca.LeaveOnEnterKey = true;
-            this.txtgiromuneca.Location = new System.Drawing.Point(220, 305);
-            this.txtgiromuneca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtgiromuneca.Location = new System.Drawing.Point(293, 375);
+            this.txtgiromuneca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtgiromuneca.MaxLength = 32767;
             this.txtgiromuneca.MouseState = MaterialSkin.MouseState.OUT;
             this.txtgiromuneca.Name = "txtgiromuneca";
@@ -113,7 +112,7 @@ namespace TF.WIN
             this.txtgiromuneca.SelectionLength = 0;
             this.txtgiromuneca.SelectionStart = 0;
             this.txtgiromuneca.ShortcutsEnabled = true;
-            this.txtgiromuneca.Size = new System.Drawing.Size(89, 48);
+            this.txtgiromuneca.Size = new System.Drawing.Size(119, 48);
             this.txtgiromuneca.TabIndex = 6;
             this.txtgiromuneca.TabStop = false;
             this.txtgiromuneca.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -125,8 +124,7 @@ namespace TF.WIN
             this.materialLabel20.AutoSize = true;
             this.materialLabel20.Depth = 0;
             this.materialLabel20.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel20.Location = new System.Drawing.Point(11, 311);
-            this.materialLabel20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel20.Location = new System.Drawing.Point(15, 383);
             this.materialLabel20.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel20.Name = "materialLabel20";
             this.materialLabel20.Size = new System.Drawing.Size(112, 19);
@@ -142,9 +140,10 @@ namespace TF.WIN
             this.btnRecuperarCarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecuperarCarga.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnRecuperarCarga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecuperarCarga.Location = new System.Drawing.Point(698, 156);
+            this.btnRecuperarCarga.Location = new System.Drawing.Point(931, 192);
+            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRecuperarCarga.Name = "btnRecuperarCarga";
-            this.btnRecuperarCarga.Size = new System.Drawing.Size(116, 35);
+            this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 43);
             this.btnRecuperarCarga.TabIndex = 0;
             this.btnRecuperarCarga.Text = "Resultado";
             this.btnRecuperarCarga.UseVisualStyleBackColor = false;
@@ -153,10 +152,10 @@ namespace TF.WIN
             // txtcargaid
             // 
             this.txtcargaid.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtcargaid.Location = new System.Drawing.Point(724, 200);
-            this.txtcargaid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcargaid.Location = new System.Drawing.Point(965, 246);
+            this.txtcargaid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargaid.Name = "txtcargaid";
-            this.txtcargaid.Size = new System.Drawing.Size(76, 20);
+            this.txtcargaid.Size = new System.Drawing.Size(100, 22);
             this.txtcargaid.TabIndex = 158;
             this.txtcargaid.Visible = false;
             // 
@@ -170,8 +169,8 @@ namespace TF.WIN
             this.txtpuestoRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtpuestoRula.HideSelection = true;
             this.txtpuestoRula.LeadingIcon = null;
-            this.txtpuestoRula.Location = new System.Drawing.Point(488, 40);
-            this.txtpuestoRula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpuestoRula.Location = new System.Drawing.Point(651, 49);
+            this.txtpuestoRula.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpuestoRula.MaxLength = 32767;
             this.txtpuestoRula.MouseState = MaterialSkin.MouseState.OUT;
             this.txtpuestoRula.Name = "txtpuestoRula";
@@ -183,7 +182,7 @@ namespace TF.WIN
             this.txtpuestoRula.SelectionLength = 0;
             this.txtpuestoRula.SelectionStart = 0;
             this.txtpuestoRula.ShortcutsEnabled = true;
-            this.txtpuestoRula.Size = new System.Drawing.Size(218, 48);
+            this.txtpuestoRula.Size = new System.Drawing.Size(291, 48);
             this.txtpuestoRula.TabIndex = 2;
             this.txtpuestoRula.TabStop = false;
             this.txtpuestoRula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -195,8 +194,7 @@ namespace TF.WIN
             this.materialLabel19.AutoSize = true;
             this.materialLabel19.Depth = 0;
             this.materialLabel19.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel19.Location = new System.Drawing.Point(356, 50);
-            this.materialLabel19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel19.Location = new System.Drawing.Point(475, 62);
             this.materialLabel19.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel19.Name = "materialLabel19";
             this.materialLabel19.Size = new System.Drawing.Size(130, 19);
@@ -213,8 +211,8 @@ namespace TF.WIN
             this.txtempresaRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtempresaRula.HideSelection = true;
             this.txtempresaRula.LeadingIcon = null;
-            this.txtempresaRula.Location = new System.Drawing.Point(182, 40);
-            this.txtempresaRula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtempresaRula.Location = new System.Drawing.Point(243, 49);
+            this.txtempresaRula.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtempresaRula.MaxLength = 32767;
             this.txtempresaRula.MouseState = MaterialSkin.MouseState.OUT;
             this.txtempresaRula.Name = "txtempresaRula";
@@ -226,7 +224,7 @@ namespace TF.WIN
             this.txtempresaRula.SelectionLength = 0;
             this.txtempresaRula.SelectionStart = 0;
             this.txtempresaRula.ShortcutsEnabled = true;
-            this.txtempresaRula.Size = new System.Drawing.Size(124, 48);
+            this.txtempresaRula.Size = new System.Drawing.Size(165, 48);
             this.txtempresaRula.TabIndex = 1;
             this.txtempresaRula.TabStop = false;
             this.txtempresaRula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -238,8 +236,7 @@ namespace TF.WIN
             this.materialLabel18.AutoSize = true;
             this.materialLabel18.Depth = 0;
             this.materialLabel18.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel18.Location = new System.Drawing.Point(24, 50);
-            this.materialLabel18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel18.Location = new System.Drawing.Point(32, 62);
             this.materialLabel18.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel18.Name = "materialLabel18";
             this.materialLabel18.Size = new System.Drawing.Size(138, 19);
@@ -255,9 +252,10 @@ namespace TF.WIN
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(364, 789);
+            this.btnSalir.Location = new System.Drawing.Point(485, 971);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(116, 35);
+            this.btnSalir.Size = new System.Drawing.Size(155, 43);
             this.btnSalir.TabIndex = 19;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -272,9 +270,10 @@ namespace TF.WIN
             this.btnobtenerinforme.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnobtenerinforme.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnobtenerinforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnobtenerinforme.Location = new System.Drawing.Point(608, 789);
+            this.btnobtenerinforme.Location = new System.Drawing.Point(811, 971);
+            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnobtenerinforme.Name = "btnobtenerinforme";
-            this.btnobtenerinforme.Size = new System.Drawing.Size(116, 35);
+            this.btnobtenerinforme.Size = new System.Drawing.Size(155, 43);
             this.btnobtenerinforme.TabIndex = 17;
             this.btnobtenerinforme.Text = "Obtener Informe";
             this.btnobtenerinforme.UseVisualStyleBackColor = false;
@@ -289,9 +288,10 @@ namespace TF.WIN
             this.btnpagant.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpagant.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnpagant.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnpagant.Location = new System.Drawing.Point(486, 789);
+            this.btnpagant.Location = new System.Drawing.Point(648, 971);
+            this.btnpagant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnpagant.Name = "btnpagant";
-            this.btnpagant.Size = new System.Drawing.Size(116, 35);
+            this.btnpagant.Size = new System.Drawing.Size(155, 43);
             this.btnpagant.TabIndex = 18;
             this.btnpagant.Text = "Página Anterior";
             this.btnpagant.UseVisualStyleBackColor = false;
@@ -307,8 +307,8 @@ namespace TF.WIN
             this.txtpuntuacionRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtpuntuacionRula.HideSelection = true;
             this.txtpuntuacionRula.LeadingIcon = null;
-            this.txtpuntuacionRula.Location = new System.Drawing.Point(202, 670);
-            this.txtpuntuacionRula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpuntuacionRula.Location = new System.Drawing.Point(269, 825);
+            this.txtpuntuacionRula.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpuntuacionRula.MaxLength = 32767;
             this.txtpuntuacionRula.MouseState = MaterialSkin.MouseState.OUT;
             this.txtpuntuacionRula.Name = "txtpuntuacionRula";
@@ -320,7 +320,7 @@ namespace TF.WIN
             this.txtpuntuacionRula.SelectionLength = 0;
             this.txtpuntuacionRula.SelectionStart = 0;
             this.txtpuntuacionRula.ShortcutsEnabled = true;
-            this.txtpuntuacionRula.Size = new System.Drawing.Size(104, 48);
+            this.txtpuntuacionRula.Size = new System.Drawing.Size(139, 48);
             this.txtpuntuacionRula.TabIndex = 14;
             this.txtpuntuacionRula.TabStop = false;
             this.txtpuntuacionRula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -337,8 +337,8 @@ namespace TF.WIN
             this.txtniveldeRiesgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtniveldeRiesgo.HideSelection = true;
             this.txtniveldeRiesgo.LeadingIcon = null;
-            this.txtniveldeRiesgo.Location = new System.Drawing.Point(202, 722);
-            this.txtniveldeRiesgo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtniveldeRiesgo.Location = new System.Drawing.Point(269, 889);
+            this.txtniveldeRiesgo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtniveldeRiesgo.MaxLength = 32767;
             this.txtniveldeRiesgo.MouseState = MaterialSkin.MouseState.OUT;
             this.txtniveldeRiesgo.Name = "txtniveldeRiesgo";
@@ -350,7 +350,7 @@ namespace TF.WIN
             this.txtniveldeRiesgo.SelectionLength = 0;
             this.txtniveldeRiesgo.SelectionStart = 0;
             this.txtniveldeRiesgo.ShortcutsEnabled = true;
-            this.txtniveldeRiesgo.Size = new System.Drawing.Size(104, 48);
+            this.txtniveldeRiesgo.Size = new System.Drawing.Size(139, 48);
             this.txtniveldeRiesgo.TabIndex = 15;
             this.txtniveldeRiesgo.TabStop = false;
             this.txtniveldeRiesgo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -366,8 +366,8 @@ namespace TF.WIN
             this.txtactuacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtactuacion.HideSelection = true;
             this.txtactuacion.LeadingIcon = null;
-            this.txtactuacion.Location = new System.Drawing.Point(438, 670);
-            this.txtactuacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtactuacion.Location = new System.Drawing.Point(584, 825);
+            this.txtactuacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtactuacion.MaxLength = 32767;
             this.txtactuacion.MouseState = MaterialSkin.MouseState.OUT;
             this.txtactuacion.Name = "txtactuacion";
@@ -379,7 +379,7 @@ namespace TF.WIN
             this.txtactuacion.SelectionLength = 0;
             this.txtactuacion.SelectionStart = 0;
             this.txtactuacion.ShortcutsEnabled = true;
-            this.txtactuacion.Size = new System.Drawing.Size(362, 48);
+            this.txtactuacion.Size = new System.Drawing.Size(483, 48);
             this.txtactuacion.TabIndex = 16;
             this.txtactuacion.TabStop = false;
             this.txtactuacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -396,8 +396,8 @@ namespace TF.WIN
             this.txtcuelloB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtcuelloB.HideSelection = true;
             this.txtcuelloB.LeadingIcon = null;
-            this.txtcuelloB.Location = new System.Drawing.Point(553, 148);
-            this.txtcuelloB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcuelloB.Location = new System.Drawing.Point(737, 182);
+            this.txtcuelloB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcuelloB.MaxLength = 32767;
             this.txtcuelloB.MouseState = MaterialSkin.MouseState.OUT;
             this.txtcuelloB.Name = "txtcuelloB";
@@ -409,7 +409,7 @@ namespace TF.WIN
             this.txtcuelloB.SelectionLength = 0;
             this.txtcuelloB.SelectionStart = 0;
             this.txtcuelloB.ShortcutsEnabled = true;
-            this.txtcuelloB.Size = new System.Drawing.Size(107, 48);
+            this.txtcuelloB.Size = new System.Drawing.Size(143, 48);
             this.txtcuelloB.TabIndex = 9;
             this.txtcuelloB.TabStop = false;
             this.txtcuelloB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -427,8 +427,8 @@ namespace TF.WIN
             this.txttroncoB.HideSelection = true;
             this.txttroncoB.LeadingIcon = null;
             this.txttroncoB.LeaveOnEnterKey = true;
-            this.txttroncoB.Location = new System.Drawing.Point(553, 200);
-            this.txttroncoB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txttroncoB.Location = new System.Drawing.Point(737, 246);
+            this.txttroncoB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttroncoB.MaxLength = 32767;
             this.txttroncoB.MouseState = MaterialSkin.MouseState.OUT;
             this.txttroncoB.Name = "txttroncoB";
@@ -440,7 +440,7 @@ namespace TF.WIN
             this.txttroncoB.SelectionLength = 0;
             this.txttroncoB.SelectionStart = 0;
             this.txttroncoB.ShortcutsEnabled = true;
-            this.txttroncoB.Size = new System.Drawing.Size(107, 48);
+            this.txttroncoB.Size = new System.Drawing.Size(143, 48);
             this.txttroncoB.TabIndex = 10;
             this.txttroncoB.TabStop = false;
             this.txttroncoB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -458,8 +458,8 @@ namespace TF.WIN
             this.txtpiernaB.HideSelection = true;
             this.txtpiernaB.LeadingIcon = null;
             this.txtpiernaB.LeaveOnEnterKey = true;
-            this.txtpiernaB.Location = new System.Drawing.Point(553, 253);
-            this.txtpiernaB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpiernaB.Location = new System.Drawing.Point(737, 311);
+            this.txtpiernaB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpiernaB.MaxLength = 32767;
             this.txtpiernaB.MouseState = MaterialSkin.MouseState.OUT;
             this.txtpiernaB.Name = "txtpiernaB";
@@ -471,7 +471,7 @@ namespace TF.WIN
             this.txtpiernaB.SelectionLength = 0;
             this.txtpiernaB.SelectionStart = 0;
             this.txtpiernaB.ShortcutsEnabled = true;
-            this.txtpiernaB.Size = new System.Drawing.Size(107, 48);
+            this.txtpiernaB.Size = new System.Drawing.Size(143, 48);
             this.txtpiernaB.TabIndex = 11;
             this.txtpiernaB.TabStop = false;
             this.txtpiernaB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -489,8 +489,8 @@ namespace TF.WIN
             this.txtmusculaturaB.HideSelection = true;
             this.txtmusculaturaB.LeadingIcon = null;
             this.txtmusculaturaB.LeaveOnEnterKey = true;
-            this.txtmusculaturaB.Location = new System.Drawing.Point(553, 457);
-            this.txtmusculaturaB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtmusculaturaB.Location = new System.Drawing.Point(731, 570);
+            this.txtmusculaturaB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmusculaturaB.MaxLength = 32767;
             this.txtmusculaturaB.MouseState = MaterialSkin.MouseState.OUT;
             this.txtmusculaturaB.Name = "txtmusculaturaB";
@@ -502,7 +502,7 @@ namespace TF.WIN
             this.txtmusculaturaB.SelectionLength = 0;
             this.txtmusculaturaB.SelectionStart = 0;
             this.txtmusculaturaB.ShortcutsEnabled = true;
-            this.txtmusculaturaB.Size = new System.Drawing.Size(107, 48);
+            this.txtmusculaturaB.Size = new System.Drawing.Size(143, 48);
             this.txtmusculaturaB.TabIndex = 12;
             this.txtmusculaturaB.TabStop = false;
             this.txtmusculaturaB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -520,8 +520,8 @@ namespace TF.WIN
             this.txtcargafuerzaB.HideSelection = true;
             this.txtcargafuerzaB.LeadingIcon = null;
             this.txtcargafuerzaB.LeaveOnEnterKey = true;
-            this.txtcargafuerzaB.Location = new System.Drawing.Point(553, 515);
-            this.txtcargafuerzaB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcargafuerzaB.Location = new System.Drawing.Point(731, 642);
+            this.txtcargafuerzaB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargafuerzaB.MaxLength = 32767;
             this.txtcargafuerzaB.MouseState = MaterialSkin.MouseState.OUT;
             this.txtcargafuerzaB.Name = "txtcargafuerzaB";
@@ -533,7 +533,7 @@ namespace TF.WIN
             this.txtcargafuerzaB.SelectionLength = 0;
             this.txtcargafuerzaB.SelectionStart = 0;
             this.txtcargafuerzaB.ShortcutsEnabled = true;
-            this.txtcargafuerzaB.Size = new System.Drawing.Size(107, 48);
+            this.txtcargafuerzaB.Size = new System.Drawing.Size(143, 48);
             this.txtcargafuerzaB.TabIndex = 13;
             this.txtcargafuerzaB.TabStop = false;
             this.txtcargafuerzaB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -550,8 +550,8 @@ namespace TF.WIN
             this.txtcargafuerzaA.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtcargafuerzaA.HideSelection = true;
             this.txtcargafuerzaA.LeadingIcon = null;
-            this.txtcargafuerzaA.Location = new System.Drawing.Point(221, 503);
-            this.txtcargafuerzaA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcargafuerzaA.Location = new System.Drawing.Point(289, 627);
+            this.txtcargafuerzaA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargafuerzaA.MaxLength = 32767;
             this.txtcargafuerzaA.MouseState = MaterialSkin.MouseState.OUT;
             this.txtcargafuerzaA.Name = "txtcargafuerzaA";
@@ -563,7 +563,7 @@ namespace TF.WIN
             this.txtcargafuerzaA.SelectionLength = 0;
             this.txtcargafuerzaA.SelectionStart = 0;
             this.txtcargafuerzaA.ShortcutsEnabled = true;
-            this.txtcargafuerzaA.Size = new System.Drawing.Size(89, 48);
+            this.txtcargafuerzaA.Size = new System.Drawing.Size(119, 48);
             this.txtcargafuerzaA.TabIndex = 8;
             this.txtcargafuerzaA.TabStop = false;
             this.txtcargafuerzaA.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -580,8 +580,8 @@ namespace TF.WIN
             this.txtmusculaturaA.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtmusculaturaA.HideSelection = true;
             this.txtmusculaturaA.LeadingIcon = null;
-            this.txtmusculaturaA.Location = new System.Drawing.Point(221, 451);
-            this.txtmusculaturaA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtmusculaturaA.Location = new System.Drawing.Point(289, 563);
+            this.txtmusculaturaA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmusculaturaA.MaxLength = 32767;
             this.txtmusculaturaA.MouseState = MaterialSkin.MouseState.OUT;
             this.txtmusculaturaA.Name = "txtmusculaturaA";
@@ -593,7 +593,7 @@ namespace TF.WIN
             this.txtmusculaturaA.SelectionLength = 0;
             this.txtmusculaturaA.SelectionStart = 0;
             this.txtmusculaturaA.ShortcutsEnabled = true;
-            this.txtmusculaturaA.Size = new System.Drawing.Size(89, 48);
+            this.txtmusculaturaA.Size = new System.Drawing.Size(119, 48);
             this.txtmusculaturaA.TabIndex = 7;
             this.txtmusculaturaA.TabStop = false;
             this.txtmusculaturaA.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -611,8 +611,8 @@ namespace TF.WIN
             this.txtmuneca.HideSelection = true;
             this.txtmuneca.LeadingIcon = null;
             this.txtmuneca.LeaveOnEnterKey = true;
-            this.txtmuneca.Location = new System.Drawing.Point(220, 253);
-            this.txtmuneca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtmuneca.Location = new System.Drawing.Point(293, 311);
+            this.txtmuneca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmuneca.MaxLength = 32767;
             this.txtmuneca.MouseState = MaterialSkin.MouseState.OUT;
             this.txtmuneca.Name = "txtmuneca";
@@ -624,7 +624,7 @@ namespace TF.WIN
             this.txtmuneca.SelectionLength = 0;
             this.txtmuneca.SelectionStart = 0;
             this.txtmuneca.ShortcutsEnabled = true;
-            this.txtmuneca.Size = new System.Drawing.Size(89, 48);
+            this.txtmuneca.Size = new System.Drawing.Size(119, 48);
             this.txtmuneca.TabIndex = 5;
             this.txtmuneca.TabStop = false;
             this.txtmuneca.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -642,8 +642,8 @@ namespace TF.WIN
             this.txtantebrazo.HideSelection = true;
             this.txtantebrazo.LeadingIcon = null;
             this.txtantebrazo.LeaveOnEnterKey = true;
-            this.txtantebrazo.Location = new System.Drawing.Point(221, 200);
-            this.txtantebrazo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtantebrazo.Location = new System.Drawing.Point(295, 246);
+            this.txtantebrazo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtantebrazo.MaxLength = 32767;
             this.txtantebrazo.MouseState = MaterialSkin.MouseState.OUT;
             this.txtantebrazo.Name = "txtantebrazo";
@@ -655,7 +655,7 @@ namespace TF.WIN
             this.txtantebrazo.SelectionLength = 0;
             this.txtantebrazo.SelectionStart = 0;
             this.txtantebrazo.ShortcutsEnabled = true;
-            this.txtantebrazo.Size = new System.Drawing.Size(89, 48);
+            this.txtantebrazo.Size = new System.Drawing.Size(119, 48);
             this.txtantebrazo.TabIndex = 4;
             this.txtantebrazo.TabStop = false;
             this.txtantebrazo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -672,8 +672,8 @@ namespace TF.WIN
             this.txtbrazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtbrazo.HideSelection = true;
             this.txtbrazo.LeadingIcon = null;
-            this.txtbrazo.Location = new System.Drawing.Point(221, 148);
-            this.txtbrazo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbrazo.Location = new System.Drawing.Point(295, 182);
+            this.txtbrazo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbrazo.MaxLength = 32767;
             this.txtbrazo.MouseState = MaterialSkin.MouseState.OUT;
             this.txtbrazo.Name = "txtbrazo";
@@ -685,7 +685,7 @@ namespace TF.WIN
             this.txtbrazo.SelectionLength = 0;
             this.txtbrazo.SelectionStart = 0;
             this.txtbrazo.ShortcutsEnabled = true;
-            this.txtbrazo.Size = new System.Drawing.Size(89, 48);
+            this.txtbrazo.Size = new System.Drawing.Size(119, 48);
             this.txtbrazo.TabIndex = 3;
             this.txtbrazo.TabStop = false;
             this.txtbrazo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -697,8 +697,7 @@ namespace TF.WIN
             this.materialLabel17.AutoSize = true;
             this.materialLabel17.Depth = 0;
             this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel17.Location = new System.Drawing.Point(11, 88);
-            this.materialLabel17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel17.Location = new System.Drawing.Point(15, 108);
             this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel17.Name = "materialLabel17";
             this.materialLabel17.Size = new System.Drawing.Size(241, 19);
@@ -710,8 +709,7 @@ namespace TF.WIN
             this.materialLabel13.AutoSize = true;
             this.materialLabel13.Depth = 0;
             this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel13.Location = new System.Drawing.Point(358, 682);
-            this.materialLabel13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel13.Location = new System.Drawing.Point(477, 839);
             this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel13.Name = "materialLabel13";
             this.materialLabel13.Size = new System.Drawing.Size(72, 19);
@@ -723,8 +721,7 @@ namespace TF.WIN
             this.materialLabel14.AutoSize = true;
             this.materialLabel14.Depth = 0;
             this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel14.Location = new System.Drawing.Point(60, 732);
-            this.materialLabel14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel14.Location = new System.Drawing.Point(80, 901);
             this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel14.Name = "materialLabel14";
             this.materialLabel14.Size = new System.Drawing.Size(109, 19);
@@ -736,8 +733,7 @@ namespace TF.WIN
             this.materialLabel15.AutoSize = true;
             this.materialLabel15.Depth = 0;
             this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel15.Location = new System.Drawing.Point(4, 682);
-            this.materialLabel15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel15.Location = new System.Drawing.Point(5, 839);
             this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel15.Name = "materialLabel15";
             this.materialLabel15.Size = new System.Drawing.Size(184, 19);
@@ -749,8 +745,7 @@ namespace TF.WIN
             this.materialLabel16.AutoSize = true;
             this.materialLabel16.Depth = 0;
             this.materialLabel16.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel16.Location = new System.Drawing.Point(4, 626);
-            this.materialLabel16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel16.Location = new System.Drawing.Point(5, 770);
             this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel16.Name = "materialLabel16";
             this.materialLabel16.Size = new System.Drawing.Size(231, 19);
@@ -762,8 +757,7 @@ namespace TF.WIN
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.Location = new System.Drawing.Point(347, 531);
-            this.materialLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel7.Location = new System.Drawing.Point(457, 662);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(197, 19);
@@ -775,8 +769,7 @@ namespace TF.WIN
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel8.Location = new System.Drawing.Point(347, 469);
-            this.materialLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel8.Location = new System.Drawing.Point(457, 585);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(198, 19);
@@ -788,8 +781,7 @@ namespace TF.WIN
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(351, 264);
-            this.materialLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel9.Location = new System.Drawing.Point(468, 325);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(131, 19);
@@ -801,8 +793,7 @@ namespace TF.WIN
             this.materialLabel10.AutoSize = true;
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel10.Location = new System.Drawing.Point(347, 210);
-            this.materialLabel10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel10.Location = new System.Drawing.Point(463, 258);
             this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel10.Name = "materialLabel10";
             this.materialLabel10.Size = new System.Drawing.Size(136, 19);
@@ -814,8 +805,7 @@ namespace TF.WIN
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(347, 156);
-            this.materialLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel11.Location = new System.Drawing.Point(463, 192);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(130, 19);
@@ -827,8 +817,7 @@ namespace TF.WIN
             this.materialLabel12.AutoSize = true;
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel12.Location = new System.Drawing.Point(344, 117);
-            this.materialLabel12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel12.Location = new System.Drawing.Point(459, 144);
             this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel12.Name = "materialLabel12";
             this.materialLabel12.Size = new System.Drawing.Size(316, 19);
@@ -840,8 +829,7 @@ namespace TF.WIN
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.Location = new System.Drawing.Point(14, 515);
-            this.materialLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel6.Location = new System.Drawing.Point(13, 642);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(197, 19);
@@ -853,8 +841,7 @@ namespace TF.WIN
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel5.Location = new System.Drawing.Point(12, 467);
-            this.materialLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel5.Location = new System.Drawing.Point(10, 583);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(198, 19);
@@ -866,8 +853,7 @@ namespace TF.WIN
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(13, 264);
-            this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel3.Location = new System.Drawing.Point(17, 325);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(143, 19);
@@ -879,8 +865,7 @@ namespace TF.WIN
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(13, 210);
-            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel2.Location = new System.Drawing.Point(17, 258);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(159, 19);
@@ -892,8 +877,7 @@ namespace TF.WIN
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(13, 156);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel1.Location = new System.Drawing.Point(17, 192);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(127, 19);
@@ -905,8 +889,7 @@ namespace TF.WIN
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(11, 117);
-            this.materialLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel4.Location = new System.Drawing.Point(15, 144);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(353, 19);
@@ -918,15 +901,17 @@ namespace TF.WIN
             this.rdoTablaA.AnimateReadOnly = false;
             this.rdoTablaA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rdoTablaA.Depth = 0;
+            this.rdoTablaA.Enabled = false;
             this.rdoTablaA.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.rdoTablaA.LeadingIcon = null;
-            this.rdoTablaA.Location = new System.Drawing.Point(221, 384);
+            this.rdoTablaA.Location = new System.Drawing.Point(295, 473);
+            this.rdoTablaA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoTablaA.MaxLength = 50;
             this.rdoTablaA.MouseState = MaterialSkin.MouseState.OUT;
             this.rdoTablaA.Multiline = false;
             this.rdoTablaA.Name = "rdoTablaA";
             this.rdoTablaA.ReadOnly = true;
-            this.rdoTablaA.Size = new System.Drawing.Size(89, 50);
+            this.rdoTablaA.Size = new System.Drawing.Size(119, 50);
             this.rdoTablaA.TabIndex = 162;
             this.rdoTablaA.Text = "";
             this.rdoTablaA.TrailingIcon = null;
@@ -936,52 +921,52 @@ namespace TF.WIN
             this.materialLabel21.AutoSize = true;
             this.materialLabel21.Depth = 0;
             this.materialLabel21.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel21.Location = new System.Drawing.Point(11, 397);
-            this.materialLabel21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel21.Location = new System.Drawing.Point(15, 489);
             this.materialLabel21.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel21.Name = "materialLabel21";
-            this.materialLabel21.Size = new System.Drawing.Size(88, 19);
+            this.materialLabel21.Size = new System.Drawing.Size(131, 19);
             this.materialLabel21.TabIndex = 163;
-            this.materialLabel21.Text = "Rdo Tabla A";
+            this.materialLabel21.Text = "Resultado Tabla A";
             // 
             // materialLabel22
             // 
             this.materialLabel22.AutoSize = true;
             this.materialLabel22.Depth = 0;
             this.materialLabel22.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel22.Location = new System.Drawing.Point(347, 397);
-            this.materialLabel22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel22.Location = new System.Drawing.Point(463, 489);
             this.materialLabel22.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel22.Name = "materialLabel22";
-            this.materialLabel22.Size = new System.Drawing.Size(88, 19);
+            this.materialLabel22.Size = new System.Drawing.Size(131, 19);
             this.materialLabel22.TabIndex = 165;
-            this.materialLabel22.Text = "Rdo Tabla B";
+            this.materialLabel22.Text = "Resultado Tabla B";
             // 
             // rdoTablaB
             // 
             this.rdoTablaB.AnimateReadOnly = false;
             this.rdoTablaB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rdoTablaB.Depth = 0;
-            this.rdoTablaB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.rdoTablaB.Enabled = false;
+            this.rdoTablaB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.rdoTablaB.LeadingIcon = null;
-            this.rdoTablaB.Location = new System.Drawing.Point(553, 383);
+            this.rdoTablaB.Location = new System.Drawing.Point(737, 471);
+            this.rdoTablaB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoTablaB.MaxLength = 50;
             this.rdoTablaB.MouseState = MaterialSkin.MouseState.OUT;
             this.rdoTablaB.Multiline = false;
             this.rdoTablaB.Name = "rdoTablaB";
             this.rdoTablaB.ReadOnly = true;
-            this.rdoTablaB.Size = new System.Drawing.Size(107, 50);
+            this.rdoTablaB.Size = new System.Drawing.Size(143, 50);
             this.rdoTablaB.TabIndex = 164;
             this.rdoTablaB.Text = "";
             this.rdoTablaB.TrailingIcon = null;
             // 
             // RULARESULTADO
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(865, 884);
+            this.ClientSize = new System.Drawing.Size(1153, 1088);
             this.Controls.Add(this.materialLabel22);
             this.Controls.Add(this.rdoTablaB);
             this.Controls.Add(this.materialLabel21);
@@ -1029,9 +1014,9 @@ namespace TF.WIN
             this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RULARESULTADO";
-            this.Padding = new System.Windows.Forms.Padding(2, 58, 2, 2);
+            this.Padding = new System.Windows.Forms.Padding(3, 71, 3, 2);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RULA: Resultado";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

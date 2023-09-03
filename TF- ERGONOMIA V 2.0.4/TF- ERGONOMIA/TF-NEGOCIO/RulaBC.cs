@@ -74,8 +74,18 @@ namespace TF.BC
             return dt;
         }
 
+        public DataTable RulaTablaBRdoBC(Rula oRula)
+        {
+            RulaDAC oRulaDAC = new RulaDAC();
+            DataTable dt = oRulaDAC.RulaTablaBRdoDAC(oRula);
+            return dt;
+        }
 
-
-
+        public DataTable RulaTablaCRdoBC(Rula oRula)
+        {
+            RulaDAC oRulaDAC = new RulaDAC();
+            DataTable dt = oRulaDAC.RulaTablaCRdoDAC(oRula);
+            return dt;
+        }
     }
 }

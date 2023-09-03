@@ -289,24 +289,18 @@ namespace TF.WIN
 
             ///////////                    NIVEL DE RIESGO Y ACTUACIÓN                             ///////////
 
-            if (txtbrazo.Text == "1" || txtbrazo.Text == "2")
+            DataTable dt3 = oRulaBC.RulaTablaCRdoBC(oRula);
+
+            if (dt3.Rows.Count > 0)
             {
-                txtpuntuacionRula.Text = "3";
-                txtniveldeRiesgo.Text = "4";
+                string resultado = dt3.Rows[0][3].ToString();
+                txtpuntuacionRula.Text = resultado;
             }
 
-            if (txtbrazo.Text == "3" || txtbrazo.Text == "4")
-            {
-                txtpuntuacionRula.Text = "4";
-                txtniveldeRiesgo.Text = "5";
-            }
 
-            if (txtbrazo.Text == "5")
-            {
-                txtpuntuacionRula.Text = "6";
-                txtniveldeRiesgo.Text = "7";
-            }
 
+
+            ///////////                    RESULTADO TABLA A Y B                             ///////////
 
             DataTable dt1 = oRulaBC.RulaTablaARdoBC(oRula);
 
@@ -315,6 +309,21 @@ namespace TF.WIN
                     string resultado = dt1.Rows[0][4].ToString();
                     rdoTablaA.Text = resultado;
                 }
+
+            DataTable dt2 = oRulaBC.RulaTablaBRdoBC(oRula);
+
+            if (dt2.Rows.Count > 0)
+            {
+                string resultado = dt2.Rows[0][3].ToString();
+                rdoTablaB.Text = resultado;
+            }
+
+
+
+
+
+
+
 
 
 
