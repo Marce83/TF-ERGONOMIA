@@ -328,6 +328,76 @@ namespace TF.WIN
         //    oRULA2.Show();
 
         //}
+        private void cbotronco_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoTronco();
+        }
+
+        private void cbotroncotorcion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoTronco();
+        }
+
+        private void MostrarResultadoTronco()
+        {
+            int resultado = ObtenerNumeroSeleccionado(cbotronco) + ObtenerNumeroSeleccionado(cbotroncotorcion);
+
+            if (resultado == 0)
+            {
+                resultado = 0;
+            }
+
+            txttroncofinal.Text = resultado.ToString();
+        }
+
+        private void cbopiernas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoPierna();
+        }
+        
+        private void MostrarResultadoPierna()
+        {
+            int resultadoPierna = ObtenerNumeroSeleccionado(cbopiernas);
+
+            if (resultadoPierna == 0)
+            {
+                resultadoPierna = 0;
+            }
+
+            txtpiernasfinal.Text = resultadoPierna.ToString();
+        }
+
+        private void cboactmuscular2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoMuscular2();
+        }
+
+        private void MostrarResultadoMuscular2()
+        {
+            int resultadoMuscular2 = ObtenerNumeroSeleccionado(cboactmuscular2);
+
+            if (resultadoMuscular2 == 0)
+            {
+                resultadoMuscular2 = 0;
+            }
+            txtmuscular2.Text = resultadoMuscular2.ToString();
+        }
+
+        private void cbocargafuerza2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoFuerza2();
+        }
+
+        private void MostrarResultadoFuerza2()
+        {
+            int resultadoFuerza2 = ObtenerNumeroSeleccionado(cbocargafuerza2);
+
+            if (resultadoFuerza2 == 0)
+            {
+                resultadoFuerza2 = 0;
+            }
+            txtcargafuerza2.Text = resultadoFuerza2.ToString();
+        }
 
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -340,14 +410,6 @@ namespace TF.WIN
             oRula.cargaId = int.Parse(txtcargaid.Text);
             oRula.Muneca = int.Parse(txtmunecafinal.Text);
             oRula.Giro = int.Parse(txtgirofinal.Text);
-
-
-
-
-
-
-
-
 
             var res = oRulaBC.UpdateRula1BC(oRula);
             MessageBox.Show("Carga Guardada");
@@ -364,6 +426,7 @@ namespace TF.WIN
         {
             Close();
         }
+
     }
 }
 
