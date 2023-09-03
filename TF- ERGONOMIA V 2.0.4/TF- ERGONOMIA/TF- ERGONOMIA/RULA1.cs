@@ -341,6 +341,14 @@ namespace TF.WIN
             oRula.Muneca = int.Parse(txtmunecafinal.Text);
             oRula.Giro = int.Parse(txtgirofinal.Text);
 
+
+
+
+
+
+
+
+
             var res = oRulaBC.UpdateRula1BC(oRula);
             MessageBox.Show("Carga Guardada");
 
