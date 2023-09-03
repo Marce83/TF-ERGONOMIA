@@ -184,5 +184,25 @@ namespace TF.WIN
         {
             Close();
         }
+
+        private void txtcargaid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcargafuerza2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

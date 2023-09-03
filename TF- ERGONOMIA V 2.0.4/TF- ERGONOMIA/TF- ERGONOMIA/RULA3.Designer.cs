@@ -436,6 +436,7 @@ namespace TF.WIN
             this.materialLabel9.Size = new System.Drawing.Size(82, 19);
             this.materialLabel9.TabIndex = 136;
             this.materialLabel9.Text = "Puntuación";
+            this.materialLabel9.Click += new System.EventHandler(this.materialLabel9_Click);
             // 
             // txtcargafuerza2
             // 
@@ -465,6 +466,7 @@ namespace TF.WIN
             this.txtcargafuerza2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtcargafuerza2.TrailingIcon = null;
             this.txtcargafuerza2.UseSystemPasswordChar = false;
+            this.txtcargafuerza2.Click += new System.EventHandler(this.txtcargafuerza2_Click);
             // 
             // cbocargafuerza2
             // 
@@ -505,6 +507,7 @@ namespace TF.WIN
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 133;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // btnSalir
             // 
@@ -532,6 +535,7 @@ namespace TF.WIN
             this.txtcargaid.Size = new System.Drawing.Size(76, 20);
             this.txtcargaid.TabIndex = 139;
             this.txtcargaid.Visible = false;
+            this.txtcargaid.TextChanged += new System.EventHandler(this.txtcargaid_TextChanged);
             // 
             // btnpagsig
             // 

@@ -111,6 +111,30 @@ namespace TF.WIN
             cuelloposicion.Items.Add(new ComboBoxOption("Lateral", 1));
             cuelloposicion.Items.Add(new ComboBoxOption("Rotado y Lateral", 2));
 
+            //Puntuacion del Tronco
+            cbotronco.Items.Add(new ComboBoxOption("1", 1));
+            cbotronco.Items.Add(new ComboBoxOption("2", 2));
+            cbotronco.Items.Add(new ComboBoxOption("3", 3));
+            cbotronco.Items.Add(new ComboBoxOption("4", 4));
+            cbotroncotorcion.Items.Add(new ComboBoxOption("Normal", 0));
+            cbotroncotorcion.Items.Add(new ComboBoxOption("Torsión", 1));
+            cbotroncotorcion.Items.Add(new ComboBoxOption("Inclinación Lateral", 1));
+            cbotroncotorcion.Items.Add(new ComboBoxOption("Torsión e Inclinación Lateral", 2));
+
+            //Puntuación de las Piernas
+            cbopiernas.Items.Add(new ComboBoxOption("1", 1));
+            cbopiernas.Items.Add(new ComboBoxOption("2", 2));
+
+            //Puntuación actividad Muscular ( Grupo B )
+            cboactmuscular2.Items.Add(new ComboBoxOption("0", 0));
+            cboactmuscular2.Items.Add(new ComboBoxOption("1", 1));
+
+            //Puntuación Carga / Fuerza (Grupo B)
+            cbocargafuerza2.Items.Add(new ComboBoxOption("0", 0));
+            cbocargafuerza2.Items.Add(new ComboBoxOption("1", 1));
+            cbocargafuerza2.Items.Add(new ComboBoxOption("2", 2));
+            cbocargafuerza2.Items.Add(new ComboBoxOption("3", 3));
+
             ObtenerMaximoIdRula();
         }
 
