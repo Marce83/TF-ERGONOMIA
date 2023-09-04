@@ -311,15 +311,15 @@ namespace TF.WIN
             ///////////                    NIVEL DE RIESGO Y ACTUACIÓN                             ///////////
 
 
-            DataTable dt3 = oRulaBC.RulaTablaCRdoBC(oRula);
-            //oRula.ValorA = int.Parse(rdoTablaA.Text);
-            //oRula.ValorB = int.Parse(rdoTablaB.Text);
+            //DataTable dt3 = oRulaBC.RulaTablaCRdoBC(oRula);
+            ////oRula.ValorA = int.Parse(rdoTablaA.Text);
+            ////oRula.ValorB = int.Parse(rdoTablaB.Text);
 
-            if (dt.Rows.Count > 0)
-            {
-                string resultadoTABLAC = dt3.Rows[0][0].ToString();
-                txtpuntuacionRula.Text = resultadoTABLAC;
-            }
+            //if (dt.Rows.Count > 0)
+            //{
+            //    string resultadoTABLAC = dt3.Rows[0][0].ToString();
+            //    txtpuntuacionRula.Text = resultadoTABLAC;
+            //}
 
 
             if (int.TryParse(txtmusculaturaA.Text, out int valorMusculaturaA) &&
@@ -339,6 +339,18 @@ namespace TF.WIN
                 TotalGrupoB.Text = SumaTablaB.ToString();
             }
 
+
+
+
+            DataTable dt3 = oRulaBC.RulaTablaCRdoBC(oRula);
+            //oRula.ValorA = int.Parse(rdoTablaA.Text);
+            //oRula.ValorB = int.Parse(rdoTablaB.Text);
+
+            if (dt.Rows.Count > 0)
+            {
+                string resultadoTABLAC = dt3.Rows[0][0].ToString();
+                txtpuntuacionRula.Text = resultadoTABLAC;
+            }
 
 
 
