@@ -43,7 +43,7 @@ namespace TF.WIN
             this.btnpagant = new System.Windows.Forms.Button();
             this.txtPuntuacionRula = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtNivelDeRiesgo = new MaterialSkin.Controls.MaterialTextBox2();
-            this.txtactuacion = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtActuacion = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtcuelloB = new MaterialSkin.Controls.MaterialTextBox2();
             this.txttroncoB = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtpiernaB = new MaterialSkin.Controls.MaterialTextBox2();
@@ -361,34 +361,34 @@ namespace TF.WIN
             this.txtNivelDeRiesgo.TrailingIcon = null;
             this.txtNivelDeRiesgo.UseSystemPasswordChar = false;
             // 
-            // txtactuacion
+            // txtActuacion
             // 
-            this.txtactuacion.AnimateReadOnly = false;
-            this.txtactuacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtactuacion.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtactuacion.Depth = 0;
-            this.txtactuacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtactuacion.HideSelection = true;
-            this.txtactuacion.LeadingIcon = null;
-            this.txtactuacion.Location = new System.Drawing.Point(438, 670);
-            this.txtactuacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtactuacion.MaxLength = 32767;
-            this.txtactuacion.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtactuacion.Name = "txtactuacion";
-            this.txtactuacion.PasswordChar = '\0';
-            this.txtactuacion.PrefixSuffixText = null;
-            this.txtactuacion.ReadOnly = false;
-            this.txtactuacion.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtactuacion.SelectedText = "";
-            this.txtactuacion.SelectionLength = 0;
-            this.txtactuacion.SelectionStart = 0;
-            this.txtactuacion.ShortcutsEnabled = true;
-            this.txtactuacion.Size = new System.Drawing.Size(362, 48);
-            this.txtactuacion.TabIndex = 16;
-            this.txtactuacion.TabStop = false;
-            this.txtactuacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtactuacion.TrailingIcon = null;
-            this.txtactuacion.UseSystemPasswordChar = false;
+            this.txtActuacion.AnimateReadOnly = false;
+            this.txtActuacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtActuacion.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtActuacion.Depth = 0;
+            this.txtActuacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtActuacion.HideSelection = true;
+            this.txtActuacion.LeadingIcon = null;
+            this.txtActuacion.Location = new System.Drawing.Point(438, 670);
+            this.txtActuacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtActuacion.MaxLength = 32767;
+            this.txtActuacion.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtActuacion.Name = "txtActuacion";
+            this.txtActuacion.PasswordChar = '\0';
+            this.txtActuacion.PrefixSuffixText = null;
+            this.txtActuacion.ReadOnly = false;
+            this.txtActuacion.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtActuacion.SelectedText = "";
+            this.txtActuacion.SelectionLength = 0;
+            this.txtActuacion.SelectionStart = 0;
+            this.txtActuacion.ShortcutsEnabled = true;
+            this.txtActuacion.Size = new System.Drawing.Size(362, 48);
+            this.txtActuacion.TabIndex = 16;
+            this.txtActuacion.TabStop = false;
+            this.txtActuacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtActuacion.TrailingIcon = null;
+            this.txtActuacion.UseSystemPasswordChar = false;
             // 
             // txtcuelloB
             // 
@@ -1096,7 +1096,7 @@ namespace TF.WIN
             this.Controls.Add(this.btnpagant);
             this.Controls.Add(this.txtPuntuacionRula);
             this.Controls.Add(this.txtNivelDeRiesgo);
-            this.Controls.Add(this.txtactuacion);
+            this.Controls.Add(this.txtActuacion);
             this.Controls.Add(this.txtcuelloB);
             this.Controls.Add(this.txttroncoB);
             this.Controls.Add(this.txtpiernaB);
@@ -1153,7 +1153,7 @@ namespace TF.WIN
         private System.Windows.Forms.Button btnpagant;
         private MaterialSkin.Controls.MaterialTextBox2 txtPuntuacionRula;
         private MaterialSkin.Controls.MaterialTextBox2 txtNivelDeRiesgo;
-        private MaterialSkin.Controls.MaterialTextBox2 txtactuacion;
+        private MaterialSkin.Controls.MaterialTextBox2 txtActuacion;
         private MaterialSkin.Controls.MaterialTextBox2 txtcuelloB;
         private MaterialSkin.Controls.MaterialTextBox2 txttroncoB;
         private MaterialSkin.Controls.MaterialTextBox2 txtpiernaB;
