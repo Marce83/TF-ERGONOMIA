@@ -340,17 +340,33 @@ namespace TF.WIN
             }
 
 
-
-
-            DataTable dt3 = oRulaBC.RulaTablaCRdoBC(oRula);
-            //oRula.ValorA = int.Parse(rdoTablaA.Text);
-            //oRula.ValorB = int.Parse(rdoTablaB.Text);
-
-            if (dt.Rows.Count > 0)
+            if (int.Parse(TotalGrupoA.Text) < 8 || int.Parse(TotalGrupoB.Text) < 7)
             {
-                string resultadoTABLAC = dt3.Rows[0][0].ToString();
-                txtpuntuacionRula.Text = resultadoTABLAC;
+
+                oRula.ValorTablaA = int.Parse(TotalGrupoA.Text);
+                oRula.ValorTablaB = int.Parse(TotalGrupoB.Text);
+
+                DataTable dt3 = oRulaBC.RulaTablaCRdoBC(oRula);
+                
+                if (dt3.Rows.Count > 0)
+                {
+                    string resultadoTABLAC = dt3.Rows[0][0].ToString();
+                    txtpuntuacionRula.Text = resultadoTABLAC;
+                }
+   
             }
+            else if (int.Parse(TotalGrupoA.Text) > 8 || int.Parse(TotalGrupoB.Text) > 7)
+            {
+                txtpuntuacionRula.Text = "7";
+            }
+
+
+
+            //if (txtpuntuacionRula.Text = )
+            //{
+            
+ 
+            //}
 
 
 

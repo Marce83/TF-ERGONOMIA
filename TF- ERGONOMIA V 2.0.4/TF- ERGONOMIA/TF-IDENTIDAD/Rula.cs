@@ -32,6 +32,7 @@ namespace TF.ENTITIES
         public int ValorB { get; set; }
         public int ValorC { get; set; }
 
-
+        public int ValorTablaA { get; set; }
+        public int ValorTablaB { get; set; }
     }
 }
