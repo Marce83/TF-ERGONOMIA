@@ -18,6 +18,7 @@ using System.IO;
 using iTextSharp.tool.xml.css.parser.state;
 using TF.ENTITIES;
 using TF.BC;
+using System.Diagnostics.Eventing.Reader;
 
 namespace TF.WIN
 {
@@ -171,8 +172,8 @@ namespace TF.WIN
             paginahtml_texto = paginahtml_texto.Replace("@txtpiernaB", txtpiernaB.Text);
             paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaB", txtmusculaturaB.Text);
             paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaB", txtcargafuerzaB.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionRula", txtpuntuacionRula.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtniveldeRiesgo", txtniveldeRiesgo.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionRula", txtPuntuacionRula.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtniveldeRiesgo", txtNivelDeRiesgo.Text);
             paginahtml_texto = paginahtml_texto.Replace("@txtactuacion", txtactuacion.Text);
 
 
@@ -351,26 +352,28 @@ namespace TF.WIN
                 if (dt3.Rows.Count > 0)
                 {
                     string resultadoTABLAC = dt3.Rows[0][0].ToString();
-                    txtpuntuacionRula.Text = resultadoTABLAC;
+                    txtPuntuacionRula.Text = resultadoTABLAC;
                 }
    
             }
             else if (int.Parse(TotalGrupoA.Text) > 8 || int.Parse(TotalGrupoB.Text) > 7)
             {
-                txtpuntuacionRula.Text = "7";
+                txtPuntuacionRula.Text = "7";
             }
 
-
-
-            //if (txtpuntuacionRula.Text = )
-            //{
-            
- 
-            //}
-
-
-
-
+            if (int.Parse(txtPuntuacionRula.Text) == 1 && int.Parse(txtPuntuacionRula.Text) == 2)
+            {
+                txtNivelDeRiesgo.Text = "1";
+            }
+            else if (int.Parse(txtPuntuacionRula.Text) == 3 && int.Parse(txtPuntuacionRula.Text) == 4)
+            {
+                txtNivelDeRiesgo.Text = "2";
+            }
+            else if (int.Parse(txtPuntuacionRula.Text) == 5 && int.Parse(txtPuntuacionRula.Text) == 6)
+            {
+                txtNivelDeRiesgo.Text = "3";
+            }
+            else txtNivelDeRiesgo.Text = "4";
         }
 
         public void ObtenerMaximoIdRula()
