@@ -299,7 +299,8 @@ namespace TF.DAC
                 sqlCnn.ConnectionString = conectionString;
                 SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
                 sqlCom.CommandType = CommandType.StoredProcedure;
-                sqlCom.Parameters.Add("@cargaId", SqlDbType.NVarChar).Value = oRula.cargaId;
+                sqlCom.Parameters.Add("@ValorTablaA", SqlDbType.Int).Value = oRula.ValorA;
+                sqlCom.Parameters.Add("@ValorTablaB", SqlDbType.Int).Value = oRula.ValorB;
                 sqlCnn.Open();
                 DataSet ds = new DataSet();
                 SqlDataAdapter DA = new SqlDataAdapter();

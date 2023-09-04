@@ -24,5 +24,14 @@ namespace TF.ENTITIES
         public int Cargafuerzab { get; set; }
         public int puntuacionRula { get; set; }
         public int niveldeRiesgo { get; set; }
+
+
+        // Resultados VALOR Tablas A, B y C //
+
+        public int ValorA { get; set; }
+        public int ValorB { get; set; }
+        public int ValorC { get; set; }
+
+
     }
 }

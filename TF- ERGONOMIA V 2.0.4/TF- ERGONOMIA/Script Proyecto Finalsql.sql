@@ -395,6 +395,38 @@ GO
 
 use ProyectoFinal
 go
+CREATE OR ALTER PROCEDURE SP_Rula_ResultadoTablaB
+@cargaId int
+AS 
+BEGIn
+SELECT rtb.Cuello,rtb.Tronco,rtb.Piernas,rtb.Valor FROM RulaTablaB rtb
+INNER JOIN dbo.RulaTablaCompleta rtc ON rtc.Cuellob = rtb.Cuello
+AND rtc.Tronco = rtb.Tronco
+AND	rtc.Piernas = rtb.Piernas
+WHERE rtc.cargaId = @cargaId
+END
+GO
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_Rula_ResultadoTablaC
+@ValorTablaA int,
+@ValorTablaB int
+AS 
+BEGIn
+SELECT Valor FROM dbo.RulaTablaC
+WHERE  TablaA =@ValorTablaA
+and TablaB =@ValorTablaB
+END
+GO
+
+select*from RulaTablaC
+
+
+
+
+use ProyectoFinal
+go
 CREATE OR ALTER PROCEDURE SP_RULA_GetAll
 AS
 BEGIN
@@ -670,9 +702,11 @@ insert into RulaTablaB values (6,6,1,9)
 insert into RulaTablaB values (6,6,2,9)
 GO	
 
+use ProyectoFinal
+go
 CREATE TABLE RulaTablaC(
-TablaB INT,
 TablaA INT,
+TablaB INT,
 Valor INT)
 GO	
 

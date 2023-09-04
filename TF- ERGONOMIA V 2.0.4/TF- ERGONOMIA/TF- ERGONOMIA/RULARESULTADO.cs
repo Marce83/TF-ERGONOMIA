@@ -289,12 +289,15 @@ namespace TF.WIN
 
             ///////////                    NIVEL DE RIESGO Y ACTUACIÓN                             ///////////
 
-            DataTable dt3 = oRulaBC.RulaTablaCRdoBC(oRula);
 
-            if (dt3.Rows.Count > 0)
+            DataTable dt3 = oRulaBC.RulaTablaCRdoBC(oRula);
+            oRula.ValorA = int.Parse(rdoTablaA.Text);
+            oRula.ValorB = int.Parse(rdoTablaB.Text);
+
+            if (dt.Rows.Count > 0)
             {
-                string resultado = dt3.Rows[0][3].ToString();
-                txtpuntuacionRula.Text = resultado;
+                string resultadoTABLAC = dt.Rows[0][3].ToString();
+                txtpuntuacionRula.Text = resultadoTABLAC;
             }
 
 
@@ -306,28 +309,19 @@ namespace TF.WIN
 
                 if (dt1.Rows.Count > 0)
                 {
-                    string resultado = dt1.Rows[0][4].ToString();
-                    rdoTablaA.Text = resultado;
+                    string resultadoVALORTABLAA = dt1.Rows[0][4].ToString();
+                    oRula.ValorA = int.Parse(resultadoVALORTABLAA);
+                    rdoTablaA.Text = oRula.ValorA.ToString();
                 }
 
             DataTable dt2 = oRulaBC.RulaTablaBRdoBC(oRula);
 
             if (dt2.Rows.Count > 0)
             {
-                string resultado = dt2.Rows[0][3].ToString();
-                rdoTablaB.Text = resultado;
+                string resultadoVALORTABLAB = dt2.Rows[0][3].ToString();
+                oRula.ValorB= int.Parse(resultadoVALORTABLAB);
+                rdoTablaB.Text = resultadoVALORTABLAB.ToString();
             }
-
-
-
-
-
-
-
-
-
-
-
 
         }
 
@@ -344,6 +338,20 @@ namespace TF.WIN
             }
 
         }
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
 
 
         private void btnpagant_Click(object sender, EventArgs e)
