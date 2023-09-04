@@ -286,23 +286,6 @@ namespace TF.WIN
                 txtcargafuerzaB.Text = resultado;
             }
 
-
-            ///////////                    NIVEL DE RIESGO Y ACTUACIÓN                             ///////////
-
-
-            DataTable dt3 = oRulaBC.RulaTablaCRdoBC(oRula);
-            oRula.ValorA = int.Parse(rdoTablaA.Text);
-            oRula.ValorB = int.Parse(rdoTablaB.Text);
-
-            if (dt.Rows.Count > 0)
-            {
-                string resultadoTABLAC = dt.Rows[0][3].ToString();
-                txtpuntuacionRula.Text = resultadoTABLAC;
-            }
-
-
-
-
             ///////////                    RESULTADO TABLA A Y B                             ///////////
 
             DataTable dt1 = oRulaBC.RulaTablaARdoBC(oRula);
@@ -322,6 +305,20 @@ namespace TF.WIN
                 oRula.ValorB= int.Parse(resultadoVALORTABLAB);
                 rdoTablaB.Text = resultadoVALORTABLAB.ToString();
             }
+
+            ///////////                    NIVEL DE RIESGO Y ACTUACIÓN                             ///////////
+
+
+            DataTable dt3 = oRulaBC.RulaTablaCRdoBC(oRula);
+            //oRula.ValorA = int.Parse(rdoTablaA.Text);
+            //oRula.ValorB = int.Parse(rdoTablaB.Text);
+
+            if (dt.Rows.Count > 0)
+            {
+                string resultadoTABLAC = dt3.Rows[0][3].ToString();
+                txtpuntuacionRula.Text = resultadoTABLAC;
+            }
+
 
         }
 
