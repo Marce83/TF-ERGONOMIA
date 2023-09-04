@@ -34,6 +34,8 @@ namespace TF.WIN
         }
 
         private int fileCounter = 0;
+        private int SumaTablaA = 0;
+        private int SumaTablaB = 0;
 
         private void RULARESULTADO_Load(object sender, EventArgs e)
         {
@@ -315,9 +317,30 @@ namespace TF.WIN
 
             if (dt.Rows.Count > 0)
             {
-                string resultadoTABLAC = dt3.Rows[0][3].ToString();
+                string resultadoTABLAC = dt3.Rows[0][0].ToString();
                 txtpuntuacionRula.Text = resultadoTABLAC;
             }
+
+
+            if (int.TryParse(txtmusculaturaA.Text, out int valorMusculaturaA) &&
+                  int.TryParse(txtcargafuerzaA.Text, out int valorCargaFuerzaA) &&
+                  int.TryParse(rdoTablaA.Text, out int valorTablaA))
+            {
+                SumaTablaA = valorMusculaturaA + valorCargaFuerzaA + valorTablaA;
+                TotalGrupoA.Text = SumaTablaA.ToString();
+            }
+
+
+            if (int.TryParse(txtmusculaturaB.Text, out int valorMusculaturaB) &&
+                int.TryParse(txtcargafuerzaB.Text, out int valorCargaFuerzaB) &&
+                int.TryParse(rdoTablaB.Text, out int valorTablaB))
+            {
+                SumaTablaB = valorMusculaturaB + valorCargaFuerzaB + valorTablaB;
+                TotalGrupoB.Text = SumaTablaB.ToString();
+            }
+
+
+
 
 
         }

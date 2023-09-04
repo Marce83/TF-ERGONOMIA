@@ -75,6 +75,10 @@ namespace TF.WIN
             this.materialLabel21 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel22 = new MaterialSkin.Controls.MaterialLabel();
             this.rdoTablaB = new MaterialSkin.Controls.MaterialTextBox();
+            this.TotalGrupoB = new MaterialSkin.Controls.MaterialTextBox2();
+            this.TotalGrupoA = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel23 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel24 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -141,7 +145,7 @@ namespace TF.WIN
             this.btnRecuperarCarga.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnRecuperarCarga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecuperarCarga.Location = new System.Drawing.Point(931, 192);
-            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecuperarCarga.Name = "btnRecuperarCarga";
             this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 43);
             this.btnRecuperarCarga.TabIndex = 0;
@@ -253,7 +257,7 @@ namespace TF.WIN
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.Location = new System.Drawing.Point(485, 971);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(155, 43);
             this.btnSalir.TabIndex = 19;
@@ -271,7 +275,7 @@ namespace TF.WIN
             this.btnobtenerinforme.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnobtenerinforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnobtenerinforme.Location = new System.Drawing.Point(811, 971);
-            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4);
             this.btnobtenerinforme.Name = "btnobtenerinforme";
             this.btnobtenerinforme.Size = new System.Drawing.Size(155, 43);
             this.btnobtenerinforme.TabIndex = 17;
@@ -289,7 +293,7 @@ namespace TF.WIN
             this.btnpagant.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnpagant.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnpagant.Location = new System.Drawing.Point(648, 971);
-            this.btnpagant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnpagant.Margin = new System.Windows.Forms.Padding(4);
             this.btnpagant.Name = "btnpagant";
             this.btnpagant.Size = new System.Drawing.Size(155, 43);
             this.btnpagant.TabIndex = 18;
@@ -905,7 +909,7 @@ namespace TF.WIN
             this.rdoTablaA.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.rdoTablaA.LeadingIcon = null;
             this.rdoTablaA.Location = new System.Drawing.Point(295, 473);
-            this.rdoTablaA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoTablaA.Margin = new System.Windows.Forms.Padding(4);
             this.rdoTablaA.MaxLength = 50;
             this.rdoTablaA.MouseState = MaterialSkin.MouseState.OUT;
             this.rdoTablaA.Multiline = false;
@@ -949,7 +953,7 @@ namespace TF.WIN
             this.rdoTablaB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.rdoTablaB.LeadingIcon = null;
             this.rdoTablaB.Location = new System.Drawing.Point(737, 471);
-            this.rdoTablaB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoTablaB.Margin = new System.Windows.Forms.Padding(4);
             this.rdoTablaB.MaxLength = 50;
             this.rdoTablaB.MouseState = MaterialSkin.MouseState.OUT;
             this.rdoTablaB.Multiline = false;
@@ -960,6 +964,91 @@ namespace TF.WIN
             this.rdoTablaB.Text = "";
             this.rdoTablaB.TrailingIcon = null;
             // 
+            // TotalGrupoB
+            // 
+            this.TotalGrupoB.AnimateReadOnly = false;
+            this.TotalGrupoB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.TotalGrupoB.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TotalGrupoB.Depth = 0;
+            this.TotalGrupoB.Enabled = false;
+            this.TotalGrupoB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.TotalGrupoB.HideSelection = true;
+            this.TotalGrupoB.LeadingIcon = null;
+            this.TotalGrupoB.LeaveOnEnterKey = true;
+            this.TotalGrupoB.Location = new System.Drawing.Point(731, 718);
+            this.TotalGrupoB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TotalGrupoB.MaxLength = 32767;
+            this.TotalGrupoB.MouseState = MaterialSkin.MouseState.OUT;
+            this.TotalGrupoB.Name = "TotalGrupoB";
+            this.TotalGrupoB.PasswordChar = '\0';
+            this.TotalGrupoB.PrefixSuffixText = null;
+            this.TotalGrupoB.ReadOnly = true;
+            this.TotalGrupoB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TotalGrupoB.SelectedText = "";
+            this.TotalGrupoB.SelectionLength = 0;
+            this.TotalGrupoB.SelectionStart = 0;
+            this.TotalGrupoB.ShortcutsEnabled = true;
+            this.TotalGrupoB.Size = new System.Drawing.Size(143, 48);
+            this.TotalGrupoB.TabIndex = 167;
+            this.TotalGrupoB.TabStop = false;
+            this.TotalGrupoB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TotalGrupoB.TrailingIcon = null;
+            this.TotalGrupoB.UseSystemPasswordChar = false;
+            // 
+            // TotalGrupoA
+            // 
+            this.TotalGrupoA.AnimateReadOnly = false;
+            this.TotalGrupoA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.TotalGrupoA.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TotalGrupoA.Depth = 0;
+            this.TotalGrupoA.Enabled = false;
+            this.TotalGrupoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.TotalGrupoA.HideSelection = true;
+            this.TotalGrupoA.LeadingIcon = null;
+            this.TotalGrupoA.Location = new System.Drawing.Point(289, 703);
+            this.TotalGrupoA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TotalGrupoA.MaxLength = 32767;
+            this.TotalGrupoA.MouseState = MaterialSkin.MouseState.OUT;
+            this.TotalGrupoA.Name = "TotalGrupoA";
+            this.TotalGrupoA.PasswordChar = '\0';
+            this.TotalGrupoA.PrefixSuffixText = null;
+            this.TotalGrupoA.ReadOnly = true;
+            this.TotalGrupoA.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TotalGrupoA.SelectedText = "";
+            this.TotalGrupoA.SelectionLength = 0;
+            this.TotalGrupoA.SelectionStart = 0;
+            this.TotalGrupoA.ShortcutsEnabled = true;
+            this.TotalGrupoA.Size = new System.Drawing.Size(119, 48);
+            this.TotalGrupoA.TabIndex = 166;
+            this.TotalGrupoA.TabStop = false;
+            this.TotalGrupoA.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TotalGrupoA.TrailingIcon = null;
+            this.TotalGrupoA.UseSystemPasswordChar = false;
+            // 
+            // materialLabel23
+            // 
+            this.materialLabel23.AutoSize = true;
+            this.materialLabel23.Depth = 0;
+            this.materialLabel23.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel23.Location = new System.Drawing.Point(472, 732);
+            this.materialLabel23.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel23.Name = "materialLabel23";
+            this.materialLabel23.Size = new System.Drawing.Size(121, 19);
+            this.materialLabel23.TabIndex = 169;
+            this.materialLabel23.Text = "TOTAL GRUPO B";
+            // 
+            // materialLabel24
+            // 
+            this.materialLabel24.AutoSize = true;
+            this.materialLabel24.Depth = 0;
+            this.materialLabel24.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel24.Location = new System.Drawing.Point(13, 718);
+            this.materialLabel24.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel24.Name = "materialLabel24";
+            this.materialLabel24.Size = new System.Drawing.Size(121, 19);
+            this.materialLabel24.TabIndex = 168;
+            this.materialLabel24.Text = "TOTAL GRUPO A";
+            // 
             // RULARESULTADO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -967,6 +1056,10 @@ namespace TF.WIN
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1153, 1088);
+            this.Controls.Add(this.TotalGrupoB);
+            this.Controls.Add(this.TotalGrupoA);
+            this.Controls.Add(this.materialLabel23);
+            this.Controls.Add(this.materialLabel24);
             this.Controls.Add(this.materialLabel22);
             this.Controls.Add(this.rdoTablaB);
             this.Controls.Add(this.materialLabel21);
@@ -1073,5 +1166,9 @@ namespace TF.WIN
         private MaterialSkin.Controls.MaterialLabel materialLabel21;
         private MaterialSkin.Controls.MaterialLabel materialLabel22;
         private MaterialSkin.Controls.MaterialTextBox rdoTablaB;
+        private MaterialSkin.Controls.MaterialTextBox2 TotalGrupoB;
+        private MaterialSkin.Controls.MaterialTextBox2 TotalGrupoA;
+        private MaterialSkin.Controls.MaterialLabel materialLabel23;
+        private MaterialSkin.Controls.MaterialLabel materialLabel24;
     }
 }
