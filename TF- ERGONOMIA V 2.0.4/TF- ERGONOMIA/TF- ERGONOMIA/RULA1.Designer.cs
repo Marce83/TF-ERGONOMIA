@@ -331,6 +331,7 @@
             this.txtantebrazofinal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtantebrazofinal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtantebrazofinal.Depth = 0;
+            this.txtantebrazofinal.Enabled = false;
             this.txtantebrazofinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtantebrazofinal.HideSelection = true;
             this.txtantebrazofinal.LeadingIcon = null;
@@ -372,6 +373,7 @@
             this.txtBrazoFinal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtBrazoFinal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtBrazoFinal.Depth = 0;
+            this.txtBrazoFinal.Enabled = false;
             this.txtBrazoFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtBrazoFinal.HideSelection = true;
             this.txtBrazoFinal.LeadingIcon = null;
@@ -540,6 +542,7 @@
             this.txtmunecafinal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtmunecafinal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtmunecafinal.Depth = 0;
+            this.txtmunecafinal.Enabled = false;
             this.txtmunecafinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtmunecafinal.HideSelection = true;
             this.txtmunecafinal.LeadingIcon = null;
@@ -694,6 +697,7 @@
             this.txtgirofinal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtgirofinal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtgirofinal.Depth = 0;
+            this.txtgirofinal.Enabled = false;
             this.txtgirofinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtgirofinal.HideSelection = true;
             this.txtgirofinal.LeadingIcon = null;
@@ -746,6 +750,7 @@
             this.txtcargafuerzafinal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtcargafuerzafinal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtcargafuerzafinal.Depth = 0;
+            this.txtcargafuerzafinal.Enabled = false;
             this.txtcargafuerzafinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtcargafuerzafinal.HideSelection = true;
             this.txtcargafuerzafinal.LeadingIcon = null;
@@ -787,6 +792,7 @@
             this.actividadgrupoAfinal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.actividadgrupoAfinal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.actividadgrupoAfinal.Depth = 0;
+            this.actividadgrupoAfinal.Enabled = false;
             this.actividadgrupoAfinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.actividadgrupoAfinal.HideSelection = true;
             this.actividadgrupoAfinal.LeadingIcon = null;
@@ -881,6 +887,7 @@
             this.txtcuellofinal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtcuellofinal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtcuellofinal.Depth = 0;
+            this.txtcuellofinal.Enabled = false;
             this.txtcuellofinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtcuellofinal.HideSelection = true;
             this.txtcuellofinal.LeadingIcon = null;
@@ -1088,6 +1095,7 @@
             this.txtcargafuerza2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtcargafuerza2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtcargafuerza2.Depth = 0;
+            this.txtcargafuerza2.Enabled = false;
             this.txtcargafuerza2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtcargafuerza2.HideSelection = true;
             this.txtcargafuerza2.LeadingIcon = null;
@@ -1143,7 +1151,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::TF.WIN.Properties.Resources.CARGA_FUERZA_GRUPO_B;
-            this.pictureBox8.Location = new System.Drawing.Point(17, 2740);
+            this.pictureBox8.Location = new System.Drawing.Point(17, 2749);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(744, 166);
@@ -1169,6 +1177,7 @@
             this.txtmuscular2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtmuscular2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtmuscular2.Depth = 0;
+            this.txtmuscular2.Enabled = false;
             this.txtmuscular2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtmuscular2.HideSelection = true;
             this.txtmuscular2.LeadingIcon = null;
@@ -1210,6 +1219,7 @@
             this.txtpiernasfinal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtpiernasfinal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtpiernasfinal.Depth = 0;
+            this.txtpiernasfinal.Enabled = false;
             this.txtpiernasfinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtpiernasfinal.HideSelection = true;
             this.txtpiernasfinal.LeadingIcon = null;
@@ -1238,7 +1248,7 @@
             this.materialLabel21.AutoSize = true;
             this.materialLabel21.Depth = 0;
             this.materialLabel21.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel21.Location = new System.Drawing.Point(769, 2108);
+            this.materialLabel21.Location = new System.Drawing.Point(770, 2099);
             this.materialLabel21.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel21.Name = "materialLabel21";
             this.materialLabel21.Size = new System.Drawing.Size(75, 19);
@@ -1304,6 +1314,7 @@
             this.txttroncofinal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txttroncofinal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txttroncofinal.Depth = 0;
+            this.txttroncofinal.Enabled = false;
             this.txttroncofinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txttroncofinal.HideSelection = true;
             this.txttroncofinal.LeadingIcon = null;
