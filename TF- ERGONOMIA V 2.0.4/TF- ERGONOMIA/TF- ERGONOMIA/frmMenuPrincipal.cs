@@ -119,6 +119,11 @@ namespace TF.WIN
             oRULA_PORTADA.Show();
         }
 
+
+
+
+
+
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
             LoadUserData();
@@ -213,6 +218,11 @@ namespace TF.WIN
             {
                 btnMetodo.Enabled = false;
             }
+        }
+
+        private void btnPuesto_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FrmPuestoTrabajocs());
         }
     }
 }
