@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TF.WIN
 {
-    public partial class FrmPuestoTrabajocs : Form
+    public partial class FrmPuestoTrabajo : Form
     {
-        public FrmPuestoTrabajocs()
+        public FrmPuestoTrabajo()
         {
             InitializeComponent();
         }

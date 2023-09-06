@@ -110,11 +110,11 @@
     <Compile Include="frmPerfilUsuarios.Designer.cs">
       <DependentUpon>frmPerfilUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPuestoTrabajocs.cs">
+    <Compile Include="FrmPuestoTrabajo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPuestoTrabajocs.Designer.cs">
-      <DependentUpon>FrmPuestoTrabajocs.cs</DependentUpon>
+    <Compile Include="FrmPuestoTrabajo.Designer.cs">
+      <DependentUpon>FrmPuestoTrabajo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRecuperarClave.cs">
       <SubType>Form</SubType>
@@ -202,8 +202,8 @@
     <EmbeddedResource Include="frmPerfilUsuarios.resx">
       <DependentUpon>frmPerfilUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPuestoTrabajocs.resx">
-      <DependentUpon>FrmPuestoTrabajocs.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPuestoTrabajo.resx">
+      <DependentUpon>FrmPuestoTrabajo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRecuperarClave.resx">
       <DependentUpon>frmRecuperarClave.cs</DependentUpon>

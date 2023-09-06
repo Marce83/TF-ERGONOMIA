@@ -222,7 +222,7 @@ namespace TF.WIN
 
         private void btnPuesto_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new FrmPuestoTrabajocs());
+            AbrirFormHija(new FrmPuestoTrabajo());
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace TF.WIN
 {
-    partial class FrmPuestoTrabajocs
+    partial class FrmPuestoTrabajo
     {
         /// <summary>
         /// Required designer variable.
