@@ -141,26 +141,26 @@ namespace TF.WIN
         private void btnpagsig_Click_1(object sender, EventArgs e)
         {
             {
-                RulaBC oRulaBC = new RulaBC();
-                Rula oRula = new Rula();
-                oRula.Actividadmusculara = int.Parse(actividadgrupoAfinal.Text);
-                oRula.Cargafuerzaa = int.Parse(txtcargafuerzafinal.Text);
-                oRula.cargaId = int.Parse(txtcargaid.Text);
-                oRula.Cuellob = int.Parse(txtcuellofinal.Text);
+                //RulaBC oRulaBC = new RulaBC();
+                //Rula oRula = new Rula();
+                //oRula.Actividadmusculara = int.Parse(actividadgrupoAfinal.Text);
+                //oRula.Cargafuerzaa = int.Parse(txtcargafuerzafinal.Text);
+                //oRula.cargaId = int.Parse(txtcargaid.Text);
+                //oRula.Cuellob = int.Parse(txtcuellofinal.Text);
 
 
-                var res = oRulaBC.UpdateRula2BC(oRula);
-                MessageBox.Show("Carga Guardada");
+                //var res = oRulaBC.UpdateRula2BC(oRula);
+                //MessageBox.Show("Carga Guardada");
 
-                // Pasar el ID de carga al siguiente formulario
-                RULA2 ORULA2 = new RULA2();
-                ORULA2.Show();
+                //// Pasar el ID de carga al siguiente formulario
+                //RULA2 ORULA2 = new RULA2();
+                //ORULA2.Show();
 
-                // Pasar el ID de carga al siguiente formulario
-                RULA3 ORULA3 = new RULA3();
-                ORULA3.Show();
+                //// Pasar el ID de carga al siguiente formulario
+                //RULA3 ORULA3 = new RULA3();
+                //ORULA3.Show();
 
-                Close();
+                //Close();
             }
         }
 

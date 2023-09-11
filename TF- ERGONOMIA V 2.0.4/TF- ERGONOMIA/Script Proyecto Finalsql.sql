@@ -346,15 +346,22 @@ GO
 use ProyectoFinal
 go
 
-CREATE PROCEDURE SP_Rula_updateRula1
+CREATE or Alter PROCEDURE SP_Rula_updateRula1
 @cargaId Int,
 @Brazo int,
 @Antebrazo int,
 @Muneca  INT,
-@Giro INT
+@Giro INT,
+@Actividadmusculara int,
+@Cargafuerzaa int,
+@Cuellob int,
+@Tronco int,
+@Piernas int,
+@Actividadmuscularb int,
+@Cargafuerzab int
 AS
 BEGIN
-	update RulaTablaCompleta set Brazo=@Brazo, Antebrazo=@Antebrazo, Muneca=@Muneca ,Giro=@Giro 
+	update RulaTablaCompleta set Brazo=@Brazo, Antebrazo=@Antebrazo, Muneca=@Muneca ,Giro=@Giro, Actividadmusculara=@Actividadmusculara , Cargafuerzaa  =@Cargafuerzaa , Cuellob = @Cuellob, Tronco=@Tronco , Piernas=@Piernas , Actividadmuscularb=@Actividadmuscularb, Cargafuerzab=@Cargafuerzab
 	where cargaId=@cargaId
 END
 GO
@@ -385,6 +392,38 @@ AND rtc.Giro = rta.Giro
 WHERE rtc.cargaId = @cargaId
 END
 GO
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_Rula_ResultadoTablaB
+@cargaId int
+AS 
+BEGIn
+SELECT rtb.Cuello,rtb.Tronco,rtb.Piernas,rtb.Valor FROM RulaTablaB rtb
+INNER JOIN dbo.RulaTablaCompleta rtc ON rtc.Cuellob = rtb.Cuello
+AND rtc.Tronco = rtb.Tronco
+AND	rtc.Piernas = rtb.Piernas
+WHERE rtc.cargaId = @cargaId
+END
+GO
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_Rula_ResultadoTablaC
+@ValorTablaA int,
+@ValorTablaB int
+AS 
+BEGIn
+SELECT Valor FROM dbo.RulaTablaC
+WHERE  TablaA =@ValorTablaA
+and TablaB =@ValorTablaB
+END
+GO
+
+select*from RulaTablaC
+
+
+
 
 use ProyectoFinal
 go
@@ -663,9 +702,11 @@ insert into RulaTablaB values (6,6,1,9)
 insert into RulaTablaB values (6,6,2,9)
 GO	
 
+use ProyectoFinal
+go
 CREATE TABLE RulaTablaC(
-TablaB INT,
 TablaA INT,
+TablaB INT,
 Valor INT)
 GO	
 

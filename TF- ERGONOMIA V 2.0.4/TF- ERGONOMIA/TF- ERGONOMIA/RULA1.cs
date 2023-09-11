@@ -1,4 +1,5 @@
-﻿using MaterialSkin.Controls;
+﻿
+using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,8 +44,8 @@ namespace TF.WIN
 
 
             // Puntuación Ante Brazo  
-            antebrazoposicion.Items.Add(new ComboBoxOption("2", 2));
             antebrazoposicion.Items.Add(new ComboBoxOption("1", 1));
+            antebrazoposicion.Items.Add(new ComboBoxOption("2", 2));
             antebrazocruza.Items.Add(new ComboBoxOption("Normal", 0));
             antebrazocruza.Items.Add(new ComboBoxOption("Despejado del Cuerpo", 1));
             antebrazocruza.Items.Add(new ComboBoxOption("Cruza Línea del Cuerpo", 1));
@@ -110,6 +111,30 @@ namespace TF.WIN
             cuelloposicion.Items.Add(new ComboBoxOption("Rotado", 1));
             cuelloposicion.Items.Add(new ComboBoxOption("Lateral", 1));
             cuelloposicion.Items.Add(new ComboBoxOption("Rotado y Lateral", 2));
+
+            //Puntuacion del Tronco
+            cbotronco.Items.Add(new ComboBoxOption("1", 1));
+            cbotronco.Items.Add(new ComboBoxOption("2", 2));
+            cbotronco.Items.Add(new ComboBoxOption("3", 3));
+            cbotronco.Items.Add(new ComboBoxOption("4", 4));
+            cbotroncotorcion.Items.Add(new ComboBoxOption("Normal", 0));
+            cbotroncotorcion.Items.Add(new ComboBoxOption("Torsión", 1));
+            cbotroncotorcion.Items.Add(new ComboBoxOption("Inclinación Lateral", 1));
+            cbotroncotorcion.Items.Add(new ComboBoxOption("Torsión e Inclinación Lateral", 2));
+
+            //Puntuación de las Piernas
+            cbopiernas.Items.Add(new ComboBoxOption("1", 1));
+            cbopiernas.Items.Add(new ComboBoxOption("2", 2));
+
+            //Puntuación actividad Muscular ( Grupo B )
+            cboactmuscular2.Items.Add(new ComboBoxOption("0", 0));
+            cboactmuscular2.Items.Add(new ComboBoxOption("1", 1));
+
+            //Puntuación Carga / Fuerza (Grupo B)
+            cbocargafuerza2.Items.Add(new ComboBoxOption("0", 0));
+            cbocargafuerza2.Items.Add(new ComboBoxOption("1", 1));
+            cbocargafuerza2.Items.Add(new ComboBoxOption("2", 2));
+            cbocargafuerza2.Items.Add(new ComboBoxOption("3", 3));
 
             ObtenerMaximoIdRula();
         }
@@ -304,6 +329,76 @@ namespace TF.WIN
         //    oRULA2.Show();
 
         //}
+        private void cbotronco_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoTronco();
+        }
+
+        private void cbotroncotorcion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoTronco();
+        }
+
+        private void MostrarResultadoTronco()
+        {
+            int resultado = ObtenerNumeroSeleccionado(cbotronco) + ObtenerNumeroSeleccionado(cbotroncotorcion);
+
+            if (resultado == 0)
+            {
+                resultado = 0;
+            }
+
+            txttroncofinal.Text = resultado.ToString();
+        }
+
+        private void cbopiernas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoPierna();
+        }
+        
+        private void MostrarResultadoPierna()
+        {
+            int resultadoPierna = ObtenerNumeroSeleccionado(cbopiernas);
+
+            if (resultadoPierna == 0)
+            {
+                resultadoPierna = 0;
+            }
+
+            txtpiernasfinal.Text = resultadoPierna.ToString();
+        }
+
+        private void cboactmuscular2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoMuscular2();
+        }
+
+        private void MostrarResultadoMuscular2()
+        {
+            int resultadoMuscular2 = ObtenerNumeroSeleccionado(cboactmuscular2);
+
+            if (resultadoMuscular2 == 0)
+            {
+                resultadoMuscular2 = 0;
+            }
+            txtmuscular2.Text = resultadoMuscular2.ToString();
+        }
+
+        private void cbocargafuerza2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MostrarResultadoFuerza2();
+        }
+
+        private void MostrarResultadoFuerza2()
+        {
+            int resultadoFuerza2 = ObtenerNumeroSeleccionado(cbocargafuerza2);
+
+            if (resultadoFuerza2 == 0)
+            {
+                resultadoFuerza2 = 0;
+            }
+            txtcargafuerza2.Text = resultadoFuerza2.ToString();
+        }
 
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -316,13 +411,20 @@ namespace TF.WIN
             oRula.cargaId = int.Parse(txtcargaid.Text);
             oRula.Muneca = int.Parse(txtmunecafinal.Text);
             oRula.Giro = int.Parse(txtgirofinal.Text);
+            oRula.Actividadmusculara = int.Parse(actividadgrupoAfinal.Text);
+            oRula.Cargafuerzaa = int.Parse(txtcargafuerzafinal.Text);
+            oRula.Cuellob = int.Parse(txtcuellofinal.Text);
+            oRula.Tronco = int.Parse(txttroncofinal.Text);
+            oRula.Piernas = int.Parse(txtpiernasfinal.Text);
+            oRula.Actividadmuscularb = int.Parse(txtmuscular2.Text);
+            oRula.Cargafuerzab = int.Parse(txtcargafuerza2.Text);
 
             var res = oRulaBC.UpdateRula1BC(oRula);
             MessageBox.Show("Carga Guardada");
 
             // Pasar al siguiente formulario
-            RULA2 ORULA2 = new RULA2();
-            ORULA2.Show();
+            RULARESULTADO ORULARESULTADO = new RULARESULTADO();
+            ORULARESULTADO.Show();
 
             Close();
 
@@ -332,6 +434,7 @@ namespace TF.WIN
         {
             Close();
         }
+
     }
 }
 

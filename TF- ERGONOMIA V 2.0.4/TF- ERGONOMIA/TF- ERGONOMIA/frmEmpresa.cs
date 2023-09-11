@@ -64,7 +64,7 @@ namespace TF.WIN
             {
                 if (txtCUIT.Text.Length == 11)
                 {
-                    if (txtNombre.Text != string.Empty)
+                    if (txtNombreEmpresa.Text != string.Empty)
                     {
                         if (cboCondFiscal.Text != string.Empty)
                         {
@@ -89,7 +89,7 @@ namespace TF.WIN
                                                                  try
                                                                  {
                                                                     oemp.CUIT = txtCUIT.Text;
-                                                                    oemp.Nombre = txtNombre.Text;
+                                                                    oemp.Nombre = txtNombreEmpresa.Text;
                                                                     oemp.Condicion_Fiscal = cboCondFiscal.Text;
                                                                     oemp.Actividad_Empresarial = txtActEmpr.Text;
                                                                     oemp.Direccion = txtDireccion.Text;
@@ -154,7 +154,7 @@ namespace TF.WIN
             txtCUIT.Text = string.Empty;
             txtCUIT.ReadOnly = false;
             txtCUIT.Focus();
-            txtNombre.Text = string.Empty;
+            txtNombreEmpresa.Text = string.Empty;
             cboCondFiscal.SelectedIndex = 0;
             txtActEmpr.SelectedIndex = 0;
             txtDireccion.Text = string.Empty;
@@ -187,7 +187,7 @@ namespace TF.WIN
                 {
                     Empresas oemp = new Empresas();
                     oemp.CUIT = txtCUIT.Text;
-                    oemp.Nombre = txtNombre.Text;
+                    oemp.Nombre = txtNombreEmpresa.Text;
                     oemp.Condicion_Fiscal = cboCondFiscal.Text;
                     oemp.Actividad_Empresarial = txtActEmpr.Text;
                     oemp.Direccion = txtDireccion.Text;
@@ -215,7 +215,7 @@ namespace TF.WIN
         {
                 txtCUIT.Text = dgvCargaEmpresas.CurrentRow.Cells[0].Value.ToString();
                 txtCUIT.ReadOnly = true;
-                txtNombre.Text = dgvCargaEmpresas.CurrentRow.Cells[1].Value.ToString();
+                txtNombreEmpresa.Text = dgvCargaEmpresas.CurrentRow.Cells[1].Value.ToString();
                 cboCondFiscal.Text = dgvCargaEmpresas.CurrentRow.Cells[2].Value.ToString();
                 txtActEmpr.Text = dgvCargaEmpresas.CurrentRow.Cells[3].Value.ToString();
                 txtDireccion.Text = dgvCargaEmpresas.CurrentRow.Cells[4].Value.ToString();

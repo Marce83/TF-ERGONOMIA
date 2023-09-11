@@ -18,6 +18,7 @@ using System.IO;
 using iTextSharp.tool.xml.css.parser.state;
 using TF.ENTITIES;
 using TF.BC;
+using System.Diagnostics.Eventing.Reader;
 
 namespace TF.WIN
 {
@@ -34,6 +35,8 @@ namespace TF.WIN
         }
 
         private int fileCounter = 0;
+        private int SumaTablaA = 0;
+        private int SumaTablaB = 0;
 
         private void RULARESULTADO_Load(object sender, EventArgs e)
         {
@@ -169,9 +172,9 @@ namespace TF.WIN
             paginahtml_texto = paginahtml_texto.Replace("@txtpiernaB", txtpiernaB.Text);
             paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaB", txtmusculaturaB.Text);
             paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaB", txtcargafuerzaB.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionRula", txtpuntuacionRula.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtniveldeRiesgo", txtniveldeRiesgo.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtactuacion", txtactuacion.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionRula", txtPuntuacionRula.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtniveldeRiesgo", txtNivelDeRiesgo.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtactuacion", txtActuacion.Text);
 
 
 
@@ -286,39 +289,101 @@ namespace TF.WIN
                 txtcargafuerzaB.Text = resultado;
             }
 
-
-            ///////////                    NIVEL DE RIESGO Y ACTUACIÓN                             ///////////
-
-            if (txtbrazo.Text == "1" || txtbrazo.Text == "2")
-            {
-                txtpuntuacionRula.Text = "3";
-                txtniveldeRiesgo.Text = "4";
-            }
-
-            if (txtbrazo.Text == "3" || txtbrazo.Text == "4")
-            {
-                txtpuntuacionRula.Text = "4";
-                txtniveldeRiesgo.Text = "5";
-            }
-
-            if (txtbrazo.Text == "5")
-            {
-                txtpuntuacionRula.Text = "6";
-                txtniveldeRiesgo.Text = "7";
-            }
-
+            ///////////                    RESULTADO TABLA A Y B                             ///////////
 
             DataTable dt1 = oRulaBC.RulaTablaARdoBC(oRula);
 
-                if (dt1.Rows.Count > 0)
+            if (dt1.Rows.Count > 0)
+            {
+                string resultadoVALORTABLAA = dt1.Rows[0][4].ToString();
+                oRula.ValorA = int.Parse(resultadoVALORTABLAA);
+                rdoTablaA.Text = oRula.ValorA.ToString();
+            }
+
+            DataTable dt2 = oRulaBC.RulaTablaBRdoBC(oRula);
+
+            if (dt2.Rows.Count > 0)
+            {
+                string resultadoVALORTABLAB = dt2.Rows[0][3].ToString();
+                oRula.ValorB = int.Parse(resultadoVALORTABLAB);
+                rdoTablaB.Text = resultadoVALORTABLAB.ToString();
+            }
+
+            ///////////                    NIVEL DE RIESGO Y ACTUACIÓN                             ///////////
+
+
+            //DataTable dt3 = oRulaBC.RulaTablaCRdoBC(oRula);
+            ////oRula.ValorA = int.Parse(rdoTablaA.Text);
+            ////oRula.ValorB = int.Parse(rdoTablaB.Text);
+
+            //if (dt.Rows.Count > 0)
+            //{
+            //    string resultadoTABLAC = dt3.Rows[0][0].ToString();
+            //    txtpuntuacionRula.Text = resultadoTABLAC;
+            //}
+
+
+            if (int.TryParse(txtmusculaturaA.Text, out int valorMusculaturaA) &&
+                  int.TryParse(txtcargafuerzaA.Text, out int valorCargaFuerzaA) &&
+                  int.TryParse(rdoTablaA.Text, out int valorTablaA))
+            {
+                SumaTablaA = valorMusculaturaA + valorCargaFuerzaA + valorTablaA;
+                TotalGrupoA.Text = SumaTablaA.ToString();
+            }
+
+
+            if (int.TryParse(txtmusculaturaB.Text, out int valorMusculaturaB) &&
+                int.TryParse(txtcargafuerzaB.Text, out int valorCargaFuerzaB) &&
+                int.TryParse(rdoTablaB.Text, out int valorTablaB))
+            {
+                SumaTablaB = valorMusculaturaB + valorCargaFuerzaB + valorTablaB;
+                TotalGrupoB.Text = SumaTablaB.ToString();
+            }
+
+
+            if (int.Parse(TotalGrupoA.Text) < 8 && int.Parse(TotalGrupoB.Text) < 7)
+            {
+
+                oRula.ValorTablaA = int.Parse(TotalGrupoA.Text);
+                oRula.ValorTablaB = int.Parse(TotalGrupoB.Text);
+
+                DataTable dt3 = oRulaBC.RulaTablaCRdoBC(oRula);
+
+                if (dt3.Rows.Count > 0)
                 {
-                    string resultado = dt1.Rows[0][4].ToString();
-                    rdoTablaA.Text = resultado;
+                    string resultadoTABLAC = dt3.Rows[0][0].ToString();
+                    txtPuntuacionRula.Text = resultadoTABLAC;
                 }
 
+            }
+            else
+            //(int.Parse(TotalGrupoA.Text) > 8 && int.Parse(TotalGrupoB.Text) > 7)
+            {
+                txtPuntuacionRula.Text = "7";
+            }
 
 
 
+            if (txtPuntuacionRula.Text == "1" || txtPuntuacionRula.Text == "2")
+            {
+                txtNivelDeRiesgo.Text = "1";
+                txtActuacion.Text = "Nivel de Riesgo Bajo: Posturas en las que no se observan factores de riesgo significativos para la salud musculoesquelética del trabajador. No se requieren cambios inmediatos.\r\n";
+            }
+            else if (txtPuntuacionRula.Text == "3" || txtPuntuacionRula.Text == "4")
+            {
+                txtNivelDeRiesgo.Text = "2";
+                txtActuacion.Text = "Nivel de Riesgo Moderado: Posturas que presentan ciertos factores de riesgo que podrían contribuir a problemas musculoesqueléticos a largo plazo. Se recomiendan evaluaciones y ajustes periódicos.\r\n";
+            }
+            else if (txtPuntuacionRula.Text == "5" || txtPuntuacionRula.Text == "6")
+            {
+                txtNivelDeRiesgo.Text = "3";
+                txtActuacion.Text = "Nivel de Riesgo Alto: Posturas con factores de riesgo significativos que requieren cambios inmediatos para reducir el riesgo de lesiones. Se deben tomar medidas correctivas de manera inmediata.\r\n";
+            }
+            else
+            {
+                txtNivelDeRiesgo.Text = "4";
+                txtActuacion.Text = "Nivel de Riesgo Muy Alto: Posturas que presentan factores de riesgo extremadamente altos, lo que indica un peligro inminente para la salud del trabajador. Se deben tomar medidas inmediatas y enérgicas para evitar lesiones.";
+            }
 
         }
 
@@ -335,6 +400,20 @@ namespace TF.WIN
             }
 
         }
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
 
 
         private void btnpagant_Click(object sender, EventArgs e)
