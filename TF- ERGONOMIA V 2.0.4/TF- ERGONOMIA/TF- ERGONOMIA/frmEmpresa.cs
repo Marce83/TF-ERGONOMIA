@@ -1,9 +1,12 @@
-﻿using System;
+﻿using iTextSharp.tool.xml.html;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -158,8 +161,8 @@ namespace TF.WIN
             cboCondFiscal.SelectedIndex = 0;
             txtActEmpr.SelectedIndex = 0;
             txtDireccion.Text = string.Empty;
-            cboLocalidad.SelectedIndex = 0;
-            cboProvincia.SelectedIndex = 0;
+            //cboLocalidad.SelectedIndex = 0;
+            //cboProvincia.SelectedIndex = 0;
             txtTelefono.Text = string.Empty;
             txtCorreo.Text = string.Empty;
             txtWeb.Text = string.Empty;
@@ -278,6 +281,84 @@ namespace TF.WIN
             {
                 btnEliminar.Enabled = false;
             }
+        }
+
+        private void cboProvincia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Ciudades Buenos Aires
+            DataTable CiudadBsAs = new DataTable();
+            CiudadBsAs.Columns.Add("Ciudad");
+            DataRow RowLP = CiudadBsAs.NewRow();
+            RowLP["Ciudad"] = "La Plata";
+            CiudadBsAs.Rows.Add(RowLP);
+            DataRow RowMdP = CiudadBsAs.NewRow();
+            RowMdP["Ciudad"] = "Mar del Plata";
+            CiudadBsAs.Rows.Add(RowMdP);
+            DataRow RowBB = CiudadBsAs.NewRow();
+            RowBB["Ciudad"] = "Bahía Blanca";
+            CiudadBsAs.Rows.Add(RowBB);
+            DataRow RowLZ = CiudadBsAs.NewRow();
+            RowLZ["Ciudad"] = "Lomas de Zamora";
+            CiudadBsAs.Rows.Add(RowLZ);
+            DataRow RowQu = CiudadBsAs.NewRow();
+            RowQu["Ciudad"] = "Quilmes";
+            CiudadBsAs.Rows.Add(RowQu);
+            DataRow RowAv = CiudadBsAs.NewRow();
+            RowAv["Ciudad"] = "Avellaneda";
+            CiudadBsAs.Rows.Add(RowAv);
+            DataRow RowLa = CiudadBsAs.NewRow();
+            RowLa["Ciudad"] = "Lanús";
+            CiudadBsAs.Rows.Add(RowLa);
+            DataRow RowSI = CiudadBsAs.NewRow();
+            RowSI["Ciudad"] = "San Isidro";
+            CiudadBsAs.Rows.Add(RowSI);
+            DataRow RowTa = CiudadBsAs.NewRow();
+            RowTa["Ciudad"] = "Tandil";
+            CiudadBsAs.Rows.Add(RowTa);
+            DataRow RowOl = CiudadBsAs.NewRow();
+            RowOl["Ciudad"] = "Olavarría";
+            CiudadBsAs.Rows.Add(RowOl);
+            DataRow RowSNA = CiudadBsAs.NewRow();
+            RowSNA["Ciudad"] = "San Nicolás de los Arroyos";
+            CiudadBsAs.Rows.Add(RowSNA);
+            DataRow RowPe = CiudadBsAs.NewRow();
+            RowPe["Ciudad"] = "Pergamino";
+            CiudadBsAs.Rows.Add(RowPe);
+            DataRow RowMe = CiudadBsAs.NewRow();
+            RowMe["Ciudad"] = "Mercedes";
+            CiudadBsAs.Rows.Add(RowMe);
+            DataRow RowZa = CiudadBsAs.NewRow();
+            RowZa["Ciudad"] = "Zarate";
+            CiudadBsAs.Rows.Add(RowZa);
+            DataRow RowJu = CiudadBsAs.NewRow();
+            RowJu["Ciudad"] = "Junín";
+            CiudadBsAs.Rows.Add(RowJu);
+            DataRow RowNe = CiudadBsAs.NewRow();
+            RowNe["Ciudad"] = "Necochea";
+            CiudadBsAs.Rows.Add(RowNe);
+            DataRow RowAz = CiudadBsAs.NewRow();
+            RowAz["Ciudad"] = "Azul";
+            CiudadBsAs.Rows.Add(RowAz);
+            DataRow RowCam = CiudadBsAs.NewRow();
+            RowCam["Ciudad"] = "Campana";
+            CiudadBsAs.Rows.Add(RowCam);
+            DataRow RowMor = CiudadBsAs.NewRow();
+            RowMor["Ciudad"] = "Morón";
+            CiudadBsAs.Rows.Add(RowMor);
+            DataRow RowItu = CiudadBsAs.NewRow();
+            RowItu["Ciudad"] = "Ituzaingó";
+            CiudadBsAs.Rows.Add(RowItu);
+
+            if (cboProvincia.SelectedIndex == 1)
+            {
+                cboLocalidad.DataSource = CiudadBsAs;
+                cboLocalidad.DisplayMember = "Ciudad";
+            }
+
+
+                
+
+
         }
     }
 }
