@@ -30,5 +30,17 @@ namespace TF.WIN
             RULARESULTADO oRULARESULTADO = new RULARESULTADO();
             oRULARESULTADO.Show();
         }
+
+        private void btnReba_Click(object sender, EventArgs e)
+        {
+            REBA_PORTADA OREBA_PORTADA =new REBA_PORTADA();
+            OREBA_PORTADA.Show();
+        }
+
+        private void btnRebaResultado_Click(object sender, EventArgs e)
+        {
+            REBA_RESULTADO OREBA_RESULTADO = new REBA_RESULTADO();
+            OREBA_RESULTADO.Show();
+        }
     }
 }

@@ -32,6 +32,8 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnResultado = new System.Windows.Forms.Button();
+            this.btnRebaResultado = new System.Windows.Forms.Button();
+            this.btnReba = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRula
@@ -91,6 +93,40 @@
             this.btnResultado.UseVisualStyleBackColor = false;
             this.btnResultado.Click += new System.EventHandler(this.btnResultado_Click);
             // 
+            // btnRebaResultado
+            // 
+            this.btnRebaResultado.BackColor = System.Drawing.Color.IndianRed;
+            this.btnRebaResultado.FlatAppearance.BorderSize = 0;
+            this.btnRebaResultado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnRebaResultado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRebaResultado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRebaResultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRebaResultado.Location = new System.Drawing.Point(176, 242);
+            this.btnRebaResultado.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRebaResultado.Name = "btnRebaResultado";
+            this.btnRebaResultado.Size = new System.Drawing.Size(155, 43);
+            this.btnRebaResultado.TabIndex = 66;
+            this.btnRebaResultado.Text = "REBA - Resultado";
+            this.btnRebaResultado.UseVisualStyleBackColor = false;
+            this.btnRebaResultado.Click += new System.EventHandler(this.btnRebaResultado_Click);
+            // 
+            // btnReba
+            // 
+            this.btnReba.BackColor = System.Drawing.Color.IndianRed;
+            this.btnReba.FlatAppearance.BorderSize = 0;
+            this.btnReba.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnReba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReba.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnReba.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReba.Location = new System.Drawing.Point(13, 242);
+            this.btnReba.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReba.Name = "btnReba";
+            this.btnReba.Size = new System.Drawing.Size(155, 43);
+            this.btnReba.TabIndex = 65;
+            this.btnReba.Text = "REBA";
+            this.btnReba.UseVisualStyleBackColor = false;
+            this.btnReba.Click += new System.EventHandler(this.btnReba_Click);
+            // 
             // Metodos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -98,6 +134,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.btnRebaResultado);
+            this.Controls.Add(this.btnReba);
             this.Controls.Add(this.btnResultado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRula);
@@ -117,5 +155,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnResultado;
+        private System.Windows.Forms.Button btnRebaResultado;
+        private System.Windows.Forms.Button btnReba;
     }
 }

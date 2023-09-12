@@ -140,6 +140,24 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="REBARESULTADO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REBARESULTADO.Designer.cs">
+      <DependentUpon>REBARESULTADO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REBA-PORTADA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REBA-PORTADA.Designer.cs">
+      <DependentUpon>REBA-PORTADA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REBA1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REBA1.Designer.cs">
+      <DependentUpon>REBA1.cs</DependentUpon>
+    </Compile>
     <Compile Include="RULA_PORTADA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +234,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REBARESULTADO.resx">
+      <DependentUpon>REBARESULTADO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REBA-PORTADA.resx">
+      <DependentUpon>REBA-PORTADA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REBA1.resx">
+      <DependentUpon>REBA1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RULA_PORTADA.resx">
       <DependentUpon>RULA_PORTADA.cs</DependentUpon>
