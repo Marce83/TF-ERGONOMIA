@@ -34,14 +34,16 @@
             this.txtpuestotrabajoencontrado = new MaterialSkin.Controls.MaterialTextBox2();
             this.btnBuscarEmpleados = new System.Windows.Forms.Button();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.txtDniEmpleado = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtDniEmpleadoReba = new MaterialSkin.Controls.MaterialTextBox2();
             this.btnBuscarCUIT = new System.Windows.Forms.Button();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.btnCrear = new System.Windows.Forms.Button();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtNombreEmpresaReba = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtNombreEmpleadoReba = new MaterialSkin.Controls.MaterialTextBox2();
             this.SuspendLayout();
             // 
             // btnBuscarpuesto
@@ -52,13 +54,14 @@
             this.btnBuscarpuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarpuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarpuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarpuesto.Location = new System.Drawing.Point(479, 321);
+            this.btnBuscarpuesto.Location = new System.Drawing.Point(479, 393);
             this.btnBuscarpuesto.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarpuesto.Name = "btnBuscarpuesto";
             this.btnBuscarpuesto.Size = new System.Drawing.Size(89, 48);
             this.btnBuscarpuesto.TabIndex = 139;
             this.btnBuscarpuesto.Text = "...";
             this.btnBuscarpuesto.UseVisualStyleBackColor = false;
+            this.btnBuscarpuesto.Click += new System.EventHandler(this.btnBuscarpuesto_Click);
             // 
             // label1
             // 
@@ -78,7 +81,7 @@
             this.materialLabel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(59, 337);
+            this.materialLabel2.Location = new System.Drawing.Point(59, 409);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(50, 19);
@@ -94,7 +97,7 @@
             this.txtpuestotrabajoencontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtpuestotrabajoencontrado.HideSelection = true;
             this.txtpuestotrabajoencontrado.LeadingIcon = null;
-            this.txtpuestotrabajoencontrado.Location = new System.Drawing.Point(195, 321);
+            this.txtpuestotrabajoencontrado.Location = new System.Drawing.Point(195, 393);
             this.txtpuestotrabajoencontrado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpuestotrabajoencontrado.MaxLength = 32767;
             this.txtpuestotrabajoencontrado.MouseState = MaterialSkin.MouseState.OUT;
@@ -129,6 +132,7 @@
             this.btnBuscarEmpleados.TabIndex = 135;
             this.btnBuscarEmpleados.Text = "...";
             this.btnBuscarEmpleados.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleados.Click += new System.EventHandler(this.btnBuscarEmpleados_Click);
             // 
             // materialLabel1
             // 
@@ -143,34 +147,34 @@
             this.materialLabel1.TabIndex = 134;
             this.materialLabel1.Text = "dni";
             // 
-            // txtDniEmpleado
+            // txtDniEmpleadoReba
             // 
-            this.txtDniEmpleado.AnimateReadOnly = false;
-            this.txtDniEmpleado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtDniEmpleado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtDniEmpleado.Depth = 0;
-            this.txtDniEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtDniEmpleado.HideSelection = true;
-            this.txtDniEmpleado.LeadingIcon = null;
-            this.txtDniEmpleado.Location = new System.Drawing.Point(195, 233);
-            this.txtDniEmpleado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDniEmpleado.MaxLength = 32767;
-            this.txtDniEmpleado.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtDniEmpleado.Name = "txtDniEmpleado";
-            this.txtDniEmpleado.PasswordChar = '\0';
-            this.txtDniEmpleado.PrefixSuffixText = null;
-            this.txtDniEmpleado.ReadOnly = true;
-            this.txtDniEmpleado.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtDniEmpleado.SelectedText = "";
-            this.txtDniEmpleado.SelectionLength = 0;
-            this.txtDniEmpleado.SelectionStart = 0;
-            this.txtDniEmpleado.ShortcutsEnabled = true;
-            this.txtDniEmpleado.Size = new System.Drawing.Size(277, 48);
-            this.txtDniEmpleado.TabIndex = 133;
-            this.txtDniEmpleado.TabStop = false;
-            this.txtDniEmpleado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtDniEmpleado.TrailingIcon = null;
-            this.txtDniEmpleado.UseSystemPasswordChar = false;
+            this.txtDniEmpleadoReba.AnimateReadOnly = false;
+            this.txtDniEmpleadoReba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtDniEmpleadoReba.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtDniEmpleadoReba.Depth = 0;
+            this.txtDniEmpleadoReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDniEmpleadoReba.HideSelection = true;
+            this.txtDniEmpleadoReba.LeadingIcon = null;
+            this.txtDniEmpleadoReba.Location = new System.Drawing.Point(195, 233);
+            this.txtDniEmpleadoReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDniEmpleadoReba.MaxLength = 32767;
+            this.txtDniEmpleadoReba.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDniEmpleadoReba.Name = "txtDniEmpleadoReba";
+            this.txtDniEmpleadoReba.PasswordChar = '\0';
+            this.txtDniEmpleadoReba.PrefixSuffixText = null;
+            this.txtDniEmpleadoReba.ReadOnly = true;
+            this.txtDniEmpleadoReba.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtDniEmpleadoReba.SelectedText = "";
+            this.txtDniEmpleadoReba.SelectionLength = 0;
+            this.txtDniEmpleadoReba.SelectionStart = 0;
+            this.txtDniEmpleadoReba.ShortcutsEnabled = true;
+            this.txtDniEmpleadoReba.Size = new System.Drawing.Size(277, 48);
+            this.txtDniEmpleadoReba.TabIndex = 133;
+            this.txtDniEmpleadoReba.TabStop = false;
+            this.txtDniEmpleadoReba.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDniEmpleadoReba.TrailingIcon = null;
+            this.txtDniEmpleadoReba.UseSystemPasswordChar = false;
             // 
             // btnBuscarCUIT
             // 
@@ -187,6 +191,7 @@
             this.btnBuscarCUIT.TabIndex = 132;
             this.btnBuscarCUIT.Text = "...";
             this.btnBuscarCUIT.UseVisualStyleBackColor = false;
+            this.btnBuscarCUIT.Click += new System.EventHandler(this.btnBuscarCUIT_Click);
             // 
             // materialLabel11
             // 
@@ -239,7 +244,7 @@
             this.BtnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.Location = new System.Drawing.Point(62, 440);
+            this.BtnSalir.Location = new System.Drawing.Point(62, 577);
             this.BtnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(155, 49);
@@ -256,13 +261,14 @@
             this.btnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrear.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrear.Location = new System.Drawing.Point(413, 440);
+            this.btnCrear.Location = new System.Drawing.Point(413, 577);
             this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(155, 49);
             this.btnCrear.TabIndex = 128;
             this.btnCrear.Text = "Crear y Siguiente Formulario";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // materialLabel3
             // 
@@ -277,50 +283,94 @@
             this.materialLabel3.TabIndex = 141;
             this.materialLabel3.Text = "Nombre de la Empresa";
             // 
-            // materialTextBox21
+            // txtNombreEmpresaReba
             // 
-            this.materialTextBox21.AnimateReadOnly = false;
-            this.materialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox21.Depth = 0;
-            this.materialTextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox21.HideSelection = true;
-            this.materialTextBox21.LeadingIcon = null;
-            this.materialTextBox21.Location = new System.Drawing.Point(195, 161);
-            this.materialTextBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialTextBox21.MaxLength = 32767;
-            this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox21.Name = "materialTextBox21";
-            this.materialTextBox21.PasswordChar = '\0';
-            this.materialTextBox21.PrefixSuffixText = null;
-            this.materialTextBox21.ReadOnly = true;
-            this.materialTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox21.SelectedText = "";
-            this.materialTextBox21.SelectionLength = 0;
-            this.materialTextBox21.SelectionStart = 0;
-            this.materialTextBox21.ShortcutsEnabled = true;
-            this.materialTextBox21.Size = new System.Drawing.Size(277, 48);
-            this.materialTextBox21.TabIndex = 140;
-            this.materialTextBox21.TabStop = false;
-            this.materialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox21.TrailingIcon = null;
-            this.materialTextBox21.UseSystemPasswordChar = false;
+            this.txtNombreEmpresaReba.AnimateReadOnly = false;
+            this.txtNombreEmpresaReba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtNombreEmpresaReba.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNombreEmpresaReba.Depth = 0;
+            this.txtNombreEmpresaReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreEmpresaReba.HideSelection = true;
+            this.txtNombreEmpresaReba.LeadingIcon = null;
+            this.txtNombreEmpresaReba.Location = new System.Drawing.Point(195, 161);
+            this.txtNombreEmpresaReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombreEmpresaReba.MaxLength = 32767;
+            this.txtNombreEmpresaReba.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNombreEmpresaReba.Name = "txtNombreEmpresaReba";
+            this.txtNombreEmpresaReba.PasswordChar = '\0';
+            this.txtNombreEmpresaReba.PrefixSuffixText = null;
+            this.txtNombreEmpresaReba.ReadOnly = true;
+            this.txtNombreEmpresaReba.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNombreEmpresaReba.SelectedText = "";
+            this.txtNombreEmpresaReba.SelectionLength = 0;
+            this.txtNombreEmpresaReba.SelectionStart = 0;
+            this.txtNombreEmpresaReba.ShortcutsEnabled = true;
+            this.txtNombreEmpresaReba.Size = new System.Drawing.Size(277, 48);
+            this.txtNombreEmpresaReba.TabIndex = 140;
+            this.txtNombreEmpresaReba.TabStop = false;
+            this.txtNombreEmpresaReba.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNombreEmpresaReba.TrailingIcon = null;
+            this.txtNombreEmpresaReba.UseSystemPasswordChar = false;
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.Location = new System.Drawing.Point(12, 327);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(132, 19);
+            this.materialLabel4.TabIndex = 143;
+            this.materialLabel4.Text = "Nombre Empleado";
+            // 
+            // txtNombreEmpleadoReba
+            // 
+            this.txtNombreEmpleadoReba.AnimateReadOnly = false;
+            this.txtNombreEmpleadoReba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtNombreEmpleadoReba.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNombreEmpleadoReba.Depth = 0;
+            this.txtNombreEmpleadoReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreEmpleadoReba.HideSelection = true;
+            this.txtNombreEmpleadoReba.LeadingIcon = null;
+            this.txtNombreEmpleadoReba.Location = new System.Drawing.Point(195, 312);
+            this.txtNombreEmpleadoReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombreEmpleadoReba.MaxLength = 32767;
+            this.txtNombreEmpleadoReba.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNombreEmpleadoReba.Name = "txtNombreEmpleadoReba";
+            this.txtNombreEmpleadoReba.PasswordChar = '\0';
+            this.txtNombreEmpleadoReba.PrefixSuffixText = null;
+            this.txtNombreEmpleadoReba.ReadOnly = true;
+            this.txtNombreEmpleadoReba.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNombreEmpleadoReba.SelectedText = "";
+            this.txtNombreEmpleadoReba.SelectionLength = 0;
+            this.txtNombreEmpleadoReba.SelectionStart = 0;
+            this.txtNombreEmpleadoReba.ShortcutsEnabled = true;
+            this.txtNombreEmpleadoReba.Size = new System.Drawing.Size(277, 48);
+            this.txtNombreEmpleadoReba.TabIndex = 142;
+            this.txtNombreEmpleadoReba.TabStop = false;
+            this.txtNombreEmpleadoReba.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNombreEmpleadoReba.TrailingIcon = null;
+            this.txtNombreEmpleadoReba.UseSystemPasswordChar = false;
             // 
             // REBA_PORTADA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(642, 566);
+            this.ClientSize = new System.Drawing.Size(642, 681);
+            this.Controls.Add(this.materialLabel4);
+            this.Controls.Add(this.txtNombreEmpleadoReba);
             this.Controls.Add(this.materialLabel3);
-            this.Controls.Add(this.materialTextBox21);
+            this.Controls.Add(this.txtNombreEmpresaReba);
             this.Controls.Add(this.btnBuscarpuesto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.txtpuestotrabajoencontrado);
             this.Controls.Add(this.btnBuscarEmpleados);
             this.Controls.Add(this.materialLabel1);
-            this.Controls.Add(this.txtDniEmpleado);
+            this.Controls.Add(this.txtDniEmpleadoReba);
             this.Controls.Add(this.btnBuscarCUIT);
             this.Controls.Add(this.materialLabel11);
             this.Controls.Add(this.txtCUITEncontrado);
@@ -343,13 +393,15 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtpuestotrabajoencontrado;
         private System.Windows.Forms.Button btnBuscarEmpleados;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialTextBox2 txtDniEmpleado;
+        private MaterialSkin.Controls.MaterialTextBox2 txtDniEmpleadoReba;
         private System.Windows.Forms.Button btnBuscarCUIT;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
         private MaterialSkin.Controls.MaterialTextBox2 txtCUITEncontrado;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button btnCrear;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox21;
+        private MaterialSkin.Controls.MaterialTextBox2 txtNombreEmpresaReba;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialTextBox2 txtNombreEmpleadoReba;
     }
 }

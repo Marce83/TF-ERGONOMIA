@@ -1575,7 +1575,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1269, 921);
+            this.ClientSize = new System.Drawing.Size(1180, 921);
             this.Controls.Add(this.materialLabel30);
             this.Controls.Add(this.materialLabel29);
             this.Controls.Add(this.materialLabel28);

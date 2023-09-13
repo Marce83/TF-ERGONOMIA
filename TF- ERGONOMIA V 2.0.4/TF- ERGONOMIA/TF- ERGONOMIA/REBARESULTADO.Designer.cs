@@ -177,7 +177,7 @@
             this.rdoTablaB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rdoTablaB.Depth = 0;
             this.rdoTablaB.Enabled = false;
-            this.rdoTablaB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.rdoTablaB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.rdoTablaB.LeadingIcon = null;
             this.rdoTablaB.Location = new System.Drawing.Point(729, 377);
             this.rdoTablaB.Margin = new System.Windows.Forms.Padding(4);
@@ -910,7 +910,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1098, 727);
+            this.ClientSize = new System.Drawing.Size(1117, 727);
             this.Controls.Add(this.materialTextBox21);
             this.Controls.Add(this.materialLabel6);
             this.Controls.Add(this.materialLabel20);

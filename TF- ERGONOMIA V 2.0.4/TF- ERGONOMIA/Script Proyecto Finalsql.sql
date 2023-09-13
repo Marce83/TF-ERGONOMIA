@@ -766,3 +766,51 @@ insert into RulaTablaC values (8,4,7)
 insert into RulaTablaC values (8,5,7)
 insert into RulaTablaC values (8,6,7)
 insert into RulaTablaC values (8,7,7)
+
+
+
+---------------------------------------REBA ------------------------------------------------
+
+use ProyectoFinal
+go
+CREATE TABLE RebaTablaCompleta(
+cargaIdReba INT NOT NULL PRIMARY KEY IDENTITY (1,1),
+CUITReba nvarchar(11),
+PuestoDeTrabajoReba NVARCHAR(20),
+DniEmpleadoReba nvarchar(11),
+EmpleadoReba nvarchar(30),
+EmpresaReba nvarchar(30),
+TroncoReba INT,
+CuelloReba INT,
+PiernaReba INT,
+CargaFuerzaAReba INT,
+AntebrazoReba INT,
+MunecaReba INT,
+BrazoReba INT,
+AgarreReba INT,
+ActividadReba INT)
+GO	
+
+-------------Portada ----------------------
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_Reba_Insert
+@CUITReba nvarchar(11),
+@PuestoDeTrabajoReba NVARCHAR(20),
+@DniEmpleadoReba nvarchar(11),
+@EmpleadoReba NVARCHAR(30),
+@EmpresaReba nvarchar(30)
+AS
+BEGIN
+	insert into RebaTablaCompleta (CUITReba,PuestoDeTrabajoReba,DniEmpleadoReba,EmpleadoReba,EmpresaReba) 
+	VALUES(@CUITReba,@PuestoDeTrabajoReba,@DniEmpleadoReba,@EmpleadoReba,@EmpresaReba)
+END
+GO
+
+
+
+
+
+
+
+---------------Reba1-----------------------------
