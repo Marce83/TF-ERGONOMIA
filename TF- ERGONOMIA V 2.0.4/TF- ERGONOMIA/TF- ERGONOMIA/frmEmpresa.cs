@@ -222,8 +222,8 @@ namespace TF.WIN
                 cboCondFiscal.Text = dgvCargaEmpresas.CurrentRow.Cells[2].Value.ToString();
                 txtActEmpr.Text = dgvCargaEmpresas.CurrentRow.Cells[3].Value.ToString();
                 txtDireccion.Text = dgvCargaEmpresas.CurrentRow.Cells[4].Value.ToString();
-                cboLocalidad.Text = dgvCargaEmpresas.CurrentRow.Cells[5].Value.ToString();
-                cboProvincia.Text = dgvCargaEmpresas.CurrentRow.Cells[6].Value.ToString();
+                cboProvincia.Text = dgvCargaEmpresas.CurrentRow.Cells[5].Value.ToString();
+                cboLocalidad.Text = dgvCargaEmpresas.CurrentRow.Cells[6].Value.ToString();
                 txtTelefono.Text = dgvCargaEmpresas.CurrentRow.Cells[7].Value.ToString();
                 txtCorreo.Text = dgvCargaEmpresas.CurrentRow.Cells[8].Value.ToString();
                 txtWeb.Text = dgvCargaEmpresas.CurrentRow.Cells[9].Value.ToString();
