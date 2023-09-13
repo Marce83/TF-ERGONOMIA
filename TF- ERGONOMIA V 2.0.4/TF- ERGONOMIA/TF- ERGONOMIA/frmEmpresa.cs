@@ -764,6 +764,326 @@ namespace TF.WIN
             RowWa["Ciudad"] = "Wanda";
             CiudadMis.Rows.Add(RowWa);
 
+            //Ciudades de Neuquén
+            DataTable CiudadNeu = new DataTable();
+            CiudadNeu.Columns.Add("Ciudad");
+            DataRow RowNeu = CiudadNeu.NewRow();
+            RowNeu["Ciudad"] = "Neuquén (Ciudad)";
+            CiudadNeu.Rows.Add(RowNeu);
+            DataRow RowCut = CiudadNeu.NewRow();
+            RowCut["Ciudad"] = "Cutral Có";
+            CiudadNeu.Rows.Add(RowCut);
+            DataRow RowZap = CiudadNeu.NewRow();
+            RowZap["Ciudad"] = "Zapala";
+            CiudadNeu.Rows.Add(RowZap);
+            DataRow RowPlo = CiudadNeu.NewRow();
+            RowPlo["Ciudad"] = "Plottier";
+            CiudadNeu.Rows.Add(RowPlo);
+            DataRow RowCen = CiudadNeu.NewRow();
+            RowCen["Ciudad"] = "Centenario";
+            CiudadNeu.Rows.Add(RowCen);
+            DataRow RowJA = CiudadNeu.NewRow();
+            RowJA["Ciudad"] = "Junín de los Andes";
+            CiudadNeu.Rows.Add(RowJA);
+            DataRow RowSMA = CiudadNeu.NewRow();
+            RowSMA["Ciudad"] = "San Martín de los Andes";
+            CiudadNeu.Rows.Add(RowSMA);
+            DataRow RowRS = CiudadNeu.NewRow();
+            RowRS["Ciudad"] = "Rincón de los Sauces";
+            CiudadNeu.Rows.Add(RowRS);
+            DataRow RowVA = CiudadNeu.NewRow();
+            RowVA["Ciudad"] = "Villa La Angostura";
+            CiudadNeu.Rows.Add(RowVA);
+            DataRow RowCM = CiudadNeu.NewRow();
+            RowCM["Ciudad"] = "Chos Malal";
+            CiudadNeu.Rows.Add(RowCM);
+
+            //Ciudades de Río Negro
+            DataTable CiudadRN = new DataTable();
+            CiudadRN.Columns.Add("Ciudad");
+            DataRow RowVie = CiudadRN.NewRow();
+            RowVie["Ciudad"] = "Viedma";
+            CiudadRN.Rows.Add(RowVie);
+            DataRow RowGR = CiudadRN.NewRow();
+            RowGR["Ciudad"] = "General Roca";
+            CiudadRN.Rows.Add(RowGR);
+            DataRow RowBari = CiudadRN.NewRow();
+            RowBari["Ciudad"] = "San Carlos de Bariloche";
+            CiudadRN.Rows.Add(RowBari);
+            DataRow RowCip = CiudadRN.NewRow();
+            RowCip["Ciudad"] = "Cipolletti";
+            CiudadRN.Rows.Add(RowCip);
+            DataRow RowAl = CiudadRN.NewRow();
+            RowAl["Ciudad"] = "Allen";
+            CiudadRN.Rows.Add(RowAl);
+            DataRow RowRC = CiudadRN.NewRow();
+            RowRC["Ciudad"] = "Río Colorado";
+            CiudadRN.Rows.Add(RowRC);
+            DataRow RowVRe = CiudadRN.NewRow();
+            RowVRe["Ciudad"] = "Villa Regina";
+            CiudadRN.Rows.Add(RowVRe);
+            DataRow RowCho = CiudadRN.NewRow();
+            RowCho["Ciudad"] = "Choele Choe";
+            CiudadRN.Rows.Add(RowCho);
+            DataRow RowLam = CiudadRN.NewRow();
+            RowLam["Ciudad"] = "Lamarque";
+            CiudadRN.Rows.Add(RowLam);
+            DataRow RowSG = CiudadRN.NewRow();
+            RowSG["Ciudad"] = "Sierra Grande";
+            CiudadRN.Rows.Add(RowSG);
+
+            //Ciudades de Salta
+            DataTable CiudadSal = new DataTable();
+            CiudadSal.Columns.Add("Ciudad");
+            DataRow RowSal = CiudadSal.NewRow();
+            RowSal["Ciudad"] = "Salta (Ciudad)";
+            CiudadSal.Rows.Add(RowSal);
+            DataRow RowEmb = CiudadSal.NewRow();
+            RowEmb["Ciudad"] = "Embarcación";
+            CiudadSal.Rows.Add(RowEmb);
+            DataRow RowTar = CiudadSal.NewRow();
+            RowTar["Ciudad"] = "Tartagal";
+            CiudadSal.Rows.Add(RowTar);
+            DataRow RowOr = CiudadSal.NewRow();
+            RowOr["Ciudad"] = "Orán";
+            CiudadSal.Rows.Add(RowOr);
+            DataRow RowCaf = CiudadSal.NewRow();
+            RowCaf["Ciudad"] = "Cafayate";
+            CiudadSal.Rows.Add(RowCaf);
+            DataRow RowMet = CiudadSal.NewRow();
+            RowMet["Ciudad"] = "Metán";
+            CiudadSal.Rows.Add(RowMet);
+            DataRow RowJVG = CiudadSal.NewRow();
+            RowJVG["Ciudad"] = "Joaquín V. González";
+            CiudadSal.Rows.Add(RowJVG);
+            DataRow RowRF = CiudadSal.NewRow();
+            RowRF["Ciudad"] = "Rosario de la Frontera";
+            CiudadSal.Rows.Add(RowRF);
+            DataRow RowGG = CiudadSal.NewRow();
+            RowGG["Ciudad"] = "General Güemes";
+            CiudadSal.Rows.Add(RowGG);
+            DataRow RowCer = CiudadSal.NewRow();
+            RowCer["Ciudad"] = "Cerrillos";
+            CiudadSal.Rows.Add(RowCer);
+
+            //Ciudades de San Juan
+            DataTable CiudadSJ = new DataTable();
+            CiudadSJ.Columns.Add("Ciudad");
+            DataRow RowSJ = CiudadSJ.NewRow();
+            RowSJ["Ciudad"] = "San Juan (Ciudad)";
+            CiudadSJ.Rows.Add(RowSJ);
+            DataRow RowRaws = CiudadSJ.NewRow();
+            RowRaws["Ciudad"] = "Rawson";
+            CiudadSJ.Rows.Add(RowRaws);
+            DataRow RowPoc = CiudadSJ.NewRow();
+            RowPoc["Ciudad"] = "Pocito";
+            CiudadSJ.Rows.Add(RowPoc);
+            DataRow RowChim = CiudadSJ.NewRow();
+            RowChim["Ciudad"] = "Chimbas";
+            CiudadSJ.Rows.Add(RowChim);
+            DataRow RowCau = CiudadSJ.NewRow();
+            RowCau["Ciudad"] = "Caucete";
+            CiudadSJ.Rows.Add(RowCau);
+            DataRow RowRiv = CiudadSJ.NewRow();
+            RowRiv["Ciudad"] = "Rivadavia";
+            CiudadSJ.Rows.Add(RowRiv);
+            DataRow RowSJJ = CiudadSJ.NewRow();
+            RowSJJ["Ciudad"] = "San José de Jáchal";
+            CiudadSJ.Rows.Add(RowSJJ);
+            DataRow RowSL = CiudadSJ.NewRow();
+            RowSL["Ciudad"] = "Santa Lucía";
+            CiudadSJ.Rows.Add(RowSL);
+            DataRow RowAlb = CiudadSJ.NewRow();
+            RowAlb["Ciudad"] = "Albardón";
+            CiudadSJ.Rows.Add(RowAlb);
+            DataRow Row9J = CiudadSJ.NewRow();
+            Row9J["Ciudad"] = "9 de Julio";
+            CiudadSJ.Rows.Add(Row9J);
+
+            //Ciudades de San Luis
+            DataTable CiudadSL = new DataTable();
+            CiudadSL.Columns.Add("Ciudad");
+            DataRow RowSLu = CiudadSL.NewRow();
+            RowSLu["Ciudad"] = "San Luis (Ciudad)";
+            CiudadSL.Rows.Add(RowSLu);
+            DataRow RowVMe = CiudadSL.NewRow();
+            RowVMe["Ciudad"] = "Villa Mercedes";
+            CiudadSL.Rows.Add(RowVMe);
+            DataRow RowMerl = CiudadSL.NewRow();
+            RowMerl["Ciudad"] = "Merlo";
+            CiudadSL.Rows.Add(RowMerl);
+            DataRow RowJK = CiudadSL.NewRow();
+            RowJK["Ciudad"] = "Juana Koslay";
+            CiudadSL.Rows.Add(RowJK);
+            DataRow RowLT = CiudadSL.NewRow();
+            RowLT["Ciudad"] = "La Toma";
+            CiudadSL.Rows.Add(RowLT);
+            DataRow RowConc = CiudadSL.NewRow();
+            RowConc["Ciudad"] = "Concarán";
+            CiudadSL.Rows.Add(RowConc);
+            DataRow RowSRC = CiudadSL.NewRow();
+            RowSRC["Ciudad"] = "Santa Rosa del Conlara";
+            CiudadSL.Rows.Add(RowSRC);
+            DataRow RowLPun = CiudadSL.NewRow();
+            RowLPun["Ciudad"] = "La Punta";
+            CiudadSL.Rows.Add(RowLPun);
+            DataRow RowQui = CiudadSL.NewRow();
+            RowQui["Ciudad"] = "Quines";
+            CiudadSL.Rows.Add(RowQui);
+            DataRow RowTi = CiudadSL.NewRow();
+            RowTi["Ciudad"] = "Tilisarao";
+            CiudadSL.Rows.Add(RowTi);
+
+            //Ciudades de Santa Cruz
+            DataTable CiudadSC = new DataTable();
+            CiudadSC.Columns.Add("Ciudad");
+            DataRow RowRG = CiudadSC.NewRow();
+            RowRG["Ciudad"] = "Río Gallegos";
+            CiudadSC.Rows.Add(RowRG);
+            DataRow RowCO = CiudadSC.NewRow();
+            RowCO["Ciudad"] = "Caleta Olivia";
+            CiudadSC.Rows.Add(RowCO);
+            DataRow RowRT = CiudadSC.NewRow();
+            RowRT["Ciudad"] = "Río Turbio";
+            CiudadSC.Rows.Add(RowRT);
+            DataRow RowPD = CiudadSC.NewRow();
+            RowPD["Ciudad"] = "Puerto Deseado";
+            CiudadSC.Rows.Add(RowPD);
+            DataRow RowEC = CiudadSC.NewRow();
+            RowEC["Ciudad"] = "El Calafate";
+            CiudadSC.Rows.Add(RowEC);
+            DataRow RowPT = CiudadSC.NewRow();
+            RowPT["Ciudad"] = "Pico Truncado";
+            CiudadSC.Rows.Add(RowPT);
+            DataRow RowLH = CiudadSC.NewRow();
+            RowLH["Ciudad"] = "Las Heras";
+            CiudadSC.Rows.Add(RowLH);
+            DataRow Row28 = CiudadSC.NewRow();
+            Row28["Ciudad"] = "28 de Noviembre";
+            CiudadSC.Rows.Add(Row28);
+            DataRow RowGGr = CiudadSC.NewRow();
+            RowGGr["Ciudad"] = "Gobernador Gregores";
+            CiudadSC.Rows.Add(RowGGr);
+            DataRow RowPM = CiudadSC.NewRow();
+            RowPM["Ciudad"] = "Perito Moreno";
+            CiudadSC.Rows.Add(RowPM);
+
+            //Ciudades de Santa Fe
+            DataTable CiudadSF = new DataTable();
+            CiudadSF.Columns.Add("Ciudad");
+            DataRow RowSF = CiudadSF.NewRow();
+            RowSF["Ciudad"] = "Santa Fe (Ciudad)";
+            CiudadSF.Rows.Add(RowSF);
+            DataRow RowRo = CiudadSF.NewRow();
+            RowRo["Ciudad"] = "Rosario";
+            CiudadSF.Rows.Add(RowRo);
+            DataRow RowRa = CiudadSF.NewRow();
+            RowRa["Ciudad"] = "Rafaela";
+            CiudadSF.Rows.Add(RowRa);
+            DataRow RowVT = CiudadSF.NewRow();
+            RowVT["Ciudad"] = "Venado Tuerto";
+            CiudadSF.Rows.Add(RowVT);
+            DataRow RowRe = CiudadSF.NewRow();
+            RowRe["Ciudad"] = "Reconquista";
+            CiudadSF.Rows.Add(RowRe);
+            DataRow RowST = CiudadSF.NewRow();
+            RowST["Ciudad"] = "Santo Tomé";
+            CiudadSF.Rows.Add(RowST);
+            DataRow RowGB = CiudadSF.NewRow();
+            RowGB["Ciudad"] = "Granadero Baigorria";
+            CiudadSF.Rows.Add(RowGB);
+            DataRow RowFu = CiudadSF.NewRow();
+            RowFu["Ciudad"] = "Funes";
+            CiudadSF.Rows.Add(RowFu);
+            DataRow RowVGG = CiudadSF.NewRow();
+            RowVGG["Ciudad"] = "Villa Gobernador Gálvez";
+            CiudadSF.Rows.Add(RowVGG);
+            DataRow RowSLo = CiudadSF.NewRow();
+            RowSLo["Ciudad"] = "San Lorenzo";
+            CiudadSF.Rows.Add(RowSLo);
+
+            //Ciudades de Santiago del Estero
+            DataTable CiudadSE = new DataTable();
+            CiudadSE.Columns.Add("Ciudad");
+            DataRow RowSE = CiudadSE.NewRow();
+            RowSE["Ciudad"] = "Santiago del Estero (Ciudad)";
+            CiudadSE.Rows.Add(RowSE);
+            DataRow RowLB = CiudadSE.NewRow();
+            RowLB["Ciudad"] = "La Banda";
+            CiudadSE.Rows.Add(RowLB);
+            DataRow RowTRH = CiudadSE.NewRow();
+            RowTRH["Ciudad"] = "Termas de Río Hondo";
+            CiudadSE.Rows.Add(RowTRH);
+            DataRow RowAñ = CiudadSE.NewRow();
+            RowAñ["Ciudad"] = "Añatuya";
+            CiudadSE.Rows.Add(RowAñ);
+            DataRow RowFer = CiudadSE.NewRow();
+            RowFer["Ciudad"] = "Fernández";
+            CiudadSE.Rows.Add(RowFer);
+            DataRow RowFr = CiudadSE.NewRow();
+            RowFr["Ciudad"] = "Frías";
+            CiudadSE.Rows.Add(RowFr);
+            DataRow RowSC = CiudadSE.NewRow();
+            RowSC["Ciudad"] = "Suncho Corral";
+            CiudadSE.Rows.Add(RowSC);
+            DataRow RowBa = CiudadSE.NewRow();
+            RowBa["Ciudad"] = "Bandera";
+            CiudadSE.Rows.Add(RowBa);
+            DataRow RowCl = CiudadSE.NewRow();
+            RowCl["Ciudad"] = "Clodomira";
+            CiudadSE.Rows.Add(RowCl);
+            DataRow RowLo = CiudadSE.NewRow();
+            RowLo["Ciudad"] = "Loreto";
+            CiudadSE.Rows.Add(RowLo);
+
+            //Ciudades de Tierra del Fuego
+            DataTable CiudadTF = new DataTable();
+            CiudadTF.Columns.Add("Ciudad");
+            DataRow RowUs = CiudadTF.NewRow();
+            RowUs["Ciudad"] = "Ushuaia";
+            CiudadTF.Rows.Add(RowUs);
+            DataRow RowRGr = CiudadTF.NewRow();
+            RowRGr["Ciudad"] = "Río Grande";
+            CiudadTF.Rows.Add(RowRGr);
+            DataRow RowTo = CiudadTF.NewRow();
+            RowTo["Ciudad"] = "Tolhuin";
+            CiudadTF.Rows.Add(RowTo);
+
+            //Ciudades de Tucumán
+            DataTable CiudadTu = new DataTable();
+            CiudadTu.Columns.Add("Ciudad");
+            DataRow RowSMT = CiudadTu.NewRow();
+            RowSMT["Ciudad"] = "San Miguel de Tucumán";
+            CiudadTu.Rows.Add(RowSMT);
+            DataRow RowConce = CiudadTu.NewRow();
+            RowConce["Ciudad"] = "Concepción";
+            CiudadTu.Rows.Add(RowConce);
+            DataRow RowTV = CiudadTu.NewRow();
+            RowTV["Ciudad"] = "Tafí Viejo";
+            CiudadTu.Rows.Add(RowTV);
+            DataRow RowBRS = CiudadTu.NewRow();
+            RowBRS["Ciudad"] = "Banda del Río Salí";
+            CiudadTu.Rows.Add(RowBRS);
+            DataRow RowYB = CiudadTu.NewRow();
+            RowYB["Ciudad"] = "Yerba Buena";
+            CiudadTu.Rows.Add(RowYB);
+            DataRow RowAg = CiudadTu.NewRow();
+            RowAg["Ciudad"] = "Aguilares";
+            CiudadTu.Rows.Add(RowAg);
+            DataRow RowMo = CiudadTu.NewRow();
+            RowMo["Ciudad"] = "Monteros";
+            CiudadTu.Rows.Add(RowMo);
+            DataRow RowFa = CiudadTu.NewRow();
+            RowFa["Ciudad"] = "Famaillá";
+            CiudadTu.Rows.Add(RowFa);
+            DataRow RowLu = CiudadTu.NewRow();
+            RowLu["Ciudad"] = "Lules";
+            CiudadTu.Rows.Add(RowLu);
+            DataRow RowAld = CiudadTu.NewRow();
+            RowAld["Ciudad"] = "Alderetes";
+            CiudadTu.Rows.Add(RowAld);
+
+
 
             if (cboProvincia.SelectedIndex == 0)
             {
@@ -839,10 +1159,56 @@ namespace TF.WIN
                 cboLocalidad.DataSource = CiudadMis;
                 cboLocalidad.DisplayMember = "Ciudad";
             }
-
-
-
-
+            else if (cboProvincia.SelectedIndex == 15)
+            {
+                cboLocalidad.DataSource = CiudadNeu;
+                cboLocalidad.DisplayMember = "Ciudad";
+            }
+            else if (cboProvincia.SelectedIndex == 16)
+            {
+                cboLocalidad.DataSource = CiudadRN;
+                cboLocalidad.DisplayMember = "Ciudad";
+            }
+            else if (cboProvincia.SelectedIndex == 17)
+            {
+                cboLocalidad.DataSource = CiudadSal;
+                cboLocalidad.DisplayMember = "Ciudad";
+            }
+            else if (cboProvincia.SelectedIndex == 18)
+            {
+                cboLocalidad.DataSource = CiudadSJ;
+                cboLocalidad.DisplayMember = "Ciudad";
+            }
+            else if (cboProvincia.SelectedIndex == 19)
+            {
+                cboLocalidad.DataSource = CiudadSL;
+                cboLocalidad.DisplayMember = "Ciudad";
+            }
+            else if (cboProvincia.SelectedIndex == 20)
+            {
+                cboLocalidad.DataSource = CiudadSC;
+                cboLocalidad.DisplayMember = "Ciudad";
+            }
+            else if (cboProvincia.SelectedIndex == 21)
+            {
+                cboLocalidad.DataSource = CiudadSF;
+                cboLocalidad.DisplayMember = "Ciudad";
+            }
+            else if (cboProvincia.SelectedIndex == 22)
+            {
+                cboLocalidad.DataSource = CiudadSE;
+                cboLocalidad.DisplayMember = "Ciudad";
+            }
+            else if (cboProvincia.SelectedIndex == 23)
+            {
+                cboLocalidad.DataSource = CiudadTF;
+                cboLocalidad.DisplayMember = "Ciudad";
+            }
+            else if (cboProvincia.SelectedIndex == 24)
+            {
+                cboLocalidad.DataSource = CiudadTu;
+                cboLocalidad.DisplayMember = "Ciudad";
+            }
         }
     }
 }
