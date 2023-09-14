@@ -86,16 +86,20 @@
             this.txtAgarreReba = new MaterialSkin.Controls.MaterialTextBox2();
             this.cboAgarre = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel23 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel24 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel25 = new MaterialSkin.Controls.MaterialLabel();
-            this.puntuacionActividad = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialComboBox13 = new MaterialSkin.Controls.MaterialComboBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.materialLabel26 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel20 = new MaterialSkin.Controls.MaterialLabel();
-            this.btncerrar = new System.Windows.Forms.Button();
+            this.btncerrarReba = new System.Windows.Forms.Button();
             this.txtcargaidreba = new System.Windows.Forms.TextBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnGuardarReba1 = new System.Windows.Forms.Button();
+            this.cboCargaFuerzaadicional = new MaterialSkin.Controls.MaterialComboBox();
+            this.cboactividadpostura = new MaterialSkin.Controls.MaterialComboBox();
+            this.cboactividadmovimiento = new MaterialSkin.Controls.MaterialComboBox();
+            this.cboActividadpartescuerpo = new MaterialSkin.Controls.MaterialComboBox();
+            this.materialLabel24 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel25 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel27 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel28 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtpuntuacionActividadReba = new MaterialSkin.Controls.MaterialTextBox2();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -104,7 +108,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // materialLabel1
@@ -186,6 +189,7 @@
             this.cboTroncocorreccion.Size = new System.Drawing.Size(354, 49);
             this.cboTroncocorreccion.StartIndex = 0;
             this.cboTroncocorreccion.TabIndex = 131;
+            this.cboTroncocorreccion.SelectedIndexChanged += new System.EventHandler(this.cboTroncocorreccion_SelectedIndexChanged);
             // 
             // materialLabel5
             // 
@@ -256,6 +260,7 @@
             this.cboTroncomvimiento.Size = new System.Drawing.Size(351, 49);
             this.cboTroncomvimiento.StartIndex = 0;
             this.cboTroncomvimiento.TabIndex = 128;
+            this.cboTroncomvimiento.SelectedIndexChanged += new System.EventHandler(this.cboTroncomvimiento_SelectedIndexChanged);
             // 
             // materialLabel3
             // 
@@ -324,6 +329,7 @@
             this.cboCuelloCorreccion.Size = new System.Drawing.Size(351, 49);
             this.cboCuelloCorreccion.StartIndex = 0;
             this.cboCuelloCorreccion.TabIndex = 140;
+            this.cboCuelloCorreccion.SelectedIndexChanged += new System.EventHandler(this.cboCuelloCorreccion_SelectedIndexChanged);
             // 
             // materialLabel4
             // 
@@ -394,6 +400,7 @@
             this.cboCuellomovimiento.Size = new System.Drawing.Size(349, 49);
             this.cboCuellomovimiento.StartIndex = 0;
             this.cboCuellomovimiento.TabIndex = 137;
+            this.cboCuellomovimiento.SelectedIndexChanged += new System.EventHandler(this.cboCuellomovimiento_SelectedIndexChanged);
             // 
             // pictureBox3
             // 
@@ -462,6 +469,7 @@
             this.cboPiernasCorreccion.Size = new System.Drawing.Size(356, 49);
             this.cboPiernasCorreccion.StartIndex = 0;
             this.cboPiernasCorreccion.TabIndex = 148;
+            this.cboPiernasCorreccion.SelectedIndexChanged += new System.EventHandler(this.cboPiernasCorreccion_SelectedIndexChanged);
             // 
             // materialLabel7
             // 
@@ -532,13 +540,14 @@
             this.cboPiernasMovimiento.Size = new System.Drawing.Size(352, 49);
             this.cboPiernasMovimiento.StartIndex = 0;
             this.cboPiernasMovimiento.TabIndex = 145;
+            this.cboPiernasMovimiento.SelectedIndexChanged += new System.EventHandler(this.cboPiernasMovimiento_SelectedIndexChanged);
             // 
             // materialLabel8
             // 
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel8.Location = new System.Drawing.Point(656, 1156);
+            this.materialLabel8.Location = new System.Drawing.Point(656, 1205);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(82, 19);
@@ -555,7 +564,7 @@
             this.txtCargaFuerzaReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCargaFuerzaReba.HideSelection = true;
             this.txtCargaFuerzaReba.LeadingIcon = null;
-            this.txtCargaFuerzaReba.Location = new System.Drawing.Point(652, 1177);
+            this.txtCargaFuerzaReba.Location = new System.Drawing.Point(652, 1226);
             this.txtCargaFuerzaReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCargaFuerzaReba.MaxLength = 32767;
             this.txtCargaFuerzaReba.MouseState = MaterialSkin.MouseState.OUT;
@@ -594,7 +603,7 @@
             this.cboCargaFuerzapuntuacion.FormattingEnabled = true;
             this.cboCargaFuerzapuntuacion.IntegralHeight = false;
             this.cboCargaFuerzapuntuacion.ItemHeight = 43;
-            this.cboCargaFuerzapuntuacion.Location = new System.Drawing.Point(652, 1097);
+            this.cboCargaFuerzapuntuacion.Location = new System.Drawing.Point(652, 1086);
             this.cboCargaFuerzapuntuacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboCargaFuerzapuntuacion.MaxDropDownItems = 4;
             this.cboCargaFuerzapuntuacion.MouseState = MaterialSkin.MouseState.OUT;
@@ -602,13 +611,14 @@
             this.cboCargaFuerzapuntuacion.Size = new System.Drawing.Size(356, 49);
             this.cboCargaFuerzapuntuacion.StartIndex = 0;
             this.cboCargaFuerzapuntuacion.TabIndex = 153;
+            this.cboCargaFuerzapuntuacion.SelectedIndexChanged += new System.EventHandler(this.cboCargaFuerzapuntuacion_SelectedIndexChanged);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 1097);
+            this.pictureBox4.Location = new System.Drawing.Point(12, 1073);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(617, 128);
+            this.pictureBox4.Size = new System.Drawing.Size(617, 201);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 152;
             this.pictureBox4.TabStop = false;
@@ -618,7 +628,7 @@
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(9, 1064);
+            this.materialLabel9.Location = new System.Drawing.Point(9, 1051);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(128, 19);
@@ -694,6 +704,7 @@
             this.cboAntebrazoPuntuacion.Size = new System.Drawing.Size(359, 49);
             this.cboAntebrazoPuntuacion.StartIndex = 0;
             this.cboAntebrazoPuntuacion.TabIndex = 158;
+            this.cboAntebrazoPuntuacion.SelectedIndexChanged += new System.EventHandler(this.cboAntebrazoPuntuacion_SelectedIndexChanged);
             // 
             // pictureBox5
             // 
@@ -722,7 +733,7 @@
             this.materialLabel12.AutoSize = true;
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel12.Location = new System.Drawing.Point(9, 1268);
+            this.materialLabel12.Location = new System.Drawing.Point(9, 1289);
             this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel12.Name = "materialLabel12";
             this.materialLabel12.Size = new System.Drawing.Size(320, 19);
@@ -798,6 +809,7 @@
             this.cboBrazoPosicion.Size = new System.Drawing.Size(359, 49);
             this.cboBrazoPosicion.StartIndex = 0;
             this.cboBrazoPosicion.TabIndex = 164;
+            this.cboBrazoPosicion.SelectedIndexChanged += new System.EventHandler(this.cboBrazoPosicion_SelectedIndexChanged);
             // 
             // pictureBox6
             // 
@@ -856,6 +868,7 @@
             this.cboBrazoCorreccion.Size = new System.Drawing.Size(356, 49);
             this.cboBrazoCorreccion.StartIndex = 0;
             this.cboBrazoCorreccion.TabIndex = 168;
+            this.cboBrazoCorreccion.SelectedIndexChanged += new System.EventHandler(this.cboBrazoCorreccion_SelectedIndexChanged);
             // 
             // materialLabel15
             // 
@@ -928,6 +941,7 @@
             this.cboMunecaCorreccion.Size = new System.Drawing.Size(356, 49);
             this.cboMunecaCorreccion.StartIndex = 0;
             this.cboMunecaCorreccion.TabIndex = 176;
+            this.cboMunecaCorreccion.SelectedIndexChanged += new System.EventHandler(this.cboMunecaCorreccion_SelectedIndexChanged);
             // 
             // materialLabel18
             // 
@@ -998,6 +1012,7 @@
             this.cboMunecaMovimiento.Size = new System.Drawing.Size(359, 49);
             this.cboMunecaMovimiento.StartIndex = 0;
             this.cboMunecaMovimiento.TabIndex = 173;
+            this.cboMunecaMovimiento.SelectedIndexChanged += new System.EventHandler(this.cboMunecaMovimiento_SelectedIndexChanged);
             // 
             // materialLabel19
             // 
@@ -1092,6 +1107,7 @@
             this.cboAgarre.Size = new System.Drawing.Size(359, 49);
             this.cboAgarre.StartIndex = 0;
             this.cboAgarre.TabIndex = 182;
+            this.cboAgarre.SelectedIndexChanged += new System.EventHandler(this.cboAgarre_SelectedIndexChanged);
             // 
             // materialLabel23
             // 
@@ -1104,98 +1120,6 @@
             this.materialLabel23.Size = new System.Drawing.Size(154, 19);
             this.materialLabel23.TabIndex = 180;
             this.materialLabel23.Text = "CALIDAD DE AGARRE";
-            // 
-            // materialLabel24
-            // 
-            this.materialLabel24.AutoSize = true;
-            this.materialLabel24.Depth = 0;
-            this.materialLabel24.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel24.Location = new System.Drawing.Point(659, 2308);
-            this.materialLabel24.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel24.Name = "materialLabel24";
-            this.materialLabel24.Size = new System.Drawing.Size(67, 19);
-            this.materialLabel24.TabIndex = 193;
-            this.materialLabel24.Text = "Actividad";
-            // 
-            // materialLabel25
-            // 
-            this.materialLabel25.AutoSize = true;
-            this.materialLabel25.Depth = 0;
-            this.materialLabel25.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel25.Location = new System.Drawing.Point(659, 2388);
-            this.materialLabel25.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel25.Name = "materialLabel25";
-            this.materialLabel25.Size = new System.Drawing.Size(82, 19);
-            this.materialLabel25.TabIndex = 191;
-            this.materialLabel25.Text = "Puntuación";
-            // 
-            // puntuacionActividad
-            // 
-            this.puntuacionActividad.AnimateReadOnly = false;
-            this.puntuacionActividad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.puntuacionActividad.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.puntuacionActividad.Depth = 0;
-            this.puntuacionActividad.Enabled = false;
-            this.puntuacionActividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.puntuacionActividad.HideSelection = true;
-            this.puntuacionActividad.LeadingIcon = null;
-            this.puntuacionActividad.Location = new System.Drawing.Point(655, 2409);
-            this.puntuacionActividad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puntuacionActividad.MaxLength = 32767;
-            this.puntuacionActividad.MouseState = MaterialSkin.MouseState.OUT;
-            this.puntuacionActividad.Name = "puntuacionActividad";
-            this.puntuacionActividad.PasswordChar = '\0';
-            this.puntuacionActividad.PrefixSuffixText = null;
-            this.puntuacionActividad.ReadOnly = false;
-            this.puntuacionActividad.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.puntuacionActividad.SelectedText = "";
-            this.puntuacionActividad.SelectionLength = 0;
-            this.puntuacionActividad.SelectionStart = 0;
-            this.puntuacionActividad.ShortcutsEnabled = true;
-            this.puntuacionActividad.Size = new System.Drawing.Size(361, 48);
-            this.puntuacionActividad.TabIndex = 190;
-            this.puntuacionActividad.TabStop = false;
-            this.puntuacionActividad.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.puntuacionActividad.TrailingIcon = null;
-            this.puntuacionActividad.UseSystemPasswordChar = false;
-            // 
-            // materialComboBox13
-            // 
-            this.materialComboBox13.AutoCompleteCustomSource.AddRange(new string[] {
-            "1",
-            "2",
-            "3",
-            "4"});
-            this.materialComboBox13.AutoResize = false;
-            this.materialComboBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox13.Depth = 0;
-            this.materialComboBox13.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox13.DropDownHeight = 174;
-            this.materialComboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox13.DropDownWidth = 121;
-            this.materialComboBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox13.FormattingEnabled = true;
-            this.materialComboBox13.IntegralHeight = false;
-            this.materialComboBox13.ItemHeight = 43;
-            this.materialComboBox13.Location = new System.Drawing.Point(652, 2329);
-            this.materialComboBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialComboBox13.MaxDropDownItems = 4;
-            this.materialComboBox13.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox13.Name = "materialComboBox13";
-            this.materialComboBox13.Size = new System.Drawing.Size(359, 49);
-            this.materialComboBox13.StartIndex = 0;
-            this.materialComboBox13.TabIndex = 189;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(12, 2329);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(626, 85);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 188;
-            this.pictureBox9.TabStop = false;
             // 
             // materialLabel26
             // 
@@ -1221,51 +1145,245 @@
             this.materialLabel20.TabIndex = 194;
             this.materialLabel20.Text = "Corrección";
             // 
-            // btncerrar
+            // btncerrarReba
             // 
-            this.btncerrar.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btncerrar.FlatAppearance.BorderSize = 0;
-            this.btncerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncerrar.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btncerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncerrar.Location = new System.Drawing.Point(396, 2491);
-            this.btncerrar.Margin = new System.Windows.Forms.Padding(4);
-            this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(155, 43);
-            this.btncerrar.TabIndex = 197;
-            this.btncerrar.Text = "Salir";
-            this.btncerrar.UseVisualStyleBackColor = false;
-            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
+            this.btncerrarReba.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btncerrarReba.FlatAppearance.BorderSize = 0;
+            this.btncerrarReba.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btncerrarReba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncerrarReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncerrarReba.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btncerrarReba.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncerrarReba.Location = new System.Drawing.Point(367, 2532);
+            this.btncerrarReba.Margin = new System.Windows.Forms.Padding(4);
+            this.btncerrarReba.Name = "btncerrarReba";
+            this.btncerrarReba.Size = new System.Drawing.Size(155, 43);
+            this.btncerrarReba.TabIndex = 197;
+            this.btncerrarReba.Text = "Salir";
+            this.btncerrarReba.UseVisualStyleBackColor = false;
+            this.btncerrarReba.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // txtcargaidreba
             // 
             this.txtcargaidreba.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtcargaidreba.Location = new System.Drawing.Point(246, 2501);
+            this.txtcargaidreba.Location = new System.Drawing.Point(217, 2542);
             this.txtcargaidreba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargaidreba.Name = "txtcargaidreba";
             this.txtcargaidreba.Size = new System.Drawing.Size(100, 22);
             this.txtcargaidreba.TabIndex = 196;
             this.txtcargaidreba.Visible = false;
             // 
-            // btnGuardar
+            // btnGuardarReba1
             // 
-            this.btnGuardar.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(600, 2491);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(155, 43);
-            this.btnGuardar.TabIndex = 195;
-            this.btnGuardar.Text = "Guardar y Obtener Resultado";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.btnGuardarReba1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnGuardarReba1.FlatAppearance.BorderSize = 0;
+            this.btnGuardarReba1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnGuardarReba1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarReba1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarReba1.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnGuardarReba1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardarReba1.Location = new System.Drawing.Point(571, 2532);
+            this.btnGuardarReba1.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardarReba1.Name = "btnGuardarReba1";
+            this.btnGuardarReba1.Size = new System.Drawing.Size(155, 43);
+            this.btnGuardarReba1.TabIndex = 195;
+            this.btnGuardarReba1.Text = "Guardar y Obtener Resultado";
+            this.btnGuardarReba1.UseVisualStyleBackColor = false;
+            this.btnGuardarReba1.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // cboCargaFuerzaadicional
+            // 
+            this.cboCargaFuerzaadicional.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.cboCargaFuerzaadicional.AutoResize = false;
+            this.cboCargaFuerzaadicional.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboCargaFuerzaadicional.Depth = 0;
+            this.cboCargaFuerzaadicional.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboCargaFuerzaadicional.DropDownHeight = 174;
+            this.cboCargaFuerzaadicional.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCargaFuerzaadicional.DropDownWidth = 121;
+            this.cboCargaFuerzaadicional.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.cboCargaFuerzaadicional.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboCargaFuerzaadicional.FormattingEnabled = true;
+            this.cboCargaFuerzaadicional.IntegralHeight = false;
+            this.cboCargaFuerzaadicional.ItemHeight = 43;
+            this.cboCargaFuerzaadicional.Location = new System.Drawing.Point(652, 1154);
+            this.cboCargaFuerzaadicional.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboCargaFuerzaadicional.MaxDropDownItems = 4;
+            this.cboCargaFuerzaadicional.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboCargaFuerzaadicional.Name = "cboCargaFuerzaadicional";
+            this.cboCargaFuerzaadicional.Size = new System.Drawing.Size(356, 49);
+            this.cboCargaFuerzaadicional.StartIndex = 0;
+            this.cboCargaFuerzaadicional.TabIndex = 198;
+            this.cboCargaFuerzaadicional.SelectedIndexChanged += new System.EventHandler(this.cboCargaFuerzaadicional_SelectedIndexChanged);
+            // 
+            // cboactividadpostura
+            // 
+            this.cboactividadpostura.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.cboactividadpostura.AutoResize = false;
+            this.cboactividadpostura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboactividadpostura.Depth = 0;
+            this.cboactividadpostura.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboactividadpostura.DropDownHeight = 174;
+            this.cboactividadpostura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboactividadpostura.DropDownWidth = 121;
+            this.cboactividadpostura.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.cboactividadpostura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboactividadpostura.FormattingEnabled = true;
+            this.cboactividadpostura.IntegralHeight = false;
+            this.cboactividadpostura.ItemHeight = 43;
+            this.cboactividadpostura.Location = new System.Drawing.Point(367, 2454);
+            this.cboactividadpostura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboactividadpostura.MaxDropDownItems = 4;
+            this.cboactividadpostura.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboactividadpostura.Name = "cboactividadpostura";
+            this.cboactividadpostura.Size = new System.Drawing.Size(119, 49);
+            this.cboactividadpostura.StartIndex = 0;
+            this.cboactividadpostura.TabIndex = 243;
+            this.cboactividadpostura.SelectedIndexChanged += new System.EventHandler(this.cboactividadpostura_SelectedIndexChanged);
+            // 
+            // cboactividadmovimiento
+            // 
+            this.cboactividadmovimiento.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.cboactividadmovimiento.AutoResize = false;
+            this.cboactividadmovimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboactividadmovimiento.Depth = 0;
+            this.cboactividadmovimiento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboactividadmovimiento.DropDownHeight = 174;
+            this.cboactividadmovimiento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboactividadmovimiento.DropDownWidth = 121;
+            this.cboactividadmovimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.cboactividadmovimiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboactividadmovimiento.FormattingEnabled = true;
+            this.cboactividadmovimiento.IntegralHeight = false;
+            this.cboactividadmovimiento.ItemHeight = 43;
+            this.cboactividadmovimiento.Location = new System.Drawing.Point(367, 2384);
+            this.cboactividadmovimiento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboactividadmovimiento.MaxDropDownItems = 4;
+            this.cboactividadmovimiento.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboactividadmovimiento.Name = "cboactividadmovimiento";
+            this.cboactividadmovimiento.Size = new System.Drawing.Size(119, 49);
+            this.cboactividadmovimiento.StartIndex = 0;
+            this.cboactividadmovimiento.TabIndex = 242;
+            this.cboactividadmovimiento.SelectedIndexChanged += new System.EventHandler(this.cboactividadmovimiento_SelectedIndexChanged);
+            // 
+            // cboActividadpartescuerpo
+            // 
+            this.cboActividadpartescuerpo.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.cboActividadpartescuerpo.AutoResize = false;
+            this.cboActividadpartescuerpo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboActividadpartescuerpo.Depth = 0;
+            this.cboActividadpartescuerpo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboActividadpartescuerpo.DropDownHeight = 174;
+            this.cboActividadpartescuerpo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboActividadpartescuerpo.DropDownWidth = 121;
+            this.cboActividadpartescuerpo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.cboActividadpartescuerpo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboActividadpartescuerpo.FormattingEnabled = true;
+            this.cboActividadpartescuerpo.IntegralHeight = false;
+            this.cboActividadpartescuerpo.ItemHeight = 43;
+            this.cboActividadpartescuerpo.Location = new System.Drawing.Point(367, 2320);
+            this.cboActividadpartescuerpo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboActividadpartescuerpo.MaxDropDownItems = 4;
+            this.cboActividadpartescuerpo.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboActividadpartescuerpo.Name = "cboActividadpartescuerpo";
+            this.cboActividadpartescuerpo.Size = new System.Drawing.Size(119, 49);
+            this.cboActividadpartescuerpo.StartIndex = 0;
+            this.cboActividadpartescuerpo.TabIndex = 241;
+            this.cboActividadpartescuerpo.SelectedIndexChanged += new System.EventHandler(this.cboActividadpartescuerpo_SelectedIndexChanged);
+            // 
+            // materialLabel24
+            // 
+            this.materialLabel24.AutoSize = true;
+            this.materialLabel24.Depth = 0;
+            this.materialLabel24.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel24.Location = new System.Drawing.Point(14, 2398);
+            this.materialLabel24.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel24.Name = "materialLabel24";
+            this.materialLabel24.Size = new System.Drawing.Size(202, 19);
+            this.materialLabel24.TabIndex = 240;
+            this.materialLabel24.Text = "¿Hay movimiento repetitivo?";
+            // 
+            // materialLabel25
+            // 
+            this.materialLabel25.AutoSize = true;
+            this.materialLabel25.Depth = 0;
+            this.materialLabel25.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel25.Location = new System.Drawing.Point(9, 2334);
+            this.materialLabel25.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel25.Name = "materialLabel25";
+            this.materialLabel25.Size = new System.Drawing.Size(341, 19);
+            this.materialLabel25.TabIndex = 239;
+            this.materialLabel25.Text = "¿Una o varias partes del cuerpo estan estáticas?";
+            // 
+            // materialLabel27
+            // 
+            this.materialLabel27.AutoSize = true;
+            this.materialLabel27.Depth = 0;
+            this.materialLabel27.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel27.Location = new System.Drawing.Point(9, 2468);
+            this.materialLabel27.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel27.Name = "materialLabel27";
+            this.materialLabel27.Size = new System.Drawing.Size(337, 19);
+            this.materialLabel27.TabIndex = 238;
+            this.materialLabel27.Text = "¿Cambio de posturas importantes o inestables?";
+            // 
+            // materialLabel28
+            // 
+            this.materialLabel28.AutoSize = true;
+            this.materialLabel28.Depth = 0;
+            this.materialLabel28.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel28.Location = new System.Drawing.Point(546, 2363);
+            this.materialLabel28.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel28.Name = "materialLabel28";
+            this.materialLabel28.Size = new System.Drawing.Size(82, 19);
+            this.materialLabel28.TabIndex = 245;
+            this.materialLabel28.Text = "Puntuación";
+            // 
+            // txtpuntuacionActividadReba
+            // 
+            this.txtpuntuacionActividadReba.AnimateReadOnly = false;
+            this.txtpuntuacionActividadReba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtpuntuacionActividadReba.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtpuntuacionActividadReba.Depth = 0;
+            this.txtpuntuacionActividadReba.Enabled = false;
+            this.txtpuntuacionActividadReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtpuntuacionActividadReba.HideSelection = true;
+            this.txtpuntuacionActividadReba.LeadingIcon = null;
+            this.txtpuntuacionActividadReba.Location = new System.Drawing.Point(542, 2384);
+            this.txtpuntuacionActividadReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtpuntuacionActividadReba.MaxLength = 32767;
+            this.txtpuntuacionActividadReba.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtpuntuacionActividadReba.Name = "txtpuntuacionActividadReba";
+            this.txtpuntuacionActividadReba.PasswordChar = '\0';
+            this.txtpuntuacionActividadReba.PrefixSuffixText = null;
+            this.txtpuntuacionActividadReba.ReadOnly = false;
+            this.txtpuntuacionActividadReba.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtpuntuacionActividadReba.SelectedText = "";
+            this.txtpuntuacionActividadReba.SelectionLength = 0;
+            this.txtpuntuacionActividadReba.SelectionStart = 0;
+            this.txtpuntuacionActividadReba.ShortcutsEnabled = true;
+            this.txtpuntuacionActividadReba.Size = new System.Drawing.Size(361, 48);
+            this.txtpuntuacionActividadReba.TabIndex = 244;
+            this.txtpuntuacionActividadReba.TabStop = false;
+            this.txtpuntuacionActividadReba.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtpuntuacionActividadReba.TrailingIcon = null;
+            this.txtpuntuacionActividadReba.UseSystemPasswordChar = false;
             // 
             // REBA1
             // 
@@ -1274,15 +1392,19 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1116, 1102);
-            this.Controls.Add(this.btncerrar);
-            this.Controls.Add(this.txtcargaidreba);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.materialLabel20);
+            this.Controls.Add(this.materialLabel28);
+            this.Controls.Add(this.txtpuntuacionActividadReba);
+            this.Controls.Add(this.cboactividadpostura);
+            this.Controls.Add(this.cboactividadmovimiento);
+            this.Controls.Add(this.cboActividadpartescuerpo);
             this.Controls.Add(this.materialLabel24);
             this.Controls.Add(this.materialLabel25);
-            this.Controls.Add(this.puntuacionActividad);
-            this.Controls.Add(this.materialComboBox13);
-            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.materialLabel27);
+            this.Controls.Add(this.cboCargaFuerzaadicional);
+            this.Controls.Add(this.btncerrarReba);
+            this.Controls.Add(this.txtcargaidreba);
+            this.Controls.Add(this.btnGuardarReba1);
+            this.Controls.Add(this.materialLabel20);
             this.Controls.Add(this.materialLabel26);
             this.Controls.Add(this.materialLabel21);
             this.Controls.Add(this.materialLabel22);
@@ -1354,7 +1476,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1419,15 +1540,19 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtAgarreReba;
         private MaterialSkin.Controls.MaterialComboBox cboAgarre;
         private MaterialSkin.Controls.MaterialLabel materialLabel23;
-        private MaterialSkin.Controls.MaterialLabel materialLabel24;
-        private MaterialSkin.Controls.MaterialLabel materialLabel25;
-        private MaterialSkin.Controls.MaterialTextBox2 puntuacionActividad;
-        private MaterialSkin.Controls.MaterialComboBox materialComboBox13;
-        private System.Windows.Forms.PictureBox pictureBox9;
         private MaterialSkin.Controls.MaterialLabel materialLabel26;
         private MaterialSkin.Controls.MaterialLabel materialLabel20;
-        private System.Windows.Forms.Button btncerrar;
+        private System.Windows.Forms.Button btncerrarReba;
         private System.Windows.Forms.TextBox txtcargaidreba;
-        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnGuardarReba1;
+        private MaterialSkin.Controls.MaterialComboBox cboCargaFuerzaadicional;
+        private MaterialSkin.Controls.MaterialComboBox cboactividadpostura;
+        private MaterialSkin.Controls.MaterialComboBox cboactividadmovimiento;
+        private MaterialSkin.Controls.MaterialComboBox cboActividadpartescuerpo;
+        private MaterialSkin.Controls.MaterialLabel materialLabel24;
+        private MaterialSkin.Controls.MaterialLabel materialLabel25;
+        private MaterialSkin.Controls.MaterialLabel materialLabel27;
+        private MaterialSkin.Controls.MaterialLabel materialLabel28;
+        private MaterialSkin.Controls.MaterialTextBox2 txtpuntuacionActividadReba;
     }
 }

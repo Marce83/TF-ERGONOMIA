@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TF.ENTITIES;
 
 namespace TF.WIN
 {
@@ -15,6 +16,9 @@ namespace TF.WIN
         public REBA_RESULTADO()
         {
             InitializeComponent();
+
+            
+
         }
 
         private void btnpagant_Click(object sender, EventArgs e)

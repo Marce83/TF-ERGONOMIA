@@ -769,7 +769,7 @@ insert into RulaTablaC values (8,7,7)
 
 
 
----------------------------------------REBA ------------------------------------------------
+---------------------------------------REBA TABLA ------------------------------------------------
 
 use ProyectoFinal
 go
@@ -807,10 +807,35 @@ BEGIN
 END
 GO
 
+---------------Reba1 FORMULARIO---------------
+
+use ProyectoFinal
+go
+CREATE PROCEDURE SP_Reba_MaxID
+AS
+BEGIN
+	select max(cargaIdReba)as cargaIdReba from RebaTablaCompleta
+END
+GO
+
+
+CREATE or Alter PROCEDURE SP_Reba_updateReba1
+@cargaIdReba Int,
+@TroncoReba int,
+@CuelloReba int,
+@PiernaReba  int,
+@CargaFuerzaAReba int,
+@AntebrazoReba int,
+@MunecaReba int,
+@BrazoReba int,
+@AgarreReba int,
+@ActividadReba int
+AS
+BEGIN
+	update RebaTablaCompleta set TroncoReba=@TroncoReba, CuelloReba=@CuelloReba, PiernaReba=@PiernaReba ,CargaFuerzaAReba=@CargaFuerzaAReba, AntebrazoReba=@AntebrazoReba, MunecaReba=@MunecaReba, BrazoReba=@BrazoReba, AgarreReba=@AgarreReba , ActividadReba=@ActividadReba
+	where cargaIdReba=@cargaIdReba
+END
+GO
 
 
 
-
-
-
----------------Reba1-----------------------------
