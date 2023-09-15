@@ -811,14 +811,15 @@ GO
 
 use ProyectoFinal
 go
-CREATE PROCEDURE SP_Reba_MaxID
+CREATE or Alter PROCEDURE SP_Reba_MaxID
 AS
 BEGIN
 	select max(cargaIdReba)as cargaIdReba from RebaTablaCompleta
 END
 GO
 
-
+use ProyectoFinal
+go
 CREATE or Alter PROCEDURE SP_Reba_updateReba1
 @cargaIdReba Int,
 @TroncoReba int,
