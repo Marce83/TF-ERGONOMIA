@@ -29,7 +29,12 @@ namespace TF.BC
             return oRebaDAC.UpdateReba1DAC(oReba);
         }
 
-
+        public DataTable Reba_ResultadoBC(Reba oReba)
+        {
+            RebaDAC oRebaDAC = new RebaDAC();
+            DataTable dt = oRebaDAC.Reba_ResultadoDAC(oReba);
+            return dt;
+        }
 
 
 

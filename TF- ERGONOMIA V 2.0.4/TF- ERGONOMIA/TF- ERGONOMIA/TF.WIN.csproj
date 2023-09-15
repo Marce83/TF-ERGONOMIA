@@ -146,11 +146,11 @@
     <Compile Include="REBARESULTADO.Designer.cs">
       <DependentUpon>REBARESULTADO.cs</DependentUpon>
     </Compile>
-    <Compile Include="REBA-PORTADA.cs">
+    <Compile Include="REBAPORTADA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="REBA-PORTADA.Designer.cs">
-      <DependentUpon>REBA-PORTADA.cs</DependentUpon>
+    <Compile Include="REBAPORTADA.Designer.cs">
+      <DependentUpon>REBAPORTADA.cs</DependentUpon>
     </Compile>
     <Compile Include="REBA1.cs">
       <SubType>Form</SubType>
@@ -238,8 +238,8 @@
     <EmbeddedResource Include="REBARESULTADO.resx">
       <DependentUpon>REBARESULTADO.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="REBA-PORTADA.resx">
-      <DependentUpon>REBA-PORTADA.cs</DependentUpon>
+    <EmbeddedResource Include="REBAPORTADA.resx">
+      <DependentUpon>REBAPORTADA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="REBA1.resx">
       <DependentUpon>REBA1.cs</DependentUpon>

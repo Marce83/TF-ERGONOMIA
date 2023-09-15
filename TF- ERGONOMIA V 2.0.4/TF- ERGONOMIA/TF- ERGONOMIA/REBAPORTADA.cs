@@ -28,7 +28,14 @@ namespace TF.WIN
             if (oFrm.EmpresaSeleccionada != null)
             {
                 txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
+                
             }
+            if (oFrm.EmpresaSeleccionada != null)
+            {
+                txtNombreEmpresaReba.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
+            }
+
+
         }
 
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
@@ -39,7 +46,15 @@ namespace TF.WIN
             if (oFrm.EmpleadoSeleccionado != null)
             {
                 txtDniEmpleadoReba.Text = oFrm.EmpleadoSeleccionado.DNI.ToString();
+                
             }
+
+            if (oFrm.EmpleadoSeleccionado != null)
+            {
+                txtNombreEmpleadoReba.Text = oFrm.EmpleadoSeleccionado.Apellido.ToString() + " " + oFrm.EmpleadoSeleccionado.Nombre.ToString();
+
+            }
+
         }
 
         private void btnBuscarpuesto_Click(object sender, EventArgs e)
@@ -74,6 +89,11 @@ namespace TF.WIN
             OREBA1.Show();
 
             this.Close();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

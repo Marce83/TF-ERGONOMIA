@@ -838,5 +838,15 @@ BEGIN
 END
 GO
 
+use ProyectoFinal
+go
 
+CREATE or Alter PROCEDURE SP_Reba_Resultado
+@cargaIdReba int
+AS
+BEGIN
+	select * from RebaTablaCompleta
+	where cargaIdReba=@cargaIdReba
+END
+GO
 
