@@ -103,8 +103,6 @@ namespace TF.DAC
 
 
         }
-
-
         public DataTable Reba_ResultadoDAC(Reba oReba)
         {
             try
@@ -130,6 +128,85 @@ namespace TF.DAC
                 //return null;
             }
         }
+        public DataTable RebaTablaADAC(Reba oReba)
+        {
+            try
+            {
+                string sqlSentencia = "SP_Reba_TablaA";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCom.CommandType = CommandType.StoredProcedure;
+                sqlCom.Parameters.Add("@cargaIdReba", SqlDbType.NVarChar).Value = oReba.cargaIdReba;
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
+        }
+        public DataTable RebaTablaBDAC(Reba oReba)
+        {
+            try
+            {
+                string sqlSentencia = "SP_Reba_TablaB";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCom.CommandType = CommandType.StoredProcedure;
+                sqlCom.Parameters.Add("@cargaIdReba", SqlDbType.NVarChar).Value = oReba.cargaIdReba;
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
+        }
+        public DataTable RebaTablaCRdoDAC(Reba oReba)
+        {
+            try
+            {
+                string sqlSentencia = "SP_Reba_TablaC";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCom.CommandType = CommandType.StoredProcedure;
+                sqlCom.Parameters.Add("@ValorA", SqlDbType.Int).Value = oReba.ValorTablaAReba;
+                sqlCom.Parameters.Add("@ValorB", SqlDbType.Int).Value = oReba.ValorTablaBReba;
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
+        }
+
+
+
 
 
     }

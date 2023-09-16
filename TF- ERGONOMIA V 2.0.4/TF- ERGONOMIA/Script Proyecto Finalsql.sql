@@ -791,7 +791,6 @@ AgarreReba INT,
 ActividadReba INT)
 GO	
 
--------------Portada ----------------------
 use ProyectoFinal
 go
 CREATE or Alter PROCEDURE SP_Reba_Insert
@@ -806,8 +805,6 @@ BEGIN
 	VALUES(@CUITReba,@PuestoDeTrabajoReba,@DniEmpleadoReba,@EmpleadoReba,@EmpresaReba)
 END
 GO
-
----------------Reba1 FORMULARIO---------------
 
 use ProyectoFinal
 go
@@ -850,3 +847,315 @@ BEGIN
 END
 GO
 
+use ProyectoFinal
+go
+CREATE TABLE TablaAReba(
+TroncoReba INT, 
+CuelloReba INT, 
+PiernasReba INT, 
+ValorTablaAReba INT)
+GO
+
+
+insert into TablaAReba values (1,1,1,1)
+insert into TablaAReba values (2,1,1,2)
+insert into TablaAReba values (3,1,1,2)
+insert into TablaAReba values (4,1,1,3)
+insert into TablaAReba values (5,1,1,4)
+insert into TablaAReba values (1,1,2,2)
+insert into TablaAReba values (2,1,2,3)
+insert into TablaAReba values (3,1,2,4)
+insert into TablaAReba values (4,1,2,5)
+insert into TablaAReba values (5,1,2,6)
+insert into TablaAReba values (1,1,3,3)
+insert into TablaAReba values (2,1,3,4)
+insert into TablaAReba values (3,1,3,5)
+insert into TablaAReba values (4,1,3,6)
+insert into TablaAReba values (5,1,3,7)
+insert into TablaAReba values (1,1,4,4)
+insert into TablaAReba values (2,1,4,5)
+insert into TablaAReba values (3,1,4,6)
+insert into TablaAReba values (4,1,4,7)
+insert into TablaAReba values (5,1,4,8)
+insert into TablaAReba values (1,2,1,1)
+insert into TablaAReba values (2,2,1,3)
+insert into TablaAReba values (3,2,1,4)
+insert into TablaAReba values (4,2,1,5)
+insert into TablaAReba values (5,2,1,6)
+insert into TablaAReba values (1,2,2,2)
+insert into TablaAReba values (2,2,2,4)
+insert into TablaAReba values (3,2,2,5)
+insert into TablaAReba values (4,2,2,6)
+insert into TablaAReba values (5,2,2,7)
+insert into TablaAReba values (1,2,3,3)
+insert into TablaAReba values (2,2,3,5)
+insert into TablaAReba values (3,2,3,6)
+insert into TablaAReba values (4,2,3,7)
+insert into TablaAReba values (5,2,3,8)
+insert into TablaAReba values (1,2,4,4)
+insert into TablaAReba values (2,2,4,6)
+insert into TablaAReba values (3,2,4,7)
+insert into TablaAReba values (4,2,4,8)
+insert into TablaAReba values (5,2,4,9)
+insert into TablaAReba values (1,3,1,3)
+insert into TablaAReba values (2,3,1,4)
+insert into TablaAReba values (3,3,1,5)
+insert into TablaAReba values (4,3,1,6)
+insert into TablaAReba values (5,3,1,7)
+insert into TablaAReba values (1,3,2,3)
+insert into TablaAReba values (2,3,2,5)
+insert into TablaAReba values (3,3,2,6)
+insert into TablaAReba values (4,3,2,7)
+insert into TablaAReba values (5,3,2,8)
+insert into TablaAReba values (1,3,3,5)
+insert into TablaAReba values (2,3,3,6)
+insert into TablaAReba values (3,3,3,7)
+insert into TablaAReba values (4,3,3,8)
+insert into TablaAReba values (5,3,3,9)
+insert into TablaAReba values (1,3,4,6)
+insert into TablaAReba values (2,3,4,7)
+insert into TablaAReba values (3,3,4,8)
+insert into TablaAReba values (4,3,4,9)
+insert into TablaAReba values (5,3,4,9)
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_Reba_TablaA
+@cargaIdReba int
+AS 
+BEGIn
+SELECT rta.TroncoReba,rta.CuelloReba,rta.PiernasReba,rta.ValorTablaAReba FROM TablaAReba rta
+INNER JOIN dbo.RebaTablaCompleta rtc ON rtc.TroncoReba = rta.TroncoReba
+AND rtc.CuelloReba = rta.CuelloReba
+AND	rtc.PiernaReba = rta.PiernasReba
+WHERE rtc.cargaIdReba = @cargaIdReba
+END
+GO
+
+
+
+use ProyectoFinal
+go
+CREATE TABLE TablabReba(
+BRAZOReba INT, 
+MUNECAReba INT, 
+ANTEBRAZOReba INT, 
+ValorTablaB INT)
+GO
+
+insert into TablaBReba values (1,1,1,1)
+insert into TablaBReba values (2,1,1,1)
+insert into TablaBReba values (3,1,1,3)
+insert into TablaBReba values (4,1,1,4)
+insert into TablaBReba values (5,1,1,6)
+insert into TablaBReba values (6,1,1,7)
+insert into TablaBReba values (1,2,1,2)
+insert into TablaBReba values (2,2,1,2)
+insert into TablaBReba values (3,2,1,4)
+insert into TablaBReba values (4,2,1,5)
+insert into TablaBReba values (5,2,1,7)
+insert into TablaBReba values (6,2,1,8)
+insert into TablaBReba values (1,3,1,2)
+insert into TablaBReba values (2,3,1,3)
+insert into TablaBReba values (3,3,1,5)
+insert into TablaBReba values (4,3,1,5)
+insert into TablaBReba values (5,3,1,8)
+insert into TablaBReba values (6,3,1,8)
+insert into TablaBReba values (1,1,2,1)
+insert into TablaBReba values (2,1,2,2)
+insert into TablaBReba values (3,1,2,4)
+insert into TablaBReba values (4,1,2,5)
+insert into TablaBReba values (5,1,2,7)
+insert into TablaBReba values (6,1,2,8)
+insert into TablaBReba values (1,2,2,2)
+insert into TablaBReba values (2,2,2,3)
+insert into TablaBReba values (3,2,2,5)
+insert into TablaBReba values (4,2,2,6)
+insert into TablaBReba values (5,2,2,8)
+insert into TablaBReba values (6,2,2,9)
+insert into TablaBReba values (1,3,2,3)
+insert into TablaBReba values (2,3,2,4)
+insert into TablaBReba values (3,3,2,5)
+insert into TablaBReba values (4,3,2,7)
+insert into TablaBReba values (5,3,2,8)
+insert into TablaBReba values (6,3,2,9)
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_Reba_TablaB
+@cargaIdReba int
+AS 
+BEGIn
+SELECT rta.BRAZOReba,rta.MUNECAReba,rta.ANTEBRAZOReba,rta.ValorTablaB FROM TablaBReba rta
+INNER JOIN dbo.RebaTablaCompleta rtc ON rtc.BRAZOReba = rta.BrazoReba
+AND rtc.MunecaReba = rta.MUNECAReba
+AND	rtc.AntebrazoReba = rta.ANTEBRAZOReba
+WHERE rtc.cargaIdReba = @cargaIdReba
+END
+GO
+
+use ProyectoFinal
+go
+CREATE TABLE TablaCReba(
+PuntuacionB INT, 
+PuntuacionA INT, 
+ValorTablaC INT)
+GO
+
+insert into TablaCReba values (1,1,1)
+insert into TablaCReba values (1,2,1)
+insert into TablaCReba values (1,3,2)
+insert into TablaCReba values (1,4,3)
+insert into TablaCReba values (1,5,4)
+insert into TablaCReba values (1,6,6)
+insert into TablaCReba values (1,7,7)
+insert into TablaCReba values (1,8,8)
+insert into TablaCReba values (1,9,9)
+insert into TablaCReba values (1,10,10)
+insert into TablaCReba values (1,11,11)
+insert into TablaCReba values (1,12,12)
+insert into TablaCReba values (2,1,1)
+insert into TablaCReba values (2,2,2)
+insert into TablaCReba values (2,3,3)
+insert into TablaCReba values (2,4,4)
+insert into TablaCReba values (2,5,4)
+insert into TablaCReba values (2,6,6)
+insert into TablaCReba values (2,7,7)
+insert into TablaCReba values (2,8,8)
+insert into TablaCReba values (2,9,9)
+insert into TablaCReba values (2,10,10)
+insert into TablaCReba values (2,11,11)
+insert into TablaCReba values (2,12,12)
+insert into TablaCReba values (3,1,1)
+insert into TablaCReba values (3,2,2)
+insert into TablaCReba values (3,3,3)
+insert into TablaCReba values (3,4,4)
+insert into TablaCReba values (3,5,4)
+insert into TablaCReba values (3,6,6)
+insert into TablaCReba values (3,7,7)
+insert into TablaCReba values (3,8,8)
+insert into TablaCReba values (3,9,9)
+insert into TablaCReba values (3,10,10)
+insert into TablaCReba values (3,11,11)
+insert into TablaCReba values (3,12,12)
+insert into TablaCReba values (4,1,2)
+insert into TablaCReba values (4,2,3)
+insert into TablaCReba values (4,3,3)
+insert into TablaCReba values (4,4,4)
+insert into TablaCReba values (4,5,5)
+insert into TablaCReba values (4,6,7)
+insert into TablaCReba values (4,7,8)
+insert into TablaCReba values (4,8,9)
+insert into TablaCReba values (4,9,10)
+insert into TablaCReba values (4,10,11)
+insert into TablaCReba values (4,11,11)
+insert into TablaCReba values (4,12,12)
+insert into TablaCReba values (5,1,3)
+insert into TablaCReba values (5,2,4)
+insert into TablaCReba values (5,3,4)
+insert into TablaCReba values (5,4,5)
+insert into TablaCReba values (5,5,6)
+insert into TablaCReba values (5,6,8)
+insert into TablaCReba values (5,7,9)
+insert into TablaCReba values (5,8,10)
+insert into TablaCReba values (5,9,10)
+insert into TablaCReba values (5,10,11)
+insert into TablaCReba values (5,11,12)
+insert into TablaCReba values (5,12,12)
+insert into TablaCReba values (6,1,3)
+insert into TablaCReba values (6,2,4)
+insert into TablaCReba values (6,3,5)
+insert into TablaCReba values (6,4,6)
+insert into TablaCReba values (6,5,7)
+insert into TablaCReba values (6,6,8)
+insert into TablaCReba values (6,7,9)
+insert into TablaCReba values (6,8,10)
+insert into TablaCReba values (6,9,10)
+insert into TablaCReba values (6,10,11)
+insert into TablaCReba values (6,11,12)
+insert into TablaCReba values (6,12,12)
+insert into TablaCReba values (7,1,4)
+insert into TablaCReba values (7,2,5)
+insert into TablaCReba values (7,3,6)
+insert into TablaCReba values (7,4,7)
+insert into TablaCReba values (7,5,8)
+insert into TablaCReba values (7,6,9)
+insert into TablaCReba values (7,7,9)
+insert into TablaCReba values (7,8,10)
+insert into TablaCReba values (7,9,11)
+insert into TablaCReba values (7,10,11)
+insert into TablaCReba values (7,11,12)
+insert into TablaCReba values (7,12,12)
+insert into TablaCReba values (8,1,5)
+insert into TablaCReba values (8,2,6)
+insert into TablaCReba values (8,3,7)
+insert into TablaCReba values (8,4,8)
+insert into TablaCReba values (8,5,8)
+insert into TablaCReba values (8,6,9)
+insert into TablaCReba values (8,7,10)
+insert into TablaCReba values (8,8,10)
+insert into TablaCReba values (8,9,11)
+insert into TablaCReba values (8,10,12)
+insert into TablaCReba values (8,11,12)
+insert into TablaCReba values (8,12,12)
+insert into TablaCReba values (9,1,6)
+insert into TablaCReba values (9,2,6)
+insert into TablaCReba values (9,3,7)
+insert into TablaCReba values (9,4,8)
+insert into TablaCReba values (9,5,9)
+insert into TablaCReba values (9,6,10)
+insert into TablaCReba values (9,7,10)
+insert into TablaCReba values (9,8,10)
+insert into TablaCReba values (9,9,11)
+insert into TablaCReba values (9,10,12)
+insert into TablaCReba values (9,11,12)
+insert into TablaCReba values (9,12,12)
+insert into TablaCReba values (10,1,7)
+insert into TablaCReba values (10,2,7)
+insert into TablaCReba values (10,3,8)
+insert into TablaCReba values (10,4,9)
+insert into TablaCReba values (10,5,9)
+insert into TablaCReba values (10,6,10)
+insert into TablaCReba values (10,7,11)
+insert into TablaCReba values (10,8,11)
+insert into TablaCReba values (10,9,12)
+insert into TablaCReba values (10,10,12)
+insert into TablaCReba values (10,11,12)
+insert into TablaCReba values (10,12,12)
+insert into TablaCReba values (11,1,7)
+insert into TablaCReba values (11,2,7)
+insert into TablaCReba values (11,3,8)
+insert into TablaCReba values (11,4,9)
+insert into TablaCReba values (11,5,9)
+insert into TablaCReba values (11,6,10)
+insert into TablaCReba values (11,7,11)
+insert into TablaCReba values (11,8,11)
+insert into TablaCReba values (11,9,12)
+insert into TablaCReba values (11,10,12)
+insert into TablaCReba values (11,11,12)
+insert into TablaCReba values (11,12,12)
+insert into TablaCReba values (12,1,7)
+insert into TablaCReba values (12,2,8)
+insert into TablaCReba values (12,3,8)
+insert into TablaCReba values (12,4,9)
+insert into TablaCReba values (12,5,9)
+insert into TablaCReba values (12,6,10)
+insert into TablaCReba values (12,7,11)
+insert into TablaCReba values (12,8,11)
+insert into TablaCReba values (12,9,12)
+insert into TablaCReba values (12,10,12)
+insert into TablaCReba values (12,11,12)
+insert into TablaCReba values (12,12,12)
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_Reba_TablaC
+@ValorA int,
+@ValorB int
+AS 
+BEGIn
+SELECT ValorTablaC FROM dbo.TablaCReba
+WHERE  PuntuacionA =@ValorA
+and PuntuacionB =@ValorB
+END
+GO

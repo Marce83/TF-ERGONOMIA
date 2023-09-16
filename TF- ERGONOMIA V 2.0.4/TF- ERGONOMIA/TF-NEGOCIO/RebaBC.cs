@@ -36,6 +36,31 @@ namespace TF.BC
             return dt;
         }
 
+        public DataTable RebaTablaABC(Reba oReba)
+        {
+            RebaDAC oRebaDAC = new RebaDAC();
+            DataTable dt = oRebaDAC.RebaTablaADAC(oReba);
+            return dt;
+        }
+
+        public DataTable RebaTablaBBC(Reba oReba)
+        {
+            RebaDAC oRebaDAC = new RebaDAC();
+            DataTable dt = oRebaDAC.RebaTablaBDAC(oReba);
+            return dt;
+        }
+
+
+        public DataTable RebaTablaCRdoBC(Reba oReba)
+        {
+            RebaDAC oRebaDAC = new RebaDAC();
+            DataTable dt = oRebaDAC.RebaTablaCRdoDAC(oReba);
+            return dt;
+        }
+
+
+
+
 
 
 

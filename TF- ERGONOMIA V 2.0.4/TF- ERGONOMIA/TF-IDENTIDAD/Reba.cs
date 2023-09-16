@@ -42,5 +42,25 @@ namespace TF.ENTITIES
         //Procesos de Obtención Resultado Final
 
 
+
+        // Resultados VALOR Tablas A, B y C //
+
+        public int ValorTablaAReba { get; set; }
+        public int ValorTablaBReba { get; set; }
+        public int ValorTablaCReba { get; set; }
+
+
+        public int ValorA { get; set; }
+        public int ValorB { get; set; }
+
     }
+
+
+
+
+
+
+
+
 }
+
