@@ -35,8 +35,8 @@ namespace TF.WIN
         }
 
         private int fileCounter = 0;
-        private int SumaTablaA = 0;
-        private int SumaTablaB = 0;
+            private int SumaTablaA = 0;
+            private int SumaTablaB = 0;
 
         private void RULARESULTADO_Load(object sender, EventArgs e)
         {
@@ -394,7 +394,7 @@ namespace TF.WIN
             DataTable dt = oRulaBC.RulaIdMaxBC(oRula);
 
             if (dt.Rows.Count > 0)
-            {
+            {   
                 int maxId = Convert.ToInt32(dt.Rows[0]["cargaid"]);
                 txtcargaid.Text = maxId.ToString();
             }

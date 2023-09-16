@@ -17,9 +17,8 @@ namespace TF.WIN
         public REBA_RESULTADO()
         {
             InitializeComponent();
-            RebaResultadoMax();
-
-
+            ObtenerMaximoIdReba();
+            RebaRescatar();
 
         }
 
@@ -36,13 +35,25 @@ namespace TF.WIN
         }
 
 
-
-
-
-        public void RebaResultadoMax()
+        public void ObtenerMaximoIdReba()
         {
             Reba oReba = new Reba();
-            //oReba.cargaIdReba = Convert.ToInt32(txtcargaidrebaresultado.Text);
+            RebaBC oRebaBC = new RebaBC();
+            DataTable dt23 = oRebaBC.RebaMaxIDBC(oReba);
+
+            if (dt23.Rows.Count > 0)
+            {
+                int maxIdReba = Convert.ToInt32(dt23.Rows[0]["cargaIdReba"]);
+                txtcargaidrebaresultado.Text = maxIdReba.ToString();
+            }
+
+        }
+
+
+        public void RebaRescatar()
+        {
+            Reba oReba = new Reba();
+            oReba.cargaIdReba = Convert.ToInt32(txtcargaidrebaresultado.Text);
             RebaBC oRebaBC = new RebaBC();
             
             DataTable dt50 = oRebaBC.Reba_ResultadoBC(oReba);
@@ -95,6 +106,18 @@ namespace TF.WIN
            
         }
 
+        private void btnRecuperarCarga_Click(object sender, EventArgs e)
+        {
+            RebaRescatar();
+        }
+
+
+
+        private int SumaRebaTablaA = 0;
+        private int SumaRebaTablaB = 0;
+
+
+        
 
 
 
