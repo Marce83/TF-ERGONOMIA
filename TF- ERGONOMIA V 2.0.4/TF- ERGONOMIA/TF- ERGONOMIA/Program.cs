@@ -22,7 +22,7 @@ namespace TF.WIN
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(FormMenu = new frmMenuPrincipal());
-            Application.Run(new frmEmpresa());
+            Application.Run(new frmMenuPrincipal());
 
         }
     }

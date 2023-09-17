@@ -71,20 +71,20 @@ namespace TF.WIN
                     {
                         if (cboCondFiscal.Text != string.Empty)
                         {
-                            if (txtActEmpr.Text != string.Empty)
+                            if (cboActEmpr.Text != string.Empty)
                             {
-                                if (txtDireccion.Text != string.Empty)
+                                if (txtCalle.Text != string.Empty)
                                 {
-                                    if (cboLocalidad.Text != string.Empty)
+                                    if (cboProvincia.Text != string.Empty)
                                     {
-                                        if (cboProvincia.Text != string.Empty)
+                                        if (cboLocalidad.Text != string.Empty)
                                         {
                                             if (txtTelefono.Text != string.Empty)
                                             {
                                                 if (txtTelefono.Text.Length == 10)
                                                 {
                                                     if (txtWeb.Text != string.Empty)
-                                                     {
+                                                    {
                                                         if (txtCorreo.Text != string.Empty)
                                                         {
                                                             if (ValidarCorreo.ValidarEmail(txtCorreo.Text))
@@ -94,10 +94,10 @@ namespace TF.WIN
                                                                     oemp.CUIT = txtCUIT.Text;
                                                                     oemp.Nombre = txtNombreEmpresa.Text;
                                                                     oemp.Condicion_Fiscal = cboCondFiscal.Text;
-                                                                    oemp.Actividad_Empresarial = txtActEmpr.Text;
-                                                                    oemp.Direccion = txtDireccion.Text;
-                                                                    oemp.Localidad = cboLocalidad.Text;
+                                                                    oemp.Actividad_Empresarial = cboActEmpr.Text;
+                                                                    oemp.Direccion = txtCalle.Text;
                                                                     oemp.Provincia = cboProvincia.Text;
+                                                                    oemp.Localidad = cboLocalidad.Text; 
                                                                     oemp.Telefono = txtTelefono.Text;
                                                                     oemp.Correo = txtCorreo.Text;
                                                                     oemp.Web = txtWeb.Text;
@@ -112,22 +112,22 @@ namespace TF.WIN
                                                                     Limpiar();
                                                                  }
                                                             }
-                                                    else MessageBox.Show("El formato del Correo es inválido", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                            else MessageBox.Show("El formato del Correo es inválido", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                        }       
+                                                        else MessageBox.Show("Debe ingresar el correo electrónico", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                    }
+                                                    else MessageBox.Show("Debe ingresar el Sitio Web de la Empresa", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                                 }
-                                                else MessageBox.Show("Debe ingresar el correo electrónico", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                else MessageBox.Show("Debe ingresar 10 digitos en el Teléfono", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                             }
-                                            else MessageBox.Show("Debe ingresar el Sitio Web de la Empresa", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                            else MessageBox.Show("Debe ingresar el número de teléfono", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                         }
-                                        else MessageBox.Show("Debe ingresar 10 digitos en el Teléfono", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                                         }
-                                                   else MessageBox.Show("Debe ingresar el número de teléfono", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                                 }
-                                             else MessageBox.Show("Debe ingresar la Provincia", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                           }
-                                       else MessageBox.Show("Debe ingresar la Localidad", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                        else MessageBox.Show("Debe ingresar la Localidad", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                     }
-                                  else MessageBox.Show("Debe ingresar la dirección", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                     else MessageBox.Show("Debe ingresar la Provincia", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
+                                else MessageBox.Show("Debe ingresar la dirección", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
                             else MessageBox.Show("Debe ingresar la Actividad Empresarial", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else MessageBox.Show("Debe ingresar la Condición Fiscal", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -159,8 +159,8 @@ namespace TF.WIN
             txtCUIT.Focus();
             txtNombreEmpresa.Text = string.Empty;
             cboCondFiscal.SelectedIndex = 0;
-            txtActEmpr.SelectedIndex = 0;
-            txtDireccion.Text = string.Empty;
+            cboActEmpr.SelectedIndex = 0;
+            txtCalle.Text = string.Empty;
             //cboLocalidad.SelectedIndex = 0;
             //cboProvincia.SelectedIndex = 0;
             txtTelefono.Text = string.Empty;
@@ -192,8 +192,8 @@ namespace TF.WIN
                     oemp.CUIT = txtCUIT.Text;
                     oemp.Nombre = txtNombreEmpresa.Text;
                     oemp.Condicion_Fiscal = cboCondFiscal.Text;
-                    oemp.Actividad_Empresarial = txtActEmpr.Text;
-                    oemp.Direccion = txtDireccion.Text;
+                    oemp.Actividad_Empresarial = cboActEmpr.Text;
+                    oemp.Direccion = txtCalle.Text;
                     oemp.Localidad = cboLocalidad.Text;
                     oemp.Provincia = cboProvincia.Text;
                     oemp.Telefono = txtTelefono.Text;
@@ -220,8 +220,8 @@ namespace TF.WIN
                 txtCUIT.ReadOnly = true;
                 txtNombreEmpresa.Text = dgvCargaEmpresas.CurrentRow.Cells[1].Value.ToString();
                 cboCondFiscal.Text = dgvCargaEmpresas.CurrentRow.Cells[2].Value.ToString();
-                txtActEmpr.Text = dgvCargaEmpresas.CurrentRow.Cells[3].Value.ToString();
-                txtDireccion.Text = dgvCargaEmpresas.CurrentRow.Cells[4].Value.ToString();
+                cboActEmpr.Text = dgvCargaEmpresas.CurrentRow.Cells[3].Value.ToString();
+                txtCalle.Text = dgvCargaEmpresas.CurrentRow.Cells[4].Value.ToString();
                 cboProvincia.Text = dgvCargaEmpresas.CurrentRow.Cells[5].Value.ToString();
                 cboLocalidad.Text = dgvCargaEmpresas.CurrentRow.Cells[6].Value.ToString();
                 txtTelefono.Text = dgvCargaEmpresas.CurrentRow.Cells[7].Value.ToString();
@@ -271,20 +271,21 @@ namespace TF.WIN
             {
                 btnCargar.Enabled = false;
                 btnModificar.Enabled = false;
-                btnEliminar.Enabled = false;
+                btnBaja.Enabled = false;
             }
             if (UserLoginCache.Cargo == Cargos.Profesional)
             {
-                btnEliminar.Enabled = false;
+                btnBaja.Enabled = false;
             }
             if (UserLoginCache.Cargo == Cargos.Contador)
             {
-                btnEliminar.Enabled = false;
+                btnBaja.Enabled = false;
             }
         }
 
         private void cboProvincia_SelectedIndexChanged(object sender, EventArgs e)
         {
+            #region Ciudades
             // Ciudades Buenos Aires
             DataTable CiudadBsAs = new DataTable();
             CiudadBsAs.Columns.Add("Ciudad");
@@ -1082,9 +1083,8 @@ namespace TF.WIN
             DataRow RowAld = CiudadTu.NewRow();
             RowAld["Ciudad"] = "Alderetes";
             CiudadTu.Rows.Add(RowAld);
-
-
-
+            #endregion
+            #region Provincias
             if (cboProvincia.SelectedIndex == 0)
             {
                 cboLocalidad.DataSource = null;
@@ -1209,6 +1209,7 @@ namespace TF.WIN
                 cboLocalidad.DataSource = CiudadTu;
                 cboLocalidad.DisplayMember = "Ciudad";
             }
+            #endregion
         }
     }
 }
