@@ -34,6 +34,8 @@
             this.btnResultado = new System.Windows.Forms.Button();
             this.btnRebaResultado = new System.Windows.Forms.Button();
             this.btnReba = new System.Windows.Forms.Button();
+            this.btnNioshResultado = new System.Windows.Forms.Button();
+            this.btnNiosh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRula
@@ -127,6 +129,39 @@
             this.btnReba.UseVisualStyleBackColor = false;
             this.btnReba.Click += new System.EventHandler(this.btnReba_Click);
             // 
+            // btnNioshResultado
+            // 
+            this.btnNioshResultado.BackColor = System.Drawing.Color.Coral;
+            this.btnNioshResultado.FlatAppearance.BorderSize = 0;
+            this.btnNioshResultado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnNioshResultado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNioshResultado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnNioshResultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNioshResultado.Location = new System.Drawing.Point(178, 317);
+            this.btnNioshResultado.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNioshResultado.Name = "btnNioshResultado";
+            this.btnNioshResultado.Size = new System.Drawing.Size(155, 43);
+            this.btnNioshResultado.TabIndex = 68;
+            this.btnNioshResultado.Text = "NIOSH - Resultado";
+            this.btnNioshResultado.UseVisualStyleBackColor = false;
+            // 
+            // btnNiosh
+            // 
+            this.btnNiosh.BackColor = System.Drawing.Color.Coral;
+            this.btnNiosh.FlatAppearance.BorderSize = 0;
+            this.btnNiosh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnNiosh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNiosh.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnNiosh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNiosh.Location = new System.Drawing.Point(15, 317);
+            this.btnNiosh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNiosh.Name = "btnNiosh";
+            this.btnNiosh.Size = new System.Drawing.Size(155, 43);
+            this.btnNiosh.TabIndex = 67;
+            this.btnNiosh.Text = "NIOSH";
+            this.btnNiosh.UseVisualStyleBackColor = false;
+            this.btnNiosh.Click += new System.EventHandler(this.btnNiosh_Click);
+            // 
             // Metodos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -134,6 +169,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.btnNioshResultado);
+            this.Controls.Add(this.btnNiosh);
             this.Controls.Add(this.btnRebaResultado);
             this.Controls.Add(this.btnReba);
             this.Controls.Add(this.btnResultado);
@@ -157,5 +194,7 @@
         private System.Windows.Forms.Button btnResultado;
         private System.Windows.Forms.Button btnRebaResultado;
         private System.Windows.Forms.Button btnReba;
+        private System.Windows.Forms.Button btnNioshResultado;
+        private System.Windows.Forms.Button btnNiosh;
     }
 }

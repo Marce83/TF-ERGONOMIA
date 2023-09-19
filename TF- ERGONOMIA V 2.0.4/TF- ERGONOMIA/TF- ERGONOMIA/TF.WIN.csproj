@@ -140,6 +140,18 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="NIOSH1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NIOSH1.Designer.cs">
+      <DependentUpon>NIOSH1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NIOSHPORTADA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NIOSHPORTADA.Designer.cs">
+      <DependentUpon>NIOSHPORTADA.cs</DependentUpon>
+    </Compile>
     <Compile Include="REBARESULTADO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +246,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NIOSH1.resx">
+      <DependentUpon>NIOSH1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NIOSHPORTADA.resx">
+      <DependentUpon>NIOSHPORTADA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="REBARESULTADO.resx">
       <DependentUpon>REBARESULTADO.cs</DependentUpon>

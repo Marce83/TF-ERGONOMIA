@@ -42,5 +42,12 @@ namespace TF.WIN
             REBA_RESULTADO OREBA_RESULTADO = new REBA_RESULTADO();
             OREBA_RESULTADO.Show();
         }
+
+        private void btnNiosh_Click(object sender, EventArgs e)
+        {
+            NIOSHPORTADA ONIOSHPORTADA = new NIOSHPORTADA();
+            ONIOSHPORTADA.Show();
+
+        }
     }
 }
