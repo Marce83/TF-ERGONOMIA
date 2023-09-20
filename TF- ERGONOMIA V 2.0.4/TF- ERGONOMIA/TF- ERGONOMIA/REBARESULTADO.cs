@@ -20,7 +20,6 @@ namespace TF.WIN
         {
             InitializeComponent();
             ObtenerMaximoIdReba();
-
         }
         private int SumaGrupoTablaAReba = 0;
         private int SumaGrupoTablaBReba = 0;
@@ -83,35 +82,35 @@ namespace TF.WIN
 
             if (txtpuntuacionTCAC.Text == "1" || txtpuntuacionTCAC.Text == "1")
             {
-                txtPuntuacionRula.Text = "1";
+                txtPuntuacionReba.Text = "1";
                 txtniveldeaccionReba.Text = "0";
                 txtnivelderiesgoreba.Text = "Inapreciable";
                 txtActuacionReba.Text = "No se requiere actuación ya que el nivel es Inapreciable.\r\n";
             }
             else if (txtpuntuacionTCAC.Text == "2" || txtpuntuacionTCAC.Text == "3")
             {
-                txtPuntuacionRula.Text = txtpuntuacionTCAC.Text;
+                txtPuntuacionReba.Text = txtpuntuacionTCAC.Text;
                 txtniveldeaccionReba.Text = "1";
                 txtnivelderiesgoreba.Text = "Bajo";
                 txtActuacionReba.Text = "Puede requerir actuación ya que existe un nivel de Riesgo Bajo.\r\n";
             }
             else if (txtpuntuacionTCAC.Text == "4" || txtpuntuacionTCAC.Text == "7")
             {
-                txtPuntuacionRula.Text = txtpuntuacionTCAC.Text;
+                txtPuntuacionReba.Text = txtpuntuacionTCAC.Text;
                 txtniveldeaccionReba.Text = "2";
                 txtnivelderiesgoreba.Text = "Medio";
                 txtActuacionReba.Text = "Es necesario actuar ya que existe un nivel de Riesgo Intermedio.\r\n";
             }
             else if (txtpuntuacionTCAC.Text == "8" || txtpuntuacionTCAC.Text == "10")
             {
-                txtPuntuacionRula.Text = txtpuntuacionTCAC.Text;
+                txtPuntuacionReba.Text = txtpuntuacionTCAC.Text;
                 txtniveldeaccionReba.Text = "3";
                 txtnivelderiesgoreba.Text = "Alto";
                 txtActuacionReba.Text = "Es necesario actuar de forma rápida ya que existe un nivel de Riesgo Alto.\r\n";
             }
             else if(txtpuntuacionTCAC.Text == "11" || txtpuntuacionTCAC.Text == "15")
             {
-                txtPuntuacionRula.Text = txtpuntuacionTCAC.Text;
+                txtPuntuacionReba.Text = txtpuntuacionTCAC.Text;
                 txtniveldeaccionReba.Text = "4";
                 txtnivelderiesgoreba.Text = "Muy Alto";
                 txtActuacionReba.Text = "Actuación Inmediata porque los nivel de Riesgos son Muy Altos.\r\n";

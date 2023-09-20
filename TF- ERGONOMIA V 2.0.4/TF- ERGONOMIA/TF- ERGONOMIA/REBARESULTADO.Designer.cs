@@ -57,7 +57,7 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnobtenerinforme = new System.Windows.Forms.Button();
             this.btnpagant = new System.Windows.Forms.Button();
-            this.txtPuntuacionRula = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtPuntuacionReba = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtniveldeaccionReba = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
@@ -642,35 +642,35 @@
             this.btnpagant.UseVisualStyleBackColor = false;
             this.btnpagant.Click += new System.EventHandler(this.btnpagant_Click);
             // 
-            // txtPuntuacionRula
+            // txtPuntuacionReba
             // 
-            this.txtPuntuacionRula.AnimateReadOnly = false;
-            this.txtPuntuacionRula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtPuntuacionRula.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtPuntuacionRula.Depth = 0;
-            this.txtPuntuacionRula.Enabled = false;
-            this.txtPuntuacionRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtPuntuacionRula.HideSelection = true;
-            this.txtPuntuacionRula.LeadingIcon = null;
-            this.txtPuntuacionRula.Location = new System.Drawing.Point(276, 821);
-            this.txtPuntuacionRula.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPuntuacionRula.MaxLength = 32767;
-            this.txtPuntuacionRula.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtPuntuacionRula.Name = "txtPuntuacionRula";
-            this.txtPuntuacionRula.PasswordChar = '\0';
-            this.txtPuntuacionRula.PrefixSuffixText = null;
-            this.txtPuntuacionRula.ReadOnly = true;
-            this.txtPuntuacionRula.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtPuntuacionRula.SelectedText = "";
-            this.txtPuntuacionRula.SelectionLength = 0;
-            this.txtPuntuacionRula.SelectionStart = 0;
-            this.txtPuntuacionRula.ShortcutsEnabled = true;
-            this.txtPuntuacionRula.Size = new System.Drawing.Size(236, 48);
-            this.txtPuntuacionRula.TabIndex = 210;
-            this.txtPuntuacionRula.TabStop = false;
-            this.txtPuntuacionRula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtPuntuacionRula.TrailingIcon = null;
-            this.txtPuntuacionRula.UseSystemPasswordChar = false;
+            this.txtPuntuacionReba.AnimateReadOnly = false;
+            this.txtPuntuacionReba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtPuntuacionReba.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtPuntuacionReba.Depth = 0;
+            this.txtPuntuacionReba.Enabled = false;
+            this.txtPuntuacionReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPuntuacionReba.HideSelection = true;
+            this.txtPuntuacionReba.LeadingIcon = null;
+            this.txtPuntuacionReba.Location = new System.Drawing.Point(276, 821);
+            this.txtPuntuacionReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPuntuacionReba.MaxLength = 32767;
+            this.txtPuntuacionReba.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtPuntuacionReba.Name = "txtPuntuacionReba";
+            this.txtPuntuacionReba.PasswordChar = '\0';
+            this.txtPuntuacionReba.PrefixSuffixText = null;
+            this.txtPuntuacionReba.ReadOnly = true;
+            this.txtPuntuacionReba.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtPuntuacionReba.SelectedText = "";
+            this.txtPuntuacionReba.SelectionLength = 0;
+            this.txtPuntuacionReba.SelectionStart = 0;
+            this.txtPuntuacionReba.ShortcutsEnabled = true;
+            this.txtPuntuacionReba.Size = new System.Drawing.Size(236, 48);
+            this.txtPuntuacionReba.TabIndex = 210;
+            this.txtPuntuacionReba.TabStop = false;
+            this.txtPuntuacionReba.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPuntuacionReba.TrailingIcon = null;
+            this.txtPuntuacionReba.UseSystemPasswordChar = false;
             // 
             // txtniveldeaccionReba
             // 
@@ -1108,7 +1108,7 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnobtenerinforme);
             this.Controls.Add(this.btnpagant);
-            this.Controls.Add(this.txtPuntuacionRula);
+            this.Controls.Add(this.txtPuntuacionReba);
             this.Controls.Add(this.txtniveldeaccionReba);
             this.Controls.Add(this.materialLabel13);
             this.Controls.Add(this.materialLabel14);
@@ -1181,7 +1181,7 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnobtenerinforme;
         private System.Windows.Forms.Button btnpagant;
-        private MaterialSkin.Controls.MaterialTextBox2 txtPuntuacionRula;
+        private MaterialSkin.Controls.MaterialTextBox2 txtPuntuacionReba;
         private MaterialSkin.Controls.MaterialTextBox2 txtniveldeaccionReba;
         private MaterialSkin.Controls.MaterialLabel materialLabel13;
         private MaterialSkin.Controls.MaterialLabel materialLabel14;
