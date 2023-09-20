@@ -94,21 +94,21 @@ namespace TF.WIN
                 txtnivelderiesgoreba.Text = "Bajo";
                 txtActuacionReba.Text = "Puede requerir actuación ya que existe un nivel de Riesgo Bajo.\r\n";
             }
-            else if (txtpuntuacionTCAC.Text == "4" || txtpuntuacionTCAC.Text == "7")
+            else if (txtpuntuacionTCAC.Text == "4" || txtpuntuacionTCAC.Text == "5" || txtpuntuacionTCAC.Text == "6" || txtpuntuacionTCAC.Text == "7")
             {
                 txtPuntuacionReba.Text = txtpuntuacionTCAC.Text;
                 txtniveldeaccionReba.Text = "2";
                 txtnivelderiesgoreba.Text = "Medio";
                 txtActuacionReba.Text = "Es necesario actuar ya que existe un nivel de Riesgo Intermedio.\r\n";
             }
-            else if (txtpuntuacionTCAC.Text == "8" || txtpuntuacionTCAC.Text == "10")
+            else if (txtpuntuacionTCAC.Text == "8" || txtpuntuacionTCAC.Text == "9" || txtpuntuacionTCAC.Text == "10")
             {
                 txtPuntuacionReba.Text = txtpuntuacionTCAC.Text;
                 txtniveldeaccionReba.Text = "3";
                 txtnivelderiesgoreba.Text = "Alto";
                 txtActuacionReba.Text = "Es necesario actuar de forma rápida ya que existe un nivel de Riesgo Alto.\r\n";
             }
-            else if(txtpuntuacionTCAC.Text == "11" || txtpuntuacionTCAC.Text == "15")
+            else if(txtpuntuacionTCAC.Text == "11" || txtpuntuacionTCAC.Text == "12" || txtpuntuacionTCAC.Text == "13" || txtpuntuacionTCAC.Text == "14" || txtpuntuacionTCAC.Text == "15")
             {
                 txtPuntuacionReba.Text = txtpuntuacionTCAC.Text;
                 txtniveldeaccionReba.Text = "4";
