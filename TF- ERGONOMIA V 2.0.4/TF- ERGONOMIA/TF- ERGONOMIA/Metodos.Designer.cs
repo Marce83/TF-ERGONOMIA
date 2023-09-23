@@ -36,6 +36,8 @@
             this.btnReba = new System.Windows.Forms.Button();
             this.btnNioshResultado = new System.Windows.Forms.Button();
             this.btnNiosh = new System.Windows.Forms.Button();
+            this.JSSRESULTADO = new System.Windows.Forms.Button();
+            this.JSS = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRula
@@ -140,7 +142,7 @@
             this.btnNioshResultado.Location = new System.Drawing.Point(178, 317);
             this.btnNioshResultado.Margin = new System.Windows.Forms.Padding(4);
             this.btnNioshResultado.Name = "btnNioshResultado";
-            this.btnNioshResultado.Size = new System.Drawing.Size(155, 43);
+            this.btnNioshResultado.Size = new System.Drawing.Size(153, 43);
             this.btnNioshResultado.TabIndex = 68;
             this.btnNioshResultado.Text = "NIOSH - Resultado";
             this.btnNioshResultado.UseVisualStyleBackColor = false;
@@ -162,6 +164,38 @@
             this.btnNiosh.UseVisualStyleBackColor = false;
             this.btnNiosh.Click += new System.EventHandler(this.btnNiosh_Click);
             // 
+            // JSSRESULTADO
+            // 
+            this.JSSRESULTADO.BackColor = System.Drawing.Color.Maroon;
+            this.JSSRESULTADO.FlatAppearance.BorderSize = 0;
+            this.JSSRESULTADO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.JSSRESULTADO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.JSSRESULTADO.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.JSSRESULTADO.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.JSSRESULTADO.Location = new System.Drawing.Point(178, 393);
+            this.JSSRESULTADO.Margin = new System.Windows.Forms.Padding(4);
+            this.JSSRESULTADO.Name = "JSSRESULTADO";
+            this.JSSRESULTADO.Size = new System.Drawing.Size(153, 43);
+            this.JSSRESULTADO.TabIndex = 70;
+            this.JSSRESULTADO.Text = "Escala de Estres Laboral - Resultado";
+            this.JSSRESULTADO.UseVisualStyleBackColor = false;
+            // 
+            // JSS
+            // 
+            this.JSS.BackColor = System.Drawing.Color.Maroon;
+            this.JSS.FlatAppearance.BorderSize = 0;
+            this.JSS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.JSS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.JSS.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.JSS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.JSS.Location = new System.Drawing.Point(15, 393);
+            this.JSS.Margin = new System.Windows.Forms.Padding(4);
+            this.JSS.Name = "JSS";
+            this.JSS.Size = new System.Drawing.Size(155, 43);
+            this.JSS.TabIndex = 69;
+            this.JSS.Text = "Escala de Estres Laboral";
+            this.JSS.UseVisualStyleBackColor = false;
+            // 
             // Metodos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -169,6 +203,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.JSSRESULTADO);
+            this.Controls.Add(this.JSS);
             this.Controls.Add(this.btnNioshResultado);
             this.Controls.Add(this.btnNiosh);
             this.Controls.Add(this.btnRebaResultado);
@@ -196,5 +232,7 @@
         private System.Windows.Forms.Button btnReba;
         private System.Windows.Forms.Button btnNioshResultado;
         private System.Windows.Forms.Button btnNiosh;
+        private System.Windows.Forms.Button JSSRESULTADO;
+        private System.Windows.Forms.Button JSS;
     }
 }

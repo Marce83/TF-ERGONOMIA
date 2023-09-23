@@ -122,6 +122,12 @@
     <Compile Include="frmRecuperarClave.Designer.cs">
       <DependentUpon>frmRecuperarClave.cs</DependentUpon>
     </Compile>
+    <Compile Include="JSS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JSS.Designer.cs">
+      <DependentUpon>JSS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Metodos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRecuperarClave.resx">
       <DependentUpon>frmRecuperarClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JSS.resx">
+      <DependentUpon>JSS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Metodos.resx">
       <DependentUpon>Metodos.cs</DependentUpon>

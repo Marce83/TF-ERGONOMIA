@@ -109,7 +109,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(373, 610);
+            this.label12.Location = new System.Drawing.Point(373, 618);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(173, 16);
             this.label12.TabIndex = 54;
@@ -118,11 +118,11 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(373, 537);
+            this.label11.Location = new System.Drawing.Point(373, 692);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(128, 16);
             this.label11.TabIndex = 51;
-            this.label11.Text = "Duracion del trabajo";
+            this.label11.Text = "Duracion de la tarea";
             // 
             // pictureBox1
             // 
@@ -138,11 +138,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(373, 229);
+            this.label10.Location = new System.Drawing.Point(358, 234);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(201, 16);
+            this.label10.Size = new System.Drawing.Size(204, 16);
             this.label10.TabIndex = 45;
-            this.label10.Text = "Distancia Relativa al Cuerpo ( H)";
+            this.label10.Text = "Distancia Relativa al Cuerpo ( H )";
             // 
             // label9
             // 
@@ -174,11 +174,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(373, 694);
+            this.label6.Location = new System.Drawing.Point(373, 547);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 16);
+            this.label6.Size = new System.Drawing.Size(156, 16);
             this.label6.TabIndex = 36;
-            this.label6.Text = "Carga a Levantar";
+            this.label6.Text = "Carga o Peso a Levantar";
             // 
             // label5
             // 
@@ -303,7 +303,7 @@
             this.materialTextBox5.Depth = 0;
             this.materialTextBox5.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox5.LeadingIcon = null;
-            this.materialTextBox5.Location = new System.Drawing.Point(619, 676);
+            this.materialTextBox5.Location = new System.Drawing.Point(619, 529);
             this.materialTextBox5.MaxLength = 50;
             this.materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox5.Multiline = false;
@@ -395,7 +395,7 @@
             this.materialComboBox1.FormattingEnabled = true;
             this.materialComboBox1.IntegralHeight = false;
             this.materialComboBox1.ItemHeight = 43;
-            this.materialComboBox1.Location = new System.Drawing.Point(619, 523);
+            this.materialComboBox1.Location = new System.Drawing.Point(619, 678);
             this.materialComboBox1.MaxDropDownItems = 4;
             this.materialComboBox1.MouseState = MaterialSkin.MouseState.OUT;
             this.materialComboBox1.Name = "materialComboBox1";
@@ -417,7 +417,7 @@
             this.materialComboBox2.FormattingEnabled = true;
             this.materialComboBox2.IntegralHeight = false;
             this.materialComboBox2.ItemHeight = 43;
-            this.materialComboBox2.Location = new System.Drawing.Point(619, 595);
+            this.materialComboBox2.Location = new System.Drawing.Point(619, 603);
             this.materialComboBox2.MaxDropDownItems = 4;
             this.materialComboBox2.MouseState = MaterialSkin.MouseState.OUT;
             this.materialComboBox2.Name = "materialComboBox2";
@@ -497,7 +497,7 @@
             this.materialTextBox10.AnimateReadOnly = false;
             this.materialTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox10.Depth = 0;
-            this.materialTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox10.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox10.LeadingIcon = null;
             this.materialTextBox10.Location = new System.Drawing.Point(276, 1006);
             this.materialTextBox10.MaxLength = 50;
@@ -514,7 +514,7 @@
             this.materialTextBox11.AnimateReadOnly = false;
             this.materialTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox11.Depth = 0;
-            this.materialTextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox11.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox11.LeadingIcon = null;
             this.materialTextBox11.Location = new System.Drawing.Point(276, 1075);
             this.materialTextBox11.MaxLength = 50;
@@ -531,7 +531,7 @@
             this.materialTextBox12.AnimateReadOnly = false;
             this.materialTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox12.Depth = 0;
-            this.materialTextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox12.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox12.LeadingIcon = null;
             this.materialTextBox12.Location = new System.Drawing.Point(276, 1148);
             this.materialTextBox12.MaxLength = 50;
@@ -548,7 +548,7 @@
             this.materialTextBox13.AnimateReadOnly = false;
             this.materialTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox13.Depth = 0;
-            this.materialTextBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox13.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox13.LeadingIcon = null;
             this.materialTextBox13.Location = new System.Drawing.Point(276, 1219);
             this.materialTextBox13.MaxLength = 50;
@@ -565,7 +565,7 @@
             this.materialTextBox14.AnimateReadOnly = false;
             this.materialTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox14.Depth = 0;
-            this.materialTextBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox14.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox14.LeadingIcon = null;
             this.materialTextBox14.Location = new System.Drawing.Point(276, 1287);
             this.materialTextBox14.MaxLength = 50;
