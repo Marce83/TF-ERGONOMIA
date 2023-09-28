@@ -21,5 +21,16 @@ namespace TF.WIN
         {
             Close();
         }
+
+        private void btnGuardarReba1_Click(object sender, EventArgs e)
+        {
+
+
+
+
+            NISHRESULTADO ONISHRESULTADO = new NISHRESULTADO();
+            ONISHRESULTADO.Show();
+
+        }
     }
 }
