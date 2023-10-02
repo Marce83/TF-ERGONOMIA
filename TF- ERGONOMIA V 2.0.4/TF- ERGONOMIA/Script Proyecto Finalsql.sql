@@ -1159,3 +1159,6 @@ WHERE  PuntuacionA =@ValorA
 and PuntuacionB =@ValorB
 END
 GO
+
+
+-- niosh---
