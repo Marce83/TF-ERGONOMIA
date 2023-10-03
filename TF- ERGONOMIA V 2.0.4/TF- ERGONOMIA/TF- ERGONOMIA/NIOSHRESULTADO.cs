@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TF.WIN
 {
-    public partial class NISHRESULTADO : Form
+    public partial class NIOSHRESULTADO : Form
     {
-        public NISHRESULTADO()
+        public NIOSHRESULTADO()
         {
             InitializeComponent();
         }

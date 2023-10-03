@@ -158,11 +158,11 @@
     <Compile Include="NIOSHPORTADA.Designer.cs">
       <DependentUpon>NIOSHPORTADA.cs</DependentUpon>
     </Compile>
-    <Compile Include="NISHRESULTADO.cs">
+    <Compile Include="NIOSHRESULTADO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NISHRESULTADO.Designer.cs">
-      <DependentUpon>NISHRESULTADO.cs</DependentUpon>
+    <Compile Include="NIOSHRESULTADO.Designer.cs">
+      <DependentUpon>NIOSHRESULTADO.cs</DependentUpon>
     </Compile>
     <Compile Include="REBARESULTADO.cs">
       <SubType>Form</SubType>
@@ -268,8 +268,8 @@
     <EmbeddedResource Include="NIOSHPORTADA.resx">
       <DependentUpon>NIOSHPORTADA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NISHRESULTADO.resx">
-      <DependentUpon>NISHRESULTADO.cs</DependentUpon>
+    <EmbeddedResource Include="NIOSHRESULTADO.resx">
+      <DependentUpon>NIOSHRESULTADO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="REBARESULTADO.resx">
       <DependentUpon>REBARESULTADO.cs</DependentUpon>

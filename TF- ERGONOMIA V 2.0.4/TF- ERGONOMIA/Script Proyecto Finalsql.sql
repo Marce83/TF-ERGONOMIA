@@ -1161,4 +1161,77 @@ END
 GO
 
 
--- niosh---
+------------------------------------------ Niosh --------------------------------------------------
+
+use ProyectoFinal
+go
+CREATE TABLE NioshTablaCompleta(
+cargaIdNiosh INT NOT NULL PRIMARY KEY IDENTITY (1,1),
+CUITNiosh nvarchar(11),
+PuestoDeTrabajoNiosh NVARCHAR(20),
+DniEmpleadoNiosh nvarchar(11),
+EmpleadoNiosh nvarchar(30),
+EmpresaNiosh nvarchar(30),
+LCNiosh INT,
+HMNiosh INT,
+VMNiosh INT,
+DMNiosh INT,
+AMNiosh INT,
+FMNiosh INT,
+CMRNiosh INT,
+Duraciontarea nvarchar(11),
+FrecuenciaNiosh INT,
+CADNiosh nvarchar(11),
+PesoCargaNiosh INT)
+GO	
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_Niosh_Insert
+@CUITNiosh nvarchar(11),
+@PuestoDeTrabajoNiosh NVARCHAR(20),
+@DniEmpleadoNiosh nvarchar(11),
+@EmpleadoNiosh nvarchar(30),
+@EmpresaNiosh nvarchar(30)
+AS
+BEGIN
+	insert into NioshTablaCompleta (CUITNiosh,PuestoDeTrabajoNiosh,DniEmpleadoNiosh,EmpleadoNiosh,EmpresaNiosh) 
+	VALUES(@CUITNiosh,@PuestoDeTrabajoNiosh,@DniEmpleadoNiosh,@EmpleadoNiosh,@EmpresaNiosh)
+END
+GO
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_Niosh_MaxID
+AS
+BEGIN
+	select max(cargaIdNiosh)as cargaIdNiosh from NioshTablaCompleta
+END
+GO
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_Niosh_updateNiosh1
+@cargaIdNiosh Int,
+@LCNiosh int,
+@HMNiosh int,
+@VMNiosh  int,
+@DMNiosh int,
+@AMNiosh int,
+@FMNiosh int,
+@CMRNiosh int,
+@Duraciontarea int,
+@FrecuenciaNiosh INT,
+@CADNiosh nvarchar,
+@PesoCargaNiosh INT
+
+AS
+BEGIN
+	update NioshTablaCompleta set LCNiosh=@LCNiosh, HMNiosh=@HMNiosh, VMNiosh=@VMNiosh ,DMNiosh=@DMNiosh, AMNiosh=@AMNiosh, FMNiosh=@FMNiosh, CMRNiosh=@CMRNiosh, Duraciontarea=@Duraciontarea , FrecuenciaNiosh=@FrecuenciaNiosh,CADNiosh=@CADNiosh , PesoCargaNiosh=@PesoCargaNiosh 
+	where cargaIdNiosh=@cargaIdNiosh
+END
+GO
+
+
+
+

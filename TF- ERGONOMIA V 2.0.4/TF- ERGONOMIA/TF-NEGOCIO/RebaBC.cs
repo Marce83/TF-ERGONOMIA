@@ -23,7 +23,7 @@ namespace TF.BC
             DataTable dt = oRebaDAC.RebaMaxIdDAC(oReba);
             return dt;
         }
-        public int UpdateRula1BC(Reba oReba)
+        public int UpdateReba1BC(Reba oReba)
         {
             RebaDAC oRebaDAC = new RebaDAC();
             return oRebaDAC.UpdateReba1DAC(oReba);

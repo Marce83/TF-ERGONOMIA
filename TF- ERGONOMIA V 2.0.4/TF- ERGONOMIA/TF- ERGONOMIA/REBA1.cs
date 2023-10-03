@@ -110,7 +110,7 @@ namespace TF.WIN
             oReba.BrazoReba = int.Parse(txtBrazoReba.Text);
             oReba.AgarreReba = int.Parse(txtAgarreReba.Text);
             oReba.ActividadReba = int.Parse(txtpuntuacionActividadReba.Text);
-            var res = oRebaBC.UpdateRula1BC(oReba);
+            var res = oRebaBC.UpdateReba1BC(oReba);
             MessageBox.Show("Carga Guardada");
 
 
