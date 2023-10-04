@@ -22,17 +22,15 @@ namespace TF.ENTITIES
 
         //Datos de Carga Niosh
 
-        public int LCNiosh { get; set; }
-        public int HMNiosh { get; set; }
-        public int VMNiosh { get; set; }
-        public int DMNiosh { get; set; }
-        public int AMNiosh { get; set; }
-        public int FMNiosh { get; set; }
-        public int CMRNiosh { get; set; }
+        public double LCNiosh { get; set; }
+        public double HMNiosh { get; set; }
+        public double VMNiosh { get; set; }
+        public double DMNiosh { get; set; }
+        public double AMNiosh { get; set; }
+        public double FMNiosh { get; set; }
+        public double CMRNiosh { get; set; }
         public string Duraciontarea { get; set; }
-        public int FrecuenciaNiosh { get; set; }
-        public string CADNiosh { get; set; }
-        public int PesoCargaNiosh { get; set; }
+
 
 
 
