@@ -52,11 +52,20 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboDi = new MaterialSkin.Controls.MaterialComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cboVi = new MaterialSkin.Controls.MaterialComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cboHi = new MaterialSkin.Controls.MaterialComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtAM = new MaterialSkin.Controls.MaterialTextBox2();
             this.label8 = new System.Windows.Forms.Label();
             this.txtDMNiosh = new MaterialSkin.Controls.MaterialTextBox2();
@@ -70,15 +79,6 @@
             this.cboV = new MaterialSkin.Controls.MaterialComboBox();
             this.cboH = new MaterialSkin.Controls.MaterialComboBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.cboHi = new MaterialSkin.Controls.MaterialComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.cboVi = new MaterialSkin.Controls.MaterialComboBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.cboDi = new MaterialSkin.Controls.MaterialComboBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.txtFN = new MaterialSkin.Controls.MaterialTextBox2();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -87,11 +87,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // label13
@@ -164,7 +164,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 447);
+            this.label7.Location = new System.Drawing.Point(6, 426);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(232, 16);
             this.label7.TabIndex = 42;
@@ -380,7 +380,7 @@
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(489, 628);
+            this.pictureBox5.Location = new System.Drawing.Point(489, 607);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(33, 49);
@@ -398,7 +398,7 @@
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(489, 428);
+            this.pictureBox3.Location = new System.Drawing.Point(489, 407);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(33, 44);
@@ -406,6 +406,48 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Tag = "";
             this.toolTip1.SetToolTip(this.pictureBox3, "Valor comprendido entre 0 y 175 cm");
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(489, 88);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(33, 44);
+            this.pictureBox7.TabIndex = 236;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox7, "Valor comprendido entre 1 y 63 cm");
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.Location = new System.Drawing.Point(489, 273);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(33, 44);
+            this.pictureBox8.TabIndex = 239;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox8, "Valor comprendido entre 0 y 175 cm");
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Location = new System.Drawing.Point(489, 465);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(33, 44);
+            this.pictureBox9.TabIndex = 242;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox9, "Valor comprendido entre 0 y 175 cm");
             // 
             // toolTip2
             // 
@@ -430,7 +472,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 642);
+            this.label1.Location = new System.Drawing.Point(6, 621);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 16);
             this.label1.TabIndex = 216;
@@ -474,6 +516,632 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Posicion";
             // 
+            // cboDi
+            // 
+            this.cboDi.AutoResize = false;
+            this.cboDi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboDi.Depth = 0;
+            this.cboDi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboDi.DropDownHeight = 174;
+            this.cboDi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDi.DropDownWidth = 121;
+            this.cboDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboDi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboDi.FormattingEnabled = true;
+            this.cboDi.IntegralHeight = false;
+            this.cboDi.ItemHeight = 43;
+            this.cboDi.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175"});
+            this.cboDi.Location = new System.Drawing.Point(277, 465);
+            this.cboDi.MaxDropDownItems = 4;
+            this.cboDi.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboDi.Name = "cboDi";
+            this.cboDi.Size = new System.Drawing.Size(197, 49);
+            this.cboDi.StartIndex = 0;
+            this.cboDi.TabIndex = 243;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 484);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(239, 16);
+            this.label15.TabIndex = 241;
+            this.label15.Text = "Distancia de Movimiento Vertical Inicial";
+            // 
+            // cboVi
+            // 
+            this.cboVi.AutoResize = false;
+            this.cboVi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboVi.Depth = 0;
+            this.cboVi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboVi.DropDownHeight = 174;
+            this.cboVi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVi.DropDownWidth = 121;
+            this.cboVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboVi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboVi.FormattingEnabled = true;
+            this.cboVi.IntegralHeight = false;
+            this.cboVi.ItemHeight = 43;
+            this.cboVi.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175",
+            "176",
+            "177",
+            "178",
+            "179",
+            "180"});
+            this.cboVi.Location = new System.Drawing.Point(277, 273);
+            this.cboVi.MaxDropDownItems = 4;
+            this.cboVi.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboVi.Name = "cboVi";
+            this.cboVi.Size = new System.Drawing.Size(197, 49);
+            this.cboVi.StartIndex = 0;
+            this.cboVi.TabIndex = 240;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(13, 292);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(148, 16);
+            this.label14.TabIndex = 238;
+            this.label14.Text = "Distancia Vertical Inicial";
+            // 
+            // cboHi
+            // 
+            this.cboHi.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175"});
+            this.cboHi.AutoResize = false;
+            this.cboHi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboHi.Depth = 0;
+            this.cboHi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboHi.DropDownHeight = 174;
+            this.cboHi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHi.DropDownWidth = 121;
+            this.cboHi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboHi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboHi.FormattingEnabled = true;
+            this.cboHi.IntegralHeight = false;
+            this.cboHi.ItemHeight = 43;
+            this.cboHi.Location = new System.Drawing.Point(277, 83);
+            this.cboHi.MaxDropDownItems = 4;
+            this.cboHi.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboHi.Name = "cboHi";
+            this.cboHi.Size = new System.Drawing.Size(197, 49);
+            this.cboHi.StartIndex = 0;
+            this.cboHi.TabIndex = 237;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 102);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(163, 16);
+            this.label3.TabIndex = 235;
+            this.label3.Text = "Distancia Horizontal Inicial";
+            // 
             // txtAM
             // 
             this.txtAM.AnimateReadOnly = false;
@@ -484,7 +1152,7 @@
             this.txtAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtAM.HideSelection = true;
             this.txtAM.LeadingIcon = null;
-            this.txtAM.Location = new System.Drawing.Point(345, 712);
+            this.txtAM.Location = new System.Drawing.Point(345, 677);
             this.txtAM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAM.MaxLength = 32767;
             this.txtAM.MouseState = MaterialSkin.MouseState.OUT;
@@ -507,7 +1175,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(280, 731);
+            this.label8.Location = new System.Drawing.Point(280, 696);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(27, 16);
             this.label8.TabIndex = 233;
@@ -523,7 +1191,7 @@
             this.txtDMNiosh.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDMNiosh.HideSelection = true;
             this.txtDMNiosh.LeadingIcon = null;
-            this.txtDMNiosh.Location = new System.Drawing.Point(345, 558);
+            this.txtDMNiosh.Location = new System.Drawing.Point(345, 537);
             this.txtDMNiosh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDMNiosh.MaxLength = 32767;
             this.txtDMNiosh.MouseState = MaterialSkin.MouseState.OUT;
@@ -546,7 +1214,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(281, 577);
+            this.label5.Location = new System.Drawing.Point(281, 556);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(28, 16);
             this.label5.TabIndex = 231;
@@ -780,7 +1448,7 @@
             "133",
             "134",
             "135"});
-            this.cboA.Location = new System.Drawing.Point(277, 628);
+            this.cboA.Location = new System.Drawing.Point(277, 607);
             this.cboA.MaxDropDownItems = 4;
             this.cboA.MouseState = MaterialSkin.MouseState.OUT;
             this.cboA.Name = "cboA";
@@ -978,7 +1646,7 @@
             "173",
             "174",
             "175"});
-            this.cboD.Location = new System.Drawing.Point(277, 428);
+            this.cboD.Location = new System.Drawing.Point(277, 407);
             this.cboD.MaxDropDownItems = 4;
             this.cboD.MouseState = MaterialSkin.MouseState.OUT;
             this.cboD.Name = "cboD";
@@ -1191,453 +1859,7 @@
             // 
             // cboH
             // 
-            this.cboH.AutoResize = false;
-            this.cboH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboH.Depth = 0;
-            this.cboH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboH.DropDownHeight = 174;
-            this.cboH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboH.DropDownWidth = 121;
-            this.cboH.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboH.FormattingEnabled = true;
-            this.cboH.IntegralHeight = false;
-            this.cboH.ItemHeight = 43;
-            this.cboH.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31",
-            "32",
-            "33",
-            "34",
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60",
-            "61",
-            "62",
-            "63",
-            "63+"});
-            this.cboH.Location = new System.Drawing.Point(277, 22);
-            this.cboH.MaxDropDownItems = 4;
-            this.cboH.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboH.Name = "cboH";
-            this.cboH.Size = new System.Drawing.Size(197, 49);
-            this.cboH.StartIndex = 0;
-            this.cboH.TabIndex = 219;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(613, 1203);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(442, 136);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 219;
-            this.pictureBox6.TabStop = false;
-            // 
-            // cboHi
-            // 
-            this.cboHi.AutoResize = false;
-            this.cboHi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboHi.Depth = 0;
-            this.cboHi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboHi.DropDownHeight = 174;
-            this.cboHi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboHi.DropDownWidth = 121;
-            this.cboHi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboHi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboHi.FormattingEnabled = true;
-            this.cboHi.IntegralHeight = false;
-            this.cboHi.ItemHeight = 43;
-            this.cboHi.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31",
-            "32",
-            "33",
-            "34",
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60",
-            "61",
-            "62",
-            "63",
-            "63+"});
-            this.cboHi.Location = new System.Drawing.Point(277, 83);
-            this.cboHi.MaxDropDownItems = 4;
-            this.cboHi.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboHi.Name = "cboHi";
-            this.cboHi.Size = new System.Drawing.Size(197, 49);
-            this.cboHi.StartIndex = 0;
-            this.cboHi.TabIndex = 237;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 16);
-            this.label3.TabIndex = 235;
-            this.label3.Text = "Distancia Horizontal Inicial";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(489, 88);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(33, 44);
-            this.pictureBox7.TabIndex = 236;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Tag = "";
-            this.toolTip1.SetToolTip(this.pictureBox7, "Valor comprendido entre 1 y 63 cm");
-            // 
-            // cboVi
-            // 
-            this.cboVi.AutoResize = false;
-            this.cboVi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboVi.Depth = 0;
-            this.cboVi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboVi.DropDownHeight = 174;
-            this.cboVi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboVi.DropDownWidth = 121;
-            this.cboVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboVi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboVi.FormattingEnabled = true;
-            this.cboVi.IntegralHeight = false;
-            this.cboVi.ItemHeight = 43;
-            this.cboVi.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31",
-            "32",
-            "33",
-            "34",
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60",
-            "61",
-            "62",
-            "63",
-            "64",
-            "65",
-            "66",
-            "67",
-            "68",
-            "69",
-            "70",
-            "71",
-            "72",
-            "73",
-            "74",
-            "75",
-            "76",
-            "77",
-            "78",
-            "79",
-            "80",
-            "81",
-            "82",
-            "83",
-            "84",
-            "85",
-            "86",
-            "87",
-            "88",
-            "89",
-            "90",
-            "91",
-            "92",
-            "93",
-            "94",
-            "95",
-            "96",
-            "97",
-            "98",
-            "99",
-            "100",
-            "101",
-            "102",
-            "103",
-            "104",
-            "105",
-            "106",
-            "107",
-            "108",
-            "109",
-            "110",
-            "111",
-            "112",
-            "113",
-            "114",
-            "115",
-            "116",
-            "117",
-            "118",
-            "119",
-            "120",
-            "121",
-            "122",
-            "123",
-            "124",
-            "125",
-            "126",
-            "127",
-            "128",
-            "129",
-            "130",
-            "131",
-            "132",
-            "133",
-            "134",
-            "135",
-            "136",
-            "137",
-            "138",
-            "139",
-            "140",
-            "141",
-            "142",
-            "143",
-            "144",
-            "145",
-            "146",
-            "147",
-            "148",
-            "149",
-            "150",
-            "151",
-            "152",
-            "153",
-            "154",
-            "155",
-            "156",
-            "157",
-            "158",
-            "159",
-            "160",
-            "161",
-            "162",
-            "163",
-            "164",
-            "165",
-            "166",
-            "167",
-            "168",
-            "169",
-            "170",
-            "171",
-            "172",
-            "173",
-            "174",
-            "175",
-            "176",
-            "177",
-            "178",
-            "179",
-            "180"});
-            this.cboVi.Location = new System.Drawing.Point(277, 273);
-            this.cboVi.MaxDropDownItems = 4;
-            this.cboVi.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboVi.Name = "cboVi";
-            this.cboVi.Size = new System.Drawing.Size(197, 49);
-            this.cboVi.StartIndex = 0;
-            this.cboVi.TabIndex = 240;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(489, 273);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(33, 44);
-            this.pictureBox8.TabIndex = 239;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Tag = "";
-            this.toolTip1.SetToolTip(this.pictureBox8, "Valor comprendido entre 0 y 175 cm");
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(13, 292);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(148, 16);
-            this.label14.TabIndex = 238;
-            this.label14.Text = "Distancia Vertical Inicial";
-            // 
-            // cboDi
-            // 
-            this.cboDi.AutoResize = false;
-            this.cboDi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboDi.Depth = 0;
-            this.cboDi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboDi.DropDownHeight = 174;
-            this.cboDi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDi.DropDownWidth = 121;
-            this.cboDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboDi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboDi.FormattingEnabled = true;
-            this.cboDi.IntegralHeight = false;
-            this.cboDi.ItemHeight = 43;
-            this.cboDi.Items.AddRange(new object[] {
+            this.cboH.AutoCompleteCustomSource.AddRange(new string[] {
             "1",
             "2",
             "3",
@@ -1813,36 +2035,36 @@
             "173",
             "174",
             "175"});
-            this.cboDi.Location = new System.Drawing.Point(277, 486);
-            this.cboDi.MaxDropDownItems = 4;
-            this.cboDi.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboDi.Name = "cboDi";
-            this.cboDi.Size = new System.Drawing.Size(197, 49);
-            this.cboDi.StartIndex = 0;
-            this.cboDi.TabIndex = 243;
+            this.cboH.AutoResize = false;
+            this.cboH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboH.Depth = 0;
+            this.cboH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboH.DropDownHeight = 174;
+            this.cboH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboH.DropDownWidth = 121;
+            this.cboH.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboH.FormattingEnabled = true;
+            this.cboH.IntegralHeight = false;
+            this.cboH.ItemHeight = 43;
+            this.cboH.Location = new System.Drawing.Point(277, 22);
+            this.cboH.MaxDropDownItems = 4;
+            this.cboH.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboH.Name = "cboH";
+            this.cboH.Size = new System.Drawing.Size(197, 49);
+            this.cboH.StartIndex = 0;
+            this.cboH.TabIndex = 219;
             // 
-            // pictureBox9
+            // pictureBox6
             // 
-            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(489, 486);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(33, 44);
-            this.pictureBox9.TabIndex = 242;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Tag = "";
-            this.toolTip1.SetToolTip(this.pictureBox9, "Valor comprendido entre 0 y 175 cm");
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(6, 505);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(239, 16);
-            this.label15.TabIndex = 241;
-            this.label15.Text = "Distancia de Movimiento Vertical Inicial";
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Location = new System.Drawing.Point(613, 1203);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(442, 136);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 219;
+            this.pictureBox6.TabStop = false;
             // 
             // label16
             // 
@@ -1923,12 +2145,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
