@@ -210,6 +210,24 @@ namespace TF.WIN
             cboH.Items.Add(new ComboBoxOption("174", 174));
             cboH.Items.Add(new ComboBoxOption("175", 175));
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             cboHi.Items.Add(new ComboBoxOption("1", 1));
             cboHi.Items.Add(new ComboBoxOption("2", 2));
             cboHi.Items.Add(new ComboBoxOption("3", 3));
@@ -601,39 +619,14 @@ namespace TF.WIN
 
 
 
-            private void cboactmanuala_SelectedIndexChanged(object sender, EventArgs e)
-            {
-                MostrarResultado1();
-            }
-
-
+           
         }
-
-        private void MostrarResultado1()
+        private void ResultadoH()
         {
-            int resultado1 = ObtenerNumeroSeleccionado(cboH) - ObtenerNumeroSeleccionado(cboHi);
+            int resultadoh = 25 / ObtenerNumeroSeleccionado(cboH);
 
-            if (resultado1 == 0)
-            {
-                resultado1 = 1;
-            }
-
-            txtHM.Text = resultado1.ToString();
+            txtHM.Text = resultadoh.ToString();
         }
-
-
-        private void MostrarResultadoGA()
-        {
-            int resultadoGA = ObtenerNumeroSeleccionado(cboactmanuala);
-
-            if (resultadoGA == 0)
-            {
-                resultadoGA = 0;
-            }
-
-            actividadgrupoAfinal.Text = resultadoGA.ToString();
-        }
-
 
         private int ObtenerNumeroSeleccionado(MaterialComboBox comboBox)
         {
