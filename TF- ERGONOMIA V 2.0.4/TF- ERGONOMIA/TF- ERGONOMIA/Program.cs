@@ -23,7 +23,7 @@ namespace TF.WIN
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(FormMenu = new frmMenuPrincipal());
-            Application.Run(new frmMenuPrincipal());
+            Application.Run(new NIOSH1());
 
         }
     }
