@@ -1371,15 +1371,11 @@ CREATE OR ALTER PROCEDURE SP_Niosh_TablaADestino
 
 AS 
 BEGIn
-SELECT rta.FrecuenciaNiosh,rta.Duraciontarea,rta.VMNioshD,rta.ValorTablaB FROM NioshTablaCompleta rta
-INNER JOIN dbo.RebaTablaCompleta rtc ON rtc.BRAZOReba = rta.BrazoReba
-AND rtc.MunecaReba = rta.MUNECAReba
-AND	rtc.AntebrazoReba = rta.ANTEBRAZOReba
-WHERE rtc.cargaIdReba = @cargaIdReba
+SELECT rta.FrecuenciaFM,rta.DuracionFM,rta.DistanciaVerticalFM FROM NioshTablaA rta
+INNER JOIN NioshTablaCompleta rtc ON rtc.FrecuenciaNiosh = rta.FrecuenciaFM
+AND rtc.Duraciontarea = rta.DuracionFM
+AND	rtc.VMNioshD = rta.DistanciaVerticalFM
+WHERE rtc.cargaidniosh = @cargaidniosh
 END
 GO
 
-FrecuenciaFM int,
-DuracionFM int,
-DistanciaVerticalFM int,
-ValorFM float
