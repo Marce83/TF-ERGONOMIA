@@ -34,7 +34,7 @@ namespace TF.WIN
             oNiosh.EmpleadoNiosh = txtNombreEmpleadoNiosh.Text;
             oNiosh.EmpresaNiosh = txtNombreEmpresaNiosh.Text;
             var res = oNioshBC.InsertNioshPORTADABC(oNiosh);
-            MessageBox.Show("Analisis REBA creado con éxito");
+            MessageBox.Show("Análisis NIOSH creado con éxito");
 
             // Pasar el ID de carga al siguiente formulario
 

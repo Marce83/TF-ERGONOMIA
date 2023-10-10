@@ -1172,14 +1172,23 @@ PuestoDeTrabajoNiosh NVARCHAR(20),
 DniEmpleadoNiosh nvarchar(11),
 EmpleadoNiosh nvarchar(30),
 EmpresaNiosh nvarchar(30),
-LCNiosh float,
-HMNiosh float,
-VMNiosh float,
-DMNiosh float,
-AMNiosh float,
-FMNiosh float,
-CMRNiosh float,
-Duraciontarea nvarchar(11))
+HMNioshD float,
+HMNioshI float,
+VMNioshD float,
+VMNioshI float,
+DMNioshD float,
+AMNioshD float,
+AMNioshI float,
+FMNioshD float,
+FMNioshI float,
+CMRNioshD float,
+CMRNioshI float,
+Duraciontarea int,
+CalidadAgarreD int,
+CalidadAgarreI int,
+LCNiosh int,
+FrecuenciaNiosh int
+)
 GO	
 
 use ProyectoFinal
@@ -1209,29 +1218,168 @@ GO
 use ProyectoFinal
 go
 CREATE or Alter PROCEDURE SP_Niosh_updateNiosh1
-@cargaIdNiosh Int,
-@LCNiosh int,
-@HMNiosh int,
-@VMNiosh  int,
-@DMNiosh int,
-@AMNiosh int,
-@FMNiosh int,
-@CMRNiosh int,
+@cargaIdNiosh int,
+@HMNioshD float,
+@HMNioshI float,
+@VMNioshD float,
+@VMNioshI float,
+@DMNioshD float,
+@AMNioshD float,
+@AMNioshI float,
+@FMNioshD float,
+@FMNioshI float,
+@CMRNioshD float,
+@CMRNioshI float,
 @Duraciontarea int,
-@FrecuenciaNiosh INT,
-@CADNiosh nvarchar,
-@PesoCargaNiosh INT
-
+@CalidadAgarreD int,
+@CalidadAgarreI int,
+@LCNiosh int,
+@FrecuenciaNiosh int
 AS
 BEGIN
-	update NioshTablaCompleta set LCNiosh=@LCNiosh, HMNiosh=@HMNiosh, VMNiosh=@VMNiosh ,DMNiosh=@DMNiosh, AMNiosh=@AMNiosh, FMNiosh=@FMNiosh, CMRNiosh=@CMRNiosh, Duraciontarea=@Duraciontarea , FrecuenciaNiosh=@FrecuenciaNiosh,CADNiosh=@CADNiosh , PesoCargaNiosh=@PesoCargaNiosh 
+	update NioshTablaCompleta set HMNioshD=@HMNioshD, HMNioshI =@HMNioshI, VMNioshD =@VMNioshD, VMNioshI = @VMNioshI, DMNioshD = @DMNioshD, AMNioshD = @AMNioshD, AMNioshI =@AMNioshI, FMNioshD =@FMNioshD, FMNioshI =@FMNioshI, CMRNioshD =@CMRNioshD, CMRNioshI = @CMRNioshI, Duraciontarea =@Duraciontarea, CalidadAgarreD =@CalidadAgarreD, CalidadAgarreI=@CalidadAgarreI, LCNiosh=@LCNiosh, FrecuenciaNiosh=@FrecuenciaNiosh
 	where cargaIdNiosh=@cargaIdNiosh
 END
 GO
 
 
+use ProyectoFinal
+go
+CREATE TABLE NioshTablaA(
+FrecuenciaFM int,
+DuracionFM int,
+DistanciaVerticalFM int,
+ValorFM float
+)
+GO
 
 
+insert into NioshTablaA values (1,1,1,1)
+insert into NioshTablaA values (1,1,2,1)
+insert into NioshTablaA values (1,2,1,0.95)
+insert into NioshTablaA values (1,2,2,0.95)
+insert into NioshTablaA values (1,3,1,0.85)
+insert into NioshTablaA values (1,3,2,0.85)
+insert into NioshTablaA values (2,1,1,0.97)
+insert into NioshTablaA values (2,1,2,0.97)
+insert into NioshTablaA values (2,2,1,0.92)
+insert into NioshTablaA values (2,2,2,0.92)
+insert into NioshTablaA values (2,3,1,0.81)
+insert into NioshTablaA values (2,3,2,0.81)
+insert into NioshTablaA values (3,1,1,0.94)
+insert into NioshTablaA values (3,1,2,0.94)
+insert into NioshTablaA values (3,2,1,0.88)
+insert into NioshTablaA values (3,2,2,0.88)
+insert into NioshTablaA values (3,3,1,0.75)
+insert into NioshTablaA values (3,3,2,0.75)
+insert into NioshTablaA values (4,1,1,0.91)
+insert into NioshTablaA values (4,1,2,0.91)
+insert into NioshTablaA values (4,2,1,0.84)
+insert into NioshTablaA values (4,2,2,0.84)
+insert into NioshTablaA values (4,3,1,0.65)
+insert into NioshTablaA values (4,3,2,0.65)
+insert into NioshTablaA values (5,1,1,0.88)
+insert into NioshTablaA values (5,1,2,0.88)
+insert into NioshTablaA values (5,2,1,0.79)
+insert into NioshTablaA values (5,2,2,0.79)
+insert into NioshTablaA values (5,3,1,0.55)
+insert into NioshTablaA values (5,3,2,0.55)
+insert into NioshTablaA values (6,1,1,0.84)
+insert into NioshTablaA values (6,1,2,0.84)
+insert into NioshTablaA values (6,2,1,0.72)
+insert into NioshTablaA values (6,2,2,0.72)
+insert into NioshTablaA values (6,3,1,0.45)
+insert into NioshTablaA values (6,3,2,0.45)
+insert into NioshTablaA values (7,1,1,0.8)
+insert into NioshTablaA values (7,1,2,0.8)
+insert into NioshTablaA values (7,2,1,0.6)
+insert into NioshTablaA values (7,2,2,0.6)
+insert into NioshTablaA values (7,3,1,0.35)
+insert into NioshTablaA values (7,3,2,0.35)
+insert into NioshTablaA values (8,1,1,0.75)
+insert into NioshTablaA values (8,1,2,0.75)
+insert into NioshTablaA values (8,2,1,0.5)
+insert into NioshTablaA values (8,2,2,0.5)
+insert into NioshTablaA values (8,3,1,0.27)
+insert into NioshTablaA values (8,3,2,0.27)
+insert into NioshTablaA values (9,1,1,0.7)
+insert into NioshTablaA values (9,1,2,0.7)
+insert into NioshTablaA values (9,2,1,0.42)
+insert into NioshTablaA values (9,2,2,0.42)
+insert into NioshTablaA values (9,3,1,0.22)
+insert into NioshTablaA values (9,3,2,0.22)
+insert into NioshTablaA values (10,1,1,0.6)
+insert into NioshTablaA values (10,1,2,0.6)
+insert into NioshTablaA values (10,2,1,0.35)
+insert into NioshTablaA values (10,2,2,0.35)
+insert into NioshTablaA values (10,3,1,0.18)
+insert into NioshTablaA values (10,3,2,0.18)
+insert into NioshTablaA values (11,1,1,0.52)
+insert into NioshTablaA values (11,1,2,0.52)
+insert into NioshTablaA values (11,2,1,0.3)
+insert into NioshTablaA values (11,2,2,0.3)
+insert into NioshTablaA values (11,3,1,0)
+insert into NioshTablaA values (11,3,2,0.15)
+insert into NioshTablaA values (12,1,1,0.45)
+insert into NioshTablaA values (12,1,2,0.45)
+insert into NioshTablaA values (12,2,1,0.26)
+insert into NioshTablaA values (12,2,2,0.26)
+insert into NioshTablaA values (12,3,1,0)
+insert into NioshTablaA values (12,3,2,0.13)
+insert into NioshTablaA values (13,1,1,0.41)
+insert into NioshTablaA values (13,1,2,0.41)
+insert into NioshTablaA values (13,2,1,0)
+insert into NioshTablaA values (13,2,2,0.23)
+insert into NioshTablaA values (13,3,1,0)
+insert into NioshTablaA values (13,3,2,0)
+insert into NioshTablaA values (14,1,1,0.37)
+insert into NioshTablaA values (14,1,2,0.37)
+insert into NioshTablaA values (14,2,1,0)
+insert into NioshTablaA values (14,2,2,0.21)
+insert into NioshTablaA values (14,3,1,0)
+insert into NioshTablaA values (14,3,2,0)
+insert into NioshTablaA values (15,1,1,0)
+insert into NioshTablaA values (15,1,2,0.34)
+insert into NioshTablaA values (15,2,1,0)
+insert into NioshTablaA values (15,2,2,0)
+insert into NioshTablaA values (15,3,1,0)
+insert into NioshTablaA values (15,3,2,0)
+insert into NioshTablaA values (16,1,1,0)
+insert into NioshTablaA values (16,1,2,0.31)
+insert into NioshTablaA values (16,2,1,0)
+insert into NioshTablaA values (16,2,2,0)
+insert into NioshTablaA values (16,3,1,0)
+insert into NioshTablaA values (16,3,2,0)
+insert into NioshTablaA values (17,1,1,0)
+insert into NioshTablaA values (17,1,2,0.28)
+insert into NioshTablaA values (17,2,1,0)
+insert into NioshTablaA values (17,2,2,0)
+insert into NioshTablaA values (17,3,1,0)
+insert into NioshTablaA values (17,3,2,0)
+insert into NioshTablaA values (18,1,1,0)
+insert into NioshTablaA values (18,1,2,0)
+insert into NioshTablaA values (18,2,1,0)
+insert into NioshTablaA values (18,2,2,0)
+insert into NioshTablaA values (18,3,1,0)
+insert into NioshTablaA values (18,3,2,0)
 
 
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_Niosh_TablaADestino
+@cargaidniosh int
 
+AS 
+BEGIn
+SELECT rta.FrecuenciaNiosh,rta.Duraciontarea,rta.VMNioshD,rta.ValorTablaB FROM NioshTablaCompleta rta
+INNER JOIN dbo.RebaTablaCompleta rtc ON rtc.BRAZOReba = rta.BrazoReba
+AND rtc.MunecaReba = rta.MUNECAReba
+AND	rtc.AntebrazoReba = rta.ANTEBRAZOReba
+WHERE rtc.cargaIdReba = @cargaIdReba
+END
+GO
+
+FrecuenciaFM int,
+DuracionFM int,
+DistanciaVerticalFM int,
+ValorFM float

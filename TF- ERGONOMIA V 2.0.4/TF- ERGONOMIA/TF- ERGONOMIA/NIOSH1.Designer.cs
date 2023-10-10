@@ -52,11 +52,14 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboAi = new MaterialSkin.Controls.MaterialComboBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.cboVi = new MaterialSkin.Controls.MaterialComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.cboHi = new MaterialSkin.Controls.MaterialComboBox();
@@ -67,17 +70,30 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtVM = new MaterialSkin.Controls.MaterialTextBox2();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtHM = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtHMD = new MaterialSkin.Controls.MaterialTextBox2();
             this.label2 = new System.Windows.Forms.Label();
             this.cboA = new MaterialSkin.Controls.MaterialComboBox();
             this.cboV = new MaterialSkin.Controls.MaterialComboBox();
             this.cboH = new MaterialSkin.Controls.MaterialComboBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtFN = new MaterialSkin.Controls.MaterialTextBox2();
-            this.cboAi = new MaterialSkin.Controls.MaterialComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.txtFND = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtAMi = new MaterialSkin.Controls.MaterialTextBox2();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtVMi = new MaterialSkin.Controls.MaterialTextBox2();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtHMiI = new MaterialSkin.Controls.MaterialTextBox2();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtFNI = new MaterialSkin.Controls.MaterialTextBox2();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtduracion = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtfrecuencia = new MaterialSkin.Controls.MaterialTextBox2();
+            this.vertfrecuenciatablaD = new MaterialSkin.Controls.MaterialTextBox2();
+            this.vertfrecuenciatablaI = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtCMD = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtCMI = new MaterialSkin.Controls.MaterialTextBox2();
+            this.label20 = new System.Windows.Forms.Label();
+            this.cboCMi = new MaterialSkin.Controls.MaterialComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.advDH)).BeginInit();
@@ -85,19 +101,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(39, 1414);
+            this.label13.Location = new System.Drawing.Point(39, 1332);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(154, 16);
+            this.label13.Size = new System.Drawing.Size(203, 16);
             this.label13.TabIndex = 58;
-            this.label13.Text = "Calidad de Agarre ( CM )";
+            this.label13.Text = "Calidad de Agarre Destino ( CM )";
             // 
             // pictureBox2
             // 
@@ -113,7 +129,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(39, 1264);
+            this.label12.Location = new System.Drawing.Point(39, 1182);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(170, 16);
             this.label12.TabIndex = 54;
@@ -122,7 +138,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(39, 1195);
+            this.label11.Location = new System.Drawing.Point(39, 1113);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(134, 16);
             this.label11.TabIndex = 51;
@@ -160,7 +176,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(39, 1482);
+            this.label6.Location = new System.Drawing.Point(41, 1485);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(155, 16);
             this.label6.TabIndex = 36;
@@ -185,7 +201,7 @@
             this.txtLCN.Depth = 0;
             this.txtLCN.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtLCN.LeadingIcon = null;
-            this.txtLCN.Location = new System.Drawing.Point(310, 1466);
+            this.txtLCN.Location = new System.Drawing.Point(387, 1473);
             this.txtLCN.MaxLength = 50;
             this.txtLCN.MouseState = MaterialSkin.MouseState.OUT;
             this.txtLCN.Multiline = false;
@@ -210,32 +226,19 @@
             this.cboDuraciontarea.IntegralHeight = false;
             this.cboDuraciontarea.ItemHeight = 43;
             this.cboDuraciontarea.Items.AddRange(new object[] {
-            "Menos 1 Hora",
-            "Entre 1 y 2 Horas",
-            "Entre 2 y 8 Horas"});
-            this.cboDuraciontarea.Location = new System.Drawing.Point(310, 1182);
+            "Seleccione"});
+            this.cboDuraciontarea.Location = new System.Drawing.Point(385, 1104);
             this.cboDuraciontarea.MaxDropDownItems = 4;
             this.cboDuraciontarea.MouseState = MaterialSkin.MouseState.OUT;
             this.cboDuraciontarea.Name = "cboDuraciontarea";
             this.cboDuraciontarea.Size = new System.Drawing.Size(197, 49);
             this.cboDuraciontarea.StartIndex = 0;
             this.cboDuraciontarea.TabIndex = 73;
+            this.cboDuraciontarea.SelectedIndexChanged += new System.EventHandler(this.cboDuraciontarea_SelectedIndexChanged);
             // 
             // cboFrecuencia
             // 
-            this.cboFrecuencia.AutoResize = false;
-            this.cboFrecuencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboFrecuencia.Depth = 0;
-            this.cboFrecuencia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboFrecuencia.DropDownHeight = 174;
-            this.cboFrecuencia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboFrecuencia.DropDownWidth = 121;
-            this.cboFrecuencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboFrecuencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboFrecuencia.FormattingEnabled = true;
-            this.cboFrecuencia.IntegralHeight = false;
-            this.cboFrecuencia.ItemHeight = 43;
-            this.cboFrecuencia.Items.AddRange(new object[] {
+            this.cboFrecuencia.AutoCompleteCustomSource.AddRange(new string[] {
             "0.2",
             "0.5",
             "1",
@@ -253,14 +256,29 @@
             "13",
             "14",
             "15",
-            "Mas de 15"});
-            this.cboFrecuencia.Location = new System.Drawing.Point(310, 1250);
+            "<15"});
+            this.cboFrecuencia.AutoResize = false;
+            this.cboFrecuencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboFrecuencia.Depth = 0;
+            this.cboFrecuencia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboFrecuencia.DropDownHeight = 174;
+            this.cboFrecuencia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboFrecuencia.DropDownWidth = 121;
+            this.cboFrecuencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboFrecuencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboFrecuencia.FormattingEnabled = true;
+            this.cboFrecuencia.IntegralHeight = false;
+            this.cboFrecuencia.ItemHeight = 43;
+            this.cboFrecuencia.Items.AddRange(new object[] {
+            "Seleccione"});
+            this.cboFrecuencia.Location = new System.Drawing.Point(385, 1172);
             this.cboFrecuencia.MaxDropDownItems = 4;
             this.cboFrecuencia.MouseState = MaterialSkin.MouseState.OUT;
             this.cboFrecuencia.Name = "cboFrecuencia";
             this.cboFrecuencia.Size = new System.Drawing.Size(197, 49);
             this.cboFrecuencia.StartIndex = 0;
             this.cboFrecuencia.TabIndex = 74;
+            this.cboFrecuencia.SelectedIndexChanged += new System.EventHandler(this.cboFrecuencia_SelectedIndexChanged);
             // 
             // btncerrarNiosh
             // 
@@ -271,7 +289,7 @@
             this.btncerrarNiosh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncerrarNiosh.ForeColor = System.Drawing.Color.AliceBlue;
             this.btncerrarNiosh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncerrarNiosh.Location = new System.Drawing.Point(254, 1535);
+            this.btncerrarNiosh.Location = new System.Drawing.Point(254, 1563);
             this.btncerrarNiosh.Margin = new System.Windows.Forms.Padding(4);
             this.btncerrarNiosh.Name = "btncerrarNiosh";
             this.btncerrarNiosh.Size = new System.Drawing.Size(155, 43);
@@ -283,7 +301,7 @@
             // txtcargaidniosh
             // 
             this.txtcargaidniosh.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtcargaidniosh.Location = new System.Drawing.Point(613, 1545);
+            this.txtcargaidniosh.Location = new System.Drawing.Point(613, 1573);
             this.txtcargaidniosh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargaidniosh.Name = "txtcargaidniosh";
             this.txtcargaidniosh.Size = new System.Drawing.Size(100, 22);
@@ -299,7 +317,7 @@
             this.btnGuardarNiosh1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarNiosh1.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnGuardarNiosh1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarNiosh1.Location = new System.Drawing.Point(437, 1535);
+            this.btnGuardarNiosh1.Location = new System.Drawing.Point(437, 1563);
             this.btnGuardarNiosh1.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarNiosh1.Name = "btnGuardarNiosh1";
             this.btnGuardarNiosh1.Size = new System.Drawing.Size(155, 43);
@@ -310,6 +328,10 @@
             // 
             // cboCM
             // 
+            this.cboCM.AutoCompleteCustomSource.AddRange(new string[] {
+            "Malo",
+            "Bueno",
+            "Bien"});
             this.cboCM.AutoResize = false;
             this.cboCM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cboCM.Depth = 0;
@@ -323,16 +345,15 @@
             this.cboCM.IntegralHeight = false;
             this.cboCM.ItemHeight = 43;
             this.cboCM.Items.AddRange(new object[] {
-            "Bien",
-            "Regular",
-            "Malo"});
-            this.cboCM.Location = new System.Drawing.Point(310, 1400);
+            "Seleccione"});
+            this.cboCM.Location = new System.Drawing.Point(395, 1322);
             this.cboCM.MaxDropDownItems = 4;
             this.cboCM.MouseState = MaterialSkin.MouseState.OUT;
             this.cboCM.Name = "cboCM";
-            this.cboCM.Size = new System.Drawing.Size(197, 49);
+            this.cboCM.Size = new System.Drawing.Size(187, 49);
             this.cboCM.StartIndex = 0;
             this.cboCM.TabIndex = 211;
+            this.cboCM.SelectedIndexChanged += new System.EventHandler(this.cboCM_SelectedIndexChanged);
             // 
             // advDH
             // 
@@ -408,6 +429,20 @@
             this.pictureBox8.Tag = "";
             this.toolTip1.SetToolTip(this.pictureBox8, "Valor comprendido entre 0 y 175 cm");
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Location = new System.Drawing.Point(489, 534);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(33, 49);
+            this.pictureBox10.TabIndex = 244;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Tag = "";
+            this.toolTip1.SetToolTip(this.pictureBox10, "Valor comprendido entre 0 y 135 grados");
+            // 
             // toolTip2
             // 
             this.toolTip2.ToolTipTitle = "Valor comprendido entre 0 y 175 cm";
@@ -439,6 +474,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtHMiI);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.txtVMi);
+            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.txtAMi);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.cboAi);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.pictureBox10);
@@ -454,7 +495,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtVM);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtHM);
+            this.groupBox1.Controls.Add(this.txtHMD);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.cboA);
             this.groupBox1.Controls.Add(this.cboV);
@@ -472,53 +513,177 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Posicion";
             // 
+            // cboAi
+            // 
+            this.cboAi.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135"});
+            this.cboAi.AutoResize = false;
+            this.cboAi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboAi.Depth = 0;
+            this.cboAi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboAi.DropDownHeight = 174;
+            this.cboAi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAi.DropDownWidth = 121;
+            this.cboAi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboAi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboAi.FormattingEnabled = true;
+            this.cboAi.IntegralHeight = false;
+            this.cboAi.ItemHeight = 43;
+            this.cboAi.Location = new System.Drawing.Point(277, 534);
+            this.cboAi.MaxDropDownItems = 4;
+            this.cboAi.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboAi.Name = "cboAi";
+            this.cboAi.Size = new System.Drawing.Size(197, 49);
+            this.cboAi.StartIndex = 0;
+            this.cboAi.TabIndex = 246;
+            this.cboAi.SelectedIndexChanged += new System.EventHandler(this.cboAi_SelectedIndexChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(6, 548);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(196, 16);
+            this.label17.TabIndex = 245;
+            this.label17.Text = "Angulo de Asimetría Origen ( A )";
+            // 
             // cboVi
             // 
-            this.cboVi.AutoResize = false;
-            this.cboVi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboVi.Depth = 0;
-            this.cboVi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboVi.DropDownHeight = 174;
-            this.cboVi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboVi.DropDownWidth = 121;
-            this.cboVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboVi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboVi.FormattingEnabled = true;
-            this.cboVi.IntegralHeight = false;
-            this.cboVi.ItemHeight = 43;
-            this.cboVi.Location = new System.Drawing.Point(277, 273);
-            this.cboVi.MaxDropDownItems = 4;
-            this.cboVi.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboVi.Name = "cboVi";
-            this.cboVi.Size = new System.Drawing.Size(197, 49);
-            this.cboVi.StartIndex = 0;
-            this.cboVi.TabIndex = 240;
-            this.cboVi.SelectedIndexChanged += new System.EventHandler(this.cboVi_SelectedIndexChanged);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(13, 292);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(148, 16);
-            this.label14.TabIndex = 238;
-            this.label14.Text = "Distancia Vertical Inicial";
-            // 
-            // cboHi
-            // 
-            this.cboHi.AutoResize = false;
-            this.cboHi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboHi.Depth = 0;
-            this.cboHi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboHi.DropDownHeight = 174;
-            this.cboHi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboHi.DropDownWidth = 121;
-            this.cboHi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboHi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboHi.FormattingEnabled = true;
-            this.cboHi.IntegralHeight = false;
-            this.cboHi.ItemHeight = 43;
-            this.cboHi.Items.AddRange(new object[] {
+            this.cboVi.AutoCompleteCustomSource.AddRange(new string[] {
             "1",
             "2",
             "3",
@@ -694,6 +859,230 @@
             "173",
             "174",
             "175"});
+            this.cboVi.AutoResize = false;
+            this.cboVi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboVi.Depth = 0;
+            this.cboVi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboVi.DropDownHeight = 174;
+            this.cboVi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVi.DropDownWidth = 121;
+            this.cboVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboVi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboVi.FormattingEnabled = true;
+            this.cboVi.IntegralHeight = false;
+            this.cboVi.ItemHeight = 43;
+            this.cboVi.Items.AddRange(new object[] {
+            "0"});
+            this.cboVi.Location = new System.Drawing.Point(277, 273);
+            this.cboVi.MaxDropDownItems = 4;
+            this.cboVi.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboVi.Name = "cboVi";
+            this.cboVi.Size = new System.Drawing.Size(197, 49);
+            this.cboVi.StartIndex = 0;
+            this.cboVi.TabIndex = 240;
+            this.cboVi.SelectedIndexChanged += new System.EventHandler(this.cboVi_SelectedIndexChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(13, 292);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(148, 16);
+            this.label14.TabIndex = 238;
+            this.label14.Text = "Distancia Vertical Inicial";
+            // 
+            // cboHi
+            // 
+            this.cboHi.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175"});
+            this.cboHi.AutoResize = false;
+            this.cboHi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboHi.Depth = 0;
+            this.cboHi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboHi.DropDownHeight = 174;
+            this.cboHi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHi.DropDownWidth = 121;
+            this.cboHi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboHi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboHi.FormattingEnabled = true;
+            this.cboHi.IntegralHeight = false;
+            this.cboHi.ItemHeight = 43;
+            this.cboHi.Items.AddRange(new object[] {
+            "0"});
             this.cboHi.Location = new System.Drawing.Point(277, 83);
             this.cboHi.MaxDropDownItems = 4;
             this.cboHi.MouseState = MaterialSkin.MouseState.OUT;
@@ -829,35 +1218,35 @@
             this.label4.TabIndex = 229;
             this.label4.Text = "VM";
             // 
-            // txtHM
+            // txtHMD
             // 
-            this.txtHM.AnimateReadOnly = false;
-            this.txtHM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtHM.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtHM.Depth = 0;
-            this.txtHM.Enabled = false;
-            this.txtHM.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtHM.HideSelection = true;
-            this.txtHM.LeadingIcon = null;
-            this.txtHM.Location = new System.Drawing.Point(345, 146);
-            this.txtHM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtHM.MaxLength = 32767;
-            this.txtHM.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtHM.Name = "txtHM";
-            this.txtHM.PasswordChar = '\0';
-            this.txtHM.PrefixSuffixText = null;
-            this.txtHM.ReadOnly = true;
-            this.txtHM.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtHM.SelectedText = "";
-            this.txtHM.SelectionLength = 0;
-            this.txtHM.SelectionStart = 0;
-            this.txtHM.ShortcutsEnabled = true;
-            this.txtHM.Size = new System.Drawing.Size(129, 48);
-            this.txtHM.TabIndex = 228;
-            this.txtHM.TabStop = false;
-            this.txtHM.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtHM.TrailingIcon = null;
-            this.txtHM.UseSystemPasswordChar = false;
+            this.txtHMD.AnimateReadOnly = false;
+            this.txtHMD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtHMD.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtHMD.Depth = 0;
+            this.txtHMD.Enabled = false;
+            this.txtHMD.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtHMD.HideSelection = true;
+            this.txtHMD.LeadingIcon = null;
+            this.txtHMD.Location = new System.Drawing.Point(345, 146);
+            this.txtHMD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtHMD.MaxLength = 32767;
+            this.txtHMD.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtHMD.Name = "txtHMD";
+            this.txtHMD.PasswordChar = '\0';
+            this.txtHMD.PrefixSuffixText = null;
+            this.txtHMD.ReadOnly = true;
+            this.txtHMD.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtHMD.SelectedText = "";
+            this.txtHMD.SelectionLength = 0;
+            this.txtHMD.SelectionStart = 0;
+            this.txtHMD.ShortcutsEnabled = true;
+            this.txtHMD.Size = new System.Drawing.Size(129, 48);
+            this.txtHMD.TabIndex = 228;
+            this.txtHMD.TabStop = false;
+            this.txtHMD.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtHMD.TrailingIcon = null;
+            this.txtHMD.UseSystemPasswordChar = false;
             // 
             // label2
             // 
@@ -870,19 +1259,7 @@
             // 
             // cboA
             // 
-            this.cboA.AutoResize = false;
-            this.cboA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboA.Depth = 0;
-            this.cboA.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboA.DropDownHeight = 174;
-            this.cboA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboA.DropDownWidth = 121;
-            this.cboA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboA.FormattingEnabled = true;
-            this.cboA.IntegralHeight = false;
-            this.cboA.ItemHeight = 43;
-            this.cboA.Items.AddRange(new object[] {
+            this.cboA.AutoCompleteCustomSource.AddRange(new string[] {
             "1",
             "2",
             "3",
@@ -1018,6 +1395,18 @@
             "133",
             "134",
             "135"});
+            this.cboA.AutoResize = false;
+            this.cboA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboA.Depth = 0;
+            this.cboA.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboA.DropDownHeight = 174;
+            this.cboA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboA.DropDownWidth = 121;
+            this.cboA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboA.FormattingEnabled = true;
+            this.cboA.IntegralHeight = false;
+            this.cboA.ItemHeight = 43;
             this.cboA.Location = new System.Drawing.Point(277, 475);
             this.cboA.MaxDropDownItems = 4;
             this.cboA.MouseState = MaterialSkin.MouseState.OUT;
@@ -1025,9 +1414,186 @@
             this.cboA.Size = new System.Drawing.Size(197, 49);
             this.cboA.StartIndex = 0;
             this.cboA.TabIndex = 222;
+            this.cboA.SelectedIndexChanged += new System.EventHandler(this.cboA_SelectedIndexChanged);
             // 
             // cboV
             // 
+            this.cboV.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175"});
             this.cboV.AutoResize = false;
             this.cboV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cboV.Depth = 0;
@@ -1040,6 +1606,8 @@
             this.cboV.FormattingEnabled = true;
             this.cboV.IntegralHeight = false;
             this.cboV.ItemHeight = 43;
+            this.cboV.Items.AddRange(new object[] {
+            "0"});
             this.cboV.Location = new System.Drawing.Point(277, 210);
             this.cboV.MaxDropDownItems = 4;
             this.cboV.MouseState = MaterialSkin.MouseState.OUT;
@@ -1239,6 +1807,8 @@
             this.cboH.FormattingEnabled = true;
             this.cboH.IntegralHeight = false;
             this.cboH.ItemHeight = 43;
+            this.cboH.Items.AddRange(new object[] {
+            "0"});
             this.cboH.Location = new System.Drawing.Point(277, 22);
             this.cboH.MaxDropDownItems = 4;
             this.cboH.MouseState = MaterialSkin.MouseState.OUT;
@@ -1252,9 +1822,9 @@
             // 
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(613, 1203);
+            this.pictureBox6.Location = new System.Drawing.Point(711, 1125);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(442, 136);
+            this.pictureBox6.Size = new System.Drawing.Size(367, 136);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 219;
             this.pictureBox6.TabStop = false;
@@ -1262,222 +1832,415 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(317, 1344);
+            this.label16.Location = new System.Drawing.Point(392, 1266);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(28, 16);
             this.label16.TabIndex = 220;
             this.label16.Text = " FN";
             // 
-            // txtFN
+            // txtFND
             // 
-            this.txtFN.AnimateReadOnly = false;
-            this.txtFN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtFN.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtFN.Depth = 0;
-            this.txtFN.Enabled = false;
-            this.txtFN.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtFN.HideSelection = true;
-            this.txtFN.LeadingIcon = null;
-            this.txtFN.Location = new System.Drawing.Point(378, 1329);
-            this.txtFN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtFN.MaxLength = 32767;
-            this.txtFN.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtFN.Name = "txtFN";
-            this.txtFN.PasswordChar = '\0';
-            this.txtFN.PrefixSuffixText = null;
-            this.txtFN.ReadOnly = true;
-            this.txtFN.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtFN.SelectedText = "";
-            this.txtFN.SelectionLength = 0;
-            this.txtFN.SelectionStart = 0;
-            this.txtFN.ShortcutsEnabled = true;
-            this.txtFN.Size = new System.Drawing.Size(129, 48);
-            this.txtFN.TabIndex = 244;
-            this.txtFN.TabStop = false;
-            this.txtFN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtFN.TrailingIcon = null;
-            this.txtFN.UseSystemPasswordChar = false;
+            this.txtFND.AnimateReadOnly = false;
+            this.txtFND.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtFND.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtFND.Depth = 0;
+            this.txtFND.Enabled = false;
+            this.txtFND.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtFND.HideSelection = true;
+            this.txtFND.LeadingIcon = null;
+            this.txtFND.Location = new System.Drawing.Point(453, 1251);
+            this.txtFND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtFND.MaxLength = 32767;
+            this.txtFND.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtFND.Name = "txtFND";
+            this.txtFND.PasswordChar = '\0';
+            this.txtFND.PrefixSuffixText = null;
+            this.txtFND.ReadOnly = true;
+            this.txtFND.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtFND.SelectedText = "";
+            this.txtFND.SelectionLength = 0;
+            this.txtFND.SelectionStart = 0;
+            this.txtFND.ShortcutsEnabled = true;
+            this.txtFND.Size = new System.Drawing.Size(129, 48);
+            this.txtFND.TabIndex = 244;
+            this.txtFND.TabStop = false;
+            this.txtFND.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtFND.TrailingIcon = null;
+            this.txtFND.UseSystemPasswordChar = false;
             // 
-            // cboAi
+            // txtAMi
             // 
-            this.cboAi.AutoResize = false;
-            this.cboAi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboAi.Depth = 0;
-            this.cboAi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboAi.DropDownHeight = 174;
-            this.cboAi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboAi.DropDownWidth = 121;
-            this.cboAi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboAi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboAi.FormattingEnabled = true;
-            this.cboAi.IntegralHeight = false;
-            this.cboAi.ItemHeight = 43;
-            this.cboAi.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31",
-            "32",
-            "33",
-            "34",
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60",
-            "61",
-            "62",
-            "63",
-            "64",
-            "65",
-            "66",
-            "67",
-            "68",
-            "69",
-            "70",
-            "71",
-            "72",
-            "73",
-            "74",
-            "75",
-            "76",
-            "77",
-            "78",
-            "79",
-            "80",
-            "81",
-            "82",
-            "83",
-            "84",
-            "85",
-            "86",
-            "87",
-            "88",
-            "89",
-            "90",
-            "91",
-            "92",
-            "93",
-            "94",
-            "95",
-            "96",
-            "97",
-            "98",
-            "99",
-            "100",
-            "101",
-            "102",
-            "103",
-            "104",
-            "105",
-            "106",
-            "107",
-            "108",
-            "109",
-            "110",
-            "111",
-            "112",
-            "113",
-            "114",
-            "115",
-            "116",
-            "117",
-            "118",
-            "119",
-            "120",
-            "121",
-            "122",
-            "123",
-            "124",
-            "125",
-            "126",
-            "127",
-            "128",
-            "129",
-            "130",
-            "131",
-            "132",
-            "133",
-            "134",
-            "135"});
-            this.cboAi.Location = new System.Drawing.Point(277, 534);
-            this.cboAi.MaxDropDownItems = 4;
-            this.cboAi.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboAi.Name = "cboAi";
-            this.cboAi.Size = new System.Drawing.Size(197, 49);
-            this.cboAi.StartIndex = 0;
-            this.cboAi.TabIndex = 246;
+            this.txtAMi.AnimateReadOnly = false;
+            this.txtAMi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtAMi.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtAMi.Depth = 0;
+            this.txtAMi.Enabled = false;
+            this.txtAMi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAMi.HideSelection = true;
+            this.txtAMi.LeadingIcon = null;
+            this.txtAMi.Location = new System.Drawing.Point(79, 609);
+            this.txtAMi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAMi.MaxLength = 32767;
+            this.txtAMi.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtAMi.Name = "txtAMi";
+            this.txtAMi.PasswordChar = '\0';
+            this.txtAMi.PrefixSuffixText = null;
+            this.txtAMi.ReadOnly = true;
+            this.txtAMi.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtAMi.SelectedText = "";
+            this.txtAMi.SelectionLength = 0;
+            this.txtAMi.SelectionStart = 0;
+            this.txtAMi.ShortcutsEnabled = true;
+            this.txtAMi.Size = new System.Drawing.Size(129, 48);
+            this.txtAMi.TabIndex = 248;
+            this.txtAMi.TabStop = false;
+            this.txtAMi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAMi.TrailingIcon = null;
+            this.txtAMi.UseSystemPasswordChar = false;
             // 
-            // label17
+            // label7
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 548);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(196, 16);
-            this.label17.TabIndex = 245;
-            this.label17.Text = "Angulo de Asimetría Origen ( A )";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(14, 628);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(30, 16);
+            this.label7.TabIndex = 247;
+            this.label7.Text = "AMi";
             // 
-            // pictureBox10
+            // txtVMi
             // 
-            this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(489, 534);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(33, 49);
-            this.pictureBox10.TabIndex = 244;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Tag = "";
-            this.toolTip1.SetToolTip(this.pictureBox10, "Valor comprendido entre 0 y 135 grados");
+            this.txtVMi.AnimateReadOnly = false;
+            this.txtVMi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtVMi.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtVMi.Depth = 0;
+            this.txtVMi.Enabled = false;
+            this.txtVMi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtVMi.HideSelection = true;
+            this.txtVMi.LeadingIcon = null;
+            this.txtVMi.Location = new System.Drawing.Point(79, 340);
+            this.txtVMi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtVMi.MaxLength = 32767;
+            this.txtVMi.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtVMi.Name = "txtVMi";
+            this.txtVMi.PasswordChar = '\0';
+            this.txtVMi.PrefixSuffixText = null;
+            this.txtVMi.ReadOnly = true;
+            this.txtVMi.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtVMi.SelectedText = "";
+            this.txtVMi.SelectionLength = 0;
+            this.txtVMi.SelectionStart = 0;
+            this.txtVMi.ShortcutsEnabled = true;
+            this.txtVMi.Size = new System.Drawing.Size(129, 48);
+            this.txtVMi.TabIndex = 250;
+            this.txtVMi.TabStop = false;
+            this.txtVMi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtVMi.TrailingIcon = null;
+            this.txtVMi.UseSystemPasswordChar = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(15, 359);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(30, 16);
+            this.label18.TabIndex = 249;
+            this.label18.Text = "VMi";
+            // 
+            // txtHMiI
+            // 
+            this.txtHMiI.AnimateReadOnly = false;
+            this.txtHMiI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtHMiI.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtHMiI.Depth = 0;
+            this.txtHMiI.Enabled = false;
+            this.txtHMiI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtHMiI.HideSelection = true;
+            this.txtHMiI.LeadingIcon = null;
+            this.txtHMiI.Location = new System.Drawing.Point(79, 146);
+            this.txtHMiI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtHMiI.MaxLength = 32767;
+            this.txtHMiI.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtHMiI.Name = "txtHMiI";
+            this.txtHMiI.PasswordChar = '\0';
+            this.txtHMiI.PrefixSuffixText = null;
+            this.txtHMiI.ReadOnly = true;
+            this.txtHMiI.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtHMiI.SelectedText = "";
+            this.txtHMiI.SelectionLength = 0;
+            this.txtHMiI.SelectionStart = 0;
+            this.txtHMiI.ShortcutsEnabled = true;
+            this.txtHMiI.Size = new System.Drawing.Size(129, 48);
+            this.txtHMiI.TabIndex = 252;
+            this.txtHMiI.TabStop = false;
+            this.txtHMiI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtHMiI.TrailingIcon = null;
+            this.txtHMiI.UseSystemPasswordChar = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(15, 165);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(34, 16);
+            this.label15.TabIndex = 251;
+            this.label15.Text = " HMi";
+            // 
+            // txtFNI
+            // 
+            this.txtFNI.AnimateReadOnly = false;
+            this.txtFNI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtFNI.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtFNI.Depth = 0;
+            this.txtFNI.Enabled = false;
+            this.txtFNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtFNI.HideSelection = true;
+            this.txtFNI.LeadingIcon = null;
+            this.txtFNI.Location = new System.Drawing.Point(152, 1251);
+            this.txtFNI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtFNI.MaxLength = 32767;
+            this.txtFNI.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtFNI.Name = "txtFNI";
+            this.txtFNI.PasswordChar = '\0';
+            this.txtFNI.PrefixSuffixText = null;
+            this.txtFNI.ReadOnly = true;
+            this.txtFNI.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtFNI.SelectedText = "";
+            this.txtFNI.SelectionLength = 0;
+            this.txtFNI.SelectionStart = 0;
+            this.txtFNI.ShortcutsEnabled = true;
+            this.txtFNI.Size = new System.Drawing.Size(129, 48);
+            this.txtFNI.TabIndex = 246;
+            this.txtFNI.TabStop = false;
+            this.txtFNI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtFNI.TrailingIcon = null;
+            this.txtFNI.UseSystemPasswordChar = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(115, 1266);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(31, 16);
+            this.label19.TabIndex = 245;
+            this.label19.Text = " FNi";
+            // 
+            // txtduracion
+            // 
+            this.txtduracion.AnimateReadOnly = false;
+            this.txtduracion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtduracion.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtduracion.Depth = 0;
+            this.txtduracion.Enabled = false;
+            this.txtduracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtduracion.HideSelection = true;
+            this.txtduracion.LeadingIcon = null;
+            this.txtduracion.Location = new System.Drawing.Point(300, 1104);
+            this.txtduracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtduracion.MaxLength = 32767;
+            this.txtduracion.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtduracion.Name = "txtduracion";
+            this.txtduracion.PasswordChar = '\0';
+            this.txtduracion.PrefixSuffixText = null;
+            this.txtduracion.ReadOnly = true;
+            this.txtduracion.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtduracion.SelectedText = "";
+            this.txtduracion.SelectionLength = 0;
+            this.txtduracion.SelectionStart = 0;
+            this.txtduracion.ShortcutsEnabled = true;
+            this.txtduracion.Size = new System.Drawing.Size(59, 48);
+            this.txtduracion.TabIndex = 247;
+            this.txtduracion.TabStop = false;
+            this.txtduracion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtduracion.TrailingIcon = null;
+            this.txtduracion.UseSystemPasswordChar = false;
+            // 
+            // txtfrecuencia
+            // 
+            this.txtfrecuencia.AnimateReadOnly = false;
+            this.txtfrecuencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtfrecuencia.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtfrecuencia.Depth = 0;
+            this.txtfrecuencia.Enabled = false;
+            this.txtfrecuencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtfrecuencia.HideSelection = true;
+            this.txtfrecuencia.LeadingIcon = null;
+            this.txtfrecuencia.Location = new System.Drawing.Point(300, 1173);
+            this.txtfrecuencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtfrecuencia.MaxLength = 32767;
+            this.txtfrecuencia.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtfrecuencia.Name = "txtfrecuencia";
+            this.txtfrecuencia.PasswordChar = '\0';
+            this.txtfrecuencia.PrefixSuffixText = null;
+            this.txtfrecuencia.ReadOnly = true;
+            this.txtfrecuencia.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtfrecuencia.SelectedText = "";
+            this.txtfrecuencia.SelectionLength = 0;
+            this.txtfrecuencia.SelectionStart = 0;
+            this.txtfrecuencia.ShortcutsEnabled = true;
+            this.txtfrecuencia.Size = new System.Drawing.Size(59, 48);
+            this.txtfrecuencia.TabIndex = 248;
+            this.txtfrecuencia.TabStop = false;
+            this.txtfrecuencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtfrecuencia.TrailingIcon = null;
+            this.txtfrecuencia.UseSystemPasswordChar = false;
+            // 
+            // vertfrecuenciatablaD
+            // 
+            this.vertfrecuenciatablaD.AnimateReadOnly = false;
+            this.vertfrecuenciatablaD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.vertfrecuenciatablaD.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.vertfrecuenciatablaD.Depth = 0;
+            this.vertfrecuenciatablaD.Enabled = false;
+            this.vertfrecuenciatablaD.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.vertfrecuenciatablaD.HideSelection = true;
+            this.vertfrecuenciatablaD.LeadingIcon = null;
+            this.vertfrecuenciatablaD.Location = new System.Drawing.Point(42, 1251);
+            this.vertfrecuenciatablaD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.vertfrecuenciatablaD.MaxLength = 32767;
+            this.vertfrecuenciatablaD.MouseState = MaterialSkin.MouseState.OUT;
+            this.vertfrecuenciatablaD.Name = "vertfrecuenciatablaD";
+            this.vertfrecuenciatablaD.PasswordChar = '\0';
+            this.vertfrecuenciatablaD.PrefixSuffixText = null;
+            this.vertfrecuenciatablaD.ReadOnly = true;
+            this.vertfrecuenciatablaD.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.vertfrecuenciatablaD.SelectedText = "";
+            this.vertfrecuenciatablaD.SelectionLength = 0;
+            this.vertfrecuenciatablaD.SelectionStart = 0;
+            this.vertfrecuenciatablaD.ShortcutsEnabled = true;
+            this.vertfrecuenciatablaD.Size = new System.Drawing.Size(59, 48);
+            this.vertfrecuenciatablaD.TabIndex = 249;
+            this.vertfrecuenciatablaD.TabStop = false;
+            this.vertfrecuenciatablaD.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.vertfrecuenciatablaD.TrailingIcon = null;
+            this.vertfrecuenciatablaD.UseSystemPasswordChar = false;
+            // 
+            // vertfrecuenciatablaI
+            // 
+            this.vertfrecuenciatablaI.AnimateReadOnly = false;
+            this.vertfrecuenciatablaI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.vertfrecuenciatablaI.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.vertfrecuenciatablaI.Depth = 0;
+            this.vertfrecuenciatablaI.Enabled = false;
+            this.vertfrecuenciatablaI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.vertfrecuenciatablaI.HideSelection = true;
+            this.vertfrecuenciatablaI.LeadingIcon = null;
+            this.vertfrecuenciatablaI.Location = new System.Drawing.Point(300, 1251);
+            this.vertfrecuenciatablaI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.vertfrecuenciatablaI.MaxLength = 32767;
+            this.vertfrecuenciatablaI.MouseState = MaterialSkin.MouseState.OUT;
+            this.vertfrecuenciatablaI.Name = "vertfrecuenciatablaI";
+            this.vertfrecuenciatablaI.PasswordChar = '\0';
+            this.vertfrecuenciatablaI.PrefixSuffixText = null;
+            this.vertfrecuenciatablaI.ReadOnly = true;
+            this.vertfrecuenciatablaI.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.vertfrecuenciatablaI.SelectedText = "";
+            this.vertfrecuenciatablaI.SelectionLength = 0;
+            this.vertfrecuenciatablaI.SelectionStart = 0;
+            this.vertfrecuenciatablaI.ShortcutsEnabled = true;
+            this.vertfrecuenciatablaI.Size = new System.Drawing.Size(59, 48);
+            this.vertfrecuenciatablaI.TabIndex = 250;
+            this.vertfrecuenciatablaI.TabStop = false;
+            this.vertfrecuenciatablaI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.vertfrecuenciatablaI.TrailingIcon = null;
+            this.vertfrecuenciatablaI.UseSystemPasswordChar = false;
+            // 
+            // txtCMD
+            // 
+            this.txtCMD.AnimateReadOnly = false;
+            this.txtCMD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtCMD.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCMD.Depth = 0;
+            this.txtCMD.Enabled = false;
+            this.txtCMD.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCMD.HideSelection = true;
+            this.txtCMD.LeadingIcon = null;
+            this.txtCMD.Location = new System.Drawing.Point(300, 1322);
+            this.txtCMD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCMD.MaxLength = 32767;
+            this.txtCMD.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCMD.Name = "txtCMD";
+            this.txtCMD.PasswordChar = '\0';
+            this.txtCMD.PrefixSuffixText = null;
+            this.txtCMD.ReadOnly = true;
+            this.txtCMD.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCMD.SelectedText = "";
+            this.txtCMD.SelectionLength = 0;
+            this.txtCMD.SelectionStart = 0;
+            this.txtCMD.ShortcutsEnabled = true;
+            this.txtCMD.Size = new System.Drawing.Size(59, 48);
+            this.txtCMD.TabIndex = 251;
+            this.txtCMD.TabStop = false;
+            this.txtCMD.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCMD.TrailingIcon = null;
+            this.txtCMD.UseSystemPasswordChar = false;
+            // 
+            // txtCMI
+            // 
+            this.txtCMI.AnimateReadOnly = false;
+            this.txtCMI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtCMI.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCMI.Depth = 0;
+            this.txtCMI.Enabled = false;
+            this.txtCMI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCMI.HideSelection = true;
+            this.txtCMI.LeadingIcon = null;
+            this.txtCMI.Location = new System.Drawing.Point(300, 1394);
+            this.txtCMI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCMI.MaxLength = 32767;
+            this.txtCMI.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCMI.Name = "txtCMI";
+            this.txtCMI.PasswordChar = '\0';
+            this.txtCMI.PrefixSuffixText = null;
+            this.txtCMI.ReadOnly = true;
+            this.txtCMI.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCMI.SelectedText = "";
+            this.txtCMI.SelectionLength = 0;
+            this.txtCMI.SelectionStart = 0;
+            this.txtCMI.ShortcutsEnabled = true;
+            this.txtCMI.Size = new System.Drawing.Size(59, 48);
+            this.txtCMI.TabIndex = 252;
+            this.txtCMI.TabStop = false;
+            this.txtCMI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCMI.TrailingIcon = null;
+            this.txtCMI.UseSystemPasswordChar = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(39, 1412);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(188, 16);
+            this.label20.TabIndex = 253;
+            this.label20.Text = "Calidad de Agarre Inicio ( CM )";
+            // 
+            // cboCMi
+            // 
+            this.cboCMi.AutoCompleteCustomSource.AddRange(new string[] {
+            "Malo",
+            "Bueno",
+            "Bien"});
+            this.cboCMi.AutoResize = false;
+            this.cboCMi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboCMi.Depth = 0;
+            this.cboCMi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboCMi.DropDownHeight = 174;
+            this.cboCMi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCMi.DropDownWidth = 121;
+            this.cboCMi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboCMi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboCMi.FormattingEnabled = true;
+            this.cboCMi.IntegralHeight = false;
+            this.cboCMi.ItemHeight = 43;
+            this.cboCMi.Items.AddRange(new object[] {
+            "Seleccione"});
+            this.cboCMi.Location = new System.Drawing.Point(395, 1394);
+            this.cboCMi.MaxDropDownItems = 4;
+            this.cboCMi.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboCMi.Name = "cboCMi";
+            this.cboCMi.Size = new System.Drawing.Size(187, 49);
+            this.cboCMi.StartIndex = 0;
+            this.cboCMi.TabIndex = 254;
+            this.cboCMi.SelectedIndexChanged += new System.EventHandler(this.cboCMi_SelectedIndexChanged);
             // 
             // NIOSH1
             // 
@@ -1488,7 +2251,17 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1099, 1102);
-            this.Controls.Add(this.txtFN);
+            this.Controls.Add(this.cboCMi);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.txtCMI);
+            this.Controls.Add(this.txtCMD);
+            this.Controls.Add(this.vertfrecuenciatablaI);
+            this.Controls.Add(this.vertfrecuenciatablaD);
+            this.Controls.Add(this.txtfrecuencia);
+            this.Controls.Add(this.txtduracion);
+            this.Controls.Add(this.txtFNI);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.txtFND);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.groupBox1);
@@ -1520,10 +2293,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1566,7 +2339,7 @@
         private System.Windows.Forms.Label label5;
         private MaterialSkin.Controls.MaterialTextBox2 txtVM;
         private System.Windows.Forms.Label label4;
-        private MaterialSkin.Controls.MaterialTextBox2 txtHM;
+        private MaterialSkin.Controls.MaterialTextBox2 txtHMD;
         private MaterialSkin.Controls.MaterialComboBox cboVi;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label14;
@@ -1574,9 +2347,25 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label16;
-        private MaterialSkin.Controls.MaterialTextBox2 txtFN;
+        private MaterialSkin.Controls.MaterialTextBox2 txtFND;
         private MaterialSkin.Controls.MaterialComboBox cboAi;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private MaterialSkin.Controls.MaterialTextBox2 txtAMi;
+        private System.Windows.Forms.Label label7;
+        private MaterialSkin.Controls.MaterialTextBox2 txtVMi;
+        private System.Windows.Forms.Label label18;
+        private MaterialSkin.Controls.MaterialTextBox2 txtHMiI;
+        private System.Windows.Forms.Label label15;
+        private MaterialSkin.Controls.MaterialTextBox2 txtFNI;
+        private System.Windows.Forms.Label label19;
+        private MaterialSkin.Controls.MaterialTextBox2 txtduracion;
+        private MaterialSkin.Controls.MaterialTextBox2 txtfrecuencia;
+        private MaterialSkin.Controls.MaterialTextBox2 vertfrecuenciatablaD;
+        private MaterialSkin.Controls.MaterialTextBox2 vertfrecuenciatablaI;
+        private MaterialSkin.Controls.MaterialTextBox2 txtCMD;
+        private MaterialSkin.Controls.MaterialTextBox2 txtCMI;
+        private System.Windows.Forms.Label label20;
+        private MaterialSkin.Controls.MaterialComboBox cboCMi;
     }
 }
