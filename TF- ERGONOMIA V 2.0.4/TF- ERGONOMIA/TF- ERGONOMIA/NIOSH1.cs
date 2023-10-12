@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -1070,21 +1071,120 @@ namespace TF.WIN
             cboCMi.Items.Add(new ComboBoxOption("Bien", 3));
 
 
-
-
-
             ObtenerMaximoIdNIOSH();
 
-            //NioshTablaA();
-
-
-            
 
 
 
 
-
-
+            //if (txtfrecuencia.Text == "1" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "1"; }
+            //if (txtfrecuencia.Text == "1" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "1"; }
+            //if (txtfrecuencia.Text == "1" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.95"; }
+            //if (txtfrecuencia.Text == "1" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.95"; }
+            //if (txtfrecuencia.Text == "1" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.85"; }
+            //if (txtfrecuencia.Text == "1" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.85"; }
+            //if (txtfrecuencia.Text == "2" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.97"; }
+            //if (txtfrecuencia.Text == "2" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.97"; }
+            //if (txtfrecuencia.Text == "2" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.92"; }
+            //if (txtfrecuencia.Text == "2" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.92"; }
+            //if (txtfrecuencia.Text == "2" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.81"; }
+            //if (txtfrecuencia.Text == "2" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.81"; }
+            //if (txtfrecuencia.Text == "3" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.94"; }
+            //if (txtfrecuencia.Text == "3" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.94"; }
+            //if (txtfrecuencia.Text == "3" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.88"; }
+            //if (txtfrecuencia.Text == "3" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.88"; }
+            //if (txtfrecuencia.Text == "3" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.75"; }
+            //if (txtfrecuencia.Text == "3" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.75"; }
+            //if (txtfrecuencia.Text == "4" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.91"; }
+            //if (txtfrecuencia.Text == "4" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.91"; }
+            //if (txtfrecuencia.Text == "4" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.84"; }
+            //if (txtfrecuencia.Text == "4" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.84"; }
+            //if (txtfrecuencia.Text == "4" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.65"; }
+            //if (txtfrecuencia.Text == "4" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.65"; }
+            //if (txtfrecuencia.Text == "5" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.88"; }
+            //if (txtfrecuencia.Text == "5" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.88"; }
+            //if (txtfrecuencia.Text == "5" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.79"; }
+            //if (txtfrecuencia.Text == "5" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.79"; }
+            //if (txtfrecuencia.Text == "5" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.55"; }
+            //if (txtfrecuencia.Text == "5" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.55"; }
+            //if (txtfrecuencia.Text == "6" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.84"; }
+            //if (txtfrecuencia.Text == "6" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.84"; }
+            //if (txtfrecuencia.Text == "6" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.72"; }
+            //if (txtfrecuencia.Text == "6" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.72"; }
+            //if (txtfrecuencia.Text == "6" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.45"; }
+            //if (txtfrecuencia.Text == "6" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.45"; }
+            //if (txtfrecuencia.Text == "7" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.8"; }
+            //if (txtfrecuencia.Text == "7" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.8"; }
+            //if (txtfrecuencia.Text == "7" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.6"; }
+            //if (txtfrecuencia.Text == "7" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.6"; }
+            //if (txtfrecuencia.Text == "7" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.35"; }
+            //if (txtfrecuencia.Text == "7" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.35"; }
+            //if (txtfrecuencia.Text == "8" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.75"; }
+            //if (txtfrecuencia.Text == "8" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.75"; }
+            //if (txtfrecuencia.Text == "8" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.5"; }
+            //if (txtfrecuencia.Text == "8" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.5"; }
+            //if (txtfrecuencia.Text == "8" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.27"; }
+            //if (txtfrecuencia.Text == "8" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.27"; }
+            //if (txtfrecuencia.Text == "9" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.7"; }
+            //if (txtfrecuencia.Text == "9" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.7"; }
+            //if (txtfrecuencia.Text == "9" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.42"; }
+            //if (txtfrecuencia.Text == "9" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.42"; }
+            //if (txtfrecuencia.Text == "9" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.22"; }
+            //if (txtfrecuencia.Text == "9" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.22"; }
+            //if (txtfrecuencia.Text == "10" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.6"; }
+            //if (txtfrecuencia.Text == "10" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.6"; }
+            //if (txtfrecuencia.Text == "10" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.35"; }
+            //if (txtfrecuencia.Text == "10" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.35"; }
+            //if (txtfrecuencia.Text == "10" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.18"; }
+            //if (txtfrecuencia.Text == "10" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.18"; }
+            //if (txtfrecuencia.Text == "11" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.52"; }
+            //if (txtfrecuencia.Text == "11" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.52"; }
+            //if (txtfrecuencia.Text == "11" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.3"; }
+            //if (txtfrecuencia.Text == "11" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.3"; }
+            //if (txtfrecuencia.Text == "11" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "11" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.15"; }
+            //if (txtfrecuencia.Text == "12" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.45"; }
+            //if (txtfrecuencia.Text == "12" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.45"; }
+            //if (txtfrecuencia.Text == "12" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.26"; }
+            //if (txtfrecuencia.Text == "12" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.26"; }
+            //if (txtfrecuencia.Text == "12" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "12" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.13"; }
+            //if (txtfrecuencia.Text == "13" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.41"; }
+            //if (txtfrecuencia.Text == "13" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.41"; }
+            //if (txtfrecuencia.Text == "13" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "13" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.23"; }
+            //if (txtfrecuencia.Text == "13" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "13" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "14" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.37"; }
+            //if (txtfrecuencia.Text == "14" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.37"; }
+            //if (txtfrecuencia.Text == "14" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "14" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.21"; }
+            //if (txtfrecuencia.Text == "14" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "14" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "15" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "15" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.34"; }
+            //if (txtfrecuencia.Text == "15" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "15" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "15" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "15" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "16" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "16" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.31"; }
+            //if (txtfrecuencia.Text == "16" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "16" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "16" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "16" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "17" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "17" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.28"; }
+            //if (txtfrecuencia.Text == "17" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "17" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "17" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "17" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "18" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "18" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "18" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "18" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "18" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
+            //if (txtfrecuencia.Text == "18" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
 
 
 
@@ -1370,8 +1470,6 @@ namespace TF.WIN
 
         }
 
-
-
         public void ObtenerMaximoIdNIOSH()
         {
             NioshBC oNioshBC = new NioshBC();
@@ -1386,24 +1484,89 @@ namespace TF.WIN
 
         }
 
-
         public void NioshTablaADestino()
         {
             Niosh oNiosh = new Niosh();
-            oNiosh.cargaIdNiosh = Convert.ToInt32(txtcargaidniosh.Text);
-            NioshBC oNioshBC = new NioshBC();
-            DataTable dt10 = oNioshBC.NioshTablaADestinoBC(oNiosh);
 
-            if (dt10.Rows.Count > 0)
+            oNiosh.FrecuenciaFM = int.Parse(txtfrecuencia.Text);
+            oNiosh.DuracionFM = int.Parse(txtduracion.Text);
+            oNiosh.DistanciaVerticalFM = int.Parse(cboV.Text);
+
+            NioshBC oNioshBC = new NioshBC();
+            DataTable dt77 = oNioshBC.NioshTablaADestinoBC(oNiosh);
+
+            if (dt77.Rows.Count > 0)
             {
-                string resultadoValorTablaADestino = dt10.Rows[0][3].ToString();
-                oNiosh.FMNioshD = int.Parse(resultadoValorTablaADestino);
-                txtFND.Text = oNiosh.FMNioshD.ToString();
+                string resultadoValorFND = dt77.Rows[0][1].ToString();
+                oNiosh.ValorFM = int.Parse(resultadoValorFND);
+                txtFND.Text = oNiosh.ValorFM.ToString();
             }
+
+        }
+
+        public void NioshTablaAINICIAL()
+        {
+            Niosh oNiosh = new Niosh();
+
+            oNiosh.FrecuenciaFMi = int.Parse(txtfrecuencia.Text);
+            oNiosh.DuracionFMi = int.Parse(txtduracion.Text);
+            oNiosh.DistanciaVerticalFMi = int.Parse(cboVi.Text);
+
+            NioshBC oNioshBC = new NioshBC();
+            DataTable dt78 = oNioshBC.NioshTablaAInicialBC(oNiosh);
+
+            if (dt78.Rows.Count > 0)
+            {
+                string resultadoVALORFNi = dt78.Rows[0][1].ToString();
+                oNiosh.ValorFMi = int.Parse(resultadoVALORFNi);
+                txtFNI.Text = oNiosh.ValorFMi.ToString();
+            }
+
         }
 
 
 
 
+
+        private void btnObtenerFN_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                NioshTablaADestino();
+
+                NioshTablaAINICIAL();
+
+
+                NioshBC oNioshBC = new NioshBC();
+                Niosh oNiosh = new Niosh();
+
+                oNiosh.cargaIdNiosh = int.Parse(txtcargaidniosh.Text);
+                oNiosh.HMNioshD = double.Parse(txtHMD.Text.Replace(",", "."), CultureInfo.InvariantCulture);
+                oNiosh.HMNioshI = double.Parse(txtHMiI.Text.Replace(",", "."), CultureInfo.InvariantCulture);
+                oNiosh.VMNioshD = double.Parse(txtVM.Text.Replace(",", "."), CultureInfo.InvariantCulture);
+                oNiosh.VMNioshI = double.Parse(txtVMi.Text.Replace(",", "."), CultureInfo.InvariantCulture);
+                oNiosh.DMNioshD = double.Parse(txtDMNiosh.Text.Replace(",", "."), CultureInfo.InvariantCulture);
+                oNiosh.AMNioshD = double.Parse(txtAM.Text.Replace(",", "."), CultureInfo.InvariantCulture);
+                oNiosh.AMNioshI = double.Parse(txtAMi.Text.Replace(",", "."), CultureInfo.InvariantCulture);
+                //oNiosh.FMNioshD = double.Parse(txtFND.Text.Replace(",", "."), CultureInfo.InvariantCulture);
+                //oNiosh.FMNioshI = double.Parse(txtFNI.Text.Replace(",", "."), CultureInfo.InvariantCulture);
+                oNiosh.CMRNioshD = double.Parse(txtCMD.Text.Replace(",", "."), CultureInfo.InvariantCulture);
+                oNiosh.CMRNioshI = double.Parse(txtCMI.Text.Replace(",", "."), CultureInfo.InvariantCulture);
+                oNiosh.Duraciontarea = int.Parse(txtduracion.Text);
+                oNiosh.CalidadAgarreD = int.Parse(txtCMD.Text);
+                oNiosh.CalidadAgarreI = int.Parse(txtCMI.Text);
+                oNiosh.LCNiosh = int.Parse(txtLCN.Text);
+                oNiosh.FrecuenciaNiosh = int.Parse(txtfrecuencia.Text);
+                oNiosh.DistanciaVerticalD = int.Parse(cboV.Text);
+                oNiosh.DistanciaVerticali = int.Parse(cboVi.Text);
+
+                var res = oNioshBC.UpdateNiosh1BC(oNiosh);
+                MessageBox.Show("FN y FNi Calculado");
+
+            }
+            catch { }
+
+        }
     }
 }

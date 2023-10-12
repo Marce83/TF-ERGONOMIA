@@ -39,6 +39,8 @@ namespace TF.ENTITIES
         public int CalidadAgarreI { get; set; }
         public int LCNiosh { get; set; }
         public int FrecuenciaNiosh { get; set; }
+        public int DistanciaVerticalD { get; set; }
+        public int DistanciaVerticali { get; set; }
 
         // Tabla A NIOSH
 
@@ -48,6 +50,15 @@ namespace TF.ENTITIES
         public int DuracionFM { get; set; }
         public int DistanciaVerticalFM { get; set; }
         public int ValorFM { get; set; }
+
+        public int FrecuenciaFMi { get; set; }
+        public int DuracionFMi { get; set; }
+        public int DistanciaVerticalFMi { get; set; }
+        public int ValorFMi { get; set; }
+
+
+
+
 
     }
 

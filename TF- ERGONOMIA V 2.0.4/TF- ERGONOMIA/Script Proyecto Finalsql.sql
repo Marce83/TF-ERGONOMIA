@@ -1187,7 +1187,9 @@ Duraciontarea int,
 CalidadAgarreD int,
 CalidadAgarreI int,
 LCNiosh int,
-FrecuenciaNiosh int
+FrecuenciaNiosh int,
+DistanciaVerticalD int,
+DistanciaVerticali int,
 )
 GO	
 
@@ -1234,10 +1236,13 @@ CREATE or Alter PROCEDURE SP_Niosh_updateNiosh1
 @CalidadAgarreD int,
 @CalidadAgarreI int,
 @LCNiosh int,
-@FrecuenciaNiosh int
+@FrecuenciaNiosh int,
+@DistanciaVerticalD int,
+@DistanciaVerticali int
 AS
 BEGIN
-	update NioshTablaCompleta set HMNioshD=@HMNioshD, HMNioshI =@HMNioshI, VMNioshD =@VMNioshD, VMNioshI = @VMNioshI, DMNioshD = @DMNioshD, AMNioshD = @AMNioshD, AMNioshI =@AMNioshI, FMNioshD =@FMNioshD, FMNioshI =@FMNioshI, CMRNioshD =@CMRNioshD, CMRNioshI = @CMRNioshI, Duraciontarea =@Duraciontarea, CalidadAgarreD =@CalidadAgarreD, CalidadAgarreI=@CalidadAgarreI, LCNiosh=@LCNiosh, FrecuenciaNiosh=@FrecuenciaNiosh
+	update NioshTablaCompleta set HMNioshD=@HMNioshD, HMNioshI =@HMNioshI, VMNioshD =@VMNioshD, VMNioshI = @VMNioshI, DMNioshD = @DMNioshD, AMNioshD = @AMNioshD, AMNioshI =@AMNioshI, FMNioshD =@FMNioshD, FMNioshI =@FMNioshI, CMRNioshD =@CMRNioshD, CMRNioshI = @CMRNioshI, Duraciontarea =@Duraciontarea, CalidadAgarreD =@CalidadAgarreD, CalidadAgarreI=@CalidadAgarreI, LCNiosh=@LCNiosh, FrecuenciaNiosh=@FrecuenciaNiosh , DistanciaVerticalD=@DistanciaVerticalD,
+DistanciaVerticali =@DistanciaVerticali
 	where cargaIdNiosh=@cargaIdNiosh
 END
 GO
@@ -1367,15 +1372,15 @@ insert into NioshTablaA values (18,3,2,0)
 use ProyectoFinal
 go
 CREATE OR ALTER PROCEDURE SP_Niosh_TablaADestino
-@cargaidniosh int
-
+@FrecuenciaFM int,
+@DuracionFM int,
+@DistanciaVerticalFM int
 AS 
 BEGIn
-SELECT rta.FrecuenciaFM,rta.DuracionFM,rta.DistanciaVerticalFM FROM NioshTablaA rta
-INNER JOIN NioshTablaCompleta rtc ON rtc.FrecuenciaNiosh = rta.FrecuenciaFM
-AND rtc.Duraciontarea = rta.DuracionFM
-AND	rtc.VMNioshD = rta.DistanciaVerticalFM
-WHERE rtc.cargaidniosh = @cargaidniosh
+SELECT ValorFM FROM NioshTablaA
+WHERE  FrecuenciaFM =@FrecuenciaFM
+and DuracionFM =@DuracionFM
+and DistanciaVerticalFM =@DistanciaVerticalFM
 END
 GO
 

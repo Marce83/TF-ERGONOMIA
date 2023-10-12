@@ -82,11 +82,13 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@FMNioshI", SqlDbType.Float).Value = oNiosh.FMNioshI;
                 sqlCom.Parameters.Add("@CMRNioshD", SqlDbType.Float).Value = oNiosh.CMRNioshD;
                 sqlCom.Parameters.Add("@CMRNioshI", SqlDbType.Float).Value = oNiosh.CMRNioshI;
-                sqlCom.Parameters.Add("@Duraciontarea", SqlDbType.Float).Value = oNiosh.Duraciontarea;
-                sqlCom.Parameters.Add("@CalidadAgarreD", SqlDbType.NVarChar).Value = oNiosh.CalidadAgarreD;
-                sqlCom.Parameters.Add("@CalidadAgarreI", SqlDbType.NVarChar).Value = oNiosh.CalidadAgarreI;
-                sqlCom.Parameters.Add("@LCNiosh", SqlDbType.NVarChar).Value = oNiosh.LCNiosh;
-                sqlCom.Parameters.Add("@FrecuenciaNiosh", SqlDbType.NVarChar).Value = oNiosh.FrecuenciaNiosh;
+                sqlCom.Parameters.Add("@Duraciontarea", SqlDbType.Int).Value = oNiosh.Duraciontarea;
+                sqlCom.Parameters.Add("@CalidadAgarreD", SqlDbType.Int).Value = oNiosh.CalidadAgarreD;
+                sqlCom.Parameters.Add("@CalidadAgarreI", SqlDbType.Int).Value = oNiosh.CalidadAgarreI;
+                sqlCom.Parameters.Add("@LCNiosh", SqlDbType.Int).Value = oNiosh.LCNiosh;
+                sqlCom.Parameters.Add("@FrecuenciaNiosh", SqlDbType.Int).Value = oNiosh.FrecuenciaNiosh;
+                sqlCom.Parameters.Add("@DistanciaVerticalD", SqlDbType.Int).Value = oNiosh.DistanciaVerticalD;
+                sqlCom.Parameters.Add("@DistanciaVerticali", SqlDbType.Int).Value = oNiosh.DistanciaVerticali;
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();
@@ -109,7 +111,10 @@ namespace TF.DAC
                 sqlCnn.ConnectionString = conectionString;
                 SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
                 sqlCom.CommandType = CommandType.StoredProcedure;
-                sqlCom.Parameters.Add("@cargaidniosh", SqlDbType.NVarChar).Value = oNiosh.cargaIdNiosh;
+                sqlCom.Parameters.Add("@FrecuenciaFM", SqlDbType.Int).Value = oNiosh.FrecuenciaFM;
+                sqlCom.Parameters.Add("@DuracionFM", SqlDbType.Int).Value = oNiosh.DuracionFM;
+                sqlCom.Parameters.Add("@DistanciaVerticalFM", SqlDbType.Int).Value = oNiosh.DistanciaVerticalFM;
+
                 sqlCnn.Open();
                 DataSet ds = new DataSet();
                 SqlDataAdapter DA = new SqlDataAdapter();
@@ -126,7 +131,34 @@ namespace TF.DAC
             }
         }
 
+        public DataTable NioshTablaAInicialDAC(Niosh oNiosh)
+        {
+            try
+            {
+                string sqlSentencia = "SP_Niosh_TablaADestino";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCom.CommandType = CommandType.StoredProcedure;
+                sqlCom.Parameters.Add("@FrecuenciaFM", SqlDbType.Int).Value = oNiosh.FrecuenciaFMi;
+                sqlCom.Parameters.Add("@DuracionFM", SqlDbType.Int).Value = oNiosh.DuracionFMi;
+                sqlCom.Parameters.Add("@DistanciaVerticalFM", SqlDbType.Int).Value = oNiosh.DistanciaVerticalFMi;
 
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
+        }
 
     }
 }

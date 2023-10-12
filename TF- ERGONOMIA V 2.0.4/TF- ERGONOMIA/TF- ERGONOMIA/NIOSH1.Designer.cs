@@ -58,6 +58,12 @@
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtHMiI = new MaterialSkin.Controls.MaterialTextBox2();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtVMi = new MaterialSkin.Controls.MaterialTextBox2();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtAMi = new MaterialSkin.Controls.MaterialTextBox2();
+            this.label7 = new System.Windows.Forms.Label();
             this.cboAi = new MaterialSkin.Controls.MaterialComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.cboVi = new MaterialSkin.Controls.MaterialComboBox();
@@ -78,12 +84,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtFND = new MaterialSkin.Controls.MaterialTextBox2();
-            this.txtAMi = new MaterialSkin.Controls.MaterialTextBox2();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtVMi = new MaterialSkin.Controls.MaterialTextBox2();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txtHMiI = new MaterialSkin.Controls.MaterialTextBox2();
-            this.label15 = new System.Windows.Forms.Label();
             this.txtFNI = new MaterialSkin.Controls.MaterialTextBox2();
             this.label19 = new System.Windows.Forms.Label();
             this.txtduracion = new MaterialSkin.Controls.MaterialTextBox2();
@@ -94,6 +94,7 @@
             this.txtCMI = new MaterialSkin.Controls.MaterialTextBox2();
             this.label20 = new System.Windows.Forms.Label();
             this.cboCMi = new MaterialSkin.Controls.MaterialComboBox();
+            this.btnObtenerFN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.advDH)).BeginInit();
@@ -226,7 +227,7 @@
             this.cboDuraciontarea.IntegralHeight = false;
             this.cboDuraciontarea.ItemHeight = 43;
             this.cboDuraciontarea.Items.AddRange(new object[] {
-            "Seleccione"});
+            "0"});
             this.cboDuraciontarea.Location = new System.Drawing.Point(385, 1104);
             this.cboDuraciontarea.MaxDropDownItems = 4;
             this.cboDuraciontarea.MouseState = MaterialSkin.MouseState.OUT;
@@ -270,7 +271,7 @@
             this.cboFrecuencia.IntegralHeight = false;
             this.cboFrecuencia.ItemHeight = 43;
             this.cboFrecuencia.Items.AddRange(new object[] {
-            "Seleccione"});
+            "0"});
             this.cboFrecuencia.Location = new System.Drawing.Point(385, 1172);
             this.cboFrecuencia.MaxDropDownItems = 4;
             this.cboFrecuencia.MouseState = MaterialSkin.MouseState.OUT;
@@ -289,7 +290,7 @@
             this.btncerrarNiosh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncerrarNiosh.ForeColor = System.Drawing.Color.AliceBlue;
             this.btncerrarNiosh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncerrarNiosh.Location = new System.Drawing.Point(254, 1563);
+            this.btncerrarNiosh.Location = new System.Drawing.Point(244, 1607);
             this.btncerrarNiosh.Margin = new System.Windows.Forms.Padding(4);
             this.btncerrarNiosh.Name = "btncerrarNiosh";
             this.btncerrarNiosh.Size = new System.Drawing.Size(155, 43);
@@ -301,7 +302,7 @@
             // txtcargaidniosh
             // 
             this.txtcargaidniosh.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtcargaidniosh.Location = new System.Drawing.Point(613, 1573);
+            this.txtcargaidniosh.Location = new System.Drawing.Point(603, 1617);
             this.txtcargaidniosh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargaidniosh.Name = "txtcargaidniosh";
             this.txtcargaidniosh.Size = new System.Drawing.Size(100, 22);
@@ -317,7 +318,7 @@
             this.btnGuardarNiosh1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarNiosh1.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnGuardarNiosh1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarNiosh1.Location = new System.Drawing.Point(437, 1563);
+            this.btnGuardarNiosh1.Location = new System.Drawing.Point(427, 1607);
             this.btnGuardarNiosh1.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarNiosh1.Name = "btnGuardarNiosh1";
             this.btnGuardarNiosh1.Size = new System.Drawing.Size(155, 43);
@@ -345,7 +346,7 @@
             this.cboCM.IntegralHeight = false;
             this.cboCM.ItemHeight = 43;
             this.cboCM.Items.AddRange(new object[] {
-            "Seleccione"});
+            "0"});
             this.cboCM.Location = new System.Drawing.Point(395, 1322);
             this.cboCM.MaxDropDownItems = 4;
             this.cboCM.MouseState = MaterialSkin.MouseState.OUT;
@@ -512,6 +513,123 @@
             this.groupBox1.TabIndex = 218;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Posicion";
+            // 
+            // txtHMiI
+            // 
+            this.txtHMiI.AnimateReadOnly = false;
+            this.txtHMiI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtHMiI.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtHMiI.Depth = 0;
+            this.txtHMiI.Enabled = false;
+            this.txtHMiI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtHMiI.HideSelection = true;
+            this.txtHMiI.LeadingIcon = null;
+            this.txtHMiI.Location = new System.Drawing.Point(79, 146);
+            this.txtHMiI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtHMiI.MaxLength = 32767;
+            this.txtHMiI.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtHMiI.Name = "txtHMiI";
+            this.txtHMiI.PasswordChar = '\0';
+            this.txtHMiI.PrefixSuffixText = null;
+            this.txtHMiI.ReadOnly = true;
+            this.txtHMiI.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtHMiI.SelectedText = "";
+            this.txtHMiI.SelectionLength = 0;
+            this.txtHMiI.SelectionStart = 0;
+            this.txtHMiI.ShortcutsEnabled = true;
+            this.txtHMiI.Size = new System.Drawing.Size(129, 48);
+            this.txtHMiI.TabIndex = 252;
+            this.txtHMiI.TabStop = false;
+            this.txtHMiI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtHMiI.TrailingIcon = null;
+            this.txtHMiI.UseSystemPasswordChar = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(15, 165);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(34, 16);
+            this.label15.TabIndex = 251;
+            this.label15.Text = " HMi";
+            // 
+            // txtVMi
+            // 
+            this.txtVMi.AnimateReadOnly = false;
+            this.txtVMi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtVMi.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtVMi.Depth = 0;
+            this.txtVMi.Enabled = false;
+            this.txtVMi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtVMi.HideSelection = true;
+            this.txtVMi.LeadingIcon = null;
+            this.txtVMi.Location = new System.Drawing.Point(79, 340);
+            this.txtVMi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtVMi.MaxLength = 32767;
+            this.txtVMi.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtVMi.Name = "txtVMi";
+            this.txtVMi.PasswordChar = '\0';
+            this.txtVMi.PrefixSuffixText = null;
+            this.txtVMi.ReadOnly = true;
+            this.txtVMi.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtVMi.SelectedText = "";
+            this.txtVMi.SelectionLength = 0;
+            this.txtVMi.SelectionStart = 0;
+            this.txtVMi.ShortcutsEnabled = true;
+            this.txtVMi.Size = new System.Drawing.Size(129, 48);
+            this.txtVMi.TabIndex = 250;
+            this.txtVMi.TabStop = false;
+            this.txtVMi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtVMi.TrailingIcon = null;
+            this.txtVMi.UseSystemPasswordChar = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(15, 359);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(30, 16);
+            this.label18.TabIndex = 249;
+            this.label18.Text = "VMi";
+            // 
+            // txtAMi
+            // 
+            this.txtAMi.AnimateReadOnly = false;
+            this.txtAMi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtAMi.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtAMi.Depth = 0;
+            this.txtAMi.Enabled = false;
+            this.txtAMi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAMi.HideSelection = true;
+            this.txtAMi.LeadingIcon = null;
+            this.txtAMi.Location = new System.Drawing.Point(79, 609);
+            this.txtAMi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAMi.MaxLength = 32767;
+            this.txtAMi.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtAMi.Name = "txtAMi";
+            this.txtAMi.PasswordChar = '\0';
+            this.txtAMi.PrefixSuffixText = null;
+            this.txtAMi.ReadOnly = true;
+            this.txtAMi.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtAMi.SelectedText = "";
+            this.txtAMi.SelectionLength = 0;
+            this.txtAMi.SelectionStart = 0;
+            this.txtAMi.ShortcutsEnabled = true;
+            this.txtAMi.Size = new System.Drawing.Size(129, 48);
+            this.txtAMi.TabIndex = 248;
+            this.txtAMi.TabStop = false;
+            this.txtAMi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAMi.TrailingIcon = null;
+            this.txtAMi.UseSystemPasswordChar = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(14, 628);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(30, 16);
+            this.label7.TabIndex = 247;
+            this.label7.Text = "AMi";
             // 
             // cboAi
             // 
@@ -1822,7 +1940,7 @@
             // 
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(711, 1125);
+            this.pictureBox6.Location = new System.Drawing.Point(613, 1085);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(367, 136);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1867,123 +1985,6 @@
             this.txtFND.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtFND.TrailingIcon = null;
             this.txtFND.UseSystemPasswordChar = false;
-            // 
-            // txtAMi
-            // 
-            this.txtAMi.AnimateReadOnly = false;
-            this.txtAMi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtAMi.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtAMi.Depth = 0;
-            this.txtAMi.Enabled = false;
-            this.txtAMi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtAMi.HideSelection = true;
-            this.txtAMi.LeadingIcon = null;
-            this.txtAMi.Location = new System.Drawing.Point(79, 609);
-            this.txtAMi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtAMi.MaxLength = 32767;
-            this.txtAMi.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtAMi.Name = "txtAMi";
-            this.txtAMi.PasswordChar = '\0';
-            this.txtAMi.PrefixSuffixText = null;
-            this.txtAMi.ReadOnly = true;
-            this.txtAMi.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtAMi.SelectedText = "";
-            this.txtAMi.SelectionLength = 0;
-            this.txtAMi.SelectionStart = 0;
-            this.txtAMi.ShortcutsEnabled = true;
-            this.txtAMi.Size = new System.Drawing.Size(129, 48);
-            this.txtAMi.TabIndex = 248;
-            this.txtAMi.TabStop = false;
-            this.txtAMi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtAMi.TrailingIcon = null;
-            this.txtAMi.UseSystemPasswordChar = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 628);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(30, 16);
-            this.label7.TabIndex = 247;
-            this.label7.Text = "AMi";
-            // 
-            // txtVMi
-            // 
-            this.txtVMi.AnimateReadOnly = false;
-            this.txtVMi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtVMi.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtVMi.Depth = 0;
-            this.txtVMi.Enabled = false;
-            this.txtVMi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtVMi.HideSelection = true;
-            this.txtVMi.LeadingIcon = null;
-            this.txtVMi.Location = new System.Drawing.Point(79, 340);
-            this.txtVMi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtVMi.MaxLength = 32767;
-            this.txtVMi.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtVMi.Name = "txtVMi";
-            this.txtVMi.PasswordChar = '\0';
-            this.txtVMi.PrefixSuffixText = null;
-            this.txtVMi.ReadOnly = true;
-            this.txtVMi.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtVMi.SelectedText = "";
-            this.txtVMi.SelectionLength = 0;
-            this.txtVMi.SelectionStart = 0;
-            this.txtVMi.ShortcutsEnabled = true;
-            this.txtVMi.Size = new System.Drawing.Size(129, 48);
-            this.txtVMi.TabIndex = 250;
-            this.txtVMi.TabStop = false;
-            this.txtVMi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtVMi.TrailingIcon = null;
-            this.txtVMi.UseSystemPasswordChar = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(15, 359);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(30, 16);
-            this.label18.TabIndex = 249;
-            this.label18.Text = "VMi";
-            // 
-            // txtHMiI
-            // 
-            this.txtHMiI.AnimateReadOnly = false;
-            this.txtHMiI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtHMiI.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtHMiI.Depth = 0;
-            this.txtHMiI.Enabled = false;
-            this.txtHMiI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtHMiI.HideSelection = true;
-            this.txtHMiI.LeadingIcon = null;
-            this.txtHMiI.Location = new System.Drawing.Point(79, 146);
-            this.txtHMiI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtHMiI.MaxLength = 32767;
-            this.txtHMiI.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtHMiI.Name = "txtHMiI";
-            this.txtHMiI.PasswordChar = '\0';
-            this.txtHMiI.PrefixSuffixText = null;
-            this.txtHMiI.ReadOnly = true;
-            this.txtHMiI.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtHMiI.SelectedText = "";
-            this.txtHMiI.SelectionLength = 0;
-            this.txtHMiI.SelectionStart = 0;
-            this.txtHMiI.ShortcutsEnabled = true;
-            this.txtHMiI.Size = new System.Drawing.Size(129, 48);
-            this.txtHMiI.TabIndex = 252;
-            this.txtHMiI.TabStop = false;
-            this.txtHMiI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtHMiI.TrailingIcon = null;
-            this.txtHMiI.UseSystemPasswordChar = false;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(15, 165);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(34, 16);
-            this.label15.TabIndex = 251;
-            this.label15.Text = " HMi";
             // 
             // txtFNI
             // 
@@ -2232,7 +2233,7 @@
             this.cboCMi.IntegralHeight = false;
             this.cboCMi.ItemHeight = 43;
             this.cboCMi.Items.AddRange(new object[] {
-            "Seleccione"});
+            "0"});
             this.cboCMi.Location = new System.Drawing.Point(395, 1394);
             this.cboCMi.MaxDropDownItems = 4;
             this.cboCMi.MouseState = MaterialSkin.MouseState.OUT;
@@ -2241,6 +2242,24 @@
             this.cboCMi.StartIndex = 0;
             this.cboCMi.TabIndex = 254;
             this.cboCMi.SelectedIndexChanged += new System.EventHandler(this.cboCMi_SelectedIndexChanged);
+            // 
+            // btnObtenerFN
+            // 
+            this.btnObtenerFN.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnObtenerFN.FlatAppearance.BorderSize = 0;
+            this.btnObtenerFN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnObtenerFN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnObtenerFN.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnObtenerFN.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnObtenerFN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnObtenerFN.Location = new System.Drawing.Point(427, 1539);
+            this.btnObtenerFN.Margin = new System.Windows.Forms.Padding(4);
+            this.btnObtenerFN.Name = "btnObtenerFN";
+            this.btnObtenerFN.Size = new System.Drawing.Size(155, 50);
+            this.btnObtenerFN.TabIndex = 255;
+            this.btnObtenerFN.Text = "Obtener FN y FNi";
+            this.btnObtenerFN.UseVisualStyleBackColor = false;
+            this.btnObtenerFN.Click += new System.EventHandler(this.btnObtenerFN_Click);
             // 
             // NIOSH1
             // 
@@ -2251,6 +2270,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1099, 1102);
+            this.Controls.Add(this.btnObtenerFN);
             this.Controls.Add(this.cboCMi);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.txtCMI);
@@ -2367,5 +2387,6 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtCMI;
         private System.Windows.Forms.Label label20;
         private MaterialSkin.Controls.MaterialComboBox cboCMi;
+        private System.Windows.Forms.Button btnObtenerFN;
     }
 }
