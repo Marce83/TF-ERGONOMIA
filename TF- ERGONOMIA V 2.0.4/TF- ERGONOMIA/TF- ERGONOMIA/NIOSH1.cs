@@ -1310,6 +1310,7 @@ namespace TF.WIN
             }
             else vertfrecuenciatablaD.Text = "2";
 
+
         }
 
         private void cboVi_SelectedIndexChanged(object sender, EventArgs e)
@@ -1333,6 +1334,7 @@ namespace TF.WIN
                 vertfrecuenciatablaI.Text = "1";
             }
             else vertfrecuenciatablaI.Text = "2";
+
 
         }
 
@@ -1490,14 +1492,14 @@ namespace TF.WIN
 
             oNiosh.FrecuenciaFM = int.Parse(txtfrecuencia.Text);
             oNiosh.DuracionFM = int.Parse(txtduracion.Text);
-            oNiosh.DistanciaVerticalFM = int.Parse(cboV.Text);
+            oNiosh.DistanciaVerticalFM = int.Parse(vertfrecuenciatablaD.Text);
 
             NioshBC oNioshBC = new NioshBC();
             DataTable dt77 = oNioshBC.NioshTablaADestinoBC(oNiosh);
 
             if (dt77.Rows.Count > 0)
             {
-                string resultadoValorFND = dt77.Rows[0][1].ToString();
+                string resultadoValorFND = dt77.Rows[0][0].ToString();
                 oNiosh.ValorFM = int.Parse(resultadoValorFND);
                 txtFND.Text = oNiosh.ValorFM.ToString();
             }
@@ -1510,14 +1512,14 @@ namespace TF.WIN
 
             oNiosh.FrecuenciaFMi = int.Parse(txtfrecuencia.Text);
             oNiosh.DuracionFMi = int.Parse(txtduracion.Text);
-            oNiosh.DistanciaVerticalFMi = int.Parse(cboVi.Text);
+            oNiosh.DistanciaVerticalFMi = int.Parse(vertfrecuenciatablaI.Text);
 
             NioshBC oNioshBC = new NioshBC();
             DataTable dt78 = oNioshBC.NioshTablaAInicialBC(oNiosh);
 
             if (dt78.Rows.Count > 0)
             {
-                string resultadoVALORFNi = dt78.Rows[0][1].ToString();
+                string resultadoVALORFNi = dt78.Rows[0][0].ToString();
                 oNiosh.ValorFMi = int.Parse(resultadoVALORFNi);
                 txtFNI.Text = oNiosh.ValorFMi.ToString();
             }
@@ -1558,8 +1560,8 @@ namespace TF.WIN
                 oNiosh.CalidadAgarreI = int.Parse(txtCMI.Text);
                 oNiosh.LCNiosh = int.Parse(txtLCN.Text);
                 oNiosh.FrecuenciaNiosh = int.Parse(txtfrecuencia.Text);
-                oNiosh.DistanciaVerticalD = int.Parse(cboV.Text);
-                oNiosh.DistanciaVerticali = int.Parse(cboVi.Text);
+                oNiosh.DistanciaVerticalD = int.Parse(txtVmDTA.Text);
+                oNiosh.DistanciaVerticali = int.Parse(TXTvMiTA.Text);
 
                 var res = oNioshBC.UpdateNiosh1BC(oNiosh);
                 MessageBox.Show("FN y FNi Calculado");
