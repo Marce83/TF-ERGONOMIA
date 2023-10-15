@@ -24,8 +24,6 @@ namespace TF.WIN
 
         }
 
-
-
         private void btncerrarNiosh_Click(object sender, EventArgs e)
         {
             Close();
@@ -1020,8 +1018,6 @@ namespace TF.WIN
             cboAi.Items.Add(new ComboBoxOption("134", 134));
             cboAi.Items.Add(new ComboBoxOption("135", 135));
 
-
-
             //----------------------
 
             double resultadoAM = 0;
@@ -1030,11 +1026,6 @@ namespace TF.WIN
 
             resultadoAM = 1 - (0.0032 * Asimetriadestino);
             txtAM.Text = resultadoAM.ToString();
-
-
-
-
-
 
             // formato de FN y posteriores
 
@@ -1074,117 +1065,39 @@ namespace TF.WIN
             ObtenerMaximoIdNIOSH();
 
 
+            
 
 
 
-            //if (txtfrecuencia.Text == "1" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "1"; }
-            //if (txtfrecuencia.Text == "1" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "1"; }
-            //if (txtfrecuencia.Text == "1" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.95"; }
-            //if (txtfrecuencia.Text == "1" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.95"; }
-            //if (txtfrecuencia.Text == "1" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.85"; }
-            //if (txtfrecuencia.Text == "1" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.85"; }
-            //if (txtfrecuencia.Text == "2" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.97"; }
-            //if (txtfrecuencia.Text == "2" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.97"; }
-            //if (txtfrecuencia.Text == "2" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.92"; }
-            //if (txtfrecuencia.Text == "2" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.92"; }
-            //if (txtfrecuencia.Text == "2" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.81"; }
-            //if (txtfrecuencia.Text == "2" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.81"; }
-            //if (txtfrecuencia.Text == "3" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.94"; }
-            //if (txtfrecuencia.Text == "3" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.94"; }
-            //if (txtfrecuencia.Text == "3" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.88"; }
-            //if (txtfrecuencia.Text == "3" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.88"; }
-            //if (txtfrecuencia.Text == "3" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.75"; }
-            //if (txtfrecuencia.Text == "3" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.75"; }
-            //if (txtfrecuencia.Text == "4" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.91"; }
-            //if (txtfrecuencia.Text == "4" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.91"; }
-            //if (txtfrecuencia.Text == "4" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.84"; }
-            //if (txtfrecuencia.Text == "4" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.84"; }
-            //if (txtfrecuencia.Text == "4" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.65"; }
-            //if (txtfrecuencia.Text == "4" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.65"; }
-            //if (txtfrecuencia.Text == "5" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.88"; }
-            //if (txtfrecuencia.Text == "5" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.88"; }
-            //if (txtfrecuencia.Text == "5" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.79"; }
-            //if (txtfrecuencia.Text == "5" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.79"; }
-            //if (txtfrecuencia.Text == "5" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.55"; }
-            //if (txtfrecuencia.Text == "5" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.55"; }
-            //if (txtfrecuencia.Text == "6" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.84"; }
-            //if (txtfrecuencia.Text == "6" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.84"; }
-            //if (txtfrecuencia.Text == "6" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.72"; }
-            //if (txtfrecuencia.Text == "6" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.72"; }
-            //if (txtfrecuencia.Text == "6" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.45"; }
-            //if (txtfrecuencia.Text == "6" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.45"; }
-            //if (txtfrecuencia.Text == "7" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.8"; }
-            //if (txtfrecuencia.Text == "7" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.8"; }
-            //if (txtfrecuencia.Text == "7" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.6"; }
-            //if (txtfrecuencia.Text == "7" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.6"; }
-            //if (txtfrecuencia.Text == "7" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.35"; }
-            //if (txtfrecuencia.Text == "7" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.35"; }
-            //if (txtfrecuencia.Text == "8" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.75"; }
-            //if (txtfrecuencia.Text == "8" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.75"; }
-            //if (txtfrecuencia.Text == "8" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.5"; }
-            //if (txtfrecuencia.Text == "8" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.5"; }
-            //if (txtfrecuencia.Text == "8" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.27"; }
-            //if (txtfrecuencia.Text == "8" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.27"; }
-            //if (txtfrecuencia.Text == "9" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.7"; }
-            //if (txtfrecuencia.Text == "9" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.7"; }
-            //if (txtfrecuencia.Text == "9" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.42"; }
-            //if (txtfrecuencia.Text == "9" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.42"; }
-            //if (txtfrecuencia.Text == "9" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.22"; }
-            //if (txtfrecuencia.Text == "9" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.22"; }
-            //if (txtfrecuencia.Text == "10" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.6"; }
-            //if (txtfrecuencia.Text == "10" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.6"; }
-            //if (txtfrecuencia.Text == "10" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.35"; }
-            //if (txtfrecuencia.Text == "10" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.35"; }
-            //if (txtfrecuencia.Text == "10" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.18"; }
-            //if (txtfrecuencia.Text == "10" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.18"; }
-            //if (txtfrecuencia.Text == "11" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.52"; }
-            //if (txtfrecuencia.Text == "11" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.52"; }
-            //if (txtfrecuencia.Text == "11" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.3"; }
-            //if (txtfrecuencia.Text == "11" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.3"; }
-            //if (txtfrecuencia.Text == "11" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "11" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.15"; }
-            //if (txtfrecuencia.Text == "12" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.45"; }
-            //if (txtfrecuencia.Text == "12" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.45"; }
-            //if (txtfrecuencia.Text == "12" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.26"; }
-            //if (txtfrecuencia.Text == "12" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.26"; }
-            //if (txtfrecuencia.Text == "12" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "12" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.13"; }
-            //if (txtfrecuencia.Text == "13" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.41"; }
-            //if (txtfrecuencia.Text == "13" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.41"; }
-            //if (txtfrecuencia.Text == "13" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "13" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.23"; }
-            //if (txtfrecuencia.Text == "13" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "13" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "14" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0.37"; }
-            //if (txtfrecuencia.Text == "14" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.37"; }
-            //if (txtfrecuencia.Text == "14" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "14" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.21"; }
-            //if (txtfrecuencia.Text == "14" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "14" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "15" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "15" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.34"; }
-            //if (txtfrecuencia.Text == "15" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "15" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "15" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "15" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "16" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "16" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.31"; }
-            //if (txtfrecuencia.Text == "16" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "16" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "16" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "16" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "17" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "17" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0.28"; }
-            //if (txtfrecuencia.Text == "17" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "17" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "17" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "17" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "18" && txtduracion.Text == "1" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "18" && txtduracion.Text == "1" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "18" && txtduracion.Text == "2" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "18" && txtduracion.Text == "2" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "18" && txtduracion.Text == "3" && int.Parse(cboV.Text) < 75) { txtFND.Text = "0"; }
-            //if (txtfrecuencia.Text == "18" && txtduracion.Text == "3" && int.Parse(cboV.Text) >= 75) { txtFND.Text = "0"; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1303,12 +1216,12 @@ namespace TF.WIN
             else txtDMNiosh.Text = resultadoDMd.ToString();
 
 
-
-            if (VMD1 < 75)
+            
+            if (ObtenerNumeroSeleccionado(cboV) < 75)
             {
-                vertfrecuenciatablaD.Text = "1";
+                difvertd.Text = "1";
             }
-            else vertfrecuenciatablaD.Text = "2";
+            else difvertd.Text = "2";
 
 
         }
@@ -1329,11 +1242,12 @@ namespace TF.WIN
 
             txtVMi.Text = resultadoVMorigen1.ToString();
 
+
             if (VMI2 < 75)
             {
-                vertfrecuenciatablaI.Text = "1";
+                difvertint.Text = "1";
             }
-            else vertfrecuenciatablaI.Text = "2";
+            else difvertint.Text = "2";
 
 
         }
@@ -1413,7 +1327,7 @@ namespace TF.WIN
         }
 
 
-       // Resultado pata la Busqueda en la Tabla
+        // Resultado pata la Busqueda en la Tabla
 
 
 
@@ -1489,10 +1403,9 @@ namespace TF.WIN
         public void NioshTablaADestino()
         {
             Niosh oNiosh = new Niosh();
-
             oNiosh.FrecuenciaFM = int.Parse(txtfrecuencia.Text);
             oNiosh.DuracionFM = int.Parse(txtduracion.Text);
-            oNiosh.DistanciaVerticalFM = int.Parse(vertfrecuenciatablaD.Text);
+            oNiosh.DistanciaVerticalFM = int.Parse(difvertd.Text);
 
             NioshBC oNioshBC = new NioshBC();
             DataTable dt77 = oNioshBC.NioshTablaADestinoBC(oNiosh);
@@ -1500,8 +1413,7 @@ namespace TF.WIN
             if (dt77.Rows.Count > 0)
             {
                 string resultadoValorFND = dt77.Rows[0][0].ToString();
-                oNiosh.ValorFM = int.Parse(resultadoValorFND);
-                txtFND.Text = oNiosh.ValorFM.ToString();
+                txtFND.Text = resultadoValorFND.ToString();
             }
 
         }
@@ -1509,10 +1421,9 @@ namespace TF.WIN
         public void NioshTablaAINICIAL()
         {
             Niosh oNiosh = new Niosh();
-
             oNiosh.FrecuenciaFMi = int.Parse(txtfrecuencia.Text);
             oNiosh.DuracionFMi = int.Parse(txtduracion.Text);
-            oNiosh.DistanciaVerticalFMi = int.Parse(vertfrecuenciatablaI.Text);
+            oNiosh.DistanciaVerticalFMi = int.Parse(difvertint.Text);
 
             NioshBC oNioshBC = new NioshBC();
             DataTable dt78 = oNioshBC.NioshTablaAInicialBC(oNiosh);
@@ -1520,48 +1431,84 @@ namespace TF.WIN
             if (dt78.Rows.Count > 0)
             {
                 string resultadoVALORFNi = dt78.Rows[0][0].ToString();
-                oNiosh.ValorFMi = int.Parse(resultadoVALORFNi);
-                txtFNI.Text = oNiosh.ValorFMi.ToString();
+                txtFNI.Text = resultadoVALORFNi.ToString();
+            }
+
+        }
+
+
+        public void NioshTablaCMDestino()
+        {
+            Niosh oNiosh = new Niosh();
+            oNiosh.CalidadAgarreD = int.Parse(txtCMD.Text);
+            oNiosh.DistanciaVerticalFM = int.Parse(difvertd.Text);
+
+            NioshBC oNioshBC = new NioshBC();
+            DataTable dt101 = oNioshBC.NioshTablaCMDestinoBC(oNiosh);
+
+            if (dt101.Rows.Count > 0)
+            {
+                string resultadoValorCMD = dt101.Rows[0][0].ToString();
+                txtCMDnumero.Text = resultadoValorCMD.ToString();
+            }
+
+        }
+
+        public void NioshTablaCMINICIAL()
+        {
+            Niosh oNiosh = new Niosh();
+            oNiosh.CalidadAgarreI = int.Parse(txtCMI.Text);
+            oNiosh.DistanciaVerticalFMi = int.Parse(difvertint.Text);
+
+            NioshBC oNioshBC = new NioshBC();
+            DataTable dt102 = oNioshBC.NioshTablaCMnicialBC(oNiosh);
+
+            if (dt102.Rows.Count > 0)
+            {
+                string resultadoVALORCMi = dt102.Rows[0][0].ToString();
+                txtCMInumero.Text = resultadoVALORCMi.ToString();
             }
 
         }
 
 
 
+ 
 
 
         private void btnObtenerFN_Click(object sender, EventArgs e)
         {
+ 
+            NioshTablaADestino();
+
+            NioshTablaAINICIAL();
+
+            NioshTablaCMDestino();
+
+            NioshTablaCMINICIAL();
+
             try
             {
-
-                NioshTablaADestino();
-
-                NioshTablaAINICIAL();
-
-
                 NioshBC oNioshBC = new NioshBC();
                 Niosh oNiosh = new Niosh();
 
                 oNiosh.cargaIdNiosh = int.Parse(txtcargaidniosh.Text);
-                oNiosh.HMNioshD = double.Parse(txtHMD.Text.Replace(",", "."), CultureInfo.InvariantCulture);
-                oNiosh.HMNioshI = double.Parse(txtHMiI.Text.Replace(",", "."), CultureInfo.InvariantCulture);
-                oNiosh.VMNioshD = double.Parse(txtVM.Text.Replace(",", "."), CultureInfo.InvariantCulture);
-                oNiosh.VMNioshI = double.Parse(txtVMi.Text.Replace(",", "."), CultureInfo.InvariantCulture);
-                oNiosh.DMNioshD = double.Parse(txtDMNiosh.Text.Replace(",", "."), CultureInfo.InvariantCulture);
-                oNiosh.AMNioshD = double.Parse(txtAM.Text.Replace(",", "."), CultureInfo.InvariantCulture);
-                oNiosh.AMNioshI = double.Parse(txtAMi.Text.Replace(",", "."), CultureInfo.InvariantCulture);
-                //oNiosh.FMNioshD = double.Parse(txtFND.Text.Replace(",", "."), CultureInfo.InvariantCulture);
-                //oNiosh.FMNioshI = double.Parse(txtFNI.Text.Replace(",", "."), CultureInfo.InvariantCulture);
-                oNiosh.CMRNioshD = double.Parse(txtCMD.Text.Replace(",", "."), CultureInfo.InvariantCulture);
-                oNiosh.CMRNioshI = double.Parse(txtCMI.Text.Replace(",", "."), CultureInfo.InvariantCulture);
+                oNiosh.HMNioshD = double.Parse(txtHMD.Text);
+                oNiosh.HMNioshI = double.Parse(txtHMiI.Text);
+                oNiosh.VMNioshD = double.Parse(txtVM.Text);
+                oNiosh.VMNioshI = double.Parse(txtVMi.Text);
+                oNiosh.DMNioshD = double.Parse(txtDMNiosh.Text);
+                oNiosh.AMNioshD = double.Parse(txtAM.Text);
+                oNiosh.AMNioshI = double.Parse(txtAMi.Text);
+                oNiosh.CMRNioshD = double.Parse(txtCMD.Text);
+                oNiosh.CMRNioshI = double.Parse(txtCMI.Text);
                 oNiosh.Duraciontarea = int.Parse(txtduracion.Text);
                 oNiosh.CalidadAgarreD = int.Parse(txtCMD.Text);
                 oNiosh.CalidadAgarreI = int.Parse(txtCMI.Text);
                 oNiosh.LCNiosh = int.Parse(txtLCN.Text);
                 oNiosh.FrecuenciaNiosh = int.Parse(txtfrecuencia.Text);
-                oNiosh.DistanciaVerticalD = int.Parse(txtVmDTA.Text);
-                oNiosh.DistanciaVerticali = int.Parse(TXTvMiTA.Text);
+                oNiosh.DistanciaVerticalD = int.Parse(difvertd.Text);
+                oNiosh.DistanciaVerticali = int.Parse(difvertint.Text);
 
                 var res = oNioshBC.UpdateNiosh1BC(oNiosh);
                 MessageBox.Show("FN y FNi Calculado");

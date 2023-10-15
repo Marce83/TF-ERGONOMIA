@@ -43,7 +43,19 @@ namespace TF.BC
             return dt;
         }
 
+        public DataTable NioshTablaCMDestinoBC(Niosh oNiosh)
+        {
+            NioshDAC oNioshDAC = new NioshDAC();
+            DataTable dt = oNioshDAC.NioshTablaCMDestinoDAC(oNiosh);
+            return dt;
+        }
 
+        public DataTable NioshTablaCMnicialBC(Niosh oNiosh)
+        {
+            NioshDAC oNioshDAC = new NioshDAC();
+            DataTable dt = oNioshDAC.NioshTablaCMInicioDAC(oNiosh);
+            return dt;
+        }
 
 
 

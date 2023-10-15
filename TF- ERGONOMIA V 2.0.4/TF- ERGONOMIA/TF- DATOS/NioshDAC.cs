@@ -160,5 +160,76 @@ namespace TF.DAC
             }
         }
 
+        public DataTable NioshTablaCMDestinoDAC(Niosh oNiosh)
+        {
+            try
+            {
+                string sqlSentencia = "SP_Niosh_NioshTablaCM_Destino";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCom.CommandType = CommandType.StoredProcedure;
+                sqlCom.Parameters.Add("@AgarreCM", SqlDbType.Int).Value = oNiosh.CalidadAgarreD;
+                sqlCom.Parameters.Add("@DistanciaVerticalCM", SqlDbType.Int).Value = oNiosh.DistanciaVerticalFM;
+
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
+        }
+
+        public DataTable NioshTablaCMInicioDAC(Niosh oNiosh)
+        {
+            try
+            {
+                string sqlSentencia = "SP_Niosh_NioshTablaCM_Inicio";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCom.CommandType = CommandType.StoredProcedure;
+                sqlCom.Parameters.Add("@AgarreCM", SqlDbType.Int).Value = oNiosh.CalidadAgarreI;
+                sqlCom.Parameters.Add("@DistanciaVerticalCM", SqlDbType.Int).Value = oNiosh.DistanciaVerticalFMi;
+
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

@@ -57,8 +57,9 @@ namespace TF.ENTITIES
         public int ValorFMi { get; set; }
 
 
-
-
+        // Tabla CM NIOSH
+        public double ValorCMD { get; set; }
+        public double ValorCMi { get; set; }
 
     }
 

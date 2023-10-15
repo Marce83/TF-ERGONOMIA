@@ -88,15 +88,17 @@
             this.label19 = new System.Windows.Forms.Label();
             this.txtduracion = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtfrecuencia = new MaterialSkin.Controls.MaterialTextBox2();
-            this.vertfrecuenciatablaD = new MaterialSkin.Controls.MaterialTextBox2();
-            this.vertfrecuenciatablaI = new MaterialSkin.Controls.MaterialTextBox2();
+            this.difvertd = new MaterialSkin.Controls.MaterialTextBox2();
+            this.difvertint = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtCMD = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtCMI = new MaterialSkin.Controls.MaterialTextBox2();
             this.label20 = new System.Windows.Forms.Label();
             this.cboCMi = new MaterialSkin.Controls.MaterialComboBox();
             this.btnObtenerFN = new System.Windows.Forms.Button();
-            this.txtVmDTA = new MaterialSkin.Controls.MaterialTextBox2();
-            this.TXTvMiTA = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtCMDnumero = new MaterialSkin.Controls.MaterialTextBox2();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtCMInumero = new MaterialSkin.Controls.MaterialTextBox2();
+            this.label22 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.advDH)).BeginInit();
@@ -179,7 +181,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(41, 1485);
+            this.label6.Location = new System.Drawing.Point(41, 1600);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(155, 16);
             this.label6.TabIndex = 36;
@@ -204,7 +206,7 @@
             this.txtLCN.Depth = 0;
             this.txtLCN.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtLCN.LeadingIcon = null;
-            this.txtLCN.Location = new System.Drawing.Point(387, 1473);
+            this.txtLCN.Location = new System.Drawing.Point(387, 1588);
             this.txtLCN.MaxLength = 50;
             this.txtLCN.MouseState = MaterialSkin.MouseState.OUT;
             this.txtLCN.Multiline = false;
@@ -292,7 +294,7 @@
             this.btncerrarNiosh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncerrarNiosh.ForeColor = System.Drawing.Color.AliceBlue;
             this.btncerrarNiosh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncerrarNiosh.Location = new System.Drawing.Point(244, 1607);
+            this.btncerrarNiosh.Location = new System.Drawing.Point(244, 1725);
             this.btncerrarNiosh.Margin = new System.Windows.Forms.Padding(4);
             this.btncerrarNiosh.Name = "btncerrarNiosh";
             this.btncerrarNiosh.Size = new System.Drawing.Size(155, 43);
@@ -304,7 +306,7 @@
             // txtcargaidniosh
             // 
             this.txtcargaidniosh.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtcargaidniosh.Location = new System.Drawing.Point(603, 1617);
+            this.txtcargaidniosh.Location = new System.Drawing.Point(603, 1735);
             this.txtcargaidniosh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargaidniosh.Name = "txtcargaidniosh";
             this.txtcargaidniosh.Size = new System.Drawing.Size(100, 22);
@@ -320,7 +322,7 @@
             this.btnGuardarNiosh1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarNiosh1.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnGuardarNiosh1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarNiosh1.Location = new System.Drawing.Point(427, 1607);
+            this.btnGuardarNiosh1.Location = new System.Drawing.Point(427, 1725);
             this.btnGuardarNiosh1.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarNiosh1.Name = "btnGuardarNiosh1";
             this.btnGuardarNiosh1.Size = new System.Drawing.Size(155, 43);
@@ -477,8 +479,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.TXTvMiTA);
-            this.groupBox1.Controls.Add(this.txtVmDTA);
             this.groupBox1.Controls.Add(this.txtHMiI);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.txtVMi);
@@ -805,182 +805,6 @@
             // 
             // cboVi
             // 
-            this.cboVi.AutoCompleteCustomSource.AddRange(new string[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31",
-            "32",
-            "33",
-            "34",
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60",
-            "61",
-            "62",
-            "63",
-            "64",
-            "65",
-            "66",
-            "67",
-            "68",
-            "69",
-            "70",
-            "71",
-            "72",
-            "73",
-            "74",
-            "75",
-            "76",
-            "77",
-            "78",
-            "79",
-            "80",
-            "81",
-            "82",
-            "83",
-            "84",
-            "85",
-            "86",
-            "87",
-            "88",
-            "89",
-            "90",
-            "91",
-            "92",
-            "93",
-            "94",
-            "95",
-            "96",
-            "97",
-            "98",
-            "99",
-            "100",
-            "101",
-            "102",
-            "103",
-            "104",
-            "105",
-            "106",
-            "107",
-            "108",
-            "109",
-            "110",
-            "111",
-            "112",
-            "113",
-            "114",
-            "115",
-            "116",
-            "117",
-            "118",
-            "119",
-            "120",
-            "121",
-            "122",
-            "123",
-            "124",
-            "125",
-            "126",
-            "127",
-            "128",
-            "129",
-            "130",
-            "131",
-            "132",
-            "133",
-            "134",
-            "135",
-            "136",
-            "137",
-            "138",
-            "139",
-            "140",
-            "141",
-            "142",
-            "143",
-            "144",
-            "145",
-            "146",
-            "147",
-            "148",
-            "149",
-            "150",
-            "151",
-            "152",
-            "153",
-            "154",
-            "155",
-            "156",
-            "157",
-            "158",
-            "159",
-            "160",
-            "161",
-            "162",
-            "163",
-            "164",
-            "165",
-            "166",
-            "167",
-            "168",
-            "169",
-            "170",
-            "171",
-            "172",
-            "173",
-            "174",
-            "175"});
             this.cboVi.AutoResize = false;
             this.cboVi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cboVi.Depth = 0;
@@ -2089,65 +1913,65 @@
             this.txtfrecuencia.TrailingIcon = null;
             this.txtfrecuencia.UseSystemPasswordChar = false;
             // 
-            // vertfrecuenciatablaD
+            // difvertd
             // 
-            this.vertfrecuenciatablaD.AnimateReadOnly = false;
-            this.vertfrecuenciatablaD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.vertfrecuenciatablaD.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.vertfrecuenciatablaD.Depth = 0;
-            this.vertfrecuenciatablaD.Enabled = false;
-            this.vertfrecuenciatablaD.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.vertfrecuenciatablaD.HideSelection = true;
-            this.vertfrecuenciatablaD.LeadingIcon = null;
-            this.vertfrecuenciatablaD.Location = new System.Drawing.Point(300, 1251);
-            this.vertfrecuenciatablaD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.vertfrecuenciatablaD.MaxLength = 32767;
-            this.vertfrecuenciatablaD.MouseState = MaterialSkin.MouseState.OUT;
-            this.vertfrecuenciatablaD.Name = "vertfrecuenciatablaD";
-            this.vertfrecuenciatablaD.PasswordChar = '\0';
-            this.vertfrecuenciatablaD.PrefixSuffixText = null;
-            this.vertfrecuenciatablaD.ReadOnly = true;
-            this.vertfrecuenciatablaD.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.vertfrecuenciatablaD.SelectedText = "";
-            this.vertfrecuenciatablaD.SelectionLength = 0;
-            this.vertfrecuenciatablaD.SelectionStart = 0;
-            this.vertfrecuenciatablaD.ShortcutsEnabled = true;
-            this.vertfrecuenciatablaD.Size = new System.Drawing.Size(59, 48);
-            this.vertfrecuenciatablaD.TabIndex = 249;
-            this.vertfrecuenciatablaD.TabStop = false;
-            this.vertfrecuenciatablaD.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.vertfrecuenciatablaD.TrailingIcon = null;
-            this.vertfrecuenciatablaD.UseSystemPasswordChar = false;
+            this.difvertd.AnimateReadOnly = false;
+            this.difvertd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.difvertd.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.difvertd.Depth = 0;
+            this.difvertd.Enabled = false;
+            this.difvertd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.difvertd.HideSelection = true;
+            this.difvertd.LeadingIcon = null;
+            this.difvertd.Location = new System.Drawing.Point(314, 1251);
+            this.difvertd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.difvertd.MaxLength = 32767;
+            this.difvertd.MouseState = MaterialSkin.MouseState.OUT;
+            this.difvertd.Name = "difvertd";
+            this.difvertd.PasswordChar = '\0';
+            this.difvertd.PrefixSuffixText = null;
+            this.difvertd.ReadOnly = true;
+            this.difvertd.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.difvertd.SelectedText = "";
+            this.difvertd.SelectionLength = 0;
+            this.difvertd.SelectionStart = 0;
+            this.difvertd.ShortcutsEnabled = true;
+            this.difvertd.Size = new System.Drawing.Size(45, 48);
+            this.difvertd.TabIndex = 249;
+            this.difvertd.TabStop = false;
+            this.difvertd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.difvertd.TrailingIcon = null;
+            this.difvertd.UseSystemPasswordChar = false;
             // 
-            // vertfrecuenciatablaI
+            // difvertint
             // 
-            this.vertfrecuenciatablaI.AnimateReadOnly = false;
-            this.vertfrecuenciatablaI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.vertfrecuenciatablaI.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.vertfrecuenciatablaI.Depth = 0;
-            this.vertfrecuenciatablaI.Enabled = false;
-            this.vertfrecuenciatablaI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.vertfrecuenciatablaI.HideSelection = true;
-            this.vertfrecuenciatablaI.LeadingIcon = null;
-            this.vertfrecuenciatablaI.Location = new System.Drawing.Point(42, 1251);
-            this.vertfrecuenciatablaI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.vertfrecuenciatablaI.MaxLength = 32767;
-            this.vertfrecuenciatablaI.MouseState = MaterialSkin.MouseState.OUT;
-            this.vertfrecuenciatablaI.Name = "vertfrecuenciatablaI";
-            this.vertfrecuenciatablaI.PasswordChar = '\0';
-            this.vertfrecuenciatablaI.PrefixSuffixText = null;
-            this.vertfrecuenciatablaI.ReadOnly = true;
-            this.vertfrecuenciatablaI.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.vertfrecuenciatablaI.SelectedText = "";
-            this.vertfrecuenciatablaI.SelectionLength = 0;
-            this.vertfrecuenciatablaI.SelectionStart = 0;
-            this.vertfrecuenciatablaI.ShortcutsEnabled = true;
-            this.vertfrecuenciatablaI.Size = new System.Drawing.Size(59, 48);
-            this.vertfrecuenciatablaI.TabIndex = 250;
-            this.vertfrecuenciatablaI.TabStop = false;
-            this.vertfrecuenciatablaI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.vertfrecuenciatablaI.TrailingIcon = null;
-            this.vertfrecuenciatablaI.UseSystemPasswordChar = false;
+            this.difvertint.AnimateReadOnly = false;
+            this.difvertint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.difvertint.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.difvertint.Depth = 0;
+            this.difvertint.Enabled = false;
+            this.difvertint.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.difvertint.HideSelection = true;
+            this.difvertint.LeadingIcon = null;
+            this.difvertint.Location = new System.Drawing.Point(44, 1251);
+            this.difvertint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.difvertint.MaxLength = 32767;
+            this.difvertint.MouseState = MaterialSkin.MouseState.OUT;
+            this.difvertint.Name = "difvertint";
+            this.difvertint.PasswordChar = '\0';
+            this.difvertint.PrefixSuffixText = null;
+            this.difvertint.ReadOnly = true;
+            this.difvertint.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.difvertint.SelectedText = "";
+            this.difvertint.SelectionLength = 0;
+            this.difvertint.SelectionStart = 0;
+            this.difvertint.ShortcutsEnabled = true;
+            this.difvertint.Size = new System.Drawing.Size(65, 48);
+            this.difvertint.TabIndex = 250;
+            this.difvertint.TabStop = false;
+            this.difvertint.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.difvertint.TrailingIcon = null;
+            this.difvertint.UseSystemPasswordChar = false;
             // 
             // txtCMD
             // 
@@ -2189,7 +2013,7 @@
             this.txtCMI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCMI.HideSelection = true;
             this.txtCMI.LeadingIcon = null;
-            this.txtCMI.Location = new System.Drawing.Point(300, 1394);
+            this.txtCMI.Location = new System.Drawing.Point(300, 1453);
             this.txtCMI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMI.MaxLength = 32767;
             this.txtCMI.MouseState = MaterialSkin.MouseState.OUT;
@@ -2212,7 +2036,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(39, 1412);
+            this.label20.Location = new System.Drawing.Point(39, 1471);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(188, 16);
             this.label20.TabIndex = 253;
@@ -2238,7 +2062,7 @@
             this.cboCMi.ItemHeight = 43;
             this.cboCMi.Items.AddRange(new object[] {
             "0"});
-            this.cboCMi.Location = new System.Drawing.Point(395, 1394);
+            this.cboCMi.Location = new System.Drawing.Point(395, 1453);
             this.cboCMi.MaxDropDownItems = 4;
             this.cboCMi.MouseState = MaterialSkin.MouseState.OUT;
             this.cboCMi.Name = "cboCMi";
@@ -2256,7 +2080,7 @@
             this.btnObtenerFN.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnObtenerFN.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnObtenerFN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnObtenerFN.Location = new System.Drawing.Point(427, 1539);
+            this.btnObtenerFN.Location = new System.Drawing.Point(429, 1645);
             this.btnObtenerFN.Margin = new System.Windows.Forms.Padding(4);
             this.btnObtenerFN.Name = "btnObtenerFN";
             this.btnObtenerFN.Size = new System.Drawing.Size(155, 50);
@@ -2265,65 +2089,83 @@
             this.btnObtenerFN.UseVisualStyleBackColor = false;
             this.btnObtenerFN.Click += new System.EventHandler(this.btnObtenerFN_Click);
             // 
-            // txtVmDTA
+            // txtCMDnumero
             // 
-            this.txtVmDTA.AnimateReadOnly = false;
-            this.txtVmDTA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtVmDTA.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtVmDTA.Depth = 0;
-            this.txtVmDTA.Enabled = false;
-            this.txtVmDTA.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtVmDTA.HideSelection = true;
-            this.txtVmDTA.LeadingIcon = null;
-            this.txtVmDTA.Location = new System.Drawing.Point(485, 340);
-            this.txtVmDTA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtVmDTA.MaxLength = 32767;
-            this.txtVmDTA.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtVmDTA.Name = "txtVmDTA";
-            this.txtVmDTA.PasswordChar = '\0';
-            this.txtVmDTA.PrefixSuffixText = null;
-            this.txtVmDTA.ReadOnly = true;
-            this.txtVmDTA.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtVmDTA.SelectedText = "";
-            this.txtVmDTA.SelectionLength = 0;
-            this.txtVmDTA.SelectionStart = 0;
-            this.txtVmDTA.ShortcutsEnabled = true;
-            this.txtVmDTA.Size = new System.Drawing.Size(37, 48);
-            this.txtVmDTA.TabIndex = 253;
-            this.txtVmDTA.TabStop = false;
-            this.txtVmDTA.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtVmDTA.TrailingIcon = null;
-            this.txtVmDTA.UseSystemPasswordChar = false;
+            this.txtCMDnumero.AnimateReadOnly = false;
+            this.txtCMDnumero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtCMDnumero.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCMDnumero.Depth = 0;
+            this.txtCMDnumero.Enabled = false;
+            this.txtCMDnumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCMDnumero.HideSelection = true;
+            this.txtCMDnumero.LeadingIcon = null;
+            this.txtCMDnumero.Location = new System.Drawing.Point(453, 1385);
+            this.txtCMDnumero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCMDnumero.MaxLength = 32767;
+            this.txtCMDnumero.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCMDnumero.Name = "txtCMDnumero";
+            this.txtCMDnumero.PasswordChar = '\0';
+            this.txtCMDnumero.PrefixSuffixText = null;
+            this.txtCMDnumero.ReadOnly = true;
+            this.txtCMDnumero.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCMDnumero.SelectedText = "";
+            this.txtCMDnumero.SelectionLength = 0;
+            this.txtCMDnumero.SelectionStart = 0;
+            this.txtCMDnumero.ShortcutsEnabled = true;
+            this.txtCMDnumero.Size = new System.Drawing.Size(129, 48);
+            this.txtCMDnumero.TabIndex = 257;
+            this.txtCMDnumero.TabStop = false;
+            this.txtCMDnumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCMDnumero.TrailingIcon = null;
+            this.txtCMDnumero.UseSystemPasswordChar = false;
             // 
-            // TXTvMiTA
+            // label21
             // 
-            this.TXTvMiTA.AnimateReadOnly = false;
-            this.TXTvMiTA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.TXTvMiTA.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TXTvMiTA.Depth = 0;
-            this.TXTvMiTA.Enabled = false;
-            this.TXTvMiTA.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.TXTvMiTA.HideSelection = true;
-            this.TXTvMiTA.LeadingIcon = null;
-            this.TXTvMiTA.Location = new System.Drawing.Point(79, 405);
-            this.TXTvMiTA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TXTvMiTA.MaxLength = 32767;
-            this.TXTvMiTA.MouseState = MaterialSkin.MouseState.OUT;
-            this.TXTvMiTA.Name = "TXTvMiTA";
-            this.TXTvMiTA.PasswordChar = '\0';
-            this.TXTvMiTA.PrefixSuffixText = null;
-            this.TXTvMiTA.ReadOnly = true;
-            this.TXTvMiTA.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TXTvMiTA.SelectedText = "";
-            this.TXTvMiTA.SelectionLength = 0;
-            this.TXTvMiTA.SelectionStart = 0;
-            this.TXTvMiTA.ShortcutsEnabled = true;
-            this.TXTvMiTA.Size = new System.Drawing.Size(71, 48);
-            this.TXTvMiTA.TabIndex = 254;
-            this.TXTvMiTA.TabStop = false;
-            this.TXTvMiTA.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TXTvMiTA.TrailingIcon = null;
-            this.TXTvMiTA.UseSystemPasswordChar = false;
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(392, 1400);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(37, 16);
+            this.label21.TabIndex = 256;
+            this.label21.Text = "CMD";
+            // 
+            // txtCMInumero
+            // 
+            this.txtCMInumero.AnimateReadOnly = false;
+            this.txtCMInumero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtCMInumero.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCMInumero.Depth = 0;
+            this.txtCMInumero.Enabled = false;
+            this.txtCMInumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCMInumero.HideSelection = true;
+            this.txtCMInumero.LeadingIcon = null;
+            this.txtCMInumero.Location = new System.Drawing.Point(453, 1526);
+            this.txtCMInumero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCMInumero.MaxLength = 32767;
+            this.txtCMInumero.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCMInumero.Name = "txtCMInumero";
+            this.txtCMInumero.PasswordChar = '\0';
+            this.txtCMInumero.PrefixSuffixText = null;
+            this.txtCMInumero.ReadOnly = true;
+            this.txtCMInumero.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCMInumero.SelectedText = "";
+            this.txtCMInumero.SelectionLength = 0;
+            this.txtCMInumero.SelectionStart = 0;
+            this.txtCMInumero.ShortcutsEnabled = true;
+            this.txtCMInumero.Size = new System.Drawing.Size(129, 48);
+            this.txtCMInumero.TabIndex = 259;
+            this.txtCMInumero.TabStop = false;
+            this.txtCMInumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCMInumero.TrailingIcon = null;
+            this.txtCMInumero.UseSystemPasswordChar = false;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(392, 1541);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(30, 16);
+            this.label22.TabIndex = 258;
+            this.label22.Text = "CMi";
             // 
             // NIOSH1
             // 
@@ -2334,13 +2176,17 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1099, 1102);
+            this.Controls.Add(this.txtCMInumero);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.txtCMDnumero);
+            this.Controls.Add(this.label21);
             this.Controls.Add(this.btnObtenerFN);
             this.Controls.Add(this.cboCMi);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.txtCMI);
             this.Controls.Add(this.txtCMD);
-            this.Controls.Add(this.vertfrecuenciatablaI);
-            this.Controls.Add(this.vertfrecuenciatablaD);
+            this.Controls.Add(this.difvertint);
+            this.Controls.Add(this.difvertd);
             this.Controls.Add(this.txtfrecuencia);
             this.Controls.Add(this.txtduracion);
             this.Controls.Add(this.txtFNI);
@@ -2445,14 +2291,16 @@
         private System.Windows.Forms.Label label19;
         private MaterialSkin.Controls.MaterialTextBox2 txtduracion;
         private MaterialSkin.Controls.MaterialTextBox2 txtfrecuencia;
-        private MaterialSkin.Controls.MaterialTextBox2 vertfrecuenciatablaD;
-        private MaterialSkin.Controls.MaterialTextBox2 vertfrecuenciatablaI;
+        private MaterialSkin.Controls.MaterialTextBox2 difvertd;
+        private MaterialSkin.Controls.MaterialTextBox2 difvertint;
         private MaterialSkin.Controls.MaterialTextBox2 txtCMD;
         private MaterialSkin.Controls.MaterialTextBox2 txtCMI;
         private System.Windows.Forms.Label label20;
         private MaterialSkin.Controls.MaterialComboBox cboCMi;
         private System.Windows.Forms.Button btnObtenerFN;
-        private MaterialSkin.Controls.MaterialTextBox2 TXTvMiTA;
-        private MaterialSkin.Controls.MaterialTextBox2 txtVmDTA;
+        private MaterialSkin.Controls.MaterialTextBox2 txtCMDnumero;
+        private System.Windows.Forms.Label label21;
+        private MaterialSkin.Controls.MaterialTextBox2 txtCMInumero;
+        private System.Windows.Forms.Label label22;
     }
 }

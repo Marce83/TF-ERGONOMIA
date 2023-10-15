@@ -1384,3 +1384,49 @@ and DistanciaVerticalFM =@DistanciaVerticalFM
 END
 GO
 
+use ProyectoFinal
+go
+CREATE TABLE NioshTablaCM(
+AgarreCM int,
+DistanciaVerticalCM int,
+ValorCM float
+)
+GO
+
+use ProyectoFinal
+go
+insert into NioshTablaCM values (1,1,1)
+insert into NioshTablaCM values (1,2,1)
+insert into NioshTablaCM values (2,1,0.95)
+insert into NioshTablaCM values (2,2,1)
+insert into NioshTablaCM values (3,1,0.9)
+insert into NioshTablaCM values (3,2,0.9)
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_Niosh_NioshTablaCM_Destino
+@AgarreCM int,
+@DistanciaVerticalCM int,
+@ValorCM int
+AS 
+BEGIn
+SELECT ValorCM FROM NioshTablaCM
+WHERE  AgarreCM =@AgarreCM
+and DistanciaVerticalCM =@DistanciaVerticalCM
+END
+GO
+
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_Niosh_NioshTablaCM_Inicio
+@AgarreCM int,
+@DistanciaVerticalCM int,
+@ValorCM int
+AS 
+BEGIn
+SELECT ValorCM FROM NioshTablaCM
+WHERE  AgarreCM =@AgarreCM
+and DistanciaVerticalCM =@DistanciaVerticalCM
+END
+GO
