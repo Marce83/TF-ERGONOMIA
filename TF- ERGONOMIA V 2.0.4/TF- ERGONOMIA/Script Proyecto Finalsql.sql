@@ -1406,8 +1406,7 @@ use ProyectoFinal
 go
 CREATE OR ALTER PROCEDURE SP_Niosh_NioshTablaCM_Destino
 @AgarreCM int,
-@DistanciaVerticalCM int,
-@ValorCM int
+@DistanciaVerticalCM int
 AS 
 BEGIn
 SELECT ValorCM FROM NioshTablaCM
@@ -1421,8 +1420,7 @@ use ProyectoFinal
 go
 CREATE OR ALTER PROCEDURE SP_Niosh_NioshTablaCM_Inicio
 @AgarreCM int,
-@DistanciaVerticalCM int,
-@ValorCM int
+@DistanciaVerticalCM int
 AS 
 BEGIn
 SELECT ValorCM FROM NioshTablaCM
