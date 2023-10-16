@@ -42,9 +42,13 @@ namespace TF.ENTITIES
         public int DistanciaVerticalD { get; set; }
         public int DistanciaVerticali { get; set; }
 
+        public double FMNioshDnumero { get; set; }
+        public double FMNioshInumero { get; set; }
+        public double CMRNioshDnumero { get; set; }
+        public double CMRNioshInumero { get; set; }
+
+
         // Tabla A NIOSH
-
-
 
         public int FrecuenciaFM { get;set; }
         public int DuracionFM { get; set; }

@@ -1190,6 +1190,10 @@ LCNiosh int,
 FrecuenciaNiosh int,
 DistanciaVerticalD int,
 DistanciaVerticali int,
+FMNioshDnumero float,
+FMNioshInumero float,
+CMRNioshDnumero float,
+CMRNioshInumero float
 )
 GO	
 
@@ -1238,11 +1242,16 @@ CREATE or Alter PROCEDURE SP_Niosh_updateNiosh1
 @LCNiosh int,
 @FrecuenciaNiosh int,
 @DistanciaVerticalD int,
-@DistanciaVerticali int
+@DistanciaVerticali int,
+@FMNioshDnumero float,
+@FMNioshInumero float,
+@CMRNioshDnumero float,
+@CMRNioshInumero float
+
 AS
 BEGIN
 	update NioshTablaCompleta set HMNioshD=@HMNioshD, HMNioshI =@HMNioshI, VMNioshD =@VMNioshD, VMNioshI = @VMNioshI, DMNioshD = @DMNioshD, AMNioshD = @AMNioshD, AMNioshI =@AMNioshI, FMNioshD =@FMNioshD, FMNioshI =@FMNioshI, CMRNioshD =@CMRNioshD, CMRNioshI = @CMRNioshI, Duraciontarea =@Duraciontarea, CalidadAgarreD =@CalidadAgarreD, CalidadAgarreI=@CalidadAgarreI, LCNiosh=@LCNiosh, FrecuenciaNiosh=@FrecuenciaNiosh , DistanciaVerticalD=@DistanciaVerticalD,
-DistanciaVerticali =@DistanciaVerticali
+DistanciaVerticali =@DistanciaVerticali, FMNioshDnumero = @FMNioshDnumero, FMNioshInumero = @FMNioshInumero, CMRNioshDnumero =@CMRNioshDnumero, CMRNioshInumero = @CMRNioshInumero
 	where cargaIdNiosh=@cargaIdNiosh
 END
 GO

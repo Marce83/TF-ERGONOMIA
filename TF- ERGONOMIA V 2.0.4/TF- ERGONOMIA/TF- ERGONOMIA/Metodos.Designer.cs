@@ -146,6 +146,7 @@
             this.btnNioshResultado.TabIndex = 68;
             this.btnNioshResultado.Text = "NIOSH - Resultado";
             this.btnNioshResultado.UseVisualStyleBackColor = false;
+            this.btnNioshResultado.Click += new System.EventHandler(this.btnNioshResultado_Click);
             // 
             // btnNiosh
             // 

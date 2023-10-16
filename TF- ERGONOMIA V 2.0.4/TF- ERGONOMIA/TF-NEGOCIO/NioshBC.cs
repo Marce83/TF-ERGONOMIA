@@ -57,7 +57,12 @@ namespace TF.BC
             return dt;
         }
 
-
+        public DataTable Niosh_ResultadoBC(Niosh oNiosh)
+        {
+            NioshDAC oNioshDAC = new NioshDAC();
+            DataTable dt = oNioshDAC.Niosh_ResultadoDAC(oNiosh);
+            return dt;
+        }
 
 
     }

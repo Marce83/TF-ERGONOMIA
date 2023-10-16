@@ -49,5 +49,11 @@ namespace TF.WIN
             ONIOSHPORTADA.Show();
 
         }
+
+        private void btnNioshResultado_Click(object sender, EventArgs e)
+        {
+            NIOSHRESULTADO ONIOSHRESULTADO = new NIOSHRESULTADO();
+            ONIOSHRESULTADO.Show(); 
+        }
     }
 }

@@ -1065,42 +1065,6 @@ namespace TF.WIN
             ObtenerMaximoIdNIOSH();
 
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
         private void cboHresultado()
         {
@@ -1255,34 +1219,40 @@ namespace TF.WIN
         private void btnGuardarNiosh1_Click(object sender, EventArgs e)
         {
 
-            NioshBC oNioshBC = new NioshBC();
-            Niosh oNiosh = new Niosh();
 
-            oNiosh.cargaIdNiosh = int.Parse(txtcargaidniosh.Text); ;
-            oNiosh.HMNioshD = int.Parse(txtHMD.Text);
-            oNiosh.HMNioshI = int.Parse(txtHMiI.Text);
-            oNiosh.VMNioshD = int.Parse(txtVM.Text);
-            oNiosh.VMNioshI = int.Parse(txtVMi.Text);
-            oNiosh.DMNioshD = int.Parse(txtDMNiosh.Text);
-            oNiosh.AMNioshD = int.Parse(txtAM.Text);
-            oNiosh.AMNioshI = int.Parse(txtAMi.Text);
-            oNiosh.FMNioshD = int.Parse(txtFND.Text);
-            oNiosh.FMNioshI = int.Parse(txtFNI.Text);
-            oNiosh.CMRNioshD = int.Parse(txtCMD.Text);
-            oNiosh.CMRNioshI = int.Parse(txtCMI.Text);
-            oNiosh.Duraciontarea = int.Parse(txtduracion.Text);
-            oNiosh.CalidadAgarreD = int.Parse(txtCMD.Text);
-            oNiosh.CalidadAgarreI = int.Parse(txtCMI.Text);
-            oNiosh.LCNiosh = int.Parse(txtLCN.Text);
-            oNiosh.LCNiosh = int.Parse(txtfrecuencia.Text);
+            try
+            {
+                NioshBC oNioshBC = new NioshBC();
+                Niosh oNiosh = new Niosh();
 
+                oNiosh.cargaIdNiosh = int.Parse(txtcargaidniosh.Text);
+                oNiosh.HMNioshD = double.Parse(txtHMD.Text);
+                oNiosh.HMNioshI = double.Parse(txtHMiI.Text);
+                oNiosh.VMNioshD = double.Parse(txtVM.Text);
+                oNiosh.VMNioshI = double.Parse(txtVMi.Text);
+                oNiosh.DMNioshD = double.Parse(txtDMNiosh.Text);
+                oNiosh.AMNioshD = double.Parse(txtAM.Text);
+                oNiosh.AMNioshI = double.Parse(txtAMi.Text);
+                oNiosh.CMRNioshD = double.Parse(txtCMD.Text);
+                oNiosh.CMRNioshI = double.Parse(txtCMI.Text);
+                oNiosh.Duraciontarea = int.Parse(txtduracion.Text);
+                oNiosh.CalidadAgarreD = int.Parse(txtCMD.Text);
+                oNiosh.CalidadAgarreI = int.Parse(txtCMI.Text);
+                oNiosh.LCNiosh = int.Parse(txtLCN.Text);
+                oNiosh.FrecuenciaNiosh = int.Parse(txtfrecuencia.Text);
+                oNiosh.DistanciaVerticalD = int.Parse(difvertd.Text);
+                oNiosh.DistanciaVerticali = int.Parse(difvertint.Text);
+                oNiosh.FMNioshDnumero = double.Parse(txtFND.Text);
+                oNiosh.FMNioshInumero = double.Parse(txtFNI.Text);
+                oNiosh.CMRNioshDnumero = double.Parse(txtCMDnumero.Text);
+                oNiosh.CMRNioshInumero = double.Parse(txtCMInumero.Text);
 
-            var res = oNioshBC.UpdateNiosh1BC(oNiosh);
-            MessageBox.Show("Carga Guardada");
+                var res = oNioshBC.UpdateNiosh1BC(oNiosh);
+                MessageBox.Show("Formulario de Carga guardado");
 
-
-
-
+            }
+            catch { }
+ 
             NIOSHRESULTADO ONIOSHRESULTADO = new NIOSHRESULTADO();
             ONIOSHRESULTADO.Show();
 
@@ -1327,7 +1297,7 @@ namespace TF.WIN
         }
 
 
-        // Resultado pata la Busqueda en la Tabla
+        // Resultado para la Busqueda en la Tabla
 
 
 
@@ -1471,11 +1441,6 @@ namespace TF.WIN
 
         }
 
-
-
- 
-
-
         private void btnObtenerFN_Click(object sender, EventArgs e)
         {
  
@@ -1511,7 +1476,7 @@ namespace TF.WIN
                 oNiosh.DistanciaVerticali = int.Parse(difvertint.Text);
 
                 var res = oNioshBC.UpdateNiosh1BC(oNiosh);
-                MessageBox.Show("FN y FNi Calculado");
+                MessageBox.Show("CMD, CMI, FN y FNi fueron Calculados");
 
             }
             catch { }

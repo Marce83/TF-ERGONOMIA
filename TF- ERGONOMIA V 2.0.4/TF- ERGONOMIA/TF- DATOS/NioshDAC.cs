@@ -89,6 +89,11 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@FrecuenciaNiosh", SqlDbType.Int).Value = oNiosh.FrecuenciaNiosh;
                 sqlCom.Parameters.Add("@DistanciaVerticalD", SqlDbType.Int).Value = oNiosh.DistanciaVerticalD;
                 sqlCom.Parameters.Add("@DistanciaVerticali", SqlDbType.Int).Value = oNiosh.DistanciaVerticali;
+                sqlCom.Parameters.Add("@FMNioshDnumero", SqlDbType.Float).Value = oNiosh.FMNioshDnumero;
+                sqlCom.Parameters.Add("@FMNioshInumero", SqlDbType.Float).Value = oNiosh.FMNioshInumero;
+                sqlCom.Parameters.Add("@CMRNioshDnumero", SqlDbType.Float).Value = oNiosh.CMRNioshDnumero;
+                sqlCom.Parameters.Add("@CMRNioshInumero", SqlDbType.Float).Value = oNiosh.CMRNioshInumero;
+
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();
@@ -97,9 +102,7 @@ namespace TF.DAC
             catch (Exception ex)
             {
                 throw ex;
-
             }
-
          }
 
         public DataTable NioshTablaADestinoDAC(Niosh oNiosh)
@@ -216,7 +219,31 @@ namespace TF.DAC
             }
         }
 
-
+        public DataTable Niosh_ResultadoDAC(Niosh oNiosh)
+        {
+            try
+            {
+                string sqlSentencia = "SP_Niosh_Resultado";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCom.CommandType = CommandType.StoredProcedure;
+                sqlCom.Parameters.Add("@cargaIdNiosh", SqlDbType.Int).Value = oNiosh.cargaIdNiosh;
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
+        }
 
 
 
