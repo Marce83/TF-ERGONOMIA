@@ -1437,3 +1437,14 @@ WHERE  AgarreCM =@AgarreCM
 and DistanciaVerticalCM =@DistanciaVerticalCM
 END
 GO
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_Niosh_Resultado
+@cargaIdNiosh int
+AS
+BEGIN
+	select * from NioshTablaCompleta
+	where cargaIdNiosh=@cargaIdNiosh
+END
+GO
