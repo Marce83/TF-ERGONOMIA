@@ -196,6 +196,7 @@
             this.JSS.TabIndex = 69;
             this.JSS.Text = "Escala de Estres Laboral";
             this.JSS.UseVisualStyleBackColor = false;
+            this.JSS.Click += new System.EventHandler(this.JSS_Click);
             // 
             // Metodos
             // 

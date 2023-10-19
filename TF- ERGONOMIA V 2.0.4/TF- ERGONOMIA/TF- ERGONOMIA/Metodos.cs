@@ -55,5 +55,11 @@ namespace TF.WIN
             NIOSHRESULTADO ONIOSHRESULTADO = new NIOSHRESULTADO();
             ONIOSHRESULTADO.Show(); 
         }
+
+        private void JSS_Click(object sender, EventArgs e)
+        {
+            JSS ojss = new JSS();
+            ojss.Show();
+        }
     }
 }
