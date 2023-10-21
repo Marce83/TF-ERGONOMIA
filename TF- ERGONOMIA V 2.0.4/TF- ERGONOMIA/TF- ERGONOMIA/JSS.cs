@@ -109,6 +109,17 @@ namespace TF.WIN
             as6.Items.Add(new ComboBoxOption("De acuerdo", 3));
             as6.Items.Add(new ComboBoxOption("Siempre", 4));
 
+
+
+
+
+
+
+
+
+
+
+
         }
 
         private void d1_SelectedIndexChanged(object sender, EventArgs e)
@@ -291,19 +302,78 @@ namespace TF.WIN
 
         private void btnResultado_Click(object sender, EventArgs e)
         {
+            try
+            {
+                int c1 = int.Parse(txtc1.Text);
+                int c2 = int.Parse(txtc2.Text);
+                int c3 = int.Parse(txtc3.Text);
+                int c4 = int.Parse(txtc4.Text);
+                int c5 = int.Parse(txtc5.Text);
+                int c6 = int.Parse(txtc6.Text);
+                int d1 = int.Parse(txtd1.Text);
+                int d2 = int.Parse(txtd2.Text);
+                int d3 = int.Parse(txtd3.Text);
+                int d4 = int.Parse(txtd4.Text);
+                int d5 = int.Parse(txtd5.Text);
+                int as1 = int.Parse(txtas1.Text);
+                int as2 = int.Parse(txtas2.Text);
+                int as3 = int.Parse(txtas3.Text);
+                int as4 = int.Parse(txtas4.Text);
+                int as5 = int.Parse(txtas5.Text);
+                int as6 = int.Parse(txtas6.Text);
 
-            int Demanda = 0;
-            int Control = 0;
-            int ApoyoSocial = 0;
+                int Control = c1 + c2 + c3 + c4 + c5 + c6;
+                txtControl.Text = Control.ToString();
+
+                int Demanda = d1 + d2 + d3 + d4 + d5;
+                txtDemanda.Text = Demanda.ToString();
+
+                int ApoyoSocial = as1 + as2 + as3 + as4 + as5 + as6;
+                txtApoyoSocial.Text = ApoyoSocial.ToString();
 
 
-            Control = int.Parse(txtc1.Text + txtc2.Text+ txtc3.Text + txtc4.Text + txtc5.Text+ txtc6.Text);
-            txtControl.Text = Control.ToString();
-            Demanda = int.Parse(txtd1.Text+ txtd2.Text +txtd3.Text + txtd4.Text + txtd5.Text);
-            txtDemanda.Text = Demanda.ToString();
-            ApoyoSocial = int.Parse(txtas1.Text+ txtas2.Text+ txtas3.Text+ txtas4.Text+ txtas5.Text+ txtas6.Text);
-            txtApoyoSocial.Text = ApoyoSocial.ToString();
+                if (Control < 18) { txtControlrdo.Text = "Bajo Control"; }
+                else if (Control >= 18) { txtControlrdo.Text = "Alto Control"; }
+
+                if (Demanda < 15) { txtDemandardo.Text = "Baja Demanda"; }
+                else if (Demanda >= 15) { txtDemandardo.Text = "Alta Demanda"; }
+
+                if (ApoyoSocial < 18) { txtApoyoSocialrdo.Text = "Bajo Apoyo Social"; }
+                else if (ApoyoSocial >= 18) { txtApoyoSocialrdo.Text = "Alto Apoyo Social"; }
+
+
+
+
+
+                     if (Demanda < 15 && Control < 18 && ApoyoSocial < 18) { txtActuacionJSS.Text ="Trabajo Pasivo y perjudicial para la salud, con bajo Apoyo Social" ; }
+                else if (Demanda < 15 && Control < 18 && ApoyoSocial >= 18) { txtActuacionJSS.Text = "Trabajo Pasivo y perjudicial para la salud, con Alto Apoyo Social"; }
+                else if (Demanda < 15 && Control >= 18 && ApoyoSocial < 18) { txtActuacionJSS.Text = "Trabajo Pasivo y perjudicial para la salud, con Bajo Apoyo Social"; }
+                else if (Demanda < 15 && Control >= 18 && ApoyoSocial >= 18) { txtActuacionJSS.Text = "Trabajo Pasivo y perjudicial para la salud, con Alto Apoyo Social"; }
+                else if (Demanda >= 15 && Control < 18 && ApoyoSocial < 18) { txtActuacionJSS.Text = "Alto Nivel de estrés y perjudicial para la salud y con bajo Apoyo Social"; }
+                else if (Demanda >= 15 && Control < 18 && ApoyoSocial >= 18) { txtActuacionJSS.Text = "Alto Nivel de estrés y perjudicial para la salud y con Alto Apoyo Social"; }
+                else if (Demanda >= 15 && Control >= 18 && ApoyoSocial < 18) { txtActuacionJSS.Text = "Alto Nivel de estrés y perjudicial para la salud y con Bajo Apoyo Social"; }
+                else if (Demanda >= 15 && Control >= 18 && ApoyoSocial >= 18) { txtActuacionJSS.Text = "Alto Nivel de estrés y perjudicial para la salud y con Alto Apoyo Social"; }
+               
+
+
+            }
+            catch { }
+
+
+
+
+
 
         }
+
+
+
+      
+
+
+
+
+        }
+
+
     }
-}

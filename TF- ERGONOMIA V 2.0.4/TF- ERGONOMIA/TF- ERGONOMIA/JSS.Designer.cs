@@ -84,7 +84,7 @@
             this.txtDemanda = new MaterialSkin.Controls.MaterialTextBox();
             this.txtControl = new MaterialSkin.Controls.MaterialTextBox();
             this.txtApoyoSocial = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtActuacionNIOSH = new System.Windows.Forms.TextBox();
+            this.txtActuacionJSS = new System.Windows.Forms.TextBox();
             this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
             this.btnResultado = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -105,6 +105,9 @@
             this.txtas4 = new MaterialSkin.Controls.MaterialTextBox();
             this.txtas5 = new MaterialSkin.Controls.MaterialTextBox();
             this.txtas6 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtApoyoSocialrdo = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtControlrdo = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtDemandardo = new MaterialSkin.Controls.MaterialTextBox();
             this.SuspendLayout();
             // 
             // materialTextBox4
@@ -990,23 +993,23 @@
             this.txtApoyoSocial.Text = "";
             this.txtApoyoSocial.TrailingIcon = null;
             // 
-            // txtActuacionNIOSH
+            // txtActuacionJSS
             // 
-            this.txtActuacionNIOSH.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtActuacionNIOSH.Enabled = false;
-            this.txtActuacionNIOSH.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtActuacionNIOSH.Location = new System.Drawing.Point(478, 1839);
-            this.txtActuacionNIOSH.Multiline = true;
-            this.txtActuacionNIOSH.Name = "txtActuacionNIOSH";
-            this.txtActuacionNIOSH.Size = new System.Drawing.Size(434, 240);
-            this.txtActuacionNIOSH.TabIndex = 249;
+            this.txtActuacionJSS.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtActuacionJSS.Enabled = false;
+            this.txtActuacionJSS.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtActuacionJSS.Location = new System.Drawing.Point(39, 2062);
+            this.txtActuacionJSS.Multiline = true;
+            this.txtActuacionJSS.Name = "txtActuacionJSS";
+            this.txtActuacionJSS.Size = new System.Drawing.Size(1091, 96);
+            this.txtActuacionJSS.TabIndex = 249;
             // 
             // materialLabel15
             // 
             this.materialLabel15.AutoSize = true;
             this.materialLabel15.Depth = 0;
             this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel15.Location = new System.Drawing.Point(475, 1800);
+            this.materialLabel15.Location = new System.Drawing.Point(36, 2023);
             this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel15.Name = "materialLabel15";
             this.materialLabel15.Size = new System.Drawing.Size(117, 19);
@@ -1040,7 +1043,7 @@
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(370, 2125);
+            this.btnSalir.Location = new System.Drawing.Point(456, 2185);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(155, 43);
@@ -1071,7 +1074,7 @@
             this.txtd2.AnimateReadOnly = false;
             this.txtd2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtd2.Depth = 0;
-            this.txtd2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtd2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtd2.LeadingIcon = null;
             this.txtd2.Location = new System.Drawing.Point(1030, 447);
             this.txtd2.MaxLength = 50;
@@ -1088,7 +1091,7 @@
             this.txtd3.AnimateReadOnly = false;
             this.txtd3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtd3.Depth = 0;
-            this.txtd3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtd3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtd3.LeadingIcon = null;
             this.txtd3.Location = new System.Drawing.Point(1030, 530);
             this.txtd3.MaxLength = 50;
@@ -1105,7 +1108,7 @@
             this.txtd4.AnimateReadOnly = false;
             this.txtd4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtd4.Depth = 0;
-            this.txtd4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtd4.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtd4.LeadingIcon = null;
             this.txtd4.Location = new System.Drawing.Point(1030, 614);
             this.txtd4.MaxLength = 50;
@@ -1122,7 +1125,7 @@
             this.txtd5.AnimateReadOnly = false;
             this.txtd5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtd5.Depth = 0;
-            this.txtd5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtd5.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtd5.LeadingIcon = null;
             this.txtd5.Location = new System.Drawing.Point(1030, 691);
             this.txtd5.MaxLength = 50;
@@ -1139,7 +1142,7 @@
             this.txtc1.AnimateReadOnly = false;
             this.txtc1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtc1.Depth = 0;
-            this.txtc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtc1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtc1.LeadingIcon = null;
             this.txtc1.Location = new System.Drawing.Point(1030, 874);
             this.txtc1.MaxLength = 50;
@@ -1156,7 +1159,7 @@
             this.txtc2.AnimateReadOnly = false;
             this.txtc2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtc2.Depth = 0;
-            this.txtc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtc2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtc2.LeadingIcon = null;
             this.txtc2.Location = new System.Drawing.Point(1030, 941);
             this.txtc2.MaxLength = 50;
@@ -1173,7 +1176,7 @@
             this.txtc3.AnimateReadOnly = false;
             this.txtc3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtc3.Depth = 0;
-            this.txtc3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtc3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtc3.LeadingIcon = null;
             this.txtc3.Location = new System.Drawing.Point(1030, 1006);
             this.txtc3.MaxLength = 50;
@@ -1190,7 +1193,7 @@
             this.txtc4.AnimateReadOnly = false;
             this.txtc4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtc4.Depth = 0;
-            this.txtc4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtc4.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtc4.LeadingIcon = null;
             this.txtc4.Location = new System.Drawing.Point(1030, 1071);
             this.txtc4.MaxLength = 50;
@@ -1207,7 +1210,7 @@
             this.txtc5.AnimateReadOnly = false;
             this.txtc5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtc5.Depth = 0;
-            this.txtc5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtc5.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtc5.LeadingIcon = null;
             this.txtc5.Location = new System.Drawing.Point(1030, 1148);
             this.txtc5.MaxLength = 50;
@@ -1224,7 +1227,7 @@
             this.txtc6.AnimateReadOnly = false;
             this.txtc6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtc6.Depth = 0;
-            this.txtc6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtc6.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtc6.LeadingIcon = null;
             this.txtc6.Location = new System.Drawing.Point(1030, 1216);
             this.txtc6.MaxLength = 50;
@@ -1241,7 +1244,7 @@
             this.txtas1.AnimateReadOnly = false;
             this.txtas1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtas1.Depth = 0;
-            this.txtas1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtas1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtas1.LeadingIcon = null;
             this.txtas1.Location = new System.Drawing.Point(1030, 1377);
             this.txtas1.MaxLength = 50;
@@ -1258,7 +1261,7 @@
             this.txtas2.AnimateReadOnly = false;
             this.txtas2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtas2.Depth = 0;
-            this.txtas2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtas2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtas2.LeadingIcon = null;
             this.txtas2.Location = new System.Drawing.Point(1030, 1443);
             this.txtas2.MaxLength = 50;
@@ -1275,7 +1278,7 @@
             this.txtas3.AnimateReadOnly = false;
             this.txtas3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtas3.Depth = 0;
-            this.txtas3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtas3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtas3.LeadingIcon = null;
             this.txtas3.Location = new System.Drawing.Point(1030, 1507);
             this.txtas3.MaxLength = 50;
@@ -1292,7 +1295,7 @@
             this.txtas4.AnimateReadOnly = false;
             this.txtas4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtas4.Depth = 0;
-            this.txtas4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtas4.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtas4.LeadingIcon = null;
             this.txtas4.Location = new System.Drawing.Point(1030, 1573);
             this.txtas4.MaxLength = 50;
@@ -1309,7 +1312,7 @@
             this.txtas5.AnimateReadOnly = false;
             this.txtas5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtas5.Depth = 0;
-            this.txtas5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtas5.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtas5.LeadingIcon = null;
             this.txtas5.Location = new System.Drawing.Point(1030, 1638);
             this.txtas5.MaxLength = 50;
@@ -1326,7 +1329,7 @@
             this.txtas6.AnimateReadOnly = false;
             this.txtas6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtas6.Depth = 0;
-            this.txtas6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtas6.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtas6.LeadingIcon = null;
             this.txtas6.Location = new System.Drawing.Point(1030, 1705);
             this.txtas6.MaxLength = 50;
@@ -1338,6 +1341,57 @@
             this.txtas6.Text = "";
             this.txtas6.TrailingIcon = null;
             // 
+            // txtApoyoSocialrdo
+            // 
+            this.txtApoyoSocialrdo.AnimateReadOnly = false;
+            this.txtApoyoSocialrdo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtApoyoSocialrdo.Depth = 0;
+            this.txtApoyoSocialrdo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtApoyoSocialrdo.LeadingIcon = null;
+            this.txtApoyoSocialrdo.Location = new System.Drawing.Point(511, 1955);
+            this.txtApoyoSocialrdo.MaxLength = 50;
+            this.txtApoyoSocialrdo.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtApoyoSocialrdo.Multiline = false;
+            this.txtApoyoSocialrdo.Name = "txtApoyoSocialrdo";
+            this.txtApoyoSocialrdo.Size = new System.Drawing.Size(619, 50);
+            this.txtApoyoSocialrdo.TabIndex = 271;
+            this.txtApoyoSocialrdo.Text = "";
+            this.txtApoyoSocialrdo.TrailingIcon = null;
+            // 
+            // txtControlrdo
+            // 
+            this.txtControlrdo.AnimateReadOnly = false;
+            this.txtControlrdo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtControlrdo.Depth = 0;
+            this.txtControlrdo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtControlrdo.LeadingIcon = null;
+            this.txtControlrdo.Location = new System.Drawing.Point(511, 1899);
+            this.txtControlrdo.MaxLength = 50;
+            this.txtControlrdo.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtControlrdo.Multiline = false;
+            this.txtControlrdo.Name = "txtControlrdo";
+            this.txtControlrdo.Size = new System.Drawing.Size(619, 50);
+            this.txtControlrdo.TabIndex = 270;
+            this.txtControlrdo.Text = "";
+            this.txtControlrdo.TrailingIcon = null;
+            // 
+            // txtDemandardo
+            // 
+            this.txtDemandardo.AnimateReadOnly = false;
+            this.txtDemandardo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDemandardo.Depth = 0;
+            this.txtDemandardo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDemandardo.LeadingIcon = null;
+            this.txtDemandardo.Location = new System.Drawing.Point(511, 1842);
+            this.txtDemandardo.MaxLength = 50;
+            this.txtDemandardo.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDemandardo.Multiline = false;
+            this.txtDemandardo.Name = "txtDemandardo";
+            this.txtDemandardo.Size = new System.Drawing.Size(619, 50);
+            this.txtDemandardo.TabIndex = 269;
+            this.txtDemandardo.Text = "";
+            this.txtDemandardo.TrailingIcon = null;
+            // 
             // JSS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1345,6 +1399,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1177, 1102);
+            this.Controls.Add(this.txtApoyoSocialrdo);
+            this.Controls.Add(this.txtControlrdo);
+            this.Controls.Add(this.txtDemandardo);
             this.Controls.Add(this.txtas6);
             this.Controls.Add(this.txtas5);
             this.Controls.Add(this.txtas4);
@@ -1364,7 +1421,7 @@
             this.Controls.Add(this.txtd1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnResultado);
-            this.Controls.Add(this.txtActuacionNIOSH);
+            this.Controls.Add(this.txtActuacionJSS);
             this.Controls.Add(this.materialLabel15);
             this.Controls.Add(this.txtApoyoSocial);
             this.Controls.Add(this.txtControl);
@@ -1488,7 +1545,7 @@
         private MaterialSkin.Controls.MaterialTextBox txtDemanda;
         private MaterialSkin.Controls.MaterialTextBox txtControl;
         private MaterialSkin.Controls.MaterialTextBox txtApoyoSocial;
-        private System.Windows.Forms.TextBox txtActuacionNIOSH;
+        private System.Windows.Forms.TextBox txtActuacionJSS;
         private MaterialSkin.Controls.MaterialLabel materialLabel15;
         private System.Windows.Forms.Button btnResultado;
         private System.Windows.Forms.Button btnSalir;
@@ -1509,5 +1566,8 @@
         private MaterialSkin.Controls.MaterialTextBox txtas4;
         private MaterialSkin.Controls.MaterialTextBox txtas5;
         private MaterialSkin.Controls.MaterialTextBox txtas6;
+        private MaterialSkin.Controls.MaterialTextBox txtApoyoSocialrdo;
+        private MaterialSkin.Controls.MaterialTextBox txtControlrdo;
+        private MaterialSkin.Controls.MaterialTextBox txtDemandardo;
     }
 }
