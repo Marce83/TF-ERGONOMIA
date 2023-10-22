@@ -58,8 +58,8 @@ namespace TF.WIN
 
         private void JSS_Click(object sender, EventArgs e)
         {
-            JSS ojss = new JSS();
-            ojss.Show();
+            JSSPORTADA oJSSPORTADA = new JSSPORTADA();
+            oJSSPORTADA.Show();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using MaterialSkin.Controls;
+using Org.BouncyCastle.Asn1.Crmf;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,7 @@ using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TF.BC;
 using TF.ENTITIES;
 
 namespace TF.WIN
@@ -115,7 +117,7 @@ namespace TF.WIN
 
 
 
-
+            ObtenerMaximoIdJSS();
 
 
 
@@ -169,7 +171,6 @@ namespace TF.WIN
             double d5r = ObtenerNumeroSeleccionado(d5);
             txtd5.Text = d5r.ToString();
         }
-
         private void c1_SelectedIndexChanged(object sender, EventArgs e)
         {
             c1resultado();
@@ -224,7 +225,6 @@ namespace TF.WIN
             double c6r = ObtenerNumeroSeleccionado(c6);
             txtc6.Text = c6r.ToString();
         }
-
         private void as1_SelectedIndexChanged(object sender, EventArgs e)
         {
             as1resultado();
@@ -279,7 +279,6 @@ namespace TF.WIN
             double as6r = ObtenerNumeroSeleccionado(as6);
             txtas6.Text = as6r.ToString();
         }
-
         private int ObtenerNumeroSeleccionado(MaterialComboBox comboBox)
         {
             if (comboBox.SelectedItem != null)
@@ -294,12 +293,10 @@ namespace TF.WIN
 
             return 0;
         }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
         }
-
         private void btnResultado_Click(object sender, EventArgs e)
         {
             try
@@ -366,14 +363,50 @@ namespace TF.WIN
 
         }
 
+        private void btnGuardarNiosh1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                jss Ojss = new jss();
+                JssBC oJssBC = new JssBC();
+
+                Ojss.cargaIdJSS = int.Parse(txtcargaidJSS.Text);
+                Ojss.DemandaJss = int.Parse(txtDemanda.Text);
+                Ojss.ControlJss = int.Parse(txtControl.Text);
+                Ojss.ApoyoSocialJss = int.Parse(txtApoyoSocial.Text);
+                Ojss.DemandaRdo = txtDemandardo.Text;
+                Ojss.ControlRdo = txtControlrdo.Text;
+                Ojss.ApoyoSocialRdo = txtApoyoSocialrdo.Text;
+
+                var res = oJssBC.UpdateJssBC(Ojss);
+                MessageBox.Show("Análisis JSS guardado");
+
+            }
+            catch { }
+
+        }
 
 
-      
+        public void ObtenerMaximoIdJSS()
+        {
+            JssBC oJssBC = new JssBC();
+            jss Ojss = new jss();
+            DataTable dt200 = oJssBC.JssMaxIDBC(Ojss);
 
-
-
+            if (dt200.Rows.Count > 0)
+            {
+                int maxIdJSS = Convert.ToInt32(dt200.Rows[0]["cargaIdJSS"]);
+                txtcargaidJSS.Text = maxIdJSS.ToString();
+            }
 
         }
 
 
     }
+
+
+
+ 
+
+
+}

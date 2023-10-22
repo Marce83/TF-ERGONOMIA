@@ -1448,3 +1448,70 @@ BEGIN
 	where cargaIdNiosh=@cargaIdNiosh
 END
 GO
+
+
+--------------------------JSS-----------------------------
+
+
+use ProyectoFinal
+go
+CREATE TABLE JssTablaCompleta(
+cargaIdJSS INT NOT NULL PRIMARY KEY IDENTITY (1,1),
+CUITJSS nvarchar(11),
+PuestoDeTrabajoJSS NVARCHAR(20),
+DniEmpleadoJSS nvarchar(11),
+EmpleadoJSS nvarchar(30),
+EmpresaJSS nvarchar(30),
+DemandaJss int,
+ControlJss int,
+ApoyoSocialJss int,
+DemandaRdo nvarchar(20),
+ControlRdo nvarchar(20),
+ApoyoSocialRdo nvarchar(20)
+)
+GO
+
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_JSS_Insert
+@CUITJSS nvarchar(11),
+@PuestoDeTrabajoJSS NVARCHAR(20),
+@DniEmpleadoJSS nvarchar(11),
+@EmpleadoJSS nvarchar(30),
+@EmpresaJSS nvarchar(30)
+AS
+BEGIN
+	insert into JssTablaCompleta (CUITJSS,PuestoDeTrabajoJSS,DniEmpleadoJSS,EmpleadoJSS,EmpresaJSS) 
+	VALUES(@CUITJSS,@PuestoDeTrabajoJSS,@DniEmpleadoJSS,@EmpleadoJSS,@EmpresaJSS)
+END
+GO
+
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_JSS_update1
+@cargaIdJSS int,
+@DemandaJss int,
+@ControlJss int,
+@ApoyoSocialJss int,
+@DemandaRdo nvarchar(20),
+@ControlRdo nvarchar(20),
+@ApoyoSocialRdo nvarchar(20)
+
+AS
+BEGIN
+	update JssTablaCompleta set DemandaJss=@DemandaJss, ControlJss =@ControlJss, ApoyoSocialJss =@ApoyoSocialJss, DemandaRdo = @DemandaRdo, ControlRdo = @ControlRdo, ApoyoSocialRdo = @ApoyoSocialRdo
+	where cargaIdJSS=@cargaIdJSS
+END
+GO
+
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_JSS_MaxID
+AS
+BEGIN
+	select max(cargaIdJSS)as cargaIdJSS from JssTablaCompleta
+END
+GO
