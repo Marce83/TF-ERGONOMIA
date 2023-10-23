@@ -1526,3 +1526,28 @@ BEGIN
 	where cargaIdJSS=@cargaIdJSS
 END
 GO
+
+
+
+
+-------------------estadisticas ------------
+--empresas
+select count (CUIT) from Empresas
+select CUIT,Nombre, count (CUIT) from Empresas group by CUIT,Nombre
+select Provincia, count (CUIT) from Empresas group by Provincia
+select Provincia,Localidad, count (CUIT) from Empresas group by Provincia,Localidad
+
+--empleados
+select count (DNI) from Empleados
+select DNI, count (DNI) from Empleados group by DNI
+select ae.IdEmpresa,ac.Nombre, count (ae.DNI) from Empleados ae, Empresas ac where ae.IdEmpresa = ac.IdEmpresa group by ae.IdEmpresa,ac.Nombre
+
+--jss
+select count (cargaIdJSS) from JssTablaCompleta
+select af.CUITJSS , rc.Nombre, count (af.cargaIdJSS) from JssTablaCompleta af, Empresas rc where af.CUITJSS = rc.CUIT  group by af.CUITJSS, rc.Nombre
+
+--rula
+
+
+--Reba
+
