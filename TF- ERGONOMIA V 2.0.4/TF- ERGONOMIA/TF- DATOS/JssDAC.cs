@@ -42,7 +42,6 @@ namespace TF.DAC
 
 
         }
-
         public int UpdateJSSDAC(jss Ojss)
         {
             try
@@ -73,7 +72,6 @@ namespace TF.DAC
 
 
         }
-
         public DataTable JssMaxIDDAC(jss Ojss)
         {
             string sqlSentencia = "SP_JSS_MaxID";
@@ -90,9 +88,31 @@ namespace TF.DAC
 
             return ds.Tables[0];
         }
-
-
-
+        public DataTable Jss_ResultadoDAC(jss Ojss)
+        {
+            try
+            {
+                string sqlSentencia = "SP_JSS_Resultado";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCom.CommandType = CommandType.StoredProcedure;
+                sqlCom.Parameters.Add("@cargaIdJSS", SqlDbType.Int).Value = Ojss.cargaIdJSS;
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
+        }
 
 
 

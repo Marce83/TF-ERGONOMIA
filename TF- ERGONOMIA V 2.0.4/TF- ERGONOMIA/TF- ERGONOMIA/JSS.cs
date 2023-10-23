@@ -338,10 +338,6 @@ namespace TF.WIN
                 if (ApoyoSocial < 18) { txtApoyoSocialrdo.Text = "Bajo Apoyo Social"; }
                 else if (ApoyoSocial >= 18) { txtApoyoSocialrdo.Text = "Alto Apoyo Social"; }
 
-
-
-
-
                      if (Demanda < 15 && Control < 18 && ApoyoSocial < 18) { txtActuacionJSS.Text ="Trabajo Pasivo y perjudicial para la salud, con bajo Apoyo Social" ; }
                 else if (Demanda < 15 && Control < 18 && ApoyoSocial >= 18) { txtActuacionJSS.Text = "Trabajo Pasivo y perjudicial para la salud, con Alto Apoyo Social"; }
                 else if (Demanda < 15 && Control >= 18 && ApoyoSocial < 18) { txtActuacionJSS.Text = "Trabajo Pasivo y perjudicial para la salud, con Bajo Apoyo Social"; }
@@ -355,11 +351,6 @@ namespace TF.WIN
 
             }
             catch { }
-
-
-
-
-
 
         }
 
@@ -383,6 +374,13 @@ namespace TF.WIN
 
             }
             catch { }
+
+            JSSRESULTADO oJSSRESULTADO = new JSSRESULTADO();
+            oJSSRESULTADO.Show();
+
+
+            Close();
+
 
         }
 

@@ -16,22 +16,23 @@ namespace TF.BC
             JssDAC oJssDAC = new JssDAC();
             return oJssDAC.InsertJSSPORTADADAC(Ojss);
         }
-
         public int UpdateJssBC(jss Ojss)
         {
             JssDAC oJssDAC = new JssDAC();
             return oJssDAC.UpdateJSSDAC(Ojss);
         }
-
         public DataTable JssMaxIDBC(jss Ojss)
         {
             JssDAC oJssDAC = new JssDAC();
             DataTable dt = oJssDAC.JssMaxIDDAC(Ojss);
             return dt;
         }
-
-
-
+        public DataTable Jss_ResultadoBC(jss Ojss)
+        {
+            JssDAC oJssDAC = new JssDAC();
+            DataTable dt = oJssDAC.Jss_ResultadoDAC(Ojss);
+            return dt;
+        }
 
 
 

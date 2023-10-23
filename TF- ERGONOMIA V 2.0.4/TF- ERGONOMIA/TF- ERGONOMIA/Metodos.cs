@@ -61,5 +61,11 @@ namespace TF.WIN
             JSSPORTADA oJSSPORTADA = new JSSPORTADA();
             oJSSPORTADA.Show();
         }
+
+        private void JSSRESULTADO_Click(object sender, EventArgs e)
+        {
+            JSSRESULTADO oJSSRESULTADO = new JSSRESULTADO();
+            oJSSRESULTADO.Show();
+        }
     }
 }

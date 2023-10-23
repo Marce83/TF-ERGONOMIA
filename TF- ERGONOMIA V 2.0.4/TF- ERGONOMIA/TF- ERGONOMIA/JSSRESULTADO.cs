@@ -23,7 +23,7 @@ namespace TF.WIN
         private void JSSRESULTADO_Load(object sender, EventArgs e)
         {
 
-            ObtenerMaximoIdJSS();
+           
 
 
 
@@ -53,81 +53,92 @@ namespace TF.WIN
             try
             {
 
-                Niosh oNiosh = new Niosh();
-                oNiosh.cargaIdNiosh = Convert.ToInt32(txtcargaidrebaresultado.Text);
-                NioshBC oNioshBC = new NioshBC();
+                jss Ojss = new jss();
+                Ojss.cargaIdJSS  = Convert.ToInt32(txtcargaidJSS.Text);
+                JssBC oJssBC = new JssBC();
 
-                DataTable dt109 = oNioshBC.Niosh_ResultadoBC(oNiosh);
+                DataTable dt225 = oJssBC.Jss_ResultadoBC(Ojss);
 
-                if (dt109.Rows.Count > 0)
+                if (dt225.Rows.Count > 0)
                 {
-                    string resultado = dt109.Rows[0][6].ToString();
-                    txtHMD.Text = resultado;
+                    string resultado = dt225.Rows[0][1].ToString();
+                    txtCuit.Text = resultado;
 
-                    string resultado1 = dt109.Rows[0][7].ToString();
-                    txtHMI.Text = resultado1;
+                    string resultado1 = dt225.Rows[0][2].ToString();
+                    txtpuestotrabajojss.Text = resultado1;
 
-                    string resultado2 = dt109.Rows[0][8].ToString();
-                    txtVMD.Text = resultado2;
+                    string resultado2 = dt225.Rows[0][3].ToString();
+                    txtDMAR.Text = resultado2;
 
-                    string resultado3 = dt109.Rows[0][9].ToString();
-                    txtVMI.Text = resultado3;
+                    string resultado3 = dt225.Rows[0][4].ToString();
+                    txtEmpleadojss.Text = resultado3;
 
-                    string resultado4 = dt109.Rows[0][10].ToString();
-                    txtDM.Text = resultado4;
+                    string resultado4 = dt225.Rows[0][5].ToString();
+                    txtEmpresajss.Text = resultado4;
 
-                    string resultado5 = dt109.Rows[0][11].ToString();
-                    txtAMD.Text = resultado5;
+                    string resultado5 = dt225.Rows[0][6].ToString();
+                    txtDMA.Text = resultado5;
 
-                    string resultado6 = dt109.Rows[0][12].ToString();
-                    txtAMI.Text = resultado6;
+                    string resultado6 = dt225.Rows[0][7].ToString();
+                    txtCTL.Text = resultado6;
 
-                    string resultado7 = dt109.Rows[0][24].ToString();
-                    txtFMD.Text = resultado7;
+                    string resultado7 = dt225.Rows[0][8].ToString();
+                    txtAS.Text = resultado7;
 
-                    string resultado8 = dt109.Rows[0][25].ToString();
-                    txtFMI.Text = resultado8;
+                    string resultado8 = dt225.Rows[0][9].ToString();
+                    txtDMAR.Text = resultado8;
 
-                    string resultado9 = dt109.Rows[0][26].ToString();
-                    txtCMD.Text = resultado9;
+                    string resultado9 = dt225.Rows[0][10].ToString();
+                    txtCTLR.Text = resultado9;
 
-                    string resultado10 = dt109.Rows[0][27].ToString();
-                    txtCMI.Text = resultado10;
-
-                    string resultado11 = dt109.Rows[0][1].ToString();
-                    txtCuit.Text = resultado11;
-
-                    string resultado16 = dt109.Rows[0][20].ToString();
-                    txtLC.Text = resultado16;
-
-                    string resultado12 = dt109.Rows[0][2].ToString();
-                    txtpuestotrabajoNiosh.Text = resultado12;
-
-                    string resultado14 = dt109.Rows[0][4].ToString();
-                    txtEmpleadoNiosh.Text = resultado14;
-
-                    string resultado15 = dt109.Rows[0][5].ToString();
-                    txtEmpresaNiosh.Text = resultado15;
-
+                    string resultado10 = dt225.Rows[0][11].ToString();
+                    txtASR.Text = resultado10;
                 }
 
 
             }
 
             catch { }
-
         }
-
-
-
-
-
-
 
 
         private void btnRecuperarCarga_Click(object sender, EventArgs e)
         {
             JssRescatar();
+            ObtenerMaximoIdJSS();
+
+            try
+            {
+                int c1 = int.Parse(txtCTL.Text);
+       
+                int d1 = int.Parse(txtDMA.Text);
+               
+                int as6 = int.Parse(txtAS.Text);
+
+                int Control = c1;
+
+                int Demanda = d1;
+             
+                int ApoyoSocial = as6;
+                
+                if (Demanda < 15 && Control < 18 && ApoyoSocial < 18) { txtActuacionJSS1.Text = "Trabajo Pasivo y perjudicial para la salud, con bajo Apoyo Social"; }
+                else if (Demanda < 15 && Control < 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Trabajo Pasivo y perjudicial para la salud, con Alto Apoyo Social"; }
+                else if (Demanda < 15 && Control >= 18 && ApoyoSocial < 18) { txtActuacionJSS1.Text = "Trabajo Pasivo y perjudicial para la salud, con Bajo Apoyo Social"; }
+                else if (Demanda < 15 && Control >= 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Trabajo Pasivo y perjudicial para la salud, con Alto Apoyo Social"; }
+                else if (Demanda >= 15 && Control < 18 && ApoyoSocial < 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con bajo Apoyo Social"; }
+                else if (Demanda >= 15 && Control < 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con Alto Apoyo Social"; }
+                else if (Demanda >= 15 && Control >= 18 && ApoyoSocial < 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con Bajo Apoyo Social"; }
+                else if (Demanda >= 15 && Control >= 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con Alto Apoyo Social"; }
+
+            }
+            catch { }
+
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Close();
+
         }
     }
-}
+    }

@@ -1515,3 +1515,14 @@ BEGIN
 	select max(cargaIdJSS)as cargaIdJSS from JssTablaCompleta
 END
 GO
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_JSS_Resultado
+@cargaIdJSS int
+AS
+BEGIN
+	select * from JssTablaCompleta
+	where cargaIdJSS=@cargaIdJSS
+END
+GO

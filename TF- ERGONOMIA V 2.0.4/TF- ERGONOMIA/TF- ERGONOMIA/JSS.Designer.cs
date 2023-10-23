@@ -1306,7 +1306,7 @@
             this.btnGuardarNiosh1.Name = "btnGuardarNiosh1";
             this.btnGuardarNiosh1.Size = new System.Drawing.Size(155, 43);
             this.btnGuardarNiosh1.TabIndex = 272;
-            this.btnGuardarNiosh1.Text = "Guardar";
+            this.btnGuardarNiosh1.Text = "Guardar e Ir al Resumen";
             this.btnGuardarNiosh1.UseVisualStyleBackColor = false;
             this.btnGuardarNiosh1.Click += new System.EventHandler(this.btnGuardarNiosh1_Click);
             // 
