@@ -239,5 +239,9 @@ namespace TF.WIN
             else txtPoblacion.Text = "15";
         }
 
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

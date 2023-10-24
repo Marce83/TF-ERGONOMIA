@@ -77,6 +77,7 @@
             this.materialLabel24 = new MaterialSkin.Controls.MaterialLabel();
             this.cboControl = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel25 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // materialLabel4
@@ -887,7 +888,7 @@
             this.cboPoblacion.DropDownHeight = 174;
             this.cboPoblacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPoblacion.DropDownWidth = 121;
-            this.cboPoblacion.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboPoblacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.cboPoblacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cboPoblacion.FormattingEnabled = true;
             this.cboPoblacion.IntegralHeight = false;
@@ -1066,6 +1067,24 @@
             this.materialLabel25.TabIndex = 281;
             this.materialLabel25.Text = "¿Hay control en la Carga?";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.Location = new System.Drawing.Point(946, 410);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(155, 43);
+            this.btnSalir.TabIndex = 283;
+            this.btnSalir.Text = "Volver al Menu Principal";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // NIOSHRESULTADO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1074,6 +1093,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1247, 750);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.cboControl);
             this.Controls.Add(this.materialLabel25);
             this.Controls.Add(this.materialLabel24);
@@ -1125,7 +1145,9 @@
             this.Controls.Add(this.txtCuit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NIOSHRESULTADO";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.NIOSHRESULTADO_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1183,5 +1205,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel24;
         private MaterialSkin.Controls.MaterialComboBox cboControl;
         private MaterialSkin.Controls.MaterialLabel materialLabel25;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

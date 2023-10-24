@@ -58,6 +58,7 @@
             // 
             // txtDMAR
             // 
+            this.txtDMAR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDMAR.AnimateReadOnly = false;
             this.txtDMAR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtDMAR.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -67,7 +68,7 @@
             this.txtDMAR.HideSelection = true;
             this.txtDMAR.LeadingIcon = null;
             this.txtDMAR.LeaveOnEnterKey = true;
-            this.txtDMAR.Location = new System.Drawing.Point(161, 387);
+            this.txtDMAR.Location = new System.Drawing.Point(171, 378);
             this.txtDMAR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDMAR.MaxLength = 32767;
             this.txtDMAR.MouseState = MaterialSkin.MouseState.OUT;
@@ -89,10 +90,11 @@
             // 
             // materialLabel16
             // 
+            this.materialLabel16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel16.AutoSize = true;
             this.materialLabel16.Depth = 0;
             this.materialLabel16.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel16.Location = new System.Drawing.Point(602, 301);
+            this.materialLabel16.Location = new System.Drawing.Point(619, 292);
             this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel16.Name = "materialLabel16";
             this.materialLabel16.Size = new System.Drawing.Size(111, 19);
@@ -101,6 +103,7 @@
             // 
             // txtAS
             // 
+            this.txtAS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtAS.AnimateReadOnly = false;
             this.txtAS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtAS.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -110,7 +113,7 @@
             this.txtAS.HideSelection = true;
             this.txtAS.LeadingIcon = null;
             this.txtAS.LeaveOnEnterKey = true;
-            this.txtAS.Location = new System.Drawing.Point(751, 290);
+            this.txtAS.Location = new System.Drawing.Point(792, 281);
             this.txtAS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAS.MaxLength = 32767;
             this.txtAS.MouseState = MaterialSkin.MouseState.OUT;
@@ -132,10 +135,11 @@
             // 
             // materialLabel15
             // 
+            this.materialLabel15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel15.AutoSize = true;
             this.materialLabel15.Depth = 0;
             this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel15.Location = new System.Drawing.Point(324, 307);
+            this.materialLabel15.Location = new System.Drawing.Point(334, 298);
             this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel15.Name = "materialLabel15";
             this.materialLabel15.Size = new System.Drawing.Size(73, 19);
@@ -144,6 +148,7 @@
             // 
             // txtCTL
             // 
+            this.txtCTL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCTL.AnimateReadOnly = false;
             this.txtCTL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCTL.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -153,7 +158,7 @@
             this.txtCTL.HideSelection = true;
             this.txtCTL.LeadingIcon = null;
             this.txtCTL.LeaveOnEnterKey = true;
-            this.txtCTL.Location = new System.Drawing.Point(426, 290);
+            this.txtCTL.Location = new System.Drawing.Point(435, 281);
             this.txtCTL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCTL.MaxLength = 32767;
             this.txtCTL.MouseState = MaterialSkin.MouseState.OUT;
@@ -175,10 +180,11 @@
             // 
             // materialLabel14
             // 
+            this.materialLabel14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel14.AutoSize = true;
             this.materialLabel14.Depth = 0;
             this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel14.Location = new System.Drawing.Point(59, 307);
+            this.materialLabel14.Location = new System.Drawing.Point(69, 298);
             this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel14.Name = "materialLabel14";
             this.materialLabel14.Size = new System.Drawing.Size(77, 19);
@@ -187,6 +193,7 @@
             // 
             // txtDMA
             // 
+            this.txtDMA.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDMA.AnimateReadOnly = false;
             this.txtDMA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtDMA.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -196,7 +203,7 @@
             this.txtDMA.HideSelection = true;
             this.txtDMA.LeadingIcon = null;
             this.txtDMA.LeaveOnEnterKey = true;
-            this.txtDMA.Location = new System.Drawing.Point(161, 290);
+            this.txtDMA.Location = new System.Drawing.Point(171, 281);
             this.txtDMA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDMA.MaxLength = 32767;
             this.txtDMA.MouseState = MaterialSkin.MouseState.OUT;
@@ -218,10 +225,11 @@
             // 
             // txtActuacionJSS1
             // 
+            this.txtActuacionJSS1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtActuacionJSS1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtActuacionJSS1.Enabled = false;
             this.txtActuacionJSS1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtActuacionJSS1.Location = new System.Drawing.Point(62, 574);
+            this.txtActuacionJSS1.Location = new System.Drawing.Point(72, 565);
             this.txtActuacionJSS1.Multiline = true;
             this.txtActuacionJSS1.Name = "txtActuacionJSS1";
             this.txtActuacionJSS1.Size = new System.Drawing.Size(901, 143);
@@ -229,10 +237,11 @@
             // 
             // materialLabel12
             // 
+            this.materialLabel12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel12.AutoSize = true;
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel12.Location = new System.Drawing.Point(60, 552);
+            this.materialLabel12.Location = new System.Drawing.Point(69, 534);
             this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel12.Name = "materialLabel12";
             this.materialLabel12.Size = new System.Drawing.Size(188, 19);
@@ -241,6 +250,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -252,6 +262,7 @@
             // 
             // btnRecuperarCarga
             // 
+            this.btnRecuperarCarga.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnRecuperarCarga.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnRecuperarCarga.FlatAppearance.BorderSize = 0;
             this.btnRecuperarCarga.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -259,7 +270,7 @@
             this.btnRecuperarCarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecuperarCarga.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnRecuperarCarga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecuperarCarga.Location = new System.Drawing.Point(977, 290);
+            this.btnRecuperarCarga.Location = new System.Drawing.Point(977, 279);
             this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecuperarCarga.Name = "btnRecuperarCarga";
             this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 43);
@@ -270,6 +281,7 @@
             // 
             // materialLabel4
             // 
+            this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel4.Depth = 0;
@@ -283,6 +295,7 @@
             // 
             // txtEmpleadojss
             // 
+            this.txtEmpleadojss.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmpleadojss.AnimateReadOnly = false;
             this.txtEmpleadojss.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtEmpleadojss.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -312,6 +325,7 @@
             // 
             // materialLabel3
             // 
+            this.materialLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel3.Depth = 0;
@@ -325,6 +339,7 @@
             // 
             // txtEmpresajss
             // 
+            this.txtEmpresajss.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmpresajss.AnimateReadOnly = false;
             this.txtEmpresajss.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtEmpresajss.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -354,6 +369,7 @@
             // 
             // materialLabel2
             // 
+            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel2.Depth = 0;
@@ -367,6 +383,7 @@
             // 
             // txtpuestotrabajojss
             // 
+            this.txtpuestotrabajojss.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtpuestotrabajojss.AnimateReadOnly = false;
             this.txtpuestotrabajojss.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtpuestotrabajojss.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -396,6 +413,7 @@
             // 
             // materialLabel11
             // 
+            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
@@ -409,6 +427,7 @@
             // 
             // txtCuit
             // 
+            this.txtCuit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCuit.AnimateReadOnly = false;
             this.txtCuit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCuit.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -438,8 +457,9 @@
             // 
             // txtcargaidJSS
             // 
+            this.txtcargaidJSS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtcargaidJSS.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtcargaidJSS.Location = new System.Drawing.Point(1004, 339);
+            this.txtcargaidJSS.Location = new System.Drawing.Point(1032, 328);
             this.txtcargaidJSS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargaidJSS.Name = "txtcargaidJSS";
             this.txtcargaidJSS.Size = new System.Drawing.Size(100, 22);
@@ -448,10 +468,11 @@
             // 
             // materialLabel6
             // 
+            this.materialLabel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.Location = new System.Drawing.Point(59, 404);
+            this.materialLabel6.Location = new System.Drawing.Point(69, 395);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(77, 19);
@@ -460,10 +481,11 @@
             // 
             // materialLabel1
             // 
+            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(471, 404);
+            this.materialLabel1.Location = new System.Drawing.Point(481, 395);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(73, 19);
@@ -472,6 +494,7 @@
             // 
             // txtCTLR
             // 
+            this.txtCTLR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCTLR.AnimateReadOnly = false;
             this.txtCTLR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCTLR.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -481,7 +504,7 @@
             this.txtCTLR.HideSelection = true;
             this.txtCTLR.LeadingIcon = null;
             this.txtCTLR.LeaveOnEnterKey = true;
-            this.txtCTLR.Location = new System.Drawing.Point(577, 387);
+            this.txtCTLR.Location = new System.Drawing.Point(587, 378);
             this.txtCTLR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCTLR.MaxLength = 32767;
             this.txtCTLR.MouseState = MaterialSkin.MouseState.OUT;
@@ -494,7 +517,7 @@
             this.txtCTLR.SelectionLength = 0;
             this.txtCTLR.SelectionStart = 0;
             this.txtCTLR.ShortcutsEnabled = true;
-            this.txtCTLR.Size = new System.Drawing.Size(276, 48);
+            this.txtCTLR.Size = new System.Drawing.Size(324, 48);
             this.txtCTLR.TabIndex = 333;
             this.txtCTLR.TabStop = false;
             this.txtCTLR.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -503,10 +526,11 @@
             // 
             // materialLabel5
             // 
+            this.materialLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel5.Location = new System.Drawing.Point(59, 484);
+            this.materialLabel5.Location = new System.Drawing.Point(69, 475);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(111, 19);
@@ -515,6 +539,7 @@
             // 
             // txtASR
             // 
+            this.txtASR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtASR.AnimateReadOnly = false;
             this.txtASR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtASR.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -524,7 +549,7 @@
             this.txtASR.HideSelection = true;
             this.txtASR.LeadingIcon = null;
             this.txtASR.LeaveOnEnterKey = true;
-            this.txtASR.Location = new System.Drawing.Point(214, 468);
+            this.txtASR.Location = new System.Drawing.Point(224, 459);
             this.txtASR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtASR.MaxLength = 32767;
             this.txtASR.MouseState = MaterialSkin.MouseState.OUT;
@@ -546,6 +571,7 @@
             // 
             // btncerrar
             // 
+            this.btncerrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btncerrar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btncerrar.FlatAppearance.BorderSize = 0;
             this.btncerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -553,12 +579,12 @@
             this.btncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncerrar.ForeColor = System.Drawing.Color.AliceBlue;
             this.btncerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncerrar.Location = new System.Drawing.Point(977, 387);
+            this.btncerrar.Location = new System.Drawing.Point(977, 378);
             this.btncerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(155, 43);
             this.btncerrar.TabIndex = 336;
-            this.btncerrar.Text = "Cerrar";
+            this.btncerrar.Text = "Volver al Menu Principal";
             this.btncerrar.UseVisualStyleBackColor = false;
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
@@ -598,7 +624,9 @@
             this.Controls.Add(this.txtCuit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "JSSRESULTADO";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JSSRESULTADO";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.JSSRESULTADO_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

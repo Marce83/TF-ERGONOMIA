@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="EmailServices\MasterEmailServer.cs" />
     <Compile Include="EmailServices\SupportMail.cs" />
+    <Compile Include="EstadisticaDAC.cs" />
     <Compile Include="JssDAC.cs" />
     <Compile Include="NioshDAC.cs" />
     <Compile Include="RebaDAC.cs" />
