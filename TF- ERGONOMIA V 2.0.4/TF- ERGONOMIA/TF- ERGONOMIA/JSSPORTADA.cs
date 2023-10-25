@@ -78,7 +78,7 @@ namespace TF.WIN
             Ojss.EmpleadoJSS = txtNombreEmpleadoNiosh.Text;
             Ojss.EmpresaJSS = txtNombreEmpresaNiosh.Text;
             var res = oJssBC.InserJssPORTADABC(Ojss);
-            MessageBox.Show("Análisis NIOSH creado con éxito");
+            MessageBox.Show("Análisis JSS creado con éxito");
 
             // Pasar el ID de carga al siguiente formulario
 

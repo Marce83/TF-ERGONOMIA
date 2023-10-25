@@ -93,6 +93,7 @@
             // txtempresasregistradas
             // 
             this.txtempresasregistradas.AnimateReadOnly = false;
+            this.txtempresasregistradas.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtempresasregistradas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtempresasregistradas.Depth = 0;
             this.txtempresasregistradas.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -109,6 +110,7 @@
             // 
             // dgvprovemp
             // 
+            this.dgvprovemp.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dgvprovemp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvprovemp.Location = new System.Drawing.Point(38, 231);
             this.dgvprovemp.Name = "dgvprovemp";
@@ -143,6 +145,7 @@
             // 
             // dgvlocemp
             // 
+            this.dgvlocemp.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dgvlocemp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvlocemp.Location = new System.Drawing.Point(448, 231);
             this.dgvlocemp.Name = "dgvlocemp";
@@ -154,9 +157,10 @@
             // txtcontempleados
             // 
             this.txtcontempleados.AnimateReadOnly = false;
+            this.txtcontempleados.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtcontempleados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtcontempleados.Depth = 0;
-            this.txtcontempleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtcontempleados.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtcontempleados.LeadingIcon = null;
             this.txtcontempleados.Location = new System.Drawing.Point(244, 477);
             this.txtcontempleados.MaxLength = 50;
@@ -194,6 +198,7 @@
             // 
             // dgvEmpleadosEmpresas
             // 
+            this.dgvEmpleadosEmpresas.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dgvEmpleadosEmpresas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEmpleadosEmpresas.Location = new System.Drawing.Point(38, 598);
             this.dgvEmpleadosEmpresas.Name = "dgvEmpleadosEmpresas";
@@ -217,9 +222,10 @@
             // txtRulaCont
             // 
             this.txtRulaCont.AnimateReadOnly = false;
+            this.txtRulaCont.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtRulaCont.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRulaCont.Depth = 0;
-            this.txtRulaCont.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtRulaCont.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtRulaCont.LeadingIcon = null;
             this.txtRulaCont.Location = new System.Drawing.Point(244, 836);
             this.txtRulaCont.MaxLength = 50;
@@ -248,7 +254,7 @@
             this.materialLabel10.AutoSize = true;
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel10.Location = new System.Drawing.Point(35, 806);
+            this.materialLabel10.Location = new System.Drawing.Point(35, 797);
             this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel10.Name = "materialLabel10";
             this.materialLabel10.Size = new System.Drawing.Size(77, 19);
@@ -258,9 +264,10 @@
             // txtREBACont
             // 
             this.txtREBACont.AnimateReadOnly = false;
+            this.txtREBACont.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtREBACont.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtREBACont.Depth = 0;
-            this.txtREBACont.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtREBACont.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtREBACont.LeadingIcon = null;
             this.txtREBACont.Location = new System.Drawing.Point(244, 911);
             this.txtREBACont.MaxLength = 50;
@@ -287,9 +294,10 @@
             // txtNioshCont
             // 
             this.txtNioshCont.AnimateReadOnly = false;
+            this.txtNioshCont.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtNioshCont.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNioshCont.Depth = 0;
-            this.txtNioshCont.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNioshCont.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNioshCont.LeadingIcon = null;
             this.txtNioshCont.Location = new System.Drawing.Point(618, 836);
             this.txtNioshCont.MaxLength = 50;
@@ -316,9 +324,10 @@
             // txtjsscont
             // 
             this.txtjsscont.AnimateReadOnly = false;
+            this.txtjsscont.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtjsscont.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtjsscont.Depth = 0;
-            this.txtjsscont.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtjsscont.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtjsscont.LeadingIcon = null;
             this.txtjsscont.Location = new System.Drawing.Point(618, 910);
             this.txtjsscont.MaxLength = 50;
@@ -373,7 +382,7 @@
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEstadisticas";
             this.Text = "frmEstadisticas";
             this.Load += new System.EventHandler(this.frmEstadisticas_Load);
