@@ -59,9 +59,14 @@ namespace TF.WIN
 
         private void btnRecuperarCarga_Click(object sender, EventArgs e)
         {
-            NioshRescatar();
-            resultadoIl();
-            resultadofinal();
+            try
+            {
+
+                NioshRescatar();
+                resultadoIl();
+                resultadofinal();
+            }
+            catch {}
         }
 
 
