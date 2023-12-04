@@ -1547,7 +1547,7 @@ go
 CREATE or Alter PROCEDURE SP_STAT_ContEmpresasprov
 AS
 BEGIN
-select Provincia, count (Provincia) from Empresas group by Provincia
+select Provincia, count (Provincia) as CantidadEmpresas from Empresas group by Provincia
 END
 GO
 

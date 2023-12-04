@@ -1,12 +1,15 @@
-﻿using System;
+﻿using iTextSharp.tool.xml.html.head;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using TF.BC;
 using TF.ENTITIES;
 
@@ -22,7 +25,7 @@ namespace TF.WIN
         private void frmEstadisticas_Load(object sender, EventArgs e)
         {
             ContEmpresas();
-            ContEmpresasprov();
+            //ContEmpresasprov();
             ContEmpresasLoc();
             ContEmpleadosemp();
             ContEmpleados();
@@ -30,7 +33,13 @@ namespace TF.WIN
             ContNIOSH();
             ContREBA();
             ContRULA();
+            ConfigurarGraficoEmpxProv();
 
+            double SumaMetodos = 0;
+
+            SumaMetodos = double.Parse(txtRulaCont.Text) + double.Parse(txtNioshCont.Text) + double.Parse(txtREBACont.Text) + double.Parse(txtjsscont.Text);
+
+            TotalMetodo.Text = SumaMetodos.ToString();
         }
 
 
@@ -50,22 +59,22 @@ namespace TF.WIN
             }
           
         }
-        private void ContEmpresasprov()
-        {
-            try
-            {
-                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-                DataTable dt1001 = oEstadisticaBC.ContEmpresasprovBC();
-                dgvprovemp.DataSource = null;
-                dgvprovemp.DataSource = dt1001;
-                dgvprovemp.Columns[1].HeaderText = "Número";
+        //private void ContEmpresasprov()
+        //{
+        //    try
+        //    {
+        //        EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+        //        DataTable dt1001 = oEstadisticaBC.ContEmpresasprovBC();
+        //        dgvprovemp.DataSource = null;
+        //        dgvprovemp.DataSource = dt1001;
+        //        dgvprovemp.Columns[1].HeaderText = "Número";
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //    }
+        //}
         private void ContEmpresasLoc()
         {
             try
@@ -175,5 +184,63 @@ namespace TF.WIN
 
         }
 
+        private void ConfigurarGraficoEmpxProv()
+        {
+            // Configura el gráfico aquí
+            // Por ejemplo, crea una serie de columnas
+            Series series = new Series
+            {
+                Name = "Cantidad",
+                ChartType = SeriesChartType.Column
+            };
+
+            // Configura los ejes
+            ChartArea chartArea = new ChartArea();
+            chartArea.AxisX.Title = "Provincia";
+            chartArea.AxisY.Title = "Cantidad de Empresas";
+
+            // Limpia las series existentes antes de agregar la nueva
+            chartEmpresasProv.Series.Clear();
+
+            // Asigna la serie y el área del gráfico
+            chartEmpresasProv.Series.Add(series);
+            chartEmpresasProv.ChartAreas.Add(chartArea);
+
+            // Agrega un título al gráfico
+            chartEmpresasProv.Titles.Add("Empresas por Provincias");  // Cambia "Mi Título" al título que desees
+            chartEmpresasProv.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+            // Establece el formato de la serie
+            series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+
+
+            CargarDatosDesdeBDEmpxProv();
+        }
+        private void CargarDatosDesdeBDEmpxProv()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            DataTable dt1001 = oEstadisticaBC.ContEmpresasprovBC();
+
+            // Limpia los datos existentes en el gráfico
+            chartEmpresasProv.Series[0].Points.Clear();
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt1001.Rows)
+            {
+                string provincia = row["Provincia"].ToString();
+                int cantidadEmpresas = Convert.ToInt32(row["CantidadEmpresas"]);
+
+                // Agrega un punto a la serie para cada provincia
+                chartEmpresasProv.Series[0].Points.AddXY(provincia, cantidadEmpresas);
+            }
+        }
+
+
+        private void TotalMetodo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
