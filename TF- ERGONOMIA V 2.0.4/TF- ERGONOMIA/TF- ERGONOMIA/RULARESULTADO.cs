@@ -177,8 +177,6 @@ namespace TF.WIN
             paginahtml_texto = paginahtml_texto.Replace("@txtactuacion", txtActuacion.Text);
 
 
-
-
             if (guardar.ShowDialog() == DialogResult.OK)
             {
 

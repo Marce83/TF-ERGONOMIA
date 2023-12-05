@@ -15,6 +15,8 @@ namespace TF.WIN
         public frmInformes()
         {
             InitializeComponent();
+
         }
+
     }
 }

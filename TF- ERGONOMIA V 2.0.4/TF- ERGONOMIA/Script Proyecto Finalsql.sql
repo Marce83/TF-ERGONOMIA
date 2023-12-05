@@ -1556,7 +1556,7 @@ go
 CREATE or Alter PROCEDURE SP_STAT_ContEmpresasLoc
 AS
 BEGIN
-select Localidad, count (Localidad) from Empresas group by Localidad
+select Localidad, count (Localidad) as CantidadEmpresas from Empresas group by Localidad
 END
 GO
 
@@ -1576,7 +1576,7 @@ go
 CREATE or Alter PROCEDURE SP_STAT_ContEmpleadosEmpresas
 AS
 BEGIN
-select ae.IdEmpresa,ac.Nombre, count (ae.DNI) from Empleados ae, Empresas ac where ae.IdEmpresa = ac.IdEmpresa group by ae.IdEmpresa,ac.Nombre
+select ae.IdEmpresa,ac.Nombre, count (ae.DNI) as CantidadEmpleados from Empleados ae, Empresas ac where ae.IdEmpresa = ac.IdEmpresa group by ae.IdEmpresa,ac.Nombre
 END
 GO
 

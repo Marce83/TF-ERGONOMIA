@@ -26,14 +26,16 @@ namespace TF.WIN
         {
             ContEmpresas();
             //ContEmpresasprov();
-            ContEmpresasLoc();
-            ContEmpleadosemp();
+            //ContEmpresasLoc();
+            //ContEmpleadosemp();
             ContEmpleados();
             ContJSS();
             ContNIOSH();
             ContREBA();
             ContRULA();
             ConfigurarGraficoEmpxProv();
+            ConfigurarGraficoEmpLoc();
+            ConfigurarGraficoEmpxemp();
 
             double SumaMetodos = 0;
 
@@ -75,22 +77,22 @@ namespace TF.WIN
         //        MessageBox.Show(ex.Message);
         //    }
         //}
-        private void ContEmpresasLoc()
-        {
-            try
-            {
-                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-                DataTable dt1003 = oEstadisticaBC.ContEmpresasLocBC();
-                dgvlocemp.DataSource = null;
-                dgvlocemp.DataSource = dt1003;
-                dgvlocemp.Columns[1].HeaderText = "Número";
+        //private void ContEmpresasLoc()
+        //{
+        //    try
+        //    {
+        //        EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+        //        DataTable dt1003 = oEstadisticaBC.ContEmpresasLocBC();
+        //        dgvlocemp.DataSource = null;
+        //        dgvlocemp.DataSource = dt1003;
+        //        dgvlocemp.Columns[1].HeaderText = "Número";
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //    }
+        //}
         public void ContEmpleados()
         {
             EstadisticaBC oEstadisticaBC = new EstadisticaBC();
@@ -107,24 +109,24 @@ namespace TF.WIN
             }
 
         }
-        private void ContEmpleadosemp()
-        {
-            try
-            {
-                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-                DataTable dt1004 = oEstadisticaBC.ContEmpleadosempresaBC();
-                dgvEmpleadosEmpresas.DataSource = null;
-                dgvEmpleadosEmpresas.DataSource = dt1004;
-                dgvEmpleadosEmpresas.Columns[0].Visible = false;
-                dgvEmpleadosEmpresas.Columns[1].HeaderText = "Nombre de la empresa";
-                dgvEmpleadosEmpresas.Columns[2].HeaderText = "Número";
+        //private void ContEmpleadosemp()
+        //{
+        //    try
+        //    {
+        //        EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+        //        DataTable dt1004 = oEstadisticaBC.ContEmpleadosempresaBC();
+        //        dgvEmpleadosEmpresas.DataSource = null;
+        //        dgvEmpleadosEmpresas.DataSource = dt1004;
+        //        dgvEmpleadosEmpresas.Columns[0].Visible = false;
+        //        dgvEmpleadosEmpresas.Columns[1].HeaderText = "Nombre de la empresa";
+        //        dgvEmpleadosEmpresas.Columns[2].HeaderText = "Número";
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //    }
+        //}
         public void ContJSS()
         {
             EstadisticaBC oEstadisticaBC = new EstadisticaBC();
@@ -236,6 +238,124 @@ namespace TF.WIN
                 chartEmpresasProv.Series[0].Points.AddXY(provincia, cantidadEmpresas);
             }
         }
+
+        private void ConfigurarGraficoEmpLoc()
+        {
+            // Configura el gráfico aquí
+            // Por ejemplo, crea una serie de columnas
+            Series series = new Series
+            {
+                Name = "Cantidad",
+                ChartType = SeriesChartType.Column
+            };
+
+            // Configura los ejes
+            ChartArea chartArea = new ChartArea();
+            chartArea.AxisX.Title = "Localidad";
+            chartArea.AxisY.Title = "Cantidad de Empresas";
+
+            // Limpia las series existentes antes de agregar la nueva
+            ChartEmpLocal.Series.Clear();
+
+            // Asigna la serie y el área del gráfico
+            ChartEmpLocal.Series.Add(series);
+            ChartEmpLocal.ChartAreas.Add(chartArea);
+
+            // Agrega un título al gráfico
+            ChartEmpLocal.Titles.Add("Empresas por Localidad");  // Cambia "Mi Título" al título que desees
+            ChartEmpLocal.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+            // Establece el formato de la serie
+            series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+
+
+            CargarDatosDesdeBDEmpLoc();
+        }
+        private void CargarDatosDesdeBDEmpLoc()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            DataTable dt1003 = oEstadisticaBC.ContEmpresasLocBC();
+
+            // Limpia los datos existentes en el gráfico
+            ChartEmpLocal.Series[0].Points.Clear();
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt1003.Rows)
+            {
+                string Localidad = row["Localidad"].ToString();
+                int cantidadEmpresas1 = Convert.ToInt32(row["CantidadEmpresas"]);
+
+                // Agrega un punto a la serie para cada provincia
+                ChartEmpLocal.Series[0].Points.AddXY(Localidad, cantidadEmpresas1);
+            }
+        }
+
+
+        private void ConfigurarGraficoEmpxemp()
+        {
+            // Configura el gráfico aquí
+            // Por ejemplo, crea una serie de columnas
+            Series series = new Series
+            {
+                Name = "Cantidad",
+                ChartType = SeriesChartType.Column
+            };
+
+            // Configura los ejes
+            ChartArea chartArea = new ChartArea();
+            chartArea.AxisX.Title = "Localidad";
+            chartArea.AxisY.Title = "EmpleadosporEmpresas";
+
+            // Limpia las series existentes antes de agregar la nueva
+            chartempxemp.Series.Clear();
+
+            // Asigna la serie y el área del gráfico
+            chartempxemp.Series.Add(series);
+            chartempxemp.ChartAreas.Add(chartArea);
+
+            // Agrega un título al gráfico
+            chartempxemp.Titles.Add("Cantidad de Empleados por Empresas");  // Cambia "Mi Título" al título que desees
+            chartempxemp.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+            // Establece el formato de la serie
+            series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+
+
+            CargarDatosDesdeBDEmpxemp();
+        }
+        private void CargarDatosDesdeBDEmpxemp()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            DataTable dt1004 = oEstadisticaBC.ContEmpleadosempresaBC();
+
+            // Limpia los datos existentes en el gráfico
+            chartempxemp.Series[0].Points.Clear();
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt1004.Rows)
+            {
+                string Empleadosporempresas = row["Nombre"].ToString();
+                int cantidadEmpleados1 = Convert.ToInt32(row["CantidadEmpleados"]);
+
+                // Agrega un punto a la serie para cada provincia
+                chartempxemp.Series[0].Points.AddXY(Empleadosporempresas, cantidadEmpleados1);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
 
 
         private void TotalMetodo_Click(object sender, EventArgs e)
