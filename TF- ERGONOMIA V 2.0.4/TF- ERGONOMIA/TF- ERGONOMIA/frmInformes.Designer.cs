@@ -36,11 +36,11 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(309, 9);
+            this.label1.Location = new System.Drawing.Point(307, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(457, 38);
+            this.label1.Size = new System.Drawing.Size(403, 38);
             this.label1.TabIndex = 63;
-            this.label1.Text = "INFORMES DESCARGADOS";
+            this.label1.Text = "DOCUMENTOS ANEXOS";
             // 
             // frmInformes
             // 
@@ -51,7 +51,7 @@
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInformes";
             this.Text = "frmInformes";
             this.ResumeLayout(false);

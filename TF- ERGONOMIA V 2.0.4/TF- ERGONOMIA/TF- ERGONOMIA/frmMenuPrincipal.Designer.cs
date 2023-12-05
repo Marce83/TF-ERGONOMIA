@@ -63,7 +63,7 @@ namespace TF.WIN
             // 
             // BarraTitulo
             // 
-            this.BarraTitulo.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.BarraTitulo.BackColor = System.Drawing.SystemColors.Highlight;
             this.BarraTitulo.Controls.Add(this.lblUsrCar);
             this.BarraTitulo.Controls.Add(this.label2);
             this.BarraTitulo.Controls.Add(this.label3);
@@ -79,7 +79,7 @@ namespace TF.WIN
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1556, 65);
+            this.BarraTitulo.Size = new System.Drawing.Size(1556, 59);
             this.BarraTitulo.TabIndex = 0;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
@@ -89,7 +89,7 @@ namespace TF.WIN
             this.lblUsrCar.AutoSize = true;
             this.lblUsrCar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsrCar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUsrCar.Location = new System.Drawing.Point(987, 28);
+            this.lblUsrCar.Location = new System.Drawing.Point(1355, 32);
             this.lblUsrCar.Name = "lblUsrCar";
             this.lblUsrCar.Size = new System.Drawing.Size(94, 29);
             this.lblUsrCar.TabIndex = 13;
@@ -101,7 +101,7 @@ namespace TF.WIN
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(882, 28);
+            this.label2.Location = new System.Drawing.Point(1250, 32);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 29);
@@ -114,7 +114,7 @@ namespace TF.WIN
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(859, -4);
+            this.label3.Location = new System.Drawing.Point(1227, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 29);
@@ -127,7 +127,7 @@ namespace TF.WIN
             this.lblUsrLog.AutoSize = true;
             this.lblUsrLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsrLog.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUsrLog.Location = new System.Drawing.Point(987, -2);
+            this.lblUsrLog.Location = new System.Drawing.Point(1355, 2);
             this.lblUsrLog.Name = "lblUsrLog";
             this.lblUsrLog.Size = new System.Drawing.Size(97, 29);
             this.lblUsrLog.TabIndex = 7;
@@ -139,7 +139,7 @@ namespace TF.WIN
             this.labelHora.AutoSize = true;
             this.labelHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHora.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelHora.Location = new System.Drawing.Point(355, 10);
+            this.labelHora.Location = new System.Drawing.Point(385, 9);
             this.labelHora.Name = "labelHora";
             this.labelHora.Size = new System.Drawing.Size(75, 32);
             this.labelHora.TabIndex = 6;
@@ -148,7 +148,7 @@ namespace TF.WIN
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(331, 17);
+            this.button1.Location = new System.Drawing.Point(331, 5);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 43);
@@ -232,7 +232,7 @@ namespace TF.WIN
             // 
             // MenuVertical
             // 
-            this.MenuVertical.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.MenuVertical.BackColor = System.Drawing.SystemColors.Highlight;
             this.MenuVertical.Controls.Add(this.btnPuesto);
             this.MenuVertical.Controls.Add(this.linkPerfil);
             this.MenuVertical.Controls.Add(this.cerrarsesion);
@@ -243,15 +243,15 @@ namespace TF.WIN
             this.MenuVertical.Controls.Add(this.btnEmpleados);
             this.MenuVertical.Controls.Add(this.btnEmpresa);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MenuVertical.Location = new System.Drawing.Point(0, 65);
+            this.MenuVertical.Location = new System.Drawing.Point(0, 59);
             this.MenuVertical.Margin = new System.Windows.Forms.Padding(4);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(320, 735);
+            this.MenuVertical.Size = new System.Drawing.Size(320, 741);
             this.MenuVertical.TabIndex = 1;
             // 
             // btnPuesto
             // 
-            this.btnPuesto.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnPuesto.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnPuesto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPuesto.FlatAppearance.BorderSize = 0;
             this.btnPuesto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -305,7 +305,7 @@ namespace TF.WIN
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -326,7 +326,7 @@ namespace TF.WIN
             // 
             // btnEstadisticas
             // 
-            this.btnEstadisticas.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnEstadisticas.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnEstadisticas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEstadisticas.FlatAppearance.BorderSize = 0;
             this.btnEstadisticas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -346,7 +346,7 @@ namespace TF.WIN
             // 
             // btnInformes
             // 
-            this.btnInformes.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnInformes.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnInformes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInformes.FlatAppearance.BorderSize = 0;
             this.btnInformes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -360,13 +360,13 @@ namespace TF.WIN
             this.btnInformes.Name = "btnInformes";
             this.btnInformes.Size = new System.Drawing.Size(387, 86);
             this.btnInformes.TabIndex = 11;
-            this.btnInformes.Text = "Informes";
+            this.btnInformes.Text = "Documentos";
             this.btnInformes.UseVisualStyleBackColor = false;
             this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
             // 
             // btnMetodo
             // 
-            this.btnMetodo.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnMetodo.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnMetodo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMetodo.FlatAppearance.BorderSize = 0;
             this.btnMetodo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -386,7 +386,7 @@ namespace TF.WIN
             // 
             // btnEmpleados
             // 
-            this.btnEmpleados.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnEmpleados.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnEmpleados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEmpleados.FlatAppearance.BorderSize = 0;
             this.btnEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -406,7 +406,7 @@ namespace TF.WIN
             // 
             // btnEmpresa
             // 
-            this.btnEmpresa.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnEmpresa.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnEmpresa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEmpresa.FlatAppearance.BorderSize = 0;
             this.btnEmpresa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -430,10 +430,10 @@ namespace TF.WIN
             this.PanelConector.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelConector.BackgroundImage")));
             this.PanelConector.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PanelConector.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelConector.Location = new System.Drawing.Point(320, 65);
+            this.PanelConector.Location = new System.Drawing.Point(320, 59);
             this.PanelConector.Margin = new System.Windows.Forms.Padding(4);
             this.PanelConector.Name = "PanelConector";
-            this.PanelConector.Size = new System.Drawing.Size(1236, 735);
+            this.PanelConector.Size = new System.Drawing.Size(1236, 741);
             this.PanelConector.TabIndex = 2;
             // 
             // frmMenuPrincipal
