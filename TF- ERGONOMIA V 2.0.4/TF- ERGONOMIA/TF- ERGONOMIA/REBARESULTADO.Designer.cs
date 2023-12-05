@@ -623,6 +623,7 @@
             this.btnobtenerinforme.TabIndex = 212;
             this.btnobtenerinforme.Text = "Obtener Informe";
             this.btnobtenerinforme.UseVisualStyleBackColor = false;
+            this.btnobtenerinforme.Click += new System.EventHandler(this.btnobtenerinforme_Click);
             // 
             // btnpagant
             // 

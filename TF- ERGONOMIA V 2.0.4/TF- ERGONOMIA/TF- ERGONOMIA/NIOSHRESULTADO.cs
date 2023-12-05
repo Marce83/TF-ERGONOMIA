@@ -1,10 +1,14 @@
-﻿using MaterialSkin.Controls;
+﻿using iTextSharp.text.pdf;
+using iTextSharp.text;
+using iTextSharp.tool.xml;
+using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +20,9 @@ namespace TF.WIN
 {
     public partial class NIOSHRESULTADO : Form
     {
+
+        private int fileCounter = 1; // Declarar fileCounter en el ámbito de la clase
+
         public NIOSHRESULTADO()
         {
             InitializeComponent();
@@ -248,5 +255,73 @@ namespace TF.WIN
         {
             Close();
         }
+
+
+        private string GetUniqueFileName(string baseFileName)
+        {
+            string fileName = $"{baseFileName}{fileCounter}.pdf";
+            fileCounter++;
+            return fileName;
+        }
+
+        private void btnobtenerinforme_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog guardar = new SaveFileDialog();
+            guardar.FileName = GetUniqueFileName("Informe");
+
+            string paginahtml_texto = TF.WIN.Properties.Resources.plantilla.ToString();
+
+
+
+
+            //paginahtml_texto = paginahtml_texto.Replace("@txtempresaRula", txtempresaRula.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtpuestoRula", txtpuestoRula.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@Fecha", DateTime.Now.ToString("G"));
+            //paginahtml_texto = paginahtml_texto.Replace("@txtbrazo", txtbrazo.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtantebrazo", txtantebrazo.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtmuneca", txtmuneca.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaA", txtmusculaturaA.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaA", txtcargafuerzaA.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtcuelloB", txtcuelloB.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txttroncoB", txttroncoB.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtpiernaB", txtpiernaB.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaB", txtmusculaturaB.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaB", txtcargafuerzaB.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionRula", txtPuntuacionRula.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtniveldeRiesgo", txtNivelDeRiesgo.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtactuacion", txtActuacion.Text);
+
+
+            if (guardar.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
+                {
+                    Document pdfDoc = new Document(PageSize.A4, 80, 30, 25, 50);
+                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+                    pdfDoc.Open();
+                    pdfDoc.Add(new Phrase(""));
+
+                    iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(TF.WIN.Properties.Resources.ergo, System.Drawing.Imaging.ImageFormat.Png);
+                    img.ScaleToFit(90, 90);
+                    img.Alignment = iTextSharp.text.Image.UNDERLYING;
+                    img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 50);
+                    pdfDoc.Add(img);
+
+                    using (StringReader sr = new StringReader(paginahtml_texto))
+                    {
+                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                    }
+
+                    pdfDoc.Close();
+                    stream.Close();
+                }
+            }
+        }
+
+
+
+
+
+
     }
 }

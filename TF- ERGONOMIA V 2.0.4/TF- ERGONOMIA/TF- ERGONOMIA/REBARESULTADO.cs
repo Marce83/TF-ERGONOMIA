@@ -1,4 +1,4 @@
-﻿using iTextSharp.tool.xml.css.parser.state;
+﻿using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,14 +8,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TF.BC;
+using TF.WIN;
+
+
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
+using System.IO;
+using iTextSharp.tool.xml.css.parser.state;
 using TF.ENTITIES;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using TF.BC;
+using System.Diagnostics.Eventing.Reader;
 
 namespace TF.WIN
 {
     public partial class REBA_RESULTADO : Form
     {
+        private int fileCounter = 1; // Declarar fileCounter en el ámbito de la clase
+
         public REBA_RESULTADO()
         {
             InitializeComponent();
@@ -108,7 +118,7 @@ namespace TF.WIN
                 txtnivelderiesgoreba.Text = "Alto";
                 txtActuacionReba.Text = "Es necesario actuar de forma rápida ya que existe un nivel de Riesgo Alto.\r\n";
             }
-            else if(txtpuntuacionTCAC.Text == "11" || txtpuntuacionTCAC.Text == "12" || txtpuntuacionTCAC.Text == "13" || txtpuntuacionTCAC.Text == "14" || txtpuntuacionTCAC.Text == "15")
+            else if (txtpuntuacionTCAC.Text == "11" || txtpuntuacionTCAC.Text == "12" || txtpuntuacionTCAC.Text == "13" || txtpuntuacionTCAC.Text == "14" || txtpuntuacionTCAC.Text == "15")
             {
                 txtPuntuacionReba.Text = txtpuntuacionTCAC.Text;
                 txtniveldeaccionReba.Text = "4";
@@ -204,14 +214,6 @@ namespace TF.WIN
             }
 
 
-
-
-
-
-
-
-
-
         }
         public void RebaTablaC()
         {
@@ -230,12 +232,70 @@ namespace TF.WIN
             }
         }
 
+        private string GetUniqueFileName(string baseFileName)
+        {
+            string fileName = $"{baseFileName}{fileCounter}.pdf";
+            fileCounter++;
+            return fileName;
+        }
+
+        private void btnobtenerinforme_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog guardar = new SaveFileDialog();
+            guardar.FileName = GetUniqueFileName("Informe");
+
+            string paginahtml_texto = TF.WIN.Properties.Resources.plantilla.ToString();
+
+
+
+
+            //paginahtml_texto = paginahtml_texto.Replace("@txtempresaRula", txtempresaRula.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtpuestoRula", txtpuestoRula.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@Fecha", DateTime.Now.ToString("G"));
+            //paginahtml_texto = paginahtml_texto.Replace("@txtbrazo", txtbrazo.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtantebrazo", txtantebrazo.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtmuneca", txtmuneca.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaA", txtmusculaturaA.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaA", txtcargafuerzaA.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtcuelloB", txtcuelloB.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txttroncoB", txttroncoB.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtpiernaB", txtpiernaB.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaB", txtmusculaturaB.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaB", txtcargafuerzaB.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionRula", txtPuntuacionRula.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtniveldeRiesgo", txtNivelDeRiesgo.Text);
+            //paginahtml_texto = paginahtml_texto.Replace("@txtactuacion", txtActuacion.Text);
+
+
+            if (guardar.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
+                {
+                    Document pdfDoc = new Document(PageSize.A4, 80, 30, 25, 50);
+                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+                    pdfDoc.Open();
+                    pdfDoc.Add(new Phrase(""));
+
+                    iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(TF.WIN.Properties.Resources.ergo, System.Drawing.Imaging.ImageFormat.Png);
+                    img.ScaleToFit(90, 90);
+                    img.Alignment = iTextSharp.text.Image.UNDERLYING;
+                    img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 50);
+                    pdfDoc.Add(img);
+
+                    using (StringReader sr = new StringReader(paginahtml_texto))
+                    {
+                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                    }
+
+                    pdfDoc.Close();
+                    stream.Close();
+                }
+            }
+        }
+
 
 
     }
-
-
-
 
 
 

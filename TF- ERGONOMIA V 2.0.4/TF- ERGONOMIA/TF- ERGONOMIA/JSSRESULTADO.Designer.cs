@@ -54,6 +54,7 @@
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.txtASR = new MaterialSkin.Controls.MaterialTextBox2();
             this.btncerrar = new System.Windows.Forms.Button();
+            this.btnobtenerinforme = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtDMAR
@@ -579,7 +580,7 @@
             this.btncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncerrar.ForeColor = System.Drawing.Color.AliceBlue;
             this.btncerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncerrar.Location = new System.Drawing.Point(977, 378);
+            this.btncerrar.Location = new System.Drawing.Point(977, 429);
             this.btncerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(155, 43);
@@ -587,6 +588,24 @@
             this.btncerrar.Text = "Volver al Menu Principal";
             this.btncerrar.UseVisualStyleBackColor = false;
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
+            // 
+            // btnobtenerinforme
+            // 
+            this.btnobtenerinforme.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnobtenerinforme.FlatAppearance.BorderSize = 0;
+            this.btnobtenerinforme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnobtenerinforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnobtenerinforme.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnobtenerinforme.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnobtenerinforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnobtenerinforme.Location = new System.Drawing.Point(977, 371);
+            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4);
+            this.btnobtenerinforme.Name = "btnobtenerinforme";
+            this.btnobtenerinforme.Size = new System.Drawing.Size(155, 43);
+            this.btnobtenerinforme.TabIndex = 337;
+            this.btnobtenerinforme.Text = "Obtener Informe";
+            this.btnobtenerinforme.UseVisualStyleBackColor = false;
+            this.btnobtenerinforme.Click += new System.EventHandler(this.btnobtenerinforme_Click);
             // 
             // JSSRESULTADO
             // 
@@ -596,6 +615,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1237, 699);
+            this.Controls.Add(this.btnobtenerinforme);
             this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.txtASR);
             this.Controls.Add(this.materialLabel5);
@@ -660,5 +680,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialTextBox2 txtASR;
         private System.Windows.Forms.Button btncerrar;
+        private System.Windows.Forms.Button btnobtenerinforme;
     }
 }

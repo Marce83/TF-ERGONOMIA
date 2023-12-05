@@ -78,6 +78,7 @@
             this.cboControl = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel25 = new MaterialSkin.Controls.MaterialLabel();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnobtenerinforme = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // materialLabel4
@@ -1076,7 +1077,7 @@
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(946, 410);
+            this.btnSalir.Location = new System.Drawing.Point(946, 458);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(155, 43);
@@ -1085,6 +1086,24 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btnobtenerinforme
+            // 
+            this.btnobtenerinforme.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnobtenerinforme.FlatAppearance.BorderSize = 0;
+            this.btnobtenerinforme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnobtenerinforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnobtenerinforme.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnobtenerinforme.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnobtenerinforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnobtenerinforme.Location = new System.Drawing.Point(946, 407);
+            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4);
+            this.btnobtenerinforme.Name = "btnobtenerinforme";
+            this.btnobtenerinforme.Size = new System.Drawing.Size(155, 43);
+            this.btnobtenerinforme.TabIndex = 284;
+            this.btnobtenerinforme.Text = "Obtener Informe";
+            this.btnobtenerinforme.UseVisualStyleBackColor = false;
+            this.btnobtenerinforme.Click += new System.EventHandler(this.btnobtenerinforme_Click);
+            // 
             // NIOSHRESULTADO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1092,7 +1111,8 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1247, 750);
+            this.ClientSize = new System.Drawing.Size(1247, 918);
+            this.Controls.Add(this.btnobtenerinforme);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.cboControl);
             this.Controls.Add(this.materialLabel25);
@@ -1206,5 +1226,6 @@
         private MaterialSkin.Controls.MaterialComboBox cboControl;
         private MaterialSkin.Controls.MaterialLabel materialLabel25;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnobtenerinforme;
     }
 }
