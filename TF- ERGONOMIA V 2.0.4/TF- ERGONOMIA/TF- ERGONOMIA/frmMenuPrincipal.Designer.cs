@@ -428,7 +428,7 @@ namespace TF.WIN
             // 
             // PanelConector
             // 
-            this.PanelConector.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.PanelConector.BackColor = System.Drawing.SystemColors.Highlight;
             this.PanelConector.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelConector.BackgroundImage")));
             this.PanelConector.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PanelConector.Dock = System.Windows.Forms.DockStyle.Fill;
