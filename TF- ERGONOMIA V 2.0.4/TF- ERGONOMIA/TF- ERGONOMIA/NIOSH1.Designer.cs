@@ -39,7 +39,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.txtLCN = new MaterialSkin.Controls.MaterialTextBox();
             this.cboDuraciontarea = new MaterialSkin.Controls.MaterialComboBox();
             this.cboFrecuencia = new MaterialSkin.Controls.MaterialComboBox();
             this.btncerrarNiosh = new System.Windows.Forms.Button();
@@ -99,6 +98,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.txtCMInumero = new MaterialSkin.Controls.MaterialTextBox2();
             this.label22 = new System.Windows.Forms.Label();
+            this.txtLCN = new MaterialSkin.Controls.MaterialComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.advDH)).BeginInit();
@@ -198,23 +198,6 @@
             this.materialLabel1.Size = new System.Drawing.Size(298, 19);
             this.materialLabel1.TabIndex = 67;
             this.materialLabel1.Text = "Metodo NIOSH ( Levantamiento de Carga)";
-            // 
-            // txtLCN
-            // 
-            this.txtLCN.AnimateReadOnly = false;
-            this.txtLCN.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLCN.Depth = 0;
-            this.txtLCN.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtLCN.LeadingIcon = null;
-            this.txtLCN.Location = new System.Drawing.Point(387, 1588);
-            this.txtLCN.MaxLength = 50;
-            this.txtLCN.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtLCN.Multiline = false;
-            this.txtLCN.Name = "txtLCN";
-            this.txtLCN.Size = new System.Drawing.Size(197, 50);
-            this.txtLCN.TabIndex = 68;
-            this.txtLCN.Text = "";
-            this.txtLCN.TrailingIcon = null;
             // 
             // cboDuraciontarea
             // 
@@ -1882,6 +1865,7 @@
             this.txtduracion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtduracion.TrailingIcon = null;
             this.txtduracion.UseSystemPasswordChar = false;
+            this.txtduracion.Visible = false;
             // 
             // txtfrecuencia
             // 
@@ -1912,6 +1896,7 @@
             this.txtfrecuencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtfrecuencia.TrailingIcon = null;
             this.txtfrecuencia.UseSystemPasswordChar = false;
+            this.txtfrecuencia.Visible = false;
             // 
             // difvertd
             // 
@@ -1942,6 +1927,7 @@
             this.difvertd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.difvertd.TrailingIcon = null;
             this.difvertd.UseSystemPasswordChar = false;
+            this.difvertd.Visible = false;
             // 
             // difvertint
             // 
@@ -2002,6 +1988,7 @@
             this.txtCMD.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtCMD.TrailingIcon = null;
             this.txtCMD.UseSystemPasswordChar = false;
+            this.txtCMD.Visible = false;
             // 
             // txtCMI
             // 
@@ -2032,6 +2019,7 @@
             this.txtCMI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtCMI.TrailingIcon = null;
             this.txtCMI.UseSystemPasswordChar = false;
+            this.txtCMI.Visible = false;
             // 
             // label20
             // 
@@ -2167,6 +2155,34 @@
             this.label22.TabIndex = 258;
             this.label22.Text = "CMi";
             // 
+            // txtLCN
+            // 
+            this.txtLCN.AutoCompleteCustomSource.AddRange(new string[] {
+            "Malo",
+            "Bueno",
+            "Bien"});
+            this.txtLCN.AutoResize = false;
+            this.txtLCN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtLCN.Depth = 0;
+            this.txtLCN.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.txtLCN.DropDownHeight = 174;
+            this.txtLCN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtLCN.DropDownWidth = 121;
+            this.txtLCN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.txtLCN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txtLCN.FormattingEnabled = true;
+            this.txtLCN.IntegralHeight = false;
+            this.txtLCN.ItemHeight = 43;
+            this.txtLCN.Items.AddRange(new object[] {
+            "0"});
+            this.txtLCN.Location = new System.Drawing.Point(395, 1589);
+            this.txtLCN.MaxDropDownItems = 4;
+            this.txtLCN.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtLCN.Name = "txtLCN";
+            this.txtLCN.Size = new System.Drawing.Size(187, 49);
+            this.txtLCN.StartIndex = 0;
+            this.txtLCN.TabIndex = 260;
+            // 
             // NIOSH1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2176,6 +2192,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1099, 1102);
+            this.Controls.Add(this.txtLCN);
             this.Controls.Add(this.txtCMInumero);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.txtCMDnumero);
@@ -2202,7 +2219,6 @@
             this.Controls.Add(this.btnGuardarNiosh1);
             this.Controls.Add(this.cboFrecuencia);
             this.Controls.Add(this.cboDuraciontarea);
-            this.Controls.Add(this.txtLCN);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.pictureBox2);
@@ -2242,7 +2258,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialTextBox txtLCN;
         private MaterialSkin.Controls.MaterialComboBox cboDuraciontarea;
         private MaterialSkin.Controls.MaterialComboBox cboFrecuencia;
         private System.Windows.Forms.Button btncerrarNiosh;
@@ -2302,5 +2317,6 @@
         private System.Windows.Forms.Label label21;
         private MaterialSkin.Controls.MaterialTextBox2 txtCMInumero;
         private System.Windows.Forms.Label label22;
+        private MaterialSkin.Controls.MaterialComboBox txtLCN;
     }
 }

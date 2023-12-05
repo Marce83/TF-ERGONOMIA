@@ -1062,6 +1062,30 @@ namespace TF.WIN
             cboCMi.Items.Add(new ComboBoxOption("Bien", 3));
 
 
+
+            //AM ORIGEN -- ANGULO DE ASIMETRIA //
+            txtLCN.Items.Add(new ComboBoxOption("1", 1));
+            txtLCN.Items.Add(new ComboBoxOption("2", 2));
+            txtLCN.Items.Add(new ComboBoxOption("3", 3));
+            txtLCN.Items.Add(new ComboBoxOption("4", 4));
+            txtLCN.Items.Add(new ComboBoxOption("5", 5));
+            txtLCN.Items.Add(new ComboBoxOption("6", 6));
+            txtLCN.Items.Add(new ComboBoxOption("7", 7));
+            txtLCN.Items.Add(new ComboBoxOption("8", 8));
+            txtLCN.Items.Add(new ComboBoxOption("9", 9));
+            txtLCN.Items.Add(new ComboBoxOption("10", 10));
+            txtLCN.Items.Add(new ComboBoxOption("11", 11));
+            txtLCN.Items.Add(new ComboBoxOption("12", 12));
+            txtLCN.Items.Add(new ComboBoxOption("13", 13));
+            txtLCN.Items.Add(new ComboBoxOption("14", 14));
+            txtLCN.Items.Add(new ComboBoxOption("15", 15));
+            txtLCN.Items.Add(new ComboBoxOption("16", 16));
+            txtLCN.Items.Add(new ComboBoxOption("17", 17));
+            txtLCN.Items.Add(new ComboBoxOption("18", 18));
+            txtLCN.Items.Add(new ComboBoxOption("19", 19));
+            txtLCN.Items.Add(new ComboBoxOption("20", 20));
+
+
             ObtenerMaximoIdNIOSH();
 
 
@@ -1255,6 +1279,9 @@ namespace TF.WIN
  
             NIOSHRESULTADO ONIOSHRESULTADO = new NIOSHRESULTADO();
             ONIOSHRESULTADO.Show();
+
+
+            Close();
 
         }
 
