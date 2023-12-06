@@ -207,22 +207,8 @@
     <Compile Include="RULA1.Designer.cs">
       <DependentUpon>RULA1.cs</DependentUpon>
     </Compile>
-    <Compile Include="RULA2.cs">
-      <SubType>Form</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="RULA2.Designer.cs">
-      <DependentUpon>RULA2.cs</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RULA3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RULA3.Designer.cs">
-      <DependentUpon>RULA3.cs</DependentUpon>
-    </Compile>
     <Compile Include="RULARESULTADO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,10 +291,6 @@
     <EmbeddedResource Include="RULA1.resx">
       <DependentUpon>RULA1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RULA2.resx">
-      <DependentUpon>RULA2.cs</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -319,9 +301,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RULA3.resx">
-      <DependentUpon>RULA3.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RULARESULTADO.resx">
       <DependentUpon>RULARESULTADO.cs</DependentUpon>
     </EmbeddedResource>

@@ -150,7 +150,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F);
             this.label1.Location = new System.Drawing.Point(128, 14);
@@ -359,7 +359,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 584);
             this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.txtNombreEmpleadoNiosh);

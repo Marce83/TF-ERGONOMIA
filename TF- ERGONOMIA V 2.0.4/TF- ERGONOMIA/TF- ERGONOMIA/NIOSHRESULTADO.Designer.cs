@@ -386,7 +386,7 @@
             // 
             // txtActuacionNIOSH
             // 
-            this.txtActuacionNIOSH.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtActuacionNIOSH.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtActuacionNIOSH.Enabled = false;
             this.txtActuacionNIOSH.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtActuacionNIOSH.Location = new System.Drawing.Point(484, 665);
@@ -1110,7 +1110,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1247, 918);
             this.Controls.Add(this.btnobtenerinforme);
             this.Controls.Add(this.btnSalir);
@@ -1167,7 +1167,6 @@
             this.Name = "NIOSHRESULTADO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.NIOSHRESULTADO_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

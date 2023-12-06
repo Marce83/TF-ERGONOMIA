@@ -145,7 +145,7 @@ namespace TF.WIN
             this.btnRecuperarCarga.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnRecuperarCarga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecuperarCarga.Location = new System.Drawing.Point(931, 192);
-            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecuperarCarga.Name = "btnRecuperarCarga";
             this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 43);
             this.btnRecuperarCarga.TabIndex = 0;
@@ -257,7 +257,7 @@ namespace TF.WIN
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.Location = new System.Drawing.Point(223, 965);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(104, 43);
             this.btnSalir.TabIndex = 19;
@@ -275,7 +275,7 @@ namespace TF.WIN
             this.btnobtenerinforme.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnobtenerinforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnobtenerinforme.Location = new System.Drawing.Point(478, 965);
-            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4);
             this.btnobtenerinforme.Name = "btnobtenerinforme";
             this.btnobtenerinforme.Size = new System.Drawing.Size(155, 43);
             this.btnobtenerinforme.TabIndex = 17;
@@ -293,7 +293,7 @@ namespace TF.WIN
             this.btnpagant.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnpagant.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnpagant.Location = new System.Drawing.Point(340, 965);
-            this.btnpagant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnpagant.Margin = new System.Windows.Forms.Padding(4);
             this.btnpagant.Name = "btnpagant";
             this.btnpagant.Size = new System.Drawing.Size(130, 43);
             this.btnpagant.TabIndex = 18;
@@ -880,7 +880,7 @@ namespace TF.WIN
             this.rdoTablaA.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.rdoTablaA.LeadingIcon = null;
             this.rdoTablaA.Location = new System.Drawing.Point(295, 448);
-            this.rdoTablaA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoTablaA.Margin = new System.Windows.Forms.Padding(4);
             this.rdoTablaA.MaxLength = 50;
             this.rdoTablaA.MouseState = MaterialSkin.MouseState.OUT;
             this.rdoTablaA.Multiline = false;
@@ -924,7 +924,7 @@ namespace TF.WIN
             this.rdoTablaB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.rdoTablaB.LeadingIcon = null;
             this.rdoTablaB.Location = new System.Drawing.Point(737, 446);
-            this.rdoTablaB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoTablaB.Margin = new System.Windows.Forms.Padding(4);
             this.rdoTablaB.MaxLength = 50;
             this.rdoTablaB.MouseState = MaterialSkin.MouseState.OUT;
             this.rdoTablaB.Multiline = false;
@@ -1022,7 +1022,7 @@ namespace TF.WIN
             // 
             // txtActuacion
             // 
-            this.txtActuacion.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtActuacion.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtActuacion.Enabled = false;
             this.txtActuacion.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtActuacion.Location = new System.Drawing.Point(471, 758);
@@ -1036,7 +1036,7 @@ namespace TF.WIN
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1153, 1088);
             this.Controls.Add(this.txtActuacion);
             this.Controls.Add(this.TotalGrupoB);

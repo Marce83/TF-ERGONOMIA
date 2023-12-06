@@ -227,7 +227,7 @@
             // txtActuacionJSS1
             // 
             this.txtActuacionJSS1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtActuacionJSS1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtActuacionJSS1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtActuacionJSS1.Enabled = false;
             this.txtActuacionJSS1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtActuacionJSS1.Location = new System.Drawing.Point(72, 565);
@@ -613,7 +613,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1237, 699);
             this.Controls.Add(this.btnobtenerinforme);
             this.Controls.Add(this.btncerrar);

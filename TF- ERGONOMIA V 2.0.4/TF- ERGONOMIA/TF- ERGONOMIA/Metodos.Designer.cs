@@ -74,7 +74,7 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(201, 9);
+            this.label1.Location = new System.Drawing.Point(231, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(626, 38);
             this.label1.TabIndex = 63;
@@ -204,7 +204,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.JSSRESULTADO);
             this.Controls.Add(this.JSS);
@@ -220,7 +220,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Metodos";
             this.Text = "Metodos";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
