@@ -416,8 +416,8 @@ namespace TF.WIN
 
         private void btnpagant_Click(object sender, EventArgs e)
         {
-            RULA3 oRULACARGA3 = new RULA3();
-            oRULACARGA3.Show();
+            RULA1 oRULACARGA1 = new RULA1();
+            oRULACARGA1.Show();
             Close();
         }
 

@@ -540,7 +540,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartEmpresasProv.Series.Add(series1);
-            this.chartEmpresasProv.Size = new System.Drawing.Size(515, 345);
+            this.chartEmpresasProv.Size = new System.Drawing.Size(515, 450);
             this.chartEmpresasProv.TabIndex = 95;
             // 
             // ChartEmpLocal
@@ -559,7 +559,7 @@
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.ChartEmpLocal.Series.Add(series2);
-            this.ChartEmpLocal.Size = new System.Drawing.Size(515, 345);
+            this.ChartEmpLocal.Size = new System.Drawing.Size(515, 409);
             this.ChartEmpLocal.TabIndex = 96;
             // 
             // panel10
@@ -601,7 +601,7 @@
             series3.Legend = "Legend1";
             series3.Name = "Series1";
             this.chartempxemp.Series.Add(series3);
-            this.chartempxemp.Size = new System.Drawing.Size(515, 345);
+            this.chartempxemp.Size = new System.Drawing.Size(515, 458);
             this.chartempxemp.TabIndex = 98;
             // 
             // frmEstadisticas
