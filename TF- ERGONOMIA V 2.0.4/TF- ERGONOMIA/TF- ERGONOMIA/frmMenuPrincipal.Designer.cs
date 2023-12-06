@@ -31,6 +31,7 @@ namespace TF.WIN
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuPrincipal));
             this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.linkPerfil = new System.Windows.Forms.LinkLabel();
             this.lblUsrCar = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,9 +44,8 @@ namespace TF.WIN
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.btnPuesto = new System.Windows.Forms.Button();
-            this.linkPerfil = new System.Windows.Forms.LinkLabel();
             this.cerrarsesion = new System.Windows.Forms.Button();
+            this.btnPuesto = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnEstadisticas = new System.Windows.Forms.Button();
             this.btnInformes = new System.Windows.Forms.Button();
@@ -83,6 +83,21 @@ namespace TF.WIN
             this.BarraTitulo.Size = new System.Drawing.Size(1556, 65);
             this.BarraTitulo.TabIndex = 0;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            // 
+            // linkPerfil
+            // 
+            this.linkPerfil.AutoSize = true;
+            this.linkPerfil.BackColor = System.Drawing.SystemColors.Highlight;
+            this.linkPerfil.DisabledLinkColor = System.Drawing.Color.White;
+            this.linkPerfil.LinkColor = System.Drawing.Color.Transparent;
+            this.linkPerfil.Location = new System.Drawing.Point(632, 45);
+            this.linkPerfil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkPerfil.Name = "linkPerfil";
+            this.linkPerfil.Size = new System.Drawing.Size(106, 16);
+            this.linkPerfil.TabIndex = 15;
+            this.linkPerfil.TabStop = true;
+            this.linkPerfil.Text = "Perfil de Usuario";
+            this.linkPerfil.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkPerfil_LinkClicked);
             // 
             // lblUsrCar
             // 
@@ -249,41 +264,6 @@ namespace TF.WIN
             this.MenuVertical.Size = new System.Drawing.Size(320, 735);
             this.MenuVertical.TabIndex = 1;
             // 
-            // btnPuesto
-            // 
-            this.btnPuesto.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnPuesto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPuesto.FlatAppearance.BorderSize = 0;
-            this.btnPuesto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnPuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPuesto.Image = ((System.Drawing.Image)(resources.GetObject("btnPuesto.Image")));
-            this.btnPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPuesto.Location = new System.Drawing.Point(0, 192);
-            this.btnPuesto.Margin = new System.Windows.Forms.Padding(5);
-            this.btnPuesto.Name = "btnPuesto";
-            this.btnPuesto.Size = new System.Drawing.Size(393, 106);
-            this.btnPuesto.TabIndex = 16;
-            this.btnPuesto.Text = "Puesto de Trabajo";
-            this.btnPuesto.UseVisualStyleBackColor = false;
-            this.btnPuesto.Click += new System.EventHandler(this.btnPuesto_Click);
-            // 
-            // linkPerfil
-            // 
-            this.linkPerfil.AutoSize = true;
-            this.linkPerfil.BackColor = System.Drawing.SystemColors.Highlight;
-            this.linkPerfil.DisabledLinkColor = System.Drawing.Color.White;
-            this.linkPerfil.LinkColor = System.Drawing.Color.Transparent;
-            this.linkPerfil.Location = new System.Drawing.Point(632, 45);
-            this.linkPerfil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkPerfil.Name = "linkPerfil";
-            this.linkPerfil.Size = new System.Drawing.Size(106, 16);
-            this.linkPerfil.TabIndex = 15;
-            this.linkPerfil.TabStop = true;
-            this.linkPerfil.Text = "Perfil de Usuario";
-            this.linkPerfil.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkPerfil_LinkClicked);
-            // 
             // cerrarsesion
             // 
             this.cerrarsesion.BackColor = System.Drawing.SystemColors.Highlight;
@@ -304,6 +284,26 @@ namespace TF.WIN
             this.cerrarsesion.Text = "Cerrar Sesion";
             this.cerrarsesion.UseVisualStyleBackColor = false;
             this.cerrarsesion.Click += new System.EventHandler(this.cerrarsesion_Click);
+            // 
+            // btnPuesto
+            // 
+            this.btnPuesto.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnPuesto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPuesto.FlatAppearance.BorderSize = 0;
+            this.btnPuesto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnPuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPuesto.Image = ((System.Drawing.Image)(resources.GetObject("btnPuesto.Image")));
+            this.btnPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPuesto.Location = new System.Drawing.Point(0, 192);
+            this.btnPuesto.Margin = new System.Windows.Forms.Padding(5);
+            this.btnPuesto.Name = "btnPuesto";
+            this.btnPuesto.Size = new System.Drawing.Size(393, 106);
+            this.btnPuesto.TabIndex = 16;
+            this.btnPuesto.Text = "Puesto de Trabajo";
+            this.btnPuesto.UseVisualStyleBackColor = false;
+            this.btnPuesto.Click += new System.EventHandler(this.btnPuesto_Click);
             // 
             // button2
             // 
