@@ -1183,7 +1183,7 @@ END
 GO
 
 
-------------------------------------------METODO DE ANALISIS NIOSH --------------------------------------------------
+------------------------------------------METODO DE ANALISIS NIOSH Z--------------------------------------------------
 
 use ProyectoFinal
 go
@@ -1216,7 +1216,10 @@ FMNioshDnumero float,
 FMNioshInumero float,
 CMRNioshDnumero float,
 CMRNioshInumero float,
-ResultadoAnalisisNiosh NVARCHAR(30),
+ILNiosh Float,
+RiesgoNiosh nvarchar(30),
+PoblacionNiosh int,
+ControlNiosh int,
 FechaCargaNiosh date
 )
 GO	
@@ -1228,11 +1231,12 @@ CREATE or Alter PROCEDURE SP_Niosh_Insert
 @PuestoDeTrabajoNiosh NVARCHAR(20),
 @DniEmpleadoNiosh nvarchar(11),
 @EmpleadoNiosh nvarchar(30),
-@EmpresaNiosh nvarchar(30)
+@EmpresaNiosh nvarchar(30),
+@FechaCargaNiosh date
 AS
 BEGIN
-	insert into NioshTablaCompleta (CUITNiosh,PuestoDeTrabajoNiosh,DniEmpleadoNiosh,EmpleadoNiosh,EmpresaNiosh) 
-	VALUES(@CUITNiosh,@PuestoDeTrabajoNiosh,@DniEmpleadoNiosh,@EmpleadoNiosh,@EmpresaNiosh)
+	insert into NioshTablaCompleta (CUITNiosh,PuestoDeTrabajoNiosh,DniEmpleadoNiosh,EmpleadoNiosh,EmpresaNiosh,FechaCargaNiosh) 
+	VALUES(@CUITNiosh,@PuestoDeTrabajoNiosh,@DniEmpleadoNiosh,@EmpleadoNiosh,@EmpresaNiosh,@FechaCargaNiosh)
 END
 GO
 
@@ -1276,6 +1280,22 @@ AS
 BEGIN
 	update NioshTablaCompleta set HMNioshD=@HMNioshD, HMNioshI =@HMNioshI, VMNioshD =@VMNioshD, VMNioshI = @VMNioshI, DMNioshD = @DMNioshD, AMNioshD = @AMNioshD, AMNioshI =@AMNioshI, FMNioshD =@FMNioshD, FMNioshI =@FMNioshI, CMRNioshD =@CMRNioshD, CMRNioshI = @CMRNioshI, Duraciontarea =@Duraciontarea, CalidadAgarreD =@CalidadAgarreD, CalidadAgarreI=@CalidadAgarreI, LCNiosh=@LCNiosh, FrecuenciaNiosh=@FrecuenciaNiosh , DistanciaVerticalD=@DistanciaVerticalD,
 DistanciaVerticali =@DistanciaVerticali, FMNioshDnumero = @FMNioshDnumero, FMNioshInumero = @FMNioshInumero, CMRNioshDnumero =@CMRNioshDnumero, CMRNioshInumero = @CMRNioshInumero
+	where cargaIdNiosh=@cargaIdNiosh
+END
+GO
+
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_Niosh_updateNiosh2
+@cargaIdNiosh int,
+@ILNiosh Float,
+@PoblacionNiosh int,
+@ControlNiosh int,
+@RiesgoNiosh nvarchar(30)
+AS
+BEGIN
+	update NioshTablaCompleta set ILNiosh=@ILNiosh, PoblacionNiosh=@PoblacionNiosh, ControlNiosh=@ControlNiosh, RiesgoNiosh=@RiesgoNiosh
 	where cargaIdNiosh=@cargaIdNiosh
 END
 GO

@@ -33,6 +33,7 @@ namespace TF.WIN
             oNiosh.DniEmpleadoNiosh = txtDniEmpleadoNiosh.Text;
             oNiosh.EmpleadoNiosh = txtNombreEmpleadoNiosh.Text;
             oNiosh.EmpresaNiosh = txtNombreEmpresaNiosh.Text;
+            oNiosh.FechaCargaNiosh = DateTime.Parse(dtpNiosh.Text);
             var res = oNioshBC.InsertNioshPORTADABC(oNiosh);
             MessageBox.Show("Análisis NIOSH creado con éxito");
 

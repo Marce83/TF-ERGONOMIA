@@ -29,6 +29,13 @@ namespace TF.BC
             return oNioshDAC.UpdateNiosh1DAC(oNiosh);
         }
 
+        public int UpdateNiosh2BC(Niosh oNiosh)
+        {
+            NioshDAC oNioshDAC = new NioshDAC();
+            return oNioshDAC.UpdateNiosh2DAC(oNiosh);
+        }
+
+
         public DataTable NioshTablaADestinoBC(Niosh oNiosh)
         {
             NioshDAC oNioshDAC = new NioshDAC();

@@ -44,7 +44,7 @@
             this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.btnCrear = new System.Windows.Forms.Button();
-            this.dtpReba = new System.Windows.Forms.DateTimePicker();
+            this.dtpNiosh = new System.Windows.Forms.DateTimePicker();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
@@ -74,7 +74,7 @@
             this.txtNombreEmpleadoNiosh.HideSelection = true;
             this.txtNombreEmpleadoNiosh.LeadingIcon = null;
             this.txtNombreEmpleadoNiosh.Location = new System.Drawing.Point(139, 228);
-            this.txtNombreEmpleadoNiosh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreEmpleadoNiosh.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreEmpleadoNiosh.MaxLength = 32767;
             this.txtNombreEmpleadoNiosh.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreEmpleadoNiosh.Name = "txtNombreEmpleadoNiosh";
@@ -119,7 +119,7 @@
             this.txtNombreEmpresaNiosh.HideSelection = true;
             this.txtNombreEmpresaNiosh.LeadingIcon = null;
             this.txtNombreEmpresaNiosh.Location = new System.Drawing.Point(139, 124);
-            this.txtNombreEmpresaNiosh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreEmpresaNiosh.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreEmpresaNiosh.MaxLength = 32767;
             this.txtNombreEmpresaNiosh.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreEmpresaNiosh.Name = "txtNombreEmpresaNiosh";
@@ -193,7 +193,7 @@
             this.txtpuestotrabajoencontrado.HideSelection = true;
             this.txtpuestotrabajoencontrado.LeadingIcon = null;
             this.txtpuestotrabajoencontrado.Location = new System.Drawing.Point(139, 280);
-            this.txtpuestotrabajoencontrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpuestotrabajoencontrado.Margin = new System.Windows.Forms.Padding(2);
             this.txtpuestotrabajoencontrado.MaxLength = 32767;
             this.txtpuestotrabajoencontrado.MouseState = MaterialSkin.MouseState.OUT;
             this.txtpuestotrabajoencontrado.Name = "txtpuestotrabajoencontrado";
@@ -254,7 +254,7 @@
             this.txtDniEmpleadoNiosh.HideSelection = true;
             this.txtDniEmpleadoNiosh.LeadingIcon = null;
             this.txtDniEmpleadoNiosh.Location = new System.Drawing.Point(139, 176);
-            this.txtDniEmpleadoNiosh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDniEmpleadoNiosh.Margin = new System.Windows.Forms.Padding(2);
             this.txtDniEmpleadoNiosh.MaxLength = 32767;
             this.txtDniEmpleadoNiosh.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDniEmpleadoNiosh.Name = "txtDniEmpleadoNiosh";
@@ -315,7 +315,7 @@
             this.txtCUITEncontrado.HideSelection = true;
             this.txtCUITEncontrado.LeadingIcon = null;
             this.txtCUITEncontrado.Location = new System.Drawing.Point(139, 72);
-            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2);
             this.txtCUITEncontrado.MaxLength = 32767;
             this.txtCUITEncontrado.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCUITEncontrado.Name = "txtCUITEncontrado";
@@ -368,15 +368,15 @@
             this.btnCrear.UseVisualStyleBackColor = false;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
-            // dtpReba
+            // dtpNiosh
             // 
-            this.dtpReba.CustomFormat = "dd/mm/yyyy";
-            this.dtpReba.Location = new System.Drawing.Point(139, 357);
-            this.dtpReba.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.dtpReba.Name = "dtpReba";
-            this.dtpReba.Size = new System.Drawing.Size(214, 20);
-            this.dtpReba.TabIndex = 161;
-            this.dtpReba.Value = new System.DateTime(2023, 12, 21, 20, 52, 44, 0);
+            this.dtpNiosh.CustomFormat = "dd/mm/yyyy";
+            this.dtpNiosh.Location = new System.Drawing.Point(139, 357);
+            this.dtpNiosh.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dtpNiosh.Name = "dtpNiosh";
+            this.dtpNiosh.Size = new System.Drawing.Size(214, 20);
+            this.dtpNiosh.TabIndex = 161;
+            this.dtpNiosh.Value = new System.DateTime(2023, 12, 21, 20, 52, 44, 0);
             // 
             // materialLabel5
             // 
@@ -400,7 +400,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(461, 464);
-            this.Controls.Add(this.dtpReba);
+            this.Controls.Add(this.dtpNiosh);
             this.Controls.Add(this.materialLabel5);
             this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.txtNombreEmpleadoNiosh);
@@ -419,7 +419,7 @@
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.btnCrear);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NIOSHPORTADA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NioshPortada";
@@ -446,7 +446,7 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtCUITEncontrado;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button btnCrear;
-        private System.Windows.Forms.DateTimePicker dtpReba;
+        private System.Windows.Forms.DateTimePicker dtpNiosh;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
     }
 }

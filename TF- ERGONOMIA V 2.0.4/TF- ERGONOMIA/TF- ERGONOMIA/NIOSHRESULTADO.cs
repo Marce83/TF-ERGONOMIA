@@ -72,8 +72,12 @@ namespace TF.WIN
                 NioshRescatar();
                 resultadoIl();
                 resultadofinal();
+                
             }
             catch {}
+
+            NioshGuardarfinal();
+
         }
 
 
@@ -147,8 +151,6 @@ namespace TF.WIN
 
         }
 
-
-
         private void resultadoIl()
         {
 
@@ -193,15 +195,19 @@ namespace TF.WIN
             if (double.Parse(txtILNIOSH.Text) < 1.00)
             {
                 txtActuacionNIOSH.Text = "TIPO DE RIESGO: LIMITADO ... La tarea debería rediseñarse para reducir el riesgo de generar lesiones";
+                txtriesgoniosh.Text = "RIESGO LIMITADO";
+
             }
             else if (double.Parse(txtILNIOSH.Text) >= 1.00 && double.Parse(txtILNIOSH.Text) < 1.6)
             {
                 txtActuacionNIOSH.Text = "TIPO DE RIESGO: MODERADO ... La tarea debe rediseñarse para reducir el riesgo de generar lesiones graves";
+                txtriesgoniosh.Text = "RIESGO MODERADO";
             }
 
             else if (double.Parse(txtILNIOSH.Text) >= 1.6)
             {
                 txtActuacionNIOSH.Text = "TIPO DE RIESGO: ALTO ... Inminente rediseño de las tareas, con el fin de evitar lesiones muy graves";
+                txtriesgoniosh.Text = "RIESGO ALTO";
             }
 
 
@@ -216,7 +222,19 @@ namespace TF.WIN
         }
 
 
+        public void NioshGuardarfinal()
+        {
+               NioshBC oNioshBC = new NioshBC();
+                Niosh oNiosh = new Niosh();
 
+                oNiosh.cargaIdNiosh = Convert.ToInt32(txtcargaidrebaresultado.Text);
+                oNiosh.ILNiosh = double.Parse(txtILNIOSH.Text);
+                oNiosh.RiesgoNiosh = txtriesgoniosh.Text;
+                oNiosh.PoblacionNiosh = Convert.ToInt32(txtPoblacion.Text);
+                oNiosh.ControlNiosh = Convert.ToInt32(ObtenerNumeroSeleccionado(cboControl));
+                
+                var res = oNioshBC.UpdateNiosh2BC(oNiosh);
+        }
 
 
 
@@ -250,6 +268,9 @@ namespace TF.WIN
             }
             else txtPoblacion.Text = "15";
         }
+
+
+
 
         private void btnSalir_Click(object sender, EventArgs e)
         {

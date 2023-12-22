@@ -15,10 +15,16 @@ namespace TF.ENTITIES
         public string DniEmpleadoNiosh { get; set; }
         public string EmpleadoNiosh { get; set; }
         public string EmpresaNiosh { get; set; }
+        public DateTime FechaCargaNiosh { get; set; }
 
         //Proceso de Carga
 
         public int cargaIdNiosh { get; set; }
+        public double ILNiosh { get; set; }
+        public int PoblacionNiosh { get; set; }
+        public int ControlNiosh { get; set; }
+        public string RiesgoNiosh { get; set; }
+
 
         //Datos de Carga Niosh
 
