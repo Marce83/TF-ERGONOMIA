@@ -64,6 +64,7 @@ namespace TF.WIN
             RebaRescatar();
             RebaTablaA();
             RebaTablaB();
+            RebaFinalrdo();
 
 
             if (int.TryParse(TotalTablaA.Text, out int valorTablaA) &&
@@ -159,6 +160,7 @@ namespace TF.WIN
                 TotalTablaB.Text = oReba.ValorTablaBReba.ToString();
             }
         }
+
         public void RebaRescatar()
         {
             Reba oReba = new Reba();
@@ -293,7 +295,18 @@ namespace TF.WIN
             }
         }
 
+        public void RebaFinalrdo()
+        {
+            RebaBC oRebaBC = new RebaBC();
+            Reba oReba = new Reba();
 
+            oReba.cargaIdReba = Convert.ToInt32(txtcargaidrebaresultado.Text);
+            oReba.ResultadoAnalisisReba = int.Parse(txtPuntuacionReba.Text);
+            oReba.NivelAccion = int.Parse(txtniveldeaccionReba.Text);
+            oReba.NivelRiesgo = txtnivelderiesgoreba.Text;
+            var res = oRebaBC.UpdateReba2BC(oReba);
+            MessageBox.Show("Carga Guardada");
+        }
 
     }
 

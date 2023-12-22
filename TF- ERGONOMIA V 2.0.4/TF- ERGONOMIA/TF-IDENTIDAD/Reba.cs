@@ -15,10 +15,15 @@ namespace TF.ENTITIES
         public string DniEmpleadoReba { get; set; }
         public string EmpleadoReba { get; set; }
         public string EmpresaReba { get; set; }
+        public DateTime FechaCargaReba { get; set; }
 
         //Proceso de Carga
 
         public int cargaIdReba { get; set; }
+        public int ResultadoAnalisisReba { get; set; }
+        public int NivelAccion { get; set; }
+        public string NivelRiesgo { get; set; }
+
 
         //Grupo A
 

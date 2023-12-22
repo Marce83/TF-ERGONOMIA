@@ -279,6 +279,8 @@ BEGIN
 END
 GO
 
+---------------METODO DE ANALISIS RULA ------------------------- 
+
 use ProyectoFinal
 go
 CREATE TABLE RulaTablaCompleta(
@@ -296,56 +298,54 @@ Tronco INT,
 Piernas INT,
 Actividadmuscularb INT,
 Cargafuerzab INT,
+ResultadoAnalisisRula NVARCHAR(30),
+NivelRiesgo int,
+FechaCarga date
 )
 GO	
 
 
 use ProyectoFinal
 go
-CREATE PROCEDURE SP_Rula_Insert
+CREATE OR ALTER PROCEDURE SP_Rula_Insert
 @CUIT nvarchar(11),
-@PuestoDeTrabajo NVARCHAR(20)
+@PuestoDeTrabajo NVARCHAR(20),
+@FechaCarga date
 AS
 BEGIN
-	insert into RulaTablaCompleta (CUIT,PuestoDeTrabajo) 
-	VALUES(@CUIT,@PuestoDeTrabajo)
+	insert into RulaTablaCompleta (CUIT,PuestoDeTrabajo,FechaCarga) 
+	VALUES(@CUIT,@PuestoDeTrabajo,@FechaCarga)
 END
 GO
 
 
 use ProyectoFinal
 go
-CREATE PROCEDURE SP_Rula_updateRula2
+CREATE OR ALTER PROCEDURE SP_Rula_updateRula2
 @cargaId Int,
-@Actividadmusculara int,
-@Cargafuerzaa int,
-@Cuellob int
+@ResultadoAnalisisRula NVARCHAR,
+@NivelRiesgo int
 AS
 BEGIN
-	update RulaTablaCompleta set Actividadmusculara=@Actividadmusculara , Cargafuerzaa  =@Cargafuerzaa , Cuellob = @Cuellob
+	update RulaTablaCompleta set ResultadoAnalisisRula=@ResultadoAnalisisRula, NivelRiesgo=@NivelRiesgo
 	where cargaId=@cargaId
 END
 GO
 
 use ProyectoFinal
 go
-CREATE PROCEDURE SP_Rula_updateRula3
-@cargaId Int,
-@Tronco int,
-@Piernas int,
-@Actividadmuscularb int,
-@Cargafuerzab int
-
+CREATE or ALTER PROCEDURE SP_Rula_updateRula3
+@ResultadoAnalisisRula NVARCHAR,
+@NivelRiesgo int
 AS
 BEGIN
-	update RulaTablaCompleta set Tronco=@Tronco , Piernas=@Piernas , Actividadmuscularb=@Actividadmuscularb, Cargafuerzab=@Cargafuerzab
+	update RulaTablaCompleta set ResultadoAnalisisRula=@ResultadoAnalisisRula, NivelRiesgo=@NivelRiesgo
 	where cargaId=@cargaId
 END
 GO
 
 use ProyectoFinal
 go
-
 CREATE or Alter PROCEDURE SP_Rula_updateRula1
 @cargaId Int,
 @Brazo int,
@@ -359,12 +359,14 @@ CREATE or Alter PROCEDURE SP_Rula_updateRula1
 @Piernas int,
 @Actividadmuscularb int,
 @Cargafuerzab int
+
 AS
 BEGIN
 	update RulaTablaCompleta set Brazo=@Brazo, Antebrazo=@Antebrazo, Muneca=@Muneca ,Giro=@Giro, Actividadmusculara=@Actividadmusculara , Cargafuerzaa  =@Cargafuerzaa , Cuellob = @Cuellob, Tronco=@Tronco , Piernas=@Piernas , Actividadmuscularb=@Actividadmuscularb, Cargafuerzab=@Cargafuerzab
 	where cargaId=@cargaId
 END
 GO
+
 
 use ProyectoFinal
 go
@@ -419,10 +421,6 @@ WHERE  TablaA =@ValorTablaA
 and TablaB =@ValorTablaB
 END
 GO
-
-select*from RulaTablaC
-
-
 
 
 use ProyectoFinal
@@ -788,7 +786,10 @@ AntebrazoReba INT,
 MunecaReba INT,
 BrazoReba INT,
 AgarreReba INT,
-ActividadReba INT)
+ActividadReba INT,
+ResultadoAnalisisReba NVARCHAR(30),
+FechaCargaReba date
+)
 GO	
 
 use ProyectoFinal
@@ -1193,7 +1194,9 @@ DistanciaVerticali int,
 FMNioshDnumero float,
 FMNioshInumero float,
 CMRNioshDnumero float,
-CMRNioshInumero float
+CMRNioshInumero float,
+ResultadoAnalisisNiosh NVARCHAR(30),
+FechaCargaNiosh date
 )
 GO	
 
@@ -1467,7 +1470,9 @@ ControlJss int,
 ApoyoSocialJss int,
 DemandaRdo nvarchar(20),
 ControlRdo nvarchar(20),
-ApoyoSocialRdo nvarchar(20)
+ApoyoSocialRdo nvarchar(20),
+ResultadoAnalisisJss NVARCHAR(30),
+FechaCargaJss date
 )
 GO
 
@@ -1621,6 +1626,44 @@ GO
 use ProyectoFinal
 go
 CREATE or Alter PROCEDURE SP_STAT_RULACont
+AS
+BEGIN
+select count (cargaId) from RulaTablaCompleta
+END
+GO
+
+
+--estadisticas personales por empresa
+
+
+--NIOSH
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_NIOSHContPerson
+AS
+BEGIN
+select count (cargaIdNiosh) from NioshTablaCompleta
+END
+GO
+
+--Reba
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_REBAContPerson
+@CUITReba int
+@FechaCarga date
+
+
+AS
+BEGIN
+select count (cargaIdReba) from RebaTablaCompleta where CUITReba =@CUITReba and FechaCarga >= @FechaCarga and FechaCarga <= @FechaCarga
+END
+GO
+
+--RULA
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_RULAContPerson
 AS
 BEGIN
 select count (cargaId) from RulaTablaCompleta

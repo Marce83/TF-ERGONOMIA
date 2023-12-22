@@ -383,6 +383,12 @@ namespace TF.WIN
                 txtActuacion.Text = "Nivel de Riesgo Muy Alto: Posturas que presentan factores de riesgo extremadamente altos, lo que indica un peligro inminente para la salud del trabajador. Se deben tomar medidas inmediatas y enérgicas para evitar lesiones.";
             }
 
+
+            oRula.ResultadoAnalisisRula = txtPuntuacionRula.Text;
+            oRula.niveldeRiesgo = int.Parse(txtNivelDeRiesgo.Text);
+            var res = oRulaBC.UpdateRula2BC(oRula);
+            // Pasar al siguiente formulario
+
         }
 
         public void ObtenerMaximoIdRula()
@@ -398,20 +404,6 @@ namespace TF.WIN
             }
 
         }
-
-
-       
-
-
-
-
-
-
-
-
-
-
-
 
 
         private void btnpagant_Click(object sender, EventArgs e)

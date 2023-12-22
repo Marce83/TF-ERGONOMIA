@@ -81,6 +81,8 @@ namespace TF.WIN
             oReba.DniEmpleadoReba = txtDniEmpleadoReba.Text;
             oReba.EmpleadoReba = txtNombreEmpleadoReba.Text;
             oReba.EmpresaReba = txtNombreEmpresaReba.Text;
+            oReba.FechaCargaReba = DateTime.Parse(dtpReba.Text);
+
             var res = oRebaBC.InsertRebaPORTADABC(oReba);
             MessageBox.Show("Analisis REBA creado con éxito");
 
@@ -94,6 +96,11 @@ namespace TF.WIN
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void REBA_PORTADA_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

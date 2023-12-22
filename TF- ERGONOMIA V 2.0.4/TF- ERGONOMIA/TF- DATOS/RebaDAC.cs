@@ -29,6 +29,7 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@DniEmpleadoReba", SqlDbType.NVarChar).Value = oReba.DniEmpleadoReba;
                 sqlCom.Parameters.Add("@EmpleadoReba", SqlDbType.NVarChar).Value = oReba.EmpleadoReba;
                 sqlCom.Parameters.Add("@EmpresaReba", SqlDbType.NVarChar).Value = oReba.EmpresaReba;
+                sqlCom.Parameters.Add("@FechaCargaReba", SqlDbType.DateTime).Value = oReba.FechaCargaReba;
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();
@@ -71,19 +72,22 @@ namespace TF.DAC
                 SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
                 sqlCom.CommandType = CommandType.StoredProcedure;
                 sqlCom.Parameters.Add("@cargaIdReba", SqlDbType.Int).Value = oReba.cargaIdReba;
+                sqlCom.Parameters.Add("@BrazoReba", SqlDbType.Int).Value = oReba.BrazoReba;
+                sqlCom.Parameters.Add("@AgarreReba", SqlDbType.Int).Value = oReba.AgarreReba;
+                sqlCom.Parameters.Add("@ActividadReba", SqlDbType.Int).Value = oReba.ActividadReba;
                 sqlCom.Parameters.Add("@TroncoReba", SqlDbType.Int).Value = oReba.TroncoReba;
                 sqlCom.Parameters.Add("@CuelloReba", SqlDbType.Int).Value = oReba.CuelloReba;
                 sqlCom.Parameters.Add("@PiernaReba", SqlDbType.Int).Value = oReba.PiernasReba;
                 sqlCom.Parameters.Add("@CargaFuerzaAReba", SqlDbType.Int).Value = oReba.CargafuerzaReba;
                 sqlCom.Parameters.Add("@AntebrazoReba", SqlDbType.Int).Value = oReba.AntebrazoReba;
                 sqlCom.Parameters.Add("@MunecaReba", SqlDbType.Int).Value = oReba.MunecaReba;
-                sqlCom.Parameters.Add("@BrazoReba", SqlDbType.Int).Value = oReba.BrazoReba;
-                sqlCom.Parameters.Add("@AgarreReba", SqlDbType.Int).Value = oReba.AgarreReba;
-                sqlCom.Parameters.Add("@ActividadReba", SqlDbType.Int).Value = oReba.ActividadReba;
+               
+
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();
                 return 1;
+
             }
             catch (Exception ex)
             {
@@ -91,18 +95,38 @@ namespace TF.DAC
 
             }
 
-
-
-
-
-
-
-
-
-
-
-
         }
+           public int UpdateReba2DAC(Reba oReba)
+           {
+                try
+                {
+                    string sqlSentencia = "SP_Reba_updateReba2";
+                    SqlConnection sqlCnn = new SqlConnection();
+                    sqlCnn.ConnectionString = conectionString;
+                    SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                    sqlCom.CommandType = CommandType.StoredProcedure;
+                    sqlCom.Parameters.Add("@cargaIdReba", SqlDbType.Int).Value = oReba.cargaIdReba;
+                    sqlCom.Parameters.Add("@ResultadoAnalisisReba", SqlDbType.Int).Value = oReba.ResultadoAnalisisReba;
+                    sqlCom.Parameters.Add("@NivelAccion", SqlDbType.Int).Value = oReba.NivelAccion;
+                    sqlCom.Parameters.Add("@NivelRiesgo", SqlDbType.NVarChar).Value = oReba.NivelRiesgo;
+                    sqlCnn.Open();
+                    var res = sqlCom.ExecuteNonQuery();
+                    sqlCnn.Close();
+                    return 1;
+    }
+                catch (Exception ex)
+                {
+                    throw ex;
+
+                }
+
+
+           }
+
+
+
+
+
         public DataTable Reba_ResultadoDAC(Reba oReba)
         {
             try

@@ -68,6 +68,7 @@ namespace TF.WIN
             RulaBC oRulaBC = new RulaBC();
             orula.CUIT = txtCUITEncontrado.Text;
             orula.PuestoDeTrabajo = txtpuestotrabajoencontrado.Text;
+            orula.FechaCarga = DateTime.Parse(dtpRula.Text);
             var res = oRulaBC.InsertRulaFormPORTADABC(orula);
             MessageBox.Show("Analisis Rula creado con éxito");
 

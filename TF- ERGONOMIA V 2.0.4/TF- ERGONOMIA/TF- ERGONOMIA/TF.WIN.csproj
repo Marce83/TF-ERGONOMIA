@@ -42,8 +42,8 @@
     <Reference Include="itextsharp.xmlworker, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\itextsharp.xmlworker.5.5.13.3\lib\itextsharp.xmlworker.dll</HintPath>
     </Reference>
-    <Reference Include="MaterialSkin, Version=2.3.1.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.2.RTL.2.3.1.1\lib\net461\MaterialSkin.dll</HintPath>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.RTL.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -89,6 +89,12 @@
     </Compile>
     <Compile Include="frmEmpleados.Designer.cs">
       <DependentUpon>frmEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadisticaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadisticaMenu.Designer.cs">
+      <DependentUpon>frmEstadisticaMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEstadisticas.cs">
       <SubType>Form</SubType>
@@ -240,8 +246,14 @@
     <EmbeddedResource Include="frmEmpleados.resx">
       <DependentUpon>frmEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadisticaMenu.resx">
+      <DependentUpon>frmEstadisticaMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEstadisticas.resx">
       <DependentUpon>frmEstadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadisticas2.resx">
+      <DependentUpon>frmEstadisticas2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInformes.resx">
       <DependentUpon>frmInformes.cs</DependentUpon>

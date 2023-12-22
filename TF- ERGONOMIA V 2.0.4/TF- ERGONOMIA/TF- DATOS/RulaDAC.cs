@@ -26,6 +26,7 @@ namespace TF.DAC
                 sqlCom.CommandType = CommandType.StoredProcedure;
                 sqlCom.Parameters.Add("@CUIT", SqlDbType.NVarChar).Value = oRula.CUIT;
                 sqlCom.Parameters.Add("@PuestoDeTrabajo", SqlDbType.NVarChar).Value = oRula.PuestoDeTrabajo;
+                sqlCom.Parameters.Add("@FechaCarga", SqlDbType.DateTime).Value = oRula.FechaCarga;
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();
@@ -74,32 +75,31 @@ namespace TF.DAC
             }
 
         }
-        //public int UpdateRula2DAC(Rula oRula)
-        //{
-        //    try
-        //    {
-        //        string sqlSentencia = "SP_Rula_updateRula2";
-        //        SqlConnection sqlCnn = new SqlConnection();
-        //        sqlCnn.ConnectionString = conectionString;
-        //        SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
-        //        sqlCom.CommandType = CommandType.StoredProcedure;
-        //        sqlCom.Parameters.Add("@cargaId", SqlDbType.Int).Value = oRula.cargaId;
-        //        sqlCom.Parameters.Add("@Actividadmusculara", SqlDbType.Int).Value = oRula.Actividadmusculara;
-        //        sqlCom.Parameters.Add("@Cargafuerzaa", SqlDbType.Int).Value = oRula.Cargafuerzaa;
-        //        sqlCom.Parameters.Add("@Cuellob", SqlDbType.Int).Value = oRula.Cuellob;
-        //        sqlCnn.Open();
-        //        var res = sqlCom.ExecuteNonQuery();
-        //        sqlCnn.Close();
-        //        return 1;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //        //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
-        //        //return null;
-        //    }
+        public int UpdateRula2DAC(Rula oRula)
+        {
+            try
+            {
+                string sqlSentencia = "SP_Rula_updateRula2";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCom.CommandType = CommandType.StoredProcedure;
+                sqlCom.Parameters.Add("@cargaId", SqlDbType.Int).Value = oRula.cargaId;
+                sqlCom.Parameters.Add("@ResultadoAnalisisRula", SqlDbType.NVarChar).Value = oRula.ResultadoAnalisisRula;
+                sqlCom.Parameters.Add("@NivelRiesgo", SqlDbType.Int).Value = oRula.niveldeRiesgo;
+                sqlCnn.Open();
+                var res = sqlCom.ExecuteNonQuery();
+                sqlCnn.Close();
+                return 1;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
 
-        //}
+        }
 
         //public int UpdateRula3DAC(Rula oRula)
         //{

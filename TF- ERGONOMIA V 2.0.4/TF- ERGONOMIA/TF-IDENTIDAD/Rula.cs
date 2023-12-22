@@ -11,6 +11,7 @@ namespace TF.ENTITIES
         public int cargaId { get; set; }
         public string CUIT { get; set; }
         public string PuestoDeTrabajo { get; set; }
+        public DateTime FechaCarga { get; set; }
         public int Brazo { get; set; }
         public int Antebrazo { get; set; }
         public int Muneca { get; set; }
@@ -24,6 +25,7 @@ namespace TF.ENTITIES
         public int Cargafuerzab { get; set; }
         public int puntuacionRula { get; set; }
         public int niveldeRiesgo { get; set; }
+        public string ResultadoAnalisisRula { get; set; }
 
 
         // Resultados VALOR Tablas A, B y C //
