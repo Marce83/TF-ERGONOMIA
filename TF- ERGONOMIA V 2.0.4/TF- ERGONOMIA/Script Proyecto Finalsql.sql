@@ -787,7 +787,9 @@ MunecaReba INT,
 BrazoReba INT,
 AgarreReba INT,
 ActividadReba INT,
-ResultadoAnalisisReba NVARCHAR(30),
+ResultadoAnalisisReba int,
+NivelAccion int,
+NivelRiesgo NVARCHAR(30),
 FechaCargaReba date
 )
 GO	
@@ -799,11 +801,13 @@ CREATE or Alter PROCEDURE SP_Reba_Insert
 @PuestoDeTrabajoReba NVARCHAR(20),
 @DniEmpleadoReba nvarchar(11),
 @EmpleadoReba NVARCHAR(30),
-@EmpresaReba nvarchar(30)
+@EmpresaReba nvarchar(30),
+@FechaCargaReba date
+
 AS
 BEGIN
-	insert into RebaTablaCompleta (CUITReba,PuestoDeTrabajoReba,DniEmpleadoReba,EmpleadoReba,EmpresaReba) 
-	VALUES(@CUITReba,@PuestoDeTrabajoReba,@DniEmpleadoReba,@EmpleadoReba,@EmpresaReba)
+	insert into RebaTablaCompleta (CUITReba,PuestoDeTrabajoReba,DniEmpleadoReba,EmpleadoReba,EmpresaReba,FechaCargaReba) 
+	VALUES(@CUITReba,@PuestoDeTrabajoReba,@DniEmpleadoReba,@EmpleadoReba,@EmpresaReba,@FechaCargaReba)
 END
 GO
 
@@ -835,6 +839,23 @@ BEGIN
 	where cargaIdReba=@cargaIdReba
 END
 GO
+
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_Reba_updateReba2
+@cargaIdReba Int,
+@ResultadoAnalisisReba int,
+@NivelAccion int,
+@NivelRiesgo NVARCHAR(30)
+AS
+BEGIN
+	update RebaTablaCompleta set ResultadoAnalisisReba=@ResultadoAnalisisReba, NivelAccion=@NivelAccion, NivelRiesgo=@NivelRiesgo
+	where cargaIdReba=@cargaIdReba
+END
+GO
+
+
 
 use ProyectoFinal
 go
@@ -1162,7 +1183,7 @@ END
 GO
 
 
------------------------------------------- Niosh --------------------------------------------------
+------------------------------------------METODO DE ANALISIS NIOSH --------------------------------------------------
 
 use ProyectoFinal
 go

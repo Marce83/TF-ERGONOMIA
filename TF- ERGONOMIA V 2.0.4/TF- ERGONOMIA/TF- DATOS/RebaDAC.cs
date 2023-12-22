@@ -81,8 +81,6 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@CargaFuerzaAReba", SqlDbType.Int).Value = oReba.CargafuerzaReba;
                 sqlCom.Parameters.Add("@AntebrazoReba", SqlDbType.Int).Value = oReba.AntebrazoReba;
                 sqlCom.Parameters.Add("@MunecaReba", SqlDbType.Int).Value = oReba.MunecaReba;
-               
-
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();
