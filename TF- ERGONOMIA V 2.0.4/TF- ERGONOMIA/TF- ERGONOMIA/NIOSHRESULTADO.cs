@@ -41,12 +41,6 @@ namespace TF.WIN
             cboControl.Items.Add(new ComboBoxOption("SI", 1));
             cboControl.Items.Add(new ComboBoxOption("NO", 2));
 
-
-
-
-
-
-
         }
 
 
@@ -72,11 +66,11 @@ namespace TF.WIN
                 NioshRescatar();
                 resultadoIl();
                 resultadofinal();
-                
+                NioshGuardarfinal();
             }
             catch {}
 
-            NioshGuardarfinal();
+            //NioshGuardarfinal();
 
         }
 

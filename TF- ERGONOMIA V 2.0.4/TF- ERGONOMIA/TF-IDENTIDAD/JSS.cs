@@ -14,6 +14,7 @@ namespace TF.ENTITIES
         public string DniEmpleadoJSS { get; set; }
         public string EmpleadoJSS { get; set; }
         public string EmpresaJSS { get; set; }
+        public DateTime FechaCargaJss { get; set; }
         public int cargaIdJSS { get; set; }
         public int DemandaJss { get; set; }
         public int ControlJss { get; set; }
@@ -21,6 +22,8 @@ namespace TF.ENTITIES
         public string DemandaRdo { get; set; }
         public string ControlRdo { get; set; }
         public string ApoyoSocialRdo { get; set; }
+
+        public string ResultadoAnalisisJss { get; set; }
 
 
 

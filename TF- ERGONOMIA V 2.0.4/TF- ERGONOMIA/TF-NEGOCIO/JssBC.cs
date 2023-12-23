@@ -21,6 +21,13 @@ namespace TF.BC
             JssDAC oJssDAC = new JssDAC();
             return oJssDAC.UpdateJSSDAC(Ojss);
         }
+
+        public int UpdateJss2BC(jss Ojss)
+        {
+            JssDAC oJssDAC = new JssDAC();
+            return oJssDAC.UpdateJSS2DAC(Ojss);
+        }
+
         public DataTable JssMaxIDBC(jss Ojss)
         {
             JssDAC oJssDAC = new JssDAC();

@@ -28,6 +28,7 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@DniEmpleadoJSS", SqlDbType.NVarChar).Value = Ojss.DniEmpleadoJSS;
                 sqlCom.Parameters.Add("@EmpleadoJSS", SqlDbType.NVarChar).Value = Ojss.EmpleadoJSS;
                 sqlCom.Parameters.Add("@EmpresaJSS", SqlDbType.NVarChar).Value = Ojss.EmpresaJSS;
+                sqlCom.Parameters.Add("@FechaCargaJss", SqlDbType.DateTime).Value = Ojss.FechaCargaJss;
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();
@@ -70,8 +71,36 @@ namespace TF.DAC
                 //return 0;
             }
 
+        }
+
+
+        public int UpdateJSS2DAC(jss Ojss)
+        {
+            try
+            {
+                string sqlSentencia = "SP_JSS_update2";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCom.CommandType = CommandType.StoredProcedure;
+                sqlCom.Parameters.Add("@cargaIdJSS", SqlDbType.Int).Value = Ojss.cargaIdJSS;
+                sqlCom.Parameters.Add("@ResultadoAnalisisJss", SqlDbType.NVarChar).Value = Ojss.ResultadoAnalisisJss;
+                sqlCnn.Open();
+                var res = sqlCom.ExecuteNonQuery();
+                sqlCnn.Close();
+                return 1;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al cargar los datos del Empleado: " + ex.Message);
+                //return 0;
+            }
 
         }
+
+
+
         public DataTable JssMaxIDDAC(jss Ojss)
         {
             string sqlSentencia = "SP_JSS_MaxID";

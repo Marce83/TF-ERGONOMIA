@@ -38,8 +38,6 @@ namespace TF.WIN
 
 
         }
-
-
         public void ObtenerMaximoIdJSS()
         {
             JssBC oJssBC = new JssBC();
@@ -53,8 +51,6 @@ namespace TF.WIN
             }
 
         }
-
-
         public void JssRescatar()
         {
             try
@@ -101,14 +97,10 @@ namespace TF.WIN
                     string resultado10 = dt225.Rows[0][11].ToString();
                     txtASR.Text = resultado10;
                 }
-
-
             }
 
             catch { }
         }
-
-
         private void btnRecuperarCarga_Click(object sender, EventArgs e)
         {
             JssRescatar();
@@ -128,18 +120,20 @@ namespace TF.WIN
              
                 int ApoyoSocial = as6;
                 
-                if (Demanda < 15 && Control < 18 && ApoyoSocial < 18) { txtActuacionJSS1.Text = "Trabajo Pasivo y perjudicial para la salud, con bajo Apoyo Social"; }
-                else if (Demanda < 15 && Control < 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Trabajo Pasivo y perjudicial para la salud, con Alto Apoyo Social"; }
-                else if (Demanda < 15 && Control >= 18 && ApoyoSocial < 18) { txtActuacionJSS1.Text = "Trabajo Pasivo y perjudicial para la salud, con Bajo Apoyo Social"; }
-                else if (Demanda < 15 && Control >= 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Trabajo Pasivo y perjudicial para la salud, con Alto Apoyo Social"; }
-                else if (Demanda >= 15 && Control < 18 && ApoyoSocial < 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con bajo Apoyo Social"; }
-                else if (Demanda >= 15 && Control < 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con Alto Apoyo Social"; }
-                else if (Demanda >= 15 && Control >= 18 && ApoyoSocial < 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con Bajo Apoyo Social"; }
-                else if (Demanda >= 15 && Control >= 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con Alto Apoyo Social"; }
+                if (Demanda < 15 && Control < 18 && ApoyoSocial < 18) { txtActuacionJSS1.Text = "Trabajo Pasivo y perjudicial para la salud, con bajo Apoyo Social"; txtSituacionJss.Text = "Trabajo Pasivo"; }
+                else if (Demanda < 15 && Control < 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Trabajo Pasivo y perjudicial para la salud, con Alto Apoyo Social"; txtSituacionJss.Text = "Trabajo Pasivo"; }
+                else if (Demanda < 15 && Control >= 18 && ApoyoSocial < 18) { txtActuacionJSS1.Text = "Trabajo Pasivo y perjudicial para la salud, con Bajo Apoyo Social"; txtSituacionJss.Text = "Trabajo Pasivo"; }
+                else if (Demanda < 15 && Control >= 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Trabajo Pasivo y perjudicial para la salud, con Alto Apoyo Social"; txtSituacionJss.Text = "Trabajo Pasivo"; }
+                else if (Demanda >= 15 && Control < 18 && ApoyoSocial < 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con bajo Apoyo Social"; txtSituacionJss.Text = "Alto Nivel de estrés"; }
+                else if (Demanda >= 15 && Control < 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con Alto Apoyo Social"; txtSituacionJss.Text = "Alto Nivel de estrés"; }
+                else if (Demanda >= 15 && Control >= 18 && ApoyoSocial < 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con Bajo Apoyo Social"; txtSituacionJss.Text = "Alto Nivel de estrés"; }
+                else if (Demanda >= 15 && Control >= 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con Alto Apoyo Social"; txtSituacionJss.Text = "Alto Nivel de estrés"; }
 
             }
             catch { }
 
+
+            GuardarResultado();
         }
 
         private void btncerrar_Click(object sender, EventArgs e)
@@ -147,16 +141,12 @@ namespace TF.WIN
             Close();
 
         }
-
-
         private string GetUniqueFileName(string baseFileName)
         {
             string fileName = $"{baseFileName}{fileCounter}.pdf";
             fileCounter++;
             return fileName;
         }
-
-
         private void btnobtenerinforme_Click(object sender, EventArgs e)
         {
             SaveFileDialog guardar = new SaveFileDialog();
@@ -211,5 +201,18 @@ namespace TF.WIN
             }
 
         }
+        private void GuardarResultado()
+        {
+
+                   jss Ojss = new jss();
+                JssBC oJssBC = new JssBC();
+
+                Ojss.cargaIdJSS = Convert.ToInt32(txtcargaidJSS.Text);
+                Ojss.ResultadoAnalisisJss = txtSituacionJss.Text;
+               
+                var res = oJssBC.UpdateJss2BC(Ojss);
+         
+        }
+
     }
     }

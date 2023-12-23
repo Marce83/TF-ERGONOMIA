@@ -1183,7 +1183,7 @@ END
 GO
 
 
-------------------------------------------METODO DE ANALISIS NIOSH Z--------------------------------------------------
+------------------------------------------METODO DE ANALISIS NIOSH--------------------------------------------------
 
 use ProyectoFinal
 go
@@ -1494,7 +1494,7 @@ END
 GO
 
 
---------------------------JSS-----------------------------
+--------------------------METODO DE ANALISIS JSS-----------------------------
 
 
 use ProyectoFinal
@@ -1525,11 +1525,12 @@ CREATE or Alter PROCEDURE SP_JSS_Insert
 @PuestoDeTrabajoJSS NVARCHAR(20),
 @DniEmpleadoJSS nvarchar(11),
 @EmpleadoJSS nvarchar(30),
-@EmpresaJSS nvarchar(30)
+@EmpresaJSS nvarchar(30),
+@FechaCargaJss date
 AS
 BEGIN
-	insert into JssTablaCompleta (CUITJSS,PuestoDeTrabajoJSS,DniEmpleadoJSS,EmpleadoJSS,EmpresaJSS) 
-	VALUES(@CUITJSS,@PuestoDeTrabajoJSS,@DniEmpleadoJSS,@EmpleadoJSS,@EmpresaJSS)
+	insert into JssTablaCompleta (CUITJSS,PuestoDeTrabajoJSS,DniEmpleadoJSS,EmpleadoJSS,EmpresaJSS,FechaCargaJss) 
+	VALUES(@CUITJSS,@PuestoDeTrabajoJSS,@DniEmpleadoJSS,@EmpleadoJSS,@EmpresaJSS,@FechaCargaJss)
 END
 GO
 
@@ -1548,6 +1549,19 @@ CREATE or Alter PROCEDURE SP_JSS_update1
 AS
 BEGIN
 	update JssTablaCompleta set DemandaJss=@DemandaJss, ControlJss =@ControlJss, ApoyoSocialJss =@ApoyoSocialJss, DemandaRdo = @DemandaRdo, ControlRdo = @ControlRdo, ApoyoSocialRdo = @ApoyoSocialRdo
+	where cargaIdJSS=@cargaIdJSS
+END
+GO
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_JSS_update2
+@cargaIdJSS int,
+@ResultadoAnalisisJss nvarchar(30)
+
+AS
+BEGIN
+	update JssTablaCompleta set ResultadoAnalisisJss=@ResultadoAnalisisJss
 	where cargaIdJSS=@cargaIdJSS
 END
 GO
@@ -1674,10 +1688,8 @@ END
 GO
 
 
---estadisticas personales por empresa
+---------------------estadisticas personales por empresa-------------------------------------------
 
-
---NIOSH
 use ProyectoFinal
 go
 CREATE or Alter PROCEDURE SP_STAT_NIOSHContPerson

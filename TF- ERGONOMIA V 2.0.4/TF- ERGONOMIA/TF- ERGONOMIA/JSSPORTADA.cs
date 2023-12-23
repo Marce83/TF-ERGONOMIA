@@ -77,6 +77,7 @@ namespace TF.WIN
             Ojss.DniEmpleadoJSS = txtDniEmpleadoNiosh.Text;
             Ojss.EmpleadoJSS = txtNombreEmpleadoNiosh.Text;
             Ojss.EmpresaJSS = txtNombreEmpresaNiosh.Text;
+            Ojss.FechaCargaJss = DateTime.Parse(dtpJss.Text);
             var res = oJssBC.InserJssPORTADABC(Ojss);
             MessageBox.Show("Análisis JSS creado con éxito");
 
