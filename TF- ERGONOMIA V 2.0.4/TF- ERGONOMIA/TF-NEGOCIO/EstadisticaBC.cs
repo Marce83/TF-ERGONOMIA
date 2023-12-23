@@ -66,5 +66,33 @@ namespace TF.BC
             return dt;
         }
 
+        public DataTable ContNIOSHPersonBC()
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.ContNIOSHPersonDAC();
+            return dt;
+        }
+
+        public DataTable ContREBAPersonBC()
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.ContREBAPersonDAC();
+            return dt;
+        }
+
+        public DataTable ContRULAPersonBC()
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.ContRULAPersonDAC();
+            return dt;
+        }
+
+        public DataTable ContJSSPersonBC()
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.ContJSSPersonDAC();
+            return dt;
+        }
+
     }
 }

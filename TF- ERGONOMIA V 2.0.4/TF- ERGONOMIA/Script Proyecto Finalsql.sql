@@ -300,7 +300,7 @@ Actividadmuscularb INT,
 Cargafuerzab INT,
 ResultadoAnalisisRula NVARCHAR(30),
 NivelRiesgo int,
-FechaCarga date
+FechaCarga DateTime
 )
 GO	
 
@@ -790,7 +790,7 @@ ActividadReba INT,
 ResultadoAnalisisReba int,
 NivelAccion int,
 NivelRiesgo NVARCHAR(30),
-FechaCargaReba date
+FechaCargaReba DateTime
 )
 GO	
 
@@ -1220,7 +1220,7 @@ ILNiosh Float,
 RiesgoNiosh nvarchar(30),
 PoblacionNiosh int,
 ControlNiosh int,
-FechaCargaNiosh date
+FechaCargaNiosh DateTime
 )
 GO	
 
@@ -1513,7 +1513,7 @@ DemandaRdo nvarchar(20),
 ControlRdo nvarchar(20),
 ApoyoSocialRdo nvarchar(20),
 ResultadoAnalisisJss NVARCHAR(30),
-FechaCargaJss date
+FechaCargaJss DateTime
 )
 GO
 
@@ -1651,12 +1651,6 @@ END
 GO
 
 
-select af.CUITJSS , rc.Nombre, count (af.cargaIdJSS) from JssTablaCompleta af, Empresas rc where af.CUITJSS = rc.CUIT  group by af.CUITJSS, rc.Nombre
-
-
-
-
-
 --NIOSH
 use ProyectoFinal
 go
@@ -1690,12 +1684,29 @@ GO
 
 ---------------------estadisticas personales por empresa-------------------------------------------
 
+--empleados
+--use ProyectoFinal
+--go
+--CREATE or Alter PROCEDURE SP_STAT_ContEmpleadosPerson
+--@CUITReba nvarchar(11)
+--AS
+--BEGIN
+--select count (DNI) from Empleados where --CUITReba =@CUITReba
+--END
+--GO
+--Hay que agregar al final una columna a empleados que sea el cuit de la empresa y hacer la modificacion de guardar.
+
+
+--Niosh
 use ProyectoFinal
 go
 CREATE or Alter PROCEDURE SP_STAT_NIOSHContPerson
+@CUITNiosh nvarchar(11),
+@FechaCargaNiosh Date,
+@FechaCargaNiosh2 Date
 AS
 BEGIN
-select count (cargaIdNiosh) from NioshTablaCompleta
+select count (cargaIdNiosh) from NioshTablaCompleta where CUITNiosh =@CUITNiosh and FechaCargaNiosh >= @FechaCargaNiosh and FechaCargaNiosh <= @FechaCargaNiosh2
 END
 GO
 
@@ -1703,13 +1714,12 @@ GO
 use ProyectoFinal
 go
 CREATE or Alter PROCEDURE SP_STAT_REBAContPerson
-@CUITReba int
-@FechaCarga date
-
+@CUITReba nvarchar(11),
+@FechaCargaReba date
 
 AS
 BEGIN
-select count (cargaIdReba) from RebaTablaCompleta where CUITReba =@CUITReba and FechaCarga >= @FechaCarga and FechaCarga <= @FechaCarga
+select count (cargaIdReba) from RebaTablaCompleta where CUITReba =@CUITReba and FechaCargaReba >= @FechaCargaReba and FechaCargaReba <= @FechaCargaReba
 END
 GO
 
@@ -1717,8 +1727,22 @@ GO
 use ProyectoFinal
 go
 CREATE or Alter PROCEDURE SP_STAT_RULAContPerson
+@CUIT nvarchar(11),
+@FechaCarga date
 AS
 BEGIN
-select count (cargaId) from RulaTablaCompleta
+select count (cargaId) from RulaTablaCompleta where CUIT =@CUIT and FechaCarga >= @FechaCarga and FechaCarga <= @FechaCarga
+END
+GO
+
+--jss
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_JSSContPerson
+@CUITJSS nvarchar(11),
+@FechaCargaJss date
+AS
+BEGIN
+select count (cargaIdJSS) from JssTablaCompleta where CUITJSS =@CUITJSS and FechaCargaJss >= @FechaCargaJss and FechaCargaJss <= @FechaCargaJss
 END
 GO
