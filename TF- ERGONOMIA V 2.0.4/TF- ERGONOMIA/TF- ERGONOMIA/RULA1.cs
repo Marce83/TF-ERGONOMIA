@@ -403,31 +403,36 @@ namespace TF.WIN
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                RulaBC oRulaBC = new RulaBC();
+                Rula oRula = new Rula();
+                oRula.Antebrazo = int.Parse(txtantebrazofinal.Text);
+                oRula.Brazo = int.Parse(txtBrazoFinal.Text);
+                oRula.cargaId = int.Parse(txtcargaid.Text);
+                oRula.Muneca = int.Parse(txtmunecafinal.Text);
+                oRula.Giro = int.Parse(txtgirofinal.Text);
+                oRula.Actividadmusculara = int.Parse(actividadgrupoAfinal.Text);
+                oRula.Cargafuerzaa = int.Parse(txtcargafuerzafinal.Text);
+                oRula.Cuellob = int.Parse(txtcuellofinal.Text);
+                oRula.Tronco = int.Parse(txttroncofinal.Text);
+                oRula.Piernas = int.Parse(txtpiernasfinal.Text);
+                oRula.Actividadmuscularb = int.Parse(txtmuscular2.Text);
+                oRula.Cargafuerzab = int.Parse(txtcargafuerza2.Text);
 
-            RulaBC oRulaBC = new RulaBC();
-            Rula oRula = new Rula();
-            oRula.Antebrazo = int.Parse(txtantebrazofinal.Text);
-            oRula.Brazo = int.Parse(txtBrazoFinal.Text);
-            oRula.cargaId = int.Parse(txtcargaid.Text);
-            oRula.Muneca = int.Parse(txtmunecafinal.Text);
-            oRula.Giro = int.Parse(txtgirofinal.Text);
-            oRula.Actividadmusculara = int.Parse(actividadgrupoAfinal.Text);
-            oRula.Cargafuerzaa = int.Parse(txtcargafuerzafinal.Text);
-            oRula.Cuellob = int.Parse(txtcuellofinal.Text);
-            oRula.Tronco = int.Parse(txttroncofinal.Text);
-            oRula.Piernas = int.Parse(txtpiernasfinal.Text);
-            oRula.Actividadmuscularb = int.Parse(txtmuscular2.Text);
-            oRula.Cargafuerzab = int.Parse(txtcargafuerza2.Text);
+                var res = oRulaBC.UpdateRula1BC(oRula);
+                MessageBox.Show("Carga Guardada");
 
-            var res = oRulaBC.UpdateRula1BC(oRula);
-            MessageBox.Show("Carga Guardada");
+                // Pasar al siguiente formulario
+                RULARESULTADO ORULARESULTADO = new RULARESULTADO();
+                ORULARESULTADO.Show();
 
-            // Pasar al siguiente formulario
-            RULARESULTADO ORULARESULTADO = new RULARESULTADO();
-            ORULARESULTADO.Show();
-
-            Close();
-
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex + "verificar si existen caracteristicas sin completar");
+            }
         }
 
         private void btncerrar_Click(object sender, EventArgs e)

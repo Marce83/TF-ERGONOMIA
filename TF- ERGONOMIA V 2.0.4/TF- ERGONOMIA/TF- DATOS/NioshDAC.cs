@@ -29,7 +29,7 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@DniEmpleadoNiosh", SqlDbType.NVarChar).Value = oNiosh.DniEmpleadoNiosh;
                 sqlCom.Parameters.Add("@EmpleadoNiosh", SqlDbType.NVarChar).Value = oNiosh.EmpleadoNiosh;
                 sqlCom.Parameters.Add("@EmpresaNiosh", SqlDbType.NVarChar).Value = oNiosh.EmpresaNiosh;
-                sqlCom.Parameters.Add("@FechaCargaNiosh", SqlDbType.DateTime).Value = oNiosh.FechaCargaNiosh;
+                sqlCom.Parameters.Add("@FechaCargaNiosh", SqlDbType.DateTime).Value = oNiosh.FechaCargaNiosh.ToString("dd/MM/yyyy");
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();

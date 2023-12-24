@@ -370,7 +370,7 @@
             // 
             // dtpJss
             // 
-            this.dtpJss.CustomFormat = "dd/mm/yyyy";
+            this.dtpJss.CustomFormat = "";
             this.dtpJss.Location = new System.Drawing.Point(116, 380);
             this.dtpJss.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpJss.Name = "dtpJss";

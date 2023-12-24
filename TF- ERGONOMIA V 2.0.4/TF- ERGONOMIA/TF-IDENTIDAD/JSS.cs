@@ -15,6 +15,7 @@ namespace TF.ENTITIES
         public string EmpleadoJSS { get; set; }
         public string EmpresaJSS { get; set; }
         public DateTime FechaCargaJss { get; set; }
+        public DateTime FechaCargaJss2 { get; set; }
         public int cargaIdJSS { get; set; }
         public int DemandaJss { get; set; }
         public int ControlJss { get; set; }

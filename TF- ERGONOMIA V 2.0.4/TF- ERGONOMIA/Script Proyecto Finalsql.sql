@@ -300,7 +300,7 @@ Actividadmuscularb INT,
 Cargafuerzab INT,
 ResultadoAnalisisRula NVARCHAR(30),
 NivelRiesgo int,
-FechaCarga DateTime
+FechaCarga Date
 )
 GO	
 
@@ -317,7 +317,6 @@ BEGIN
 	VALUES(@CUIT,@PuestoDeTrabajo,@FechaCarga)
 END
 GO
-
 
 use ProyectoFinal
 go
@@ -790,7 +789,7 @@ ActividadReba INT,
 ResultadoAnalisisReba int,
 NivelAccion int,
 NivelRiesgo NVARCHAR(30),
-FechaCargaReba DateTime
+FechaCargaReba DateTime2
 )
 GO	
 
@@ -802,7 +801,7 @@ CREATE or Alter PROCEDURE SP_Reba_Insert
 @DniEmpleadoReba nvarchar(11),
 @EmpleadoReba NVARCHAR(30),
 @EmpresaReba nvarchar(30),
-@FechaCargaReba date
+@FechaCargaReba dateTime2
 
 AS
 BEGIN
@@ -1220,7 +1219,7 @@ ILNiosh Float,
 RiesgoNiosh nvarchar(30),
 PoblacionNiosh int,
 ControlNiosh int,
-FechaCargaNiosh DateTime
+FechaCargaNiosh DateTime2
 )
 GO	
 
@@ -1232,7 +1231,7 @@ CREATE or Alter PROCEDURE SP_Niosh_Insert
 @DniEmpleadoNiosh nvarchar(11),
 @EmpleadoNiosh nvarchar(30),
 @EmpresaNiosh nvarchar(30),
-@FechaCargaNiosh date
+@FechaCargaNiosh dateTime2
 AS
 BEGIN
 	insert into NioshTablaCompleta (CUITNiosh,PuestoDeTrabajoNiosh,DniEmpleadoNiosh,EmpleadoNiosh,EmpresaNiosh,FechaCargaNiosh) 
@@ -1513,7 +1512,7 @@ DemandaRdo nvarchar(20),
 ControlRdo nvarchar(20),
 ApoyoSocialRdo nvarchar(20),
 ResultadoAnalisisJss NVARCHAR(30),
-FechaCargaJss DateTime
+FechaCargaJss DateTime2
 )
 GO
 
@@ -1526,7 +1525,7 @@ CREATE or Alter PROCEDURE SP_JSS_Insert
 @DniEmpleadoJSS nvarchar(11),
 @EmpleadoJSS nvarchar(30),
 @EmpresaJSS nvarchar(30),
-@FechaCargaJss date
+@FechaCargaJss dateTime2
 AS
 BEGIN
 	insert into JssTablaCompleta (CUITJSS,PuestoDeTrabajoJSS,DniEmpleadoJSS,EmpleadoJSS,EmpresaJSS,FechaCargaJss) 
@@ -1698,51 +1697,83 @@ GO
 
 
 --Niosh
-use ProyectoFinal
-go
-CREATE or Alter PROCEDURE SP_STAT_NIOSHContPerson
-@CUITNiosh nvarchar(11),
-@FechaCargaNiosh Date,
-@FechaCargaNiosh2 Date
+USE ProyectoFinal
+GO
+
+CREATE OR ALTER PROCEDURE SP_STAT_NIOSHContPerson
+    @CUITNiosh NVARCHAR(11),
+    @FechaCargaNiosh DATETIME2,
+    @FechaCargaNiosh2 DATETIME2
 AS
 BEGIN
-select count (cargaIdNiosh) from NioshTablaCompleta where CUITNiosh =@CUITNiosh and FechaCargaNiosh >= @FechaCargaNiosh and FechaCargaNiosh <= @FechaCargaNiosh2
+    SELECT COUNT(cargaIdNiosh)
+    FROM NioshTablaCompleta
+    WHERE CUITNiosh = @CUITNiosh AND FechaCargaNiosh BETWEEN @FechaCargaNiosh AND @FechaCargaNiosh2;
 END
 GO
 
 --Reba
-use ProyectoFinal
-go
-CREATE or Alter PROCEDURE SP_STAT_REBAContPerson
-@CUITReba nvarchar(11),
-@FechaCargaReba date
+USE ProyectoFinal
+GO
 
+CREATE OR ALTER PROCEDURE SP_STAT_REBAContPerson
+    @CUITReba NVARCHAR(11),
+    @FechaCargaReba DATETIME2,
+    @FechaCargaReba2 DATETIME2
 AS
 BEGIN
-select count (cargaIdReba) from RebaTablaCompleta where CUITReba =@CUITReba and FechaCargaReba >= @FechaCargaReba and FechaCargaReba <= @FechaCargaReba
+    SELECT COUNT(cargaIdReba)
+    FROM RebaTablaCompleta
+    WHERE CUITReba = @CUITReba AND FechaCargaReba BETWEEN @FechaCargaReba AND @FechaCargaReba2;
 END
 GO
 
 --RULA
-use ProyectoFinal
-go
-CREATE or Alter PROCEDURE SP_STAT_RULAContPerson
-@CUIT nvarchar(11),
-@FechaCarga date
+USE ProyectoFinal
+GO
+
+CREATE OR ALTER PROCEDURE SP_STAT_RULAContPerson
+    @CUIT NVARCHAR(11),
+    @FechaCarga DATE,
+    @FechaCarga2 DATE
 AS
 BEGIN
-select count (cargaId) from RulaTablaCompleta where CUIT =@CUIT and FechaCarga >= @FechaCarga and FechaCarga <= @FechaCarga
+    SELECT COUNT(cargaId)
+    FROM RulaTablaCompleta
+    WHERE CUIT = @CUIT AND FechaCarga BETWEEN @FechaCarga AND @FechaCarga2;
 END
 GO
 
 --jss
-use ProyectoFinal
-go
-CREATE or Alter PROCEDURE SP_STAT_JSSContPerson
-@CUITJSS nvarchar(11),
-@FechaCargaJss date
+USE ProyectoFinal
+GO
+
+CREATE OR ALTER PROCEDURE SP_STAT_JSSContPerson
+    @CUITJSS NVARCHAR(11),
+    @FechaCargaJss DATETIME2,
+    @FechaCargaJss2 DATETIME2
 AS
 BEGIN
-select count (cargaIdJSS) from JssTablaCompleta where CUITJSS =@CUITJSS and FechaCargaJss >= @FechaCargaJss and FechaCargaJss <= @FechaCargaJss
+    SELECT COUNT(cargaIdJSS)
+    FROM JssTablaCompleta
+    WHERE CUITJSS = @CUITJSS AND FechaCargaJss BETWEEN @FechaCargaJss AND @FechaCargaJss2;
+END
+GO
+
+
+
+--jss
+USE ProyectoFinal
+GO
+
+CREATE OR ALTER PROCEDURE SP_STAT_JSSContPerson
+    @CUITJSS NVARCHAR(11),
+    @FechaCargaJss NVARCHAR(10),
+    @FechaCargaJss2 NVARCHAR(10)
+AS
+BEGIN
+    SELECT COUNT(cargaIdJSS)
+    FROM JssTablaCompleta
+    WHERE CUITJSS = @CUITJSS AND CONVERT(DATE, FechaCargaJss, 103) BETWEEN CONVERT(DATE, @FechaCargaJss, 103) AND CONVERT(DATE, @FechaCargaJss2, 103);
 END
 GO

@@ -18,7 +18,6 @@ namespace TF.WIN
         {
             InitializeComponent();
         }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
@@ -50,87 +49,114 @@ namespace TF.WIN
             ContNIOSH();
             ContREBA();
             ContRULA();
-
+            ContJSS();
 
 
         }
 
         public void ContNIOSH()
         {
-            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-            Niosh oNiosh = new Niosh();
-
-            oNiosh.CUITNiosh = txtCUITEncontrado.Text;
-            oNiosh.FechaCargaNiosh = DateTime.Parse(DataDesde.Text);
-            oNiosh.FechaCargaNiosh = DateTime.Parse(DataHasta.Text);
-
-
-            DataTable dt1100 = oEstadisticaBC.ContNIOSHPersonBC();
-
-            if (dt1100.Rows.Count > 0)
+            try
             {
-                string resultado1 = dt1100.Rows[0][0].ToString();
-                txtNioshCont.Text = resultado1;
+                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+                Niosh oNiosh = new Niosh();
+
+                oNiosh.CUITNiosh = txtCUITEncontrado.Text;
+                oNiosh.FechaCargaNiosh = FechaDesde.Value;
+                oNiosh.FechaCargaNiosh2 = FechaHasta.Value;
+
+
+                DataTable dt1100 = oEstadisticaBC.ContNIOSHPersonBC();
+
+                if (dt1100.Rows.Count > 0)
+                {
+                    string resultado1 = dt1100.Rows[0][0].ToString();
+                    txtNioshCont.Text = resultado1;
+                }
+
             }
-
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
+            }
 
         }
 
         public void ContREBA()
         {
-            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-            Reba oReba = new Reba();
-
-            oReba.CUITReba = txtCUITEncontrado.Text;
-            oReba.FechaCargaReba = DateTime.Parse(DataDesde.Text);
-            oReba.FechaCargaReba = DateTime.Parse(DataHasta.Text);
-
-            DataTable dt1101 = oEstadisticaBC.ContREBAPersonBC();
-
-            if (dt1101.Rows.Count > 0)
+            try
             {
-                string resultado2 = dt1101.Rows[0][0].ToString();
-                txtREBACont.Text = resultado2;
-            }
+                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+                Reba oReba = new Reba();
 
+                oReba.CUITReba = txtCUITEncontrado.Text;
+                oReba.FechaCargaReba = FechaDesde.Value;
+                oReba.FechaCargaReba2 = FechaHasta.Value;
+
+                DataTable dt1101 = oEstadisticaBC.ContREBAPersonBC();
+
+                if (dt1101.Rows.Count > 0)
+                {
+                    string resultado2 = dt1101.Rows[0][0].ToString();
+                    txtREBACont.Text = resultado2;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
+            }
         }
 
         public void ContRULA()
         {
-            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-            Rula orula = new Rula();
-
-            orula.CUIT = txtCUITEncontrado.Text;
-            orula.FechaCarga = DateTime.Parse(DataDesde.Text);
-            orula.FechaCarga = DateTime.Parse(DataHasta.Text);
-
-            DataTable dt1102 = oEstadisticaBC.ContRULAPersonBC();
-
-            if (dt1102.Rows.Count > 0)
+            try
             {
-                string resultado3 = dt1102.Rows[0][0].ToString();
-                txtRulaCont.Text = resultado3;
-            }
+                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+                Rula orula = new Rula();
 
-        }
-        public void ContJSS()
+                orula.CUIT = txtCUITEncontrado.Text;
+                orula.FechaCarga = FechaDesde.Value;  // Asegúrate de que FechaDesde.Value sea un objeto DateTime válido
+                orula.FechaCarga2 = FechaHasta.Value;  // Asegúrate de que FechaHasta.Value sea un objeto DateTime válido
+
+                DataTable dt1102 = oEstadisticaBC.ContRULAPersonBC();
+
+                if (dt1102.Rows.Count > 0)
+                {
+                    string resultado3 = dt1102.Rows[0][0].ToString();
+                    txtRulaCont.Text = resultado3;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
+            }
+          }
+    public void ContJSS()
         {
-            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-            jss Ojss = new jss();
-
-            Ojss.CUITJSS = txtCUITEncontrado.Text;
-            Ojss.FechaCargaJss = DateTime.Parse(DataDesde.Text);
-            Ojss.FechaCargaJss = DateTime.Parse(DataHasta.Text);
-
-            DataTable dt1103 = oEstadisticaBC.ContJSSPersonBC();
-
-            if (dt1103.Rows.Count > 0)
+            try
             {
-                string resultado4 = dt1103.Rows[0][0].ToString();
-                txtjsscont.Text = resultado4;
-            }
+                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+                jss Ojss = new jss();
 
+                Ojss.CUITJSS = txtCUITEncontrado.Text;
+
+                // Obtener las fechas directamente de los DateTimePicker
+                Ojss.FechaCargaJss = FechaDesde.Value;
+                Ojss.FechaCargaJss2 = FechaHasta.Value;
+
+                DataTable dt1103 = oEstadisticaBC.ContJSSPersonBC();
+
+                if (dt1103.Rows.Count > 0)
+                {
+                    string resultado4 = dt1103.Rows[0][0].ToString();
+                    txtjsscont.Text = resultado4;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
+                // Puedes agregar mensajes más descriptivos según sea necesario
+            }
         }
 
 

@@ -103,7 +103,7 @@
             this.txtpuestotrabajoencontrado.HideSelection = true;
             this.txtpuestotrabajoencontrado.LeadingIcon = null;
             this.txtpuestotrabajoencontrado.Location = new System.Drawing.Point(129, 290);
-            this.txtpuestotrabajoencontrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpuestotrabajoencontrado.Margin = new System.Windows.Forms.Padding(2);
             this.txtpuestotrabajoencontrado.MaxLength = 32767;
             this.txtpuestotrabajoencontrado.MouseState = MaterialSkin.MouseState.OUT;
             this.txtpuestotrabajoencontrado.Name = "txtpuestotrabajoencontrado";
@@ -164,7 +164,7 @@
             this.txtDniEmpleadoReba.HideSelection = true;
             this.txtDniEmpleadoReba.LeadingIcon = null;
             this.txtDniEmpleadoReba.Location = new System.Drawing.Point(129, 160);
-            this.txtDniEmpleadoReba.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDniEmpleadoReba.Margin = new System.Windows.Forms.Padding(2);
             this.txtDniEmpleadoReba.MaxLength = 32767;
             this.txtDniEmpleadoReba.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDniEmpleadoReba.Name = "txtDniEmpleadoReba";
@@ -225,7 +225,7 @@
             this.txtCUITEncontrado.HideSelection = true;
             this.txtCUITEncontrado.LeadingIcon = null;
             this.txtCUITEncontrado.Location = new System.Drawing.Point(129, 51);
-            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2);
             this.txtCUITEncontrado.MaxLength = 32767;
             this.txtCUITEncontrado.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCUITEncontrado.Name = "txtCUITEncontrado";
@@ -304,7 +304,7 @@
             this.txtNombreEmpresaReba.HideSelection = true;
             this.txtNombreEmpresaReba.LeadingIcon = null;
             this.txtNombreEmpresaReba.Location = new System.Drawing.Point(129, 102);
-            this.txtNombreEmpresaReba.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreEmpresaReba.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreEmpresaReba.MaxLength = 32767;
             this.txtNombreEmpresaReba.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreEmpresaReba.Name = "txtNombreEmpresaReba";
@@ -349,7 +349,7 @@
             this.txtNombreEmpleadoReba.HideSelection = true;
             this.txtNombreEmpleadoReba.LeadingIcon = null;
             this.txtNombreEmpleadoReba.Location = new System.Drawing.Point(129, 225);
-            this.txtNombreEmpleadoReba.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreEmpleadoReba.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreEmpleadoReba.MaxLength = 32767;
             this.txtNombreEmpleadoReba.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreEmpleadoReba.Name = "txtNombreEmpleadoReba";
@@ -370,7 +370,7 @@
             // 
             // dtpReba
             // 
-            this.dtpReba.CustomFormat = "dd/mm/yyyy";
+            this.dtpReba.CustomFormat = "";
             this.dtpReba.Location = new System.Drawing.Point(129, 367);
             this.dtpReba.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpReba.Name = "dtpReba";
@@ -417,7 +417,7 @@
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.btnCrear);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "REBA_PORTADA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "REBA_PORTADA";

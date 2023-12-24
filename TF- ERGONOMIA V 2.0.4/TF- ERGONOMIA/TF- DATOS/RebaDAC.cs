@@ -29,7 +29,7 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@DniEmpleadoReba", SqlDbType.NVarChar).Value = oReba.DniEmpleadoReba;
                 sqlCom.Parameters.Add("@EmpleadoReba", SqlDbType.NVarChar).Value = oReba.EmpleadoReba;
                 sqlCom.Parameters.Add("@EmpresaReba", SqlDbType.NVarChar).Value = oReba.EmpresaReba;
-                sqlCom.Parameters.Add("@FechaCargaReba", SqlDbType.DateTime).Value = oReba.FechaCargaReba;
+                sqlCom.Parameters.Add("@FechaCargaReba", SqlDbType.DateTime).Value = oReba.FechaCargaReba.ToString("dd/MM/yyyy");
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TF.ENTITIES
 {
@@ -12,6 +8,7 @@ namespace TF.ENTITIES
         public string CUIT { get; set; }
         public string PuestoDeTrabajo { get; set; }
         public DateTime FechaCarga { get; set; }
+        public DateTime FechaCarga2 { get; set; }
         public int Brazo { get; set; }
         public int Antebrazo { get; set; }
         public int Muneca { get; set; }

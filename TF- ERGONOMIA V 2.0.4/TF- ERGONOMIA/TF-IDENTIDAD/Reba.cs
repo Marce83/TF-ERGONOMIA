@@ -16,6 +16,7 @@ namespace TF.ENTITIES
         public string EmpleadoReba { get; set; }
         public string EmpresaReba { get; set; }
         public DateTime FechaCargaReba { get; set; }
+        public DateTime FechaCargaReba2 { get; set; }
 
         //Proceso de Carga
 

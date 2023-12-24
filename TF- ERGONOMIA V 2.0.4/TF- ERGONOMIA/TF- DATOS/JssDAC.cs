@@ -28,7 +28,7 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@DniEmpleadoJSS", SqlDbType.NVarChar).Value = Ojss.DniEmpleadoJSS;
                 sqlCom.Parameters.Add("@EmpleadoJSS", SqlDbType.NVarChar).Value = Ojss.EmpleadoJSS;
                 sqlCom.Parameters.Add("@EmpresaJSS", SqlDbType.NVarChar).Value = Ojss.EmpresaJSS;
-                sqlCom.Parameters.Add("@FechaCargaJss", SqlDbType.DateTime).Value = Ojss.FechaCargaJss;
+                sqlCom.Parameters.Add("@FechaCargaJss", SqlDbType.DateTime).Value = Ojss.FechaCargaJss.ToString("dd/MM/yyyy");
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();

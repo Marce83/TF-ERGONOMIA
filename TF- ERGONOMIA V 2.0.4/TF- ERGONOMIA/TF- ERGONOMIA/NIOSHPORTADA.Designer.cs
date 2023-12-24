@@ -370,7 +370,7 @@
             // 
             // dtpNiosh
             // 
-            this.dtpNiosh.CustomFormat = "dd/mm/yyyy";
+            this.dtpNiosh.CustomFormat = "";
             this.dtpNiosh.Location = new System.Drawing.Point(139, 357);
             this.dtpNiosh.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpNiosh.Name = "dtpNiosh";

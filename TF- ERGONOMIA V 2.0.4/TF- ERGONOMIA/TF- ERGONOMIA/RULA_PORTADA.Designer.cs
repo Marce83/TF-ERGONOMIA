@@ -290,7 +290,7 @@
             // 
             // dtpRula
             // 
-            this.dtpRula.CustomFormat = "dd/mm/yyyy";
+            this.dtpRula.CustomFormat = "";
             this.dtpRula.Location = new System.Drawing.Point(106, 277);
             this.dtpRula.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpRula.Name = "dtpRula";

@@ -26,7 +26,7 @@ namespace TF.DAC
                 sqlCom.CommandType = CommandType.StoredProcedure;
                 sqlCom.Parameters.Add("@CUIT", SqlDbType.NVarChar).Value = oRula.CUIT;
                 sqlCom.Parameters.Add("@PuestoDeTrabajo", SqlDbType.NVarChar).Value = oRula.PuestoDeTrabajo;
-                sqlCom.Parameters.Add("@FechaCarga", SqlDbType.DateTime).Value = oRula.FechaCarga;
+                sqlCom.Parameters.Add("@FechaCarga", SqlDbType.Date).Value = oRula.FechaCarga.ToString("yyyy-MM-dd");
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();
