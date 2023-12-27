@@ -291,8 +291,6 @@ namespace TF.WIN
                 ChartEmpLocal.Series[0].Points.AddXY(Localidad, cantidadEmpresas1);
             }
         }
-
-
         private void ConfigurarGraficoEmpxemp()
         {
             // Configura el gráfico aquí
@@ -345,24 +343,10 @@ namespace TF.WIN
                 chartempxemp.Series[0].Points.AddXY(Empleadosporempresas, cantidadEmpleados1);
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
         private void TotalMetodo_Click(object sender, EventArgs e)
         {
 
         }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();

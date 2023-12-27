@@ -7,8 +7,8 @@ namespace TF.ENTITIES
         public int cargaId { get; set; }
         public string CUIT { get; set; }
         public string PuestoDeTrabajo { get; set; }
-        public DateTime FechaCarga { get; set; }
-        public DateTime FechaCarga2 { get; set; }
+        public string FechaCarga { get; set; }
+        public string FechaCarga2 { get; set; }
         public int Brazo { get; set; }
         public int Antebrazo { get; set; }
         public int Muneca { get; set; }

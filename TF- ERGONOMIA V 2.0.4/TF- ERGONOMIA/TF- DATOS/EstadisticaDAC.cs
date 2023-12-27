@@ -142,7 +142,6 @@ namespace TF.DAC
 
             return ds.Tables[0];
         }
-
         public DataTable ContRULADAC()
         {
             string sqlSentencia = "SP_STAT_RULACont";
@@ -161,18 +160,16 @@ namespace TF.DAC
         }
 
 
-        public DataTable ContNIOSHPersonDAC()
+        public DataTable ContNIOSHPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
         {
-
-            Niosh oNiosh = new Niosh();
             string sqlSentencia = "SP_STAT_NIOSHContPerson";
             SqlConnection sqlCnn = new SqlConnection();
             sqlCnn.ConnectionString = conectionString;
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
             sqlComm.CommandType = CommandType.StoredProcedure;
-            sqlComm.Parameters.Add("@CUITNiosh", SqlDbType.NVarChar).Value = oNiosh.CUITNiosh;
-            sqlComm.Parameters.Add("@FechaCargaNiosh", SqlDbType.DateTime).Value = oNiosh.FechaCargaNiosh.ToString("dd/MM/yyyy");
-            sqlComm.Parameters.Add("@FechaCargaNiosh2", SqlDbType.DateTime).Value = oNiosh.FechaCargaNiosh2.ToString("dd/MM/yyyy");
+            sqlComm.Parameters.Add("@CUITNiosh", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitNiosh;
+            sqlComm.Parameters.Add("@FechaCargaNiosh", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaNiosh;
+            sqlComm.Parameters.Add("@FechaCargaNiosh2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Niosh;
             sqlCnn.Open();
             DataSet ds = new DataSet();
             SqlDataAdapter DA = new SqlDataAdapter();
@@ -181,20 +178,16 @@ namespace TF.DAC
             sqlCnn.Close();
             return ds.Tables[0];
         }
-
-
-        public DataTable ContREBAPersonDAC()
+        public DataTable ContREBAPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
         {
-
-            Reba oReba = new Reba();
             string sqlSentencia = "SP_STAT_REBAContPerson";
             SqlConnection sqlCnn = new SqlConnection();
             sqlCnn.ConnectionString = conectionString;
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
             sqlComm.CommandType = CommandType.StoredProcedure;
-            sqlComm.Parameters.Add("@CUITReba", SqlDbType.NVarChar).Value = oReba.CUITReba;
-            sqlComm.Parameters.Add("@FechaCargaReba", SqlDbType.DateTime).Value = oReba.FechaCargaReba.ToString("dd/MM/yyyy");
-            sqlComm.Parameters.Add("@FechaCargaReba2", SqlDbType.DateTime).Value = oReba.FechaCargaReba2.ToString("dd/MM/yyyy");
+            sqlComm.Parameters.Add("@CUITReba", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitReba;
+            sqlComm.Parameters.Add("@FechaCargaReba", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaReba;
+            sqlComm.Parameters.Add("@FechaCargaReba2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Reba;
             sqlCnn.Open();
             DataSet ds = new DataSet();
             SqlDataAdapter DA = new SqlDataAdapter();
@@ -203,42 +196,36 @@ namespace TF.DAC
             sqlCnn.Close();
             return ds.Tables[0];
         }
-
-        public DataTable ContRULAPersonDAC()
+        public DataTable ContRULAPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
         {
-            Rula orula = new Rula();
             string sqlSentencia = "SP_STAT_RULAContPerson";
             SqlConnection sqlCnn = new SqlConnection();
             sqlCnn.ConnectionString = conectionString;
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
             sqlComm.CommandType = CommandType.StoredProcedure;
-            sqlComm.Parameters.Add("@CUIT", SqlDbType.NVarChar).Value = orula.CUIT;
-            sqlComm.Parameters.Add("@FechaCarga", SqlDbType.Date).Value = orula.FechaCarga.ToString("yyyy-MM-dd");
-            sqlComm.Parameters.Add("@FechaCarga2", SqlDbType.Date).Value = orula.FechaCarga2.ToString("yyyy-MM-dd");
+            sqlComm.Parameters.Add("@CUIT", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitRula;
+            sqlComm.Parameters.Add("@FechaCarga", SqlDbType.Date).Value = oEstadisticasPersonales.FechaCargaRula/*.ToString("yyyy-MM-dd")*/;
+            sqlComm.Parameters.Add("@FechaCarga2", SqlDbType.Date).Value = oEstadisticasPersonales.FechaCarga2Rula/*.ToString("yyyy-MM-dd")*/;
+
             sqlCnn.Open();
             DataSet ds = new DataSet();
             SqlDataAdapter DA = new SqlDataAdapter();
             DA.SelectCommand = sqlComm;
             DA.Fill(ds);
             sqlCnn.Close();
+
             return ds.Tables[0];
         }
-
-
-
-
-        public DataTable ContJSSPersonDAC()
+        public DataTable ContJSSPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
         {
-
-            jss Ojss = new jss();
             string sqlSentencia = "SP_STAT_JSSContPerson";
             SqlConnection sqlCnn = new SqlConnection();
             sqlCnn.ConnectionString = conectionString;
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
             sqlComm.CommandType = CommandType.StoredProcedure;
-            sqlComm.Parameters.Add("@CUITJSS", SqlDbType.NVarChar).Value = Ojss.CUITJSS;
-            sqlComm.Parameters.Add("@FechaCargaJss", SqlDbType.DateTime).Value = Ojss.FechaCargaJss.ToString("dd/MM/yyyy");
-            sqlComm.Parameters.Add("@FechaCargaJss2", SqlDbType.DateTime).Value = Ojss.FechaCargaJss2.ToString("dd/MM/yyyy");
+            sqlComm.Parameters.Add("@CUITJSS", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitJss;
+            sqlComm.Parameters.Add("@FechaCargaJss", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaJss;
+            sqlComm.Parameters.Add("@FechaCargaJss2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Jss;
             sqlCnn.Open();
             DataSet ds = new DataSet();
             SqlDataAdapter DA = new SqlDataAdapter();

@@ -789,7 +789,7 @@ ActividadReba INT,
 ResultadoAnalisisReba int,
 NivelAccion int,
 NivelRiesgo NVARCHAR(30),
-FechaCargaReba DateTime2
+FechaCargaReba Date
 )
 GO	
 
@@ -801,7 +801,7 @@ CREATE or Alter PROCEDURE SP_Reba_Insert
 @DniEmpleadoReba nvarchar(11),
 @EmpleadoReba NVARCHAR(30),
 @EmpresaReba nvarchar(30),
-@FechaCargaReba dateTime2
+@FechaCargaReba date
 
 AS
 BEGIN
@@ -1219,7 +1219,7 @@ ILNiosh Float,
 RiesgoNiosh nvarchar(30),
 PoblacionNiosh int,
 ControlNiosh int,
-FechaCargaNiosh DateTime2
+FechaCargaNiosh Date
 )
 GO	
 
@@ -1231,7 +1231,7 @@ CREATE or Alter PROCEDURE SP_Niosh_Insert
 @DniEmpleadoNiosh nvarchar(11),
 @EmpleadoNiosh nvarchar(30),
 @EmpresaNiosh nvarchar(30),
-@FechaCargaNiosh dateTime2
+@FechaCargaNiosh date
 AS
 BEGIN
 	insert into NioshTablaCompleta (CUITNiosh,PuestoDeTrabajoNiosh,DniEmpleadoNiosh,EmpleadoNiosh,EmpresaNiosh,FechaCargaNiosh) 
@@ -1512,7 +1512,7 @@ DemandaRdo nvarchar(20),
 ControlRdo nvarchar(20),
 ApoyoSocialRdo nvarchar(20),
 ResultadoAnalisisJss NVARCHAR(30),
-FechaCargaJss DateTime2
+FechaCargaJss Date
 )
 GO
 
@@ -1525,7 +1525,7 @@ CREATE or Alter PROCEDURE SP_JSS_Insert
 @DniEmpleadoJSS nvarchar(11),
 @EmpleadoJSS nvarchar(30),
 @EmpresaJSS nvarchar(30),
-@FechaCargaJss dateTime2
+@FechaCargaJss date
 AS
 BEGIN
 	insert into JssTablaCompleta (CUITJSS,PuestoDeTrabajoJSS,DniEmpleadoJSS,EmpleadoJSS,EmpresaJSS,FechaCargaJss) 
@@ -1702,8 +1702,8 @@ GO
 
 CREATE OR ALTER PROCEDURE SP_STAT_NIOSHContPerson
     @CUITNiosh NVARCHAR(11),
-    @FechaCargaNiosh DATETIME2,
-    @FechaCargaNiosh2 DATETIME2
+    @FechaCargaNiosh DATE,
+    @FechaCargaNiosh2 DATE
 AS
 BEGIN
     SELECT COUNT(cargaIdNiosh)
@@ -1718,8 +1718,8 @@ GO
 
 CREATE OR ALTER PROCEDURE SP_STAT_REBAContPerson
     @CUITReba NVARCHAR(11),
-    @FechaCargaReba DATETIME2,
-    @FechaCargaReba2 DATETIME2
+    @FechaCargaReba DATE,
+    @FechaCargaReba2 DATE
 AS
 BEGIN
     SELECT COUNT(cargaIdReba)
@@ -1750,8 +1750,8 @@ GO
 
 CREATE OR ALTER PROCEDURE SP_STAT_JSSContPerson
     @CUITJSS NVARCHAR(11),
-    @FechaCargaJss DATETIME2,
-    @FechaCargaJss2 DATETIME2
+    @FechaCargaJss DATE,
+    @FechaCargaJss2 DATE
 AS
 BEGIN
     SELECT COUNT(cargaIdJSS)
@@ -1760,20 +1760,27 @@ BEGIN
 END
 GO
 
-
-
---jss
-USE ProyectoFinal
-GO
-
-CREATE OR ALTER PROCEDURE SP_STAT_JSSContPerson
-    @CUITJSS NVARCHAR(11),
-    @FechaCargaJss NVARCHAR(10),
-    @FechaCargaJss2 NVARCHAR(10)
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PastelRulaPerson
+@CUIT NVARCHAR(11),
+@FechaCarga DATE,
+@FechaCarga2 DATE,
+@PuestoDeTrabajo nvarchar(20)
 AS
 BEGIN
-    SELECT COUNT(cargaIdJSS)
-    FROM JssTablaCompleta
-    WHERE CUITJSS = @CUITJSS AND CONVERT(DATE, FechaCargaJss, 103) BETWEEN CONVERT(DATE, @FechaCargaJss, 103) AND CONVERT(DATE, @FechaCargaJss2, 103);
+select NivelRiesgo, Count(NivelRiesgo) as CantidadRiesgo from RulaTablaCompleta WHERE CUIT = @CUIT AND PuestoDeTrabajo =@PuestoDeTrabajo and FechaCarga BETWEEN @FechaCarga AND @FechaCarga2 group by NivelRiesgo HAVING COUNT(NivelRiesgo) > 0;
+END
+GO
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PastelRulaPerson
+@CUIT NVARCHAR(11),
+@FechaCarga DATE,
+@FechaCarga2 DATE
+AS
+BEGIN
+select NivelRiesgo, Count(NivelRiesgo) as CantidadRiesgo from RulaTablaCompleta WHERE CUIT = @CUIT and FechaCarga BETWEEN @FechaCarga AND @FechaCarga2 group by NivelRiesgo HAVING COUNT(NivelRiesgo) > 0;
 END
 GO

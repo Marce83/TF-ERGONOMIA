@@ -49,6 +49,7 @@
     <Compile Include="DatosCompartidos.cs" />
     <Compile Include="Empleados.cs" />
     <Compile Include="Empresas.cs" />
+    <Compile Include="EstadisticasPersonales.cs" />
     <Compile Include="JSS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Niosh.cs" />

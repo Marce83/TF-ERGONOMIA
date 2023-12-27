@@ -33,40 +33,35 @@ namespace TF.WIN
 
             if (oFrm.EmpresaSeleccionada != null)
             {
-                txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
+                txtCUIT.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
+                txtNombreEmpresa.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
 
             }
-            if (oFrm.EmpresaSeleccionada != null)
-            {
-                txtNombreEmpresa.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
-            }
+
         }
         private void btnBuscarresultado_Click(object sender, EventArgs e)
         {
-
-
-
             ContNIOSH();
             ContREBA();
             ContRULA();
             ContJSS();
+            ContMetodos();
+            
 
 
         }
-
         public void ContNIOSH()
         {
             try
             {
                 EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-                Niosh oNiosh = new Niosh();
+                EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+                oEstadisticasPersonales.CuitNiosh = txtCUIT.Text;
+                oEstadisticasPersonales.FechaCargaNiosh = FechaDesde.Text;
+                oEstadisticasPersonales.FechaCarga2Niosh = FechaHasta.Text;
 
-                oNiosh.CUITNiosh = txtCUITEncontrado.Text;
-                oNiosh.FechaCargaNiosh = FechaDesde.Value;
-                oNiosh.FechaCargaNiosh2 = FechaHasta.Value;
 
-
-                DataTable dt1100 = oEstadisticaBC.ContNIOSHPersonBC();
+                DataTable dt1100 = oEstadisticaBC.ContNIOSHPersonBC(oEstadisticasPersonales);
 
                 if (dt1100.Rows.Count > 0)
                 {
@@ -77,23 +72,21 @@ namespace TF.WIN
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
+                MessageBox.Show("Error al realizar la búsqueda: Verifique que posea Analisis bajo este Metodo Realizadas ");
             }
 
         }
-
         public void ContREBA()
         {
             try
             {
                 EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-                Reba oReba = new Reba();
+                EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+                oEstadisticasPersonales.CuitReba = txtCUIT.Text;
+                oEstadisticasPersonales.FechaCargaReba = FechaDesde.Text;
+                oEstadisticasPersonales.FechaCarga2Reba = FechaHasta.Text;
 
-                oReba.CUITReba = txtCUITEncontrado.Text;
-                oReba.FechaCargaReba = FechaDesde.Value;
-                oReba.FechaCargaReba2 = FechaHasta.Value;
-
-                DataTable dt1101 = oEstadisticaBC.ContREBAPersonBC();
+                DataTable dt1101 = oEstadisticaBC.ContREBAPersonBC(oEstadisticasPersonales);
 
                 if (dt1101.Rows.Count > 0)
                 {
@@ -103,22 +96,21 @@ namespace TF.WIN
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
+                MessageBox.Show("Error al realizar la búsqueda: Verifique que posea Analisis bajo este Metodo Realizadas ");
             }
         }
-
         public void ContRULA()
         {
             try
             {
                 EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-                Rula orula = new Rula();
+                EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
 
-                orula.CUIT = txtCUITEncontrado.Text;
-                orula.FechaCarga = FechaDesde.Value;  // Asegúrate de que FechaDesde.Value sea un objeto DateTime válido
-                orula.FechaCarga2 = FechaHasta.Value;  // Asegúrate de que FechaHasta.Value sea un objeto DateTime válido
+                oEstadisticasPersonales.CuitRula = txtCUIT.Text;
+                oEstadisticasPersonales.FechaCargaRula = FechaDesde.Text;
+                oEstadisticasPersonales.FechaCarga2Rula = FechaHasta.Text;
 
-                DataTable dt1102 = oEstadisticaBC.ContRULAPersonBC();
+                DataTable dt1102 = oEstadisticaBC.ContRULAPersonBC(oEstadisticasPersonales);
 
                 if (dt1102.Rows.Count > 0)
                 {
@@ -128,23 +120,20 @@ namespace TF.WIN
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
+                MessageBox.Show("Error al realizar la búsqueda: Verifique que posea Analisis bajo este Metodo Realizadas ");
             }
-          }
-    public void ContJSS()
+        }
+        public void ContJSS()
         {
             try
             {
                 EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-                jss Ojss = new jss();
+                EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+                oEstadisticasPersonales.CuitJss = txtCUIT.Text;
+                oEstadisticasPersonales.FechaCargaJss = FechaDesde.Text;
+                oEstadisticasPersonales.FechaCarga2Jss = FechaHasta.Text;
 
-                Ojss.CUITJSS = txtCUITEncontrado.Text;
-
-                // Obtener las fechas directamente de los DateTimePicker
-                Ojss.FechaCargaJss = FechaDesde.Value;
-                Ojss.FechaCargaJss2 = FechaHasta.Value;
-
-                DataTable dt1103 = oEstadisticaBC.ContJSSPersonBC();
+                DataTable dt1103 = oEstadisticaBC.ContJSSPersonBC(oEstadisticasPersonales);
 
                 if (dt1103.Rows.Count > 0)
                 {
@@ -154,10 +143,27 @@ namespace TF.WIN
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al realizar la búsqueda: " + ex.Message);
-                // Puedes agregar mensajes más descriptivos según sea necesario
+                MessageBox.Show("Error al realizar la búsqueda: Verifique que posea Analisis bajo este Metodo Realizadas ");
             }
         }
+        public void ContMetodos()
+        {
+            try
+            {
+                double SumaMetodosPerson = 0;
+
+                SumaMetodosPerson = double.Parse(txtRulaCont.Text) + double.Parse(txtNioshCont.Text) + double.Parse(txtREBACont.Text) + double.Parse(txtjsscont.Text);
+
+                TotalMetodoPerson.Text = SumaMetodosPerson.ToString();
+            }
+            catch (Exception ex)
+            {
+              
+            }
+        }
+
+
+
 
 
 

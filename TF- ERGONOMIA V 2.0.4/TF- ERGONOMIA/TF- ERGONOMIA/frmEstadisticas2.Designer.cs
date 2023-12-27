@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEstadisticas2));
             this.FechaDesde = new System.Windows.Forms.DateTimePicker();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
@@ -46,12 +46,12 @@
             this.chartempxemp = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.ChartEmpLocal = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chartEmpresasProv = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.ChartMetodoRula2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartMetodoRula = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.TotalMetodo = new System.Windows.Forms.Label();
+            this.TotalMetodoPerson = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -81,11 +81,11 @@
             this.txtNombreEmpresa = new MaterialSkin.Controls.MaterialTextBox2();
             this.btnBuscarCUIT = new System.Windows.Forms.Button();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
-            this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtCUIT = new MaterialSkin.Controls.MaterialTextBox2();
             ((System.ComponentModel.ISupportInitialize)(this.chartempxemp)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartEmpLocal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartEmpresasProv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartMetodoRula2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartMetodoRula)).BeginInit();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -163,18 +163,18 @@
             this.chartempxemp.BackColor = System.Drawing.Color.Transparent;
             this.chartempxemp.BorderlineColor = System.Drawing.Color.DarkGray;
             this.chartempxemp.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            chartArea10.Name = "ChartArea1";
-            this.chartempxemp.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chartempxemp.Legends.Add(legend10);
+            chartArea1.Name = "ChartArea1";
+            this.chartempxemp.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartempxemp.Legends.Add(legend1);
             this.chartempxemp.Location = new System.Drawing.Point(22, 940);
             this.chartempxemp.Margin = new System.Windows.Forms.Padding(2);
             this.chartempxemp.Name = "chartempxemp";
             this.chartempxemp.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Legend1";
-            series10.Name = "Series1";
-            this.chartempxemp.Series.Add(series10);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartempxemp.Series.Add(series1);
             this.chartempxemp.Size = new System.Drawing.Size(386, 372);
             this.chartempxemp.TabIndex = 111;
             // 
@@ -192,59 +192,59 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label11.Location = new System.Drawing.Point(334, 11);
+            this.label11.Location = new System.Drawing.Point(290, 9);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(202, 21);
+            this.label11.Size = new System.Drawing.Size(218, 21);
             this.label11.TabIndex = 0;
-            this.label11.Text = "ESTADISTICAS EMPLEADOS";
+            this.label11.Text = "ESTADISTICAS MÉTODO REBA";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ChartEmpLocal
+            // ChartMetodoRula2
             // 
-            this.ChartEmpLocal.BackColor = System.Drawing.Color.Transparent;
-            this.ChartEmpLocal.BorderlineColor = System.Drawing.Color.DarkGray;
-            this.ChartEmpLocal.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            chartArea11.Name = "ChartArea1";
-            this.ChartEmpLocal.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.ChartEmpLocal.Legends.Add(legend11);
-            this.ChartEmpLocal.Location = new System.Drawing.Point(415, 602);
-            this.ChartEmpLocal.Margin = new System.Windows.Forms.Padding(2);
-            this.ChartEmpLocal.Name = "ChartEmpLocal";
-            this.ChartEmpLocal.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.Name = "Series1";
-            this.ChartEmpLocal.Series.Add(series11);
-            this.ChartEmpLocal.Size = new System.Drawing.Size(386, 332);
-            this.ChartEmpLocal.TabIndex = 109;
+            this.ChartMetodoRula2.BackColor = System.Drawing.Color.Transparent;
+            this.ChartMetodoRula2.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.ChartMetodoRula2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            chartArea2.Name = "ChartArea1";
+            this.ChartMetodoRula2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.ChartMetodoRula2.Legends.Add(legend2);
+            this.ChartMetodoRula2.Location = new System.Drawing.Point(415, 602);
+            this.ChartMetodoRula2.Margin = new System.Windows.Forms.Padding(2);
+            this.ChartMetodoRula2.Name = "ChartMetodoRula2";
+            this.ChartMetodoRula2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.ChartMetodoRula2.Series.Add(series2);
+            this.ChartMetodoRula2.Size = new System.Drawing.Size(386, 332);
+            this.ChartMetodoRula2.TabIndex = 109;
             // 
-            // chartEmpresasProv
+            // chartMetodoRula
             // 
-            this.chartEmpresasProv.BackColor = System.Drawing.Color.Transparent;
-            this.chartEmpresasProv.BorderlineColor = System.Drawing.Color.DarkGray;
-            this.chartEmpresasProv.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            chartArea12.Name = "ChartArea1";
-            this.chartEmpresasProv.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chartEmpresasProv.Legends.Add(legend12);
-            this.chartEmpresasProv.Location = new System.Drawing.Point(22, 602);
-            this.chartEmpresasProv.Margin = new System.Windows.Forms.Padding(2);
-            this.chartEmpresasProv.Name = "chartEmpresasProv";
-            this.chartEmpresasProv.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series12.ChartArea = "ChartArea1";
-            series12.Legend = "Legend1";
-            series12.Name = "Series1";
-            this.chartEmpresasProv.Series.Add(series12);
-            this.chartEmpresasProv.Size = new System.Drawing.Size(386, 366);
-            this.chartEmpresasProv.TabIndex = 108;
+            this.chartMetodoRula.BackColor = System.Drawing.Color.Transparent;
+            this.chartMetodoRula.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.chartMetodoRula.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            chartArea3.Name = "ChartArea1";
+            this.chartMetodoRula.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartMetodoRula.Legends.Add(legend3);
+            this.chartMetodoRula.Location = new System.Drawing.Point(22, 602);
+            this.chartMetodoRula.Margin = new System.Windows.Forms.Padding(2);
+            this.chartMetodoRula.Name = "chartMetodoRula";
+            this.chartMetodoRula.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chartMetodoRula.Series.Add(series3);
+            this.chartMetodoRula.Size = new System.Drawing.Size(386, 366);
+            this.chartMetodoRula.TabIndex = 108;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Green;
             this.panel9.Controls.Add(this.button5);
             this.panel9.Controls.Add(this.label9);
-            this.panel9.Controls.Add(this.TotalMetodo);
+            this.panel9.Controls.Add(this.TotalMetodoPerson);
             this.panel9.Location = new System.Drawing.Point(223, 264);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(194, 110);
@@ -277,16 +277,16 @@
             this.label9.TabIndex = 7;
             this.label9.Text = "METODOS";
             // 
-            // TotalMetodo
+            // TotalMetodoPerson
             // 
-            this.TotalMetodo.AutoSize = true;
-            this.TotalMetodo.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.TotalMetodo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.TotalMetodo.Location = new System.Drawing.Point(10, 36);
-            this.TotalMetodo.Name = "TotalMetodo";
-            this.TotalMetodo.Size = new System.Drawing.Size(60, 46);
-            this.TotalMetodo.TabIndex = 4;
-            this.TotalMetodo.Text = "N°";
+            this.TotalMetodoPerson.AutoSize = true;
+            this.TotalMetodoPerson.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.TotalMetodoPerson.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.TotalMetodoPerson.Location = new System.Drawing.Point(10, 36);
+            this.TotalMetodoPerson.Name = "TotalMetodoPerson";
+            this.TotalMetodoPerson.Size = new System.Drawing.Size(60, 46);
+            this.TotalMetodoPerson.TabIndex = 4;
+            this.TotalMetodoPerson.Text = "N°";
             // 
             // panel8
             // 
@@ -302,11 +302,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(334, 11);
+            this.label7.Location = new System.Drawing.Point(290, 11);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(190, 21);
+            this.label7.Size = new System.Drawing.Size(220, 21);
             this.label7.TabIndex = 0;
-            this.label7.Text = "ESTADISTICAS EMPRESAS";
+            this.label7.Text = "ESTADISTICAS MÉTODO RULA";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
@@ -617,6 +617,7 @@
             this.txtNombreEmpresa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNombreEmpresa.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombreEmpresa.Depth = 0;
+            this.txtNombreEmpresa.Enabled = false;
             this.txtNombreEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpresa.HideSelection = true;
             this.txtNombreEmpresa.LeadingIcon = null;
@@ -633,7 +634,7 @@
             this.txtNombreEmpresa.SelectionLength = 0;
             this.txtNombreEmpresa.SelectionStart = 0;
             this.txtNombreEmpresa.ShortcutsEnabled = true;
-            this.txtNombreEmpresa.Size = new System.Drawing.Size(208, 48);
+            this.txtNombreEmpresa.Size = new System.Drawing.Size(352, 48);
             this.txtNombreEmpresa.TabIndex = 161;
             this.txtNombreEmpresa.TabStop = false;
             this.txtNombreEmpresa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -648,7 +649,7 @@
             this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarCUIT.Location = new System.Drawing.Point(367, 11);
+            this.btnBuscarCUIT.Location = new System.Drawing.Point(503, 11);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
             this.btnBuscarCUIT.Size = new System.Drawing.Size(67, 48);
             this.btnBuscarCUIT.TabIndex = 160;
@@ -670,36 +671,37 @@
             this.materialLabel11.TabIndex = 159;
             this.materialLabel11.Text = "CUIT";
             // 
-            // txtCUITEncontrado
+            // txtCUIT
             // 
-            this.txtCUITEncontrado.AnimateReadOnly = false;
-            this.txtCUITEncontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtCUITEncontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtCUITEncontrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtCUITEncontrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtCUITEncontrado.Depth = 0;
-            this.txtCUITEncontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtCUITEncontrado.HideSelection = true;
-            this.txtCUITEncontrado.LeadingIcon = null;
-            this.txtCUITEncontrado.Location = new System.Drawing.Point(136, 11);
-            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCUITEncontrado.MaxLength = 32767;
-            this.txtCUITEncontrado.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtCUITEncontrado.Name = "txtCUITEncontrado";
-            this.txtCUITEncontrado.PasswordChar = '\0';
-            this.txtCUITEncontrado.PrefixSuffixText = null;
-            this.txtCUITEncontrado.ReadOnly = true;
-            this.txtCUITEncontrado.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtCUITEncontrado.SelectedText = "";
-            this.txtCUITEncontrado.SelectionLength = 0;
-            this.txtCUITEncontrado.SelectionStart = 0;
-            this.txtCUITEncontrado.ShortcutsEnabled = true;
-            this.txtCUITEncontrado.Size = new System.Drawing.Size(208, 48);
-            this.txtCUITEncontrado.TabIndex = 158;
-            this.txtCUITEncontrado.TabStop = false;
-            this.txtCUITEncontrado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCUITEncontrado.TrailingIcon = null;
-            this.txtCUITEncontrado.UseSystemPasswordChar = false;
+            this.txtCUIT.AnimateReadOnly = false;
+            this.txtCUIT.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCUIT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtCUIT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtCUIT.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCUIT.Depth = 0;
+            this.txtCUIT.Enabled = false;
+            this.txtCUIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCUIT.HideSelection = true;
+            this.txtCUIT.LeadingIcon = null;
+            this.txtCUIT.Location = new System.Drawing.Point(136, 11);
+            this.txtCUIT.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCUIT.MaxLength = 32767;
+            this.txtCUIT.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCUIT.Name = "txtCUIT";
+            this.txtCUIT.PasswordChar = '\0';
+            this.txtCUIT.PrefixSuffixText = null;
+            this.txtCUIT.ReadOnly = true;
+            this.txtCUIT.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCUIT.SelectedText = "";
+            this.txtCUIT.SelectionLength = 0;
+            this.txtCUIT.SelectionStart = 0;
+            this.txtCUIT.ShortcutsEnabled = true;
+            this.txtCUIT.Size = new System.Drawing.Size(352, 48);
+            this.txtCUIT.TabIndex = 158;
+            this.txtCUIT.TabStop = false;
+            this.txtCUIT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCUIT.TrailingIcon = null;
+            this.txtCUIT.UseSystemPasswordChar = false;
             // 
             // frmEstadisticas2
             // 
@@ -708,17 +710,17 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(876, 850);
+            this.ClientSize = new System.Drawing.Size(893, 850);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.txtNombreEmpresa);
             this.Controls.Add(this.btnBuscarCUIT);
             this.Controls.Add(this.materialLabel11);
-            this.Controls.Add(this.txtCUITEncontrado);
+            this.Controls.Add(this.txtCUIT);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.chartempxemp);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.ChartEmpLocal);
-            this.Controls.Add(this.chartEmpresasProv);
+            this.Controls.Add(this.ChartMetodoRula2);
+            this.Controls.Add(this.chartMetodoRula);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel5);
@@ -738,8 +740,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartempxemp)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartEmpLocal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartEmpresasProv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartMetodoRula2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartMetodoRula)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -770,12 +772,12 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartempxemp;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataVisualization.Charting.Chart ChartEmpLocal;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartEmpresasProv;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ChartMetodoRula2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartMetodoRula;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label TotalMetodo;
+        private System.Windows.Forms.Label TotalMetodoPerson;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel5;
@@ -805,6 +807,6 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtNombreEmpresa;
         private System.Windows.Forms.Button btnBuscarCUIT;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
-        private MaterialSkin.Controls.MaterialTextBox2 txtCUITEncontrado;
+        private MaterialSkin.Controls.MaterialTextBox2 txtCUIT;
     }
 }
