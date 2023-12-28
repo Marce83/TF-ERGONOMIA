@@ -1783,7 +1783,7 @@ AS
 BEGIN
 select NivelRiesgo, Count(NivelRiesgo) as CantidadRiesgo from RulaTablaCompleta WHERE CUIT = @CUIT and FechaCarga BETWEEN @FechaCarga AND @FechaCarga2 group by NivelRiesgo HAVING COUNT(NivelRiesgo) > 0;
 END
---GO
+GO
 
 
 use ProyectoFinal
@@ -1799,16 +1799,32 @@ END
 
 
 
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PastelRebaPerson
+@CUITReba NVARCHAR(11),
+@FechaCargaReba DATE,
+@FechaCargaReba2 DATE
+AS
+BEGIN
+select NivelRiesgo, Count(NivelRiesgo) as CantidadRiesgo from RebaTablaCompleta WHERE CUITReba = @CUITReba and FechaCargaReba BETWEEN @FechaCargaReba AND @FechaCargaReba2 group by NivelRiesgo HAVING COUNT(NivelRiesgo) > 0;
+END
+GO
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_HistoRebaPerson																																																		
+@CUITReba NVARCHAR(11),
+@FechaCargaReba DATE,
+@FechaCargaReba2 DATE
+AS
+BEGIN
+select NivelRiesgo,FechaCargaReba, Count(NivelRiesgo) as AnalisisxDia from RebaTablaCompleta WHERE CUITReba = @CUITReba and FechaCargaReba BETWEEN @FechaCargaReba AND @FechaCargaReba2 group by NivelRiesgo, FechaCargaReba HAVING COUNT(NivelRiesgo) > 0;
+END
 
 
 
 
 
 
-
-
-
-
-
-
-																									
+																				

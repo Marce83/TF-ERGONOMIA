@@ -272,9 +272,45 @@ namespace TF.DAC
 
             return ds.Tables[0];
         }
+        public DataTable PastelRebaPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_PastelRebaPerson";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUITReba", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitReba;
+            sqlComm.Parameters.Add("@FechaCargaReba", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaReba;
+            sqlComm.Parameters.Add("@FechaCargaReba2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Reba;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
 
+            return ds.Tables[0];
+        }
 
+        public DataTable HistoRebaPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_HistoRebaPerson";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUITReba", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitReba;
+            sqlComm.Parameters.Add("@FechaCargaReba", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaReba;
+            sqlComm.Parameters.Add("@FechaCargaReba2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Reba;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
 
+            return ds.Tables[0];
+        }
 
 
 

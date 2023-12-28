@@ -38,12 +38,15 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEstadisticas2));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.FechaDesde = new System.Windows.Forms.DateTimePicker();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.FechaHasta = new System.Windows.Forms.DateTimePicker();
             this.btnBuscarresultado = new System.Windows.Forms.Button();
-            this.chartempxemp = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartPastelReba = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.ChartHistogramaRula2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -82,7 +85,8 @@
             this.btnBuscarCUIT = new System.Windows.Forms.Button();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.txtCUIT = new MaterialSkin.Controls.MaterialTextBox2();
-            ((System.ComponentModel.ISupportInitialize)(this.chartempxemp)).BeginInit();
+            this.ChartHistogramaReba2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPastelReba)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChartHistogramaRula2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartPastelRula)).BeginInit();
@@ -94,6 +98,7 @@
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartHistogramaReba2)).BeginInit();
             this.SuspendLayout();
             // 
             // FechaDesde
@@ -158,25 +163,25 @@
             this.btnBuscarresultado.UseVisualStyleBackColor = false;
             this.btnBuscarresultado.Click += new System.EventHandler(this.btnBuscarresultado_Click);
             // 
-            // chartempxemp
+            // chartPastelReba
             // 
-            this.chartempxemp.BackColor = System.Drawing.Color.Transparent;
-            this.chartempxemp.BorderlineColor = System.Drawing.Color.DarkGray;
-            this.chartempxemp.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            this.chartPastelReba.BackColor = System.Drawing.Color.Transparent;
+            this.chartPastelReba.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.chartPastelReba.BorderSkin.BackColor = System.Drawing.Color.Transparent;
             chartArea1.Name = "ChartArea1";
-            this.chartempxemp.ChartAreas.Add(chartArea1);
+            this.chartPastelReba.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chartempxemp.Legends.Add(legend1);
-            this.chartempxemp.Location = new System.Drawing.Point(22, 940);
-            this.chartempxemp.Margin = new System.Windows.Forms.Padding(2);
-            this.chartempxemp.Name = "chartempxemp";
-            this.chartempxemp.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.chartPastelReba.Legends.Add(legend1);
+            this.chartPastelReba.Location = new System.Drawing.Point(22, 940);
+            this.chartPastelReba.Margin = new System.Windows.Forms.Padding(2);
+            this.chartPastelReba.Name = "chartPastelReba";
+            this.chartPastelReba.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            this.chartempxemp.Series.Add(series1);
-            this.chartempxemp.Size = new System.Drawing.Size(386, 372);
-            this.chartempxemp.TabIndex = 111;
+            this.chartPastelReba.Series.Add(series1);
+            this.chartPastelReba.Size = new System.Drawing.Size(386, 372);
+            this.chartPastelReba.TabIndex = 111;
             // 
             // panel10
             // 
@@ -703,6 +708,26 @@
             this.txtCUIT.TrailingIcon = null;
             this.txtCUIT.UseSystemPasswordChar = false;
             // 
+            // ChartHistogramaReba2
+            // 
+            this.ChartHistogramaReba2.BackColor = System.Drawing.Color.Transparent;
+            this.ChartHistogramaReba2.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.ChartHistogramaReba2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            chartArea4.Name = "ChartArea1";
+            this.ChartHistogramaReba2.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.ChartHistogramaReba2.Legends.Add(legend4);
+            this.ChartHistogramaReba2.Location = new System.Drawing.Point(415, 940);
+            this.ChartHistogramaReba2.Margin = new System.Windows.Forms.Padding(2);
+            this.ChartHistogramaReba2.Name = "ChartHistogramaReba2";
+            this.ChartHistogramaReba2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.ChartHistogramaReba2.Series.Add(series4);
+            this.ChartHistogramaReba2.Size = new System.Drawing.Size(386, 372);
+            this.ChartHistogramaReba2.TabIndex = 163;
+            // 
             // frmEstadisticas2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -711,13 +736,14 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(893, 850);
+            this.Controls.Add(this.ChartHistogramaReba2);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.txtNombreEmpresa);
             this.Controls.Add(this.btnBuscarCUIT);
             this.Controls.Add(this.materialLabel11);
             this.Controls.Add(this.txtCUIT);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.chartempxemp);
+            this.Controls.Add(this.chartPastelReba);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.ChartHistogramaRula2);
             this.Controls.Add(this.chartPastelRula);
@@ -737,7 +763,7 @@
             this.Name = "frmEstadisticas2";
             this.Text = "frmEstadisticas2";
             this.Load += new System.EventHandler(this.frmEstadisticas2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.chartempxemp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPastelReba)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChartHistogramaRula2)).EndInit();
@@ -758,6 +784,7 @@
             this.panel1.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartHistogramaReba2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -769,7 +796,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private System.Windows.Forms.DateTimePicker FechaHasta;
         private System.Windows.Forms.Button btnBuscarresultado;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartempxemp;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartPastelReba;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataVisualization.Charting.Chart ChartHistogramaRula2;
@@ -808,5 +835,6 @@
         private System.Windows.Forms.Button btnBuscarCUIT;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
         private MaterialSkin.Controls.MaterialTextBox2 txtCUIT;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ChartHistogramaReba2;
     }
 }

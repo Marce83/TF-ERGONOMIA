@@ -49,6 +49,8 @@ namespace TF.WIN
             ContMetodos();
             GraficoPastelRula();
             HistoRulaPerson();
+            GraficoPastelReba();
+            HistoRebaPerson();
 
         }
         public void ContNIOSH()
@@ -162,8 +164,6 @@ namespace TF.WIN
 
             }
         }
-
-
         public void GraficoPastelRula()
         {
             try
@@ -245,7 +245,6 @@ namespace TF.WIN
                 MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void GraficoPastelRulaDATOS()
         {
             // Utiliza la instancia de EstadisticaBC para obtener los datos
@@ -342,6 +341,187 @@ namespace TF.WIN
                 MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public void GraficoPastelReba()
+        {
+            try
+            {
+                // Configura el gráfico aquí
+                // Por ejemplo, crea una serie de pastel
+                Series series = new Series
+                {
+                    Name = "Cantidad de Riesgo",
+                    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
+                };
+
+                // Configura los ejes (no es tan relevante para el gráfico de pastel)
+                ChartArea chartArea = new ChartArea();
+                chartArea.AxisX.Title = "Nivel de Riesgo";
+                chartArea.AxisY.Title = "Cantidad de Riesgo";
+
+                // Limpia las series existentes antes de agregar la nueva
+                chartPastelReba.Series.Clear();
+
+                // Asigna la serie y el área del gráfico
+                chartPastelReba.Series.Add(series);
+                chartPastelReba.ChartAreas.Add(chartArea);
+
+                // Agrega un título al gráfico
+                chartPastelReba.Titles.Add("Riesgos obtenidos");
+                chartPastelReba.Font = new Font("Arial", 14, FontStyle.Bold);
+
+                // Establece el formato de la serie
+                series.Font = new Font("Arial", 10, FontStyle.Bold);
+
+                // Añade datos de ejemplo al gráfico de pastel
+
+                GraficoPastelRebaDATOS();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        private void HistoRebaPerson()
+        {
+            try
+            {
+                // Configura el gráfico aquí
+                // Por ejemplo, crea una serie de barras
+                Series series = new Series
+                {
+                    Name = "Cantidad de riesgos por día",
+                    ChartType = SeriesChartType.Bar // Cambiado a SeriesChartType.Bar para el gráfico de barras
+                };
+
+                // Configura los ejes
+                ChartArea chartArea = new ChartArea();
+                chartArea.AxisX.Title = "Fecha y Cantidad por día";
+                chartArea.AxisY.Title = "Niveles";
+
+                // Limpia las series existentes antes de agregar la nueva
+                ChartHistogramaReba2.Series.Clear();
+
+                // Asigna la serie y el área del gráfico
+                ChartHistogramaReba2.Series.Add(series);
+                ChartHistogramaReba2.ChartAreas.Add(chartArea);
+
+                // Agrega un título al gráfico
+                ChartHistogramaReba2.Titles.Clear();
+                ChartHistogramaReba2.Titles.Add("Cantidad de Riesgos por día");
+                ChartHistogramaReba2.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+                // Establece el formato de la serie
+                series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+                // Añade datos al gráfico
+                HistoRebaPersonDATOS();
+            }
+            catch (Exception ex)
+            {
+                // Maneja la excepción, si es necesario
+                MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void GraficoPastelRebaDATOS()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+            oEstadisticasPersonales.CuitReba = txtCUIT.Text;
+            oEstadisticasPersonales.FechaCargaReba = FechaDesde.Text;
+            oEstadisticasPersonales.FechaCarga2Reba = FechaHasta.Text;
+            DataTable dt1203 = oEstadisticaBC.PastelRebaPersonBC(oEstadisticasPersonales);
+            // Limpia los datos existentes en el gráfico
+            chartPastelReba.Series[0].Points.Clear();
+
+            // Configura la serie para un gráfico de pastel
+            chartPastelReba.Series[0].ChartType = SeriesChartType.Pie;
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt1203.Rows)
+            {
+                string NivelRiesgo = row["NivelRiesgo"].ToString();
+                int CantidadRiesgo = Convert.ToInt32(row["CantidadRiesgo"]);
+
+                // Agrega un punto a la serie para cada provincia
+                chartPastelReba.Series[0].Points.AddXY(NivelRiesgo, CantidadRiesgo);
+            }
+
+            // Agrega un título al gráfico de pastel
+            chartPastelReba.Titles.Clear();
+            chartPastelReba.Titles.Add("Distribución de Riesgo por nivel");
+
+            // Establece el formato de la serie
+            chartPastelReba.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
+
+        }
+        private void HistoRebaPersonDATOS()
+        {
+            try
+            {
+                // Utiliza la instancia de EstadisticaBC para obtener los datos
+                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+                EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+                oEstadisticasPersonales.CuitReba = txtCUIT.Text;
+                oEstadisticasPersonales.FechaCargaReba = FechaDesde.Text;
+                oEstadisticasPersonales.FechaCarga2Reba = FechaHasta.Text;
+                DataTable dt1205 = oEstadisticaBC.HistoRebaPersonBC(oEstadisticasPersonales);
+
+                // Limpia los datos existentes en el gráfico
+                ChartHistogramaReba2.Series.Clear();
+
+                // Configura las series para un gráfico de barras
+                Series series = new Series();
+                series.ChartType = SeriesChartType.Bar;
+                series.Name = "Analisis x Dia";
+
+                // Agrega las series al gráfico
+                ChartHistogramaReba2.Series.Add(series);
+
+                // Agrega los nuevos datos desde el DataTable
+                foreach (DataRow row in dt1205.Rows)
+                {
+                    DateTime fecha = Convert.ToDateTime(row["FechaCargaReba"]);
+                    int nivelRiesgo = Convert.ToInt32(row["NivelRiesgo"]);
+                    int Analisisxdia = Convert.ToInt32(row["AnalisisxDia"]);
+
+                    // Combina la fecha y AnalisisxDia para obtener un nombre único
+                    string nombrePunto = $"{fecha.ToShortDateString()} - {Analisisxdia}";
+
+                    // Agrega un punto a la serie para cada fecha, nivel de riesgo y AnalisisxDia
+                    series.Points.AddXY(nombrePunto, nivelRiesgo);
+                }
+
+                // Configura los ejes
+                ChartArea chartArea = new ChartArea();
+                chartArea.AxisX.Title = "Fecha de Carga y Analisis x Dia";
+                chartArea.AxisY.Title = "Nivel de Riesgo";
+
+                // Ajusta las etiquetas del eje X para mostrar cada barra
+                chartArea.AxisX.Interval = 1;
+                chartArea.AxisX.IntervalType = DateTimeIntervalType.Days;
+                chartArea.AxisX.LabelStyle.Format = "dd/MM/yyyy";
+
+                // Asigna el área del gráfico
+                ChartHistogramaReba2.ChartAreas.Add(chartArea);
+
+                // Agrega un título al gráfico de barras
+                ChartHistogramaReba2.Titles.Clear();
+                ChartHistogramaReba2.Titles.Add("Distribución de Riesgo por Nivel y Fecha");
+
+                // Establece el formato de la serie
+                series.Font = new Font("Arial", 10, FontStyle.Bold);
+            }
+            catch (Exception ex)
+            {
+                // Maneja la excepción, si es necesario
+                MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
 
     }
 }

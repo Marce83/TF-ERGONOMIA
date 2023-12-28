@@ -100,13 +100,24 @@ namespace TF.BC
             DataTable dt = oEstadisticaDAC.PastelRulaPersonDAC(oEstadisticasPersonales);
             return dt;
         }
-    public DataTable HistoRulaPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        public DataTable HistoRulaPersonBC(EstadisticasPersonales oEstadisticasPersonales)
         {
             EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
             DataTable dt = oEstadisticaDAC.HistoRulaPersonDAC(oEstadisticasPersonales);
             return dt;
         }
-
+        public DataTable PastelRebaPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.PastelRebaPersonDAC(oEstadisticasPersonales);
+            return dt;
+        }
+        public DataTable HistoRebaPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.HistoRebaPersonDAC(oEstadisticasPersonales);
+            return dt;
+        }
 
     }
 }
