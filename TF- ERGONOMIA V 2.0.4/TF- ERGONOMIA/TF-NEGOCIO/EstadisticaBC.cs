@@ -94,6 +94,19 @@ namespace TF.BC
             DataTable dt = oEstadisticaDAC.ContJSSPersonDAC(oEstadisticasPersonales);
             return dt;
         }
+        public DataTable PastelRulaPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.PastelRulaPersonDAC(oEstadisticasPersonales);
+            return dt;
+        }
+    public DataTable HistoRulaPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.HistoRulaPersonDAC(oEstadisticasPersonales);
+            return dt;
+        }
+
 
     }
 }

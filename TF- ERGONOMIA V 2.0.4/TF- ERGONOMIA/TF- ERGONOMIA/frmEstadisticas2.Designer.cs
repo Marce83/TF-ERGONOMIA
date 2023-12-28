@@ -46,8 +46,8 @@
             this.chartempxemp = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.ChartMetodoRula2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chartMetodoRula = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.ChartHistogramaRula2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartPastelRula = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -84,8 +84,8 @@
             this.txtCUIT = new MaterialSkin.Controls.MaterialTextBox2();
             ((System.ComponentModel.ISupportInitialize)(this.chartempxemp)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartMetodoRula2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartMetodoRula)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartHistogramaRula2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPastelRula)).BeginInit();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -199,45 +199,45 @@
             this.label11.Text = "ESTADISTICAS MÉTODO REBA";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ChartMetodoRula2
+            // ChartHistogramaRula2
             // 
-            this.ChartMetodoRula2.BackColor = System.Drawing.Color.Transparent;
-            this.ChartMetodoRula2.BorderlineColor = System.Drawing.Color.DarkGray;
-            this.ChartMetodoRula2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            this.ChartHistogramaRula2.BackColor = System.Drawing.Color.Transparent;
+            this.ChartHistogramaRula2.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.ChartHistogramaRula2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
             chartArea2.Name = "ChartArea1";
-            this.ChartMetodoRula2.ChartAreas.Add(chartArea2);
+            this.ChartHistogramaRula2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
-            this.ChartMetodoRula2.Legends.Add(legend2);
-            this.ChartMetodoRula2.Location = new System.Drawing.Point(415, 602);
-            this.ChartMetodoRula2.Margin = new System.Windows.Forms.Padding(2);
-            this.ChartMetodoRula2.Name = "ChartMetodoRula2";
-            this.ChartMetodoRula2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.ChartHistogramaRula2.Legends.Add(legend2);
+            this.ChartHistogramaRula2.Location = new System.Drawing.Point(415, 602);
+            this.ChartHistogramaRula2.Margin = new System.Windows.Forms.Padding(2);
+            this.ChartHistogramaRula2.Name = "ChartHistogramaRula2";
+            this.ChartHistogramaRula2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
-            this.ChartMetodoRula2.Series.Add(series2);
-            this.ChartMetodoRula2.Size = new System.Drawing.Size(386, 332);
-            this.ChartMetodoRula2.TabIndex = 109;
+            this.ChartHistogramaRula2.Series.Add(series2);
+            this.ChartHistogramaRula2.Size = new System.Drawing.Size(386, 332);
+            this.ChartHistogramaRula2.TabIndex = 109;
             // 
-            // chartMetodoRula
+            // chartPastelRula
             // 
-            this.chartMetodoRula.BackColor = System.Drawing.Color.Transparent;
-            this.chartMetodoRula.BorderlineColor = System.Drawing.Color.DarkGray;
-            this.chartMetodoRula.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            this.chartPastelRula.BackColor = System.Drawing.Color.Transparent;
+            this.chartPastelRula.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.chartPastelRula.BorderSkin.BackColor = System.Drawing.Color.Transparent;
             chartArea3.Name = "ChartArea1";
-            this.chartMetodoRula.ChartAreas.Add(chartArea3);
+            this.chartPastelRula.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
-            this.chartMetodoRula.Legends.Add(legend3);
-            this.chartMetodoRula.Location = new System.Drawing.Point(22, 602);
-            this.chartMetodoRula.Margin = new System.Windows.Forms.Padding(2);
-            this.chartMetodoRula.Name = "chartMetodoRula";
-            this.chartMetodoRula.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.chartPastelRula.Legends.Add(legend3);
+            this.chartPastelRula.Location = new System.Drawing.Point(22, 602);
+            this.chartPastelRula.Margin = new System.Windows.Forms.Padding(2);
+            this.chartPastelRula.Name = "chartPastelRula";
+            this.chartPastelRula.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series3.ChartArea = "ChartArea1";
             series3.Legend = "Legend1";
             series3.Name = "Series1";
-            this.chartMetodoRula.Series.Add(series3);
-            this.chartMetodoRula.Size = new System.Drawing.Size(386, 366);
-            this.chartMetodoRula.TabIndex = 108;
+            this.chartPastelRula.Series.Add(series3);
+            this.chartPastelRula.Size = new System.Drawing.Size(386, 366);
+            this.chartPastelRula.TabIndex = 108;
             // 
             // panel9
             // 
@@ -719,8 +719,8 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.chartempxemp);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.ChartMetodoRula2);
-            this.Controls.Add(this.chartMetodoRula);
+            this.Controls.Add(this.ChartHistogramaRula2);
+            this.Controls.Add(this.chartPastelRula);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel5);
@@ -740,8 +740,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartempxemp)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartMetodoRula2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartMetodoRula)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartHistogramaRula2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPastelRula)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -772,8 +772,8 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartempxemp;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataVisualization.Charting.Chart ChartMetodoRula2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartMetodoRula;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ChartHistogramaRula2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartPastelRula;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label9;

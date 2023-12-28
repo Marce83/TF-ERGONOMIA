@@ -234,11 +234,44 @@ namespace TF.DAC
             sqlCnn.Close();
             return ds.Tables[0];
         }
+        public DataTable PastelRulaPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_PastelRulaPerson";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUIT", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitRula;
+            sqlComm.Parameters.Add("@FechaCarga", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaRula;
+            sqlComm.Parameters.Add("@FechaCarga2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Rula;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
 
+            return ds.Tables[0];
+        }
+        public DataTable HistoRulaPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_HistoRulaPerson";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUIT", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitRula;
+            sqlComm.Parameters.Add("@FechaCarga", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaRula;
+            sqlComm.Parameters.Add("@FechaCarga2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Rula;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
 
-
-
-
+            return ds.Tables[0];
+        }
 
 
 

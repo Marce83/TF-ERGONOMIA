@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using TF.BC;
 using TF.ENTITIES;
 
@@ -46,8 +47,8 @@ namespace TF.WIN
             ContRULA();
             ContJSS();
             ContMetodos();
-            
-
+            GraficoPastelRula();
+            HistoRulaPerson();
 
         }
         public void ContNIOSH()
@@ -158,14 +159,189 @@ namespace TF.WIN
             }
             catch (Exception ex)
             {
-              
+
             }
         }
 
 
+        public void GraficoPastelRula()
+        {
+            try
+            {
+                // Configura el gráfico aquí
+                // Por ejemplo, crea una serie de pastel
+                Series series = new Series
+                {
+                    Name = "Cantidad de Riesgo",
+                    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
+                };
 
+                // Configura los ejes (no es tan relevante para el gráfico de pastel)
+                ChartArea chartArea = new ChartArea();
+                chartArea.AxisX.Title = "Nivel de Riesgo";
+                chartArea.AxisY.Title = "Cantidad de Riesgo";
 
+                // Limpia las series existentes antes de agregar la nueva
+                chartPastelRula.Series.Clear();
 
+                // Asigna la serie y el área del gráfico
+                chartPastelRula.Series.Add(series);
+                chartPastelRula.ChartAreas.Add(chartArea);
+
+                // Agrega un título al gráfico
+                chartPastelRula.Titles.Add("Riesgos obtenidos");
+                chartPastelRula.Font = new Font("Arial", 14, FontStyle.Bold);
+
+                // Establece el formato de la serie
+                series.Font = new Font("Arial", 10, FontStyle.Bold);
+
+                // Añade datos de ejemplo al gráfico de pastel
+
+                GraficoPastelRulaDATOS();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        private void HistoRulaPerson()
+        {
+            try
+            {
+                // Configura el gráfico aquí
+                // Por ejemplo, crea una serie de barras
+                Series series = new Series
+                {
+                    Name = "Cantidad de riesgos por día",
+                    ChartType = SeriesChartType.Bar // Cambiado a SeriesChartType.Bar para el gráfico de barras
+                };
+
+                // Configura los ejes
+                ChartArea chartArea = new ChartArea();
+                chartArea.AxisX.Title = "Fecha y Cantidad por día";
+                chartArea.AxisY.Title = "Niveles";
+
+                // Limpia las series existentes antes de agregar la nueva
+                ChartHistogramaRula2.Series.Clear();
+
+                // Asigna la serie y el área del gráfico
+                ChartHistogramaRula2.Series.Add(series);
+                ChartHistogramaRula2.ChartAreas.Add(chartArea);
+
+                // Agrega un título al gráfico
+                ChartHistogramaRula2.Titles.Clear();
+                ChartHistogramaRula2.Titles.Add("Cantidad de Riesgos por día");
+                ChartHistogramaRula2.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+                // Establece el formato de la serie
+                series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+                // Añade datos al gráfico
+                GraficoHistRulaDATOS();
+            }
+            catch (Exception ex)
+            {
+                // Maneja la excepción, si es necesario
+                MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void GraficoPastelRulaDATOS()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+            oEstadisticasPersonales.CuitRula = txtCUIT.Text;
+            oEstadisticasPersonales.FechaCargaRula = FechaDesde.Text;
+            oEstadisticasPersonales.FechaCarga2Rula = FechaHasta.Text;
+            DataTable dt1200 = oEstadisticaBC.PastelRulaPersonBC(oEstadisticasPersonales);
+            // Limpia los datos existentes en el gráfico
+            chartPastelRula.Series[0].Points.Clear();
+
+            // Configura la serie para un gráfico de pastel
+            chartPastelRula.Series[0].ChartType = SeriesChartType.Pie;
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt1200.Rows)
+            {
+                string NivelRiesgo = row["NivelRiesgo"].ToString();
+                int CantidadRiesgo = Convert.ToInt32(row["CantidadRiesgo"]);
+
+                // Agrega un punto a la serie para cada provincia
+                chartPastelRula.Series[0].Points.AddXY(NivelRiesgo, CantidadRiesgo);
+            }
+
+            // Agrega un título al gráfico de pastel
+            chartPastelRula.Titles.Clear();
+            chartPastelRula.Titles.Add("Distribución de Riesgo por nivel");
+
+            // Establece el formato de la serie
+            chartPastelRula.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
+
+        }
+        private void GraficoHistRulaDATOS()
+        {
+            try
+            {
+                // Utiliza la instancia de EstadisticaBC para obtener los datos
+                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+                EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+                oEstadisticasPersonales.CuitRula = txtCUIT.Text;
+                oEstadisticasPersonales.FechaCargaRula = FechaDesde.Text;
+                oEstadisticasPersonales.FechaCarga2Rula = FechaHasta.Text;
+                DataTable dt1201 = oEstadisticaBC.HistoRulaPersonBC(oEstadisticasPersonales);
+
+                // Limpia los datos existentes en el gráfico
+                ChartHistogramaRula2.Series.Clear();
+
+                // Configura las series para un gráfico de barras
+                Series series = new Series();
+                series.ChartType = SeriesChartType.Bar;
+                series.Name = "Analisis x Dia";
+
+                // Agrega las series al gráfico
+                ChartHistogramaRula2.Series.Add(series);
+
+                // Agrega los nuevos datos desde el DataTable
+                foreach (DataRow row in dt1201.Rows)
+                {
+                    DateTime fecha = Convert.ToDateTime(row["FechaCarga"]);
+                    int nivelRiesgo = Convert.ToInt32(row["NivelRiesgo"]);
+                    int Analisisxdia = Convert.ToInt32(row["AnalisisxDia"]);
+
+                    // Combina la fecha y AnalisisxDia para obtener un nombre único
+                    string nombrePunto = $"{fecha.ToShortDateString()} - {Analisisxdia}";
+
+                    // Agrega un punto a la serie para cada fecha, nivel de riesgo y AnalisisxDia
+                    series.Points.AddXY(nombrePunto, nivelRiesgo);
+                }
+
+                // Configura los ejes
+                ChartArea chartArea = new ChartArea();
+                chartArea.AxisX.Title = "Fecha de Carga y Analisis x Dia";
+                chartArea.AxisY.Title = "Nivel de Riesgo";
+
+                // Ajusta las etiquetas del eje X para mostrar cada barra
+                chartArea.AxisX.Interval = 1;
+                chartArea.AxisX.IntervalType = DateTimeIntervalType.Days;
+                chartArea.AxisX.LabelStyle.Format = "dd/MM/yyyy";
+
+                // Asigna el área del gráfico
+                ChartHistogramaRula2.ChartAreas.Add(chartArea);
+
+                // Agrega un título al gráfico de barras
+                ChartHistogramaRula2.Titles.Clear();
+                ChartHistogramaRula2.Titles.Add("Distribución de Riesgo por Nivel y Fecha");
+
+                // Establece el formato de la serie
+                series.Font = new Font("Arial", 10, FontStyle.Bold);
+            }
+            catch (Exception ex)
+            {
+                // Maneja la excepción, si es necesario
+                MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
     }
 }
