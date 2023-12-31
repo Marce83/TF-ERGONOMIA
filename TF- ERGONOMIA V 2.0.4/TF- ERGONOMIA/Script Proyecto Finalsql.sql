@@ -1821,10 +1821,43 @@ AS
 BEGIN
 select NivelRiesgo,FechaCargaReba, Count(NivelRiesgo) as AnalisisxDia from RebaTablaCompleta WHERE CUITReba = @CUITReba and FechaCargaReba BETWEEN @FechaCargaReba AND @FechaCargaReba2 group by NivelRiesgo, FechaCargaReba HAVING COUNT(NivelRiesgo) > 0;
 END
+GO
 
 
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PastelNioshPerson
+@CUITNiosh NVARCHAR(11),
+@FechaCargaNiosh DATE,
+@FechaCargaNiosh2 DATE
+AS
+BEGIN
+select RiesgoNiosh, Count(RiesgoNiosh) as CantidadRiesgo from NioshTablaCompleta WHERE CUITNiosh = @CUITNiosh and FechaCargaNiosh BETWEEN @FechaCargaNiosh AND @FechaCargaNiosh group by RiesgoNiosh HAVING COUNT(RiesgoNiosh) > 0;
+END
+GO
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_HistoNioshPerson																																																		
+@CUITNiosh NVARCHAR(11),
+@FechaCargaNiosh DATE,
+@FechaCargaNiosh2 DATE
+AS
+BEGIN
+select RiesgoNiosh,FechaCargaNiosh, Count(RiesgoNiosh) as AnalisisxDia from NioshTablaCompleta WHERE CUITNiosh = @CUITNiosh and FechaCargaNiosh BETWEEN @FechaCargaNiosh AND @FechaCargaNiosh group by RiesgoNiosh,FechaCargaNiosh HAVING COUNT(RiesgoNiosh) > 0;
+END
 
 
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PastelJSSPerson
+@CUITJSS NVARCHAR(11),
+@FechaCargaJss DATE,
+@FechaCargaJss2 DATE
+AS
+BEGIN
+select ResultadoAnalisisJss, Count(ResultadoAnalisisJss) as CantidadRiesgo from JssTablaCompleta WHERE CUITJSS = @CUITJSS and FechaCargaJss BETWEEN @FechaCargaJss AND @FechaCargaJss2 group by ResultadoAnalisisJss HAVING COUNT(ResultadoAnalisisJss) > 0;
+END
+GO
 
-
-																				
+			

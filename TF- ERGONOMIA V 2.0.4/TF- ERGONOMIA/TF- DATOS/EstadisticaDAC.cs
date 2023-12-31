@@ -13,7 +13,6 @@ namespace TF.DAC
     {
 
         string conectionString = ConnectionStringManager.ConectionString;
-
         public DataTable ContEmpresasDAC()
         {
             string sqlSentencia = "SP_STAT_ContEmpresas";
@@ -158,8 +157,6 @@ namespace TF.DAC
 
             return ds.Tables[0];
         }
-
-
         public DataTable ContNIOSHPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
         {
             string sqlSentencia = "SP_STAT_NIOSHContPerson";
@@ -291,7 +288,6 @@ namespace TF.DAC
 
             return ds.Tables[0];
         }
-
         public DataTable HistoRebaPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
         {
             string sqlSentencia = "SP_STAT_HistoRebaPerson";
@@ -311,13 +307,63 @@ namespace TF.DAC
 
             return ds.Tables[0];
         }
+        public DataTable PastelNioshPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_PastelNioshPerson";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUITNiosh", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitNiosh;
+            sqlComm.Parameters.Add("@FechaCargaNiosh", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaNiosh;
+            sqlComm.Parameters.Add("@FechaCargaNiosh2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Niosh;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
 
+            return ds.Tables[0];
+        }
+        public DataTable HistoNioshPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_HistoNioshPerson                              ";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUITNiosh", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitNiosh;
+            sqlComm.Parameters.Add("@FechaCargaNiosh", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaNiosh;
+            sqlComm.Parameters.Add("@FechaCargaNiosh2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Niosh;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
 
+            return ds.Tables[0];
+        }
+        public DataTable PasteljssPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_SP_STAT_PastelJSSPerson";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUITJSS", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitJss;
+            sqlComm.Parameters.Add("@FechaCargaJss", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaJss;
+            sqlComm.Parameters.Add("@FechaCargaJss2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Jss;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
 
-
-
-
-
+            return ds.Tables[0];
+        }
 
 
 

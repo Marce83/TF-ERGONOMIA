@@ -42,16 +42,22 @@ namespace TF.WIN
         }
         private void btnBuscarresultado_Click(object sender, EventArgs e)
         {
-            ContNIOSH();
-            ContREBA();
-            ContRULA();
-            ContJSS();
-            ContMetodos();
-            GraficoPastelRula();
-            HistoRulaPerson();
-            GraficoPastelReba();
-            HistoRebaPerson();
-
+            try
+            {
+                ContNIOSH();
+                ContREBA();
+                ContRULA();
+                ContJSS();
+                ContMetodos();
+                GraficoPastelRula();
+                HistoRulaPerson();
+                GraficoPastelReba();
+                HistoRebaPerson();
+                GraficoPastelNiosh();
+                HistoNioshPerson();
+                GraficoPastelJSS();
+            }
+            catch { }
         }
         public void ContNIOSH()
         {
@@ -341,7 +347,6 @@ namespace TF.WIN
                 MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         public void GraficoPastelReba()
         {
             try
@@ -466,7 +471,7 @@ namespace TF.WIN
                 oEstadisticasPersonales.CuitReba = txtCUIT.Text;
                 oEstadisticasPersonales.FechaCargaReba = FechaDesde.Text;
                 oEstadisticasPersonales.FechaCarga2Reba = FechaHasta.Text;
-                DataTable dt1205 = oEstadisticaBC.HistoRebaPersonBC(oEstadisticasPersonales);
+                DataTable dt1201 = oEstadisticaBC.HistoRebaPersonBC(oEstadisticasPersonales);
 
                 // Limpia los datos existentes en el gráfico
                 ChartHistogramaReba2.Series.Clear();
@@ -480,17 +485,17 @@ namespace TF.WIN
                 ChartHistogramaReba2.Series.Add(series);
 
                 // Agrega los nuevos datos desde el DataTable
-                foreach (DataRow row in dt1205.Rows)
+                foreach (DataRow row in dt1201.Rows)
                 {
                     DateTime fecha = Convert.ToDateTime(row["FechaCargaReba"]);
-                    int nivelRiesgo = Convert.ToInt32(row["NivelRiesgo"]);
+                    string nivelRiesgo = row["NivelRiesgo"].ToString();
                     int Analisisxdia = Convert.ToInt32(row["AnalisisxDia"]);
 
                     // Combina la fecha y AnalisisxDia para obtener un nombre único
-                    string nombrePunto = $"{fecha.ToShortDateString()} - {Analisisxdia}";
+                    string nombrePunto = $"{fecha.ToShortDateString()} - {nivelRiesgo}";
 
                     // Agrega un punto a la serie para cada fecha, nivel de riesgo y AnalisisxDia
-                    series.Points.AddXY(nombrePunto, nivelRiesgo);
+                    series.Points.AddXY(nombrePunto, Analisisxdia);
                 }
 
                 // Configura los ejes
@@ -519,8 +524,260 @@ namespace TF.WIN
                 MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        public void GraficoPastelNiosh()
+        {
+            try
+            {
+                // Configura el gráfico aquí
+                // Por ejemplo, crea una serie de pastel
+                Series series = new Series
+                {
+                    Name = "Cantidad de Riesgo",
+                    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
+                };
+
+                // Configura los ejes (no es tan relevante para el gráfico de pastel)
+                ChartArea chartArea = new ChartArea();
+                chartArea.AxisX.Title = "Nivel de Riesgo";
+                chartArea.AxisY.Title = "Cantidad de Riesgo";
+
+                // Limpia las series existentes antes de agregar la nueva
+                chartPastelNiosh.Series.Clear();
+
+                // Asigna la serie y el área del gráfico
+                chartPastelNiosh.Series.Add(series);
+                chartPastelNiosh.ChartAreas.Add(chartArea);
+
+                // Agrega un título al gráfico
+                chartPastelNiosh.Titles.Add("Riesgos obtenidos");
+                chartPastelNiosh.Font = new Font("Arial", 14, FontStyle.Bold);
+
+                // Establece el formato de la serie
+                series.Font = new Font("Arial", 10, FontStyle.Bold);
+
+                // Añade datos de ejemplo al gráfico de pastel
+
+                GraficoPastelNioshDATOS();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        private void HistoNioshPerson()
+        {
+            try
+            {
+                // Configura el gráfico aquí
+                // Por ejemplo, crea una serie de barras
+                Series series = new Series
+                {
+                    Name = "Cantidad de riesgos por día",
+                    ChartType = SeriesChartType.Bar // Cambiado a SeriesChartType.Bar para el gráfico de barras
+                };
+
+                // Configura los ejes
+                ChartArea chartArea = new ChartArea();
+                chartArea.AxisX.Title = "Fecha y Cantidad por día";
+                chartArea.AxisY.Title = "Niveles";
+
+                // Limpia las series existentes antes de agregar la nueva
+                ChartHistogramaNiosh2.Series.Clear();
+
+                // Asigna la serie y el área del gráfico
+                ChartHistogramaNiosh2.Series.Add(series);
+                ChartHistogramaNiosh2.ChartAreas.Add(chartArea);
+
+                // Agrega un título al gráfico
+                ChartHistogramaNiosh2.Titles.Clear();
+                ChartHistogramaNiosh2.Titles.Add("Cantidad de Riesgos por día");
+                ChartHistogramaNiosh2.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+                // Establece el formato de la serie
+                series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+                // Añade datos al gráfico
+                HistoNioshPersonDATOS();
+            }
+            catch (Exception ex)
+            {
+                // Maneja la excepción, si es necesario
+                MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void GraficoPastelNioshDATOS()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+            oEstadisticasPersonales.CuitNiosh = txtCUIT.Text;
+            oEstadisticasPersonales.FechaCargaNiosh = FechaDesde.Text;
+            oEstadisticasPersonales.FechaCarga2Niosh = FechaHasta.Text;
+            DataTable dt1300 = oEstadisticaBC.PastelNioshPersonBC(oEstadisticasPersonales);
+            // Limpia los datos existentes en el gráfico
+            chartPastelNiosh.Series[0].Points.Clear();
+
+            // Configura la serie para un gráfico de pastel
+            chartPastelNiosh.Series[0].ChartType = SeriesChartType.Pie;
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt1300.Rows)
+            {
+                string NivelRiesgo = row["RiesgoNiosh"].ToString();
+                int CantidadRiesgo = Convert.ToInt32(row["CantidadRiesgo"]);
+
+                // Agrega un punto a la serie para cada provincia
+                chartPastelNiosh.Series[0].Points.AddXY(NivelRiesgo, CantidadRiesgo);
+            }
+
+            // Agrega un título al gráfico de pastel
+            chartPastelNiosh.Titles.Clear();
+            chartPastelNiosh.Titles.Add("Distribución de Riesgo por nivel");
+
+            // Establece el formato de la serie
+            chartPastelNiosh.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
+
+        }
+        private void HistoNioshPersonDATOS()
+        {
+            try
+            {
+                // Utiliza la instancia de EstadisticaBC para obtener los datos
+                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+                EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+                oEstadisticasPersonales.CuitNiosh = txtCUIT.Text;
+                oEstadisticasPersonales.FechaCargaNiosh = FechaDesde.Text;
+                oEstadisticasPersonales.FechaCarga2Niosh = FechaHasta.Text;
+                DataTable dt1209 = oEstadisticaBC.HistoNioshPersonBC(oEstadisticasPersonales);
+
+                // Limpia los datos existentes en el gráfico
+                ChartHistogramaNiosh2.Series.Clear();
+
+                // Configura las series para un gráfico de barras
+                Series series = new Series();
+                series.ChartType = SeriesChartType.Bar;
+                series.Name = "Analisis x Dia";
+
+                // Agrega las series al gráfico
+                ChartHistogramaNiosh2.Series.Add(series);
+                ChartHistogramaNiosh2.Refresh();
+
+                // Agrega los nuevos datos desde el DataTable
+                foreach (DataRow row in dt1209.Rows)
+                {
+                    DateTime fecha = Convert.ToDateTime(row["FechaCargaNiosh"]);
+                    string nivelRiesgo = row["RiesgoNiosh"].ToString();
+                    int Analisisxdia1 = Convert.ToInt32(row["AnalisisxDia"]);
+
+                    // Combina la fecha y AnalisisxDia para obtener un nombre único
+                    string nombrePunto = $"{fecha.ToShortDateString()} - {nivelRiesgo}";
+
+                    // Agrega un punto a la serie para cada fecha, nivel de riesgo y AnalisisxDia
+                    series.Points.AddXY(nombrePunto, Analisisxdia1);
+                }
+
+                // Configura los ejes
+                ChartArea chartArea = new ChartArea();
+                chartArea.AxisX.Title = "Fecha de Carga y Analisis x Dia";
+                chartArea.AxisY.Title = "Nivel de Riesgo";
+
+                // Ajusta las etiquetas del eje X para mostrar cada barra
+                chartArea.AxisX.Interval = 1;
+                chartArea.AxisX.IntervalType = DateTimeIntervalType.Days;
+                chartArea.AxisX.LabelStyle.Format = "dd/MM/yyyy";
+
+                // Asigna el área del gráfico
+                ChartHistogramaNiosh2.ChartAreas.Add(chartArea);
+
+                // Agrega un título al gráfico de barras
+                ChartHistogramaNiosh2.Titles.Clear();
+                ChartHistogramaNiosh2.Titles.Add("Distribución de Riesgo por Nivel y Fecha");
+
+                // Establece el formato de la serie
+                series.Font = new Font("Arial", 10, FontStyle.Bold);
+            }
+            catch (Exception ex)
+            {
+                // Maneja la excepción, si es necesario
+                MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
 
+
+        public void GraficoPastelJSS()
+        {
+            try
+            {
+                // Configura el gráfico aquí
+                // Por ejemplo, crea una serie de pastel
+                Series series = new Series
+                {
+                    Name = "Cantidad de Riesgo",
+                    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
+                };
+
+                // Configura los ejes (no es tan relevante para el gráfico de pastel)
+                ChartArea chartArea = new ChartArea();
+                chartArea.AxisX.Title = "Nivel de Riesgo";
+                chartArea.AxisY.Title = "Cantidad de Riesgo";
+
+                // Limpia las series existentes antes de agregar la nueva
+                chartPastelJss2.Series.Clear();
+
+                // Asigna la serie y el área del gráfico
+                chartPastelJss2.Series.Add(series);
+                chartPastelJss2.ChartAreas.Add(chartArea);
+
+                // Agrega un título al gráfico
+                chartPastelJss2.Titles.Add("Riesgos obtenidos");
+                chartPastelJss2.Font = new Font("Arial", 14, FontStyle.Bold);
+
+                // Establece el formato de la serie
+                series.Font = new Font("Arial", 10, FontStyle.Bold);
+
+                // Añade datos de ejemplo al gráfico de pastel
+
+                GraficoPastelJSSDATOS();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        private void GraficoPastelJSSDATOS()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+            oEstadisticasPersonales.CuitJss = txtCUIT.Text;
+            oEstadisticasPersonales.FechaCargaJss = FechaDesde.Text;
+            oEstadisticasPersonales.FechaCarga2Jss = FechaHasta.Text;
+            DataTable dt1214 = oEstadisticaBC.PasteljssPersonBC(oEstadisticasPersonales);
+            // Limpia los datos existentes en el gráfico
+            chartPastelJss2.Series[0].Points.Clear();
+
+            // Configura la serie para un gráfico de pastel
+            chartPastelJss2.Series[0].ChartType = SeriesChartType.Pie;
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt1214.Rows)
+            {
+                string NivelRiesgo = row["ResultadoAnalisisJss"].ToString();
+                int CantidadRiesgo = Convert.ToInt32(row["CantidadRiesgo"]);
+
+                // Agrega un punto a la serie para cada provincia
+                chartPastelJss2.Series[0].Points.AddXY(NivelRiesgo, CantidadRiesgo);
+            }
+
+            // Agrega un título al gráfico de pastel
+            chartPastelJss2.Titles.Clear();
+            chartPastelJss2.Titles.Add("Distribución de Riesgo por nivel");
+
+            // Establece el formato de la serie
+            chartPastelJss2.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
+
+        }
 
 
     }

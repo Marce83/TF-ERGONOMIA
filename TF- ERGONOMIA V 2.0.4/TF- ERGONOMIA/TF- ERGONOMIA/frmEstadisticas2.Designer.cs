@@ -41,6 +41,18 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.FechaDesde = new System.Windows.Forms.DateTimePicker();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -86,6 +98,14 @@
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.txtCUIT = new MaterialSkin.Controls.MaterialTextBox2();
             this.ChartHistogramaReba2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.chartPastelNiosh = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.ChartHistogramaNiosh2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartHistoJss2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartPastelJss2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartPastelReba)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChartHistogramaRula2)).BeginInit();
@@ -99,6 +119,12 @@
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChartHistogramaReba2)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPastelNiosh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartHistogramaNiosh2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartHistoJss2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPastelJss2)).BeginInit();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // FechaDesde
@@ -155,7 +181,7 @@
             this.btnBuscarresultado.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnBuscarresultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarresultado.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBuscarresultado.Location = new System.Drawing.Point(22, 170);
+            this.btnBuscarresultado.Location = new System.Drawing.Point(248, 179);
             this.btnBuscarresultado.Name = "btnBuscarresultado";
             this.btnBuscarresultado.Size = new System.Drawing.Size(322, 48);
             this.btnBuscarresultado.TabIndex = 59;
@@ -172,7 +198,7 @@
             this.chartPastelReba.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartPastelReba.Legends.Add(legend1);
-            this.chartPastelReba.Location = new System.Drawing.Point(22, 940);
+            this.chartPastelReba.Location = new System.Drawing.Point(22, 971);
             this.chartPastelReba.Margin = new System.Windows.Forms.Padding(2);
             this.chartPastelReba.Name = "chartPastelReba";
             this.chartPastelReba.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -180,16 +206,16 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartPastelReba.Series.Add(series1);
-            this.chartPastelReba.Size = new System.Drawing.Size(386, 372);
+            this.chartPastelReba.Size = new System.Drawing.Size(393, 341);
             this.chartPastelReba.TabIndex = 111;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel10.Controls.Add(this.label11);
-            this.panel10.Location = new System.Drawing.Point(22, 888);
+            this.panel10.Location = new System.Drawing.Point(22, 920);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(778, 46);
+            this.panel10.Size = new System.Drawing.Size(1037, 46);
             this.panel10.TabIndex = 110;
             // 
             // label11
@@ -197,7 +223,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label11.Location = new System.Drawing.Point(290, 9);
+            this.label11.Location = new System.Drawing.Point(444, 11);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(218, 21);
             this.label11.TabIndex = 0;
@@ -221,7 +247,7 @@
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.ChartHistogramaRula2.Series.Add(series2);
-            this.ChartHistogramaRula2.Size = new System.Drawing.Size(386, 332);
+            this.ChartHistogramaRula2.Size = new System.Drawing.Size(644, 332);
             this.ChartHistogramaRula2.TabIndex = 109;
             // 
             // chartPastelRula
@@ -241,7 +267,7 @@
             series3.Legend = "Legend1";
             series3.Name = "Series1";
             this.chartPastelRula.Series.Add(series3);
-            this.chartPastelRula.Size = new System.Drawing.Size(386, 366);
+            this.chartPastelRula.Size = new System.Drawing.Size(386, 333);
             this.chartPastelRula.TabIndex = 108;
             // 
             // panel9
@@ -299,7 +325,7 @@
             this.panel8.Controls.Add(this.label7);
             this.panel8.Location = new System.Drawing.Point(22, 550);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(778, 46);
+            this.panel8.Size = new System.Drawing.Size(1037, 46);
             this.panel8.TabIndex = 101;
             // 
             // label7
@@ -307,7 +333,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(290, 11);
+            this.label7.Location = new System.Drawing.Point(444, 12);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(220, 21);
             this.label7.TabIndex = 0;
@@ -520,7 +546,7 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(22, 380);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(778, 46);
+            this.panel1.Size = new System.Drawing.Size(1037, 46);
             this.panel1.TabIndex = 100;
             // 
             // label5
@@ -528,7 +554,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(334, 11);
+            this.label5.Location = new System.Drawing.Point(446, 11);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(176, 21);
             this.label5.TabIndex = 0;
@@ -592,7 +618,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(367, 170);
+            this.btnSalir.Location = new System.Drawing.Point(22, 179);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(203, 48);
             this.btnSalir.TabIndex = 112;
@@ -717,7 +743,7 @@
             this.ChartHistogramaReba2.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.ChartHistogramaReba2.Legends.Add(legend4);
-            this.ChartHistogramaReba2.Location = new System.Drawing.Point(415, 940);
+            this.ChartHistogramaReba2.Location = new System.Drawing.Point(415, 971);
             this.ChartHistogramaReba2.Margin = new System.Windows.Forms.Padding(2);
             this.ChartHistogramaReba2.Name = "ChartHistogramaReba2";
             this.ChartHistogramaReba2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -725,8 +751,130 @@
             series4.Legend = "Legend1";
             series4.Name = "Series1";
             this.ChartHistogramaReba2.Series.Add(series4);
-            this.ChartHistogramaReba2.Size = new System.Drawing.Size(386, 372);
+            this.ChartHistogramaReba2.Size = new System.Drawing.Size(644, 341);
             this.ChartHistogramaReba2.TabIndex = 163;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(444, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(229, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ESTADISTICAS MÉTODO NIOSH";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Location = new System.Drawing.Point(22, 1317);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1037, 46);
+            this.panel4.TabIndex = 111;
+            // 
+            // chartPastelNiosh
+            // 
+            this.chartPastelNiosh.BackColor = System.Drawing.Color.Transparent;
+            this.chartPastelNiosh.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.chartPastelNiosh.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            chartArea5.Name = "ChartArea1";
+            this.chartPastelNiosh.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartPastelNiosh.Legends.Add(legend5);
+            this.chartPastelNiosh.Location = new System.Drawing.Point(29, 1368);
+            this.chartPastelNiosh.Margin = new System.Windows.Forms.Padding(2);
+            this.chartPastelNiosh.Name = "chartPastelNiosh";
+            this.chartPastelNiosh.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chartPastelNiosh.Series.Add(series5);
+            this.chartPastelNiosh.Size = new System.Drawing.Size(386, 325);
+            this.chartPastelNiosh.TabIndex = 164;
+            // 
+            // ChartHistogramaNiosh2
+            // 
+            this.ChartHistogramaNiosh2.BackColor = System.Drawing.Color.Transparent;
+            this.ChartHistogramaNiosh2.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.ChartHistogramaNiosh2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            chartArea6.Name = "ChartArea1";
+            this.ChartHistogramaNiosh2.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.ChartHistogramaNiosh2.Legends.Add(legend6);
+            this.ChartHistogramaNiosh2.Location = new System.Drawing.Point(422, 1368);
+            this.ChartHistogramaNiosh2.Margin = new System.Windows.Forms.Padding(2);
+            this.ChartHistogramaNiosh2.Name = "ChartHistogramaNiosh2";
+            this.ChartHistogramaNiosh2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.ChartHistogramaNiosh2.Series.Add(series6);
+            this.ChartHistogramaNiosh2.Size = new System.Drawing.Size(637, 325);
+            this.ChartHistogramaNiosh2.TabIndex = 165;
+            // 
+            // chartHistoJss2
+            // 
+            this.chartHistoJss2.BackColor = System.Drawing.Color.Transparent;
+            this.chartHistoJss2.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.chartHistoJss2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            chartArea7.Name = "ChartArea1";
+            this.chartHistoJss2.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chartHistoJss2.Legends.Add(legend7);
+            this.chartHistoJss2.Location = new System.Drawing.Point(422, 1749);
+            this.chartHistoJss2.Margin = new System.Windows.Forms.Padding(2);
+            this.chartHistoJss2.Name = "chartHistoJss2";
+            this.chartHistoJss2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.chartHistoJss2.Series.Add(series7);
+            this.chartHistoJss2.Size = new System.Drawing.Size(637, 325);
+            this.chartHistoJss2.TabIndex = 168;
+            // 
+            // chartPastelJss2
+            // 
+            this.chartPastelJss2.BackColor = System.Drawing.Color.Transparent;
+            this.chartPastelJss2.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.chartPastelJss2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            chartArea8.Name = "ChartArea1";
+            this.chartPastelJss2.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chartPastelJss2.Legends.Add(legend8);
+            this.chartPastelJss2.Location = new System.Drawing.Point(29, 1749);
+            this.chartPastelJss2.Margin = new System.Windows.Forms.Padding(2);
+            this.chartPastelJss2.Name = "chartPastelJss2";
+            this.chartPastelJss2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.chartPastelJss2.Series.Add(series8);
+            this.chartPastelJss2.Size = new System.Drawing.Size(386, 325);
+            this.chartPastelJss2.TabIndex = 167;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel11.Controls.Add(this.label4);
+            this.panel11.Location = new System.Drawing.Point(22, 1698);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1037, 46);
+            this.panel11.TabIndex = 166;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.Location = new System.Drawing.Point(444, 11);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(205, 21);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "ESTADISTICAS MÉTODO JSS";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmEstadisticas2
             // 
@@ -735,7 +883,13 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(893, 850);
+            this.ClientSize = new System.Drawing.Size(1078, 1061);
+            this.Controls.Add(this.chartHistoJss2);
+            this.Controls.Add(this.ChartHistogramaNiosh2);
+            this.Controls.Add(this.chartPastelJss2);
+            this.Controls.Add(this.chartPastelNiosh);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.ChartHistogramaReba2);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.txtNombreEmpresa);
@@ -785,6 +939,14 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChartHistogramaReba2)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPastelNiosh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartHistogramaNiosh2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartHistoJss2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPastelJss2)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -836,5 +998,13 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
         private MaterialSkin.Controls.MaterialTextBox2 txtCUIT;
         private System.Windows.Forms.DataVisualization.Charting.Chart ChartHistogramaReba2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartPastelNiosh;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ChartHistogramaNiosh2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartHistoJss2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartPastelJss2;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -66,28 +66,24 @@ namespace TF.BC
             DataTable dt = oEstadisticaDAC.ContRULADAC();
             return dt;
         }
-
         public DataTable ContNIOSHPersonBC(EstadisticasPersonales oEstadisticasPersonales)
         {
             EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
             DataTable dt = oEstadisticaDAC.ContNIOSHPersonDAC(oEstadisticasPersonales);
             return dt;
         }
-
         public DataTable ContREBAPersonBC(EstadisticasPersonales oEstadisticasPersonales)
         {
             EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
             DataTable dt = oEstadisticaDAC.ContREBAPersonDAC(oEstadisticasPersonales);
             return dt;
         }
-
         public DataTable ContRULAPersonBC(EstadisticasPersonales oEstadisticasPersonales)
         {
             EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
             DataTable dt = oEstadisticaDAC.ContRULAPersonDAC(oEstadisticasPersonales);
             return dt;
         }
-
         public DataTable ContJSSPersonBC(EstadisticasPersonales oEstadisticasPersonales)
         {
             EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
@@ -118,6 +114,29 @@ namespace TF.BC
             DataTable dt = oEstadisticaDAC.HistoRebaPersonDAC(oEstadisticasPersonales);
             return dt;
         }
+        public DataTable PastelNioshPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.PastelNioshPersonDAC(oEstadisticasPersonales);
+            return dt;
+        }
+        public DataTable HistoNioshPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.HistoNioshPersonDAC(oEstadisticasPersonales);
+            return dt;
+        }
+
+
+        public DataTable PasteljssPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.PasteljssPersonDAC(oEstadisticasPersonales);
+            return dt;
+        }
+
+
+
 
     }
 }
