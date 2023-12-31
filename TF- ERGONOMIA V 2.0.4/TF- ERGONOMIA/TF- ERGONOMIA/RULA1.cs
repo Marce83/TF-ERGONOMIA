@@ -431,7 +431,7 @@ namespace TF.WIN
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex + "verificar si existen caracteristicas sin completar");
+                MessageBox.Show("verificar si existen caracteristicas sin completar");
             }
         }
 

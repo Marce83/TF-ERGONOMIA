@@ -97,22 +97,29 @@ namespace TF.WIN
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            RebaBC oRebaBC = new RebaBC();
-            Reba oReba = new Reba();
+            try
+            {
 
-            oReba.cargaIdReba = int.Parse(txtcargaidreba.Text);
-            oReba.TroncoReba = int.Parse(txtTroncoReba.Text);
-            oReba.CuelloReba = int.Parse(txtCuelloReba.Text);
-            oReba.PiernasReba = int.Parse(txtPiernasReba.Text);
-            oReba.CargafuerzaReba = int.Parse(txtCargaFuerzaReba.Text);
-            oReba.AntebrazoReba = int.Parse(txtAntebrazoReba.Text);
-            oReba.MunecaReba = int.Parse(txtMunecaReba.Text);
-            oReba.BrazoReba = int.Parse(txtBrazoReba.Text);
-            oReba.AgarreReba = int.Parse(txtAgarreReba.Text);
-            oReba.ActividadReba = int.Parse(txtpuntuacionActividadReba.Text);
-            var res = oRebaBC.UpdateReba1BC(oReba);
-            MessageBox.Show("Carga Guardada");
+                RebaBC oRebaBC = new RebaBC();
+                Reba oReba = new Reba();
 
+                oReba.cargaIdReba = int.Parse(txtcargaidreba.Text);
+                oReba.TroncoReba = int.Parse(txtTroncoReba.Text);
+                oReba.CuelloReba = int.Parse(txtCuelloReba.Text);
+                oReba.PiernasReba = int.Parse(txtPiernasReba.Text);
+                oReba.CargafuerzaReba = int.Parse(txtCargaFuerzaReba.Text);
+                oReba.AntebrazoReba = int.Parse(txtAntebrazoReba.Text);
+                oReba.MunecaReba = int.Parse(txtMunecaReba.Text);
+                oReba.BrazoReba = int.Parse(txtBrazoReba.Text);
+                oReba.AgarreReba = int.Parse(txtAgarreReba.Text);
+                oReba.ActividadReba = int.Parse(txtpuntuacionActividadReba.Text);
+                var res = oRebaBC.UpdateReba1BC(oReba);
+                MessageBox.Show("Carga Guardada");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Verifique que tenga todas la Informacion Cargada");
+            }
 
             REBA_RESULTADO OREBA_RESULTADO = new REBA_RESULTADO();
             OREBA_RESULTADO.Show();

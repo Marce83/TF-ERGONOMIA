@@ -126,16 +126,18 @@ namespace TF.BC
             DataTable dt = oEstadisticaDAC.HistoNioshPersonDAC(oEstadisticasPersonales);
             return dt;
         }
-
-
         public DataTable PasteljssPersonBC(EstadisticasPersonales oEstadisticasPersonales)
         {
             EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
             DataTable dt = oEstadisticaDAC.PasteljssPersonDAC(oEstadisticasPersonales);
             return dt;
         }
-
-
+        public DataTable HistoJSSPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.HistoJSSPersonDAC(oEstadisticasPersonales);
+            return dt;
+        }
 
 
     }

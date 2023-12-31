@@ -373,7 +373,10 @@ namespace TF.WIN
                 MessageBox.Show("Análisis JSS guardado");
 
             }
-            catch { }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Verifique que tenga todas la Informacion Cargada");
+            }
 
             JSSRESULTADO oJSSRESULTADO = new JSSRESULTADO();
             oJSSRESULTADO.Show();

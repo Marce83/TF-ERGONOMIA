@@ -32,6 +32,7 @@ namespace TF.WIN
             if (oFrm.EmpresaSeleccionada != null)
             {
                 txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
+                txtNombreEmpresaRula.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
             }
         }
 

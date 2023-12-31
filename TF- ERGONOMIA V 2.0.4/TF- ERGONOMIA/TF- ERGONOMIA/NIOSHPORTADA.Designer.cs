@@ -146,7 +146,7 @@
             this.btnBuscarpuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarpuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarpuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarpuesto.Location = new System.Drawing.Point(370, 280);
+            this.btnBuscarpuesto.Location = new System.Drawing.Point(352, 280);
             this.btnBuscarpuesto.Name = "btnBuscarpuesto";
             this.btnBuscarpuesto.Size = new System.Drawing.Size(67, 48);
             this.btnBuscarpuesto.TabIndex = 155;
@@ -220,7 +220,7 @@
             this.btnBuscarEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarEmpleados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarEmpleados.Location = new System.Drawing.Point(370, 176);
+            this.btnBuscarEmpleados.Location = new System.Drawing.Point(352, 176);
             this.btnBuscarEmpleados.Name = "btnBuscarEmpleados";
             this.btnBuscarEmpleados.Size = new System.Drawing.Size(67, 48);
             this.btnBuscarEmpleados.TabIndex = 151;
@@ -281,7 +281,7 @@
             this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarCUIT.Location = new System.Drawing.Point(370, 72);
+            this.btnBuscarCUIT.Location = new System.Drawing.Point(352, 72);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
             this.btnBuscarCUIT.Size = new System.Drawing.Size(67, 48);
             this.btnBuscarCUIT.TabIndex = 148;
@@ -360,7 +360,7 @@
             this.btnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrear.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrear.Location = new System.Drawing.Point(321, 406);
+            this.btnCrear.Location = new System.Drawing.Point(303, 406);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(116, 40);
             this.btnCrear.TabIndex = 144;
@@ -399,7 +399,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(461, 464);
+            this.ClientSize = new System.Drawing.Size(445, 464);
             this.Controls.Add(this.dtpNiosh);
             this.Controls.Add(this.materialLabel5);
             this.Controls.Add(this.materialLabel4);

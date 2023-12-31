@@ -1275,12 +1275,13 @@ namespace TF.WIN
                 MessageBox.Show("Formulario de Carga guardado");
 
             }
-            catch { }
- 
+            catch (Exception ex)
+            {
+                MessageBox.Show("Verifique que tenga todas la Informacion Cargada");
+            }
+
             NIOSHRESULTADO ONIOSHRESULTADO = new NIOSHRESULTADO();
             ONIOSHRESULTADO.Show();
-
-
             Close();
 
         }

@@ -328,7 +328,7 @@ namespace TF.DAC
         }
         public DataTable HistoNioshPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
         {
-            string sqlSentencia = "SP_STAT_HistoNioshPerson                              ";
+            string sqlSentencia = "SP_STAT_HistoNioshPerson";
             SqlConnection sqlCnn = new SqlConnection();
             sqlCnn.ConnectionString = conectionString;
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
@@ -347,7 +347,7 @@ namespace TF.DAC
         }
         public DataTable PasteljssPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
         {
-            string sqlSentencia = "SP_STAT_SP_STAT_PastelJSSPerson";
+            string sqlSentencia = "SP_STAT_PastelJSSPerson";
             SqlConnection sqlCnn = new SqlConnection();
             sqlCnn.ConnectionString = conectionString;
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
@@ -364,8 +364,25 @@ namespace TF.DAC
 
             return ds.Tables[0];
         }
+        public DataTable HistoJSSPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_HistoJSSPerson";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUITJSS", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitJss;
+            sqlComm.Parameters.Add("@FechaCargaJss", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaJss;
+            sqlComm.Parameters.Add("@FechaCargaJss2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Jss;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
 
-
+            return ds.Tables[0];
+        }
 
 
 
