@@ -77,6 +77,11 @@
             this.label11 = new System.Windows.Forms.Label();
             this.chartempxemp = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.btnRestaurar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnMaximizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -90,6 +95,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ChartEmpLocal)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartempxemp)).BeginInit();
+            this.BarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -97,7 +107,7 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(303, 9);
+            this.label1.Location = new System.Drawing.Point(285, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(212, 31);
@@ -110,7 +120,7 @@
             this.panel4.Controls.Add(this.btnEmpresa);
             this.panel4.Controls.Add(this.txtempresasregistradas);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(28, 76);
+            this.panel4.Location = new System.Drawing.Point(26, 59);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(186, 110);
             this.panel4.TabIndex = 86;
@@ -159,7 +169,7 @@
             this.panel6.Controls.Add(this.btnEmpleados);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.txtcontempleados);
-            this.panel6.Location = new System.Drawing.Point(220, 76);
+            this.panel6.Location = new System.Drawing.Point(218, 59);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(194, 110);
             this.panel6.TabIndex = 89;
@@ -206,7 +216,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(28, 192);
+            this.panel1.Location = new System.Drawing.Point(26, 175);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(778, 46);
             this.panel1.TabIndex = 88;
@@ -229,7 +239,7 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtNioshCont);
-            this.panel2.Location = new System.Drawing.Point(220, 245);
+            this.panel2.Location = new System.Drawing.Point(218, 228);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(194, 110);
             this.panel2.TabIndex = 92;
@@ -279,7 +289,7 @@
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.txtRulaCont);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Location = new System.Drawing.Point(28, 245);
+            this.panel3.Location = new System.Drawing.Point(26, 228);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(186, 110);
             this.panel3.TabIndex = 91;
@@ -329,7 +339,7 @@
             this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.txtjsscont);
-            this.panel5.Location = new System.Drawing.Point(613, 245);
+            this.panel5.Location = new System.Drawing.Point(611, 228);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(194, 110);
             this.panel5.TabIndex = 94;
@@ -379,7 +389,7 @@
             this.panel7.Controls.Add(this.button4);
             this.panel7.Controls.Add(this.txtREBACont);
             this.panel7.Controls.Add(this.label10);
-            this.panel7.Location = new System.Drawing.Point(421, 245);
+            this.panel7.Location = new System.Drawing.Point(419, 228);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(186, 110);
             this.panel7.TabIndex = 93;
@@ -427,7 +437,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel8.Controls.Add(this.label7);
-            this.panel8.Location = new System.Drawing.Point(28, 362);
+            this.panel8.Location = new System.Drawing.Point(26, 345);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(778, 46);
             this.panel8.TabIndex = 89;
@@ -450,7 +460,7 @@
             this.panel9.Controls.Add(this.button5);
             this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.TotalMetodo);
-            this.panel9.Location = new System.Drawing.Point(421, 76);
+            this.panel9.Location = new System.Drawing.Point(419, 59);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(194, 110);
             this.panel9.TabIndex = 91;
@@ -503,8 +513,8 @@
             this.chartEmpresasProv.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartEmpresasProv.Legends.Add(legend1);
-            this.chartEmpresasProv.Location = new System.Drawing.Point(28, 414);
-            this.chartEmpresasProv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartEmpresasProv.Location = new System.Drawing.Point(26, 397);
+            this.chartEmpresasProv.Margin = new System.Windows.Forms.Padding(2);
             this.chartEmpresasProv.Name = "chartEmpresasProv";
             this.chartEmpresasProv.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series1.ChartArea = "ChartArea1";
@@ -523,8 +533,8 @@
             this.ChartEmpLocal.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.ChartEmpLocal.Legends.Add(legend2);
-            this.ChartEmpLocal.Location = new System.Drawing.Point(421, 414);
-            this.ChartEmpLocal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ChartEmpLocal.Location = new System.Drawing.Point(419, 397);
+            this.ChartEmpLocal.Margin = new System.Windows.Forms.Padding(2);
             this.ChartEmpLocal.Name = "ChartEmpLocal";
             this.ChartEmpLocal.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series2.ChartArea = "ChartArea1";
@@ -538,7 +548,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel10.Controls.Add(this.label11);
-            this.panel10.Location = new System.Drawing.Point(28, 700);
+            this.panel10.Location = new System.Drawing.Point(26, 683);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(778, 46);
             this.panel10.TabIndex = 97;
@@ -564,8 +574,8 @@
             this.chartempxemp.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chartempxemp.Legends.Add(legend3);
-            this.chartempxemp.Location = new System.Drawing.Point(28, 752);
-            this.chartempxemp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartempxemp.Location = new System.Drawing.Point(26, 735);
+            this.chartempxemp.Margin = new System.Windows.Forms.Padding(2);
             this.chartempxemp.Name = "chartempxemp";
             this.chartempxemp.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series3.ChartArea = "ChartArea1";
@@ -583,13 +593,84 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(703, 5);
+            this.btnSalir.Location = new System.Drawing.Point(679, 95);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(104, 35);
             this.btnSalir.TabIndex = 99;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // BarraTitulo
+            // 
+            this.BarraTitulo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BarraTitulo.Controls.Add(this.btnRestaurar);
+            this.BarraTitulo.Controls.Add(this.btnMinimizar);
+            this.BarraTitulo.Controls.Add(this.btnMaximizar);
+            this.BarraTitulo.Controls.Add(this.btnCerrar);
+            this.BarraTitulo.Controls.Add(this.label1);
+            this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.BarraTitulo.Name = "BarraTitulo";
+            this.BarraTitulo.Size = new System.Drawing.Size(832, 53);
+            this.BarraTitulo.TabIndex = 100;
+            // 
+            // btnRestaurar
+            // 
+            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestaurar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
+            this.btnRestaurar.Location = new System.Drawing.Point(767, 14);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
+            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRestaurar.TabIndex = 2;
+            this.btnRestaurar.TabStop = false;
+            this.btnRestaurar.Visible = false;
+            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
+            this.btnRestaurar.DoubleClick += new System.EventHandler(this.btnMaximizar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(736, 14);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 1;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnMaximizar
+            // 
+            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximizar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
+            this.btnMaximizar.Location = new System.Drawing.Point(767, 14);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximizar.TabIndex = 1;
+            this.btnMaximizar.TabStop = false;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(798, 14);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(25, 25);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // frmEstadisticas
             // 
@@ -598,7 +679,8 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(863, 894);
+            this.ClientSize = new System.Drawing.Size(849, 894);
+            this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.chartempxemp);
             this.Controls.Add(this.panel10);
@@ -613,7 +695,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEstadisticas";
             this.Text = "frmEstadisticas";
@@ -641,8 +722,13 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartempxemp)).EndInit();
+            this.BarraTitulo.ResumeLayout(false);
+            this.BarraTitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -687,5 +773,10 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartempxemp;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Panel BarraTitulo;
+        private System.Windows.Forms.PictureBox btnRestaurar;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnMaximizar;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }

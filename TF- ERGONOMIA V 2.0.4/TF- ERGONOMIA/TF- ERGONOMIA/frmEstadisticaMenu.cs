@@ -26,13 +26,13 @@ namespace TF.WIN
         {
             frmEstadisticas ofrmEstadisticas = new frmEstadisticas();
             ofrmEstadisticas.Show();
-        }
+         }
 
         private void btnEstidisticaparticular_Click(object sender, EventArgs e)
         {
             frmEstadisticas2 ofrmEstadisticas2 = new frmEstadisticas2();
             ofrmEstadisticas2.Show();
-        }
+          }
 
     }
 }

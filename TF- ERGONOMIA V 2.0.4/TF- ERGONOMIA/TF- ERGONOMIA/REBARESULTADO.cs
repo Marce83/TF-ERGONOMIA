@@ -36,6 +36,42 @@ namespace TF.WIN
         private int SumaPuntuacionFinal = 0;
 
 
+
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMaximizar.Visible = false;
+            btnRestaurar.Visible = true;
+        }
+
+        private void btnRestaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnRestaurar.Visible = false;
+            btnMaximizar.Visible = true;
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            DialogResult resp = MessageBox.Show("¿Desea salir de la aplicación?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resp == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+
+
+
+
+
+
         private void btnpagant_Click(object sender, EventArgs e)
         {
             REBA1 OREBA1 = new REBA1();
@@ -167,6 +203,21 @@ namespace TF.WIN
             RebaBC oRebaBC = new RebaBC();
 
             DataTable dt50 = oRebaBC.Reba_ResultadoBC(oReba);
+
+            if (dt50.Rows.Count > 0)
+            {
+                string resultado = dt50.Rows[0][1].ToString();
+               txtCuitReba.Text = resultado;
+
+                string resultado20 = dt50.Rows[0][5].ToString();
+                txtempresaRula.Text = resultado20;
+
+                string resultado21 = dt50.Rows[0][4].ToString();
+                txtEmpleadoReba.Text = resultado21;
+
+                string resultado22 = dt50.Rows[0][2].ToString();
+                txtpuestoRula.Text = resultado22;
+            }
 
             if (dt50.Rows.Count > 0)
             {

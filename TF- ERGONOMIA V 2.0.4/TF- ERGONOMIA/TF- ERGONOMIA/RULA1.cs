@@ -140,6 +140,37 @@ namespace TF.WIN
         }
 
 
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMaximizar.Visible = false;
+            btnRestaurar.Visible = true;
+        }
+
+        private void btnRestaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnRestaurar.Visible = false;
+            btnMaximizar.Visible = true;
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            DialogResult resp = MessageBox.Show("¿Desea salir de la aplicación?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resp == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+
+
+
         private void cboBrazoposicion_SelectedIndexChanged(object sender, EventArgs e)
         {
             MostrarResultado1();
@@ -427,12 +458,15 @@ namespace TF.WIN
                 RULARESULTADO ORULARESULTADO = new RULARESULTADO();
                 ORULARESULTADO.Show();
 
-                Close();
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("verificar si existen caracteristicas sin completar");
             }
+
+            Close();
+
         }
 
         private void btncerrar_Click(object sender, EventArgs e)
