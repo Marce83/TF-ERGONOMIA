@@ -58,11 +58,6 @@ namespace TF.WIN
             }
         }
 
-
-
-
-
-
         private void NIOSHRESULTADO_Load(object sender, EventArgs e)
         {
 
@@ -238,15 +233,6 @@ namespace TF.WIN
                 txtriesgoniosh.Text = "RIESGO ALTO";
             }
 
-
-
-
-
-
-
-
-
-
         }
 
 
@@ -322,24 +308,27 @@ namespace TF.WIN
             string paginahtml_texto = TF.WIN.Properties.Resources.plantilla.ToString();
 
 
+            paginahtml_texto = paginahtml_texto.Replace("@txtHMD", txtHMD.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtHMI", txtHMI.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtVMD", txtVMD.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtVMI", txtVMI.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtDM", txtDM.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtAMD", txtAMD.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtAMI", txtAMI.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtFMD", txtFMD.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtFMI", txtFMI.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtCMD", txtCMD.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtCMI", txtCMI.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtCuit", txtCuit.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtLC", txtLC.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtpuestotrabajoNiosh", txtpuestotrabajoNiosh.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtEmpleadoNiosh", txtEmpleadoNiosh.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtEmpresaNiosh", txtEmpresaNiosh.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtLPRD", txtLPRD.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtLPRI", txtLPRI.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtILNIOSH", txtILNIOSH.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtActuacionNIOSH", txtActuacionNIOSH.Text);
 
-
-            //paginahtml_texto = paginahtml_texto.Replace("@txtempresaRula", txtempresaRula.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtpuestoRula", txtpuestoRula.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@Fecha", DateTime.Now.ToString("G"));
-            //paginahtml_texto = paginahtml_texto.Replace("@txtbrazo", txtbrazo.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtantebrazo", txtantebrazo.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtmuneca", txtmuneca.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaA", txtmusculaturaA.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaA", txtcargafuerzaA.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtcuelloB", txtcuelloB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txttroncoB", txttroncoB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtpiernaB", txtpiernaB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaB", txtmusculaturaB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaB", txtcargafuerzaB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionRula", txtPuntuacionRula.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtniveldeRiesgo", txtNivelDeRiesgo.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtactuacion", txtActuacion.Text);
 
 
             if (guardar.ShowDialog() == DialogResult.OK)

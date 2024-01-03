@@ -284,8 +284,6 @@ namespace TF.WIN
             }
         }
 
-
-
         public void GUardadoFinal()
         {
             try
@@ -322,28 +320,23 @@ namespace TF.WIN
             SaveFileDialog guardar = new SaveFileDialog();
             guardar.FileName = GetUniqueFileName("Informe");
 
-            string paginahtml_texto = TF.WIN.Properties.Resources.plantilla.ToString();
+            string paginahtml_texto = TF.WIN.Properties.Resources.plantilla3.ToString();
 
-
-
-
-            //paginahtml_texto = paginahtml_texto.Replace("@txtempresaRula", txtempresaRula.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtpuestoRula", txtpuestoRula.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@Fecha", DateTime.Now.ToString("G"));
-            //paginahtml_texto = paginahtml_texto.Replace("@txtbrazo", txtbrazo.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtantebrazo", txtantebrazo.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtmuneca", txtmuneca.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaA", txtmusculaturaA.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaA", txtcargafuerzaA.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtcuelloB", txtcuelloB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txttroncoB", txttroncoB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtpiernaB", txtpiernaB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaB", txtmusculaturaB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaB", txtcargafuerzaB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionRula", txtPuntuacionRula.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtniveldeRiesgo", txtNivelDeRiesgo.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtactuacion", txtActuacion.Text);
-
+            paginahtml_texto = paginahtml_texto.Replace("@txttroncoreba", txttroncoreba.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtcuelloreba", txtcuelloreba.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtpiernareba", txtpiernareba.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzareba", txtcargafuerzareba.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtantebrazoreba", txtantebrazoreba.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtmunecareba", txtmunecareba.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtbrazoreba", txtbrazoreba.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtagarrereba", txtagarrereba.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtpActividadRebaFinal", txtpActividadRebaFinal.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtTotalTablaCReba", txtTotalTablaCReba.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionTCAC", txtpuntuacionTCAC.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtPuntuacionReba", txtPuntuacionReba.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtniveldeaccionReba", txtniveldeaccionReba.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtnivelderiesgoreba", txtnivelderiesgoreba.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtActuacionReba", txtActuacionReba.Text);
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {

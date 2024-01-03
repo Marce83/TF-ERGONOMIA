@@ -189,22 +189,19 @@ namespace TF.WIN
 
 
 
-            //paginahtml_texto = paginahtml_texto.Replace("@txtempresaRula", txtempresaRula.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtpuestoRula", txtpuestoRula.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@Fecha", DateTime.Now.ToString("G"));
-            //paginahtml_texto = paginahtml_texto.Replace("@txtbrazo", txtbrazo.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtantebrazo", txtantebrazo.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtmuneca", txtmuneca.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaA", txtmusculaturaA.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaA", txtcargafuerzaA.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtcuelloB", txtcuelloB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txttroncoB", txttroncoB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtpiernaB", txtpiernaB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaB", txtmusculaturaB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaB", txtcargafuerzaB.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionRula", txtPuntuacionRula.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtniveldeRiesgo", txtNivelDeRiesgo.Text);
-            //paginahtml_texto = paginahtml_texto.Replace("@txtactuacion", txtActuacion.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtCuit", txtCuit.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtpuestotrabajojss", txtpuestotrabajojss.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtDMAR", txtDMAR.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtEmpleadojss", txtEmpleadojss.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtEmpresajss", txtEmpresajss.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtDMA", txtDMA.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtCTL", txtCTL.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtAS", txtAS.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtDMAR", txtDMAR.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtCTLR", txtCTLR.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtASR", txtASR.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtActuacionJSS1", txtActuacionJSS1.Text);
+
 
 
             if (guardar.ShowDialog() == DialogResult.OK)

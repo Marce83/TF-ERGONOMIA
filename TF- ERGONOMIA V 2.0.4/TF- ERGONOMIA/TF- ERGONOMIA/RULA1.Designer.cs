@@ -169,7 +169,7 @@
             // 
             this.txtcargaid.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtcargaid.Location = new System.Drawing.Point(461, 2415);
-            this.txtcargaid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcargaid.Margin = new System.Windows.Forms.Padding(2);
             this.txtcargaid.Name = "txtcargaid";
             this.txtcargaid.Size = new System.Drawing.Size(76, 20);
             this.txtcargaid.TabIndex = 132;
@@ -232,7 +232,7 @@
             this.antebrazoposicion.IntegralHeight = false;
             this.antebrazoposicion.ItemHeight = 43;
             this.antebrazoposicion.Location = new System.Drawing.Point(574, 454);
-            this.antebrazoposicion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.antebrazoposicion.Margin = new System.Windows.Forms.Padding(2);
             this.antebrazoposicion.MaxDropDownItems = 4;
             this.antebrazoposicion.MouseState = MaterialSkin.MouseState.OUT;
             this.antebrazoposicion.Name = "antebrazoposicion";
@@ -293,7 +293,7 @@
             this.cboBrazoAbdApo.IntegralHeight = false;
             this.cboBrazoAbdApo.ItemHeight = 43;
             this.cboBrazoAbdApo.Location = new System.Drawing.Point(578, 282);
-            this.cboBrazoAbdApo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboBrazoAbdApo.Margin = new System.Windows.Forms.Padding(2);
             this.cboBrazoAbdApo.MaxDropDownItems = 4;
             this.cboBrazoAbdApo.MouseState = MaterialSkin.MouseState.OUT;
             this.cboBrazoAbdApo.Name = "cboBrazoAbdApo";
@@ -320,7 +320,7 @@
             this.cbobrazoHombro.IntegralHeight = false;
             this.cbobrazoHombro.ItemHeight = 43;
             this.cbobrazoHombro.Location = new System.Drawing.Point(578, 213);
-            this.cbobrazoHombro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbobrazoHombro.Margin = new System.Windows.Forms.Padding(2);
             this.cbobrazoHombro.MaxDropDownItems = 4;
             this.cbobrazoHombro.MouseState = MaterialSkin.MouseState.OUT;
             this.cbobrazoHombro.Name = "cbobrazoHombro";
@@ -355,7 +355,7 @@
             this.txtantebrazofinal.HideSelection = true;
             this.txtantebrazofinal.LeadingIcon = null;
             this.txtantebrazofinal.Location = new System.Drawing.Point(572, 591);
-            this.txtantebrazofinal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtantebrazofinal.Margin = new System.Windows.Forms.Padding(2);
             this.txtantebrazofinal.MaxLength = 32767;
             this.txtantebrazofinal.MouseState = MaterialSkin.MouseState.OUT;
             this.txtantebrazofinal.Name = "txtantebrazofinal";
@@ -400,7 +400,7 @@
             this.txtBrazoFinal.HideSelection = true;
             this.txtBrazoFinal.LeadingIcon = null;
             this.txtBrazoFinal.Location = new System.Drawing.Point(578, 353);
-            this.txtBrazoFinal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBrazoFinal.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrazoFinal.MaxLength = 32767;
             this.txtBrazoFinal.MouseState = MaterialSkin.MouseState.OUT;
             this.txtBrazoFinal.Name = "txtBrazoFinal";
@@ -490,7 +490,7 @@
             this.antebrazocruza.IntegralHeight = false;
             this.antebrazocruza.ItemHeight = 43;
             this.antebrazocruza.Location = new System.Drawing.Point(574, 519);
-            this.antebrazocruza.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.antebrazocruza.Margin = new System.Windows.Forms.Padding(2);
             this.antebrazocruza.MaxDropDownItems = 4;
             this.antebrazocruza.MouseState = MaterialSkin.MouseState.OUT;
             this.antebrazocruza.Name = "antebrazocruza";
@@ -519,7 +519,7 @@
             this.cboBrazoposicion.IntegralHeight = false;
             this.cboBrazoposicion.ItemHeight = 43;
             this.cboBrazoposicion.Location = new System.Drawing.Point(575, 147);
-            this.cboBrazoposicion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboBrazoposicion.Margin = new System.Windows.Forms.Padding(2);
             this.cboBrazoposicion.MaxDropDownItems = 4;
             this.cboBrazoposicion.MouseState = MaterialSkin.MouseState.OUT;
             this.cboBrazoposicion.Name = "cboBrazoposicion";
@@ -532,7 +532,7 @@
             // 
             this.pictureBox2.Image = global::TF.WIN.Properties.Resources.antebrazo;
             this.pictureBox2.Location = new System.Drawing.Point(9, 442);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(560, 197);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -543,7 +543,7 @@
             // 
             this.pictureBox1.Image = global::TF.WIN.Properties.Resources.analisis_brazo;
             this.pictureBox1.Location = new System.Drawing.Point(9, 126);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(560, 275);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -576,7 +576,7 @@
             this.txtmunecafinal.HideSelection = true;
             this.txtmunecafinal.LeadingIcon = null;
             this.txtmunecafinal.Location = new System.Drawing.Point(572, 842);
-            this.txtmunecafinal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtmunecafinal.Margin = new System.Windows.Forms.Padding(2);
             this.txtmunecafinal.MaxLength = 32767;
             this.txtmunecafinal.MouseState = MaterialSkin.MouseState.OUT;
             this.txtmunecafinal.Name = "txtmunecafinal";
@@ -613,7 +613,7 @@
             this.cbogiroMuñeca.IntegralHeight = false;
             this.cbogiroMuñeca.ItemHeight = 43;
             this.cbogiroMuñeca.Location = new System.Drawing.Point(574, 927);
-            this.cbogiroMuñeca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbogiroMuñeca.Margin = new System.Windows.Forms.Padding(2);
             this.cbogiroMuñeca.MaxDropDownItems = 4;
             this.cbogiroMuñeca.MouseState = MaterialSkin.MouseState.OUT;
             this.cbogiroMuñeca.Name = "cbogiroMuñeca";
@@ -626,7 +626,7 @@
             // 
             this.pictureBox4.Image = global::TF.WIN.Properties.Resources.puntuacion_giro_muneca;
             this.pictureBox4.Location = new System.Drawing.Point(9, 908);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(560, 139);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -674,7 +674,7 @@
             this.muñecaposicion.IntegralHeight = false;
             this.muñecaposicion.ItemHeight = 43;
             this.muñecaposicion.Location = new System.Drawing.Point(573, 699);
-            this.muñecaposicion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.muñecaposicion.Margin = new System.Windows.Forms.Padding(2);
             this.muñecaposicion.MaxDropDownItems = 4;
             this.muñecaposicion.MouseState = MaterialSkin.MouseState.OUT;
             this.muñecaposicion.Name = "muñecaposicion";
@@ -701,7 +701,7 @@
             this.muñecadesviado.IntegralHeight = false;
             this.muñecadesviado.ItemHeight = 43;
             this.muñecadesviado.Location = new System.Drawing.Point(573, 768);
-            this.muñecadesviado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.muñecadesviado.Margin = new System.Windows.Forms.Padding(2);
             this.muñecadesviado.MaxDropDownItems = 4;
             this.muñecadesviado.MouseState = MaterialSkin.MouseState.OUT;
             this.muñecadesviado.Name = "muñecadesviado";
@@ -736,7 +736,7 @@
             this.txtgirofinal.HideSelection = true;
             this.txtgirofinal.LeadingIcon = null;
             this.txtgirofinal.Location = new System.Drawing.Point(574, 1000);
-            this.txtgirofinal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtgirofinal.Margin = new System.Windows.Forms.Padding(2);
             this.txtgirofinal.MaxLength = 32767;
             this.txtgirofinal.MouseState = MaterialSkin.MouseState.OUT;
             this.txtgirofinal.Name = "txtgirofinal";
@@ -759,7 +759,7 @@
             // 
             this.pictureBox3.Image = global::TF.WIN.Properties.Resources.puntuacion_muneca;
             this.pictureBox3.Location = new System.Drawing.Point(9, 681);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(560, 209);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -792,7 +792,7 @@
             this.txtcargafuerzafinal.HideSelection = true;
             this.txtcargafuerzafinal.LeadingIcon = null;
             this.txtcargafuerzafinal.Location = new System.Drawing.Point(571, 1318);
-            this.txtcargafuerzafinal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcargafuerzafinal.Margin = new System.Windows.Forms.Padding(2);
             this.txtcargafuerzafinal.MaxLength = 32767;
             this.txtcargafuerzafinal.MouseState = MaterialSkin.MouseState.OUT;
             this.txtcargafuerzafinal.Name = "txtcargafuerzafinal";
@@ -837,7 +837,7 @@
             this.actividadgrupoAfinal.HideSelection = true;
             this.actividadgrupoAfinal.LeadingIcon = null;
             this.actividadgrupoAfinal.Location = new System.Drawing.Point(571, 1158);
-            this.actividadgrupoAfinal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.actividadgrupoAfinal.Margin = new System.Windows.Forms.Padding(2);
             this.actividadgrupoAfinal.MaxLength = 32767;
             this.actividadgrupoAfinal.MouseState = MaterialSkin.MouseState.OUT;
             this.actividadgrupoAfinal.Name = "actividadgrupoAfinal";
@@ -915,7 +915,7 @@
             this.cuelloposicion.IntegralHeight = false;
             this.cuelloposicion.ItemHeight = 43;
             this.cuelloposicion.Location = new System.Drawing.Point(577, 1520);
-            this.cuelloposicion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cuelloposicion.Margin = new System.Windows.Forms.Padding(2);
             this.cuelloposicion.MaxDropDownItems = 4;
             this.cuelloposicion.MouseState = MaterialSkin.MouseState.OUT;
             this.cuelloposicion.Name = "cuelloposicion";
@@ -937,7 +937,7 @@
             this.txtcuellofinal.HideSelection = true;
             this.txtcuellofinal.LeadingIcon = null;
             this.txtcuellofinal.Location = new System.Drawing.Point(577, 1590);
-            this.txtcuellofinal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcuellofinal.Margin = new System.Windows.Forms.Padding(2);
             this.txtcuellofinal.MaxLength = 32767;
             this.txtcuellofinal.MouseState = MaterialSkin.MouseState.OUT;
             this.txtcuellofinal.Name = "txtcuellofinal";
@@ -976,7 +976,7 @@
             this.cuellopuntuacion.IntegralHeight = false;
             this.cuellopuntuacion.ItemHeight = 43;
             this.cuellopuntuacion.Location = new System.Drawing.Point(573, 1452);
-            this.cuellopuntuacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cuellopuntuacion.Margin = new System.Windows.Forms.Padding(2);
             this.cuellopuntuacion.MaxDropDownItems = 4;
             this.cuellopuntuacion.MouseState = MaterialSkin.MouseState.OUT;
             this.cuellopuntuacion.Name = "cuellopuntuacion";
@@ -1005,7 +1005,7 @@
             this.cbocargafuerza.IntegralHeight = false;
             this.cbocargafuerza.ItemHeight = 43;
             this.cbocargafuerza.Location = new System.Drawing.Point(571, 1252);
-            this.cbocargafuerza.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbocargafuerza.Margin = new System.Windows.Forms.Padding(2);
             this.cbocargafuerza.MaxDropDownItems = 4;
             this.cbocargafuerza.MouseState = MaterialSkin.MouseState.OUT;
             this.cbocargafuerza.Name = "cbocargafuerza";
@@ -1032,7 +1032,7 @@
             this.cboactmanuala.IntegralHeight = false;
             this.cboactmanuala.ItemHeight = 43;
             this.cboactmanuala.Location = new System.Drawing.Point(572, 1091);
-            this.cboactmanuala.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboactmanuala.Margin = new System.Windows.Forms.Padding(2);
             this.cboactmanuala.MaxDropDownItems = 4;
             this.cboactmanuala.MouseState = MaterialSkin.MouseState.OUT;
             this.cboactmanuala.Name = "cboactmanuala";
@@ -1097,7 +1097,7 @@
             // 
             this.pictureBox5.Image = global::TF.WIN.Properties.Resources.puntuacion_del_cuello;
             this.pictureBox5.Location = new System.Drawing.Point(9, 1430);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(560, 208);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1108,7 +1108,7 @@
             // 
             this.pictureBox6.Image = global::TF.WIN.Properties.Resources.puntuacion_carga_fuerza;
             this.pictureBox6.Location = new System.Drawing.Point(9, 1229);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(560, 137);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1119,7 +1119,7 @@
             // 
             this.pictureBox7.Image = global::TF.WIN.Properties.Resources.puntuacion_tipo_de_actividad_manual;
             this.pictureBox7.Location = new System.Drawing.Point(9, 1070);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(560, 136);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1152,7 +1152,7 @@
             this.txtcargafuerza2.HideSelection = true;
             this.txtcargafuerza2.LeadingIcon = null;
             this.txtcargafuerza2.Location = new System.Drawing.Point(574, 2319);
-            this.txtcargafuerza2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcargafuerza2.Margin = new System.Windows.Forms.Padding(2);
             this.txtcargafuerza2.MaxLength = 32767;
             this.txtcargafuerza2.MouseState = MaterialSkin.MouseState.OUT;
             this.txtcargafuerza2.Name = "txtcargafuerza2";
@@ -1191,7 +1191,7 @@
             this.cbocargafuerza2.IntegralHeight = false;
             this.cbocargafuerza2.ItemHeight = 43;
             this.cbocargafuerza2.Location = new System.Drawing.Point(574, 2247);
-            this.cbocargafuerza2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbocargafuerza2.Margin = new System.Windows.Forms.Padding(2);
             this.cbocargafuerza2.MaxDropDownItems = 4;
             this.cbocargafuerza2.MouseState = MaterialSkin.MouseState.OUT;
             this.cbocargafuerza2.Name = "cbocargafuerza2";
@@ -1204,7 +1204,7 @@
             // 
             this.pictureBox8.Image = global::TF.WIN.Properties.Resources.CARGA_FUERZA_GRUPO_B;
             this.pictureBox8.Location = new System.Drawing.Point(13, 2234);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(558, 135);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1237,7 +1237,7 @@
             this.txtmuscular2.HideSelection = true;
             this.txtmuscular2.LeadingIcon = null;
             this.txtmuscular2.Location = new System.Drawing.Point(574, 2154);
-            this.txtmuscular2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtmuscular2.Margin = new System.Windows.Forms.Padding(2);
             this.txtmuscular2.MaxLength = 32767;
             this.txtmuscular2.MouseState = MaterialSkin.MouseState.OUT;
             this.txtmuscular2.Name = "txtmuscular2";
@@ -1282,7 +1282,7 @@
             this.txtpiernasfinal.HideSelection = true;
             this.txtpiernasfinal.LeadingIcon = null;
             this.txtpiernasfinal.Location = new System.Drawing.Point(574, 1988);
-            this.txtpiernasfinal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpiernasfinal.Margin = new System.Windows.Forms.Padding(2);
             this.txtpiernasfinal.MaxLength = 32767;
             this.txtpiernasfinal.MouseState = MaterialSkin.MouseState.OUT;
             this.txtpiernasfinal.Name = "txtpiernasfinal";
@@ -1334,7 +1334,7 @@
             this.cbotroncotorcion.IntegralHeight = false;
             this.cbotroncotorcion.ItemHeight = 43;
             this.cbotroncotorcion.Location = new System.Drawing.Point(578, 1751);
-            this.cbotroncotorcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbotroncotorcion.Margin = new System.Windows.Forms.Padding(2);
             this.cbotroncotorcion.MaxDropDownItems = 4;
             this.cbotroncotorcion.MouseState = MaterialSkin.MouseState.OUT;
             this.cbotroncotorcion.Name = "cbotroncotorcion";
@@ -1382,7 +1382,7 @@
             this.txttroncofinal.HideSelection = true;
             this.txttroncofinal.LeadingIcon = null;
             this.txttroncofinal.Location = new System.Drawing.Point(578, 1817);
-            this.txttroncofinal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txttroncofinal.Margin = new System.Windows.Forms.Padding(2);
             this.txttroncofinal.MaxLength = 32767;
             this.txttroncofinal.MouseState = MaterialSkin.MouseState.OUT;
             this.txttroncofinal.Name = "txttroncofinal";
@@ -1471,7 +1471,7 @@
             this.cboactmuscular2.IntegralHeight = false;
             this.cboactmuscular2.ItemHeight = 43;
             this.cboactmuscular2.Location = new System.Drawing.Point(574, 2084);
-            this.cboactmuscular2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboactmuscular2.Margin = new System.Windows.Forms.Padding(2);
             this.cboactmuscular2.MaxDropDownItems = 4;
             this.cboactmuscular2.MouseState = MaterialSkin.MouseState.OUT;
             this.cboactmuscular2.Name = "cboactmuscular2";
@@ -1498,7 +1498,7 @@
             this.cbopiernas.IntegralHeight = false;
             this.cbopiernas.ItemHeight = 43;
             this.cbopiernas.Location = new System.Drawing.Point(577, 1915);
-            this.cbopiernas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbopiernas.Margin = new System.Windows.Forms.Padding(2);
             this.cbopiernas.MaxDropDownItems = 4;
             this.cbopiernas.MouseState = MaterialSkin.MouseState.OUT;
             this.cbopiernas.Name = "cbopiernas";
@@ -1527,7 +1527,7 @@
             this.cbotronco.IntegralHeight = false;
             this.cbotronco.ItemHeight = 43;
             this.cbotronco.Location = new System.Drawing.Point(577, 1675);
-            this.cbotronco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbotronco.Margin = new System.Windows.Forms.Padding(2);
             this.cbotronco.MaxDropDownItems = 4;
             this.cbotronco.MouseState = MaterialSkin.MouseState.OUT;
             this.cbotronco.Name = "cbotronco";
@@ -1540,7 +1540,7 @@
             // 
             this.pictureBox9.Image = global::TF.WIN.Properties.Resources.actividad_muscular_grupo_B;
             this.pictureBox9.Location = new System.Drawing.Point(13, 2063);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(556, 139);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1551,7 +1551,7 @@
             // 
             this.pictureBox10.Image = global::TF.WIN.Properties.Resources.puntuacion_pierna;
             this.pictureBox10.Location = new System.Drawing.Point(10, 1888);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(559, 148);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1562,7 +1562,7 @@
             // 
             this.pictureBox11.Image = global::TF.WIN.Properties.Resources.puntuacion_tronco;
             this.pictureBox11.Location = new System.Drawing.Point(10, 1661);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(560, 204);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1817,7 +1817,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RULA1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RULA1";
