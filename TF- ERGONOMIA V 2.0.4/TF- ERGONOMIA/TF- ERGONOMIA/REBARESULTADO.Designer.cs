@@ -1150,7 +1150,7 @@
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(919, 53);
+            this.BarraTitulo.Size = new System.Drawing.Size(936, 53);
             this.BarraTitulo.TabIndex = 343;
             // 
             // btnRestaurar
@@ -1159,7 +1159,7 @@
             this.btnRestaurar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(854, 14);
+            this.btnRestaurar.Location = new System.Drawing.Point(871, 14);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1175,7 +1175,7 @@
             this.btnMinimizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(823, 14);
+            this.btnMinimizar.Location = new System.Drawing.Point(840, 14);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1189,7 +1189,7 @@
             this.btnMaximizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(854, 14);
+            this.btnMaximizar.Location = new System.Drawing.Point(871, 14);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1202,7 +1202,7 @@
             this.pictureBox9.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(885, 14);
+            this.pictureBox9.Location = new System.Drawing.Point(902, 14);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(25, 25);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1306,7 +1306,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(936, 971);
+            this.ClientSize = new System.Drawing.Size(953, 971);
             this.Controls.Add(this.materialLabel26);
             this.Controls.Add(this.txtEmpleadoReba);
             this.Controls.Add(this.txtCuitReba);
