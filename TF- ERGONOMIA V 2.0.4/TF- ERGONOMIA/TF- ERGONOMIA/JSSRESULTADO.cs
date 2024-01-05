@@ -184,7 +184,7 @@ namespace TF.WIN
             SaveFileDialog guardar = new SaveFileDialog();
             guardar.FileName = GetUniqueFileName("Informe");
 
-            string paginahtml_texto = TF.WIN.Properties.Resources.plantilla.ToString();
+            string paginahtml_texto = TF.WIN.Properties.Resources.planilla1.ToString();
 
 
 

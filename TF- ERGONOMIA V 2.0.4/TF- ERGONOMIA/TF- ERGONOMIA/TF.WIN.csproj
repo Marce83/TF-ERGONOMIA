@@ -387,6 +387,9 @@
     <None Include="Resources\CARGA FUERZA GRUPO B.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\plantilla3.HTML" />
+    <None Include="Resources\plantilla2.HTML" />
+    <None Include="Resources\planilla1.HTML" />
     <Content Include="Resources\plantilla.html" />
   </ItemGroup>
   <ItemGroup>

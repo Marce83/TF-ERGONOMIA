@@ -305,7 +305,7 @@ namespace TF.WIN
             SaveFileDialog guardar = new SaveFileDialog();
             guardar.FileName = GetUniqueFileName("Informe");
 
-            string paginahtml_texto = TF.WIN.Properties.Resources.plantilla.ToString();
+            string paginahtml_texto = TF.WIN.Properties.Resources.plantilla2.ToString();
 
 
             paginahtml_texto = paginahtml_texto.Replace("@txtHMD", txtHMD.Text);
