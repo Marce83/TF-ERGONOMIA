@@ -9,8 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TF.WIN;
-
-
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
@@ -117,7 +115,7 @@ namespace TF.WIN
             if (dt.Rows.Count > 0)
             {
                 string resultado = dt.Rows[0][1].ToString();
-                txtempresaRula.Text = resultado;
+                txtCuitRula.Text = resultado;
             }
             if (dt.Rows.Count > 0)
             {
@@ -319,6 +317,16 @@ namespace TF.WIN
             {
                 string resultado = dt.Rows[0][13].ToString();
                 txtcargafuerzaB.Text = resultado;
+            }
+            if (dt.Rows.Count > 0)
+            {
+                string resultado = dt.Rows[0][18].ToString();
+                txtEmpleadoRula.Text = resultado;
+            }
+            if (dt.Rows.Count > 0)
+            {
+                string resultado = dt.Rows[0][19].ToString();
+                txtempresaRula.Text = resultado;
             }
 
             ///////////                    RESULTADO TABLA A Y B                             ///////////

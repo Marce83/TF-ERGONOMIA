@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iTextSharp.tool.xml.css.parser.state;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,14 +44,15 @@ namespace TF.WIN
 
             if (oFrm.EmpleadoSeleccionado != null)
             {
-                txtDniEmpleado.Text = oFrm.EmpleadoSeleccionado.DNI.ToString();
+                txtDniEmpleadoRula.Text = oFrm.EmpleadoSeleccionado.DNI.ToString();
+                txtNombreEmpleadoRula.Text = oFrm.EmpleadoSeleccionado.Apellido.ToString() + " " + oFrm.EmpleadoSeleccionado.Nombre.ToString();
             }
         }
 
         private void btnBuscarpuesto_Click(object sender, EventArgs e)
         {
             Empleados oempl = new Empleados();
-            oempl.DNI = txtDniEmpleado.Text;
+            oempl.DNI = txtDniEmpleadoRula.Text;
 
             EmpleadosBC oEmpleadosBC = new EmpleadosBC();
             DataTable dt = oEmpleadosBC.ConsultarPuesto(oempl);
@@ -68,6 +70,9 @@ namespace TF.WIN
             Rula orula = new Rula();
             RulaBC oRulaBC = new RulaBC();
             orula.CUIT = txtCUITEncontrado.Text;
+            orula.DniEmpleadoRula = txtDniEmpleadoRula.Text;
+            orula.EmpleadoRula = txtNombreEmpleadoRula.Text;
+            orula.EmpresaRula = txtNombreEmpresaRula.Text;
             orula.PuestoDeTrabajo = txtpuestotrabajoencontrado.Text;
             orula.FechaCarga = /*DateTime.Parse(*/dtpRula.Text;
             var res = oRulaBC.InsertRulaFormPORTADABC(orula);
@@ -88,13 +93,13 @@ namespace TF.WIN
         private void RULA_PORTADA_Load(object sender, EventArgs e)
         {
             DatosCompartidos.Empresa = txtCUITEncontrado.Text;
-            DatosCompartidos.DniEmpleado = txtDniEmpleado.Text;
+            DatosCompartidos.DniEmpleado = txtDniEmpleadoRula.Text;
             DatosCompartidos.PuestoRula = txtpuestotrabajoencontrado.Text;
 
 
             //Restaurar la info por mas que cambiemos de pagina
             txtCUITEncontrado.Text = DatosCompartidos.Empresa;
-            txtDniEmpleado.Text = DatosCompartidos.DniEmpleado;
+            txtDniEmpleadoRula.Text = DatosCompartidos.DniEmpleado;
             txtpuestotrabajoencontrado.Text = DatosCompartidos.PuestoRula;
         }
     }

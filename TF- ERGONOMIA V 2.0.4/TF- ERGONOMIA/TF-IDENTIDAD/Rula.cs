@@ -23,7 +23,9 @@ namespace TF.ENTITIES
         public int puntuacionRula { get; set; }
         public int niveldeRiesgo { get; set; }
         public string ResultadoAnalisisRula { get; set; }
-
+        public string DniEmpleadoRula { get; set; }
+        public string EmpleadoRula { get; set; }
+        public string EmpresaRula { get; set; }
 
         // Resultados VALOR Tablas A, B y C //
 

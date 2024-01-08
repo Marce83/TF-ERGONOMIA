@@ -85,8 +85,8 @@ namespace TF.WIN
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.materialLabel26 = new MaterialSkin.Controls.MaterialLabel();
-            this.txtEmpleadoReba = new MaterialSkin.Controls.MaterialTextBox2();
-            this.txtCuitReba = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtEmpleadoRula = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtCuitRula = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel25 = new MaterialSkin.Controls.MaterialLabel();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
@@ -244,7 +244,6 @@ namespace TF.WIN
             this.txtempresaRula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtempresaRula.TrailingIcon = null;
             this.txtempresaRula.UseSystemPasswordChar = false;
-            this.txtempresaRula.Visible = false;
             // 
             // materialLabel18
             // 
@@ -258,7 +257,6 @@ namespace TF.WIN
             this.materialLabel18.Size = new System.Drawing.Size(73, 19);
             this.materialLabel18.TabIndex = 154;
             this.materialLabel18.Text = "EMPRESA";
-            this.materialLabel18.Visible = false;
             // 
             // btnSalir
             // 
@@ -1168,71 +1166,70 @@ namespace TF.WIN
             this.materialLabel26.Size = new System.Drawing.Size(84, 19);
             this.materialLabel26.TabIndex = 351;
             this.materialLabel26.Text = "EMPLEADO";
-            this.materialLabel26.Visible = false;
             // 
-            // txtEmpleadoReba
+            // txtEmpleadoRula
             // 
-            this.txtEmpleadoReba.AnimateReadOnly = false;
-            this.txtEmpleadoReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtEmpleadoReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtEmpleadoReba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtEmpleadoReba.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtEmpleadoReba.Depth = 0;
-            this.txtEmpleadoReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtEmpleadoReba.HideSelection = true;
-            this.txtEmpleadoReba.LeadingIcon = null;
-            this.txtEmpleadoReba.Location = new System.Drawing.Point(582, 123);
-            this.txtEmpleadoReba.Margin = new System.Windows.Forms.Padding(2);
-            this.txtEmpleadoReba.MaxLength = 32767;
-            this.txtEmpleadoReba.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtEmpleadoReba.Name = "txtEmpleadoReba";
-            this.txtEmpleadoReba.PasswordChar = '\0';
-            this.txtEmpleadoReba.PrefixSuffixText = null;
-            this.txtEmpleadoReba.ReadOnly = true;
-            this.txtEmpleadoReba.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtEmpleadoReba.SelectedText = "";
-            this.txtEmpleadoReba.SelectionLength = 0;
-            this.txtEmpleadoReba.SelectionStart = 0;
-            this.txtEmpleadoReba.ShortcutsEnabled = true;
-            this.txtEmpleadoReba.Size = new System.Drawing.Size(279, 48);
-            this.txtEmpleadoReba.TabIndex = 350;
-            this.txtEmpleadoReba.TabStop = false;
-            this.txtEmpleadoReba.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtEmpleadoReba.TrailingIcon = null;
-            this.txtEmpleadoReba.UseSystemPasswordChar = false;
-            this.txtEmpleadoReba.Visible = false;
+            this.txtEmpleadoRula.AnimateReadOnly = false;
+            this.txtEmpleadoRula.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtEmpleadoRula.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtEmpleadoRula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtEmpleadoRula.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtEmpleadoRula.Depth = 0;
+            this.txtEmpleadoRula.Enabled = false;
+            this.txtEmpleadoRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEmpleadoRula.HideSelection = true;
+            this.txtEmpleadoRula.LeadingIcon = null;
+            this.txtEmpleadoRula.Location = new System.Drawing.Point(582, 123);
+            this.txtEmpleadoRula.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmpleadoRula.MaxLength = 32767;
+            this.txtEmpleadoRula.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtEmpleadoRula.Name = "txtEmpleadoRula";
+            this.txtEmpleadoRula.PasswordChar = '\0';
+            this.txtEmpleadoRula.PrefixSuffixText = null;
+            this.txtEmpleadoRula.ReadOnly = true;
+            this.txtEmpleadoRula.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtEmpleadoRula.SelectedText = "";
+            this.txtEmpleadoRula.SelectionLength = 0;
+            this.txtEmpleadoRula.SelectionStart = 0;
+            this.txtEmpleadoRula.ShortcutsEnabled = true;
+            this.txtEmpleadoRula.Size = new System.Drawing.Size(279, 48);
+            this.txtEmpleadoRula.TabIndex = 350;
+            this.txtEmpleadoRula.TabStop = false;
+            this.txtEmpleadoRula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtEmpleadoRula.TrailingIcon = null;
+            this.txtEmpleadoRula.UseSystemPasswordChar = false;
             // 
-            // txtCuitReba
+            // txtCuitRula
             // 
-            this.txtCuitReba.AnimateReadOnly = false;
-            this.txtCuitReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtCuitReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtCuitReba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtCuitReba.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtCuitReba.Depth = 0;
-            this.txtCuitReba.Enabled = false;
-            this.txtCuitReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtCuitReba.HideSelection = true;
-            this.txtCuitReba.LeadingIcon = null;
-            this.txtCuitReba.Location = new System.Drawing.Point(160, 71);
-            this.txtCuitReba.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCuitReba.MaxLength = 32767;
-            this.txtCuitReba.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtCuitReba.Name = "txtCuitReba";
-            this.txtCuitReba.PasswordChar = '\0';
-            this.txtCuitReba.PrefixSuffixText = null;
-            this.txtCuitReba.ReadOnly = true;
-            this.txtCuitReba.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtCuitReba.SelectedText = "";
-            this.txtCuitReba.SelectionLength = 0;
-            this.txtCuitReba.SelectionStart = 0;
-            this.txtCuitReba.ShortcutsEnabled = true;
-            this.txtCuitReba.Size = new System.Drawing.Size(275, 48);
-            this.txtCuitReba.TabIndex = 348;
-            this.txtCuitReba.TabStop = false;
-            this.txtCuitReba.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCuitReba.TrailingIcon = null;
-            this.txtCuitReba.UseSystemPasswordChar = false;
+            this.txtCuitRula.AnimateReadOnly = false;
+            this.txtCuitRula.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCuitRula.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtCuitRula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtCuitRula.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCuitRula.Depth = 0;
+            this.txtCuitRula.Enabled = false;
+            this.txtCuitRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCuitRula.HideSelection = true;
+            this.txtCuitRula.LeadingIcon = null;
+            this.txtCuitRula.Location = new System.Drawing.Point(160, 71);
+            this.txtCuitRula.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCuitRula.MaxLength = 32767;
+            this.txtCuitRula.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCuitRula.Name = "txtCuitRula";
+            this.txtCuitRula.PasswordChar = '\0';
+            this.txtCuitRula.PrefixSuffixText = null;
+            this.txtCuitRula.ReadOnly = true;
+            this.txtCuitRula.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCuitRula.SelectedText = "";
+            this.txtCuitRula.SelectionLength = 0;
+            this.txtCuitRula.SelectionStart = 0;
+            this.txtCuitRula.ShortcutsEnabled = true;
+            this.txtCuitRula.Size = new System.Drawing.Size(275, 48);
+            this.txtCuitRula.TabIndex = 348;
+            this.txtCuitRula.TabStop = false;
+            this.txtCuitRula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCuitRula.TrailingIcon = null;
+            this.txtCuitRula.UseSystemPasswordChar = false;
             // 
             // materialLabel25
             // 
@@ -1255,8 +1252,8 @@ namespace TF.WIN
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(904, 884);
             this.Controls.Add(this.materialLabel26);
-            this.Controls.Add(this.txtEmpleadoReba);
-            this.Controls.Add(this.txtCuitReba);
+            this.Controls.Add(this.txtEmpleadoRula);
+            this.Controls.Add(this.txtCuitRula);
             this.Controls.Add(this.materialLabel25);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.txtActuacion);
@@ -1381,8 +1378,8 @@ namespace TF.WIN
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label12;
         private MaterialSkin.Controls.MaterialLabel materialLabel26;
-        private MaterialSkin.Controls.MaterialTextBox2 txtEmpleadoReba;
-        private MaterialSkin.Controls.MaterialTextBox2 txtCuitReba;
+        private MaterialSkin.Controls.MaterialTextBox2 txtEmpleadoRula;
+        private MaterialSkin.Controls.MaterialTextBox2 txtCuitRula;
         private MaterialSkin.Controls.MaterialLabel materialLabel25;
     }
 }

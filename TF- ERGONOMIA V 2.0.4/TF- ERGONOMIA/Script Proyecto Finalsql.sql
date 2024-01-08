@@ -300,7 +300,10 @@ Actividadmuscularb INT,
 Cargafuerzab INT,
 ResultadoAnalisisRula NVARCHAR(30),
 NivelRiesgo int,
-FechaCarga Date
+FechaCarga Date,
+DniEmpleadoRula nvarchar(11),
+EmpleadoRula nvarchar(30),
+EmpresaRula nvarchar(30)
 )
 GO	
 
@@ -310,11 +313,14 @@ go
 CREATE OR ALTER PROCEDURE SP_Rula_Insert
 @CUIT nvarchar(11),
 @PuestoDeTrabajo NVARCHAR(20),
-@FechaCarga date
+@FechaCarga date,
+@DniEmpleadoRula nvarchar(11),
+@EmpleadoRula nvarchar(30),
+@EmpresaRula nvarchar(30)
 AS
 BEGIN
-	insert into RulaTablaCompleta (CUIT,PuestoDeTrabajo,FechaCarga) 
-	VALUES(@CUIT,@PuestoDeTrabajo,@FechaCarga)
+	insert into RulaTablaCompleta (CUIT,PuestoDeTrabajo,FechaCarga,DniEmpleadoRula,EmpleadoRula,EmpresaRula) 
+	VALUES(@CUIT,@PuestoDeTrabajo,@FechaCarga,@DniEmpleadoRula,@EmpleadoRula,@EmpresaRula)
 END
 GO
 

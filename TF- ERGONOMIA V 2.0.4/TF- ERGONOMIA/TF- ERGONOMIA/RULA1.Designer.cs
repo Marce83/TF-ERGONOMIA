@@ -35,7 +35,6 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.antebrazoposicion = new MaterialSkin.Controls.MaterialComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,7 +48,6 @@
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.antebrazocruza = new MaterialSkin.Controls.MaterialComboBox();
             this.cboBrazoposicion = new MaterialSkin.Controls.MaterialComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -118,6 +116,8 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.antebrazoposicion = new MaterialSkin.Controls.MaterialComboBox();
+            this.antebrazocruza = new MaterialSkin.Controls.MaterialComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -213,33 +213,6 @@
             this.label5.Size = new System.Drawing.Size(61, 17);
             this.label5.TabIndex = 129;
             this.label5.Text = "Posición";
-            // 
-            // antebrazoposicion
-            // 
-            this.antebrazoposicion.AutoCompleteCustomSource.AddRange(new string[] {
-            "1",
-            "2"});
-            this.antebrazoposicion.AutoResize = false;
-            this.antebrazoposicion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.antebrazoposicion.Depth = 0;
-            this.antebrazoposicion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.antebrazoposicion.DropDownHeight = 174;
-            this.antebrazoposicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.antebrazoposicion.DropDownWidth = 121;
-            this.antebrazoposicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.antebrazoposicion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.antebrazoposicion.FormattingEnabled = true;
-            this.antebrazoposicion.IntegralHeight = false;
-            this.antebrazoposicion.ItemHeight = 43;
-            this.antebrazoposicion.Location = new System.Drawing.Point(574, 454);
-            this.antebrazoposicion.Margin = new System.Windows.Forms.Padding(2);
-            this.antebrazoposicion.MaxDropDownItems = 4;
-            this.antebrazoposicion.MouseState = MaterialSkin.MouseState.OUT;
-            this.antebrazoposicion.Name = "antebrazoposicion";
-            this.antebrazoposicion.Size = new System.Drawing.Size(272, 49);
-            this.antebrazoposicion.StartIndex = 0;
-            this.antebrazoposicion.TabIndex = 128;
-            this.antebrazoposicion.SelectedIndexChanged += new System.EventHandler(this.antebrazoposicion_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -470,34 +443,6 @@
             this.materialLabel1.Size = new System.Drawing.Size(352, 19);
             this.materialLabel1.TabIndex = 115;
             this.materialLabel1.Text = "A) ANALISIS DE BRAZO, ANTE BRAZO Y MUÑECA";
-            // 
-            // antebrazocruza
-            // 
-            this.antebrazocruza.AutoCompleteCustomSource.AddRange(new string[] {
-            "Normal",
-            "Despejado del Cuerpo",
-            "Cruza Línea del Cuerpo"});
-            this.antebrazocruza.AutoResize = false;
-            this.antebrazocruza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.antebrazocruza.Depth = 0;
-            this.antebrazocruza.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.antebrazocruza.DropDownHeight = 174;
-            this.antebrazocruza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.antebrazocruza.DropDownWidth = 121;
-            this.antebrazocruza.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.antebrazocruza.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.antebrazocruza.FormattingEnabled = true;
-            this.antebrazocruza.IntegralHeight = false;
-            this.antebrazocruza.ItemHeight = 43;
-            this.antebrazocruza.Location = new System.Drawing.Point(574, 519);
-            this.antebrazocruza.Margin = new System.Windows.Forms.Padding(2);
-            this.antebrazocruza.MaxDropDownItems = 4;
-            this.antebrazocruza.MouseState = MaterialSkin.MouseState.OUT;
-            this.antebrazocruza.Name = "antebrazocruza";
-            this.antebrazocruza.Size = new System.Drawing.Size(272, 49);
-            this.antebrazocruza.StartIndex = 0;
-            this.antebrazocruza.TabIndex = 114;
-            this.antebrazocruza.SelectedIndexChanged += new System.EventHandler(this.antebrazocruza_SelectedIndexChanged);
             // 
             // cboBrazoposicion
             // 
@@ -1724,6 +1669,61 @@
             this.label12.TabIndex = 184;
             this.label12.Text = "METODO DE ANALISIS RULA";
             // 
+            // antebrazoposicion
+            // 
+            this.antebrazoposicion.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2"});
+            this.antebrazoposicion.AutoResize = false;
+            this.antebrazoposicion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.antebrazoposicion.Depth = 0;
+            this.antebrazoposicion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.antebrazoposicion.DropDownHeight = 174;
+            this.antebrazoposicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.antebrazoposicion.DropDownWidth = 121;
+            this.antebrazoposicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.antebrazoposicion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.antebrazoposicion.FormattingEnabled = true;
+            this.antebrazoposicion.IntegralHeight = false;
+            this.antebrazoposicion.ItemHeight = 43;
+            this.antebrazoposicion.Location = new System.Drawing.Point(572, 456);
+            this.antebrazoposicion.Margin = new System.Windows.Forms.Padding(2);
+            this.antebrazoposicion.MaxDropDownItems = 4;
+            this.antebrazoposicion.MouseState = MaterialSkin.MouseState.OUT;
+            this.antebrazoposicion.Name = "antebrazoposicion";
+            this.antebrazoposicion.Size = new System.Drawing.Size(272, 49);
+            this.antebrazoposicion.StartIndex = 0;
+            this.antebrazoposicion.TabIndex = 345;
+            this.antebrazoposicion.SelectedIndexChanged += new System.EventHandler(this.antebrazoposicion_SelectedIndexChanged);
+            // 
+            // antebrazocruza
+            // 
+            this.antebrazocruza.AutoCompleteCustomSource.AddRange(new string[] {
+            "Normal",
+            "Despejado del Cuerpo",
+            "Cruza Línea del Cuerpo"});
+            this.antebrazocruza.AutoResize = false;
+            this.antebrazocruza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.antebrazocruza.Depth = 0;
+            this.antebrazocruza.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.antebrazocruza.DropDownHeight = 174;
+            this.antebrazocruza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.antebrazocruza.DropDownWidth = 121;
+            this.antebrazocruza.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.antebrazocruza.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.antebrazocruza.FormattingEnabled = true;
+            this.antebrazocruza.IntegralHeight = false;
+            this.antebrazocruza.ItemHeight = 43;
+            this.antebrazocruza.Location = new System.Drawing.Point(569, 522);
+            this.antebrazocruza.Margin = new System.Windows.Forms.Padding(2);
+            this.antebrazocruza.MaxDropDownItems = 4;
+            this.antebrazocruza.MouseState = MaterialSkin.MouseState.OUT;
+            this.antebrazocruza.Name = "antebrazocruza";
+            this.antebrazocruza.Size = new System.Drawing.Size(272, 49);
+            this.antebrazocruza.StartIndex = 0;
+            this.antebrazocruza.TabIndex = 346;
+            this.antebrazocruza.SelectedIndexChanged += new System.EventHandler(this.antebrazocruza_SelectedIndexChanged);
+            // 
             // RULA1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1732,6 +1732,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(885, 748);
+            this.Controls.Add(this.antebrazocruza);
+            this.Controls.Add(this.antebrazoposicion);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.materialLabel30);
             this.Controls.Add(this.materialLabel29);
@@ -1797,7 +1799,6 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.antebrazoposicion);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -1811,7 +1812,6 @@
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialLabel1);
-            this.Controls.Add(this.antebrazocruza);
             this.Controls.Add(this.cboBrazoposicion);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -1852,7 +1852,6 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private MaterialSkin.Controls.MaterialComboBox antebrazoposicion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -1866,7 +1865,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialComboBox antebrazocruza;
         private MaterialSkin.Controls.MaterialComboBox cboBrazoposicion;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -1935,5 +1933,7 @@
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label12;
+        private MaterialSkin.Controls.MaterialComboBox antebrazoposicion;
+        private MaterialSkin.Controls.MaterialComboBox antebrazocruza;
     }
 }

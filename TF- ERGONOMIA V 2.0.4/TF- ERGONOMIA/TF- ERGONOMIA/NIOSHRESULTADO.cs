@@ -1,20 +1,22 @@
-﻿using iTextSharp.text.pdf;
-using iTextSharp.text;
-using iTextSharp.tool.xml;
-using MaterialSkin.Controls;
+﻿using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Text;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TF.BC;
+using TF.WIN;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
+using System.IO;
+using iTextSharp.tool.xml.css.parser.state;
 using TF.ENTITIES;
+using TF.BC;
+using System.Diagnostics.Eventing.Reader;
 
 namespace TF.WIN
 {
@@ -27,6 +29,7 @@ namespace TF.WIN
         {
             InitializeComponent();
             ObtenerMaximoIdNIOSH();
+
         }
 
 
@@ -91,7 +94,6 @@ namespace TF.WIN
         {
             try
             {
-
                 NioshRescatar();
                 resultadoIl();
                 resultadofinal();
@@ -305,62 +307,84 @@ namespace TF.WIN
             SaveFileDialog guardar = new SaveFileDialog();
             guardar.FileName = GetUniqueFileName("Informe");
 
-            string paginahtml_texto = TF.WIN.Properties.Resources.plantilla2.ToString();
-
-
-            paginahtml_texto = paginahtml_texto.Replace("@txtHMD", txtHMD.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtHMI", txtHMI.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtVMD", txtVMD.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtVMI", txtVMI.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtDM", txtDM.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtAMD", txtAMD.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtAMI", txtAMI.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtFMD", txtFMD.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtFMI", txtFMI.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtCMD", txtCMD.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtCMI", txtCMI.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtCuit", txtCuit.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtLC", txtLC.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtpuestotrabajoNiosh", txtpuestotrabajoNiosh.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtEmpleadoNiosh", txtEmpleadoNiosh.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtEmpresaNiosh", txtEmpresaNiosh.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtLPRD", txtLPRD.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtLPRI", txtLPRI.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtILNIOSH", txtILNIOSH.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtActuacionNIOSH", txtActuacionNIOSH.Text);
-
-
+            // Configurar el cuadro de diálogo para guardar como PDF
+            guardar.DefaultExt = "pdf";
+            guardar.Filter = "Archivos PDF (*.pdf)|*.pdf|Todos los archivos (*.*)|*.*";
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
-                using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
+                try
                 {
-                    Document pdfDoc = new Document(PageSize.A4, 80, 30, 25, 50);
-                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
-                    pdfDoc.Open();
-                    pdfDoc.Add(new Phrase(""));
-
-                    iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(TF.WIN.Properties.Resources.ergo, System.Drawing.Imaging.ImageFormat.Png);
-                    img.ScaleToFit(90, 90);
-                    img.Alignment = iTextSharp.text.Image.UNDERLYING;
-                    img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 50);
-                    pdfDoc.Add(img);
-
-                    using (StringReader sr = new StringReader(paginahtml_texto))
+                    using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
                     {
-                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
-                    }
+                        Document pdfDoc = new Document(PageSize.A4, 80, 30, 25, 50);
+                        PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
 
-                    pdfDoc.Close();
-                    stream.Close();
+                        pdfDoc.Open();
+                        pdfDoc.Add(new Phrase(""));
+
+                        iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(TF.WIN.Properties.Resources.ergo, System.Drawing.Imaging.ImageFormat.Png);
+                        img.ScaleToFit(90, 90);
+                        img.Alignment = iTextSharp.text.Image.UNDERLYING;
+                        img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 50);
+                        pdfDoc.Add(img);
+
+                        // Reemplazos en el HTML
+                        string paginahtml2_texto = TF.WIN.Properties.Resources.plantilla2.ToString();
+
+                        paginahtml2_texto = paginahtml2_texto.Replace("@Fecha", DateTime.Now.ToString("G"));
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtHMD", txtHMD.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtHMI", txtHMI.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtVMD", txtVMD.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtVMI", txtVMI.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtDM", txtDM.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtAMD", txtAMD.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtAMI", txtAMI.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtFMD", txtFMD.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtFMI", txtFMI.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtCMD", txtCMD.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtCMI", txtCMI.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtCuit", txtCuit.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtLC", txtLC.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtpuestotrabajoNiosh", txtpuestotrabajoNiosh.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtEmpleadoNiosh", txtEmpleadoNiosh.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtEmpresaNiosh", txtEmpresaNiosh.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtLPRD", txtLPRD.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtLPRI", txtLPRI.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtILNIOSH", txtILNIOSH.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtActuacionNIOSH", txtActuacionNIOSH.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtriesgoniosh", txtriesgoniosh.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@txtPoblacion", txtPoblacion.Text);
+
+
+
+
+                        // Agregar más reemplazos para los campos adicionales según tus necesidades...
+
+                        using (StringReader sr = new StringReader(paginahtml2_texto))
+                        {
+                            XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                        }
+
+                        pdfDoc.Close();
+                        stream.Close();
+
+                        MessageBox.Show("PDF generado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al generar el PDF: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
-
-
-
-
-
-
     }
-}
+  }
+
+
+
+
+
+
+    
+
