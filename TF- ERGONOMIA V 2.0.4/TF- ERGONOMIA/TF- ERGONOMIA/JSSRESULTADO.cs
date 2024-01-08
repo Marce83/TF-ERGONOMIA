@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TF.BC;
 using TF.ENTITIES;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace TF.WIN
 {
@@ -184,50 +185,61 @@ namespace TF.WIN
             SaveFileDialog guardar = new SaveFileDialog();
             guardar.FileName = GetUniqueFileName("Informe");
 
-            string paginahtml_texto = TF.WIN.Properties.Resources.planilla1.ToString();
-
-
-
-
-            paginahtml_texto = paginahtml_texto.Replace("@txtCuit", txtCuit.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtpuestotrabajojss", txtpuestotrabajojss.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtDMAR", txtDMAR.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtEmpleadojss", txtEmpleadojss.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtEmpresajss", txtEmpresajss.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtDMA", txtDMA.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtCTL", txtCTL.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtAS", txtAS.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtDMAR", txtDMAR.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtCTLR", txtCTLR.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtASR", txtASR.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtActuacionJSS1", txtActuacionJSS1.Text);
-
-
+            // Configurar el cuadro de diálogo para guardar como PDF
+            guardar.DefaultExt = "pdf";
+            guardar.Filter = "Archivos PDF (*.pdf)|*.pdf|Todos los archivos (*.*)|*.*";
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
-                using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
+                try
                 {
-                    Document pdfDoc = new Document(PageSize.A4, 80, 30, 25, 50);
-                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
-                    pdfDoc.Open();
-                    pdfDoc.Add(new Phrase(""));
-
-                    iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(TF.WIN.Properties.Resources.ergo, System.Drawing.Imaging.ImageFormat.Png);
-                    img.ScaleToFit(90, 90);
-                    img.Alignment = iTextSharp.text.Image.UNDERLYING;
-                    img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 50);
-                    pdfDoc.Add(img);
-
-                    using (StringReader sr = new StringReader(paginahtml_texto))
+                    using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
                     {
-                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
-                    }
+                        Document pdfDoc = new Document(PageSize.A4, 80, 30, 25, 50);
+                        PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
 
-                    pdfDoc.Close();
-                    stream.Close();
+                        pdfDoc.Open();
+                        pdfDoc.Add(new Phrase(""));
+
+                        iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(TF.WIN.Properties.Resources.ergo, System.Drawing.Imaging.ImageFormat.Png);
+                        img.ScaleToFit(90, 90);
+                        img.Alignment = iTextSharp.text.Image.UNDERLYING;
+                        img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 50);
+                        pdfDoc.Add(img);
+
+                        // Reemplazos en el HTML
+                        string paginahtml3_texto = TF.WIN.Properties.Resources.planilla1.ToString();
+
+                        paginahtml3_texto = paginahtml3_texto.Replace("@Fecha", DateTime.Now.ToString("G"));
+                        paginahtml3_texto = paginahtml3_texto.Replace("@txtCuit", txtCuit.Text); 
+                        paginahtml3_texto = paginahtml3_texto.Replace("@txtpuestotrabajojss", txtpuestotrabajojss.Text);
+                        paginahtml3_texto = paginahtml3_texto.Replace("@txtEmpleadojss", txtEmpleadojss.Text);
+                        paginahtml3_texto = paginahtml3_texto.Replace("@txtEmpresajss", txtEmpresajss.Text);
+                        paginahtml3_texto = paginahtml3_texto.Replace("@txtDMA", txtDMA.Text);
+                        paginahtml3_texto = paginahtml3_texto.Replace("@txtCTL", txtCTL.Text);
+                        paginahtml3_texto = paginahtml3_texto.Replace("@txtAS", txtAS.Text);
+                        paginahtml3_texto = paginahtml3_texto.Replace("@txtSituacionJss", @txtSituacionJss.Text);
+                        paginahtml3_texto = paginahtml3_texto.Replace("@txtActuacionJSS1", txtActuacionJSS1.Text);
+                        
+                        // Agregar más reemplazos para los campos adicionales según tus necesidades...
+
+                        using (StringReader sr = new StringReader(paginahtml3_texto))
+                        {
+                            XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                        }
+
+                        pdfDoc.Close();
+                        stream.Close();
+
+                        MessageBox.Show("PDF generado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al generar el PDF: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
 
         }
         private void GuardarResultado()

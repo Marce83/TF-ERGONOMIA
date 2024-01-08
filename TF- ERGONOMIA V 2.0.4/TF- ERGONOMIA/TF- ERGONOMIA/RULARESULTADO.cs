@@ -17,6 +17,7 @@ using iTextSharp.tool.xml.css.parser.state;
 using TF.ENTITIES;
 using TF.BC;
 using System.Diagnostics.Eventing.Reader;
+using System.Linq.Expressions;
 
 namespace TF.WIN
 {
@@ -29,7 +30,7 @@ namespace TF.WIN
         {
             InitializeComponent();
             ObtenerMaximoIdRula();
-            RescatarResultados();
+            //RescatarResultados();
         }
 
 
@@ -108,7 +109,7 @@ namespace TF.WIN
             oRula.cargaId = Convert.ToInt32(txtcargaid.Text);
             RulaBC oRulaBC = new RulaBC();
             //DataTable dt = oRulaBC.RULACONSULTARRESULTADOIDBC(oRula);
-
+            RescatarResultados();
 
             DataTable dt = oRulaBC.RULABC_GetAllBC();
 
@@ -190,13 +191,15 @@ namespace TF.WIN
 
 
 
-
+            paginahtml_texto = paginahtml_texto.Replace("@txtCuitRula", txtCuitRula.Text);
             paginahtml_texto = paginahtml_texto.Replace("@txtempresaRula", txtempresaRula.Text);
             paginahtml_texto = paginahtml_texto.Replace("@txtpuestoRula", txtpuestoRula.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtEmpleadoRula", txtEmpleadoRula.Text);
             paginahtml_texto = paginahtml_texto.Replace("@Fecha", DateTime.Now.ToString("G"));
             paginahtml_texto = paginahtml_texto.Replace("@txtbrazo", txtbrazo.Text);
             paginahtml_texto = paginahtml_texto.Replace("@txtantebrazo", txtantebrazo.Text);
             paginahtml_texto = paginahtml_texto.Replace("@txtmuneca", txtmuneca.Text);
+            paginahtml_texto = paginahtml_texto.Replace("@txtgiromuneca", txtgiromuneca.Text);
             paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaA", txtmusculaturaA.Text);
             paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaA", txtcargafuerzaA.Text);
             paginahtml_texto = paginahtml_texto.Replace("@txtcuelloB", txtcuelloB.Text);
@@ -211,40 +214,46 @@ namespace TF.WIN
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
-
-                using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
+                try
                 {
-
-                    Document pdfDoc = new Document(PageSize.A4, 80, 30, 25, 50);
-
-                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
-
-                    pdfDoc.Open();
-
-                    pdfDoc.Add(new Phrase(""));
-
-                    iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(TF.WIN.Properties.Resources.ergo, System.Drawing.Imaging.ImageFormat.Png);
-                    img.ScaleToFit(90, 90);
-                    img.Alignment = iTextSharp.text.Image.UNDERLYING;
-                    img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 50);
-                    pdfDoc.Add(img);
-
-
-                    using (StringReader sr = new StringReader(paginahtml_texto))
+                    using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
                     {
 
-                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                        Document pdfDoc = new Document(PageSize.A4, 80, 30, 25, 50);
+
+                        PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+
+                        pdfDoc.Open();
+
+                        pdfDoc.Add(new Phrase(""));
+
+                        iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(TF.WIN.Properties.Resources.ergo, System.Drawing.Imaging.ImageFormat.Png);
+                        img.ScaleToFit(90, 90);
+                        img.Alignment = iTextSharp.text.Image.UNDERLYING;
+                        img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 50);
+                        pdfDoc.Add(img);
+
+
+                        using (StringReader sr = new StringReader(paginahtml_texto))
+                        {
+
+                            XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+
+                        }
+
+                        pdfDoc.Close();
+
+                        stream.Close();
 
                     }
 
-                    pdfDoc.Close();
-
-                    stream.Close();
-
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al generar el PDF: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
-
         private void btnRecuperarCarga_Click(object sender, EventArgs e)
         {
             Rula oRula = new Rula();
@@ -256,7 +265,7 @@ namespace TF.WIN
             if (dt.Rows.Count > 0)
             {
                 string resultado = dt.Rows[0][1].ToString();
-                txtempresaRula.Text = resultado;
+                txtCuitRula.Text = resultado;
             }
             if (dt.Rows.Count > 0)
             {

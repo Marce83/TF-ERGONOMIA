@@ -389,7 +389,7 @@
   <ItemGroup>
     <None Include="Resources\plantilla3.HTML" />
     <None Include="Resources\plantilla2.HTML" />
-    <None Include="Resources\planilla1.HTML" />
+    <None Include="Resources\planilla1.html" />
     <Content Include="Resources\plantilla.html" />
   </ItemGroup>
   <ItemGroup>
