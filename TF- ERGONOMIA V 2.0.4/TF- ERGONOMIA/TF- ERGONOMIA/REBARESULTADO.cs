@@ -210,13 +210,13 @@ namespace TF.WIN
                txtCuitReba.Text = resultado;
 
                 string resultado20 = dt50.Rows[0][5].ToString();
-                txtempresaRula.Text = resultado20;
+                txtempresaReba.Text = resultado20;
 
                 string resultado21 = dt50.Rows[0][4].ToString();
                 txtEmpleadoReba.Text = resultado21;
 
                 string resultado22 = dt50.Rows[0][2].ToString();
-                txtpuestoRula.Text = resultado22;
+                txtpuestoReba.Text = resultado22;
             }
 
             if (dt50.Rows.Count > 0)
@@ -320,56 +320,79 @@ namespace TF.WIN
             SaveFileDialog guardar = new SaveFileDialog();
             guardar.FileName = GetUniqueFileName("Informe");
 
-            string paginahtml_texto = TF.WIN.Properties.Resources.plantilla3.ToString();
-
-            paginahtml_texto = paginahtml_texto.Replace("@txttroncoreba", txttroncoreba.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtcuelloreba", txtcuelloreba.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtpiernareba", txtpiernareba.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzareba", txtcargafuerzareba.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtantebrazoreba", txtantebrazoreba.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtmunecareba", txtmunecareba.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtbrazoreba", txtbrazoreba.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtagarrereba", txtagarrereba.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtpActividadRebaFinal", txtpActividadRebaFinal.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtTotalTablaCReba", txtTotalTablaCReba.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionTCAC", txtpuntuacionTCAC.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtPuntuacionReba", txtPuntuacionReba.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtniveldeaccionReba", txtniveldeaccionReba.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtnivelderiesgoreba", txtnivelderiesgoreba.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtActuacionReba", txtActuacionReba.Text);
+            // Configurar el cuadro de diálogo para guardar como PDF
+            guardar.DefaultExt = "pdf";
+            guardar.Filter = "Archivos PDF (*.pdf)|*.pdf|Todos los archivos (*.*)|*.*";
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
-                using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
+                try
                 {
-                    Document pdfDoc = new Document(PageSize.A4, 80, 30, 25, 50);
-                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
-                    pdfDoc.Open();
-                    pdfDoc.Add(new Phrase(""));
-
-                    iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(TF.WIN.Properties.Resources.ergo, System.Drawing.Imaging.ImageFormat.Png);
-                    img.ScaleToFit(90, 90);
-                    img.Alignment = iTextSharp.text.Image.UNDERLYING;
-                    img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 50);
-                    pdfDoc.Add(img);
-
-                    using (StringReader sr = new StringReader(paginahtml_texto))
+                    using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
                     {
-                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
-                    }
+                        Document pdfDoc = new Document(PageSize.A4, 80, 30, 25, 50);
+                        PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
 
-                    pdfDoc.Close();
-                    stream.Close();
+                        pdfDoc.Open();
+                        pdfDoc.Add(new Phrase(""));
+
+                        iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(TF.WIN.Properties.Resources.ergo, System.Drawing.Imaging.ImageFormat.Png);
+                        img.ScaleToFit(90, 90);
+                        img.Alignment = iTextSharp.text.Image.UNDERLYING;
+                        img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 50);
+                        pdfDoc.Add(img);
+
+                        // Reemplazos en el HTML
+                        string paginahtml4_texto = TF.WIN.Properties.Resources.plantilla3.ToString();
+
+
+                        paginahtml4_texto = paginahtml4_texto.Replace("@Fecha", DateTime.Now.ToString("G"));
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtCuitReba", txtCuitReba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtempresaRula", txtempresaReba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtEmpleadoReba", txtEmpleadoReba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtpuestoReba", txtpuestoReba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txttroncoreba", txttroncoreba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtcuelloreba", txtcuelloreba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtpiernareba", txtpiernareba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtcargafuerzareba", txtcargafuerzareba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtantebrazoreba", txtantebrazoreba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtmunecareba", txtmunecareba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtbrazoreba", txtbrazoreba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtagarrereba", txtagarrereba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtpActividadRebaFinal", txtpActividadRebaFinal.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtTotalTablaCReba", txtTotalTablaCReba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtpuntuacionTCAC", txtpuntuacionTCAC.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtPuntuacionReba", txtPuntuacionReba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtniveldeaccionReba", txtniveldeaccionReba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtnivelderiesgoreba", txtnivelderiesgoreba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtActuacionReba", txtActuacionReba.Text);
+
+                        // Agregar más reemplazos para los campos adicionales según tus necesidades...
+
+                        using (StringReader sr = new StringReader(paginahtml4_texto))
+                        {
+                            XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                        }
+
+                        pdfDoc.Close();
+                        stream.Close();
+
+                        MessageBox.Show("PDF generado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al generar el PDF: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
-   
 
 
 
 
 
+       
 
 
 

@@ -36,9 +36,9 @@
             this.txtagarrereba = new MaterialSkin.Controls.MaterialTextBox();
             this.btnRecuperarCarga = new System.Windows.Forms.Button();
             this.txtcargaidrebaresultado = new System.Windows.Forms.TextBox();
-            this.txtpuestoRula = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtpuestoReba = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
-            this.txtempresaRula = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtempresaReba = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
             this.txtantebrazoreba = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtmunecareba = new MaterialSkin.Controls.MaterialTextBox2();
@@ -233,37 +233,37 @@
             this.txtcargaidrebaresultado.TabIndex = 200;
             this.txtcargaidrebaresultado.Visible = false;
             // 
-            // txtpuestoRula
+            // txtpuestoReba
             // 
-            this.txtpuestoRula.AnimateReadOnly = false;
-            this.txtpuestoRula.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtpuestoRula.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtpuestoRula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtpuestoRula.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtpuestoRula.Depth = 0;
-            this.txtpuestoRula.Enabled = false;
-            this.txtpuestoRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtpuestoRula.HideSelection = true;
-            this.txtpuestoRula.LeadingIcon = null;
-            this.txtpuestoRula.Location = new System.Drawing.Point(506, 119);
-            this.txtpuestoRula.Margin = new System.Windows.Forms.Padding(2);
-            this.txtpuestoRula.MaxLength = 32767;
-            this.txtpuestoRula.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtpuestoRula.Name = "txtpuestoRula";
-            this.txtpuestoRula.PasswordChar = '\0';
-            this.txtpuestoRula.PrefixSuffixText = null;
-            this.txtpuestoRula.ReadOnly = true;
-            this.txtpuestoRula.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtpuestoRula.SelectedText = "";
-            this.txtpuestoRula.SelectionLength = 0;
-            this.txtpuestoRula.SelectionStart = 0;
-            this.txtpuestoRula.ShortcutsEnabled = true;
-            this.txtpuestoRula.Size = new System.Drawing.Size(259, 48);
-            this.txtpuestoRula.TabIndex = 172;
-            this.txtpuestoRula.TabStop = false;
-            this.txtpuestoRula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtpuestoRula.TrailingIcon = null;
-            this.txtpuestoRula.UseSystemPasswordChar = false;
+            this.txtpuestoReba.AnimateReadOnly = false;
+            this.txtpuestoReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtpuestoReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtpuestoReba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtpuestoReba.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtpuestoReba.Depth = 0;
+            this.txtpuestoReba.Enabled = false;
+            this.txtpuestoReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtpuestoReba.HideSelection = true;
+            this.txtpuestoReba.LeadingIcon = null;
+            this.txtpuestoReba.Location = new System.Drawing.Point(506, 119);
+            this.txtpuestoReba.Margin = new System.Windows.Forms.Padding(2);
+            this.txtpuestoReba.MaxLength = 32767;
+            this.txtpuestoReba.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtpuestoReba.Name = "txtpuestoReba";
+            this.txtpuestoReba.PasswordChar = '\0';
+            this.txtpuestoReba.PrefixSuffixText = null;
+            this.txtpuestoReba.ReadOnly = true;
+            this.txtpuestoReba.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtpuestoReba.SelectedText = "";
+            this.txtpuestoReba.SelectionLength = 0;
+            this.txtpuestoReba.SelectionStart = 0;
+            this.txtpuestoReba.ShortcutsEnabled = true;
+            this.txtpuestoReba.Size = new System.Drawing.Size(259, 48);
+            this.txtpuestoReba.TabIndex = 172;
+            this.txtpuestoReba.TabStop = false;
+            this.txtpuestoReba.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtpuestoReba.TrailingIcon = null;
+            this.txtpuestoReba.UseSystemPasswordChar = false;
             // 
             // materialLabel19
             // 
@@ -278,37 +278,37 @@
             this.materialLabel19.TabIndex = 199;
             this.materialLabel19.Text = "PUESTO";
             // 
-            // txtempresaRula
+            // txtempresaReba
             // 
-            this.txtempresaRula.AnimateReadOnly = false;
-            this.txtempresaRula.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtempresaRula.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtempresaRula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtempresaRula.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtempresaRula.Depth = 0;
-            this.txtempresaRula.Enabled = false;
-            this.txtempresaRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtempresaRula.HideSelection = true;
-            this.txtempresaRula.LeadingIcon = null;
-            this.txtempresaRula.Location = new System.Drawing.Point(131, 119);
-            this.txtempresaRula.Margin = new System.Windows.Forms.Padding(2);
-            this.txtempresaRula.MaxLength = 32767;
-            this.txtempresaRula.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtempresaRula.Name = "txtempresaRula";
-            this.txtempresaRula.PasswordChar = '\0';
-            this.txtempresaRula.PrefixSuffixText = null;
-            this.txtempresaRula.ReadOnly = true;
-            this.txtempresaRula.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtempresaRula.SelectedText = "";
-            this.txtempresaRula.SelectionLength = 0;
-            this.txtempresaRula.SelectionStart = 0;
-            this.txtempresaRula.ShortcutsEnabled = true;
-            this.txtempresaRula.Size = new System.Drawing.Size(238, 48);
-            this.txtempresaRula.TabIndex = 171;
-            this.txtempresaRula.TabStop = false;
-            this.txtempresaRula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtempresaRula.TrailingIcon = null;
-            this.txtempresaRula.UseSystemPasswordChar = false;
+            this.txtempresaReba.AnimateReadOnly = false;
+            this.txtempresaReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtempresaReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtempresaReba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtempresaReba.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtempresaReba.Depth = 0;
+            this.txtempresaReba.Enabled = false;
+            this.txtempresaReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtempresaReba.HideSelection = true;
+            this.txtempresaReba.LeadingIcon = null;
+            this.txtempresaReba.Location = new System.Drawing.Point(131, 119);
+            this.txtempresaReba.Margin = new System.Windows.Forms.Padding(2);
+            this.txtempresaReba.MaxLength = 32767;
+            this.txtempresaReba.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtempresaReba.Name = "txtempresaReba";
+            this.txtempresaReba.PasswordChar = '\0';
+            this.txtempresaReba.PrefixSuffixText = null;
+            this.txtempresaReba.ReadOnly = true;
+            this.txtempresaReba.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtempresaReba.SelectedText = "";
+            this.txtempresaReba.SelectionLength = 0;
+            this.txtempresaReba.SelectionStart = 0;
+            this.txtempresaReba.ShortcutsEnabled = true;
+            this.txtempresaReba.Size = new System.Drawing.Size(238, 48);
+            this.txtempresaReba.TabIndex = 171;
+            this.txtempresaReba.TabStop = false;
+            this.txtempresaReba.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtempresaReba.TrailingIcon = null;
+            this.txtempresaReba.UseSystemPasswordChar = false;
             // 
             // materialLabel18
             // 
@@ -1150,7 +1150,7 @@
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(919, 53);
+            this.BarraTitulo.Size = new System.Drawing.Size(970, 53);
             this.BarraTitulo.TabIndex = 343;
             // 
             // btnRestaurar
@@ -1159,7 +1159,7 @@
             this.btnRestaurar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(854, 14);
+            this.btnRestaurar.Location = new System.Drawing.Point(905, 14);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1175,7 +1175,7 @@
             this.btnMinimizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(823, 14);
+            this.btnMinimizar.Location = new System.Drawing.Point(874, 14);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1189,7 +1189,7 @@
             this.btnMaximizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(854, 14);
+            this.btnMaximizar.Location = new System.Drawing.Point(905, 14);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1202,7 +1202,7 @@
             this.pictureBox9.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(885, 14);
+            this.pictureBox9.Location = new System.Drawing.Point(936, 14);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(25, 25);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1306,7 +1306,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(936, 971);
+            this.ClientSize = new System.Drawing.Size(987, 971);
             this.Controls.Add(this.materialLabel26);
             this.Controls.Add(this.txtEmpleadoReba);
             this.Controls.Add(this.txtCuitReba);
@@ -1345,9 +1345,9 @@
             this.Controls.Add(this.txtcargafuerzareba);
             this.Controls.Add(this.btnRecuperarCarga);
             this.Controls.Add(this.txtcargaidrebaresultado);
-            this.Controls.Add(this.txtpuestoRula);
+            this.Controls.Add(this.txtpuestoReba);
             this.Controls.Add(this.materialLabel19);
-            this.Controls.Add(this.txtempresaRula);
+            this.Controls.Add(this.txtempresaReba);
             this.Controls.Add(this.materialLabel18);
             this.Controls.Add(this.txtantebrazoreba);
             this.Controls.Add(this.txtmunecareba);
@@ -1387,9 +1387,9 @@
         private MaterialSkin.Controls.MaterialTextBox txtagarrereba;
         private System.Windows.Forms.Button btnRecuperarCarga;
         private System.Windows.Forms.TextBox txtcargaidrebaresultado;
-        private MaterialSkin.Controls.MaterialTextBox2 txtpuestoRula;
+        private MaterialSkin.Controls.MaterialTextBox2 txtpuestoReba;
         private MaterialSkin.Controls.MaterialLabel materialLabel19;
-        private MaterialSkin.Controls.MaterialTextBox2 txtempresaRula;
+        private MaterialSkin.Controls.MaterialTextBox2 txtempresaReba;
         private MaterialSkin.Controls.MaterialLabel materialLabel18;
         private MaterialSkin.Controls.MaterialTextBox2 txtantebrazoreba;
         private MaterialSkin.Controls.MaterialTextBox2 txtmunecareba;
