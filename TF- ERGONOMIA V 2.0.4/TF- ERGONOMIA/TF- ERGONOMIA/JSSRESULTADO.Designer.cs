@@ -62,6 +62,8 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.userlabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.userlabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -257,7 +259,7 @@
             this.txtActuacionJSS1.Margin = new System.Windows.Forms.Padding(2);
             this.txtActuacionJSS1.Multiline = true;
             this.txtActuacionJSS1.Name = "txtActuacionJSS1";
-            this.txtActuacionJSS1.Size = new System.Drawing.Size(798, 117);
+            this.txtActuacionJSS1.Size = new System.Drawing.Size(798, 80);
             this.txtActuacionJSS1.TabIndex = 299;
             // 
             // materialLabel12
@@ -754,6 +756,30 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // userlabel1
+            // 
+            this.userlabel1.AutoSize = true;
+            this.userlabel1.Depth = 0;
+            this.userlabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.userlabel1.Location = new System.Drawing.Point(176, 530);
+            this.userlabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.userlabel1.Name = "userlabel1";
+            this.userlabel1.Size = new System.Drawing.Size(107, 19);
+            this.userlabel1.TabIndex = 340;
+            this.userlabel1.Text = "materialLabel7";
+            // 
+            // userlabel2
+            // 
+            this.userlabel2.AutoSize = true;
+            this.userlabel2.Depth = 0;
+            this.userlabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.userlabel2.Location = new System.Drawing.Point(347, 530);
+            this.userlabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.userlabel2.Name = "userlabel2";
+            this.userlabel2.Size = new System.Drawing.Size(107, 19);
+            this.userlabel2.TabIndex = 341;
+            this.userlabel2.Text = "materialLabel8";
+            // 
             // JSSRESULTADO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -762,6 +788,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(878, 570);
+            this.Controls.Add(this.userlabel2);
+            this.Controls.Add(this.userlabel1);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.txtSituacionJss);
             this.Controls.Add(this.btnobtenerinforme);
@@ -841,5 +869,7 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private MaterialSkin.Controls.MaterialLabel userlabel1;
+        private MaterialSkin.Controls.MaterialLabel userlabel2;
     }
 }

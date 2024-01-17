@@ -15,6 +15,7 @@ using System.Windows.Forms;
 using TF.BC;
 using TF.ENTITIES;
 using System.Windows.Forms.DataVisualization.Charting;
+using TF.COMMON.Cache;
 
 namespace TF.WIN
 {
@@ -26,6 +27,7 @@ namespace TF.WIN
         public JSSRESULTADO()
         {
             InitializeComponent();
+            LoadUserData();
         }
 
         private void JSSRESULTADO_Load(object sender, EventArgs e)
@@ -68,8 +70,11 @@ namespace TF.WIN
             }
         }
 
-
-
+        private void LoadUserData()
+        {
+            userlabel1.Text = UserLoginCache.Nombre + ' ' + UserLoginCache.Apellido;
+            userlabel2.Text = UserLoginCache.Cargo;
+        }
 
         public void ObtenerMaximoIdJSS()
         {
@@ -218,9 +223,11 @@ namespace TF.WIN
                         paginahtml3_texto = paginahtml3_texto.Replace("@txtDMA", txtDMA.Text);
                         paginahtml3_texto = paginahtml3_texto.Replace("@txtCTL", txtCTL.Text);
                         paginahtml3_texto = paginahtml3_texto.Replace("@txtAS", txtAS.Text);
-                        paginahtml3_texto = paginahtml3_texto.Replace("@txtSituacionJss", @txtSituacionJss.Text);
+                        paginahtml3_texto = paginahtml3_texto.Replace("@txtSituacionJss", txtSituacionJss.Text);
                         paginahtml3_texto = paginahtml3_texto.Replace("@txtActuacionJSS1", txtActuacionJSS1.Text);
-                        
+                        paginahtml3_texto = paginahtml3_texto.Replace("@lblUsuario", userlabel1.Text);
+
+
                         // Agregar más reemplazos para los campos adicionales según tus necesidades...
 
                         using (StringReader sr = new StringReader(paginahtml3_texto))
