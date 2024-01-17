@@ -49,6 +49,8 @@
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.cboAreaempresa = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.dtpIngreso = new System.Windows.Forms.DateTimePicker();
@@ -57,12 +59,10 @@
             this.dtpNacimiento = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtAltura = new MaterialSkin.Controls.MaterialTextBox2();
-            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnBuscartodo = new System.Windows.Forms.Button();
-            this.btnConsultar = new System.Windows.Forms.Button();
-            this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -384,7 +384,7 @@
             this.dgvEmpleados.Name = "dgvEmpleados";
             this.dgvEmpleados.RowHeadersWidth = 51;
             this.dgvEmpleados.RowTemplate.Height = 24;
-            this.dgvEmpleados.Size = new System.Drawing.Size(1365, 177);
+            this.dgvEmpleados.Size = new System.Drawing.Size(885, 177);
             this.dgvEmpleados.TabIndex = 57;
             this.dgvEmpleados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvempleados_CellContentClick_1);
             // 
@@ -471,10 +471,43 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(1373, 385);
+            this.groupBox1.Size = new System.Drawing.Size(942, 385);
             this.groupBox1.TabIndex = 61;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "REGISTRAR EMPLEADOS";
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnConsultar.FlatAppearance.BorderSize = 0;
+            this.btnConsultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultar.Location = new System.Drawing.Point(184, 329);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(116, 35);
+            this.btnConsultar.TabIndex = 78;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpiar.Location = new System.Drawing.Point(339, 329);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(116, 35);
+            this.btnLimpiar.TabIndex = 73;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // cboAreaempresa
             // 
@@ -623,86 +656,6 @@
             this.txtAltura.TrailingIcon = null;
             this.txtAltura.UseSystemPasswordChar = false;
             // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnLimpiar.FlatAppearance.BorderSize = 0;
-            this.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLimpiar.Location = new System.Drawing.Point(339, 329);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(116, 35);
-            this.btnLimpiar.TabIndex = 73;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(526, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(331, 31);
-            this.label1.TabIndex = 62;
-            this.label1.Text = "CARGA DE EMPLEADOS";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.btnBuscartodo);
-            this.groupBox3.Controls.Add(this.txtcuitconsulta);
-            this.groupBox3.Controls.Add(this.materialLabel10);
-            this.groupBox3.Controls.Add(this.btnEliminar);
-            this.groupBox3.Controls.Add(this.btnModificar);
-            this.groupBox3.Controls.Add(this.btnBuscar);
-            this.groupBox3.Controls.Add(this.dgvEmpleados);
-            this.groupBox3.Location = new System.Drawing.Point(26, 455);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(1373, 305);
-            this.groupBox3.TabIndex = 63;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "CONSULTAR EMPLEADOS CARGADOS";
-            // 
-            // btnBuscartodo
-            // 
-            this.btnBuscartodo.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnBuscartodo.FlatAppearance.BorderSize = 0;
-            this.btnBuscartodo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnBuscartodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscartodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscartodo.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnBuscartodo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscartodo.Location = new System.Drawing.Point(529, 51);
-            this.btnBuscartodo.Name = "btnBuscartodo";
-            this.btnBuscartodo.Size = new System.Drawing.Size(116, 35);
-            this.btnBuscartodo.TabIndex = 58;
-            this.btnBuscartodo.Text = "Buscar Todos";
-            this.btnBuscartodo.UseVisualStyleBackColor = false;
-            this.btnBuscartodo.Click += new System.EventHandler(this.btnBuscartodo_Click_1);
-            // 
-            // btnConsultar
-            // 
-            this.btnConsultar.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnConsultar.FlatAppearance.BorderSize = 0;
-            this.btnConsultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultar.Location = new System.Drawing.Point(184, 329);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(116, 35);
-            this.btnConsultar.TabIndex = 78;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = false;
-            // 
             // txtCUITEncontrado
             // 
             this.txtCUITEncontrado.AnimateReadOnly = false;
@@ -732,13 +685,60 @@
             this.txtCUITEncontrado.TrailingIcon = null;
             this.txtCUITEncontrado.UseSystemPasswordChar = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(359, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(331, 31);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "CARGA DE EMPLEADOS";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnBuscartodo);
+            this.groupBox3.Controls.Add(this.txtcuitconsulta);
+            this.groupBox3.Controls.Add(this.materialLabel10);
+            this.groupBox3.Controls.Add(this.btnEliminar);
+            this.groupBox3.Controls.Add(this.btnModificar);
+            this.groupBox3.Controls.Add(this.btnBuscar);
+            this.groupBox3.Controls.Add(this.dgvEmpleados);
+            this.groupBox3.Location = new System.Drawing.Point(26, 455);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Size = new System.Drawing.Size(942, 305);
+            this.groupBox3.TabIndex = 63;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "CONSULTAR EMPLEADOS CARGADOS";
+            // 
+            // btnBuscartodo
+            // 
+            this.btnBuscartodo.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnBuscartodo.FlatAppearance.BorderSize = 0;
+            this.btnBuscartodo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnBuscartodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscartodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscartodo.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnBuscartodo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscartodo.Location = new System.Drawing.Point(529, 51);
+            this.btnBuscartodo.Name = "btnBuscartodo";
+            this.btnBuscartodo.Size = new System.Drawing.Size(116, 35);
+            this.btnBuscartodo.TabIndex = 58;
+            this.btnBuscartodo.Text = "Buscar Todos";
+            this.btnBuscartodo.UseVisualStyleBackColor = false;
+            this.btnBuscartodo.Click += new System.EventHandler(this.btnBuscartodo_Click_1);
+            // 
             // frmEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1420, 800);
+            this.ClientSize = new System.Drawing.Size(1015, 800);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
