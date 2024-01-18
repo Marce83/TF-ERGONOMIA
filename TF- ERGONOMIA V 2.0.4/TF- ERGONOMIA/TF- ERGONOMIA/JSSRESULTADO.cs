@@ -134,7 +134,6 @@ namespace TF.WIN
         {
             JssRescatar();
             ObtenerMaximoIdJSS();
-
             try
             {
                 int c1 = int.Parse(txtCTL.Text);
@@ -160,8 +159,6 @@ namespace TF.WIN
 
             }
             catch { }
-
-
             GuardarResultado();
         }
 
