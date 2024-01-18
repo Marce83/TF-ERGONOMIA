@@ -385,7 +385,7 @@
             this.txtNombreEmpleadoRula.SelectionLength = 0;
             this.txtNombreEmpleadoRula.SelectionStart = 0;
             this.txtNombreEmpleadoRula.ShortcutsEnabled = true;
-            this.txtNombreEmpleadoRula.Size = new System.Drawing.Size(208, 48);
+            this.txtNombreEmpleadoRula.Size = new System.Drawing.Size(244, 48);
             this.txtNombreEmpleadoRula.TabIndex = 160;
             this.txtNombreEmpleadoRula.TabStop = false;
             this.txtNombreEmpleadoRula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
