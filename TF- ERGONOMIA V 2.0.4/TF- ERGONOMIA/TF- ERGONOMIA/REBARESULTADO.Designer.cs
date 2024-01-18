@@ -89,6 +89,8 @@
             this.materialLabel23 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel26 = new MaterialSkin.Controls.MaterialLabel();
             this.txtEmpleadoReba = new MaterialSkin.Controls.MaterialTextBox2();
+            this.userlabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.userlabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -1150,7 +1152,7 @@
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(970, 53);
+            this.BarraTitulo.Size = new System.Drawing.Size(987, 53);
             this.BarraTitulo.TabIndex = 343;
             // 
             // btnRestaurar
@@ -1159,7 +1161,7 @@
             this.btnRestaurar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(905, 14);
+            this.btnRestaurar.Location = new System.Drawing.Point(922, 14);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1175,7 +1177,7 @@
             this.btnMinimizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(874, 14);
+            this.btnMinimizar.Location = new System.Drawing.Point(891, 14);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1189,7 +1191,7 @@
             this.btnMaximizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(905, 14);
+            this.btnMaximizar.Location = new System.Drawing.Point(922, 14);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1202,7 +1204,7 @@
             this.pictureBox9.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(936, 14);
+            this.pictureBox9.Location = new System.Drawing.Point(953, 14);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(25, 25);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1300,13 +1302,41 @@
             this.txtEmpleadoReba.TrailingIcon = null;
             this.txtEmpleadoReba.UseSystemPasswordChar = false;
             // 
+            // userlabel2
+            // 
+            this.userlabel2.AutoSize = true;
+            this.userlabel2.Depth = 0;
+            this.userlabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.userlabel2.Location = new System.Drawing.Point(405, 1077);
+            this.userlabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.userlabel2.Name = "userlabel2";
+            this.userlabel2.Size = new System.Drawing.Size(107, 19);
+            this.userlabel2.TabIndex = 355;
+            this.userlabel2.Text = "materialLabel8";
+            this.userlabel2.Visible = false;
+            // 
+            // userlabel1
+            // 
+            this.userlabel1.AutoSize = true;
+            this.userlabel1.Depth = 0;
+            this.userlabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.userlabel1.Location = new System.Drawing.Point(240, 1077);
+            this.userlabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.userlabel1.Name = "userlabel1";
+            this.userlabel1.Size = new System.Drawing.Size(107, 19);
+            this.userlabel1.TabIndex = 354;
+            this.userlabel1.Text = "materialLabel7";
+            this.userlabel1.Visible = false;
+            // 
             // REBA_RESULTADO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(987, 971);
+            this.ClientSize = new System.Drawing.Size(1004, 971);
+            this.Controls.Add(this.userlabel2);
+            this.Controls.Add(this.userlabel1);
             this.Controls.Add(this.materialLabel26);
             this.Controls.Add(this.txtEmpleadoReba);
             this.Controls.Add(this.txtCuitReba);
@@ -1440,5 +1470,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel23;
         private MaterialSkin.Controls.MaterialLabel materialLabel26;
         private MaterialSkin.Controls.MaterialTextBox2 txtEmpleadoReba;
+        private MaterialSkin.Controls.MaterialLabel userlabel2;
+        private MaterialSkin.Controls.MaterialLabel userlabel1;
     }
 }

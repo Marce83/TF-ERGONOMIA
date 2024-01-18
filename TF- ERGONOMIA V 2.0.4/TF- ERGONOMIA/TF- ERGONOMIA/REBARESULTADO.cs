@@ -19,6 +19,7 @@ using iTextSharp.tool.xml.css.parser.state;
 using TF.ENTITIES;
 using TF.BC;
 using System.Diagnostics.Eventing.Reader;
+using TF.COMMON.Cache;
 
 namespace TF.WIN
 {
@@ -30,6 +31,7 @@ namespace TF.WIN
         {
             InitializeComponent();
             ObtenerMaximoIdReba();
+            LoadUserData();
         }
         private int SumaGrupoTablaAReba = 0;
         private int SumaGrupoTablaBReba = 0;
@@ -301,7 +303,11 @@ namespace TF.WIN
         }
 
 
-
+        private void LoadUserData()
+        {
+            userlabel1.Text = UserLoginCache.Nombre + ' ' + UserLoginCache.Apellido;
+            userlabel2.Text = UserLoginCache.Cargo;
+        }
 
 
         private string GetUniqueFileName(string baseFileName)
@@ -344,7 +350,7 @@ namespace TF.WIN
 
                         paginahtml4_texto = paginahtml4_texto.Replace("@Fecha", DateTime.Now.ToString("G"));
                         paginahtml4_texto = paginahtml4_texto.Replace("@txtCuitReba", txtCuitReba.Text);
-                        paginahtml4_texto = paginahtml4_texto.Replace("@txtempresaRula", txtempresaReba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@txtempresaReba", txtempresaReba.Text);
                         paginahtml4_texto = paginahtml4_texto.Replace("@txtEmpleadoReba", txtEmpleadoReba.Text);
                         paginahtml4_texto = paginahtml4_texto.Replace("@txtpuestoReba", txtpuestoReba.Text);
                         paginahtml4_texto = paginahtml4_texto.Replace("@txttroncoreba", txttroncoreba.Text);
@@ -362,6 +368,8 @@ namespace TF.WIN
                         paginahtml4_texto = paginahtml4_texto.Replace("@txtniveldeaccionReba", txtniveldeaccionReba.Text);
                         paginahtml4_texto = paginahtml4_texto.Replace("@txtnivelderiesgoreba", txtnivelderiesgoreba.Text);
                         paginahtml4_texto = paginahtml4_texto.Replace("@txtActuacionReba", txtActuacionReba.Text);
+                        paginahtml4_texto = paginahtml4_texto.Replace("@lblUsuario", userlabel1.Text);
+
 
                         // Agregar más reemplazos para los campos adicionales según tus necesidades...
 
