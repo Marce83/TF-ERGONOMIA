@@ -1208,7 +1208,7 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.pictureBox9.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // txtCuitReba
             // 

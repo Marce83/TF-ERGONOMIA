@@ -1139,7 +1139,7 @@ namespace TF.WIN
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 0;
             this.pictureBox12.TabStop = false;
-            this.pictureBox12.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.pictureBox12.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // label12
             // 

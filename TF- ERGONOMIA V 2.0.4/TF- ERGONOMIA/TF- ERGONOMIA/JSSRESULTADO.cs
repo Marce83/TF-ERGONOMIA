@@ -61,15 +61,6 @@ namespace TF.WIN
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            DialogResult resp = MessageBox.Show("¿Desea salir de la aplicación?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (resp == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
-
         private void LoadUserData()
         {
             userlabel1.Text = UserLoginCache.Nombre + ' ' + UserLoginCache.Apellido;
