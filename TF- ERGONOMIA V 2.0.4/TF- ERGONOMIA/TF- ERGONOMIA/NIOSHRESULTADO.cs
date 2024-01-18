@@ -17,6 +17,7 @@ using iTextSharp.tool.xml.css.parser.state;
 using TF.ENTITIES;
 using TF.BC;
 using System.Diagnostics.Eventing.Reader;
+using TF.COMMON.Cache;
 
 namespace TF.WIN
 {
@@ -29,7 +30,7 @@ namespace TF.WIN
         {
             InitializeComponent();
             ObtenerMaximoIdNIOSH();
-
+            LoadUserData();
         }
 
 
@@ -298,6 +299,14 @@ namespace TF.WIN
             return fileName;
         }
 
+
+        private void LoadUserData()
+        {
+            userlabel1.Text = UserLoginCache.Nombre + ' ' + UserLoginCache.Apellido;
+            userlabel2.Text = UserLoginCache.Cargo;
+        }
+
+
         private void btnobtenerinforme_Click(object sender, EventArgs e)
         {
             SaveFileDialog guardar = new SaveFileDialog();
@@ -351,6 +360,7 @@ namespace TF.WIN
                         paginahtml2_texto = paginahtml2_texto.Replace("@txtActuacionNIOSH", txtActuacionNIOSH.Text);
                         paginahtml2_texto = paginahtml2_texto.Replace("@txtriesgoniosh", txtriesgoniosh.Text);
                         paginahtml2_texto = paginahtml2_texto.Replace("@txtPoblacion", txtPoblacion.Text);
+                        paginahtml2_texto = paginahtml2_texto.Replace("@lblUsuario", userlabel1.Text);
 
 
 

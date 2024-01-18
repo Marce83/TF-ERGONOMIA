@@ -88,6 +88,8 @@ namespace TF.WIN
             this.txtEmpleadoRula = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtCuitRula = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel25 = new MaterialSkin.Controls.MaterialLabel();
+            this.userlabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.userlabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -1244,6 +1246,32 @@ namespace TF.WIN
             this.materialLabel25.TabIndex = 349;
             this.materialLabel25.Text = "CUIT";
             // 
+            // userlabel2
+            // 
+            this.userlabel2.AutoSize = true;
+            this.userlabel2.Depth = 0;
+            this.userlabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.userlabel2.Location = new System.Drawing.Point(423, 863);
+            this.userlabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.userlabel2.Name = "userlabel2";
+            this.userlabel2.Size = new System.Drawing.Size(107, 19);
+            this.userlabel2.TabIndex = 353;
+            this.userlabel2.Text = "materialLabel8";
+            this.userlabel2.Visible = false;
+            // 
+            // userlabel1
+            // 
+            this.userlabel1.AutoSize = true;
+            this.userlabel1.Depth = 0;
+            this.userlabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.userlabel1.Location = new System.Drawing.Point(287, 863);
+            this.userlabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.userlabel1.Name = "userlabel1";
+            this.userlabel1.Size = new System.Drawing.Size(107, 19);
+            this.userlabel1.TabIndex = 352;
+            this.userlabel1.Text = "materialLabel7";
+            this.userlabel1.Visible = false;
+            // 
             // RULARESULTADO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1251,6 +1279,8 @@ namespace TF.WIN
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(904, 884);
+            this.Controls.Add(this.userlabel2);
+            this.Controls.Add(this.userlabel1);
             this.Controls.Add(this.materialLabel26);
             this.Controls.Add(this.txtEmpleadoRula);
             this.Controls.Add(this.txtCuitRula);
@@ -1381,5 +1411,7 @@ namespace TF.WIN
         private MaterialSkin.Controls.MaterialTextBox2 txtEmpleadoRula;
         private MaterialSkin.Controls.MaterialTextBox2 txtCuitRula;
         private MaterialSkin.Controls.MaterialLabel materialLabel25;
+        private MaterialSkin.Controls.MaterialLabel userlabel2;
+        private MaterialSkin.Controls.MaterialLabel userlabel1;
     }
 }

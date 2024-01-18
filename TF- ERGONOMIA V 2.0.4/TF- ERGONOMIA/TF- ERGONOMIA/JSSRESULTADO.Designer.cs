@@ -762,24 +762,26 @@
             this.userlabel1.AutoSize = true;
             this.userlabel1.Depth = 0;
             this.userlabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.userlabel1.Location = new System.Drawing.Point(176, 530);
+            this.userlabel1.Location = new System.Drawing.Point(284, 542);
             this.userlabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.userlabel1.Name = "userlabel1";
             this.userlabel1.Size = new System.Drawing.Size(107, 19);
             this.userlabel1.TabIndex = 340;
             this.userlabel1.Text = "materialLabel7";
+            this.userlabel1.Visible = false;
             // 
             // userlabel2
             // 
             this.userlabel2.AutoSize = true;
             this.userlabel2.Depth = 0;
             this.userlabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.userlabel2.Location = new System.Drawing.Point(347, 530);
+            this.userlabel2.Location = new System.Drawing.Point(455, 542);
             this.userlabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.userlabel2.Name = "userlabel2";
             this.userlabel2.Size = new System.Drawing.Size(107, 19);
             this.userlabel2.TabIndex = 341;
             this.userlabel2.Text = "materialLabel8";
+            this.userlabel2.Visible = false;
             // 
             // JSSRESULTADO
             // 
