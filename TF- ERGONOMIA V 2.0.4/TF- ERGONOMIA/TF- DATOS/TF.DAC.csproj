@@ -50,6 +50,7 @@
     <Compile Include="EstadisticaDAC.cs" />
     <Compile Include="JssDAC.cs" />
     <Compile Include="NioshDAC.cs" />
+    <Compile Include="PuestoTrabajoDAC.cs" />
     <Compile Include="RebaDAC.cs" />
     <Compile Include="RulaDAC.cs" />
     <Compile Include="SqlServerDB\ConnectionStringManager.cs" />

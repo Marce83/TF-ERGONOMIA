@@ -60,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAsociacionPuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsociacionPuesto.Designer.cs">
+      <DependentUpon>FrmAsociacionPuesto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuscarEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,12 @@
     </Compile>
     <Compile Include="frmBuscarEmpresa.Designer.cs">
       <DependentUpon>frmBuscarEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarPuestoTrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarPuestoTrabajo.Designer.cs">
+      <DependentUpon>FrmBuscarPuestoTrabajo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEditUsrAdmin.cs">
       <SubType>Form</SubType>
@@ -192,6 +204,12 @@
     <Compile Include="NIOSHRESULTADO.Designer.cs">
       <DependentUpon>NIOSHRESULTADO.cs</DependentUpon>
     </Compile>
+    <Compile Include="PuestoTrabajoSeleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuestoTrabajoSeleccion.Designer.cs">
+      <DependentUpon>PuestoTrabajoSeleccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="REBARESULTADO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,11 +249,17 @@
       <DependentUpon>RULARESULTADO.cs</DependentUpon>
     </Compile>
     <Compile Include="ValidarCorreo.cs" />
+    <EmbeddedResource Include="FrmAsociacionPuesto.resx">
+      <DependentUpon>FrmAsociacionPuesto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpleados.resx">
       <DependentUpon>frmBuscarEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpresa.resx">
       <DependentUpon>frmBuscarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarPuestoTrabajo.resx">
+      <DependentUpon>FrmBuscarPuestoTrabajo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditUsrAdmin.resx">
       <DependentUpon>frmEditUsrAdmin.cs</DependentUpon>
@@ -296,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NIOSHRESULTADO.resx">
       <DependentUpon>NIOSHRESULTADO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PuestoTrabajoSeleccion.resx">
+      <DependentUpon>PuestoTrabajoSeleccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="REBARESULTADO.resx">
       <DependentUpon>REBARESULTADO.cs</DependentUpon>

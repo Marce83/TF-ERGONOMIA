@@ -1878,3 +1878,83 @@ BEGIN
 select ResultadoAnalisisJss,FechaCargaJss, Count(ResultadoAnalisisJss) as AnalisisxDia from JssTablaCompleta WHERE CUITJSS = @CUITJSS and FechaCargaJss BETWEEN @FechaCargaJss AND @FechaCargaJss2 group by ResultadoAnalisisJss,FechaCargaJss HAVING COUNT(ResultadoAnalisisJss) > 0;
 END
 go
+
+
+--------------------------------------------------------------------PUESTO DE TRABAJO--------------------------------------------------
+use ProyectoFinal
+go
+CREATE TABLE PuestoDeTrabajo(
+IdPuesto INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+NombrePuesto NVARCHAR(20),
+AreaEmpresa NVARCHAR(20))
+GO
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_PuestoTrabajo_Insert
+@NombrePuesto NVARCHAR(20),
+@AreaEmpresa NVARCHAR(20)
+AS
+BEGIN
+insert into PuestoDeTrabajo (NombrePuesto,AreaEmpresa) values (@NombrePuesto,@AreaEmpresa)
+END
+GO
+
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_PuestoTrabajo_GetAll
+AS
+BEGIN
+Select NombrePuesto,AreaEmpresa from PuestoDeTrabajo
+END
+GO
+
+
+
+
+use ProyectoFinal
+go
+create table PuestoEmpleado (
+Idpuestoempleado INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+IdEmpleado int,
+IdPuesto int,
+FechaIngreso date,
+FechaEgreso date)
+GO
+
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_Insert
+@IdEmpleado int,
+@IdPuesto int,
+@FechaIngreso date
+AS
+BEGIN
+insert into PuestoEmpleado (IdEmpleado,IdPuesto,FechaIngreso) values (@IdEmpleado,@IdPuesto,@FechaIngreso)
+END
+GO
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_Update
+@IdEmpleado int,
+@FechaEgreso date
+AS
+BEGIN
+	update PuestoEmpleado set FechaEgreso=@FechaEgreso
+	WHERE idempleado = @idempleado
+END
+GO
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_GetAll_SiNo
+@IdEmpleado int,
+@IdPuesto int
+AS
+BEGIN
+Select COUNT(*) FROM PuestoEmpleado WHERE IdEmpleado = @IdEmpleado AND IdPuesto = @IdPuesto
+END
+GO
