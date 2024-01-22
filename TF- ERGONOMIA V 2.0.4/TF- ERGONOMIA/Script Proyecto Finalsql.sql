@@ -1911,6 +1911,17 @@ END
 GO
 
 
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_PuestoTrabajo_GetId
+@IdPuesto int 
+AS
+BEGIN
+	SELECT IdPuesto, NombrePuesto, AreaEmpresa
+	FROM PuestoDeTrabajo
+	WHERE IdPuesto = @IdPuesto
+END
+GO
 
 
 use ProyectoFinal
