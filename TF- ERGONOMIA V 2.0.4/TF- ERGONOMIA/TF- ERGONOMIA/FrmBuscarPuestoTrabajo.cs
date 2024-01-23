@@ -47,16 +47,35 @@ namespace TF.WIN
         private void btnAceptar_Click(object sender, EventArgs e)
         {
 
-            if (dgvResultadoPuesto.SelectedRows.Count == 1) // si selecciona un fila
+            if (dgvResultadoPuesto.SelectedRows.Count == 1) // si selecciona una fila
             {
-                int IdPuesto = Convert.ToInt32(dgvResultadoPuesto.CurrentRow.Cells[1].Value);
-                PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
-                PuestoSeleccionada = oPuestoTrabajoBC.ObtenerPuestoidBC(IdPuesto);
-                this.Close();
+                // Obtén el valor de la celda de la primera columna
+                object cellValue = dgvResultadoPuesto.CurrentRow.Cells[0].Value;
+
+                if (cellValue != null)
+                {
+                    // Intenta convertir el valor a un entero
+                    if (int.TryParse(cellValue.ToString(), out int IdPuesto))
+                    {
+                        PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
+                        PuestoSeleccionada = oPuestoTrabajoBC.ObtenerPuestoidBC(IdPuesto);
+                        this.Close();
+                    }
+                    else
+                    {
+                        // Manejar el caso en que la conversión no fue exitosa.
+                        MessageBox.Show("La celda no contiene un valor válido para IdPuesto.");
+                    }
+                }
+                else
+                {
+                    // Manejar el caso en que el valor es nulo.
+                    MessageBox.Show("La celda está vacía.");
+                }
             }
             else
             {
-                MessageBox.Show("Aun no ha seleccionado Ningun Puesto de Trabajo");
+                MessageBox.Show("Aún no ha seleccionado ningún Puesto de Trabajo");
             }
         }
     }

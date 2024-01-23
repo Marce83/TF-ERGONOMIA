@@ -256,11 +256,11 @@ GO
 
 use ProyectoFinal
 go
-CREATE PROCEDURE SP_Empleados_GetId
+CREATE OR ALTER PROCEDURE SP_Empleados_GetId
 @DNI nvarchar(8)
 AS
 BEGIN
-	SELECT Nombre, Apellido, DNI, Genero, PuestoDeTrabajo
+	SELECT IdEmpleado, Nombre, Apellido, DNI, Genero, PuestoDeTrabajo
 	FROM Empleados
 	WHERE DNI = @DNI
 END
@@ -1906,20 +1906,21 @@ go
 CREATE OR ALTER PROCEDURE SP_PuestoTrabajo_GetAll
 AS
 BEGIN
-Select NombrePuesto,AreaEmpresa from PuestoDeTrabajo
+Select * from PuestoDeTrabajo
 END
 GO
 
 
-use ProyectoFinal
-go
+USE ProyectoFinal;
+GO
+
 CREATE OR ALTER PROCEDURE SP_PuestoTrabajo_GetId
-@IdPuesto int 
+    @IdPuesto INT
 AS
 BEGIN
-	SELECT IdPuesto, NombrePuesto, AreaEmpresa
-	FROM PuestoDeTrabajo
-	WHERE IdPuesto = @IdPuesto
+    SELECT IdPuesto, NombrePuesto, AreaEmpresa
+    FROM PuestoDeTrabajo
+  --  WHERE IdPuesto = @IdPuesto;
 END
 GO
 
@@ -1959,13 +1960,83 @@ BEGIN
 END
 GO
 
-use ProyectoFinal
-go
+USE ProyectoFinal;
+GO
 CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_GetAll_SiNo
-@IdEmpleado int,
-@IdPuesto int
+    @IdEmpleado INT,
+    @IdPuesto INT
 AS
 BEGIN
-Select COUNT(*) FROM PuestoEmpleado WHERE IdEmpleado = @IdEmpleado AND IdPuesto = @IdPuesto
+    SELECT TOP 1 1 AS ExisteMovimiento
+    FROM PuestoEmpleado
+    WHERE IdEmpleado = @IdEmpleado AND IdPuesto = @IdPuesto;
 END
 GO
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_GetAll_Visor
+    @IdEmpleado INT,
+    @IdPuesto INT
+AS
+BEGIN
+    SELECT TOP 1 1 AS ExisteMovimiento
+    FROM PuestoEmpleado
+    WHERE IdEmpleado = @IdEmpleado AND IdPuesto = @IdPuesto;
+END
+GO
+
+USE ProyectoFinal;
+GO
+CREATE VIEW VistaEmpleadosPuestos AS
+SELECT
+    E.Nombre + ' ' + E.Apellido AS NombreEmpleado,
+    PT.NombrePuesto AS NombrePuesto,
+    PE.FechaIngreso AS FechaIngreso,
+    PE.FechaEgreso AS FechaEgreso
+FROM
+    Empleados E
+    JOIN PuestoEmpleado PE ON E.IdEmpleado = PE.IdEmpleado
+    JOIN PuestoDeTrabajo PT ON PE.IdPuesto = PT.IdPuesto;
+GO
+
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_VerVista
+AS
+BEGIN
+    SELECT * FROM VistaEmpleadosPuestos ORDER BY FechaIngreso DESC;
+END
+GO
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_VistaPuesto_GetNombreEmpleado
+    @NombreEmpleado nvarchar (20)
+AS
+BEGIN
+    SELECT NombreEmpleado, NombrePuesto
+    FROM VistaEmpleadosPuestos
+END
+GO
+
+
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_VerReciente
+@FechaIngreso DATE,
+@FechaIngreso2 DATE,
+    @NombreEmpleado NVARCHAR(40)
+AS
+BEGIN
+    SELECT *
+    FROM VistaEmpleadosPuestos
+    WHERE 
+        (FechaIngreso BETWEEN @FechaIngreso AND @FechaIngreso2)
+        AND (NombreEmpleado LIKE '%' + @NombreEmpleado + '%' OR @NombreEmpleado IS NULL)
+    ORDER BY FechaIngreso DESC;
+END
+GO
+

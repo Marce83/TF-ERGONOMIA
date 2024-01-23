@@ -207,10 +207,11 @@ namespace TF.DAC
             SqlDataReader dr = sqlComm.ExecuteReader();
             while (dr.Read())
             {
-                oEmpleados.Nombre = dr.GetString(0);
-                oEmpleados.Apellido = dr.GetString(1);
-                oEmpleados.DNI = dr.GetString(2);
-                oEmpleados.Genero = dr.GetString(4);
+                oEmpleados.IdEmpleado = dr.GetInt32(0);
+                oEmpleados.Nombre = dr.GetString(1);
+                oEmpleados.Apellido = dr.GetString(2);
+                oEmpleados.DNI = dr.GetString(3);
+                oEmpleados.Genero = dr.GetString(5);
                 //oEmpleados.PuestoDeTrabajo = dr.GetString(5);
 
             }

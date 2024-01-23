@@ -52,8 +52,25 @@ namespace TF.BC
             return oPuestoTrabajoDAC.ObtenerPuestoidDAC(IdPuesto);
         }
 
+        public DataTable GetAllVistaPuestoBC()
+        {
+            PuestoTrabajoDAC oPuestoTrabajoDAC = new PuestoTrabajoDAC();
+            DataTable dt = oPuestoTrabajoDAC.GetAllVistaPuestoDAC();
+            return dt;
+        }
 
+        public PuestoTrabajo GetNombreEmpleadoBC(string NombreEmpleado)
+        {
+            PuestoTrabajoDAC oPuestoTrabajoDAC = new PuestoTrabajoDAC();
+            return oPuestoTrabajoDAC.GetNombreEmpleadoDAC(NombreEmpleado);
+        }
 
+        public DataTable PuestoEmpleadoVerRecienteBC(PuestoTrabajo oPuestoTrabajo)
+        {
+            PuestoTrabajoDAC oPuestoTrabajoDAC = new PuestoTrabajoDAC();
+            DataTable dt = oPuestoTrabajoDAC.PuestoEmpleadoVerRecienteDAC(oPuestoTrabajo);
+            return dt;
+        }
 
 
     }

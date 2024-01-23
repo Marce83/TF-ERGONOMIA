@@ -47,6 +47,10 @@
             this.txtNombreEmpleado = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.DtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
+            this.DtpFechaEgreso = new System.Windows.Forms.DateTimePicker();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -60,7 +64,7 @@
             this.materialLabel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(27, 209);
+            this.materialLabel4.Location = new System.Drawing.Point(73, 300);
             this.materialLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
@@ -111,7 +115,7 @@
             this.txtIdEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtIdEmpleado.HideSelection = true;
             this.txtIdEmpleado.LeadingIcon = null;
-            this.txtIdEmpleado.Location = new System.Drawing.Point(223, 193);
+            this.txtIdEmpleado.Location = new System.Drawing.Point(161, 286);
             this.txtIdEmpleado.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdEmpleado.MaxLength = 32767;
             this.txtIdEmpleado.MouseState = MaterialSkin.MouseState.OUT;
@@ -124,7 +128,7 @@
             this.txtIdEmpleado.SelectionLength = 0;
             this.txtIdEmpleado.SelectionStart = 0;
             this.txtIdEmpleado.ShortcutsEnabled = true;
-            this.txtIdEmpleado.Size = new System.Drawing.Size(285, 48);
+            this.txtIdEmpleado.Size = new System.Drawing.Size(45, 48);
             this.txtIdEmpleado.TabIndex = 149;
             this.txtIdEmpleado.TabStop = false;
             this.txtIdEmpleado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -154,7 +158,7 @@
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(27, 258);
+            this.materialLabel11.Location = new System.Drawing.Point(215, 299);
             this.materialLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
@@ -174,7 +178,7 @@
             this.txtIdPuestoTrabajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtIdPuestoTrabajo.HideSelection = true;
             this.txtIdPuestoTrabajo.LeadingIcon = null;
-            this.txtIdPuestoTrabajo.Location = new System.Drawing.Point(223, 245);
+            this.txtIdPuestoTrabajo.Location = new System.Drawing.Point(378, 286);
             this.txtIdPuestoTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdPuestoTrabajo.MaxLength = 32767;
             this.txtIdPuestoTrabajo.MouseState = MaterialSkin.MouseState.OUT;
@@ -187,7 +191,7 @@
             this.txtIdPuestoTrabajo.SelectionLength = 0;
             this.txtIdPuestoTrabajo.SelectionStart = 0;
             this.txtIdPuestoTrabajo.ShortcutsEnabled = true;
-            this.txtIdPuestoTrabajo.Size = new System.Drawing.Size(285, 48);
+            this.txtIdPuestoTrabajo.Size = new System.Drawing.Size(62, 48);
             this.txtIdPuestoTrabajo.TabIndex = 146;
             this.txtIdPuestoTrabajo.TabStop = false;
             this.txtIdPuestoTrabajo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -204,7 +208,7 @@
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(645, 181);
+            this.btnSalir.Location = new System.Drawing.Point(645, 224);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(116, 48);
             this.btnSalir.TabIndex = 162;
@@ -240,7 +244,7 @@
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(835, 53);
+            this.BarraTitulo.Size = new System.Drawing.Size(786, 53);
             this.BarraTitulo.TabIndex = 343;
             // 
             // btnRestaurar
@@ -249,7 +253,7 @@
             this.btnRestaurar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(770, 14);
+            this.btnRestaurar.Location = new System.Drawing.Point(721, 14);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -265,7 +269,7 @@
             this.btnMinimizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(739, 14);
+            this.btnMinimizar.Location = new System.Drawing.Point(690, 14);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -279,7 +283,7 @@
             this.btnMaximizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(770, 14);
+            this.btnMaximizar.Location = new System.Drawing.Point(721, 14);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -292,7 +296,7 @@
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(801, 14);
+            this.pictureBox3.Location = new System.Drawing.Point(752, 14);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -387,12 +391,60 @@
             this.materialLabel3.TabIndex = 348;
             this.materialLabel3.Text = "NOMBRE DEL EMPLEADO";
             // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(27, 207);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(93, 19);
+            this.materialLabel1.TabIndex = 350;
+            this.materialLabel1.Text = "FECHA ALTA";
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.Location = new System.Drawing.Point(27, 252);
+            this.materialLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(163, 19);
+            this.materialLabel5.TabIndex = 349;
+            this.materialLabel5.Text = "FECHA MODIFICACION";
+            // 
+            // DtpFechaIngreso
+            // 
+            this.DtpFechaIngreso.Enabled = false;
+            this.DtpFechaIngreso.Location = new System.Drawing.Point(223, 203);
+            this.DtpFechaIngreso.Name = "DtpFechaIngreso";
+            this.DtpFechaIngreso.Size = new System.Drawing.Size(285, 20);
+            this.DtpFechaIngreso.TabIndex = 351;
+            // 
+            // DtpFechaEgreso
+            // 
+            this.DtpFechaEgreso.Enabled = false;
+            this.DtpFechaEgreso.Location = new System.Drawing.Point(223, 252);
+            this.DtpFechaEgreso.Name = "DtpFechaEgreso";
+            this.DtpFechaEgreso.Size = new System.Drawing.Size(285, 20);
+            this.DtpFechaEgreso.TabIndex = 352;
+            // 
             // FrmAsociacionPuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(835, 328);
+            this.ClientSize = new System.Drawing.Size(786, 338);
+            this.Controls.Add(this.DtpFechaEgreso);
+            this.Controls.Add(this.DtpFechaIngreso);
+            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.materialLabel5);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.txtNombreEmpleado);
@@ -439,5 +491,9 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtNombreEmpleado;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private System.Windows.Forms.DateTimePicker DtpFechaIngreso;
+        private System.Windows.Forms.DateTimePicker DtpFechaEgreso;
     }
 }

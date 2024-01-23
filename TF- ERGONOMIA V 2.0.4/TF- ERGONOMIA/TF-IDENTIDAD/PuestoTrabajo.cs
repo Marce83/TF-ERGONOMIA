@@ -21,9 +21,11 @@ namespace TF.ENTITIES
         public int IdEmpleado { get; set; }
 
 
+        //OTROS
 
 
+        public string NombreEmpleado { get; set; }
 
-
+        public DateTime FechaIngreso2 { get; set; }
     }
 }

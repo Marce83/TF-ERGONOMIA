@@ -697,6 +697,7 @@
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEstadisticas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEstadisticas";
             this.Load += new System.EventHandler(this.frmEstadisticas_Load);
             this.panel4.ResumeLayout(false);

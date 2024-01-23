@@ -28,5 +28,11 @@ namespace TF.WIN
             FrmAsociacionPuesto oFrmAsociacionPuesto = new FrmAsociacionPuesto();
             oFrmAsociacionPuesto.Show();
         }
+
+        private void btnempleadosasociados_Click(object sender, EventArgs e)
+        {
+            FrmVistaPuesto oFrmVistaPuesto = new FrmVistaPuesto();
+            oFrmVistaPuesto.Show();
+        }
     }
 }

@@ -17,11 +17,12 @@ namespace TF.WIN
         public FrmAsociacionPuesto()
         {
             InitializeComponent();
-
+            DtpFechaIngreso.Value = DateTime.Now;
+            DtpFechaEgreso.Value = DateTime.Now;
         }
 
-        DateTime FechaEgreso = DateTime.Now;
-        DateTime FechaIngreso = DateTime.Now;
+        
+
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
@@ -82,23 +83,29 @@ namespace TF.WIN
 
                 DataTable dt4000 = oPuestoTrabajoBC.GetAllSiNoBC(oPuestoTrabajo);
 
-                if (dt4000.Rows.Count > 0)
+                // Verificar si existe un movimiento
+                if (dt4000.Rows.Count > 0 && Convert.ToInt32(dt4000.Rows[0]["ExisteMovimiento"]) > 0)
                 {
-                    oPuestoTrabajo.FechaEgreso = FechaEgreso;
-                    var res = oPuestoTrabajoBC.UpdatePuestoEmpleadoBC(oPuestoTrabajo);
+                    // Existe un movimiento, realizar actualización
+                    oPuestoTrabajo.FechaEgreso = DateTime.Parse(DtpFechaEgreso.Text);  
+                    oPuestoTrabajo.FechaIngreso = DateTime.Parse(DtpFechaIngreso.Text);
+                    var res = oPuestoTrabajoBC.InsertPuestoEmpleadoBC(oPuestoTrabajo);
+                    oPuestoTrabajoBC.UpdatePuestoEmpleadoBC(oPuestoTrabajo);
                     MessageBox.Show("Asociación Actualizada");
                 }
-
                 else
                 {
-                    oPuestoTrabajo.IdEmpleado = int.Parse(txtIdEmpleado.Text);
-                    oPuestoTrabajo.IdPuesto = int.Parse(txtIdPuestoTrabajo.Text);
-                    oPuestoTrabajo.FechaIngreso = FechaIngreso;
+                    // No existe un movimiento, realizar inserción
+                    oPuestoTrabajo.FechaIngreso = DateTime.Parse(DtpFechaIngreso.Text);
                     var res = oPuestoTrabajoBC.InsertPuestoEmpleadoBC(oPuestoTrabajo);
                     MessageBox.Show("Asociación Realizada con éxito");
                 }
             }
-            catch { }
-    }
+            catch (Exception ex)
+            {
+                // Manejar excepciones de manera apropiada
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
     }
 }
