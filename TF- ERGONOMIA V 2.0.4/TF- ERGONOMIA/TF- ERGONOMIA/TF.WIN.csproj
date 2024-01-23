@@ -68,6 +68,18 @@
     <Compile Include="frmBuscarEmpresa.Designer.cs">
       <DependentUpon>frmBuscarEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarEmpleado.Designer.cs">
+      <DependentUpon>frmConsultarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarEmpresa.Designer.cs">
+      <DependentUpon>frmConsultarEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEditUsrAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpresa.resx">
       <DependentUpon>frmBuscarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarEmpleado.resx">
+      <DependentUpon>frmConsultarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarEmpresa.resx">
+      <DependentUpon>frmConsultarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditUsrAdmin.resx">
       <DependentUpon>frmEditUsrAdmin.cs</DependentUpon>

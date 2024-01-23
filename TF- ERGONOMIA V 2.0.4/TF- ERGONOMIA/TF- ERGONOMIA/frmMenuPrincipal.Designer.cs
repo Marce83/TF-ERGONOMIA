@@ -239,7 +239,7 @@ namespace TF.WIN
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 53);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(240, 909);
+            this.MenuVertical.Size = new System.Drawing.Size(240, 867);
             this.MenuVertical.TabIndex = 1;
             // 
             // btnPuesto
@@ -253,8 +253,8 @@ namespace TF.WIN
             this.btnPuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnPuesto.Image = ((System.Drawing.Image)(resources.GetObject("btnPuesto.Image")));
             this.btnPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPuesto.Location = new System.Drawing.Point(0, 156);
-            this.btnPuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPuesto.Location = new System.Drawing.Point(0, 294);
+            this.btnPuesto.Margin = new System.Windows.Forms.Padding(4);
             this.btnPuesto.Name = "btnPuesto";
             this.btnPuesto.Size = new System.Drawing.Size(295, 86);
             this.btnPuesto.TabIndex = 16;
@@ -266,7 +266,7 @@ namespace TF.WIN
             // 
             this.linkPerfil.AutoSize = true;
             this.linkPerfil.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.linkPerfil.Location = new System.Drawing.Point(150, 564);
+            this.linkPerfil.Location = new System.Drawing.Point(150, 627);
             this.linkPerfil.Name = "linkPerfil";
             this.linkPerfil.Size = new System.Drawing.Size(84, 13);
             this.linkPerfil.TabIndex = 15;
@@ -286,7 +286,7 @@ namespace TF.WIN
             this.cerrarsesion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cerrarsesion.Image = ((System.Drawing.Image)(resources.GetObject("cerrarsesion.Image")));
             this.cerrarsesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cerrarsesion.Location = new System.Drawing.Point(0, 604);
+            this.cerrarsesion.Location = new System.Drawing.Point(0, 643);
             this.cerrarsesion.Name = "cerrarsesion";
             this.cerrarsesion.Size = new System.Drawing.Size(290, 70);
             this.cerrarsesion.TabIndex = 14;
@@ -305,7 +305,7 @@ namespace TF.WIN
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-2, 2);
+            this.button2.Location = new System.Drawing.Point(-1, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(285, 70);
             this.button2.TabIndex = 2;
@@ -325,7 +325,7 @@ namespace TF.WIN
             this.btnEstadisticas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEstadisticas.Image = ((System.Drawing.Image)(resources.GetObject("btnEstadisticas.Image")));
             this.btnEstadisticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstadisticas.Location = new System.Drawing.Point(5, 456);
+            this.btnEstadisticas.Location = new System.Drawing.Point(0, 541);
             this.btnEstadisticas.Name = "btnEstadisticas";
             this.btnEstadisticas.Size = new System.Drawing.Size(290, 70);
             this.btnEstadisticas.TabIndex = 13;
@@ -344,7 +344,7 @@ namespace TF.WIN
             this.btnInformes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnInformes.Image = ((System.Drawing.Image)(resources.GetObject("btnInformes.Image")));
             this.btnInformes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInformes.Location = new System.Drawing.Point(3, 380);
+            this.btnInformes.Location = new System.Drawing.Point(0, 454);
             this.btnInformes.Name = "btnInformes";
             this.btnInformes.Size = new System.Drawing.Size(290, 70);
             this.btnInformes.TabIndex = 11;
@@ -363,7 +363,7 @@ namespace TF.WIN
             this.btnMetodo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnMetodo.Image = ((System.Drawing.Image)(resources.GetObject("btnMetodo.Image")));
             this.btnMetodo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMetodo.Location = new System.Drawing.Point(3, 304);
+            this.btnMetodo.Location = new System.Drawing.Point(0, 378);
             this.btnMetodo.Name = "btnMetodo";
             this.btnMetodo.Size = new System.Drawing.Size(290, 70);
             this.btnMetodo.TabIndex = 9;
@@ -382,7 +382,7 @@ namespace TF.WIN
             this.btnEmpleados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleados.Location = new System.Drawing.Point(3, 237);
+            this.btnEmpleados.Location = new System.Drawing.Point(5, 191);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(290, 70);
             this.btnEmpleados.TabIndex = 7;
@@ -417,14 +417,14 @@ namespace TF.WIN
             this.PanelConector.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelConector.Location = new System.Drawing.Point(240, 53);
             this.PanelConector.Name = "PanelConector";
-            this.PanelConector.Size = new System.Drawing.Size(1380, 909);
+            this.PanelConector.Size = new System.Drawing.Size(1380, 867);
             this.PanelConector.TabIndex = 2;
             // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1620, 962);
+            this.ClientSize = new System.Drawing.Size(1620, 920);
             this.Controls.Add(this.PanelConector);
             this.Controls.Add(this.MenuVertical);
             this.Controls.Add(this.BarraTitulo);

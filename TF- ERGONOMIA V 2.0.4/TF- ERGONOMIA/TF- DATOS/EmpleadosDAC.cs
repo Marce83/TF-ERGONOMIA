@@ -45,12 +45,13 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@Apellido", SqlDbType.NVarChar).Value = oEmpl.Apellido;
                 sqlCom.Parameters.Add("@DNI", SqlDbType.NVarChar).Value = oEmpl.DNI;
                 sqlCom.Parameters.Add("@Genero", SqlDbType.NVarChar).Value = oEmpl.Genero;
-                sqlCom.Parameters.Add("@PuestoDeTrabajo", SqlDbType.NVarChar).Value = oEmpl.PuestoDeTrabajo;
+                sqlCom.Parameters.Add("@AreaEmpresa", SqlDbType.NVarChar).Value = oEmpl.AreaEmpresa;
                 sqlCom.Parameters.Add("@Peso", SqlDbType.Float).Value = oEmpl.Peso;
                 sqlCom.Parameters.Add("@Altura", SqlDbType.Float).Value = oEmpl.Altura;
                 sqlCom.Parameters.Add("@FechaNacimiento", SqlDbType.Date).Value = oEmpl.FechaNacimiento;
                 sqlCom.Parameters.Add("@FechaIngreso", SqlDbType.Date).Value = oEmpl.FechaIngreso;
                 sqlCom.Parameters.Add("@FechaEgreso", SqlDbType.Date).Value = DBNull.Value;
+                sqlCom.Parameters.Add("@Estado", SqlDbType.NVarChar).Value = 'A';
                 sqlCom.Parameters.Add("@IdEmpresa", SqlDbType.Int).Value = oEmpl.IdEmpresa;
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
@@ -141,7 +142,7 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@Apellido", SqlDbType.NVarChar).Value = oEmpl.Apellido;
                 sqlCom.Parameters.Add("@DNI", SqlDbType.NVarChar).Value = oEmpl.DNI;
                 sqlCom.Parameters.Add("@Genero", SqlDbType.NVarChar).Value = oEmpl.Genero;
-                sqlCom.Parameters.Add("@PuestoDeTrabajo", SqlDbType.NVarChar).Value = oEmpl.PuestoDeTrabajo;
+                sqlCom.Parameters.Add("@AreaEmpresa", SqlDbType.NVarChar).Value = oEmpl.AreaEmpresa;
                 sqlCom.Parameters.Add("@Peso", SqlDbType.Float).Value = oEmpl.Peso;
                 sqlCom.Parameters.Add("@Altura", SqlDbType.Float).Value = oEmpl.Altura;
                 sqlCom.Parameters.Add("@FechaNacimiento", SqlDbType.Date).Value = oEmpl.FechaNacimiento;
@@ -173,7 +174,7 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@Apellido", SqlDbType.NVarChar).Value = oEmpl.Apellido;
                 sqlCom.Parameters.Add("@DNI", SqlDbType.NVarChar).Value = oEmpl.DNI;
                 sqlCom.Parameters.Add("@Genero", SqlDbType.NVarChar).Value = oEmpl.Genero;
-                sqlCom.Parameters.Add("@PuestoDeTrabajo", SqlDbType.NVarChar).Value = oEmpl.PuestoDeTrabajo;
+                sqlCom.Parameters.Add("@AreaEmpresa", SqlDbType.NVarChar).Value = oEmpl.AreaEmpresa;
                 sqlCom.Parameters.Add("@Peso", SqlDbType.Float).Value = oEmpl.Peso;
                 sqlCom.Parameters.Add("@Altura", SqlDbType.Float).Value = oEmpl.Altura;
                 sqlCom.Parameters.Add("@FechaNacimiento", SqlDbType.Date).Value = oEmpl.FechaNacimiento;

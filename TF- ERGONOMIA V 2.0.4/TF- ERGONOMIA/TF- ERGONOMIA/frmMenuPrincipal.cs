@@ -80,6 +80,25 @@ namespace TF.WIN
             fh.Show();
         }
 
+        //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        {
+            Form Formulario;
+            Formulario = PanelConector.Controls.OfType<MiForm>().FirstOrDefault();
+            if (Formulario == null)
+            {
+                Formulario = new MiForm();
+                Formulario.TopLevel = false;
+                PanelConector.Controls.Add(Formulario);
+                PanelConector.Tag = Formulario;
+                Formulario.Show();
+            }
+            else
+            { 
+                Formulario.BringToFront();
+            }
+        }
+
         private void btnempresa_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new frmEmpresa());

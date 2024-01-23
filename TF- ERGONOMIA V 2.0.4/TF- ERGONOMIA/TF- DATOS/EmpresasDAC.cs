@@ -51,6 +51,9 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@Telefono", SqlDbType.NVarChar).Value = oemp.Telefono;
                 sqlCom.Parameters.Add("@Correo", SqlDbType.NVarChar).Value = oemp.Correo;
                 sqlCom.Parameters.Add("@Web", SqlDbType.NVarChar).Value = oemp.Web;
+                sqlCom.Parameters.Add("@FechaIngreso", SqlDbType.Date).Value = oemp.FechaIngreso;
+                sqlCom.Parameters.Add("@FechaEgreso", SqlDbType.Date).Value = DBNull.Value;
+                sqlCom.Parameters.Add("@Estado", SqlDbType.NVarChar).Value = 'A';
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();
@@ -73,6 +76,31 @@ namespace TF.DAC
                 SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
                 sqlCom.CommandType = CommandType.StoredProcedure;
                 sqlCom.Parameters.Add("@CUIT", SqlDbType.NVarChar).Value = oemp.CUIT;
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("No existe la Empresa seleccionada: " + ex.Message);
+                throw;
+            }
+        }
+
+        public DataTable ConsultarNombreEmpresa(Empresas oemp)
+        {
+            try
+            {
+                string sqlSentencia = "SP_Nombre_Empresa";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCom.CommandType = CommandType.StoredProcedure;
+                sqlCom.Parameters.Add("@Nombre", SqlDbType.NVarChar).Value = oemp.Nombre;
                 sqlCnn.Open();
                 DataSet ds = new DataSet();
                 SqlDataAdapter DA = new SqlDataAdapter();
@@ -167,6 +195,8 @@ namespace TF.DAC
                 SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
                 sqlCom.CommandType = CommandType.StoredProcedure;
                 sqlCom.Parameters.Add("@CUIT", SqlDbType.NVarChar).Value = oemp.CUIT;
+                sqlCom.Parameters.Add("@Estado", SqlDbType.NVarChar).Value = 'B';
+                sqlCom.Parameters.Add("@FechaEgreso", SqlDbType.Date).Value = DateTime.Now;
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();

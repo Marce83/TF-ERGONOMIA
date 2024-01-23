@@ -37,13 +37,14 @@ namespace TF.WIN
             {
                 //long CUIT = Convert.ToInt32(dgvResultado.CurrentRow.Cells[0].Value);
                 long CUIT = Convert.ToInt64(dgvResultado.Rows[0].Cells[0].Value);
+                //string nombreEmpresa = dgvResultado.Rows[0].Cells[1].Value.ToString();
                 EmpresasBC oEmpresaBC = new EmpresasBC();
                 EmpresaSeleccionada = oEmpresaBC.ObtenerEmpresa(CUIT);
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Aun no ha seleccionado Ningun Cliente");
+                MessageBox.Show("No existe empresa seleccionada");
             }
         }
 

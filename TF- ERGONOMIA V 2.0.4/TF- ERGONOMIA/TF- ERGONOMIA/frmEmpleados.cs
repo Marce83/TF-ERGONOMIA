@@ -50,7 +50,7 @@ namespace TF.WIN
                         oBe.FechaIngreso = Convert.ToDateTime(dtpIngreso.Text);
                         oBe.Peso = float.Parse(txtPeso.Text);
                         oBe.Altura = float.Parse(txtAltura.Text);
-                        oBe.PuestoDeTrabajo = cbopuestotrabajo.Text;
+                        oBe.AreaEmpresa = cboAreaempresa.Text;
                         long CUIL = Convert.ToInt64(txtCUITEncontrado.Text);
                         var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIL);
                         oBe.IdEmpresa = Convert.ToInt32(BuscarId);
@@ -73,16 +73,6 @@ namespace TF.WIN
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            Empleados oempl = new Empleados();
-            oempl.DNI = txtcuitconsulta.Text;
-
-            EmpleadosBC oEmpleadosBC = new EmpleadosBC();
-            DataTable dt = oEmpleadosBC.ConsultarEmpleadosDNI(oempl);
-
-            dgvEmpleados.DataSource = null;
-            dgvEmpleados.DataSource = dt;
-            //dgvempleados.Columns[0].Visible = false;
-            Listar();
         }
 
         private void Listar()
@@ -91,8 +81,8 @@ namespace TF.WIN
             {
                 EmpleadosBC oEmpleadosBC = new EmpleadosBC();
                 DataTable dt = oEmpleadosBC.EmpleadosBC_GetAll();
-                dgvEmpleados.DataSource = null;
-                dgvEmpleados.DataSource = dt;
+                //dgvEmpleados.DataSource = null;
+                //dgvEmpleados.DataSource = dt;
             }
             catch (Exception ex)
             {
@@ -109,7 +99,7 @@ namespace TF.WIN
             dtpIngreso.Text = string.Empty;
             dtpIngreso.Enabled = true;
             cboGenero.SelectedIndex = 0;
-            cbopuestotrabajo.SelectedIndex = 0;
+            //cbopuestotrabajo.SelectedIndex = 0;
             txtPeso.Text = string.Empty;
             txtAltura.Text = string.Empty;
             txtCUITEncontrado.Text = string.Empty;
@@ -118,17 +108,6 @@ namespace TF.WIN
         }
         private void dgvempleados_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            txtNombre.Text = dgvEmpleados.CurrentRow.Cells[0].Value.ToString();
-            txtApellido.Text = dgvEmpleados.CurrentRow.Cells[1].Value.ToString();
-            txtDNI.Text = dgvEmpleados.CurrentRow.Cells[2].Value.ToString();
-            txtDNI.ReadOnly = true;
-            cboGenero.Text = dgvEmpleados.CurrentRow.Cells[3].Value.ToString();
-            txtPeso.Text = dgvEmpleados.CurrentRow.Cells[4].Value.ToString();
-            cbopuestotrabajo.Text = dgvEmpleados.CurrentRow.Cells[5].Value.ToString();
-            txtAltura.Text = dgvEmpleados.CurrentRow.Cells[6].Value.ToString();
-            dtpNacimiento.Text = dgvEmpleados.CurrentRow.Cells[7].Value.ToString();
-            dtpIngreso.Text = dgvEmpleados.CurrentRow.Cells[8].Value.ToString();
-            dtpIngreso.Enabled = false;
         }
 
         private void Empleadoss_Load(object sender, EventArgs e)
@@ -149,38 +128,6 @@ namespace TF.WIN
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            EmpleadosBC oEmpleadosBC = new EmpleadosBC();
-            Empleados oBe = new Empleados();
-            DialogResult resp = MessageBox.Show("¿Está seguro que desea modificar este Empleado?", "Modificar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (resp == DialogResult.Yes)
-            {
-                if (txtDNI.Text != string.Empty)
-                {
-                    try
-                    {
-                        oBe.Nombre = txtNombre.Text;
-                        oBe.Apellido = txtApellido.Text;
-                        oBe.DNI = txtDNI.Text;
-                        oBe.Genero = cboGenero.Text;
-                        oBe.PuestoDeTrabajo = cbopuestotrabajo.Text;
-                        oBe.Peso = float.Parse(txtPeso.Text);
-                        oBe.Altura = float.Parse(txtAltura.Text);
-                        oBe.FechaNacimiento = Convert.ToDateTime(dtpNacimiento.Text);
-
-                        var res = oEmpleadosBC.EmpleadosUpdate(oBe);
-                        MessageBox.Show("Empleado modificado exitosamente");
-                        Listar();
-                        Limpiar();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                }
-                else MessageBox.Show("Verifique los Datos a modificar");
-            }
-            Listar();
-            Limpiar();
         }
 
         private void RolesCargo()
@@ -188,54 +135,21 @@ namespace TF.WIN
             if (UserLoginCache.Cargo == Cargos.Recepcionista)
             {
                 btnCargar.Enabled = false;
-                btnModificar.Enabled = false;
-                btnEliminar.Enabled = false;
+                //btnModificar.Enabled = false;
+                //btnEliminar.Enabled = false;
             }
-            if (UserLoginCache.Cargo == Cargos.Profesional)
-            {
-                btnEliminar.Enabled = false;
-            }
-            if (UserLoginCache.Cargo == Cargos.Contador)
-            {
-                btnEliminar.Enabled = false;
-            }
+            //if (UserLoginCache.Cargo == Cargos.Profesional)
+            //{
+            //    btnEliminar.Enabled = false;
+            //}
+            //if (UserLoginCache.Cargo == Cargos.Contador)
+            //{
+            //    btnEliminar.Enabled = false;
+            //}
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            EmpleadosBC oEmpleadosBC = new EmpleadosBC();
-            Empleados oBe = new Empleados();
-            DialogResult resp = MessageBox.Show("¿Está seguro que desea dar de baja al Empleado?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (resp == DialogResult.Yes)
-            {
-                if (txtDNI.Text != string.Empty)
-                {
-                    try
-                    {
-                        oBe.Nombre = txtNombre.Text;
-                        oBe.Apellido = txtApellido.Text;
-                        oBe.DNI = txtDNI.Text;
-                        oBe.Genero = cboGenero.Text;
-                        oBe.PuestoDeTrabajo = cbopuestotrabajo.Text;
-                        oBe.Peso = float.Parse(txtPeso.Text);
-                        oBe.Altura = float.Parse(txtAltura.Text);
-                        oBe.FechaNacimiento = Convert.ToDateTime(dtpNacimiento.Text);
-                        oBe.FechaIngreso = Convert.ToDateTime(dtpIngreso.Text);
-
-                        var res = oEmpleadosBC.BajaEmpleado(oBe);
-                        MessageBox.Show("Empleado dado de baja exitosamente");
-                        Listar();
-                        Limpiar();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                }
-                else MessageBox.Show("Verifique los Datos a eliminar");
-            }
-            Listar();
-            Limpiar();
         }
     }
 }
