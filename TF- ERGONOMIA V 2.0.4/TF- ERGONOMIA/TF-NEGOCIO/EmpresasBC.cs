@@ -31,6 +31,13 @@ namespace TF.BC
             return dt;
         }
 
+        public DataTable ConsultarNombreEmpresa(Empresas oemp)
+        {
+            EmpresasDAC oempresaDAC = new EmpresasDAC();
+            DataTable dt = oempresaDAC.ConsultarNombreEmpresa(oemp);
+            return dt;
+        }
+
         public int Insertempresa(Empresas oemp)
         {
             EmpresasDAC oempresaDAC = new EmpresasDAC();

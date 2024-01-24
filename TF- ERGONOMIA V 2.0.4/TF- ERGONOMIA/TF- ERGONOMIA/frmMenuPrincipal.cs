@@ -67,50 +67,78 @@ namespace TF.WIN
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void AbrirFormHija(object formHija)
+        //private void AbrirFormHija(object formHija)
+        //{
+        //    if(this.PanelConector.Controls.Count > 0) 
+        //    {
+        //        this.PanelConector.Controls.RemoveAt(0);
+        //    }
+        //    Form fh = formHija as Form;
+        //    fh.TopLevel = false;
+        //    fh.Dock = DockStyle.Fill;
+        //    this.PanelConector.Controls.Add(fh);
+        //    fh.Show();
+        //}
+
+        //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
-            if(this.PanelConector.Controls.Count > 0) 
+            Form Formulario;
+            Formulario = PanelConector.Controls.OfType<MiForm>().FirstOrDefault();
+            if (Formulario == null)
             {
-                this.PanelConector.Controls.RemoveAt(0);
+                Formulario = new MiForm();
+                Formulario.TopLevel = false;
+                Formulario.Dock = DockStyle.Fill;
+                PanelConector.Controls.Add(Formulario);
+                PanelConector.Tag = Formulario;
+                Formulario.Show();
+                Formulario.BringToFront();
             }
-            Form fh = formHija as Form;
-            fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
-            this.PanelConector.Controls.Add(fh);
-            fh.Show();
+            else
+            { 
+                Formulario.BringToFront();
+            }
         }
 
         private void btnempresa_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new frmEmpresa());
+            //AbrirFormHija(new frmEmpresa());
+            AbrirFormulario<frmEmpresa>();
         }
 
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new frmEmpleados());
+            //AbrirFormHija(new frmEmpleados());
+            AbrirFormulario<frmEmpleados>();
         }
 
         private void btnMetodo_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new Metodos());
+            //AbrirFormHija(new Metodos());
+            AbrirFormulario<Metodos>();
         }
 
         private void btnInformes_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new frmInformes());
+            //AbrirFormHija(new frmInformes());
+            AbrirFormulario<frmInformes>();
         }
 
         private void btnEstadisticas_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new frmEstadisticas());
+            //AbrirFormHija(new frmEstadisticas());
+            AbrirFormulario<frmEstadisticas>();
         }
 
         private void linkPerfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if(UserLoginCache.Cargo == "Administrador")
-                AbrirFormHija(new frmEditUsrAdmin());
+                //AbrirFormHija(new frmEditUsrAdmin());
+                AbrirFormulario<frmEditUsrAdmin>();
             else
-                AbrirFormHija(new frmPerfilUsuarios());
+                //AbrirFormHija(new frmPerfilUsuarios());
+                AbrirFormulario<frmPerfilUsuarios>();
         }
 
         private void btnMetodoRula_Click(object sender, EventArgs e)
@@ -222,7 +250,8 @@ namespace TF.WIN
 
         private void btnPuesto_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new FrmPuestoTrabajo());
+            //AbrirFormHija(new FrmPuestoTrabajo());
+            AbrirFormulario<FrmPuestoTrabajo>();
         }
     }
 }

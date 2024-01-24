@@ -19,5 +19,8 @@ namespace TF.ENTITIES
         public string Telefono { get; set; }
         public string Correo { get; set; }
         public string Web { get; set; }
+        public DateTime FechaIngreso { get; set; }
+        public DateTime FechaEgreso { get; set; }
+        public string Estado { get; set; }
     }
 }
