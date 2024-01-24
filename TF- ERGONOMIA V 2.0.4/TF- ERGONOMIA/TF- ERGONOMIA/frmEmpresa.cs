@@ -1129,9 +1129,13 @@ namespace TF.WIN
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             frmConsultarEmpresa ofrmConsultarEmpresa = new frmConsultarEmpresa();
+            AddOwnedForm(ofrmConsultarEmpresa);
             ofrmConsultarEmpresa.TopLevel = false;
-            ofrmConsultarEmpresa.FormBorderStyle = FormBorderStyle.None;
+            //ofrmConsultarEmpresa.FormBorderStyle = FormBorderStyle.None;
             ofrmConsultarEmpresa.Dock = DockStyle.Fill;
+            this.Controls.Add(ofrmConsultarEmpresa);
+            this.Tag = ofrmConsultarEmpresa;
+            ofrmConsultarEmpresa.BringToFront();
             ofrmConsultarEmpresa.Show();
         }
     }

@@ -45,8 +45,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.cboAreaempresa = new MaterialSkin.Controls.MaterialComboBox();
-            this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.dtpIngreso = new System.Windows.Forms.DateTimePicker();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.btnBuscarCUIT = new System.Windows.Forms.Button();
@@ -72,7 +70,7 @@
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(116, 35);
             this.btnCargar.TabIndex = 0;
-            this.btnCargar.Text = "Nuevo";
+            this.btnCargar.Text = "Alta";
             this.btnCargar.UseVisualStyleBackColor = false;
             this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
@@ -330,8 +328,6 @@
             // 
             this.groupBox1.Controls.Add(this.btnConsultar);
             this.groupBox1.Controls.Add(this.btnLimpiar);
-            this.groupBox1.Controls.Add(this.cboAreaempresa);
-            this.groupBox1.Controls.Add(this.materialLabel9);
             this.groupBox1.Controls.Add(this.dtpIngreso);
             this.groupBox1.Controls.Add(this.btnCargar);
             this.groupBox1.Controls.Add(this.materialLabel7);
@@ -373,6 +369,7 @@
             this.btnConsultar.TabIndex = 78;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // btnLimpiar
             // 
@@ -390,56 +387,6 @@
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // cboAreaempresa
-            // 
-            this.cboAreaempresa.AutoResize = false;
-            this.cboAreaempresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboAreaempresa.Depth = 0;
-            this.cboAreaempresa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboAreaempresa.DropDownHeight = 174;
-            this.cboAreaempresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboAreaempresa.DropDownWidth = 121;
-            this.cboAreaempresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboAreaempresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboAreaempresa.FormattingEnabled = true;
-            this.cboAreaempresa.IntegralHeight = false;
-            this.cboAreaempresa.ItemHeight = 43;
-            this.cboAreaempresa.Items.AddRange(new object[] {
-            "Seleccione",
-            "Dirección General",
-            "Administración",
-            "Recursos Humanos",
-            "Comercialización",
-            "Producción",
-            "Logística",
-            "Finanzas y Contabilidad",
-            "Marketing",
-            "Informática",
-            "Mantenimiento",
-            "Legales"});
-            this.cboAreaempresa.Location = new System.Drawing.Point(520, 135);
-            this.cboAreaempresa.Margin = new System.Windows.Forms.Padding(2);
-            this.cboAreaempresa.MaxDropDownItems = 4;
-            this.cboAreaempresa.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboAreaempresa.Name = "cboAreaempresa";
-            this.cboAreaempresa.Size = new System.Drawing.Size(206, 49);
-            this.cboAreaempresa.StartIndex = 0;
-            this.cboAreaempresa.TabIndex = 77;
-            // 
-            // materialLabel9
-            // 
-            this.materialLabel9.AutoSize = true;
-            this.materialLabel9.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.materialLabel9.Depth = 0;
-            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(384, 144);
-            this.materialLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel9.Name = "materialLabel9";
-            this.materialLabel9.Size = new System.Drawing.Size(136, 19);
-            this.materialLabel9.TabIndex = 76;
-            this.materialLabel9.Text = "Área de la empresa";
             // 
             // dtpIngreso
             // 
@@ -625,8 +572,6 @@
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.DateTimePicker dtpIngreso;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
-        private MaterialSkin.Controls.MaterialComboBox cboAreaempresa;
-        private MaterialSkin.Controls.MaterialLabel materialLabel9;
         private System.Windows.Forms.Button btnConsultar;
         private MaterialSkin.Controls.MaterialTextBox2 txtCUITEncontrado;
     }

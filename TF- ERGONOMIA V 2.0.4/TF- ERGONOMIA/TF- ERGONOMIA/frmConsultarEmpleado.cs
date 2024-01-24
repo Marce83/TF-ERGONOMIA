@@ -54,7 +54,7 @@ namespace TF.WIN
                     oBe.Apellido = txtApellido.Text;
                     oBe.DNI = dgvEmpleados.CurrentRow.Cells[2].Value.ToString();
                     oBe.Genero = cboGenero.Text;
-                    oBe.AreaEmpresa = cboAreaempresa.Text;
+                    //oBe.AreaEmpresa = cboAreaempresa.Text;
                     oBe.Peso = float.Parse(txtPeso.Text);
                     oBe.Altura = float.Parse(txtAltura.Text);
                     oBe.FechaNacimiento = Convert.ToDateTime(dtpNacimiento.Text);
@@ -85,16 +85,7 @@ namespace TF.WIN
             {
                 try
                 {
-                    oBe.Nombre = txtNombre.Text;
-                    oBe.Apellido = txtApellido.Text;
                     oBe.DNI = dgvEmpleados.CurrentRow.Cells[2].Value.ToString();
-                    oBe.Genero = cboGenero.Text;
-                    oBe.AreaEmpresa = cboAreaempresa.Text;
-                    oBe.Peso = float.Parse(txtPeso.Text);
-                    oBe.Altura = float.Parse(txtAltura.Text);
-                    oBe.FechaNacimiento = Convert.ToDateTime(dtpNacimiento.Text);
-                    oBe.FechaIngreso = Convert.ToDateTime(dtpIngreso.Text);
-
                     var res = oEmpleadosBC.BajaEmpleado(oBe);
                     MessageBox.Show("Empleado dado de baja exitosamente");
                     Listar();
@@ -104,10 +95,6 @@ namespace TF.WIN
                 {
                     MessageBox.Show(ex.Message);
                 }
-
-                //if (txtDNI.Text != string.Empty)
-                //{}
-                //else MessageBox.Show("Verifique los Datos a eliminar");
             }
             Listar();
             Limpiar();
@@ -152,11 +139,10 @@ namespace TF.WIN
             //txtDNI.ReadOnly = true;
             cboGenero.Text = dgvEmpleados.CurrentRow.Cells[3].Value.ToString();
             txtPeso.Text = dgvEmpleados.CurrentRow.Cells[4].Value.ToString();
-            cboAreaempresa.Text = dgvEmpleados.CurrentRow.Cells[5].Value.ToString();
-            txtAltura.Text = dgvEmpleados.CurrentRow.Cells[6].Value.ToString();
-            dtpNacimiento.Text = dgvEmpleados.CurrentRow.Cells[7].Value.ToString();
-            dtpIngreso.Text = dgvEmpleados.CurrentRow.Cells[8].Value.ToString();
-            dtpIngreso.Enabled = false;
+            txtAltura.Text = dgvEmpleados.CurrentRow.Cells[5].Value.ToString();
+            dtpNacimiento.Text = dgvEmpleados.CurrentRow.Cells[6].Value.ToString();
+            dtpIngreso.Text = dgvEmpleados.CurrentRow.Cells[7].Value.ToString();
+            //dtpIngreso.Enabled = false;
         }
 
         private void RolesCargo()
@@ -175,6 +161,11 @@ namespace TF.WIN
             {
                 btnBaja.Enabled = false;
             }
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

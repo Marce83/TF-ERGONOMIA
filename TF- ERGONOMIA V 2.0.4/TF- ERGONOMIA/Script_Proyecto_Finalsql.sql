@@ -46,7 +46,7 @@ Nombre NVARCHAR(20),
 Apellido NVARCHAR(20),
 DNI nvarchar(8),
 Genero NVARCHAR(20),
-AreaEmpresa NVARCHAR(20),
+--AreaEmpresa NVARCHAR(20),
 Peso FLOAT,
 Altura FLOAT,
 FechaNacimiento DATE,
@@ -150,14 +150,18 @@ BEGIN
 END
 GO
 
-CREATE PROCEDURE SP_Empresas_Delete
-	@CUIT nvarchar(11)
+CREATE OR ALTER PROCEDURE SP_Empresas_Delete
+	@CUIT nvarchar(11),
+	@Estado NVARCHAR(1),
+	@FechaEgreso DATE
 AS
 BEGIN
 
 	SET NOCOUNT ON;
-
-	DELETE FROM Empresas WHERE CUIT = @CUIT
+	--DELETE FROM Empresas WHERE CUIT = @CUIT
+	UPDATE dbo.Empresas
+	SET Estado = @Estado, FechaEgreso = @FechaEgreso
+	WHERE CUIT = @CUIT
 END
 GO
 
@@ -210,8 +214,10 @@ GO
 CREATE OR ALTER PROCEDURE SP_Empleados_GetAll
 AS
 BEGIN
-	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Direccion, Telefono, Correo, Web
-	FROM Empresas
+	SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
+	FROM Empleados
+	WHERE FechaEgreso IS NULL
+	AND Estado = 'A'
 END
 GO
 
@@ -223,23 +229,24 @@ CREATE OR ALTER PROCEDURE SP_Empleados_Insert
 @Apellido NVARCHAR(20),
 @DNI nvarchar(8),
 @Genero NVARCHAR(20),
-@AreaEmpresa NVARCHAR(20),
+--@AreaEmpresa NVARCHAR(20),
 @Peso FLOAT,
 @Altura FLOAT,
 @FechaNacimiento DATE,
 @FechaIngreso DATE,
 @FechaEgreso DATE,
+@Estado NVARCHAR(1),
 @IdEmpresa INT
 AS
 BEGIN
-	insert into Empleados (Nombre, Apellido, DNI,Genero,AreaEmpresa,Peso,Altura,FechaNacimiento, FechaIngreso, FechaEgreso,IdEmpresa) 
-	VALUES(@Nombre,@Apellido,@DNI,@Genero,@AreaEmpresa,@Peso,@Altura,@FechaNacimiento,@FechaIngreso,@FechaEgreso,@IdEmpresa)
+	insert into Empleados (Nombre, Apellido, DNI,Genero,Peso,Altura,FechaNacimiento, FechaIngreso, FechaEgreso, Estado, IdEmpresa) 
+	VALUES(@Nombre,@Apellido,@DNI,@Genero,@Peso,@Altura,@FechaNacimiento,@FechaIngreso,@FechaEgreso, @Estado, @IdEmpresa)
 END
-GO
+GO	
 
 use ProyectoFinal
 go
-CREATE PROCEDURE SP_Empleados_DNI
+CREATE OR ALTER PROCEDURE SP_Empleados_DNI
 @DNI nvarchar(8)
 AS
 BEGIN
@@ -250,12 +257,12 @@ GO
 
 use ProyectoFinal
 go
-CREATE PROCEDURE SP_Empleados_Update
+CREATE OR ALTER PROCEDURE SP_Empleados_Update
 @Nombre nvarchar(20),
 @Apellido nvarchar(20),
 @DNI nvarchar(8),
 @Genero nvarchar(20),
-@PuestoDeTrabajo nvarchar(20),
+--@PuestoDeTrabajo nvarchar(20),
 @Peso float,
 @Altura float,
 @FechaNacimiento DATE,
@@ -263,8 +270,23 @@ CREATE PROCEDURE SP_Empleados_Update
 @FechaEgreso DATE
 AS
 BEGIN
-	update Empleados set Nombre=@Nombre, Apellido=@Apellido, DNI=@DNI ,Genero=@Genero, PuestoDeTrabajo=@PuestoDeTrabajo, Peso=@Peso, Altura=@Altura, FechaNacimiento=@FechaNacimiento, FechaIngreso = @FechaIngreso, FechaEgreso = @FechaEgreso
+	update Empleados set Nombre=@Nombre, Apellido=@Apellido, DNI=@DNI ,Genero=@Genero, Peso=@Peso, Altura=@Altura, FechaNacimiento=@FechaNacimiento, FechaIngreso = @FechaIngreso, FechaEgreso = @FechaEgreso
 	where DNI=@DNI
+END
+GO
+
+CREATE OR ALTER PROCEDURE SP_Empleado_Delete
+	@DNI nvarchar(8),
+	@Estado NVARCHAR(1),
+	@FechaEgreso DATE
+AS
+BEGIN
+
+	SET NOCOUNT ON;
+	--DELETE FROM Empresas WHERE CUIT = @CUIT
+	UPDATE dbo.Empleados
+	SET Estado = @Estado, FechaEgreso = @FechaEgreso
+	WHERE DNI = @DNI
 END
 GO
 
@@ -320,7 +342,6 @@ EmpleadoRula nvarchar(30),
 EmpresaRula nvarchar(30)
 )
 GO	
-
 
 use ProyectoFinal
 go

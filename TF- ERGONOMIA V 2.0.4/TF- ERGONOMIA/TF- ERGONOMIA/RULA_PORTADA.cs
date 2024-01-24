@@ -48,17 +48,17 @@ namespace TF.WIN
 
         private void btnBuscarpuesto_Click(object sender, EventArgs e)
         {
-            Empleados oempl = new Empleados();
-            oempl.DNI = txtDniEmpleado.Text;
+            //Empleados oempl = new Empleados();
+            //oempl.DNI = txtDniEmpleado.Text;
 
-            EmpleadosBC oEmpleadosBC = new EmpleadosBC();
-            DataTable dt = oEmpleadosBC.ConsultarPuesto(oempl);
+            //EmpleadosBC oEmpleadosBC = new EmpleadosBC();
+            //DataTable dt = oEmpleadosBC.ConsultarPuesto(oempl);
 
-            if (dt.Rows.Count > 0)
-            {
-                string resultado = dt.Rows[0][0].ToString();
-                txtpuestotrabajoencontrado.Text = resultado;
-            }
+            //if (dt.Rows.Count > 0)
+            //{
+            //    string resultado = dt.Rows[0][0].ToString();
+            //    txtpuestotrabajoencontrado.Text = resultado;
+            //}
         }
 
         private void btnCrear_Click(object sender, EventArgs e)

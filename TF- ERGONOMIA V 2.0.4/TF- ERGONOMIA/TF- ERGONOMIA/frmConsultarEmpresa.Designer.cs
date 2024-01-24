@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarEmpresa));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dtpFechaAlta = new System.Windows.Forms.DateTimePicker();
             this.cboBuscadorDinamico = new MaterialSkin.Controls.MaterialComboBox();
+            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
             this.cboTipo = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
             this.cboProvincia = new MaterialSkin.Controls.MaterialComboBox();
@@ -58,14 +61,15 @@
             this.dgvCargaEmpresas = new System.Windows.Forms.DataGridView();
             this.txtBuscador = new MaterialSkin.Controls.MaterialTextBox2();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.dtpFechaAlta = new System.Windows.Forms.DateTimePicker();
-            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCargaEmpresas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnCerrar);
             this.groupBox2.Controls.Add(this.dtpFechaAlta);
             this.groupBox2.Controls.Add(this.cboBuscadorDinamico);
             this.groupBox2.Controls.Add(this.materialLabel13);
@@ -98,10 +102,21 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(1328, 649);
+            this.groupBox2.Size = new System.Drawing.Size(1249, 649);
             this.groupBox2.TabIndex = 64;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CONSULTAR EMPRESAS CARGADAS";
+            // 
+            // dtpFechaAlta
+            // 
+            this.dtpFechaAlta.CalendarMonthBackground = System.Drawing.SystemColors.ActiveCaption;
+            this.dtpFechaAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dtpFechaAlta.Location = new System.Drawing.Point(810, 590);
+            this.dtpFechaAlta.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpFechaAlta.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtpFechaAlta.Name = "dtpFechaAlta";
+            this.dtpFechaAlta.Size = new System.Drawing.Size(400, 26);
+            this.dtpFechaAlta.TabIndex = 77;
             // 
             // cboBuscadorDinamico
             // 
@@ -129,6 +144,19 @@
             this.cboBuscadorDinamico.StartIndex = 0;
             this.cboBuscadorDinamico.TabIndex = 107;
             // 
+            // materialLabel13
+            // 
+            this.materialLabel13.AutoSize = true;
+            this.materialLabel13.Depth = 0;
+            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel13.Location = new System.Drawing.Point(673, 590);
+            this.materialLabel13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel13.Name = "materialLabel13";
+            this.materialLabel13.Size = new System.Drawing.Size(97, 19);
+            this.materialLabel13.TabIndex = 78;
+            this.materialLabel13.Text = "Fecha de Alta";
+            // 
             // cboTipo
             // 
             this.cboTipo.AutoResize = false;
@@ -152,7 +180,7 @@
             this.cboTipo.MaxDropDownItems = 4;
             this.cboTipo.MouseState = MaterialSkin.MouseState.OUT;
             this.cboTipo.Name = "cboTipo";
-            this.cboTipo.Size = new System.Drawing.Size(517, 49);
+            this.cboTipo.Size = new System.Drawing.Size(447, 49);
             this.cboTipo.StartIndex = 0;
             this.cboTipo.TabIndex = 102;
             // 
@@ -210,7 +238,7 @@
             "Santiago del Estero",
             "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
             "Tucumán"});
-            this.cboProvincia.Location = new System.Drawing.Point(896, 353);
+            this.cboProvincia.Location = new System.Drawing.Point(810, 339);
             this.cboProvincia.Margin = new System.Windows.Forms.Padding(2);
             this.cboProvincia.MaxDropDownItems = 4;
             this.cboProvincia.MouseState = MaterialSkin.MouseState.OUT;
@@ -234,7 +262,7 @@
             this.cboLocalidad.FormattingEnabled = true;
             this.cboLocalidad.IntegralHeight = false;
             this.cboLocalidad.ItemHeight = 43;
-            this.cboLocalidad.Location = new System.Drawing.Point(896, 403);
+            this.cboLocalidad.Location = new System.Drawing.Point(810, 389);
             this.cboLocalidad.Margin = new System.Windows.Forms.Padding(2);
             this.cboLocalidad.MaxDropDownItems = 4;
             this.cboLocalidad.MouseState = MaterialSkin.MouseState.OUT;
@@ -249,7 +277,7 @@
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel11.Location = new System.Drawing.Point(759, 357);
+            this.materialLabel11.Location = new System.Drawing.Point(673, 343);
             this.materialLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
@@ -300,7 +328,7 @@
             this.cboActEmpr.MaxDropDownItems = 4;
             this.cboActEmpr.MouseState = MaterialSkin.MouseState.OUT;
             this.cboActEmpr.Name = "cboActEmpr";
-            this.cboActEmpr.Size = new System.Drawing.Size(517, 49);
+            this.cboActEmpr.Size = new System.Drawing.Size(447, 49);
             this.cboActEmpr.StartIndex = 0;
             this.cboActEmpr.TabIndex = 96;
             // 
@@ -310,7 +338,7 @@
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel9.Location = new System.Drawing.Point(759, 408);
+            this.materialLabel9.Location = new System.Drawing.Point(673, 394);
             this.materialLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
@@ -327,7 +355,7 @@
             this.txtCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCalle.HideSelection = true;
             this.txtCalle.LeadingIcon = null;
-            this.txtCalle.Location = new System.Drawing.Point(896, 457);
+            this.txtCalle.Location = new System.Drawing.Point(810, 443);
             this.txtCalle.Margin = new System.Windows.Forms.Padding(2);
             this.txtCalle.MaxLength = 32767;
             this.txtCalle.MouseState = MaterialSkin.MouseState.OUT;
@@ -367,7 +395,7 @@
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel5.Location = new System.Drawing.Point(759, 461);
+            this.materialLabel5.Location = new System.Drawing.Point(673, 447);
             this.materialLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
@@ -397,7 +425,7 @@
             this.txtTelefono.SelectionLength = 0;
             this.txtTelefono.SelectionStart = 0;
             this.txtTelefono.ShortcutsEnabled = true;
-            this.txtTelefono.Size = new System.Drawing.Size(517, 48);
+            this.txtTelefono.Size = new System.Drawing.Size(447, 48);
             this.txtTelefono.TabIndex = 85;
             this.txtTelefono.TabStop = false;
             this.txtTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -410,7 +438,7 @@
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel7.Location = new System.Drawing.Point(759, 554);
+            this.materialLabel7.Location = new System.Drawing.Point(673, 540);
             this.materialLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
@@ -456,7 +484,7 @@
             this.cboCondFiscal.MaxDropDownItems = 4;
             this.cboCondFiscal.MouseState = MaterialSkin.MouseState.OUT;
             this.cboCondFiscal.Name = "cboCondFiscal";
-            this.cboCondFiscal.Size = new System.Drawing.Size(517, 49);
+            this.cboCondFiscal.Size = new System.Drawing.Size(447, 49);
             this.cboCondFiscal.StartIndex = 0;
             this.cboCondFiscal.TabIndex = 83;
             // 
@@ -469,7 +497,7 @@
             this.txtWeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtWeb.HideSelection = true;
             this.txtWeb.LeadingIcon = null;
-            this.txtWeb.Location = new System.Drawing.Point(896, 501);
+            this.txtWeb.Location = new System.Drawing.Point(810, 487);
             this.txtWeb.Margin = new System.Windows.Forms.Padding(2);
             this.txtWeb.MaxLength = 32767;
             this.txtWeb.MouseState = MaterialSkin.MouseState.OUT;
@@ -509,7 +537,7 @@
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel8.Location = new System.Drawing.Point(759, 501);
+            this.materialLabel8.Location = new System.Drawing.Point(673, 487);
             this.materialLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
@@ -540,7 +568,7 @@
             this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCorreo.HideSelection = true;
             this.txtCorreo.LeadingIcon = null;
-            this.txtCorreo.Location = new System.Drawing.Point(896, 552);
+            this.txtCorreo.Location = new System.Drawing.Point(810, 538);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreo.MaxLength = 32767;
             this.txtCorreo.MouseState = MaterialSkin.MouseState.OUT;
@@ -582,7 +610,7 @@
             this.txtNombreEmpresa.SelectionLength = 0;
             this.txtNombreEmpresa.SelectionStart = 0;
             this.txtNombreEmpresa.ShortcutsEnabled = true;
-            this.txtNombreEmpresa.Size = new System.Drawing.Size(517, 48);
+            this.txtNombreEmpresa.Size = new System.Drawing.Size(447, 48);
             this.txtNombreEmpresa.TabIndex = 82;
             this.txtNombreEmpresa.TabStop = false;
             this.txtNombreEmpresa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -632,35 +660,35 @@
             this.dgvCargaEmpresas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvCargaEmpresas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dgvCargaEmpresas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCargaEmpresas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCargaEmpresas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCargaEmpresas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCargaEmpresas.EnableHeadersVisualStyles = false;
             this.dgvCargaEmpresas.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dgvCargaEmpresas.Location = new System.Drawing.Point(7, 94);
             this.dgvCargaEmpresas.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCargaEmpresas.Name = "dgvCargaEmpresas";
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCargaEmpresas.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCargaEmpresas.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCargaEmpresas.RowHeadersVisible = false;
             this.dgvCargaEmpresas.RowHeadersWidth = 51;
-            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvCargaEmpresas.RowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvCargaEmpresas.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCargaEmpresas.RowTemplate.Height = 24;
             this.dgvCargaEmpresas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCargaEmpresas.Size = new System.Drawing.Size(1015, 195);
@@ -714,36 +742,26 @@
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // dtpFechaAlta
+            // btnCerrar
             // 
-            this.dtpFechaAlta.CalendarMonthBackground = System.Drawing.SystemColors.ActiveCaption;
-            this.dtpFechaAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dtpFechaAlta.Location = new System.Drawing.Point(896, 604);
-            this.dtpFechaAlta.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpFechaAlta.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dtpFechaAlta.Name = "dtpFechaAlta";
-            this.dtpFechaAlta.Size = new System.Drawing.Size(400, 26);
-            this.dtpFechaAlta.TabIndex = 77;
-            // 
-            // materialLabel13
-            // 
-            this.materialLabel13.AutoSize = true;
-            this.materialLabel13.Depth = 0;
-            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel13.Location = new System.Drawing.Point(759, 604);
-            this.materialLabel13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel13.Name = "materialLabel13";
-            this.materialLabel13.Size = new System.Drawing.Size(97, 19);
-            this.materialLabel13.TabIndex = 78;
-            this.materialLabel13.Text = "Fecha de Alta";
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(1219, 1);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(25, 25);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 108;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // frmConsultarEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1317, 700);
+            this.ClientSize = new System.Drawing.Size(1269, 700);
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmConsultarEmpresa";
@@ -752,6 +770,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCargaEmpresas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -787,5 +806,6 @@
         private MaterialSkin.Controls.MaterialComboBox cboBuscadorDinamico;
         private System.Windows.Forms.DateTimePicker dtpFechaAlta;
         private MaterialSkin.Controls.MaterialLabel materialLabel13;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }

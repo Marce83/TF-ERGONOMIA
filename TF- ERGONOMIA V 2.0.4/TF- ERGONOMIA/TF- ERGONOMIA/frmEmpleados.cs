@@ -50,7 +50,7 @@ namespace TF.WIN
                         oBe.FechaIngreso = Convert.ToDateTime(dtpIngreso.Text);
                         oBe.Peso = float.Parse(txtPeso.Text);
                         oBe.Altura = float.Parse(txtAltura.Text);
-                        oBe.AreaEmpresa = cboAreaempresa.Text;
+                        //oBe.AreaEmpresa = cboAreaempresa.Text;
                         long CUIL = Convert.ToInt64(txtCUITEncontrado.Text);
                         var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIL);
                         oBe.IdEmpresa = Convert.ToInt32(BuscarId);
@@ -150,6 +150,18 @@ namespace TF.WIN
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            frmConsultarEmpleado ofrmConsultarEmpleado = new frmConsultarEmpleado();
+            AddOwnedForm(ofrmConsultarEmpleado);
+            ofrmConsultarEmpleado.TopLevel = false;
+            ofrmConsultarEmpleado.Dock = DockStyle.Fill;
+            this.Controls.Add(ofrmConsultarEmpleado);
+            this.Tag = ofrmConsultarEmpleado;
+            ofrmConsultarEmpleado.BringToFront();
+            ofrmConsultarEmpleado.Show();
         }
     }
 }

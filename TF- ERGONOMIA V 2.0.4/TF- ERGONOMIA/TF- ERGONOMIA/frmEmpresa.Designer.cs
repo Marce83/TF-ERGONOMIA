@@ -654,23 +654,14 @@
             this.cboActEmpr.ItemHeight = 43;
             this.cboActEmpr.Items.AddRange(new object[] {
             "Agricultura",
-            "",
             "Alimentación y Bebidas",
-            "",
             "Aeroespacial",
-            "",
             "Automotriz",
-            "",
             "Comercio",
-            "",
             "Construcción",
-            "",
             "Manufactura",
-            "",
             "Salud",
-            "",
             "Telecomunicaciones",
-            "",
             "Transporte"});
             this.cboActEmpr.Location = new System.Drawing.Point(184, 197);
             this.cboActEmpr.Margin = new System.Windows.Forms.Padding(2);
