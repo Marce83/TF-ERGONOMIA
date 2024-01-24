@@ -45,7 +45,7 @@ namespace TF.WIN
             if (oFrm.PersonaSeleccionada != null)
             {
                 txtDniEmpleadoRula.Text = oFrm.PersonaSeleccionada.DNI.ToString();
-                txtNombreEmpleadoRula.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
+                txtNombreEmpleadoRula.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
                 txtpuestotrabajoencontrado.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
             }
         }

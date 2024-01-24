@@ -2017,7 +2017,7 @@ CREATE OR ALTER PROCEDURE SP_VistaPuesto_GetNombreEmpleado
     @NombreEmpleado nvarchar (20)
 AS
 BEGIN
-    SELECT NombreEmpleado, NombrePuesto
+    SELECT NombreEmpleado, NombrePuesto,DNI
     FROM VistaEmpleadosPuestos
 END
 GO
