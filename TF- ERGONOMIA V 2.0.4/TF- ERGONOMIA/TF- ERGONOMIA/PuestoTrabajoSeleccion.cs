@@ -31,7 +31,7 @@ namespace TF.WIN
 
         private void btnempleadosasociados_Click(object sender, EventArgs e)
         {
-            FrmVistaPuesto oFrmVistaPuesto = new FrmVistaPuesto();
+            FrmPuestoHistorial oFrmVistaPuesto = new FrmPuestoHistorial();
             oFrmVistaPuesto.Show();
         }
     }

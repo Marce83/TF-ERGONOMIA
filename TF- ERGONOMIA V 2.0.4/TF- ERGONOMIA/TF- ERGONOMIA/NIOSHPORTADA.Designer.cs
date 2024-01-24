@@ -152,6 +152,7 @@
             this.btnBuscarpuesto.TabIndex = 155;
             this.btnBuscarpuesto.Text = "...";
             this.btnBuscarpuesto.UseVisualStyleBackColor = false;
+            this.btnBuscarpuesto.Visible = false;
             this.btnBuscarpuesto.Click += new System.EventHandler(this.btnBuscarpuesto_Click);
             // 
             // label1

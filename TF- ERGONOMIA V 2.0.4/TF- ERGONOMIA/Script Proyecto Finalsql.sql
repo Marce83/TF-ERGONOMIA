@@ -1991,6 +1991,7 @@ GO
 CREATE VIEW VistaEmpleadosPuestos AS
 SELECT
     E.Nombre + ' ' + E.Apellido AS NombreEmpleado,
+    E.DNI AS DNI,
     PT.NombrePuesto AS NombrePuesto,
     PE.FechaIngreso AS FechaIngreso,
     PE.FechaEgreso AS FechaEgreso
@@ -2006,7 +2007,7 @@ GO
 CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_VerVista
 AS
 BEGIN
-    SELECT * FROM VistaEmpleadosPuestos ORDER BY FechaIngreso DESC;
+    SELECT * FROM VistaEmpleadosPuestos where FechaEgreso is NULL  ORDER BY FechaIngreso DESC;
 END
 GO
 
@@ -2022,21 +2023,24 @@ END
 GO
 
 
-
 USE ProyectoFinal;
 GO
 CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_VerReciente
 @FechaIngreso DATE,
 @FechaIngreso2 DATE,
-    @NombreEmpleado NVARCHAR(40)
+@NombreEmpleado NVARCHAR(40)
 AS
 BEGIN
-    SELECT *
-    FROM VistaEmpleadosPuestos
-    WHERE 
-        (FechaIngreso BETWEEN @FechaIngreso AND @FechaIngreso2)
-        AND (NombreEmpleado LIKE '%' + @NombreEmpleado + '%' OR @NombreEmpleado IS NULL)
+    SELECT * FROM VistaEmpleadosPuestos
+    WHERE (FechaIngreso BETWEEN @FechaIngreso AND @FechaIngreso2)
+    AND (NombreEmpleado LIKE '%' + @NombreEmpleado + '%' OR @NombreEmpleado IS NULL)
     ORDER BY FechaIngreso DESC;
 END
 GO
+
+
+
+
+
+
 

@@ -184,6 +184,7 @@ namespace TF.DAC
             {
                 oPuestoTrabajo.NombreEmpleado = dr.GetString(0);
                 oPuestoTrabajo.NombrePuesto = dr.GetString(1);
+                oPuestoTrabajo.DNI = dr.GetString(2);
             }
             sqlCnn.Close();
             return oPuestoTrabajo;

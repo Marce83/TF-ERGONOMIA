@@ -74,37 +74,41 @@ namespace TF.WIN
 
         private void btnCargarPuesto_Click(object sender, EventArgs e)
         {
-            try
+            DialogResult resp = MessageBox.Show("¿Estas seguro que deseas Realizar la Asociación? No realizarlo mas de una vez", "Aviso de Acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resp == DialogResult.Yes)
             {
-                PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
-                PuestoTrabajo oPuestoTrabajo = new PuestoTrabajo();
-                oPuestoTrabajo.IdEmpleado = int.Parse(txtIdEmpleado.Text);
-                oPuestoTrabajo.IdPuesto = int.Parse(txtIdPuestoTrabajo.Text);
-
-                DataTable dt4000 = oPuestoTrabajoBC.GetAllSiNoBC(oPuestoTrabajo);
-
-                // Verificar si existe un movimiento
-                if (dt4000.Rows.Count > 0 && Convert.ToInt32(dt4000.Rows[0]["ExisteMovimiento"]) > 0)
+                try
                 {
-                    // Existe un movimiento, realizar actualización
-                    oPuestoTrabajo.FechaEgreso = DateTime.Parse(DtpFechaEgreso.Text);  
-                    oPuestoTrabajo.FechaIngreso = DateTime.Parse(DtpFechaIngreso.Text);
-                    var res = oPuestoTrabajoBC.InsertPuestoEmpleadoBC(oPuestoTrabajo);
-                    oPuestoTrabajoBC.UpdatePuestoEmpleadoBC(oPuestoTrabajo);
-                    MessageBox.Show("Asociación Actualizada");
+                    PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
+                    PuestoTrabajo oPuestoTrabajo = new PuestoTrabajo();
+                    oPuestoTrabajo.IdEmpleado = int.Parse(txtIdEmpleado.Text);
+                    oPuestoTrabajo.IdPuesto = int.Parse(txtIdPuestoTrabajo.Text);
+
+                    DataTable dt4000 = oPuestoTrabajoBC.GetAllSiNoBC(oPuestoTrabajo);
+
+                    // Verificar si existe un movimiento
+                    if (dt4000.Rows.Count > 0 && Convert.ToInt32(dt4000.Rows[0]["ExisteMovimiento"]) > 0)
+                    {
+                        // Existe un movimiento, realizar actualización
+                        oPuestoTrabajo.FechaEgreso = DateTime.Parse(DtpFechaEgreso.Text);
+                        oPuestoTrabajo.FechaIngreso = DateTime.Parse(DtpFechaIngreso.Text);
+                        var res = oPuestoTrabajoBC.InsertPuestoEmpleadoBC(oPuestoTrabajo);
+                        oPuestoTrabajoBC.UpdatePuestoEmpleadoBC(oPuestoTrabajo);
+                        MessageBox.Show("Asociación Actualizada");
+                    }
+                    else
+                    {
+                        // No existe un movimiento, realizar inserción
+                        oPuestoTrabajo.FechaIngreso = DateTime.Parse(DtpFechaIngreso.Text);
+                        var res = oPuestoTrabajoBC.InsertPuestoEmpleadoBC(oPuestoTrabajo);
+                        MessageBox.Show("Asociación Realizada con éxito");
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    // No existe un movimiento, realizar inserción
-                    oPuestoTrabajo.FechaIngreso = DateTime.Parse(DtpFechaIngreso.Text);
-                    var res = oPuestoTrabajoBC.InsertPuestoEmpleadoBC(oPuestoTrabajo);
-                    MessageBox.Show("Asociación Realizada con éxito");
+                    // Manejar excepciones de manera apropiada
+                    MessageBox.Show($"Error: {ex.Message}");
                 }
-            }
-            catch (Exception ex)
-            {
-                // Manejar excepciones de manera apropiada
-                MessageBox.Show($"Error: {ex.Message}");
             }
         }
     }

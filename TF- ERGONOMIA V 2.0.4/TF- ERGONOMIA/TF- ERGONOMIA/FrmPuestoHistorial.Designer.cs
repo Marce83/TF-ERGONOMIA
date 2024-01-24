@@ -1,6 +1,6 @@
 ﻿namespace TF.WIN
 {
-    partial class FrmVistaPuesto
+    partial class FrmPuestoHistorial
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVistaPuesto));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPuestoHistorial));
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.btnBuscarEmpleado = new System.Windows.Forms.Button();
             this.DtpFechahasta = new System.Windows.Forms.DateTimePicker();

@@ -156,11 +156,11 @@
     <Compile Include="FrmVistaPuestoEmpleado.Designer.cs">
       <DependentUpon>FrmVistaPuestoEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmVistaPuesto.cs">
+    <Compile Include="FrmPuestoHistorial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmVistaPuesto.Designer.cs">
-      <DependentUpon>FrmVistaPuesto.cs</DependentUpon>
+    <Compile Include="FrmPuestoHistorial.Designer.cs">
+      <DependentUpon>FrmPuestoHistorial.cs</DependentUpon>
     </Compile>
     <Compile Include="JSS.cs">
       <SubType>Form</SubType>
@@ -309,8 +309,8 @@
     <EmbeddedResource Include="FrmVistaPuestoEmpleado.resx">
       <DependentUpon>FrmVistaPuestoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmVistaPuesto.resx">
-      <DependentUpon>FrmVistaPuesto.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPuestoHistorial.resx">
+      <DependentUpon>FrmPuestoHistorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JSS.resx">
       <DependentUpon>JSS.cs</DependentUpon>

@@ -22,7 +22,7 @@ namespace TF.ENTITIES
 
 
         //OTROS
-
+        public string DNI { get; set; }
 
         public string NombreEmpleado { get; set; }
 

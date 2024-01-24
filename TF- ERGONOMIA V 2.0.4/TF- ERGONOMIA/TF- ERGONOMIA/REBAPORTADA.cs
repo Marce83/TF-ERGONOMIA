@@ -40,18 +40,16 @@ namespace TF.WIN
 
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
-            frmBuscarEmpleados oFrm = new frmBuscarEmpleados();
+            FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
             oFrm.ShowDialog();
 
-            if (oFrm.EmpleadoSeleccionado != null)
+            if (oFrm.PersonaSeleccionada != null)
             {
-                txtDniEmpleadoReba.Text = oFrm.EmpleadoSeleccionado.DNI.ToString();
-                
-            }
+                txtDniEmpleadoReba.Text = oFrm.PersonaSeleccionada.DNI.ToString();
 
-            if (oFrm.EmpleadoSeleccionado != null)
-            {
-                txtNombreEmpleadoReba.Text = oFrm.EmpleadoSeleccionado.Apellido.ToString() + " " + oFrm.EmpleadoSeleccionado.Nombre.ToString();
+                txtNombreEmpleadoReba.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
+
+                txtpuestotrabajoencontrado.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
 
             }
 

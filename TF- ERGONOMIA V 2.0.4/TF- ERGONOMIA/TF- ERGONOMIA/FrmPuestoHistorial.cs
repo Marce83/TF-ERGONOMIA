@@ -12,13 +12,13 @@ using TF.ENTITIES;
 
 namespace TF.WIN
 {
-    public partial class FrmVistaPuesto : Form
+    public partial class FrmPuestoHistorial : Form
     {
 
         public PuestoTrabajo PersonaSeleccionada { get; set; }
 
 
-        public FrmVistaPuesto()
+        public FrmPuestoHistorial()
         {
             InitializeComponent();
 
