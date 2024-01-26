@@ -54,5 +54,17 @@ namespace TF.BC
             EmpleadosDAC oEmpleadosDAC = new EmpleadosDAC();
             return oEmpleadosDAC.ObtenerEmpleadoid(DNI);
         }
+
+        public DataTable ConsultarEmpleadosPorNombre(Empleados oEmpl)
+        {
+            EmpleadosDAC oEmpleadosDAC = new EmpleadosDAC();
+            return oEmpleadosDAC.ConsultarEmpleadosPorNombre(oEmpl);
+        }
+
+        public DataTable ConsultarEmpleadosPorApellido(Empleados oEmpl)
+        {
+            EmpleadosDAC oEmpleadosDAC = new EmpleadosDAC();
+            return oEmpleadosDAC.ConsultarEmpleadosPorApellido(oEmpl);
+        }
     }
 }

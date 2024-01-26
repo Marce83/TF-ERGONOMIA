@@ -186,7 +186,7 @@ AS
 BEGIN
 	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
-	WHERE CUIT = @CUIT
+	WHERE CUIT LIKE '%'+@CUIT+'%'
 END
 GO
 
@@ -196,7 +196,7 @@ AS
 BEGIN
 	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
-	WHERE Nombre LIKE @Nombre
+	WHERE Nombre LIKE '%'+@Nombre+'%'
 END
 GO
 
@@ -250,8 +250,9 @@ CREATE OR ALTER PROCEDURE SP_Empleados_DNI
 @DNI nvarchar(8)
 AS
 BEGIN
-	SELECT * FROM Empleados
-	WHERE DNI = @DNI
+	SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
+	FROM Empleados
+	WHERE DNI LIKE '%'+@DNI+'%'
 END
 GO
 
@@ -262,15 +263,13 @@ CREATE OR ALTER PROCEDURE SP_Empleados_Update
 @Apellido nvarchar(20),
 @DNI nvarchar(8),
 @Genero nvarchar(20),
---@PuestoDeTrabajo nvarchar(20),
 @Peso float,
 @Altura float,
-@FechaNacimiento DATE,
-@FechaIngreso DATE,
-@FechaEgreso DATE
+@FechaNacimiento DATE
+
 AS
 BEGIN
-	update Empleados set Nombre=@Nombre, Apellido=@Apellido, DNI=@DNI ,Genero=@Genero, Peso=@Peso, Altura=@Altura, FechaNacimiento=@FechaNacimiento, FechaIngreso = @FechaIngreso, FechaEgreso = @FechaEgreso
+	update Empleados set Nombre=@Nombre, Apellido=@Apellido, DNI=@DNI ,Genero=@Genero, Peso=@Peso, Altura=@Altura, FechaNacimiento=@FechaNacimiento
 	where DNI=@DNI
 END
 GO

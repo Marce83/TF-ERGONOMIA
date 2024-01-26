@@ -50,13 +50,13 @@
             this.txtNombre = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.txtcuitconsulta = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtBuscador = new MaterialSkin.Controls.MaterialTextBox2();
             this.btnBaja = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvEmpleados = new System.Windows.Forms.DataGridView();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.cboBuscadorDinamico = new MaterialSkin.Controls.MaterialComboBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
@@ -65,6 +65,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.cboBuscadorDinamico);
             this.groupBox3.Controls.Add(this.cboAreaempresa);
             this.groupBox3.Controls.Add(this.materialLabel9);
             this.groupBox3.Controls.Add(this.dtpIngreso);
@@ -81,8 +82,7 @@
             this.groupBox3.Controls.Add(this.txtNombre);
             this.groupBox3.Controls.Add(this.materialLabel2);
             this.groupBox3.Controls.Add(this.materialLabel1);
-            this.groupBox3.Controls.Add(this.txtcuitconsulta);
-            this.groupBox3.Controls.Add(this.materialLabel10);
+            this.groupBox3.Controls.Add(this.txtBuscador);
             this.groupBox3.Controls.Add(this.btnBaja);
             this.groupBox3.Controls.Add(this.btnModificar);
             this.groupBox3.Controls.Add(this.btnBuscar);
@@ -479,47 +479,34 @@
             this.materialLabel1.TabIndex = 84;
             this.materialLabel1.Text = "Nombre";
             // 
-            // txtcuitconsulta
+            // txtBuscador
             // 
-            this.txtcuitconsulta.AnimateReadOnly = false;
-            this.txtcuitconsulta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtcuitconsulta.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtcuitconsulta.Depth = 0;
-            this.txtcuitconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtcuitconsulta.HideSelection = true;
-            this.txtcuitconsulta.LeadingIcon = null;
-            this.txtcuitconsulta.Location = new System.Drawing.Point(194, 46);
-            this.txtcuitconsulta.Margin = new System.Windows.Forms.Padding(2);
-            this.txtcuitconsulta.MaxLength = 32767;
-            this.txtcuitconsulta.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtcuitconsulta.Name = "txtcuitconsulta";
-            this.txtcuitconsulta.PasswordChar = '\0';
-            this.txtcuitconsulta.PrefixSuffixText = null;
-            this.txtcuitconsulta.ReadOnly = false;
-            this.txtcuitconsulta.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtcuitconsulta.SelectedText = "";
-            this.txtcuitconsulta.SelectionLength = 0;
-            this.txtcuitconsulta.SelectionStart = 0;
-            this.txtcuitconsulta.ShortcutsEnabled = true;
-            this.txtcuitconsulta.Size = new System.Drawing.Size(188, 48);
-            this.txtcuitconsulta.TabIndex = 0;
-            this.txtcuitconsulta.TabStop = false;
-            this.txtcuitconsulta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtcuitconsulta.TrailingIcon = null;
-            this.txtcuitconsulta.UseSystemPasswordChar = false;
-            // 
-            // materialLabel10
-            // 
-            this.materialLabel10.AutoSize = true;
-            this.materialLabel10.Depth = 0;
-            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel10.Location = new System.Drawing.Point(148, 60);
-            this.materialLabel10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel10.Name = "materialLabel10";
-            this.materialLabel10.Size = new System.Drawing.Size(27, 19);
-            this.materialLabel10.TabIndex = 53;
-            this.materialLabel10.Text = "DNI";
+            this.txtBuscador.AnimateReadOnly = false;
+            this.txtBuscador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtBuscador.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBuscador.Depth = 0;
+            this.txtBuscador.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtBuscador.HideSelection = true;
+            this.txtBuscador.LeadingIcon = null;
+            this.txtBuscador.Location = new System.Drawing.Point(194, 46);
+            this.txtBuscador.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBuscador.MaxLength = 32767;
+            this.txtBuscador.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtBuscador.Name = "txtBuscador";
+            this.txtBuscador.PasswordChar = '\0';
+            this.txtBuscador.PrefixSuffixText = null;
+            this.txtBuscador.ReadOnly = false;
+            this.txtBuscador.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtBuscador.SelectedText = "";
+            this.txtBuscador.SelectionLength = 0;
+            this.txtBuscador.SelectionStart = 0;
+            this.txtBuscador.ShortcutsEnabled = true;
+            this.txtBuscador.Size = new System.Drawing.Size(188, 48);
+            this.txtBuscador.TabIndex = 0;
+            this.txtBuscador.TabStop = false;
+            this.txtBuscador.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBuscador.TrailingIcon = null;
+            this.txtBuscador.UseSystemPasswordChar = false;
             // 
             // btnBaja
             // 
@@ -601,6 +588,34 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // cboBuscadorDinamico
+            // 
+            this.cboBuscadorDinamico.AutoResize = false;
+            this.cboBuscadorDinamico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboBuscadorDinamico.Depth = 0;
+            this.cboBuscadorDinamico.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboBuscadorDinamico.DropDownHeight = 174;
+            this.cboBuscadorDinamico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBuscadorDinamico.DropDownWidth = 121;
+            this.cboBuscadorDinamico.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboBuscadorDinamico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboBuscadorDinamico.FormattingEnabled = true;
+            this.cboBuscadorDinamico.IntegralHeight = false;
+            this.cboBuscadorDinamico.ItemHeight = 43;
+            this.cboBuscadorDinamico.Items.AddRange(new object[] {
+            "DNI",
+            "Nombre",
+            "Apellido",
+            "Genero"});
+            this.cboBuscadorDinamico.Location = new System.Drawing.Point(21, 45);
+            this.cboBuscadorDinamico.Margin = new System.Windows.Forms.Padding(2);
+            this.cboBuscadorDinamico.MaxDropDownItems = 4;
+            this.cboBuscadorDinamico.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboBuscadorDinamico.Name = "cboBuscadorDinamico";
+            this.cboBuscadorDinamico.Size = new System.Drawing.Size(146, 49);
+            this.cboBuscadorDinamico.StartIndex = 0;
+            this.cboBuscadorDinamico.TabIndex = 108;
+            // 
             // frmConsultarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -626,8 +641,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox3;
-        private MaterialSkin.Controls.MaterialTextBox2 txtcuitconsulta;
-        private MaterialSkin.Controls.MaterialLabel materialLabel10;
+        private MaterialSkin.Controls.MaterialTextBox2 txtBuscador;
         private System.Windows.Forms.Button btnBaja;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnBuscar;
@@ -653,5 +667,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.PictureBox btnCerrar;
+        private MaterialSkin.Controls.MaterialComboBox cboBuscadorDinamico;
     }
 }

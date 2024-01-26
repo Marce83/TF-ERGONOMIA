@@ -30,15 +30,29 @@ namespace TF.WIN
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             Empleados oempl = new Empleados();
-            oempl.DNI = txtcuitconsulta.Text;
-
             EmpleadosBC oEmpleadosBC = new EmpleadosBC();
-            DataTable dt = oEmpleadosBC.ConsultarEmpleadosDNI(oempl);
-
-            dgvEmpleados.DataSource = null;
-            dgvEmpleados.DataSource = dt;
-            //dgvempleados.Columns[0].Visible = false;
-            Listar();
+            switch (cboBuscadorDinamico.Text)
+            {
+                case "DNI":
+                    oempl.DNI = txtBuscador.Text;
+                    DataTable dt = oEmpleadosBC.ConsultarEmpleadosDNI(oempl);
+                    dgvEmpleados.DataSource = null;
+                    dgvEmpleados.DataSource = dt;
+                    break;
+                case "Nombre":
+                    oempl.Nombre = txtBuscador.Text;
+                    DataTable dtNom = oEmpleadosBC.ConsultarEmpleadosPorNombre(oempl);
+                    dgvEmpleados.DataSource = null;
+                    dgvEmpleados .DataSource = dtNom;
+                    break;
+                case "Apellido":
+                    oempl.Apellido = txtBuscador.Text;
+                    DataTable dtApe = oEmpleadosBC.ConsultarEmpleadosPorApellido(oempl);
+                    dgvEmpleados.DataSource = null;
+                    dgvEmpleados.DataSource = dtApe;
+                    break;
+            }
+            //Listar();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
