@@ -31,8 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.RTL.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,6 +47,11 @@
   <ItemGroup>
     <Compile Include="EmailServices\MasterEmailServer.cs" />
     <Compile Include="EmailServices\SupportMail.cs" />
+    <Compile Include="EstadisticaDAC.cs" />
+    <Compile Include="JssDAC.cs" />
+    <Compile Include="NioshDAC.cs" />
+    <Compile Include="PuestoTrabajoDAC.cs" />
+    <Compile Include="RebaDAC.cs" />
     <Compile Include="RulaDAC.cs" />
     <Compile Include="SqlServerDB\ConnectionStringManager.cs" />
     <Compile Include="EmpleadosDAC.cs" />
@@ -67,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

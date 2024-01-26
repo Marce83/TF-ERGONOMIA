@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TF.ENTITIES
 {
@@ -11,6 +7,8 @@ namespace TF.ENTITIES
         public int cargaId { get; set; }
         public string CUIT { get; set; }
         public string PuestoDeTrabajo { get; set; }
+        public string FechaCarga { get; set; }
+        public string FechaCarga2 { get; set; }
         public int Brazo { get; set; }
         public int Antebrazo { get; set; }
         public int Muneca { get; set; }
@@ -24,7 +22,10 @@ namespace TF.ENTITIES
         public int Cargafuerzab { get; set; }
         public int puntuacionRula { get; set; }
         public int niveldeRiesgo { get; set; }
-
+        public string ResultadoAnalisisRula { get; set; }
+        public string DniEmpleadoRula { get; set; }
+        public string EmpleadoRula { get; set; }
+        public string EmpresaRula { get; set; }
 
         // Resultados VALOR Tablas A, B y C //
 

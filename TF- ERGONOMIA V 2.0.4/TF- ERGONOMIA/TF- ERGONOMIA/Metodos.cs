@@ -30,5 +30,42 @@ namespace TF.WIN
             RULARESULTADO oRULARESULTADO = new RULARESULTADO();
             oRULARESULTADO.Show();
         }
+
+        private void btnReba_Click(object sender, EventArgs e)
+        {
+            REBA_PORTADA OREBA_PORTADA =new REBA_PORTADA();
+            OREBA_PORTADA.Show();
+        }
+
+        private void btnRebaResultado_Click(object sender, EventArgs e)
+        {
+            REBA_RESULTADO OREBA_RESULTADO = new REBA_RESULTADO();
+            OREBA_RESULTADO.Show();
+        }
+
+        private void btnNiosh_Click(object sender, EventArgs e)
+        {
+            NIOSHPORTADA ONIOSHPORTADA = new NIOSHPORTADA();
+            ONIOSHPORTADA.Show();
+
+        }
+
+        private void btnNioshResultado_Click(object sender, EventArgs e)
+        {
+            NIOSHRESULTADO ONIOSHRESULTADO = new NIOSHRESULTADO();
+            ONIOSHRESULTADO.Show(); 
+        }
+
+        private void JSS_Click(object sender, EventArgs e)
+        {
+            JSSPORTADA oJSSPORTADA = new JSSPORTADA();
+            oJSSPORTADA.Show();
+        }
+
+        private void JSSRESULTADO_Click(object sender, EventArgs e)
+        {
+            JSSRESULTADO oJSSRESULTADO = new JSSRESULTADO();
+            oJSSRESULTADO.Show();
+        }
     }
 }

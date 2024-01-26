@@ -127,8 +127,9 @@ namespace TF.WIN
 
         private void btnEstadisticas_Click(object sender, EventArgs e)
         {
-            //AbrirFormHija(new frmEstadisticas());
-            AbrirFormulario<frmEstadisticas>();
+
+            AbrirFormHija(new frmEstadisticaMenu());
+
         }
 
         private void linkPerfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -147,53 +148,14 @@ namespace TF.WIN
             oRULA_PORTADA.Show();
         }
 
-
-
-
-
-
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
             LoadUserData();
             RolesCargo();
-            //Crear una instancia del formulario Login
-            //Login Ologin = new Login();
-            // Mostrar Login sobre Menu_Principal
-            //Ologin.ShowDialog();
-           //this.Show();
-            //LoginP();
+ 
         }
 
-        //private void LoginP()
-        //{
-        //    Form formBackground = new Form();
-        //    using (frmLogin fLogin = new frmLogin())
-        //    {
-        //        try
-        //        {
-        //            formBackground.StartPosition = FormStartPosition.Manual;
-        //            formBackground.FormBorderStyle = FormBorderStyle.None;
-        //            formBackground.Opacity = .50d;
-        //            formBackground.BackColor = Color.Black;
-        //            formBackground.WindowState = FormWindowState.Maximized;
-        //            formBackground.TopMost = true;
-        //            formBackground.Location = this.Location;
-        //            formBackground.ShowInTaskbar = false;
-        //            formBackground.Show();
-
-        //            fLogin.Owner = formBackground;
-        //            fLogin.ShowDialog();
-
-        //            formBackground.Dispose();
-        //        } 
-        //        catch (Exception ex)
-        //        {
-        //            MessageBox.Show(ex.Message);
-        //        }
-        //        finally { formBackground.Dispose(); }
-        //    }
-        //}
-
+ 
         private void button1_Click(object sender, EventArgs e)
         {
             if (MenuVertical.Width == 240)
@@ -250,8 +212,9 @@ namespace TF.WIN
 
         private void btnPuesto_Click(object sender, EventArgs e)
         {
-            //AbrirFormHija(new FrmPuestoTrabajo());
-            AbrirFormulario<FrmPuestoTrabajo>();
+
+            AbrirFormHija(new PuestoTrabajoSeleccion());
+
         }
     }
 }
