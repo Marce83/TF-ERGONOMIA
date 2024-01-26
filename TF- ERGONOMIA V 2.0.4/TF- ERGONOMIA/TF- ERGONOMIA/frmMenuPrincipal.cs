@@ -128,8 +128,15 @@ namespace TF.WIN
         private void btnEstadisticas_Click(object sender, EventArgs e)
         {
 
-            AbrirFormHija(new frmEstadisticaMenu());
+            //AbrirFormHija(new frmEstadisticaMenu());
+            AbrirFormulario<frmEstadisticaMenu>();
 
+        }
+
+        private void btnPuesto_Click(object sender, EventArgs e)
+        {
+            //AbrirFormHija(new PuestoTrabajoSeleccion());
+            AbrirFormulario<PuestoTrabajoSeleccion>();
         }
 
         private void linkPerfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -208,13 +215,6 @@ namespace TF.WIN
             {
                 btnMetodo.Enabled = false;
             }
-        }
-
-        private void btnPuesto_Click(object sender, EventArgs e)
-        {
-
-            AbrirFormHija(new PuestoTrabajoSeleccion());
-
         }
     }
 }
