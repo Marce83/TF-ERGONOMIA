@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarEmpleado));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cboBuscadorDinamico = new MaterialSkin.Controls.MaterialComboBox();
             this.cboAreaempresa = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.dtpIngreso = new System.Windows.Forms.DateTimePicker();
@@ -56,7 +57,6 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvEmpleados = new System.Windows.Forms.DataGridView();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.cboBuscadorDinamico = new MaterialSkin.Controls.MaterialComboBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
@@ -96,6 +96,34 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "CONSULTAR EMPLEADOS CARGADOS";
             // 
+            // cboBuscadorDinamico
+            // 
+            this.cboBuscadorDinamico.AutoResize = false;
+            this.cboBuscadorDinamico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboBuscadorDinamico.Depth = 0;
+            this.cboBuscadorDinamico.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboBuscadorDinamico.DropDownHeight = 174;
+            this.cboBuscadorDinamico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBuscadorDinamico.DropDownWidth = 121;
+            this.cboBuscadorDinamico.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboBuscadorDinamico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboBuscadorDinamico.FormattingEnabled = true;
+            this.cboBuscadorDinamico.IntegralHeight = false;
+            this.cboBuscadorDinamico.ItemHeight = 43;
+            this.cboBuscadorDinamico.Items.AddRange(new object[] {
+            "DNI",
+            "Nombre",
+            "Apellido",
+            "Genero"});
+            this.cboBuscadorDinamico.Location = new System.Drawing.Point(21, 45);
+            this.cboBuscadorDinamico.Margin = new System.Windows.Forms.Padding(2);
+            this.cboBuscadorDinamico.MaxDropDownItems = 4;
+            this.cboBuscadorDinamico.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboBuscadorDinamico.Name = "cboBuscadorDinamico";
+            this.cboBuscadorDinamico.Size = new System.Drawing.Size(146, 49);
+            this.cboBuscadorDinamico.StartIndex = 0;
+            this.cboBuscadorDinamico.TabIndex = 108;
+            // 
             // cboAreaempresa
             // 
             this.cboAreaempresa.AutoResize = false;
@@ -131,6 +159,7 @@
             this.cboAreaempresa.Size = new System.Drawing.Size(206, 49);
             this.cboAreaempresa.StartIndex = 0;
             this.cboAreaempresa.TabIndex = 95;
+            this.cboAreaempresa.Visible = false;
             // 
             // materialLabel9
             // 
@@ -145,6 +174,7 @@
             this.materialLabel9.Size = new System.Drawing.Size(136, 19);
             this.materialLabel9.TabIndex = 94;
             this.materialLabel9.Text = "Área de la empresa";
+            this.materialLabel9.Visible = false;
             // 
             // dtpIngreso
             // 
@@ -587,34 +617,6 @@
             this.btnCerrar.TabIndex = 109;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // cboBuscadorDinamico
-            // 
-            this.cboBuscadorDinamico.AutoResize = false;
-            this.cboBuscadorDinamico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboBuscadorDinamico.Depth = 0;
-            this.cboBuscadorDinamico.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboBuscadorDinamico.DropDownHeight = 174;
-            this.cboBuscadorDinamico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboBuscadorDinamico.DropDownWidth = 121;
-            this.cboBuscadorDinamico.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboBuscadorDinamico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboBuscadorDinamico.FormattingEnabled = true;
-            this.cboBuscadorDinamico.IntegralHeight = false;
-            this.cboBuscadorDinamico.ItemHeight = 43;
-            this.cboBuscadorDinamico.Items.AddRange(new object[] {
-            "DNI",
-            "Nombre",
-            "Apellido",
-            "Genero"});
-            this.cboBuscadorDinamico.Location = new System.Drawing.Point(21, 45);
-            this.cboBuscadorDinamico.Margin = new System.Windows.Forms.Padding(2);
-            this.cboBuscadorDinamico.MaxDropDownItems = 4;
-            this.cboBuscadorDinamico.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboBuscadorDinamico.Name = "cboBuscadorDinamico";
-            this.cboBuscadorDinamico.Size = new System.Drawing.Size(146, 49);
-            this.cboBuscadorDinamico.StartIndex = 0;
-            this.cboBuscadorDinamico.TabIndex = 108;
             // 
             // frmConsultarEmpleado
             // 
