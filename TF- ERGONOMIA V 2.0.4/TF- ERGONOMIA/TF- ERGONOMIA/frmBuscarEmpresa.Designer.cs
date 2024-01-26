@@ -93,7 +93,9 @@
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.btnAceptar.Location = new System.Drawing.Point(320, 269);
+
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(116, 35);
             this.btnAceptar.TabIndex = 52;
@@ -112,7 +114,9 @@
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.Location = new System.Drawing.Point(246, 46);
             this.btnBuscar.Name = "btnBuscar";
+
             this.btnBuscar.Size = new System.Drawing.Size(116, 47);
+
             this.btnBuscar.TabIndex = 53;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -127,7 +131,9 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.btnCancelar.Location = new System.Drawing.Point(118, 269);
+
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(116, 35);
             this.btnCancelar.TabIndex = 54;
@@ -139,11 +145,13 @@
             // 
             this.dgvResultado.BackgroundColor = System.Drawing.Color.DarkGray;
             this.dgvResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+
             this.dgvResultado.Location = new System.Drawing.Point(12, 99);
             this.dgvResultado.Name = "dgvResultado";
             this.dgvResultado.ReadOnly = true;
             this.dgvResultado.RowHeadersWidth = 51;
             this.dgvResultado.Size = new System.Drawing.Size(472, 164);
+
             this.dgvResultado.TabIndex = 55;
             // 
             // label1
@@ -171,7 +179,9 @@
             this.btnBuscartodo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnBuscartodo.Location = new System.Drawing.Point(368, 46);
             this.btnBuscartodo.Name = "btnBuscartodo";
+
             this.btnBuscartodo.Size = new System.Drawing.Size(116, 47);
+
             this.btnBuscartodo.TabIndex = 61;
             this.btnBuscartodo.Text = "Buscar Todo";
             this.btnBuscartodo.UseVisualStyleBackColor = false;
@@ -182,7 +192,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
+
             this.ClientSize = new System.Drawing.Size(497, 318);
+
             this.Controls.Add(this.btnBuscartodo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvResultado);

@@ -45,12 +45,13 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@Apellido", SqlDbType.NVarChar).Value = oEmpl.Apellido;
                 sqlCom.Parameters.Add("@DNI", SqlDbType.NVarChar).Value = oEmpl.DNI;
                 sqlCom.Parameters.Add("@Genero", SqlDbType.NVarChar).Value = oEmpl.Genero;
-                sqlCom.Parameters.Add("@PuestoDeTrabajo", SqlDbType.NVarChar).Value = oEmpl.PuestoDeTrabajo;
+                //sqlCom.Parameters.Add("@AreaEmpresa", SqlDbType.NVarChar).Value = oEmpl.AreaEmpresa;
                 sqlCom.Parameters.Add("@Peso", SqlDbType.Float).Value = oEmpl.Peso;
                 sqlCom.Parameters.Add("@Altura", SqlDbType.Float).Value = oEmpl.Altura;
                 sqlCom.Parameters.Add("@FechaNacimiento", SqlDbType.Date).Value = oEmpl.FechaNacimiento;
                 sqlCom.Parameters.Add("@FechaIngreso", SqlDbType.Date).Value = oEmpl.FechaIngreso;
                 sqlCom.Parameters.Add("@FechaEgreso", SqlDbType.Date).Value = DBNull.Value;
+                sqlCom.Parameters.Add("@Estado", SqlDbType.NVarChar).Value = 'A';
                 sqlCom.Parameters.Add("@IdEmpresa", SqlDbType.Int).Value = oEmpl.IdEmpresa;
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
@@ -141,12 +142,12 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@Apellido", SqlDbType.NVarChar).Value = oEmpl.Apellido;
                 sqlCom.Parameters.Add("@DNI", SqlDbType.NVarChar).Value = oEmpl.DNI;
                 sqlCom.Parameters.Add("@Genero", SqlDbType.NVarChar).Value = oEmpl.Genero;
-                sqlCom.Parameters.Add("@PuestoDeTrabajo", SqlDbType.NVarChar).Value = oEmpl.PuestoDeTrabajo;
+                //sqlCom.Parameters.Add("@AreaEmpresa", SqlDbType.NVarChar).Value = oEmpl.AreaEmpresa;
                 sqlCom.Parameters.Add("@Peso", SqlDbType.Float).Value = oEmpl.Peso;
                 sqlCom.Parameters.Add("@Altura", SqlDbType.Float).Value = oEmpl.Altura;
                 sqlCom.Parameters.Add("@FechaNacimiento", SqlDbType.Date).Value = oEmpl.FechaNacimiento;
-                sqlCom.Parameters.Add("@FechaIngreso", SqlDbType.Date).Value = oEmpl.FechaIngreso;
-                sqlCom.Parameters.Add("@FechaEgreso", SqlDbType.Date).Value = DBNull.Value;
+                //sqlCom.Parameters.Add("@FechaIngreso", SqlDbType.Date).Value = oEmpl.FechaIngreso;
+                //sqlCom.Parameters.Add("@FechaEgreso", SqlDbType.Date).Value = DBNull.Value;
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
                 sqlCnn.Close();
@@ -164,21 +165,14 @@ namespace TF.DAC
         {
             try
             {
-                string sqlSentencia = "SP_Empleados_Update";
+                string sqlSentencia = "SP_Empleado_Delete";
                 SqlConnection sqlCnn = new SqlConnection();
                 sqlCnn.ConnectionString = conectionString;
                 SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
                 sqlCom.CommandType = CommandType.StoredProcedure;
-                sqlCom.Parameters.Add("@Nombre", SqlDbType.NVarChar).Value = oEmpl.Nombre;
-                sqlCom.Parameters.Add("@Apellido", SqlDbType.NVarChar).Value = oEmpl.Apellido;
                 sqlCom.Parameters.Add("@DNI", SqlDbType.NVarChar).Value = oEmpl.DNI;
-                sqlCom.Parameters.Add("@Genero", SqlDbType.NVarChar).Value = oEmpl.Genero;
-                sqlCom.Parameters.Add("@PuestoDeTrabajo", SqlDbType.NVarChar).Value = oEmpl.PuestoDeTrabajo;
-                sqlCom.Parameters.Add("@Peso", SqlDbType.Float).Value = oEmpl.Peso;
-                sqlCom.Parameters.Add("@Altura", SqlDbType.Float).Value = oEmpl.Altura;
-                sqlCom.Parameters.Add("@FechaNacimiento", SqlDbType.Date).Value = oEmpl.FechaNacimiento;
-                sqlCom.Parameters.Add("@FechaIngreso", SqlDbType.Date).Value = oEmpl.FechaIngreso;
-                sqlCom.Parameters.Add("@FechaEgreso", SqlDbType.Date).Value = DateTime.Today;
+                sqlCom.Parameters.Add("@Estado", SqlDbType.NVarChar).Value = 'B';
+                sqlCom.Parameters.Add("@FechaEgreso", SqlDbType.Date).Value = DateTime.Now;
 
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();
@@ -219,32 +213,32 @@ namespace TF.DAC
             return oEmpleados;
         }
 
-
-        public DataTable ConsultarPuestoTrabajo(Empleados oempl)
-        {
-            try
-            {
-                string sqlSentencia = "SP_Empleados_Puestotrabajo";
-                SqlConnection sqlCnn = new SqlConnection();
-                sqlCnn.ConnectionString = conectionString;
-                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
-                sqlCom.CommandType = CommandType.StoredProcedure;
-                sqlCom.Parameters.Add("@DNI", SqlDbType.NVarChar).Value = oempl.DNI;
-                sqlCnn.Open();
-                DataSet ds = new DataSet();
-                SqlDataAdapter DA = new SqlDataAdapter();
-                DA.SelectCommand = sqlCom;
-                DA.Fill(ds);
-                sqlCnn.Close();
-                return ds.Tables[0];
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
-                //return null;
-            }
-        }
+    //    public DataTable ConsultarPuestoTrabajo(Empleados oempl)
+    //    {
+    //        try
+    //        {
+    //            string sqlSentencia = "SP_Empleados_Puestotrabajo";
+    //            SqlConnection sqlCnn = new SqlConnection();
+    //            sqlCnn.ConnectionString = conectionString;
+    //            SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+    //            sqlCom.CommandType = CommandType.StoredProcedure;
+    //            sqlCom.Parameters.Add("@DNI", SqlDbType.NVarChar).Value = oempl.DNI;
+    //            sqlCnn.Open();
+    //            DataSet ds = new DataSet();
+    //            SqlDataAdapter DA = new SqlDataAdapter();
+    //            DA.SelectCommand = sqlCom;
+    //            DA.Fill(ds);
+    //            sqlCnn.Close();
+    //            return ds.Tables[0];
+    //        }
+    //        catch (Exception ex)
+    //        {
+    //            throw ex;
+    //            //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+    //            //return null;
+    //        }
+    //    }
 
     }
 }
+

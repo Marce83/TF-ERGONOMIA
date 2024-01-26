@@ -36,14 +36,16 @@ namespace TF.WIN
             if (dgvResultado.SelectedRows.Count == 1) // si selecciona un fila
             {
                 //long CUIT = Convert.ToInt32(dgvResultado.CurrentRow.Cells[0].Value);
+
                 long CUIT = Convert.ToInt64(dgvResultado.CurrentRow.Cells[0].Value);
+
                 EmpresasBC oEmpresaBC = new EmpresasBC();
                 EmpresaSeleccionada = oEmpresaBC.ObtenerEmpresa(CUIT);
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Aun no ha seleccionado Ningun Cliente");
+                MessageBox.Show("No existe empresa seleccionada");
             }
         }
 
