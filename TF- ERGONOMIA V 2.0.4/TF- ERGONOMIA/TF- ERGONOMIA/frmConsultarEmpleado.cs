@@ -27,6 +27,20 @@ namespace TF.WIN
             Limpiar();
         }
 
+        private void txtBuscador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(cboBuscadorDinamico.Text == "DNI")
+            {
+                if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                        e.Handled = true;
+            }
+            else
+            {
+                if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space))
+                    e.Handled = true;
+            }
+        }
+
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             Empleados oempl = new Empleados();
@@ -52,7 +66,10 @@ namespace TF.WIN
                     dgvEmpleados.DataSource = dtApe;
                     break;
             }
-            //Listar();
+            if(txtBuscador == null)
+            {
+                Listar();
+            }
         }
 
         private void btnModificar_Click(object sender, EventArgs e)

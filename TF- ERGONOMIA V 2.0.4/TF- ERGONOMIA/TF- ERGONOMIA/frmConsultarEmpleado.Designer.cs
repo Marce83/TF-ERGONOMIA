@@ -113,8 +113,7 @@
             this.cboBuscadorDinamico.Items.AddRange(new object[] {
             "DNI",
             "Nombre",
-            "Apellido",
-            "Genero"});
+            "Apellido"});
             this.cboBuscadorDinamico.Location = new System.Drawing.Point(21, 45);
             this.cboBuscadorDinamico.Margin = new System.Windows.Forms.Padding(2);
             this.cboBuscadorDinamico.MaxDropDownItems = 4;
@@ -537,6 +536,7 @@
             this.txtBuscador.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtBuscador.TrailingIcon = null;
             this.txtBuscador.UseSystemPasswordChar = false;
+            this.txtBuscador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscador_KeyPress);
             // 
             // btnBaja
             // 

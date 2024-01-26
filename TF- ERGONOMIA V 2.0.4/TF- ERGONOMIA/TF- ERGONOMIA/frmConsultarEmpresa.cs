@@ -29,6 +29,20 @@ namespace TF.WIN
             Limpiar();
         }
 
+        private void txtBuscador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (cboBuscadorDinamico.Text == "CUIT")
+            {
+                if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                    e.Handled = true;
+            }
+            else
+            {
+                if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space))
+                    e.Handled = true;
+            }
+        }
+
         private void btnBuscar_Click(object sender, EventArgs e)
         {
            if(cboBuscadorDinamico.Text == "CUIT")

@@ -737,6 +737,7 @@
             this.txtBuscador.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtBuscador.TrailingIcon = null;
             this.txtBuscador.UseSystemPasswordChar = false;
+            this.txtBuscador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscador_KeyPress);
             // 
             // btnBuscar
             // 
