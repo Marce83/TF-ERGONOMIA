@@ -66,5 +66,14 @@ namespace TF.BC
             EmpleadosDAC oEmpleadosDAC = new EmpleadosDAC();
             return oEmpleadosDAC.ConsultarEmpleadosPorApellido(oEmpl);
         }
+
+        public void BuscarEmpleado(Empleados oEmpl)
+        {
+            EmpleadosDAC oEmpleadosDAC = new EmpleadosDAC();
+            if (oEmpleadosDAC.ExisteEmpleado(oEmpl.DNI))
+            {
+                throw new Exception("El empleado ya existe, por favor cargue otro.");
+            }
+        }
     }
 }

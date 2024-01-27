@@ -98,11 +98,12 @@ namespace TF.WIN
                                                                     oemp.Actividad_Empresarial = cboActEmpr.Text;
                                                                     oemp.Direccion = txtCalle.Text;
                                                                     oemp.Provincia = cboProvincia.Text;
-                                                                    oemp.Localidad = cboLocalidad.Text; 
+                                                                    oemp.Localidad = cboLocalidad.Text;
                                                                     oemp.Telefono = txtTelefono.Text;
                                                                     oemp.Correo = txtCorreo.Text;
                                                                     oemp.Web = txtWeb.Text;
                                                                     oemp.FechaIngreso = dtpFechaAlta.Value;
+                                                                    oempresaBC.BuscarEmpresa(oemp);
                                                                     var res = oempresaBC.Insertempresa(oemp);
                                                                     MessageBox.Show("Empresa cargada exitosamente");
                                                                     Limpiar();

@@ -208,5 +208,19 @@ namespace TF.DAC
                 return 0;
             }
         }
+
+        public bool ExisteEmpresa(String CUIT)
+        {
+            string sqlSentencia = "SELECT COUNT(*) FROM dbo.Empresas WHERE CUIT = '"+CUIT+"'";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlCnn.Open();
+            // Ejecutar el comando y obtener el resultado
+            int count = Convert.ToInt32(sqlCom.ExecuteScalar());
+            // Si count es mayor que 0, el usuario ya existe
+            sqlCnn.Close();
+            return count > 0;
+        }
     }
 }
