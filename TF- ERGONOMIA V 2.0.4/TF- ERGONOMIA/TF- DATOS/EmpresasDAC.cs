@@ -45,6 +45,7 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@Nombre", SqlDbType.NVarChar).Value = oemp.Nombre;
                 sqlCom.Parameters.Add("@Condicion_Fiscal", SqlDbType.NVarChar).Value = oemp.Condicion_Fiscal;
                 sqlCom.Parameters.Add("@Actividad_Empresarial", SqlDbType.NVarChar).Value = oemp.Actividad_Empresarial;
+                sqlCom.Parameters.Add("@Tipo", SqlDbType.NVarChar).Value = oemp.Tipo;
                 sqlCom.Parameters.Add("@Direccion", SqlDbType.NVarChar).Value = oemp.Direccion;
                 sqlCom.Parameters.Add("@Localidad", SqlDbType.NVarChar).Value = oemp.Localidad;
                 sqlCom.Parameters.Add("@Provincia", SqlDbType.NVarChar).Value = oemp.Provincia;
@@ -144,12 +145,13 @@ namespace TF.DAC
                     oEmpresas.Nombre = dr.GetString(1);
                     oEmpresas.Condicion_Fiscal = dr.GetString(2);
                     oEmpresas.Actividad_Empresarial = dr.GetString(3);
-                    oEmpresas.Direccion = dr.GetString(4);
-                    oEmpresas.Localidad = dr.GetString(5);
-                    oEmpresas.Provincia = dr.GetString(6);
-                    oEmpresas.Telefono = dr.GetString(7);
-                    oEmpresas.Correo = dr.GetString(8);
-                    oEmpresas.Web = dr.GetString(9);
+                    oEmpresas.Tipo = dr.GetString(4);
+                    oEmpresas.Direccion = dr.GetString(5);
+                    oEmpresas.Localidad = dr.GetString(6);
+                    oEmpresas.Provincia = dr.GetString(7);
+                    oEmpresas.Telefono = dr.GetString(8);
+                    oEmpresas.Correo = dr.GetString(9);
+                    oEmpresas.Web = dr.GetString(10);
                 }
                 sqlCnn.Close();
                 return oEmpresas;
@@ -168,6 +170,7 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@Nombre", SqlDbType.NVarChar).Value = oemp.Nombre;
                 sqlCom.Parameters.Add("@Condicion_Fiscal", SqlDbType.NVarChar).Value = oemp.Condicion_Fiscal;
                 sqlCom.Parameters.Add("@Actividad_Empresarial", SqlDbType.NVarChar).Value = oemp.Actividad_Empresarial;
+                sqlCom.Parameters.Add("@Tipo", SqlDbType.NVarChar).Value = oemp.Tipo;
                 sqlCom.Parameters.Add("@Direccion", SqlDbType.NVarChar).Value = oemp.Direccion;
                 sqlCom.Parameters.Add("@Localidad", SqlDbType.NVarChar).Value = oemp.Localidad;
                 sqlCom.Parameters.Add("@Provincia", SqlDbType.NVarChar).Value = oemp.Provincia;

@@ -80,13 +80,14 @@ namespace TF.WIN
             txtNombreEmpresa.Text = dgvCargaEmpresas.CurrentRow.Cells[1].Value.ToString();
             cboCondFiscal.Text = dgvCargaEmpresas.CurrentRow.Cells[2].Value.ToString();
             cboActEmpr.Text = dgvCargaEmpresas.CurrentRow.Cells[3].Value.ToString();
-            txtCalle.Text = dgvCargaEmpresas.CurrentRow.Cells[4].Value.ToString();
-            cboProvincia.Text = dgvCargaEmpresas.CurrentRow.Cells[5].Value.ToString();
+            cboTipo.Text = dgvCargaEmpresas.CurrentRow.Cells[4].Value.ToString();
+            txtCalle.Text = dgvCargaEmpresas.CurrentRow.Cells[5].Value.ToString();
+            cboProvincia.Text = dgvCargaEmpresas.CurrentRow.Cells[7].Value.ToString();
             cboLocalidad.Text = dgvCargaEmpresas.CurrentRow.Cells[6].Value.ToString();
-            txtTelefono.Text = dgvCargaEmpresas.CurrentRow.Cells[7].Value.ToString();
-            txtCorreo.Text = dgvCargaEmpresas.CurrentRow.Cells[8].Value.ToString();
-            txtWeb.Text = dgvCargaEmpresas.CurrentRow.Cells[9].Value.ToString();
-            dtpFechaAlta.Text = dgvCargaEmpresas.CurrentRow.Cells[10].Value.ToString();
+            txtTelefono.Text = dgvCargaEmpresas.CurrentRow.Cells[8].Value.ToString();
+            txtCorreo.Text = dgvCargaEmpresas.CurrentRow.Cells[9].Value.ToString();
+            txtWeb.Text = dgvCargaEmpresas.CurrentRow.Cells[10].Value.ToString();
+            dtpFechaAlta.Text = dgvCargaEmpresas.CurrentRow.Cells[11].Value.ToString();
 
         }
 
@@ -151,6 +152,7 @@ namespace TF.WIN
                     oemp.Nombre = txtNombreEmpresa.Text;
                     oemp.Condicion_Fiscal = cboCondFiscal.Text;
                     oemp.Actividad_Empresarial = cboActEmpr.Text;
+                    oemp.Tipo = cboTipo.Text;
                     oemp.Direccion = txtCalle.Text;
                     oemp.Localidad = cboLocalidad.Text;
                     oemp.Provincia = cboProvincia.Text;

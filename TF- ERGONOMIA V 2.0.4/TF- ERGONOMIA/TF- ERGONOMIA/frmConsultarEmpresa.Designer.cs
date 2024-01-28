@@ -705,7 +705,7 @@
             this.dgvCargaEmpresas.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCargaEmpresas.RowTemplate.Height = 24;
             this.dgvCargaEmpresas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCargaEmpresas.Size = new System.Drawing.Size(1118, 195);
+            this.dgvCargaEmpresas.Size = new System.Drawing.Size(1237, 195);
             this.dgvCargaEmpresas.TabIndex = 57;
             this.dgvCargaEmpresas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCargaEmpresas_CellContentClick);
             // 
