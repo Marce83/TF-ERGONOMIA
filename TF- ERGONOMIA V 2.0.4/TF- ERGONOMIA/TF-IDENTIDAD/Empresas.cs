@@ -13,6 +13,7 @@ namespace TF.ENTITIES
         public string Nombre { get; set; }
         public string Condicion_Fiscal { get; set; }
         public string Actividad_Empresarial { get; set; }
+        public string Tipo { get; set; }
         public string Direccion { get; set; }
         public string Localidad { get; set; }
         public string Provincia { get; set; }
