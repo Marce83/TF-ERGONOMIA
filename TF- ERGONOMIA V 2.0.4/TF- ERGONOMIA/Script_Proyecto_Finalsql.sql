@@ -20,6 +20,7 @@ CUIT nvarchar(11),
 Nombre nvarchar(30),
 Condicion_Fiscal nvarchar(30),
 Actividad_Empresarial nvarchar(30),
+Tipo NVARCHAR(7),
 Direccion nvarchar(20),
 Localidad nvarchar(20),
 Provincia nvarchar(20),
@@ -116,16 +117,20 @@ CREATE OR ALTER PROCEDURE SP_Empresas_Insert
 @Nombre nvarchar(30),
 @Condicion_Fiscal nvarchar(30),
 @Actividad_Empresarial nvarchar(30),
+@Tipo NVARCHAR(7),
 @Direccion nvarchar(20),
 @Localidad nvarchar(20),
 @Provincia nvarchar(20),
 @Telefono nvarchar(10),
 @Correo nvarchar(30),
-@Web nvarchar(30)
+@Web nvarchar(30),
+@FechaIngreso DATE,
+@FechaEgreso DATE,
+@Estado NVARCHAR(1)
 AS
 BEGIN
-	insert into Empresas (CUIT, Nombre, Condicion_Fiscal,Actividad_Empresarial, Direccion,Localidad, Provincia, Telefono, Correo, Web) 
-	VALUES(@CUIT,@Nombre,@Condicion_Fiscal,@Actividad_Empresarial,@Direccion,@Localidad,@Provincia,@Telefono,@Correo,@Web)
+	insert into Empresas (CUIT, Nombre, Condicion_Fiscal,Actividad_Empresarial,Tipo, Direccion,Localidad, Provincia, Telefono, Correo, Web, FechaIngreso, FechaEgreso, Estado) 
+	VALUES(@CUIT,@Nombre,@Condicion_Fiscal,@Actividad_Empresarial,@Tipo,@Direccion,@Localidad,@Provincia,@Telefono,@Correo,@Web, @FechaIngreso, @FechaEgreso, @Estado)
 END
 GO
 
@@ -137,6 +142,7 @@ CREATE OR ALTER PROCEDURE SP_Empresas_Update
 @Nombre nvarchar(30),
 @Condicion_Fiscal nvarchar(30),
 @Actividad_Empresarial nvarchar(30),
+@Tipo NVARCHAR(7),
 @Direccion nvarchar(20),
 @Localidad nvarchar(20),
 @Provincia nvarchar(20),
@@ -145,7 +151,7 @@ CREATE OR ALTER PROCEDURE SP_Empresas_Update
 @Web nvarchar(30)
 AS
 BEGIN
-	update Empresas set CUIT=@CUIT, Nombre=@Nombre, Condicion_Fiscal=@Condicion_Fiscal ,Actividad_Empresarial=@Actividad_Empresarial , Direccion=@Direccion, Localidad=@Localidad, Provincia=@Provincia, Telefono=@Telefono, Correo=@Correo, Web=@Web
+	update Empresas set CUIT=@CUIT, Nombre=@Nombre, Condicion_Fiscal=@Condicion_Fiscal ,Actividad_Empresarial=@Actividad_Empresarial,Tipo=@Tipo, Direccion=@Direccion, Localidad=@Localidad, Provincia=@Provincia, Telefono=@Telefono, Correo=@Correo, Web=@Web
 	where CUIT=@CUIT
 END
 GO
@@ -172,7 +178,7 @@ go
 CREATE OR ALTER PROCEDURE SP_Empresas_GetAll
 AS
 BEGIN
-	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Direccion, Localidad, Provincia, Telefono, Correo, Web
+	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
 END
 GO
@@ -184,9 +190,9 @@ CREATE OR ALTER PROCEDURE SP_Empresas_GetId
 @CUIT nvarchar(11)
 AS
 BEGIN
-	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
-	WHERE CUIT = @CUIT
+	WHERE CUIT LIKE '%'+@CUIT+'%'
 END
 GO
 
@@ -194,9 +200,9 @@ CREATE OR ALTER PROCEDURE [dbo].[SP_Nombre_Empresa]
 @Nombre nvarchar(30)
 AS
 BEGIN
-	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
-	WHERE Nombre LIKE @Nombre
+	WHERE Nombre LIKE '%'+@Nombre+'%'
 END
 GO
 
@@ -250,8 +256,9 @@ CREATE OR ALTER PROCEDURE SP_Empleados_DNI
 @DNI nvarchar(8)
 AS
 BEGIN
-	SELECT * FROM Empleados
-	WHERE DNI = @DNI
+	SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
+	FROM Empleados
+	WHERE DNI LIKE '%'+@DNI+'%'
 END
 GO
 
@@ -262,15 +269,13 @@ CREATE OR ALTER PROCEDURE SP_Empleados_Update
 @Apellido nvarchar(20),
 @DNI nvarchar(8),
 @Genero nvarchar(20),
---@PuestoDeTrabajo nvarchar(20),
 @Peso float,
 @Altura float,
-@FechaNacimiento DATE,
-@FechaIngreso DATE,
-@FechaEgreso DATE
+@FechaNacimiento DATE
+
 AS
 BEGIN
-	update Empleados set Nombre=@Nombre, Apellido=@Apellido, DNI=@DNI ,Genero=@Genero, Peso=@Peso, Altura=@Altura, FechaNacimiento=@FechaNacimiento, FechaIngreso = @FechaIngreso, FechaEgreso = @FechaEgreso
+	update Empleados set Nombre=@Nombre, Apellido=@Apellido, DNI=@DNI ,Genero=@Genero, Peso=@Peso, Altura=@Altura, FechaNacimiento=@FechaNacimiento
 	where DNI=@DNI
 END
 GO

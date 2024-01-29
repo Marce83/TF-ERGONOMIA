@@ -109,6 +109,54 @@ namespace TF.DAC
             }
         }
 
+        public DataTable ConsultarEmpleadosPorNombre(Empleados oempl)
+        {
+            try
+            {
+                string sqlSentencia = "SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado FROM Empleados WHERE Nombre LIKE '"+"%"+oempl.Nombre+"%"+ "' AND Estado = 'A'";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
+        }
+
+        public DataTable ConsultarEmpleadosPorApellido(Empleados oempl)
+        {
+            try
+            {
+                string sqlSentencia = "SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado FROM Empleados WHERE Apellido LIKE '"+"%"+oempl.Apellido+"%"+"' AND Estado = 'A'";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
+        }
+
         public int ObtenerSoloIdEmpresa(long CUIT)
         {
             Empresas oEmpresas = new Empresas();
@@ -213,32 +261,19 @@ namespace TF.DAC
             return oEmpleados;
         }
 
-    //    public DataTable ConsultarPuestoTrabajo(Empleados oempl)
-    //    {
-    //        try
-    //        {
-    //            string sqlSentencia = "SP_Empleados_Puestotrabajo";
-    //            SqlConnection sqlCnn = new SqlConnection();
-    //            sqlCnn.ConnectionString = conectionString;
-    //            SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
-    //            sqlCom.CommandType = CommandType.StoredProcedure;
-    //            sqlCom.Parameters.Add("@DNI", SqlDbType.NVarChar).Value = oempl.DNI;
-    //            sqlCnn.Open();
-    //            DataSet ds = new DataSet();
-    //            SqlDataAdapter DA = new SqlDataAdapter();
-    //            DA.SelectCommand = sqlCom;
-    //            DA.Fill(ds);
-    //            sqlCnn.Close();
-    //            return ds.Tables[0];
-    //        }
-    //        catch (Exception ex)
-    //        {
-    //            throw ex;
-    //            //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
-    //            //return null;
-    //        }
-    //    }
-
+        public bool ExisteEmpleado(String DNI)
+        {
+            string sqlSentencia = "SELECT COUNT(*) FROM dbo.Empleados WHERE DNI = '" + DNI + "'";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlCnn.Open();
+            // Ejecutar el comando y obtener el resultado
+            int count = Convert.ToInt32(sqlCom.ExecuteScalar());
+            // Si count es mayor que 0, el usuario ya existe
+            sqlCnn.Close();
+            return count > 0;
+        }
     }
 }
 

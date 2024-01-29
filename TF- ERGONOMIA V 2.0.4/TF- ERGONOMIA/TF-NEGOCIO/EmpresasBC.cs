@@ -44,7 +44,6 @@ namespace TF.BC
             return oempresaDAC.Insertempresa(oemp);
         }
         
-        
         public int updateempresa(Empresas oemp)
         {
             EmpresasDAC oempresaDAC = new EmpresasDAC();
@@ -55,6 +54,15 @@ namespace TF.BC
         {
             EmpresasDAC oempresaDAC = new EmpresasDAC();
             return oempresaDAC.DeleteEmpresa(oemp);
+        }
+
+        public void BuscarEmpresa(Empresas oEmp)
+        {
+            EmpresasDAC oempresaDAC = new EmpresasDAC();
+            if (oempresaDAC.ExisteEmpresa(oEmp.CUIT))
+            {
+                throw new Exception("La empresa ya existe, por favor ingrese otra.");
+            }
         }
     }
 }

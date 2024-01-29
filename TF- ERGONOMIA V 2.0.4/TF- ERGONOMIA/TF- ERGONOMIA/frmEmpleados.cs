@@ -28,6 +28,7 @@ namespace TF.WIN
             if (oFrm.EmpresaSeleccionada != null)
             {
                 txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
+                txtNomEmpr.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
             }
         }
 
@@ -54,7 +55,7 @@ namespace TF.WIN
                         long CUIL = Convert.ToInt64(txtCUITEncontrado.Text);
                         var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIL);
                         oBe.IdEmpresa = Convert.ToInt32(BuscarId);
-
+                        oEmpleadosBC.BuscarEmpleado(oBe);
                         var res = oEmpleadosBC.InsertEmpleadosBC(oBe);
                         MessageBox.Show("Empleado cargado exitosamente");
                         Listar();
