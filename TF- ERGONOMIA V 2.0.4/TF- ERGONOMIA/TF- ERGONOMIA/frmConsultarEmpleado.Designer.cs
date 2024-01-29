@@ -245,8 +245,8 @@
             // txtAltura
             // 
             this.txtAltura.AnimateReadOnly = false;
-            this.txtAltura.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtAltura.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            //this.txtAltura.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            //this.txtAltura.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtAltura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtAltura.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtAltura.Depth = 0;
@@ -302,8 +302,8 @@
             // txtPeso
             // 
             this.txtPeso.AnimateReadOnly = false;
-            this.txtPeso.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtPeso.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            //this.txtPeso.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            //this.txtPeso.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtPeso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtPeso.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtPeso.Depth = 0;
@@ -375,8 +375,8 @@
             // txtCUITEncontrado
             // 
             this.txtCUITEncontrado.AnimateReadOnly = false;
-            this.txtCUITEncontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtCUITEncontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            //this.txtCUITEncontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            //this.txtCUITEncontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtCUITEncontrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCUITEncontrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCUITEncontrado.Depth = 0;
@@ -432,8 +432,8 @@
             // txtApellido
             // 
             this.txtApellido.AnimateReadOnly = false;
-            this.txtApellido.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtApellido.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            //this.txtApellido.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            //this.txtApellido.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtApellido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtApellido.Depth = 0;
@@ -463,8 +463,8 @@
             // txtNombre
             // 
             this.txtNombre.AnimateReadOnly = false;
-            this.txtNombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtNombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            //this.txtNombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            //this.txtNombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtNombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombre.Depth = 0;
@@ -521,8 +521,8 @@
             // txtBuscador
             // 
             this.txtBuscador.AnimateReadOnly = false;
-            this.txtBuscador.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtBuscador.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            //this.txtBuscador.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            //this.txtBuscador.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtBuscador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtBuscador.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtBuscador.Depth = 0;
