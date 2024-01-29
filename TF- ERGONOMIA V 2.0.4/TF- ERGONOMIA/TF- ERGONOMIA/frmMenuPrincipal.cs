@@ -128,7 +128,7 @@ namespace TF.WIN
         private void btnEstadisticas_Click(object sender, EventArgs e)
         {
 
-            AbrirFormHija(new frmEstadisticaMenu());
+           AbrirFormulario<frmEstadisticaMenu>();
 
         }
 
@@ -213,7 +213,7 @@ namespace TF.WIN
         private void btnPuesto_Click(object sender, EventArgs e)
         {
 
-            AbrirFormHija(new PuestoTrabajoSeleccion());
+           AbrirFormulario<PuestoTrabajoSeleccion>();
 
         }
     }
