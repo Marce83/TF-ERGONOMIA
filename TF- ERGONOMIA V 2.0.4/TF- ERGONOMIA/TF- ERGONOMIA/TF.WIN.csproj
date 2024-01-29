@@ -78,13 +78,17 @@
     <Compile Include="frmBuscarEmpresa.Designer.cs">
       <DependentUpon>frmBuscarEmpresa.cs</DependentUpon>
     </Compile>
-
     <Compile Include="FrmBuscarPuestoTrabajo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmBuscarPuestoTrabajo.Designer.cs">
       <DependentUpon>FrmBuscarPuestoTrabajo.cs</DependentUpon>
-
+    </Compile>
+    <Compile Include="FrmColsultEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColsultEmpresa.Designer.cs">
+      <DependentUpon>FrmColsultEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEditUsrAdmin.cs">
       <SubType>Form</SubType>
@@ -272,10 +276,11 @@
     <EmbeddedResource Include="frmBuscarEmpresa.resx">
       <DependentUpon>frmBuscarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="FrmBuscarPuestoTrabajo.resx">
       <DependentUpon>FrmBuscarPuestoTrabajo.cs</DependentUpon>
-
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColsultEmpresa.resx">
+      <DependentUpon>FrmColsultEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditUsrAdmin.resx">
       <DependentUpon>frmEditUsrAdmin.cs</DependentUpon>
