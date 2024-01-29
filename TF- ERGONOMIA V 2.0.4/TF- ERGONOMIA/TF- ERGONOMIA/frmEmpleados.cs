@@ -154,14 +154,14 @@ namespace TF.WIN
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            frmConsultarEmpleado ofrmConsultarEmpleado = new frmConsultarEmpleado();
-            AddOwnedForm(ofrmConsultarEmpleado);
-            ofrmConsultarEmpleado.TopLevel = false;
-            ofrmConsultarEmpleado.Dock = DockStyle.Fill;
-            this.Controls.Add(ofrmConsultarEmpleado);
-            this.Tag = ofrmConsultarEmpleado;
-            ofrmConsultarEmpleado.BringToFront();
-            ofrmConsultarEmpleado.Show();
+            //frmConsultarEmpleado ofrmConsultarEmpleado = new frmConsultarEmpleado();
+            //AddOwnedForm(ofrmConsultarEmpleado);
+            //ofrmConsultarEmpleado.TopLevel = false;
+            //ofrmConsultarEmpleado.Dock = DockStyle.Fill;
+            //this.Controls.Add(ofrmConsultarEmpleado);
+            //this.Tag = ofrmConsultarEmpleado;
+            //ofrmConsultarEmpleado.BringToFront();
+            //ofrmConsultarEmpleado.Show();
         }
     }
 }
