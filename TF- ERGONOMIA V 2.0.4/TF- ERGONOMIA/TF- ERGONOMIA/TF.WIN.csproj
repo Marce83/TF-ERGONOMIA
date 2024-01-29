@@ -42,8 +42,8 @@
     <Reference Include="itextsharp.xmlworker, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\itextsharp.xmlworker.5.5.13.3\lib\itextsharp.xmlworker.dll</HintPath>
     </Reference>
-    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.2.RTL.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    <Reference Include="MaterialSkin, Version=2.3.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.RTL.2.3.1.1\lib\net461\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -83,6 +83,18 @@
     </Compile>
     <Compile Include="FrmBuscarPuestoTrabajo.Designer.cs">
       <DependentUpon>FrmBuscarPuestoTrabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarEmpleado.Designer.cs">
+      <DependentUpon>frmConsultarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarEmpresa.Designer.cs">
+      <DependentUpon>frmConsultarEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEditUsrAdmin.cs">
       <SubType>Form</SubType>
@@ -272,6 +284,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBuscarPuestoTrabajo.resx">
       <DependentUpon>FrmBuscarPuestoTrabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarEmpleado.resx">
+      <DependentUpon>frmConsultarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarEmpresa.resx">
+      <DependentUpon>frmConsultarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditUsrAdmin.resx">
       <DependentUpon>frmEditUsrAdmin.cs</DependentUpon>

@@ -34,7 +34,6 @@
             this.btnCargarPuesto = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-
             this.CboAreaempresa = new MaterialSkin.Controls.MaterialComboBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
@@ -47,7 +46,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-
             this.SuspendLayout();
             // 
             // CboPuestoTrabajo
@@ -75,7 +73,6 @@
             "Director",
             "Vicepresidente",
             "Presidente"});
-
             this.CboPuestoTrabajo.Location = new System.Drawing.Point(252, 80);
             this.CboPuestoTrabajo.Margin = new System.Windows.Forms.Padding(2);
             this.CboPuestoTrabajo.MaxDropDownItems = 4;
@@ -84,17 +81,13 @@
             this.CboPuestoTrabajo.Size = new System.Drawing.Size(265, 49);
             this.CboPuestoTrabajo.StartIndex = 0;
             this.CboPuestoTrabajo.TabIndex = 0;
-
-
             // 
             // materialLabel1
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-
             this.materialLabel1.Location = new System.Drawing.Point(56, 96);
-
             this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
@@ -111,11 +104,9 @@
             this.btnCargarPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargarPuesto.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnCargarPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
             this.btnCargarPuesto.Location = new System.Drawing.Point(573, 80);
             this.btnCargarPuesto.Name = "btnCargarPuesto";
             this.btnCargarPuesto.Size = new System.Drawing.Size(116, 49);
-
             this.btnCargarPuesto.TabIndex = 74;
             this.btnCargarPuesto.Text = "Cargar";
             this.btnCargarPuesto.UseVisualStyleBackColor = false;
@@ -130,11 +121,9 @@
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
             this.btnSalir.Location = new System.Drawing.Point(573, 161);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(116, 49);
-
             this.btnSalir.TabIndex = 75;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -145,7 +134,6 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-
             this.materialLabel2.Location = new System.Drawing.Point(56, 177);
             this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -170,13 +158,17 @@
             this.CboAreaempresa.ItemHeight = 43;
             this.CboAreaempresa.Items.AddRange(new object[] {
             "Seleccione",
-            "Comercial",
-            "Administracion",
-            "Sistemas",
-            "Almacen",
+            "Dirección General",
+            "Administración",
             "Recursos Humanos",
-            "Vicepresidente",
-            "Presidente"});
+            "Comercialización",
+            "Producción",
+            "Logística",
+            "Finanzas y Contabilidad",
+            "Marketing",
+            "Informática",
+            "Mantenimiento",
+            "Legales"});
             this.CboAreaempresa.Location = new System.Drawing.Point(252, 161);
             this.CboAreaempresa.Margin = new System.Windows.Forms.Padding(2);
             this.CboAreaempresa.MaxDropDownItems = 4;
@@ -268,30 +260,23 @@
             this.label1.Size = new System.Drawing.Size(408, 31);
             this.label1.TabIndex = 239;
             this.label1.Text = "CARGA PUESTO DE TRABAJO";
-
             // 
             // FrmPuestoTrabajo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(750, 264);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.CboAreaempresa);
             this.Controls.Add(this.materialLabel2);
-
-
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCargarPuesto);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.CboPuestoTrabajo);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-
             this.Margin = new System.Windows.Forms.Padding(2);
-
-
             this.Name = "FrmPuestoTrabajo";
             this.Text = "FrmPuestoTrabajocs";
             this.BarraTitulo.ResumeLayout(false);

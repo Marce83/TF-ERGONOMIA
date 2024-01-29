@@ -132,6 +132,7 @@
             this.cboAreaempresa.DropDownHeight = 174;
             this.cboAreaempresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboAreaempresa.DropDownWidth = 121;
+            this.cboAreaempresa.Enabled = false;
             this.cboAreaempresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.cboAreaempresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cboAreaempresa.FormattingEnabled = true;
@@ -150,7 +151,7 @@
             "Informática",
             "Mantenimiento",
             "Legales"});
-            this.cboAreaempresa.Location = new System.Drawing.Point(634, 419);
+            this.cboAreaempresa.Location = new System.Drawing.Point(604, 380);
             this.cboAreaempresa.Margin = new System.Windows.Forms.Padding(2);
             this.cboAreaempresa.MaxDropDownItems = 4;
             this.cboAreaempresa.MouseState = MaterialSkin.MouseState.OUT;
@@ -165,8 +166,9 @@
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel9.Depth = 0;
+            this.materialLabel9.Enabled = false;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(498, 428);
+            this.materialLabel9.Location = new System.Drawing.Point(468, 389);
             this.materialLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
@@ -208,9 +210,9 @@
             this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarCUIT.Location = new System.Drawing.Point(789, 307);
+            this.btnBuscarCUIT.Location = new System.Drawing.Point(789, 303);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
-            this.btnBuscarCUIT.Size = new System.Drawing.Size(67, 35);
+            this.btnBuscarCUIT.Size = new System.Drawing.Size(67, 48);
             this.btnBuscarCUIT.TabIndex = 91;
             this.btnBuscarCUIT.Text = "...";
             this.btnBuscarCUIT.UseVisualStyleBackColor = false;
@@ -245,6 +247,8 @@
             // txtAltura
             // 
             this.txtAltura.AnimateReadOnly = false;
+            this.txtAltura.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtAltura.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtAltura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtAltura.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtAltura.Depth = 0;
@@ -300,6 +304,8 @@
             // txtPeso
             // 
             this.txtPeso.AnimateReadOnly = false;
+            this.txtPeso.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtPeso.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtPeso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtPeso.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtPeso.Depth = 0;
@@ -371,6 +377,8 @@
             // txtCUITEncontrado
             // 
             this.txtCUITEncontrado.AnimateReadOnly = false;
+            this.txtCUITEncontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCUITEncontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtCUITEncontrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCUITEncontrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCUITEncontrado.Depth = 0;
@@ -426,6 +434,8 @@
             // txtApellido
             // 
             this.txtApellido.AnimateReadOnly = false;
+            this.txtApellido.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtApellido.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtApellido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtApellido.Depth = 0;
@@ -455,6 +465,8 @@
             // txtNombre
             // 
             this.txtNombre.AnimateReadOnly = false;
+            this.txtNombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtNombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombre.Depth = 0;
@@ -511,6 +523,8 @@
             // txtBuscador
             // 
             this.txtBuscador.AnimateReadOnly = false;
+            this.txtBuscador.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBuscador.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtBuscador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtBuscador.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtBuscador.Depth = 0;
@@ -583,7 +597,7 @@
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.Location = new System.Drawing.Point(407, 45);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(116, 49);
+            this.btnBuscar.Size = new System.Drawing.Size(126, 49);
             this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
