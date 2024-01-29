@@ -49,8 +49,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmpleadosBC.cs" />
+    <Compile Include="EstadisticaBC.cs" />
+    <Compile Include="JssBC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EmpresasBC.cs" />
+    <Compile Include="NioshBC.cs" />
+    <Compile Include="PuestoTrabajoBC.cs" />
+    <Compile Include="RebaBC.cs" />
     <Compile Include="RulaBC.cs" />
     <Compile Include="UsuariosBC.cs" />
   </ItemGroup>

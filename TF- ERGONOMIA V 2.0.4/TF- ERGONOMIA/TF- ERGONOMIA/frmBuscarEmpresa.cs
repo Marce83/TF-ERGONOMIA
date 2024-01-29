@@ -39,6 +39,7 @@ namespace TF.WIN
                 long CUIT = Convert.ToInt64(dgvResultado.CurrentRow.Cells[0].Value);
                 //long CUIT = Convert.ToInt64(dgvResultado.Rows[0].Cells[0].Value);
                 //string nombreEmpresa = dgvResultado.Rows[0].Cells[1].Value.ToString();
+
                 EmpresasBC oEmpresaBC = new EmpresasBC();
                 EmpresaSeleccionada = oEmpresaBC.ObtenerEmpresa(CUIT);
                 this.Close();

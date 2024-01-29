@@ -43,11 +43,12 @@
       <HintPath>..\packages\itextsharp.xmlworker.5.5.13.3\lib\itextsharp.xmlworker.dll</HintPath>
     </Reference>
     <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+      <HintPath>..\packages\MaterialSkin.2.RTL.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAsociacionPuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsociacionPuesto.Designer.cs">
+      <DependentUpon>FrmAsociacionPuesto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuscarEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,17 +78,11 @@
     <Compile Include="frmBuscarEmpresa.Designer.cs">
       <DependentUpon>frmBuscarEmpresa.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsultarEmpleado.cs">
+    <Compile Include="FrmBuscarPuestoTrabajo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConsultarEmpleado.Designer.cs">
-      <DependentUpon>frmConsultarEmpleado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmConsultarEmpresa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmConsultarEmpresa.Designer.cs">
-      <DependentUpon>frmConsultarEmpresa.cs</DependentUpon>
+    <Compile Include="FrmBuscarPuestoTrabajo.Designer.cs">
+      <DependentUpon>FrmBuscarPuestoTrabajo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEditUsrAdmin.cs">
       <SubType>Form</SubType>
@@ -101,11 +102,23 @@
     <Compile Include="frmEmpleados.Designer.cs">
       <DependentUpon>frmEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEstadisticaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadisticaMenu.Designer.cs">
+      <DependentUpon>frmEstadisticaMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEstadisticas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmEstadisticas.Designer.cs">
       <DependentUpon>frmEstadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadisticas2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadisticas2.Designer.cs">
+      <DependentUpon>frmEstadisticas2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmInformes.cs">
       <SubType>Form</SubType>
@@ -137,6 +150,36 @@
     <Compile Include="frmRecuperarClave.Designer.cs">
       <DependentUpon>frmRecuperarClave.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVistaPuestoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVistaPuestoEmpleado.Designer.cs">
+      <DependentUpon>FrmVistaPuestoEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPuestoHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPuestoHistorial.Designer.cs">
+      <DependentUpon>FrmPuestoHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JSS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JSS.Designer.cs">
+      <DependentUpon>JSS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JSSPORTADA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JSSPORTADA.Designer.cs">
+      <DependentUpon>JSSPORTADA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JSSRESULTADO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JSSRESULTADO.Designer.cs">
+      <DependentUpon>JSSRESULTADO.cs</DependentUpon>
+    </Compile>
     <Compile Include="Metodos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +198,48 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="NIOSH1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NIOSH1.Designer.cs">
+      <DependentUpon>NIOSH1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NIOSHPORTADA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NIOSHPORTADA.Designer.cs">
+      <DependentUpon>NIOSHPORTADA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NIOSHRESULTADO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NIOSHRESULTADO.Designer.cs">
+      <DependentUpon>NIOSHRESULTADO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PuestoTrabajoSeleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuestoTrabajoSeleccion.Designer.cs">
+      <DependentUpon>PuestoTrabajoSeleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REBARESULTADO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REBARESULTADO.Designer.cs">
+      <DependentUpon>REBARESULTADO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REBAPORTADA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REBAPORTADA.Designer.cs">
+      <DependentUpon>REBAPORTADA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REBA1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REBA1.Designer.cs">
+      <DependentUpon>REBA1.cs</DependentUpon>
+    </Compile>
     <Compile Include="RULA_PORTADA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,22 +252,8 @@
     <Compile Include="RULA1.Designer.cs">
       <DependentUpon>RULA1.cs</DependentUpon>
     </Compile>
-    <Compile Include="RULA2.cs">
-      <SubType>Form</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="RULA2.Designer.cs">
-      <DependentUpon>RULA2.cs</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RULA3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RULA3.Designer.cs">
-      <DependentUpon>RULA3.cs</DependentUpon>
-    </Compile>
     <Compile Include="RULARESULTADO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,17 +261,17 @@
       <DependentUpon>RULARESULTADO.cs</DependentUpon>
     </Compile>
     <Compile Include="ValidarCorreo.cs" />
+    <EmbeddedResource Include="FrmAsociacionPuesto.resx">
+      <DependentUpon>FrmAsociacionPuesto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpleados.resx">
       <DependentUpon>frmBuscarEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpresa.resx">
       <DependentUpon>frmBuscarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConsultarEmpleado.resx">
-      <DependentUpon>frmConsultarEmpleado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmConsultarEmpresa.resx">
-      <DependentUpon>frmConsultarEmpresa.cs</DependentUpon>
+    <EmbeddedResource Include="FrmBuscarPuestoTrabajo.resx">
+      <DependentUpon>FrmBuscarPuestoTrabajo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditUsrAdmin.resx">
       <DependentUpon>frmEditUsrAdmin.cs</DependentUpon>
@@ -211,8 +282,14 @@
     <EmbeddedResource Include="frmEmpleados.resx">
       <DependentUpon>frmEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadisticaMenu.resx">
+      <DependentUpon>frmEstadisticaMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEstadisticas.resx">
       <DependentUpon>frmEstadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadisticas2.resx">
+      <DependentUpon>frmEstadisticas2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInformes.resx">
       <DependentUpon>frmInformes.cs</DependentUpon>
@@ -229,6 +306,21 @@
     <EmbeddedResource Include="frmRecuperarClave.resx">
       <DependentUpon>frmRecuperarClave.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmVistaPuestoEmpleado.resx">
+      <DependentUpon>FrmVistaPuestoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPuestoHistorial.resx">
+      <DependentUpon>FrmPuestoHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JSS.resx">
+      <DependentUpon>JSS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JSSPORTADA.resx">
+      <DependentUpon>JSSPORTADA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JSSRESULTADO.resx">
+      <DependentUpon>JSSRESULTADO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Metodos.resx">
       <DependentUpon>Metodos.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,15 +330,32 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NIOSH1.resx">
+      <DependentUpon>NIOSH1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NIOSHPORTADA.resx">
+      <DependentUpon>NIOSHPORTADA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NIOSHRESULTADO.resx">
+      <DependentUpon>NIOSHRESULTADO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PuestoTrabajoSeleccion.resx">
+      <DependentUpon>PuestoTrabajoSeleccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REBARESULTADO.resx">
+      <DependentUpon>REBARESULTADO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REBAPORTADA.resx">
+      <DependentUpon>REBAPORTADA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REBA1.resx">
+      <DependentUpon>REBA1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RULA_PORTADA.resx">
       <DependentUpon>RULA_PORTADA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RULA1.resx">
       <DependentUpon>RULA1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RULA2.resx">
-      <DependentUpon>RULA2.cs</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -258,9 +367,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RULA3.resx">
-      <DependentUpon>RULA3.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RULARESULTADO.resx">
       <DependentUpon>RULARESULTADO.cs</DependentUpon>
     </EmbeddedResource>
@@ -326,7 +432,10 @@
     <None Include="Resources\CARGA FUERZA GRUPO B.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\plantilla.html" />
+    <None Include="Resources\plantilla3.HTML" />
+    <None Include="Resources\plantilla2.HTML" />
+    <None Include="Resources\planilla1.html" />
+    <Content Include="Resources\plantilla.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.jpg" />

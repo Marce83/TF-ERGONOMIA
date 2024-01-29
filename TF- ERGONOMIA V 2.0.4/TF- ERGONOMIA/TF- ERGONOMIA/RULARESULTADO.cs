@@ -9,8 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TF.WIN;
-
-
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
@@ -19,6 +17,8 @@ using iTextSharp.tool.xml.css.parser.state;
 using TF.ENTITIES;
 using TF.BC;
 using System.Diagnostics.Eventing.Reader;
+using System.Linq.Expressions;
+using TF.COMMON.Cache;
 
 namespace TF.WIN
 {
@@ -31,12 +31,47 @@ namespace TF.WIN
         {
             InitializeComponent();
             ObtenerMaximoIdRula();
-            RescatarResultados();
+            //RescatarResultados();
+            LoadUserData();
         }
 
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMaximizar.Visible = false;
+            btnRestaurar.Visible = true;
+        }
+
+        private void btnRestaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnRestaurar.Visible = false;
+            btnMaximizar.Visible = true;
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void LoadUserData()
+        {
+            userlabel1.Text = UserLoginCache.Nombre + ' ' + UserLoginCache.Apellido;
+            userlabel2.Text = UserLoginCache.Cargo;
+        }
+
+
+
         private int fileCounter = 0;
-        private int SumaTablaA = 0;
-        private int SumaTablaB = 0;
+            private int SumaTablaA = 0;
+            private int SumaTablaB = 0;
 
         private void RULARESULTADO_Load(object sender, EventArgs e)
         {
@@ -76,14 +111,14 @@ namespace TF.WIN
             oRula.cargaId = Convert.ToInt32(txtcargaid.Text);
             RulaBC oRulaBC = new RulaBC();
             //DataTable dt = oRulaBC.RULACONSULTARRESULTADOIDBC(oRula);
-
+            RescatarResultados();
 
             DataTable dt = oRulaBC.RULABC_GetAllBC();
 
             if (dt.Rows.Count > 0)
             {
                 string resultado = dt.Rows[0][1].ToString();
-                txtempresaRula.Text = resultado;
+                txtCuitRula.Text = resultado;
             }
             if (dt.Rows.Count > 0)
             {
@@ -148,73 +183,89 @@ namespace TF.WIN
         }
 
 
+
+
+
+
+
+
+
+
+
         private void btnobtenerinforme_Click(object sender, EventArgs e)
         {
             SaveFileDialog guardar = new SaveFileDialog();
-
             guardar.FileName = GetUniqueFileName("Informe");
 
-            string paginahtml_texto = TF.WIN.Properties.Resources.plantilla.ToString();
-
-
-
-
-            paginahtml_texto = paginahtml_texto.Replace("@txtempresaRula", txtempresaRula.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtpuestoRula", txtpuestoRula.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@Fecha", DateTime.Now.ToString("G"));
-            paginahtml_texto = paginahtml_texto.Replace("@txtbrazo", txtbrazo.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtantebrazo", txtantebrazo.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtmuneca", txtmuneca.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaA", txtmusculaturaA.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaA", txtcargafuerzaA.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtcuelloB", txtcuelloB.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txttroncoB", txttroncoB.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtpiernaB", txtpiernaB.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaB", txtmusculaturaB.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaB", txtcargafuerzaB.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionRula", txtPuntuacionRula.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtniveldeRiesgo", txtNivelDeRiesgo.Text);
-            paginahtml_texto = paginahtml_texto.Replace("@txtactuacion", txtActuacion.Text);
-
-
-
+            // Configurar el cuadro de diálogo para guardar como PDF
+            guardar.DefaultExt = "pdf";
+            guardar.Filter = "Archivos PDF (*.pdf)|*.pdf|Todos los archivos (*.*)|*.*";
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
-
-                using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
+                try
                 {
-
-                    Document pdfDoc = new Document(PageSize.A4, 80, 30, 25, 50);
-
-                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
-
-                    pdfDoc.Open();
-
-                    pdfDoc.Add(new Phrase(""));
-
-                    iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(TF.WIN.Properties.Resources.ergo, System.Drawing.Imaging.ImageFormat.Png);
-                    img.ScaleToFit(90, 90);
-                    img.Alignment = iTextSharp.text.Image.UNDERLYING;
-                    img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 50);
-                    pdfDoc.Add(img);
-
-
-                    using (StringReader sr = new StringReader(paginahtml_texto))
+                    using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
                     {
+                        Document pdfDoc = new Document(PageSize.A4, 80, 30, 25, 50);
+                        PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
 
-                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                        pdfDoc.Open();
+                        pdfDoc.Add(new Phrase(""));
 
+                        iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(TF.WIN.Properties.Resources.ergo, System.Drawing.Imaging.ImageFormat.Png);
+                        img.ScaleToFit(90, 90);
+                        img.Alignment = iTextSharp.text.Image.UNDERLYING;
+                        img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 50);
+                        pdfDoc.Add(img);
+
+                        // Reemplazos en el HTML
+                        string paginahtml_texto = TF.WIN.Properties.Resources.plantilla.ToString();
+
+                        paginahtml_texto = paginahtml_texto.Replace("@txtCuitRula", txtCuitRula.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtempresaRula", txtempresaRula.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtpuestoRula", txtpuestoRula.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtEmpleadoRula", txtEmpleadoRula.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@Fecha", DateTime.Now.ToString("G"));
+                        paginahtml_texto = paginahtml_texto.Replace("@txtbrazo", txtbrazo.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtantebrazo", txtantebrazo.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtmuneca", txtmuneca.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtgiromuneca", txtgiromuneca.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaA", txtmusculaturaA.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaA", txtcargafuerzaA.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtcuelloB", txtcuelloB.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txttroncoB", txttroncoB.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtpiernaB", txtpiernaB.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtmusculaturaB", txtmusculaturaB.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtcargafuerzaB", txtcargafuerzaB.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtpuntuacionRula", txtPuntuacionRula.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtniveldeRiesgo", txtNivelDeRiesgo.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@txtactuacion", txtActuacion.Text);
+                        paginahtml_texto = paginahtml_texto.Replace("@lblUsuario", userlabel1.Text);
+
+
+
+
+                        // Agregar más reemplazos para los campos adicionales según tus necesidades...
+
+                        using (StringReader sr = new StringReader(paginahtml_texto))
+                        {
+                            XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                        }
+
+                        pdfDoc.Close();
+                        stream.Close();
+
+                        MessageBox.Show("PDF generado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-
-                    pdfDoc.Close();
-
-                    stream.Close();
-
                 }
-            }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al generar el PDF: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            
         }
-
+        }
         private void btnRecuperarCarga_Click(object sender, EventArgs e)
         {
             Rula oRula = new Rula();
@@ -226,7 +277,7 @@ namespace TF.WIN
             if (dt.Rows.Count > 0)
             {
                 string resultado = dt.Rows[0][1].ToString();
-                txtempresaRula.Text = resultado;
+                txtCuitRula.Text = resultado;
             }
             if (dt.Rows.Count > 0)
             {
@@ -287,6 +338,16 @@ namespace TF.WIN
             {
                 string resultado = dt.Rows[0][13].ToString();
                 txtcargafuerzaB.Text = resultado;
+            }
+            if (dt.Rows.Count > 0)
+            {
+                string resultado = dt.Rows[0][18].ToString();
+                txtEmpleadoRula.Text = resultado;
+            }
+            if (dt.Rows.Count > 0)
+            {
+                string resultado = dt.Rows[0][19].ToString();
+                txtempresaRula.Text = resultado;
             }
 
             ///////////                    RESULTADO TABLA A Y B                             ///////////
@@ -385,6 +446,12 @@ namespace TF.WIN
                 txtActuacion.Text = "Nivel de Riesgo Muy Alto: Posturas que presentan factores de riesgo extremadamente altos, lo que indica un peligro inminente para la salud del trabajador. Se deben tomar medidas inmediatas y enérgicas para evitar lesiones.";
             }
 
+
+            oRula.ResultadoAnalisisRula = txtPuntuacionRula.Text;
+            oRula.niveldeRiesgo = int.Parse(txtNivelDeRiesgo.Text);
+            var res = oRulaBC.UpdateRula2BC(oRula);
+            // Pasar al siguiente formulario
+
         }
 
         public void ObtenerMaximoIdRula()
@@ -394,7 +461,7 @@ namespace TF.WIN
             DataTable dt = oRulaBC.RulaIdMaxBC(oRula);
 
             if (dt.Rows.Count > 0)
-            {
+            {   
                 int maxId = Convert.ToInt32(dt.Rows[0]["cargaid"]);
                 txtcargaid.Text = maxId.ToString();
             }
@@ -402,24 +469,10 @@ namespace TF.WIN
         }
 
 
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
         private void btnpagant_Click(object sender, EventArgs e)
         {
-            RULA3 oRULACARGA3 = new RULA3();
-            oRULACARGA3.Show();
+            RULA1 oRULACARGA1 = new RULA1();
+            oRULACARGA1.Show();
             Close();
         }
 

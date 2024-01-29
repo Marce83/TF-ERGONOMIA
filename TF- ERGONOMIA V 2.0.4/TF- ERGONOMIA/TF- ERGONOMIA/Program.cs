@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TF.ENTITIES;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 //using TF.WIN;
 
 namespace TF.WIN
@@ -22,7 +23,7 @@ namespace TF.WIN
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(FormMenu = new frmMenuPrincipal());
-            Application.Run(new frmMenuPrincipal());
+            Application.Run(new frmLogin());
 
         }
     }

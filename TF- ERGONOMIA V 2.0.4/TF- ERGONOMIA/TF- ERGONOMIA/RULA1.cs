@@ -140,6 +140,37 @@ namespace TF.WIN
         }
 
 
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMaximizar.Visible = false;
+            btnRestaurar.Visible = true;
+        }
+
+        private void btnRestaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnRestaurar.Visible = false;
+            btnMaximizar.Visible = true;
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            DialogResult resp = MessageBox.Show("¿Desea salir de la aplicación?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resp == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+
+
+
         private void cboBrazoposicion_SelectedIndexChanged(object sender, EventArgs e)
         {
             MostrarResultado1();
@@ -403,28 +434,36 @@ namespace TF.WIN
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                RulaBC oRulaBC = new RulaBC();
+                Rula oRula = new Rula();
+                oRula.Antebrazo = int.Parse(txtantebrazofinal.Text);
+                oRula.Brazo = int.Parse(txtBrazoFinal.Text);
+                oRula.cargaId = int.Parse(txtcargaid.Text);
+                oRula.Muneca = int.Parse(txtmunecafinal.Text);
+                oRula.Giro = int.Parse(txtgirofinal.Text);
+                oRula.Actividadmusculara = int.Parse(actividadgrupoAfinal.Text);
+                oRula.Cargafuerzaa = int.Parse(txtcargafuerzafinal.Text);
+                oRula.Cuellob = int.Parse(txtcuellofinal.Text);
+                oRula.Tronco = int.Parse(txttroncofinal.Text);
+                oRula.Piernas = int.Parse(txtpiernasfinal.Text);
+                oRula.Actividadmuscularb = int.Parse(txtmuscular2.Text);
+                oRula.Cargafuerzab = int.Parse(txtcargafuerza2.Text);
 
-            RulaBC oRulaBC = new RulaBC();
-            Rula oRula = new Rula();
-            oRula.Antebrazo = int.Parse(txtantebrazofinal.Text);
-            oRula.Brazo = int.Parse(txtBrazoFinal.Text);
-            oRula.cargaId = int.Parse(txtcargaid.Text);
-            oRula.Muneca = int.Parse(txtmunecafinal.Text);
-            oRula.Giro = int.Parse(txtgirofinal.Text);
-            oRula.Actividadmusculara = int.Parse(actividadgrupoAfinal.Text);
-            oRula.Cargafuerzaa = int.Parse(txtcargafuerzafinal.Text);
-            oRula.Cuellob = int.Parse(txtcuellofinal.Text);
-            oRula.Tronco = int.Parse(txttroncofinal.Text);
-            oRula.Piernas = int.Parse(txtpiernasfinal.Text);
-            oRula.Actividadmuscularb = int.Parse(txtmuscular2.Text);
-            oRula.Cargafuerzab = int.Parse(txtcargafuerza2.Text);
+                var res = oRulaBC.UpdateRula1BC(oRula);
+                MessageBox.Show("Carga Guardada");
 
-            var res = oRulaBC.UpdateRula1BC(oRula);
-            MessageBox.Show("Carga Guardada");
+                // Pasar al siguiente formulario
+                RULARESULTADO ORULARESULTADO = new RULARESULTADO();
+                ORULARESULTADO.Show();
 
-            // Pasar al siguiente formulario
-            RULARESULTADO ORULARESULTADO = new RULARESULTADO();
-            ORULARESULTADO.Show();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("verificar si existen caracteristicas sin completar");
+            }
 
             Close();
 

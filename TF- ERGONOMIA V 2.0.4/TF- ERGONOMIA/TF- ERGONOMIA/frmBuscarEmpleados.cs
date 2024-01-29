@@ -63,7 +63,7 @@ namespace TF.WIN
 
             if (dgvResultado.SelectedRows.Count == 1) // si selecciona un fila
             {
-                int DNI = Convert.ToInt32(dgvResultado.Rows[0].Cells[2].Value);
+                int DNI = Convert.ToInt32(dgvResultado.CurrentRow.Cells[2].Value);
                 EmpleadosBC oEmpleadosBC = new EmpleadosBC();
                 EmpleadoSeleccionado = oEmpleadosBC.EmpleadosObtenerDNI(DNI);
                 this.Close();
