@@ -363,6 +363,8 @@
             // txtCalle
             // 
             this.txtCalle.AnimateReadOnly = false;
+            this.txtCalle.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCalle.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtCalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCalle.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCalle.Depth = 0;
@@ -420,6 +422,8 @@
             // txtTelefono
             // 
             this.txtTelefono.AnimateReadOnly = false;
+            this.txtTelefono.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtTelefono.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtTelefono.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTelefono.Depth = 0;
@@ -505,6 +509,8 @@
             // txtWeb
             // 
             this.txtWeb.AnimateReadOnly = false;
+            this.txtWeb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtWeb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtWeb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtWeb.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtWeb.Depth = 0;
@@ -576,6 +582,8 @@
             // txtCorreo
             // 
             this.txtCorreo.AnimateReadOnly = false;
+            this.txtCorreo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCorreo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtCorreo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCorreo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCorreo.Depth = 0;
@@ -605,6 +613,8 @@
             // txtNombreEmpresa
             // 
             this.txtNombreEmpresa.AnimateReadOnly = false;
+            this.txtNombreEmpresa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNombreEmpresa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtNombreEmpresa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNombreEmpresa.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombreEmpresa.Depth = 0;
@@ -643,7 +653,7 @@
             this.btnBaja.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnBaja.Location = new System.Drawing.Point(906, 24);
             this.btnBaja.Name = "btnBaja";
-            this.btnBaja.Size = new System.Drawing.Size(116, 35);
+            this.btnBaja.Size = new System.Drawing.Size(116, 49);
             this.btnBaja.TabIndex = 66;
             this.btnBaja.Text = "Baja";
             this.btnBaja.UseVisualStyleBackColor = false;
@@ -661,7 +671,7 @@
             this.btnModificar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnModificar.Location = new System.Drawing.Point(784, 24);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(116, 35);
+            this.btnModificar.Size = new System.Drawing.Size(116, 48);
             this.btnModificar.TabIndex = 65;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -712,6 +722,8 @@
             // txtBuscador
             // 
             this.txtBuscador.AnimateReadOnly = false;
+            this.txtBuscador.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBuscador.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtBuscador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtBuscador.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtBuscador.Depth = 0;
@@ -749,9 +761,9 @@
             this.btnBuscar.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBuscar.Location = new System.Drawing.Point(564, 37);
+            this.btnBuscar.Location = new System.Drawing.Point(564, 24);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(116, 35);
+            this.btnBuscar.Size = new System.Drawing.Size(116, 48);
             this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;

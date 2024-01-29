@@ -245,6 +245,8 @@
             // txtAltura
             // 
             this.txtAltura.AnimateReadOnly = false;
+            this.txtAltura.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtAltura.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtAltura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtAltura.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtAltura.Depth = 0;
@@ -300,6 +302,8 @@
             // txtPeso
             // 
             this.txtPeso.AnimateReadOnly = false;
+            this.txtPeso.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtPeso.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtPeso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtPeso.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtPeso.Depth = 0;
@@ -371,6 +375,8 @@
             // txtCUITEncontrado
             // 
             this.txtCUITEncontrado.AnimateReadOnly = false;
+            this.txtCUITEncontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCUITEncontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtCUITEncontrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCUITEncontrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCUITEncontrado.Depth = 0;
@@ -426,6 +432,8 @@
             // txtApellido
             // 
             this.txtApellido.AnimateReadOnly = false;
+            this.txtApellido.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtApellido.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtApellido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtApellido.Depth = 0;
@@ -455,6 +463,8 @@
             // txtNombre
             // 
             this.txtNombre.AnimateReadOnly = false;
+            this.txtNombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtNombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombre.Depth = 0;
@@ -511,6 +521,8 @@
             // txtBuscador
             // 
             this.txtBuscador.AnimateReadOnly = false;
+            this.txtBuscador.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBuscador.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtBuscador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtBuscador.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtBuscador.Depth = 0;
@@ -547,9 +559,9 @@
             this.btnBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBaja.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnBaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBaja.Location = new System.Drawing.Point(773, 51);
+            this.btnBaja.Location = new System.Drawing.Point(773, 45);
             this.btnBaja.Name = "btnBaja";
-            this.btnBaja.Size = new System.Drawing.Size(116, 35);
+            this.btnBaja.Size = new System.Drawing.Size(116, 49);
             this.btnBaja.TabIndex = 2;
             this.btnBaja.Text = "Baja";
             this.btnBaja.UseVisualStyleBackColor = false;
@@ -564,9 +576,9 @@
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificar.Location = new System.Drawing.Point(651, 51);
+            this.btnModificar.Location = new System.Drawing.Point(651, 45);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(116, 35);
+            this.btnModificar.Size = new System.Drawing.Size(116, 49);
             this.btnModificar.TabIndex = 1;
             this.btnModificar.Text = "Actualizar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -581,9 +593,9 @@
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(407, 51);
+            this.btnBuscar.Location = new System.Drawing.Point(407, 45);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(116, 35);
+            this.btnBuscar.Size = new System.Drawing.Size(116, 49);
             this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
