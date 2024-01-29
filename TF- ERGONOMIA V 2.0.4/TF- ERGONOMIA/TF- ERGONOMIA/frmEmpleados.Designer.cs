@@ -43,6 +43,7 @@
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNomEmpr = new MaterialSkin.Controls.MaterialTextBox2();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.dtpIngreso = new System.Windows.Forms.DateTimePicker();
@@ -53,7 +54,6 @@
             this.txtAltura = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNomEmpr = new MaterialSkin.Controls.MaterialTextBox2();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -351,10 +351,40 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(801, 385);
+            this.groupBox1.Size = new System.Drawing.Size(802, 398);
             this.groupBox1.TabIndex = 61;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "REGISTRAR EMPLEADOS";
+            // 
+            // txtNomEmpr
+            // 
+            this.txtNomEmpr.AnimateReadOnly = false;
+            this.txtNomEmpr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtNomEmpr.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNomEmpr.Depth = 0;
+            this.txtNomEmpr.Enabled = false;
+            this.txtNomEmpr.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNomEmpr.HideSelection = true;
+            this.txtNomEmpr.LeadingIcon = null;
+            this.txtNomEmpr.Location = new System.Drawing.Point(432, 73);
+            this.txtNomEmpr.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNomEmpr.MaxLength = 32767;
+            this.txtNomEmpr.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNomEmpr.Name = "txtNomEmpr";
+            this.txtNomEmpr.PasswordChar = '\0';
+            this.txtNomEmpr.PrefixSuffixText = null;
+            this.txtNomEmpr.ReadOnly = true;
+            this.txtNomEmpr.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNomEmpr.SelectedText = "";
+            this.txtNomEmpr.SelectionLength = 0;
+            this.txtNomEmpr.SelectionStart = 0;
+            this.txtNomEmpr.ShortcutsEnabled = true;
+            this.txtNomEmpr.Size = new System.Drawing.Size(208, 48);
+            this.txtNomEmpr.TabIndex = 79;
+            this.txtNomEmpr.TabStop = false;
+            this.txtNomEmpr.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNomEmpr.TrailingIcon = null;
+            this.txtNomEmpr.UseSystemPasswordChar = false;
             // 
             // btnConsultar
             // 
@@ -527,36 +557,6 @@
             this.label1.Size = new System.Drawing.Size(331, 31);
             this.label1.TabIndex = 62;
             this.label1.Text = "CARGA DE EMPLEADOS";
-            // 
-            // txtNomEmpr
-            // 
-            this.txtNomEmpr.AnimateReadOnly = false;
-            this.txtNomEmpr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtNomEmpr.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtNomEmpr.Depth = 0;
-            this.txtNomEmpr.Enabled = false;
-            this.txtNomEmpr.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNomEmpr.HideSelection = true;
-            this.txtNomEmpr.LeadingIcon = null;
-            this.txtNomEmpr.Location = new System.Drawing.Point(432, 73);
-            this.txtNomEmpr.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNomEmpr.MaxLength = 32767;
-            this.txtNomEmpr.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNomEmpr.Name = "txtNomEmpr";
-            this.txtNomEmpr.PasswordChar = '\0';
-            this.txtNomEmpr.PrefixSuffixText = null;
-            this.txtNomEmpr.ReadOnly = true;
-            this.txtNomEmpr.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtNomEmpr.SelectedText = "";
-            this.txtNomEmpr.SelectionLength = 0;
-            this.txtNomEmpr.SelectionStart = 0;
-            this.txtNomEmpr.ShortcutsEnabled = true;
-            this.txtNomEmpr.Size = new System.Drawing.Size(208, 48);
-            this.txtNomEmpr.TabIndex = 79;
-            this.txtNomEmpr.TabStop = false;
-            this.txtNomEmpr.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtNomEmpr.TrailingIcon = null;
-            this.txtNomEmpr.UseSystemPasswordChar = false;
             // 
             // frmEmpleados
             // 
