@@ -53,6 +53,7 @@
             this.txtAltura = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtNomEmpr = new MaterialSkin.Controls.MaterialTextBox2();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -326,6 +327,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtNomEmpr);
             this.groupBox1.Controls.Add(this.btnConsultar);
             this.groupBox1.Controls.Add(this.btnLimpiar);
             this.groupBox1.Controls.Add(this.dtpIngreso);
@@ -526,6 +528,36 @@
             this.label1.TabIndex = 62;
             this.label1.Text = "CARGA DE EMPLEADOS";
             // 
+            // txtNomEmpr
+            // 
+            this.txtNomEmpr.AnimateReadOnly = false;
+            this.txtNomEmpr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtNomEmpr.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNomEmpr.Depth = 0;
+            this.txtNomEmpr.Enabled = false;
+            this.txtNomEmpr.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNomEmpr.HideSelection = true;
+            this.txtNomEmpr.LeadingIcon = null;
+            this.txtNomEmpr.Location = new System.Drawing.Point(432, 73);
+            this.txtNomEmpr.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNomEmpr.MaxLength = 32767;
+            this.txtNomEmpr.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNomEmpr.Name = "txtNomEmpr";
+            this.txtNomEmpr.PasswordChar = '\0';
+            this.txtNomEmpr.PrefixSuffixText = null;
+            this.txtNomEmpr.ReadOnly = true;
+            this.txtNomEmpr.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNomEmpr.SelectedText = "";
+            this.txtNomEmpr.SelectionLength = 0;
+            this.txtNomEmpr.SelectionStart = 0;
+            this.txtNomEmpr.ShortcutsEnabled = true;
+            this.txtNomEmpr.Size = new System.Drawing.Size(208, 48);
+            this.txtNomEmpr.TabIndex = 79;
+            this.txtNomEmpr.TabStop = false;
+            this.txtNomEmpr.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNomEmpr.TrailingIcon = null;
+            this.txtNomEmpr.UseSystemPasswordChar = false;
+            // 
             // frmEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -574,5 +606,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private System.Windows.Forms.Button btnConsultar;
         private MaterialSkin.Controls.MaterialTextBox2 txtCUITEncontrado;
+        private MaterialSkin.Controls.MaterialTextBox2 txtNomEmpr;
     }
 }
