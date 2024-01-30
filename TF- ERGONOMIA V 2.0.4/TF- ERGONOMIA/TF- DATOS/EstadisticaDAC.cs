@@ -405,7 +405,7 @@ namespace TF.DAC
 
         public DataTable ContEmpresasPublPrivaDAC()
         {
-            string sqlSentencia = "SP_STAT_ContEmpleadosEmpresas";
+            string sqlSentencia = "SP_STAT_EmpresaPubPriv";
             SqlConnection sqlCnn = new SqlConnection();
             sqlCnn.ConnectionString = conectionString;
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);

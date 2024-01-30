@@ -379,59 +379,73 @@ namespace TF.WIN
 
         private void ContEmpresasPublPriv()
         {
-
+            try { 
             // Configura el gráfico aquí
-            // Por ejemplo, crea una serie de columnas
+            // Por ejemplo, crea una serie de pastel
             Series series = new Series
             {
-                Name = "Porcentaje",
-                ChartType = SeriesChartType.Pie
+                Name = "Cantidad de Empresas Por Tipo",
+                ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
             };
 
-            // Configura los ejes
+            // Configura los ejes (no es tan relevante para el gráfico de pastel)
             ChartArea chartArea = new ChartArea();
-            chartArea.AxisX.Title = "Tipo";
-            chartArea.AxisY.Title = "EmpresasporTipo";
+            chartArea.AxisX.Title = "Tipos de Empresas";
+            chartArea.AxisY.Title = "Cantidad";
 
             // Limpia las series existentes antes de agregar la nueva
-            chartempxemp.Series.Clear();
+            GraphEmpresasTipo.Series.Clear();
 
             // Asigna la serie y el área del gráfico
-            chartempxemp.Series.Add(series);
-            chartempxemp.ChartAreas.Add(chartArea);
+            GraphEmpresasTipo.Series.Add(series);
+            GraphEmpresasTipo.ChartAreas.Add(chartArea);
 
             // Agrega un título al gráfico
-            chartempxemp.Titles.Add("Cantidad de Empresas Publicas y Privadas");  // Cambia "Mi Título" al título que desees
-            chartempxemp.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+            GraphEmpresasTipo.Titles.Add("Tipos de Empresas");
+            GraphEmpresasTipo.Font = new Font("Arial", 14, FontStyle.Bold);
 
             // Establece el formato de la serie
-            series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+            series.Font = new Font("Arial", 10, FontStyle.Bold);
 
-
+            // Añade datos de ejemplo al gráfico de pastel
 
             DatosBDEmpxemp();
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         private void DatosBDEmpxemp()
         {
-            // Utiliza la instancia de EstadisticaBC para obtener los datos
-            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-            DataTable dt1004 = oEstadisticaBC.ContEmpleadosempresaBC();
-
+                // Utiliza la instancia de EstadisticaBC para obtener los datos
+                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+                EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+                DataTable dt1999 = oEstadisticaBC.ContEmpresasPublPrivaBC();
             // Limpia los datos existentes en el gráfico
-            chartempxemp.Series[0].Points.Clear();
+            GraphEmpresasTipo.Series[0].Points.Clear();
 
-            // Agrega los nuevos datos desde el DataTable
-            foreach (DataRow row in dt1004.Rows)
-            {
-                string Empleadosporempresas = row["Nombre"].ToString();
-                int cantidadEmpleados1 = Convert.ToInt32(row["CantidadEmpleados"]);
+            // Configura la serie para un gráfico de pastel
+            GraphEmpresasTipo.Series[0].ChartType = SeriesChartType.Pie;
+
+                // Agrega los nuevos datos desde el DataTable
+                foreach (DataRow row in dt1999.Rows)
+                {
+                    string NivelRiesgo = row["Tipo"].ToString();
+                    int CantidadRiesgo = Convert.ToInt32(row["CantidadTipo"]);
 
                 // Agrega un punto a la serie para cada provincia
-                chartempxemp.Series[0].Points.AddXY(Empleadosporempresas, cantidadEmpleados1);
+                GraphEmpresasTipo.Series[0].Points.AddXY(NivelRiesgo, CantidadRiesgo);
+                }
+
+            // Agrega un título al gráfico de pastel
+            GraphEmpresasTipo.Titles.Clear();
+            GraphEmpresasTipo.Titles.Add("Distribución de Riesgo por nivel");
+
+            // Establece el formato de la serie
+            GraphEmpresasTipo.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
+
             }
         }
-
-
-    }
-}
+        }

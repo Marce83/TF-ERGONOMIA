@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEstadisticas));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnEmpresa = new System.Windows.Forms.Button();
@@ -85,7 +85,7 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.ContEmpresasPublicasPrivadas = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.GraphEmpresasTipo = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -104,7 +104,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ContEmpresasPublicasPrivadas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GraphEmpresasTipo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -231,7 +231,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(334, 11);
+            this.label5.Location = new System.Drawing.Point(581, 10);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(176, 21);
             this.label5.TabIndex = 0;
@@ -514,18 +514,18 @@
             this.chartEmpresasProv.BackColor = System.Drawing.Color.Transparent;
             this.chartEmpresasProv.BorderlineColor = System.Drawing.Color.DarkGray;
             this.chartEmpresasProv.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.chartEmpresasProv.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartEmpresasProv.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.chartEmpresasProv.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartEmpresasProv.Legends.Add(legend5);
             this.chartEmpresasProv.Location = new System.Drawing.Point(26, 397);
             this.chartEmpresasProv.Margin = new System.Windows.Forms.Padding(2);
             this.chartEmpresasProv.Name = "chartEmpresasProv";
             this.chartEmpresasProv.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartEmpresasProv.Series.Add(series1);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chartEmpresasProv.Series.Add(series5);
             this.chartEmpresasProv.Size = new System.Drawing.Size(386, 281);
             this.chartEmpresasProv.TabIndex = 95;
             // 
@@ -534,18 +534,18 @@
             this.ChartEmpLocal.BackColor = System.Drawing.Color.Transparent;
             this.ChartEmpLocal.BorderlineColor = System.Drawing.Color.DarkGray;
             this.ChartEmpLocal.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.ChartEmpLocal.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.ChartEmpLocal.Legends.Add(legend2);
+            chartArea6.Name = "ChartArea1";
+            this.ChartEmpLocal.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.ChartEmpLocal.Legends.Add(legend6);
             this.ChartEmpLocal.Location = new System.Drawing.Point(419, 397);
             this.ChartEmpLocal.Margin = new System.Windows.Forms.Padding(2);
             this.ChartEmpLocal.Name = "ChartEmpLocal";
             this.ChartEmpLocal.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.ChartEmpLocal.Series.Add(series2);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.ChartEmpLocal.Series.Add(series6);
             this.ChartEmpLocal.Size = new System.Drawing.Size(386, 281);
             this.ChartEmpLocal.TabIndex = 96;
             // 
@@ -563,7 +563,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label11.Location = new System.Drawing.Point(334, 11);
+            this.label11.Location = new System.Drawing.Point(567, 12);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(202, 21);
             this.label11.TabIndex = 0;
@@ -575,18 +575,18 @@
             this.chartempxemp.BackColor = System.Drawing.Color.Transparent;
             this.chartempxemp.BorderlineColor = System.Drawing.Color.DarkGray;
             this.chartempxemp.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            chartArea3.Name = "ChartArea1";
-            this.chartempxemp.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartempxemp.Legends.Add(legend3);
+            chartArea7.Name = "ChartArea1";
+            this.chartempxemp.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chartempxemp.Legends.Add(legend7);
             this.chartempxemp.Location = new System.Drawing.Point(26, 735);
             this.chartempxemp.Margin = new System.Windows.Forms.Padding(2);
             this.chartempxemp.Name = "chartempxemp";
             this.chartempxemp.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartempxemp.Series.Add(series3);
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.chartempxemp.Series.Add(series7);
             this.chartempxemp.Size = new System.Drawing.Size(386, 372);
             this.chartempxemp.TabIndex = 98;
             // 
@@ -677,25 +677,25 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // ContEmpresasPublicasPrivadas
+            // GraphEmpresasTipo
             // 
-            this.ContEmpresasPublicasPrivadas.BackColor = System.Drawing.Color.Transparent;
-            this.ContEmpresasPublicasPrivadas.BorderlineColor = System.Drawing.Color.DarkGray;
-            this.ContEmpresasPublicasPrivadas.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            chartArea4.Name = "ChartArea1";
-            this.ContEmpresasPublicasPrivadas.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.ContEmpresasPublicasPrivadas.Legends.Add(legend4);
-            this.ContEmpresasPublicasPrivadas.Location = new System.Drawing.Point(809, 397);
-            this.ContEmpresasPublicasPrivadas.Margin = new System.Windows.Forms.Padding(2);
-            this.ContEmpresasPublicasPrivadas.Name = "ContEmpresasPublicasPrivadas";
-            this.ContEmpresasPublicasPrivadas.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.ContEmpresasPublicasPrivadas.Series.Add(series4);
-            this.ContEmpresasPublicasPrivadas.Size = new System.Drawing.Size(600, 281);
-            this.ContEmpresasPublicasPrivadas.TabIndex = 164;
+            this.GraphEmpresasTipo.BackColor = System.Drawing.Color.Transparent;
+            this.GraphEmpresasTipo.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.GraphEmpresasTipo.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            chartArea8.Name = "ChartArea1";
+            this.GraphEmpresasTipo.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.GraphEmpresasTipo.Legends.Add(legend8);
+            this.GraphEmpresasTipo.Location = new System.Drawing.Point(809, 397);
+            this.GraphEmpresasTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.GraphEmpresasTipo.Name = "GraphEmpresasTipo";
+            this.GraphEmpresasTipo.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.GraphEmpresasTipo.Series.Add(series8);
+            this.GraphEmpresasTipo.Size = new System.Drawing.Size(600, 281);
+            this.GraphEmpresasTipo.TabIndex = 164;
             // 
             // frmEstadisticas
             // 
@@ -705,7 +705,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1188, 894);
-            this.Controls.Add(this.ContEmpresasPublicasPrivadas);
+            this.Controls.Add(this.GraphEmpresasTipo);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.chartempxemp);
@@ -755,7 +755,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ContEmpresasPublicasPrivadas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GraphEmpresasTipo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -806,6 +806,6 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.DataVisualization.Charting.Chart ContEmpresasPublicasPrivadas;
+        private System.Windows.Forms.DataVisualization.Charting.Chart GraphEmpresasTipo;
     }
 }
