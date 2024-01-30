@@ -160,7 +160,7 @@ namespace TF.WIN
             txtPeso.Text = string.Empty;
             txtAltura.Text = string.Empty;
             txtCUITEncontrado.Text = string.Empty;
-            //txtDNI.Focus();
+            txtNomEmp.Text = string.Empty;
 
         }
 
