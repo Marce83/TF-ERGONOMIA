@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarEmpleado));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.cboBuscadorDinamico = new MaterialSkin.Controls.MaterialComboBox();
             this.cboAreaempresa = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
@@ -56,27 +57,27 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvEmpleados = new System.Windows.Forms.DataGridView();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.grbEmpresa = new System.Windows.Forms.GroupBox();
+            this.txtNomEmp = new MaterialSkin.Controls.MaterialTextBox2();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.grbEmpresa.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.grbEmpresa);
             this.groupBox3.Controls.Add(this.btnCerrar);
             this.groupBox3.Controls.Add(this.cboBuscadorDinamico);
             this.groupBox3.Controls.Add(this.cboAreaempresa);
             this.groupBox3.Controls.Add(this.materialLabel9);
             this.groupBox3.Controls.Add(this.dtpIngreso);
             this.groupBox3.Controls.Add(this.materialLabel7);
-            this.groupBox3.Controls.Add(this.btnBuscarCUIT);
             this.groupBox3.Controls.Add(this.dtpNacimiento);
             this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Controls.Add(this.cboGenero);
-            this.groupBox3.Controls.Add(this.materialLabel11);
-            this.groupBox3.Controls.Add(this.txtCUITEncontrado);
             this.groupBox3.Controls.Add(this.materialLabel4);
             this.groupBox3.Controls.Add(this.materialLabel8);
             this.groupBox3.Controls.Add(this.txtApellido);
@@ -92,10 +93,24 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(911, 592);
+            this.groupBox3.Size = new System.Drawing.Size(919, 628);
             this.groupBox3.TabIndex = 64;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "CONSULTAR EMPLEADOS CARGADOS";
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(889, 14);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(25, 25);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 109;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // cboBuscadorDinamico
             // 
@@ -152,7 +167,7 @@
             "Informática",
             "Mantenimiento",
             "Legales"});
-            this.cboAreaempresa.Location = new System.Drawing.Point(604, 380);
+            this.cboAreaempresa.Location = new System.Drawing.Point(153, 537);
             this.cboAreaempresa.Margin = new System.Windows.Forms.Padding(2);
             this.cboAreaempresa.MaxDropDownItems = 4;
             this.cboAreaempresa.MouseState = MaterialSkin.MouseState.OUT;
@@ -169,7 +184,7 @@
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Enabled = false;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(468, 389);
+            this.materialLabel9.Location = new System.Drawing.Point(17, 546);
             this.materialLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
@@ -211,12 +226,13 @@
             this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarCUIT.Location = new System.Drawing.Point(789, 303);
+            this.btnBuscarCUIT.Location = new System.Drawing.Point(306, 28);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
             this.btnBuscarCUIT.Size = new System.Drawing.Size(67, 48);
             this.btnBuscarCUIT.TabIndex = 91;
             this.btnBuscarCUIT.Text = "...";
             this.btnBuscarCUIT.UseVisualStyleBackColor = false;
+            this.btnBuscarCUIT.Click += new System.EventHandler(this.btnBuscarCUIT_Click);
             // 
             // dtpNacimiento
             // 
@@ -236,7 +252,7 @@
             this.groupBox2.Controls.Add(this.materialLabel6);
             this.groupBox2.Controls.Add(this.materialLabel5);
             this.groupBox2.Controls.Add(this.txtPeso);
-            this.groupBox2.Location = new System.Drawing.Point(501, 481);
+            this.groupBox2.Location = new System.Drawing.Point(501, 514);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
@@ -367,7 +383,7 @@
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(498, 316);
+            this.materialLabel11.Location = new System.Drawing.Point(15, 41);
             this.materialLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
@@ -386,7 +402,7 @@
             this.txtCUITEncontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCUITEncontrado.HideSelection = true;
             this.txtCUITEncontrado.LeadingIcon = null;
-            this.txtCUITEncontrado.Location = new System.Drawing.Point(546, 303);
+            this.txtCUITEncontrado.Location = new System.Drawing.Point(63, 28);
             this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2);
             this.txtCUITEncontrado.MaxLength = 32767;
             this.txtCUITEncontrado.MouseState = MaterialSkin.MouseState.OUT;
@@ -619,19 +635,49 @@
             this.dgvEmpleados.TabIndex = 57;
             this.dgvEmpleados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleados_CellContentClick);
             // 
-            // btnCerrar
+            // grbEmpresa
             // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(881, 14);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(25, 25);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 109;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.grbEmpresa.Controls.Add(this.txtNomEmp);
+            this.grbEmpresa.Controls.Add(this.materialLabel11);
+            this.grbEmpresa.Controls.Add(this.txtCUITEncontrado);
+            this.grbEmpresa.Controls.Add(this.btnBuscarCUIT);
+            this.grbEmpresa.Location = new System.Drawing.Point(501, 310);
+            this.grbEmpresa.Name = "grbEmpresa";
+            this.grbEmpresa.Size = new System.Drawing.Size(400, 179);
+            this.grbEmpresa.TabIndex = 110;
+            this.grbEmpresa.TabStop = false;
+            this.grbEmpresa.Text = "Empresa";
+            // 
+            // txtNomEmp
+            // 
+            this.txtNomEmp.AnimateReadOnly = false;
+            this.txtNomEmp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNomEmp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtNomEmp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtNomEmp.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNomEmp.Depth = 0;
+            this.txtNomEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNomEmp.HideSelection = true;
+            this.txtNomEmp.LeadingIcon = null;
+            this.txtNomEmp.Location = new System.Drawing.Point(63, 93);
+            this.txtNomEmp.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNomEmp.MaxLength = 32767;
+            this.txtNomEmp.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNomEmp.Name = "txtNomEmp";
+            this.txtNomEmp.PasswordChar = '\0';
+            this.txtNomEmp.PrefixSuffixText = null;
+            this.txtNomEmp.ReadOnly = true;
+            this.txtNomEmp.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNomEmp.SelectedText = "";
+            this.txtNomEmp.SelectionLength = 0;
+            this.txtNomEmp.SelectionStart = 0;
+            this.txtNomEmp.ShortcutsEnabled = true;
+            this.txtNomEmp.Size = new System.Drawing.Size(221, 48);
+            this.txtNomEmp.TabIndex = 92;
+            this.txtNomEmp.TabStop = false;
+            this.txtNomEmp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNomEmp.TrailingIcon = null;
+            this.txtNomEmp.UseSystemPasswordChar = false;
             // 
             // frmConsultarEmpleado
             // 
@@ -647,10 +693,12 @@
             this.Load += new System.EventHandler(this.frmConsultarEmpleado_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            this.grbEmpresa.ResumeLayout(false);
+            this.grbEmpresa.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -685,5 +733,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.PictureBox btnCerrar;
         private MaterialSkin.Controls.MaterialComboBox cboBuscadorDinamico;
+        private System.Windows.Forms.GroupBox grbEmpresa;
+        private MaterialSkin.Controls.MaterialTextBox2 txtNomEmp;
     }
 }

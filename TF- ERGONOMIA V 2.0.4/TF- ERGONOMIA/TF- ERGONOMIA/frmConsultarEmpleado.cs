@@ -89,7 +89,9 @@ namespace TF.WIN
                     oBe.Peso = float.Parse(txtPeso.Text);
                     oBe.Altura = float.Parse(txtAltura.Text);
                     oBe.FechaNacimiento = Convert.ToDateTime(dtpNacimiento.Text);
-
+                    long CUIL = Convert.ToInt64(txtCUITEncontrado.Text);
+                    var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIL);
+                    oBe.IdEmpresa = Convert.ToInt32(BuscarId);
                     var res = oEmpleadosBC.EmpleadosUpdate(oBe);
                     MessageBox.Show("Empleado modificado exitosamente");
                     Listar();
@@ -197,6 +199,18 @@ namespace TF.WIN
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnBuscarCUIT_Click(object sender, EventArgs e)
+        {
+            frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
+            oFrm.ShowDialog();
+
+            if (oFrm.EmpresaSeleccionada != null)
+            {
+                txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
+                txtNomEmp.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
+            }
         }
     }
 }
