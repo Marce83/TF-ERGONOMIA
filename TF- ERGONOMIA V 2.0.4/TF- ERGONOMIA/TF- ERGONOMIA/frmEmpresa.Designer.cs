@@ -111,6 +111,8 @@
             // txtCUIT
             // 
             this.txtCUIT.AnimateReadOnly = false;
+            this.txtCUIT.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCUIT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtCUIT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCUIT.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCUIT.Depth = 0;
@@ -141,6 +143,8 @@
             // txtCorreo
             // 
             this.txtCorreo.AnimateReadOnly = false;
+            this.txtCorreo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCorreo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtCorreo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCorreo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCorreo.Depth = 0;
@@ -170,6 +174,8 @@
             // txtNombreEmpresa
             // 
             this.txtNombreEmpresa.AnimateReadOnly = false;
+            this.txtNombreEmpresa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNombreEmpresa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtNombreEmpresa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNombreEmpresa.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombreEmpresa.Depth = 0;
@@ -228,6 +234,8 @@
             // txtWeb
             // 
             this.txtWeb.AnimateReadOnly = false;
+            this.txtWeb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtWeb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtWeb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtWeb.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtWeb.Depth = 0;
@@ -313,6 +321,8 @@
             // txtTelefono
             // 
             this.txtTelefono.AnimateReadOnly = false;
+            this.txtTelefono.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtTelefono.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtTelefono.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTelefono.Depth = 0;
@@ -371,6 +381,8 @@
             // txtCalle
             // 
             this.txtCalle.AnimateReadOnly = false;
+            this.txtCalle.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCalle.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtCalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCalle.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCalle.Depth = 0;
@@ -443,7 +455,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(1343, 530);
+            this.groupBox1.Size = new System.Drawing.Size(1596, 530);
             this.groupBox1.TabIndex = 60;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "REGISTRAR EMPRESA";
@@ -691,8 +703,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1420, 617);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(1654, 617);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -105,6 +105,8 @@
             // txtNombre
             // 
             this.txtNombre.AnimateReadOnly = false;
+            this.txtNombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtNombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombre.Depth = 0;
@@ -134,6 +136,8 @@
             // txtApellido
             // 
             this.txtApellido.AnimateReadOnly = false;
+            this.txtApellido.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtApellido.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtApellido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtApellido.Depth = 0;
@@ -230,6 +234,8 @@
             // txtPeso
             // 
             this.txtPeso.AnimateReadOnly = false;
+            this.txtPeso.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtPeso.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtPeso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtPeso.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtPeso.Depth = 0;
@@ -259,6 +265,8 @@
             // txtDNI
             // 
             this.txtDNI.AnimateReadOnly = false;
+            this.txtDNI.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtDNI.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtDNI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtDNI.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtDNI.Depth = 0;
@@ -351,7 +359,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(802, 398);
+            this.groupBox1.Size = new System.Drawing.Size(1087, 476);
             this.groupBox1.TabIndex = 61;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "REGISTRAR EMPLEADOS";
@@ -359,6 +367,8 @@
             // txtNomEmpr
             // 
             this.txtNomEmpr.AnimateReadOnly = false;
+            this.txtNomEmpr.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNomEmpr.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtNomEmpr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNomEmpr.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNomEmpr.Depth = 0;
@@ -453,9 +463,9 @@
             this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarCUIT.Location = new System.Drawing.Point(645, 23);
+            this.btnBuscarCUIT.Location = new System.Drawing.Point(645, 19);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
-            this.btnBuscarCUIT.Size = new System.Drawing.Size(67, 35);
+            this.btnBuscarCUIT.Size = new System.Drawing.Size(67, 48);
             this.btnBuscarCUIT.TabIndex = 72;
             this.btnBuscarCUIT.Text = "...";
             this.btnBuscarCUIT.UseVisualStyleBackColor = false;
@@ -491,6 +501,8 @@
             // txtAltura
             // 
             this.txtAltura.AnimateReadOnly = false;
+            this.txtAltura.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtAltura.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtAltura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtAltura.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtAltura.Depth = 0;
@@ -520,6 +532,8 @@
             // txtCUITEncontrado
             // 
             this.txtCUITEncontrado.AnimateReadOnly = false;
+            this.txtCUITEncontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCUITEncontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtCUITEncontrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCUITEncontrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCUITEncontrado.Depth = 0;
@@ -551,7 +565,7 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(359, 9);
+            this.label1.Location = new System.Drawing.Point(407, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(331, 31);
@@ -563,8 +577,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(839, 461);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(1145, 557);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
