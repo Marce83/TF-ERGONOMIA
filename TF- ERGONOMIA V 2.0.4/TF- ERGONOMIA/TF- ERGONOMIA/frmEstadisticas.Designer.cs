@@ -38,6 +38,9 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnEmpresa = new System.Windows.Forms.Button();
@@ -82,6 +85,7 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.ContEmpresasPublicasPrivadas = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -100,6 +104,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ContEmpresasPublicasPrivadas)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -218,7 +223,7 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(26, 175);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(778, 46);
+            this.panel1.Size = new System.Drawing.Size(1383, 46);
             this.panel1.TabIndex = 88;
             // 
             // label5
@@ -439,7 +444,7 @@
             this.panel8.Controls.Add(this.label7);
             this.panel8.Location = new System.Drawing.Point(26, 345);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(778, 46);
+            this.panel8.Size = new System.Drawing.Size(1383, 46);
             this.panel8.TabIndex = 89;
             // 
             // label7
@@ -447,7 +452,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(334, 11);
+            this.label7.Location = new System.Drawing.Point(567, 11);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(190, 21);
             this.label7.TabIndex = 0;
@@ -521,7 +526,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartEmpresasProv.Series.Add(series1);
-            this.chartEmpresasProv.Size = new System.Drawing.Size(386, 366);
+            this.chartEmpresasProv.Size = new System.Drawing.Size(386, 281);
             this.chartEmpresasProv.TabIndex = 95;
             // 
             // ChartEmpLocal
@@ -541,7 +546,7 @@
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.ChartEmpLocal.Series.Add(series2);
-            this.ChartEmpLocal.Size = new System.Drawing.Size(386, 332);
+            this.ChartEmpLocal.Size = new System.Drawing.Size(386, 281);
             this.ChartEmpLocal.TabIndex = 96;
             // 
             // panel10
@@ -550,7 +555,7 @@
             this.panel10.Controls.Add(this.label11);
             this.panel10.Location = new System.Drawing.Point(26, 683);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(778, 46);
+            this.panel10.Size = new System.Drawing.Size(1383, 46);
             this.panel10.TabIndex = 97;
             // 
             // label11
@@ -612,7 +617,7 @@
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(849, 53);
+            this.BarraTitulo.Size = new System.Drawing.Size(1409, 53);
             this.BarraTitulo.TabIndex = 100;
             // 
             // btnRestaurar
@@ -621,7 +626,7 @@
             this.btnRestaurar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(784, 14);
+            this.btnRestaurar.Location = new System.Drawing.Point(1344, 14);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -637,7 +642,7 @@
             this.btnMinimizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(753, 14);
+            this.btnMinimizar.Location = new System.Drawing.Point(1313, 14);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -651,7 +656,7 @@
             this.btnMaximizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(784, 14);
+            this.btnMaximizar.Location = new System.Drawing.Point(1344, 14);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -664,13 +669,33 @@
             this.btnCerrar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(815, 14);
+            this.btnCerrar.Location = new System.Drawing.Point(1375, 14);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(25, 25);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // ContEmpresasPublicasPrivadas
+            // 
+            this.ContEmpresasPublicasPrivadas.BackColor = System.Drawing.Color.Transparent;
+            this.ContEmpresasPublicasPrivadas.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.ContEmpresasPublicasPrivadas.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            chartArea4.Name = "ChartArea1";
+            this.ContEmpresasPublicasPrivadas.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.ContEmpresasPublicasPrivadas.Legends.Add(legend4);
+            this.ContEmpresasPublicasPrivadas.Location = new System.Drawing.Point(809, 397);
+            this.ContEmpresasPublicasPrivadas.Margin = new System.Windows.Forms.Padding(2);
+            this.ContEmpresasPublicasPrivadas.Name = "ContEmpresasPublicasPrivadas";
+            this.ContEmpresasPublicasPrivadas.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.ContEmpresasPublicasPrivadas.Series.Add(series4);
+            this.ContEmpresasPublicasPrivadas.Size = new System.Drawing.Size(600, 281);
+            this.ContEmpresasPublicasPrivadas.TabIndex = 164;
             // 
             // frmEstadisticas
             // 
@@ -679,7 +704,8 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(866, 894);
+            this.ClientSize = new System.Drawing.Size(1188, 894);
+            this.Controls.Add(this.ContEmpresasPublicasPrivadas);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.chartempxemp);
@@ -729,6 +755,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ContEmpresasPublicasPrivadas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -779,5 +806,6 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ContEmpresasPublicasPrivadas;
     }
 }

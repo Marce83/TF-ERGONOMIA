@@ -139,6 +139,11 @@ namespace TF.BC
             return dt;
         }
 
-
+        public DataTable ContPersonxEmpBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.ContPersonxEmpDAC(oEstadisticasPersonales);
+            return dt;
+        }
     }
 }

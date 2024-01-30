@@ -36,6 +36,7 @@ namespace TF.WIN
             ConfigurarGraficoEmpxProv();
             ConfigurarGraficoEmpLoc();
             ConfigurarGraficoEmpxemp();
+            ContEmpresasPublPriv();
 
             double SumaMetodos = 0;
 
@@ -48,7 +49,7 @@ namespace TF.WIN
         public void ContEmpresas()
         {
             EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-            
+
             //DataTable dt = oRulaBC.RULACONSULTARRESULTADOIDBC(oRula);
 
 
@@ -59,7 +60,7 @@ namespace TF.WIN
                 string resultado = dt1000.Rows[0][0].ToString();
                 txtempresasregistradas.Text = resultado;
             }
-          
+
         }
         //private void ContEmpresasprov()
         //{
@@ -163,7 +164,7 @@ namespace TF.WIN
         {
             EstadisticaBC oEstadisticaBC = new EstadisticaBC();
 
-          DataTable dt1007 = oEstadisticaBC.ContREBABC();
+            DataTable dt1007 = oEstadisticaBC.ContREBABC();
 
             if (dt1007.Rows.Count > 0)
             {
@@ -375,6 +376,62 @@ namespace TF.WIN
         {
 
         }
+
+        private void ContEmpresasPublPriv()
+        {
+
+            // Configura el gráfico aquí
+            // Por ejemplo, crea una serie de columnas
+            Series series = new Series
+            {
+                Name = "Porcentaje",
+                ChartType = SeriesChartType.Pie
+            };
+
+            // Configura los ejes
+            ChartArea chartArea = new ChartArea();
+            chartArea.AxisX.Title = "Tipo";
+            chartArea.AxisY.Title = "EmpresasporTipo";
+
+            // Limpia las series existentes antes de agregar la nueva
+            chartempxemp.Series.Clear();
+
+            // Asigna la serie y el área del gráfico
+            chartempxemp.Series.Add(series);
+            chartempxemp.ChartAreas.Add(chartArea);
+
+            // Agrega un título al gráfico
+            chartempxemp.Titles.Add("Cantidad de Empresas Publicas y Privadas");  // Cambia "Mi Título" al título que desees
+            chartempxemp.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+            // Establece el formato de la serie
+            series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+
+
+
+            DatosBDEmpxemp();
+        }
+
+        private void DatosBDEmpxemp()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            DataTable dt1004 = oEstadisticaBC.ContEmpleadosempresaBC();
+
+            // Limpia los datos existentes en el gráfico
+            chartempxemp.Series[0].Points.Clear();
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt1004.Rows)
+            {
+                string Empleadosporempresas = row["Nombre"].ToString();
+                int cantidadEmpleados1 = Convert.ToInt32(row["CantidadEmpleados"]);
+
+                // Agrega un punto a la serie para cada provincia
+                chartempxemp.Series[0].Points.AddXY(Empleadosporempresas, cantidadEmpleados1);
+            }
+        }
+
 
     }
 }

@@ -26,5 +26,13 @@ namespace TF.ENTITIES
 
         public string PuestoTrabajoStat { get; set; }
 
+        public string Cuit { get; set; }
+        public string FechaIngreso { get; set; }
+        public string FechaIngreso2 { get; set; }
+
+
+
+
+
     }
 }

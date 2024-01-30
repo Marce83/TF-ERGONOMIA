@@ -384,6 +384,44 @@ namespace TF.DAC
             return ds.Tables[0];
         }
 
+        public DataTable ContPersonxEmpDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_ContEmpleadosPerson";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUIT", SqlDbType.NVarChar).Value = oEstadisticasPersonales.Cuit;
+            sqlComm.Parameters.Add("@FechaIngreso", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaIngreso;
+            sqlComm.Parameters.Add("@FechaIngreso2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaIngreso2;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
+            return ds.Tables[0];
+        }
+
+        public DataTable ContEmpresasPublPrivaDAC()
+        {
+            string sqlSentencia = "SP_STAT_ContEmpleadosEmpresas";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
+
+            return ds.Tables[0];
+        }
+
+
+
 
 
     }

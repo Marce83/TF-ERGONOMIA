@@ -75,6 +75,7 @@ namespace TF.WIN
             try
             {
                 ContNIOSH();
+                CantEmpleadosEmpresa();
                 ContREBA();
                 ContRULA();
                 ContJSS();
@@ -913,7 +914,35 @@ namespace TF.WIN
         }
 
 
+        private void CantEmpleadosEmpresa()
+        {
+            try
+            {
+                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+                EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+                oEstadisticasPersonales.Cuit = txtCUIT.Text;
+                oEstadisticasPersonales.FechaIngreso = FechaDesde.Text;
+                oEstadisticasPersonales.FechaIngreso2 = FechaHasta.Text;
 
+                DataTable dt400 = oEstadisticaBC.ContPersonxEmpBC(oEstadisticasPersonales);
+
+                if (dt400.Rows.Count > 0)
+                {
+                    string resultado24 = dt400.Rows[0][1].ToString();
+                    txtcontempleados.Text = resultado24;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al realizar la búsqueda: Verifique que posea Analisis bajo este Metodo Realizadas ");
+            }
+
+
+
+
+
+
+        }
 
 
     }
