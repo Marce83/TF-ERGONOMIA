@@ -220,10 +220,11 @@ GO
 CREATE OR ALTER PROCEDURE SP_Empleados_GetAll
 AS
 BEGIN
-	SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
-	FROM Empleados
-	WHERE FechaEgreso IS NULL
-	AND Estado = 'A'
+	SELECT Em.Nombre, Em.Apellido, Em.DNI, Em.Genero, Em.Peso, Em.Altura, Em.FechaNacimiento 'Fecha de Nacimiento', Em.FechaIngreso 'Fecha de Ingreso', Em.Estado, empr.Nombre
+	FROM dbo.Empleados Em
+	INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
+	WHERE Em.FechaEgreso IS NULL
+	AND Em.Estado = 'A'
 END
 GO
 
@@ -271,11 +272,13 @@ CREATE OR ALTER PROCEDURE SP_Empleados_Update
 @Genero nvarchar(20),
 @Peso float,
 @Altura float,
-@FechaNacimiento DATE
+@FechaNacimiento DATE,
+@FechaIngreso DATE,
+@IdEmpresa INT
 
 AS
 BEGIN
-	update Empleados set Nombre=@Nombre, Apellido=@Apellido, DNI=@DNI ,Genero=@Genero, Peso=@Peso, Altura=@Altura, FechaNacimiento=@FechaNacimiento
+	update Empleados set Nombre=@Nombre, Apellido=@Apellido, DNI=@DNI ,Genero=@Genero, Peso=@Peso, Altura=@Altura, FechaNacimiento=@FechaNacimiento, FechaIngreso=@FechaIngreso, IdEmpresa =@IdEmpresa
 	where DNI=@DNI
 END
 GO
