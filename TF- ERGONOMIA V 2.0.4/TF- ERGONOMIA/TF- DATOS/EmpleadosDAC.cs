@@ -193,8 +193,8 @@ namespace TF.DAC
                 sqlCom.Parameters.Add("@Peso", SqlDbType.Float).Value = oEmpl.Peso;
                 sqlCom.Parameters.Add("@Altura", SqlDbType.Float).Value = oEmpl.Altura;
                 sqlCom.Parameters.Add("@FechaNacimiento", SqlDbType.Date).Value = oEmpl.FechaNacimiento;
-                sqlCom.Parameters.Add("@IdEmpresa", SqlDbType.Int).Value = oEmpl.IdEmpresa;
                 sqlCom.Parameters.Add("@FechaIngreso", SqlDbType.Date).Value = oEmpl.FechaIngreso;
+                sqlCom.Parameters.Add("@IdEmpresa", SqlDbType.Int).Value = oEmpl.IdEmpresa;
                 //sqlCom.Parameters.Add("@FechaEgreso", SqlDbType.Date).Value = DBNull.Value;
                 sqlCnn.Open();
                 var res = sqlCom.ExecuteNonQuery();

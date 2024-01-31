@@ -89,6 +89,7 @@ namespace TF.WIN
                     oBe.Peso = float.Parse(txtPeso.Text);
                     oBe.Altura = float.Parse(txtAltura.Text);
                     oBe.FechaNacimiento = Convert.ToDateTime(dtpNacimiento.Text);
+                    oBe.FechaIngreso = dtpIngreso.Value;
                     long CUIL = Convert.ToInt64(txtCUITEncontrado.Text);
                     var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIL);
                     oBe.IdEmpresa = Convert.ToInt32(BuscarId);
@@ -175,6 +176,7 @@ namespace TF.WIN
             txtAltura.Text = dgvEmpleados.CurrentRow.Cells[5].Value.ToString();
             dtpNacimiento.Text = dgvEmpleados.CurrentRow.Cells[6].Value.ToString();
             dtpIngreso.Text = dgvEmpleados.CurrentRow.Cells[7].Value.ToString();
+            txtNomEmp.Text = dgvEmpleados.CurrentRow.Cells[9].Value.ToString();
             //dtpIngreso.Enabled = false;
         }
 
