@@ -69,7 +69,7 @@
             // 
             this.txtRepetirClave.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtRepetirClave.Location = new System.Drawing.Point(25, 388);
-            this.txtRepetirClave.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtRepetirClave.Margin = new System.Windows.Forms.Padding(5);
             this.txtRepetirClave.Name = "txtRepetirClave";
             this.txtRepetirClave.PasswordChar = '*';
             this.txtRepetirClave.Size = new System.Drawing.Size(435, 22);
@@ -90,7 +90,7 @@
             // 
             this.txtClaveNueva.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtClaveNueva.Location = new System.Drawing.Point(25, 337);
-            this.txtClaveNueva.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtClaveNueva.Margin = new System.Windows.Forms.Padding(5);
             this.txtClaveNueva.Name = "txtClaveNueva";
             this.txtClaveNueva.PasswordChar = '*';
             this.txtClaveNueva.Size = new System.Drawing.Size(435, 22);
@@ -111,7 +111,7 @@
             // 
             this.txtClaveActual.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtClaveActual.Location = new System.Drawing.Point(25, 287);
-            this.txtClaveActual.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtClaveActual.Margin = new System.Windows.Forms.Padding(5);
             this.txtClaveActual.Name = "txtClaveActual";
             this.txtClaveActual.PasswordChar = '*';
             this.txtClaveActual.Size = new System.Drawing.Size(435, 22);
@@ -131,7 +131,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Location = new System.Drawing.Point(487, 476);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(120, 34);
             this.btnGuardar.TabIndex = 42;
@@ -142,7 +142,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(343, 476);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(5);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(120, 34);
             this.btnCancelar.TabIndex = 41;
@@ -161,7 +161,7 @@
             "Recepcionista",
             "Usuario"});
             this.cboCargo.Location = new System.Drawing.Point(28, 438);
-            this.cboCargo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.cboCargo.Margin = new System.Windows.Forms.Padding(5);
             this.cboCargo.Name = "cboCargo";
             this.cboCargo.Size = new System.Drawing.Size(215, 24);
             this.cboCargo.TabIndex = 40;
@@ -170,7 +170,7 @@
             // 
             this.txtCorreo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtCorreo.Location = new System.Drawing.Point(25, 236);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(5);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(435, 22);
             this.txtCorreo.TabIndex = 39;
@@ -179,7 +179,7 @@
             // 
             this.txtApellido.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtApellido.Location = new System.Drawing.Point(27, 186);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(5);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(435, 22);
             this.txtApellido.TabIndex = 38;
@@ -189,7 +189,7 @@
             // 
             this.txtNombre.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtNombre.Location = new System.Drawing.Point(27, 135);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(435, 22);
             this.txtNombre.TabIndex = 37;
@@ -199,7 +199,7 @@
             // 
             this.txtUsuario.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtUsuario.Location = new System.Drawing.Point(25, 85);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(5);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(435, 22);
             this.txtUsuario.TabIndex = 36;
@@ -274,11 +274,11 @@
             // 
             // dgvEditarPerfil
             // 
-            this.dgvEditarPerfil.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvEditarPerfil.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvEditarPerfil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEditarPerfil.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvEditarPerfil.Location = new System.Drawing.Point(487, 85);
-            this.dgvEditarPerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvEditarPerfil.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEditarPerfil.Name = "dgvEditarPerfil";
             this.dgvEditarPerfil.RowHeadersWidth = 51;
             this.dgvEditarPerfil.Size = new System.Drawing.Size(923, 379);
@@ -289,7 +289,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1425, 530);
             this.Controls.Add(this.dgvEditarPerfil);
             this.Controls.Add(this.linkEditarClave);
@@ -313,7 +313,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEditUsrAdmin";
             this.Text = "frmEditUsrAdmin";
             this.Load += new System.EventHandler(this.frmEditUsrAdmin_Load);
