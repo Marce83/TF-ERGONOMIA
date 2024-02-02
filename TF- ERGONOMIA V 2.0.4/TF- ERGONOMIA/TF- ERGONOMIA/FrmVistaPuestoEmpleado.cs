@@ -45,8 +45,8 @@ namespace TF.WIN
 
             if (dgvVistaPuestoEmpleado.SelectedRows.Count == 1) // si selecciona una fila
             {
-                // Obtén el valor de la celda de la primera columna
-                object cellValue = dgvVistaPuestoEmpleado.CurrentRow.Cells[0].Value;
+                // Obtén el valor de la celda de la primera columna de la fila seleccionada
+                object cellValue = dgvVistaPuestoEmpleado.SelectedRows[0].Cells[0].Value;
 
                 if (cellValue != null)
                 {

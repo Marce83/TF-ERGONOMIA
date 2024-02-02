@@ -458,14 +458,12 @@ namespace TF.WIN
                 RULARESULTADO ORULARESULTADO = new RULARESULTADO();
                 ORULARESULTADO.Show();
 
-
+                Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("verificar si existen caracteristicas sin completar");
             }
-
-            Close();
 
         }
 
