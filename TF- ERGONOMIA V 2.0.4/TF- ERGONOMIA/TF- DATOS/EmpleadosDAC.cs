@@ -254,6 +254,7 @@ namespace TF.DAC
                 oEmpleados.Apellido = dr.GetString(2);
                 oEmpleados.DNI = dr.GetString(3);
                 oEmpleados.Genero = dr.GetString(4);
+                oEmpleados.NombrePuesto = dr.GetString(5);
                 //oEmpleados.PuestoDeTrabajo = dr.GetString(5);
 
             }

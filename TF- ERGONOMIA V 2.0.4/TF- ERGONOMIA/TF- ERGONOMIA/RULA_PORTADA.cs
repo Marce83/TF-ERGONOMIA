@@ -39,15 +39,37 @@ namespace TF.WIN
 
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
-            FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
+
+            frmBuscarEmpleados oFrm = new frmBuscarEmpleados();
             oFrm.ShowDialog();
 
-            if (oFrm.PersonaSeleccionada != null)
+            if (oFrm.EmpleadoSeleccionado != null)
             {
-                txtDniEmpleadoRula.Text = oFrm.PersonaSeleccionada.DNI.ToString();
-                txtNombreEmpleadoRula.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
-                txtpuestotrabajoencontrado.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
+                txtDniEmpleadoRula.Text = oFrm.EmpleadoSeleccionado.DNI.ToString();
+                txtNombreEmpleadoRula.Text = oFrm.EmpleadoSeleccionado.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado.Apellido.ToString();
+                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado.NombrePuesto.ToString();
+
+
+
+
             }
+
+
+
+
+
+
+
+
+            //FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
+            //oFrm.ShowDialog();
+
+            //if (oFrm.PersonaSeleccionada != null)
+            //{
+            //    txtDniEmpleadoRula.Text = oFrm.PersonaSeleccionada.DNI.ToString();
+            //    txtNombreEmpleadoRula.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
+            //    txtpuestotrabajoencontrado.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
+            //}
         }
 
         private void btnBuscarpuesto_Click(object sender, EventArgs e)
