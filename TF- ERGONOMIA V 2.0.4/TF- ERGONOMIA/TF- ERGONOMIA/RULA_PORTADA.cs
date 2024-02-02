@@ -48,18 +48,7 @@ namespace TF.WIN
                 txtDniEmpleadoRula.Text = oFrm.EmpleadoSeleccionado.DNI.ToString();
                 txtNombreEmpleadoRula.Text = oFrm.EmpleadoSeleccionado.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado.Apellido.ToString();
                 txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado.NombrePuesto.ToString();
-
-
-
-
             }
-
-
-
-
-
-
-
 
             //FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
             //oFrm.ShowDialog();
