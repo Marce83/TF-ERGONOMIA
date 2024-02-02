@@ -75,5 +75,10 @@ namespace TF.WIN
         {
             Close();
         }
+
+        private void FrmVistaPuestoEmpleado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

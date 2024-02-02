@@ -53,8 +53,8 @@ namespace TF.WIN
         private void btnBuscarpuesto_Click(object sender, EventArgs e)
         {
 
-            Empleados oempl = new Empleados();
-            oempl.DNI = txtDniEmpleadoRula.Text;
+            //Empleados oempl = new Empleados();
+            //oempl.DNI = txtDniEmpleadoRula.Text;
 
 
             //EmpleadosBC oEmpleadosBC = new EmpleadosBC();

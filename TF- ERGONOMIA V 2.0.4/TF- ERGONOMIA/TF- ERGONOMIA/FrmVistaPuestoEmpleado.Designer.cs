@@ -52,7 +52,7 @@
             this.dgvVistaPuestoEmpleado.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvVistaPuestoEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVistaPuestoEmpleado.Location = new System.Drawing.Point(16, 60);
-            this.dgvVistaPuestoEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvVistaPuestoEmpleado.Margin = new System.Windows.Forms.Padding(4);
             this.dgvVistaPuestoEmpleado.Name = "dgvVistaPuestoEmpleado";
             this.dgvVistaPuestoEmpleado.ReadOnly = true;
             this.dgvVistaPuestoEmpleado.RowHeadersWidth = 51;
@@ -69,7 +69,7 @@
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(109, 326);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(155, 58);
             this.btnCancelar.TabIndex = 86;
@@ -87,7 +87,7 @@
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAceptar.Location = new System.Drawing.Point(444, 326);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(155, 58);
             this.btnAceptar.TabIndex = 85;
@@ -106,9 +106,10 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmVistaPuestoEmpleado";
             this.Text = "FrmVistaPuestoEmpleado";
+            this.Load += new System.EventHandler(this.FrmVistaPuestoEmpleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVistaPuestoEmpleado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
