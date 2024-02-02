@@ -301,9 +301,14 @@ CREATE OR ALTER PROCEDURE SP_Empleados_GetId
 @DNI nvarchar(8)
 AS
 BEGIN
-	SELECT IdEmpleado, Nombre, Apellido, DNI, Genero
-	FROM Empleados
-	WHERE DNI = @DNI
+
+	--SELECT IdEmpleado, Nombre, Apellido, DNI, Genero
+	--FROM Empleados
+	--WHERE DNI = @DNI
+
+	SELECT E.IdEmpleado, E.Nombre, E.Apellido, E.DNI, E.Genero, PT.NombrePuesto
+FROM Empleados E JOIN  PuestoEmpleado PE ON E.IdEmpleado = PE.IdEmpleado JOIN PuestoDeTrabajo PT ON PE.IdPuesto = PT.IdPuesto
+WHERE  E.DNI = @DNI;
 END
 GO
 
