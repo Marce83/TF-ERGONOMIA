@@ -153,5 +153,21 @@ namespace TF.BC
             return dt;
         }
 
+
+
+
+        public DataTable ContEmpleadosSexoBC()
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.ContEmpleadosSexoDAC();
+            return dt;
+        }
+
+
+
+
+
+        
+
     }
 }

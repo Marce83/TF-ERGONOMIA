@@ -421,6 +421,27 @@ namespace TF.DAC
         }
 
 
+        public DataTable ContEmpleadosSexoDAC()
+        {
+            string sqlSentencia = "SP_STAT_MujerVaronEmp";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
+
+            return ds.Tables[0];
+        }
+
+
+
+
+
 
 
 
