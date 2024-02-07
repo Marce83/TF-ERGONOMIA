@@ -1710,8 +1710,6 @@ select count (cargaId) from RulaTablaCompleta
 END
 GO
 
-
-
 use ProyectoFinal
 go
 CREATE or Alter PROCEDURE SP_STAT_EmpresaPubPriv
@@ -1720,6 +1718,17 @@ BEGIN
 select Tipo, count (Tipo) as CantidadTipo from Empresas group by Tipo
 END
 GO
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_MujerVaronEmp
+AS
+BEGIN
+select Genero, count (Genero) as CantidadTipo from Empleados group by Genero
+END
+GO
+
+
 
 
 ---------------------estadisticas personales por empresa-------------------------------------------
