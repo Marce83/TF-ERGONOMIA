@@ -99,6 +99,7 @@
             this.txtpuestotrabajoencontrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtpuestotrabajoencontrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtpuestotrabajoencontrado.Depth = 0;
+            this.txtpuestotrabajoencontrado.Enabled = false;
             this.txtpuestotrabajoencontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtpuestotrabajoencontrado.HideSelection = true;
             this.txtpuestotrabajoencontrado.LeadingIcon = null;
@@ -160,6 +161,7 @@
             this.txtDniEmpleadoRula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtDniEmpleadoRula.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtDniEmpleadoRula.Depth = 0;
+            this.txtDniEmpleadoRula.Enabled = false;
             this.txtDniEmpleadoRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDniEmpleadoRula.HideSelection = true;
             this.txtDniEmpleadoRula.LeadingIcon = null;
@@ -221,6 +223,7 @@
             this.txtCUITEncontrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCUITEncontrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCUITEncontrado.Depth = 0;
+            this.txtCUITEncontrado.Enabled = false;
             this.txtCUITEncontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCUITEncontrado.HideSelection = true;
             this.txtCUITEncontrado.LeadingIcon = null;
@@ -325,6 +328,7 @@
             this.txtNombreEmpresaRula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNombreEmpresaRula.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombreEmpresaRula.Depth = 0;
+            this.txtNombreEmpresaRula.Enabled = false;
             this.txtNombreEmpresaRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpresaRula.HideSelection = true;
             this.txtNombreEmpresaRula.LeadingIcon = null;
@@ -369,6 +373,7 @@
             this.txtNombreEmpleadoRula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNombreEmpleadoRula.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombreEmpleadoRula.Depth = 0;
+            this.txtNombreEmpleadoRula.Enabled = false;
             this.txtNombreEmpleadoRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpleadoRula.HideSelection = true;
             this.txtNombreEmpleadoRula.LeadingIcon = null;
@@ -416,7 +421,6 @@
             this.Controls.Add(this.txtCUITEncontrado);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.btnCrear);
-            this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RULA_PORTADA";
