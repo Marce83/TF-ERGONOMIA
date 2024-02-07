@@ -57,7 +57,7 @@
             this.btnBuscarpuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarpuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarpuesto.Location = new System.Drawing.Point(508, 364);
-            this.btnBuscarpuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarpuesto.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarpuesto.Name = "btnBuscarpuesto";
             this.btnBuscarpuesto.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarpuesto.TabIndex = 127;
@@ -99,7 +99,6 @@
             this.txtpuestotrabajoencontrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtpuestotrabajoencontrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtpuestotrabajoencontrado.Depth = 0;
-            this.txtpuestotrabajoencontrado.Enabled = false;
             this.txtpuestotrabajoencontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtpuestotrabajoencontrado.HideSelection = true;
             this.txtpuestotrabajoencontrado.LeadingIcon = null;
@@ -132,7 +131,7 @@
             this.btnBuscarEmpleados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarEmpleados.Location = new System.Drawing.Point(508, 213);
-            this.btnBuscarEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarEmpleados.Name = "btnBuscarEmpleados";
             this.btnBuscarEmpleados.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarEmpleados.TabIndex = 123;
@@ -161,7 +160,6 @@
             this.txtDniEmpleadoRula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtDniEmpleadoRula.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtDniEmpleadoRula.Depth = 0;
-            this.txtDniEmpleadoRula.Enabled = false;
             this.txtDniEmpleadoRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDniEmpleadoRula.HideSelection = true;
             this.txtDniEmpleadoRula.LeadingIcon = null;
@@ -194,7 +192,7 @@
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarCUIT.Location = new System.Drawing.Point(508, 74);
-            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
             this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarCUIT.TabIndex = 120;
@@ -223,7 +221,6 @@
             this.txtCUITEncontrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCUITEncontrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCUITEncontrado.Depth = 0;
-            this.txtCUITEncontrado.Enabled = false;
             this.txtCUITEncontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCUITEncontrado.HideSelection = true;
             this.txtCUITEncontrado.LeadingIcon = null;
@@ -257,7 +254,7 @@
             this.BtnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSalir.Location = new System.Drawing.Point(37, 535);
-            this.BtnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(155, 43);
             this.BtnSalir.TabIndex = 117;
@@ -275,7 +272,7 @@
             this.btnCrear.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCrear.Location = new System.Drawing.Point(443, 535);
-            this.btnCrear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(155, 43);
             this.btnCrear.TabIndex = 116;
@@ -300,7 +297,7 @@
             // 
             this.dtpRula.CustomFormat = "";
             this.dtpRula.Location = new System.Drawing.Point(176, 458);
-            this.dtpRula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpRula.Margin = new System.Windows.Forms.Padding(4);
             this.dtpRula.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpRula.Name = "dtpRula";
             this.dtpRula.Size = new System.Drawing.Size(324, 22);
@@ -328,7 +325,6 @@
             this.txtNombreEmpresaRula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNombreEmpresaRula.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombreEmpresaRula.Depth = 0;
-            this.txtNombreEmpresaRula.Enabled = false;
             this.txtNombreEmpresaRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpresaRula.HideSelection = true;
             this.txtNombreEmpresaRula.LeadingIcon = null;
@@ -373,7 +369,6 @@
             this.txtNombreEmpleadoRula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNombreEmpleadoRula.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombreEmpleadoRula.Depth = 0;
-            this.txtNombreEmpleadoRula.Enabled = false;
             this.txtNombreEmpleadoRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpleadoRula.HideSelection = true;
             this.txtNombreEmpleadoRula.LeadingIcon = null;
@@ -423,7 +418,7 @@
             this.Controls.Add(this.btnCrear);
             this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RULA_PORTADA";
             this.Text = "RULA_PORTADA";
             this.Load += new System.EventHandler(this.RULA_PORTADA_Load);
