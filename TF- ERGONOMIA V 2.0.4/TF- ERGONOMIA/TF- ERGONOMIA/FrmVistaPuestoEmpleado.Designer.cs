@@ -41,11 +41,11 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(144, 11);
+            this.label1.Location = new System.Drawing.Point(33, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(407, 36);
+            this.label1.Size = new System.Drawing.Size(617, 36);
             this.label1.TabIndex = 88;
-            this.label1.Text = "VISTA PUESTO EMPLEADO";
+            this.label1.Text = "HISTORIAL DE PUESTOS POR EMPLEADO";
             // 
             // dgvVistaPuestoEmpleado
             // 

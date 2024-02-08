@@ -549,20 +549,27 @@
             // 
             this.chartEmpresasProv.BackColor = System.Drawing.Color.Transparent;
             this.chartEmpresasProv.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.chartEmpresasProv.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
+            this.chartEmpresasProv.BorderlineWidth = 0;
             this.chartEmpresasProv.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.InnerPlotPosition.Auto = false;
+            chartArea1.InnerPlotPosition.Height = 86.36968F;
+            chartArea1.InnerPlotPosition.Width = 92.48918F;
+            chartArea1.InnerPlotPosition.X = 6.24655F;
+            chartArea1.InnerPlotPosition.Y = 3.35106F;
             chartArea1.Name = "ChartArea1";
             this.chartEmpresasProv.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartEmpresasProv.Legends.Add(legend1);
-            this.chartEmpresasProv.Location = new System.Drawing.Point(35, 489);
-            this.chartEmpresasProv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chartEmpresasProv.Location = new System.Drawing.Point(35, 488);
+            this.chartEmpresasProv.Margin = new System.Windows.Forms.Padding(2);
             this.chartEmpresasProv.Name = "chartEmpresasProv";
-            this.chartEmpresasProv.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.chartEmpresasProv.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartEmpresasProv.Series.Add(series1);
-            this.chartEmpresasProv.Size = new System.Drawing.Size(772, 346);
+            this.chartEmpresasProv.Size = new System.Drawing.Size(1322, 457);
             this.chartEmpresasProv.TabIndex = 95;
             // 
             // ChartEmpLocal
@@ -574,22 +581,22 @@
             this.ChartEmpLocal.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.ChartEmpLocal.Legends.Add(legend2);
-            this.ChartEmpLocal.Location = new System.Drawing.Point(815, 489);
+            this.ChartEmpLocal.Location = new System.Drawing.Point(52, 949);
             this.ChartEmpLocal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartEmpLocal.Name = "ChartEmpLocal";
-            this.ChartEmpLocal.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.ChartEmpLocal.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.ChartEmpLocal.Series.Add(series2);
-            this.ChartEmpLocal.Size = new System.Drawing.Size(739, 622);
+            this.ChartEmpLocal.Size = new System.Drawing.Size(1315, 692);
             this.ChartEmpLocal.TabIndex = 96;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel10.Controls.Add(this.label11);
-            this.panel10.Location = new System.Drawing.Point(35, 1273);
+            this.panel10.Location = new System.Drawing.Point(52, 2136);
             this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1844, 57);
@@ -617,7 +624,7 @@
             this.chartempxemp.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chartempxemp.Legends.Add(legend3);
-            this.chartempxemp.Location = new System.Drawing.Point(35, 1337);
+            this.chartempxemp.Location = new System.Drawing.Point(52, 2200);
             this.chartempxemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartempxemp.Name = "chartempxemp";
             this.chartempxemp.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -657,7 +664,7 @@
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1879, 65);
+            this.BarraTitulo.Size = new System.Drawing.Size(1896, 65);
             this.BarraTitulo.TabIndex = 100;
             // 
             // btnRestaurar
@@ -666,7 +673,7 @@
             this.btnRestaurar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(1792, 17);
+            this.btnRestaurar.Location = new System.Drawing.Point(1809, 17);
             this.btnRestaurar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(33, 31);
@@ -683,7 +690,7 @@
             this.btnMinimizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(1751, 17);
+            this.btnMinimizar.Location = new System.Drawing.Point(1768, 17);
             this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(33, 31);
@@ -698,7 +705,7 @@
             this.btnMaximizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(1792, 17);
+            this.btnMaximizar.Location = new System.Drawing.Point(1809, 17);
             this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(33, 31);
@@ -712,7 +719,7 @@
             this.btnCerrar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1833, 17);
+            this.btnCerrar.Location = new System.Drawing.Point(1850, 17);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(33, 31);
@@ -730,15 +737,15 @@
             this.GraphEmpresasTipo.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.GraphEmpresasTipo.Legends.Add(legend4);
-            this.GraphEmpresasTipo.Location = new System.Drawing.Point(63, 907);
+            this.GraphEmpresasTipo.Location = new System.Drawing.Point(52, 1669);
             this.GraphEmpresasTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GraphEmpresasTipo.Name = "GraphEmpresasTipo";
-            this.GraphEmpresasTipo.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.GraphEmpresasTipo.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series4.ChartArea = "ChartArea1";
             series4.Legend = "Legend1";
             series4.Name = "Series1";
             this.GraphEmpresasTipo.Series.Add(series4);
-            this.GraphEmpresasTipo.Size = new System.Drawing.Size(800, 346);
+            this.GraphEmpresasTipo.Size = new System.Drawing.Size(1305, 461);
             this.GraphEmpresasTipo.TabIndex = 164;
             // 
             // chartsMujeresVarones
@@ -750,7 +757,7 @@
             this.chartsMujeresVarones.ChartAreas.Add(chartArea5);
             legend5.Name = "Legend1";
             this.chartsMujeresVarones.Legends.Add(legend5);
-            this.chartsMujeresVarones.Location = new System.Drawing.Point(724, 1337);
+            this.chartsMujeresVarones.Location = new System.Drawing.Point(741, 2200);
             this.chartsMujeresVarones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartsMujeresVarones.Name = "chartsMujeresVarones";
             this.chartsMujeresVarones.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -861,7 +868,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label TotalMetodo;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartEmpresasProv;
         private System.Windows.Forms.DataVisualization.Charting.Chart ChartEmpLocal;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label11;
@@ -874,5 +880,6 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.DataVisualization.Charting.Chart GraphEmpresasTipo;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartsMujeresVarones;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chartEmpresasProv;
     }
 }

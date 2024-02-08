@@ -196,7 +196,7 @@ namespace TF.WIN
             Series series = new Series
             {
                 Name = "Cantidad",
-                ChartType = SeriesChartType.Column
+                ChartType = SeriesChartType.Bar
             };
 
             // Configura los ejes
@@ -216,8 +216,10 @@ namespace TF.WIN
             chartEmpresasProv.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
 
             // Establece el formato de la serie
-            series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+            series.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
 
+            //chartEmpresasProv.ChartAreas[0].Position.Width = 40; // Porcentaje del ancho del gráfico
+            //chartEmpresasProv.ChartAreas[0].Position.Height = 50; // Porcentaje de la altura del gráfico
 
 
             CargarDatosDesdeBDEmpxProv();
@@ -475,7 +477,7 @@ namespace TF.WIN
 
                 // Agrega un título al gráfico
                 chartsMujeresVarones.Titles.Add("Genero");
-                chartsMujeresVarones.Font = new Font("Arial", 14, FontStyle.Bold);
+                chartsMujeresVarones.Font = new Font("Arial", 10, FontStyle.Bold);
 
                 // Establece el formato de la serie
                 series.Font = new Font("Arial", 10, FontStyle.Bold);
