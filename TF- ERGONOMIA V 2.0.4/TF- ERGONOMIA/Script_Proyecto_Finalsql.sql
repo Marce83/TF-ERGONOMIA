@@ -220,7 +220,7 @@ GO
 CREATE OR ALTER PROCEDURE SP_Empleados_GetAll
 AS
 BEGIN
-	SELECT Em.Nombre, Em.Apellido, Em.DNI, Em.Genero, Em.Peso, Em.Altura, Em.FechaNacimiento 'Fecha de Nacimiento', Em.FechaIngreso 'Fecha de Ingreso', Em.Estado, empr.Nombre
+	SELECT Em.Nombre, Em.Apellido, Em.DNI, Em.Genero, Em.Peso, Em.Altura, Em.FechaNacimiento 'Fecha de Nacimiento', Em.FechaIngreso 'Fecha de Ingreso', Em.Estado, empr.Nombre 'Empresa'
 	FROM dbo.Empleados Em
 	INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
 	WHERE Em.FechaEgreso IS NULL
@@ -300,28 +300,190 @@ GO
 
 use ProyectoFinal
 go
-CREATE PROCEDURE SP_Empleados_GetId
+CREATE OR ALTER	PROCEDURE SP_Empleados_GetId
 @DNI nvarchar(8)
 AS
 BEGIN
-	SELECT Nombre, Apellido, DNI, Genero, PuestoDeTrabajo
-	FROM Empleados
-	WHERE DNI = @DNI
+	--SELECT IdEmpleado, Nombre, Apellido, DNI, Genero
+	--FROM Empleados
+	--WHERE DNI = @DNI
+	SELECT E.IdEmpleado, E.Nombre, E.Apellido, E.DNI, E.Genero, PT.NombrePuesto
+	FROM Empleados E 
+	JOIN  PuestoEmpleado PE ON E.IdEmpleado = PE.IdEmpleado 
+	JOIN PuestoDeTrabajo PT ON PE.IdPuesto = PT.IdPuesto
+	WHERE E.DNI LIKE '%'+@DNI+'%'
+END
+GO
+
+--------------------------------------------------------------------PUESTO DE TRABAJO--------------------------------------------------
+use ProyectoFinal
+go
+CREATE TABLE PuestoDeTrabajo(
+IdPuesto INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+NombrePuesto NVARCHAR(20),
+AreaEmpresa NVARCHAR(20))
+GO
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_PuestoTrabajo_Insert
+@NombrePuesto NVARCHAR(20),
+@AreaEmpresa NVARCHAR(20)
+AS
+BEGIN
+insert into PuestoDeTrabajo (NombrePuesto,AreaEmpresa) values (@NombrePuesto,@AreaEmpresa)
 END
 GO
 
 
 use ProyectoFinal
 go
-CREATE PROCEDURE SP_Empleados_Puestotrabajo
-@DNI nvarchar(8)
+CREATE OR ALTER PROCEDURE SP_PuestoTrabajo_GetAll
 AS
 BEGIN
-	SELECT PuestoDeTrabajo
-	FROM Empleados
-	WHERE DNI = @DNI
+Select * from PuestoDeTrabajo
 END
 GO
+
+
+USE ProyectoFinal;
+GO
+
+CREATE OR ALTER PROCEDURE SP_PuestoTrabajo_GetId
+    @IdPuesto INT
+AS
+BEGIN
+    SELECT IdPuesto, NombrePuesto, AreaEmpresa
+    FROM PuestoDeTrabajo
+    WHERE IdPuesto = @IdPuesto;
+END
+GO
+
+
+use ProyectoFinal
+go
+create table PuestoEmpleado (
+Idpuestoempleado INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+IdEmpleado int,
+IdPuesto int,
+FechaIngreso date,
+FechaEgreso date)
+GO
+
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_Insert
+@IdEmpleado int,
+@IdPuesto int,
+@FechaIngreso date
+AS
+BEGIN
+insert into PuestoEmpleado (IdEmpleado,IdPuesto,FechaIngreso) values (@IdEmpleado,@IdPuesto,@FechaIngreso)
+END
+GO
+
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_Update
+@IdEmpleado int,
+@FechaEgreso date
+AS
+BEGIN
+	update PuestoEmpleado set FechaEgreso=@FechaEgreso
+	WHERE idempleado = @idempleado
+END
+GO
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_GetAll_SiNo
+    @IdEmpleado INT,
+    @IdPuesto INT
+AS
+BEGIN
+    SELECT TOP 1 1 AS ExisteMovimiento
+    FROM PuestoEmpleado
+    WHERE IdEmpleado = @IdEmpleado AND IdPuesto = @IdPuesto;
+END
+GO
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_GetAll_Visor
+    @IdEmpleado INT,
+    @IdPuesto INT
+AS
+BEGIN
+    SELECT TOP 1 1 AS ExisteMovimiento
+    FROM PuestoEmpleado
+    WHERE IdEmpleado = @IdEmpleado AND IdPuesto = @IdPuesto;
+END
+GO
+
+USE ProyectoFinal;
+GO
+CREATE VIEW VistaEmpleadosPuestos AS
+SELECT
+    E.Nombre + ' ' + E.Apellido AS NombreEmpleado,
+    E.DNI AS DNI,
+    PT.NombrePuesto AS NombrePuesto,
+    PE.FechaIngreso AS FechaIngreso,
+    PE.FechaEgreso AS FechaEgreso
+FROM
+    Empleados E
+    JOIN PuestoEmpleado PE ON E.IdEmpleado = PE.IdEmpleado
+    JOIN PuestoDeTrabajo PT ON PE.IdPuesto = PT.IdPuesto;
+GO
+
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_VerVista
+AS
+BEGIN
+    SELECT * FROM VistaEmpleadosPuestos where FechaEgreso is NULL  ORDER BY FechaIngreso DESC;
+END
+GO
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_VistaPuesto_GetNombreEmpleado
+    @NombreEmpleado nvarchar (20)
+AS
+BEGIN
+    SELECT NombreEmpleado, NombrePuesto,DNI
+    FROM VistaEmpleadosPuestos
+END
+GO
+
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_VerReciente
+@FechaIngreso DATE,
+@FechaIngreso2 DATE,
+@NombreEmpleado NVARCHAR(40)
+AS
+BEGIN
+    SELECT * FROM VistaEmpleadosPuestos
+    WHERE (FechaIngreso BETWEEN @FechaIngreso AND @FechaIngreso2)
+    AND (NombreEmpleado LIKE '%' + @NombreEmpleado + '%' OR @NombreEmpleado IS NULL)
+    ORDER BY FechaIngreso DESC;
+END
+GO
+
+--use ProyectoFinal
+--go
+--CREATE PROCEDURE SP_Empleados_Puestotrabajo
+--@DNI nvarchar(8)
+--AS
+--BEGIN
+--	SELECT PuestoDeTrabajo
+--	FROM Empleados
+--	WHERE DNI = @DNI
+--END
+--GO
 
 ---------------METODO DE ANALISIS RULA ------------------------- 
 

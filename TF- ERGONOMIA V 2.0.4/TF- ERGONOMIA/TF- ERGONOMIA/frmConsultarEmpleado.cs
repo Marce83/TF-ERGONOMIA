@@ -165,6 +165,18 @@ namespace TF.WIN
 
         }
 
+        private void btnBuscarCUIT_Click(object sender, EventArgs e)
+        {
+            frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
+            oFrm.ShowDialog();
+
+            if (oFrm.EmpresaSeleccionada != null)
+            {
+                txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
+                txtNomEmp.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
+            }
+        }
+
         private void dgvEmpleados_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txtNombre.Text = dgvEmpleados.CurrentRow.Cells[0].Value.ToString();
@@ -177,6 +189,9 @@ namespace TF.WIN
             dtpNacimiento.Text = dgvEmpleados.CurrentRow.Cells[6].Value.ToString();
             dtpIngreso.Text = dgvEmpleados.CurrentRow.Cells[7].Value.ToString();
             txtNomEmp.Text = dgvEmpleados.CurrentRow.Cells[9].Value.ToString();
+            txtCUITEncontrado.Text = dgvEmpleados.CurrentRow.Cells[10].Value.ToString();
+            dgvEmpleados.Columns[10].Visible = false;
+            //txtNomEmp.Text = dgvEmpleados.CurrentRow.Cells[9].Value.ToString();
             //dtpIngreso.Enabled = false;
         }
 
@@ -201,18 +216,6 @@ namespace TF.WIN
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btnBuscarCUIT_Click(object sender, EventArgs e)
-        {
-            frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
-            oFrm.ShowDialog();
-
-            if (oFrm.EmpresaSeleccionada != null)
-            {
-                txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
-                txtNomEmp.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
-            }
         }
     }
 }

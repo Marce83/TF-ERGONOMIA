@@ -41,7 +41,7 @@ WHERE IdUsuario = 5;
 SELECT Nombre, Apellido, DNI, Genero, Altura, PuestoDeTrabajo 'Puesto', Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso'
 FROM Empleados
 
-UPDATE dbo.Empleados SET FechaEgreso = NULL, Estado = 'A' WHERE IdEmpleado = 2
+UPDATE dbo.Empleados SET FechaEgreso = NULL, Estado = 'A' WHERE IdEmpleado = 5
 UPDATE dbo.Empleados SET IdEmpresa = 9 WHERE IdEmpleado = 3
 
 ALTER TABLE dbo.Empresas
@@ -103,3 +103,9 @@ FROM dbo.Empleados Em
 INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
 WHERE Em.FechaEgreso IS NULL
 AND Em.Estado = 'A'
+
+insert into Empleados VALUES ('MARCO','GONZALEZ','12345678','Masculino','73','172','5/12/1992','5/12/2015',NULL,'A','1')
+insert into Empleados values ('MARIA','RODRIGUEZ','23456789','Femenino','62','158','18/07/1985','18/07/2018',NULL,'A','10')
+insert into Empleados values ('LUCAS','GOMEZ','34567890','Masculino','85','185','29/03/1999','29/03/2020',NULL,'A','9')
+insert into Empleados values ('ALEJANDRO','FERNANDEZ','45678901','Masculino','78','168','11/09/1978','11/09/2012',NULL,'A','8')
+insert into Empleados values ('VALERIA','LOPEZ','56789012','Femenino','91','177','23/06/1987','23/06/2017',NULL,'A','4')
