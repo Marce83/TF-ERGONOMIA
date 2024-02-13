@@ -38,14 +38,14 @@ namespace TF.WIN
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
 
-            frmBuscarEmpleados oFrm = new frmBuscarEmpleados();
+            frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
             oFrm.ShowDialog();
 
-            if (oFrm.EmpleadoSeleccionado != null)
+            if (oFrm.EmpleadoSeleccionado2 != null)
             {
-                txtDniEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado.DNI.ToString();
-                txtNombreEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado.Apellido.ToString();
-                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado.NombrePuesto.ToString();
+                txtDniEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
+                txtNombreEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
+                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
             }
 
 
@@ -90,6 +90,12 @@ namespace TF.WIN
 
             this.Close();
             JSS OJSS = new JSS();
+            AddOwnedForm(OJSS);
+            OJSS.TopLevel = false;
+            OJSS.Dock = DockStyle.Fill;
+            this.Controls.Add(OJSS);
+            this.Tag = OJSS;
+            OJSS.BringToFront();
             OJSS.Show();
             this.Close();
         }

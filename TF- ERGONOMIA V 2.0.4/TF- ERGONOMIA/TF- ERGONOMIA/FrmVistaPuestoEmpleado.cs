@@ -33,11 +33,20 @@ namespace TF.WIN
                 DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC();
                 dgvVistaPuestoEmpleado.DataSource = null;
                 dgvVistaPuestoEmpleado.DataSource = dt;
+                dgvVistaPuestoEmpleado.Columns[2].HeaderText = "Puesto";
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
+
+           
+
+
+
+
+
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)

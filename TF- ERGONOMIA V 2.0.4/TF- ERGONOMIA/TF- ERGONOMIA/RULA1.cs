@@ -140,21 +140,7 @@ namespace TF.WIN
         }
 
 
-        private void btnMaximizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
-            btnRestaurar.Visible = true;
-        }
-
-        private void btnRestaurar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
-        }
-
-        private void btnMinimizar_Click(object sender, EventArgs e)
+         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
@@ -456,6 +442,12 @@ namespace TF.WIN
 
                 // Pasar al siguiente formulario
                 RULARESULTADO ORULARESULTADO = new RULARESULTADO();
+                AddOwnedForm(ORULARESULTADO);
+                ORULARESULTADO.TopLevel = false;
+                ORULARESULTADO.Dock = DockStyle.Fill;
+                this.Controls.Add(ORULARESULTADO);
+                this.Tag = ORULARESULTADO;
+                ORULARESULTADO.BringToFront();
                 ORULARESULTADO.Show();
 
                 Close();

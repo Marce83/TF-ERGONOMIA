@@ -40,14 +40,14 @@ namespace TF.WIN
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
 
-            frmBuscarEmpleados oFrm = new frmBuscarEmpleados();
+            frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
             oFrm.ShowDialog();
 
-            if (oFrm.EmpleadoSeleccionado != null)
+            if (oFrm.EmpleadoSeleccionado2 != null)
             {
-                txtDniEmpleadoRula.Text = oFrm.EmpleadoSeleccionado.DNI.ToString();
-                txtNombreEmpleadoRula.Text = oFrm.EmpleadoSeleccionado.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado.Apellido.ToString();
-                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado.NombrePuesto.ToString();
+                txtDniEmpleadoRula.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
+                txtNombreEmpleadoRula.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
+                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
             }
 
             //FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
@@ -94,6 +94,12 @@ namespace TF.WIN
 
             // Pasar el ID de carga al siguiente formulario
             RULA1 ORULA1 = new RULA1();
+            AddOwnedForm(ORULA1);
+            ORULA1.TopLevel = false;
+            ORULA1.Dock = DockStyle.Fill;
+            this.Controls.Add(ORULA1);
+            this.Tag = ORULA1;
+            ORULA1.BringToFront();
             ORULA1.Show();
 
             this.Close();

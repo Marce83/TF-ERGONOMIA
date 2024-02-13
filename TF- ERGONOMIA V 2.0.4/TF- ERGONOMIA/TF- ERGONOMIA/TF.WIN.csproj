@@ -72,6 +72,12 @@
     <Compile Include="frmBuscarEmpleados.Designer.cs">
       <DependentUpon>frmBuscarEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscarEmpleados2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarEmpleados2.Designer.cs">
+      <DependentUpon>frmBuscarEmpleados2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuscarEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -278,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpleados.resx">
       <DependentUpon>frmBuscarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarEmpleados2.resx">
+      <DependentUpon>frmBuscarEmpleados2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpresa.resx">
       <DependentUpon>frmBuscarEmpresa.cs</DependentUpon>

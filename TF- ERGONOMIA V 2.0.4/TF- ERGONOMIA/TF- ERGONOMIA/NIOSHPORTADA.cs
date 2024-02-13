@@ -43,6 +43,12 @@ namespace TF.WIN
 
 
             NIOSH1 ONIOSH1 = new NIOSH1();
+            AddOwnedForm(ONIOSH1);
+            ONIOSH1.TopLevel = false;
+            ONIOSH1.Dock = DockStyle.Fill;
+            this.Controls.Add(ONIOSH1);
+            this.Tag = ONIOSH1;
+            ONIOSH1.BringToFront();
             ONIOSH1.Show();
             this.Close();
         }
@@ -66,14 +72,14 @@ namespace TF.WIN
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
 
-            frmBuscarEmpleados oFrm = new frmBuscarEmpleados();
+            frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
             oFrm.ShowDialog();
 
-            if (oFrm.EmpleadoSeleccionado != null)
+            if (oFrm.EmpleadoSeleccionado2 != null)
             {
-                txtDniEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado.DNI.ToString();
-                txtNombreEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado.Apellido.ToString();
-                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado.NombrePuesto.ToString();
+                txtDniEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
+                txtNombreEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
+                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
             }
 
             //FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();

@@ -9,6 +9,7 @@ namespace TF.ENTITIES
     public class PuestoTrabajo
     {
         public int IdPuesto { get; set; }
+
         public string NombrePuesto { get; set; }
         public string AreaEmpresa { get; set; }
 
@@ -21,7 +22,7 @@ namespace TF.ENTITIES
         public int IdEmpleado { get; set; }
 
 
-        //OTROS
+        //vista Puesto de Trabajo
         public string DNI { get; set; }
 
         public string NombreEmpleado { get; set; }

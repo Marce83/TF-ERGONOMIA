@@ -179,7 +179,7 @@ CREATE OR ALTER PROCEDURE SP_Empresas_GetAll
 AS
 BEGIN
 	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
-	FROM Empresas
+	FROM Empresas WHERE Estado ='A'
 END
 GO
 
@@ -192,7 +192,7 @@ AS
 BEGIN
 	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
-	WHERE CUIT LIKE '%'+@CUIT+'%'
+	WHERE CUIT LIKE '%'+@CUIT+'%' and Estado ='A'
 END
 GO
 
@@ -2043,7 +2043,7 @@ GO
 
 USE ProyectoFinal;
 GO
-CREATE VIEW VistaEmpleadosPuestos AS
+CREATE or alter VIEW VistaEmpleadosPuestos AS
 SELECT
     E.Nombre + ' ' + E.Apellido AS NombreEmpleado,
     E.DNI AS DNI,

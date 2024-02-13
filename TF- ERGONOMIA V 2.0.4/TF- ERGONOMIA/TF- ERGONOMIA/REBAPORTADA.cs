@@ -41,14 +41,14 @@ namespace TF.WIN
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
 
-            frmBuscarEmpleados oFrm = new frmBuscarEmpleados();
+            frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
             oFrm.ShowDialog();
 
-            if (oFrm.EmpleadoSeleccionado != null)
+            if (oFrm.EmpleadoSeleccionado2 != null)
             {
-                txtDniEmpleadoReba.Text = oFrm.EmpleadoSeleccionado.DNI.ToString();
-                txtNombreEmpleadoReba.Text = oFrm.EmpleadoSeleccionado.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado.Apellido.ToString();
-                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado.NombrePuesto.ToString();
+                txtDniEmpleadoReba.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
+                txtNombreEmpleadoReba.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
+                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
             }
 
 
@@ -88,6 +88,12 @@ namespace TF.WIN
 
             // Pasar el ID de carga al siguiente formulario
             REBA1 OREBA1 = new REBA1();
+            AddOwnedForm(OREBA1);
+            OREBA1.TopLevel = false;
+            OREBA1.Dock = DockStyle.Fill;
+            this.Controls.Add(OREBA1);
+            this.Tag = OREBA1;
+            OREBA1.BringToFront();
             OREBA1.Show();
 
             this.Close();

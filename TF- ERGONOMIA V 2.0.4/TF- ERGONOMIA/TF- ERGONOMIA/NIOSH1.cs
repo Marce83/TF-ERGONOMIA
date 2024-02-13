@@ -1281,6 +1281,12 @@ namespace TF.WIN
             }
 
             NIOSHRESULTADO ONIOSHRESULTADO = new NIOSHRESULTADO();
+            AddOwnedForm(ONIOSHRESULTADO);
+            ONIOSHRESULTADO.TopLevel = false;
+            ONIOSHRESULTADO.Dock = DockStyle.Fill;
+            this.Controls.Add(ONIOSHRESULTADO);
+            this.Tag = ONIOSHRESULTADO;
+            ONIOSHRESULTADO.BringToFront();
             ONIOSHRESULTADO.Show();
             Close();
 
@@ -1290,16 +1296,16 @@ namespace TF.WIN
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
-            btnRestaurar.Visible = true;
+            //this.WindowState = FormWindowState.Maximized;
+            //btnMaximizar.Visible = false;
+            //btnRestaurar.Visible = true;
         }
 
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
+            //this.WindowState = FormWindowState.Normal;
+            //btnRestaurar.Visible = false;
+            //btnMaximizar.Visible = true;
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
