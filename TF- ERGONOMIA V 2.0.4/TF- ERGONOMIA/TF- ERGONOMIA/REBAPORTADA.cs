@@ -96,7 +96,7 @@ namespace TF.WIN
             OREBA1.BringToFront();
             OREBA1.Show();
 
-            this.Close();
+            //this.Close();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)

@@ -417,7 +417,7 @@ namespace TF.WIN
             this.Tag = oJSSRESULTADO;
             oJSSRESULTADO.BringToFront();
             oJSSRESULTADO.Show();
-            Close();
+            //Close();
 
 
         }

@@ -162,7 +162,7 @@ namespace TF.WIN
             this.Tag = OREBA_RESULTADO;
             OREBA_RESULTADO.BringToFront();
             OREBA_RESULTADO.Show();
-            Close();
+            //Close();
         }
         private void cboTroncomvimiento_SelectedIndexChanged(object sender, EventArgs e)
         {

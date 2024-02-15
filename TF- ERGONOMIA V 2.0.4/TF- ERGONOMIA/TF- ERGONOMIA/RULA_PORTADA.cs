@@ -102,7 +102,7 @@ namespace TF.WIN
             ORULA1.BringToFront();
             ORULA1.Show();
 
-            this.Close();
+            //this.Close();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)

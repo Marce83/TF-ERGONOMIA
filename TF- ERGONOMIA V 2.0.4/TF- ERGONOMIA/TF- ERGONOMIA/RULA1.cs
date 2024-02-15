@@ -450,7 +450,7 @@ namespace TF.WIN
                 ORULARESULTADO.BringToFront();
                 ORULARESULTADO.Show();
 
-                Close();
+                //Close();
             }
             catch (Exception ex)
             {

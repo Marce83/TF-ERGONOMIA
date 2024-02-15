@@ -9,7 +9,7 @@ namespace TF.DAC
     internal class ConnectionStringManager
     {
 
-        public static string ConectionString { get; } = "Data Source=DESKTOP-QAI40IP\\SQLEXPRESS;Initial Catalog=ProyectoFinal;Integrated Security=True";
+        public static string ConectionString { get; } = "Data Source=Franco\\SQLEXPRESS;Initial Catalog=ProyectoFinal;Integrated Security=True";
 
     }
 }

@@ -39,7 +39,7 @@ namespace TF.WIN
 
             // Pasar el ID de carga al siguiente formulario
 
-            this.Close();
+            //this.Close();
 
 
             NIOSH1 ONIOSH1 = new NIOSH1();
