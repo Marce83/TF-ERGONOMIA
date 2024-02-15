@@ -176,6 +176,7 @@ namespace TF.DAC
             sqlCnn.ConnectionString = conectionString;
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
             sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@NombreEmpleado", SqlDbType.NVarChar).Value = NombreEmpleado;
             sqlCnn.Open();
 
             SqlDataReader dr = sqlComm.ExecuteReader();

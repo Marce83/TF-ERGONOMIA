@@ -1986,7 +1986,7 @@ AS
 BEGIN
     SELECT IdPuesto, NombrePuesto, AreaEmpresa
     FROM PuestoDeTrabajo
-  --  WHERE IdPuesto = @IdPuesto;
+  WHERE IdPuesto = @IdPuesto;
 END
 GO
 
@@ -2079,11 +2079,12 @@ GO
 USE ProyectoFinal;
 GO
 CREATE OR ALTER PROCEDURE SP_VistaPuesto_GetNombreEmpleado
-    --@NombreEmpleado nvarchar (20)
+    @NombreEmpleado nvarchar (20)
 AS
 BEGIN
     SELECT NombreEmpleado, NombrePuesto,DNI
     FROM VistaEmpleadosPuestos
+	where NombreEmpleado = @NombreEmpleado
 END
 GO
 
