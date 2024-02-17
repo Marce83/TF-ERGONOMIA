@@ -50,6 +50,7 @@
             // 
             // btnBuscarpuesto
             // 
+            this.btnBuscarpuesto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscarpuesto.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscarpuesto.FlatAppearance.BorderSize = 0;
             this.btnBuscarpuesto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -57,7 +58,7 @@
             this.btnBuscarpuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarpuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarpuesto.Location = new System.Drawing.Point(456, 357);
-            this.btnBuscarpuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarpuesto.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarpuesto.Name = "btnBuscarpuesto";
             this.btnBuscarpuesto.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarpuesto.TabIndex = 139;
@@ -68,6 +69,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -80,6 +82,7 @@
             // 
             // materialLabel2
             // 
+            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel2.Depth = 0;
@@ -93,6 +96,7 @@
             // 
             // txtpuestotrabajoencontrado
             // 
+            this.txtpuestotrabajoencontrado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtpuestotrabajoencontrado.AnimateReadOnly = false;
             this.txtpuestotrabajoencontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtpuestotrabajoencontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -125,6 +129,7 @@
             // 
             // btnBuscarEmpleados
             // 
+            this.btnBuscarEmpleados.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscarEmpleados.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscarEmpleados.FlatAppearance.BorderSize = 0;
             this.btnBuscarEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -132,7 +137,7 @@
             this.btnBuscarEmpleados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarEmpleados.Location = new System.Drawing.Point(456, 197);
-            this.btnBuscarEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarEmpleados.Name = "btnBuscarEmpleados";
             this.btnBuscarEmpleados.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarEmpleados.TabIndex = 135;
@@ -142,6 +147,7 @@
             // 
             // materialLabel1
             // 
+            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel1.Depth = 0;
@@ -155,6 +161,7 @@
             // 
             // txtDniEmpleadoReba
             // 
+            this.txtDniEmpleadoReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDniEmpleadoReba.AnimateReadOnly = false;
             this.txtDniEmpleadoReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtDniEmpleadoReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -187,6 +194,7 @@
             // 
             // btnBuscarCUIT
             // 
+            this.btnBuscarCUIT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscarCUIT.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscarCUIT.FlatAppearance.BorderSize = 0;
             this.btnBuscarCUIT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -194,7 +202,7 @@
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarCUIT.Location = new System.Drawing.Point(456, 63);
-            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
             this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarCUIT.TabIndex = 132;
@@ -204,6 +212,7 @@
             // 
             // materialLabel11
             // 
+            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
@@ -217,6 +226,7 @@
             // 
             // txtCUITEncontrado
             // 
+            this.txtCUITEncontrado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCUITEncontrado.AnimateReadOnly = false;
             this.txtCUITEncontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtCUITEncontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -249,6 +259,7 @@
             // 
             // BtnSalir
             // 
+            this.BtnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
             this.BtnSalir.FlatAppearance.BorderSize = 0;
             this.BtnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -257,7 +268,7 @@
             this.BtnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSalir.Location = new System.Drawing.Point(23, 512);
-            this.BtnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(155, 49);
             this.BtnSalir.TabIndex = 129;
@@ -267,6 +278,7 @@
             // 
             // btnCrear
             // 
+            this.btnCrear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCrear.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnCrear.FlatAppearance.BorderSize = 0;
             this.btnCrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -275,7 +287,7 @@
             this.btnCrear.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCrear.Location = new System.Drawing.Point(391, 512);
-            this.btnCrear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(155, 49);
             this.btnCrear.TabIndex = 128;
@@ -285,6 +297,7 @@
             // 
             // materialLabel3
             // 
+            this.materialLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel3.Depth = 0;
@@ -298,6 +311,7 @@
             // 
             // txtNombreEmpresaReba
             // 
+            this.txtNombreEmpresaReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombreEmpresaReba.AnimateReadOnly = false;
             this.txtNombreEmpresaReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtNombreEmpresaReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -330,6 +344,7 @@
             // 
             // materialLabel4
             // 
+            this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel4.Depth = 0;
@@ -343,6 +358,7 @@
             // 
             // txtNombreEmpleadoReba
             // 
+            this.txtNombreEmpleadoReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombreEmpleadoReba.AnimateReadOnly = false;
             this.txtNombreEmpleadoReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtNombreEmpleadoReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -375,9 +391,10 @@
             // 
             // dtpReba
             // 
+            this.dtpReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpReba.CustomFormat = "";
             this.dtpReba.Location = new System.Drawing.Point(172, 452);
-            this.dtpReba.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpReba.Margin = new System.Windows.Forms.Padding(4);
             this.dtpReba.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpReba.Name = "dtpReba";
             this.dtpReba.Size = new System.Drawing.Size(276, 22);
@@ -386,6 +403,7 @@
             // 
             // materialLabel5
             // 
+            this.materialLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel5.Depth = 0;

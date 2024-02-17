@@ -449,8 +449,7 @@ namespace TF.WIN
                 this.Tag = ORULARESULTADO;
                 ORULARESULTADO.BringToFront();
                 ORULARESULTADO.Show();
-
-                //Close();
+                this.Close();
             }
             catch (Exception ex)
             {

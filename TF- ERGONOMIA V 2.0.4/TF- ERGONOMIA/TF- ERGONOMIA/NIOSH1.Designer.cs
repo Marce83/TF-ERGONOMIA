@@ -256,7 +256,7 @@
             this.btncerrarNiosh.ForeColor = System.Drawing.Color.AliceBlue;
             this.btncerrarNiosh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btncerrarNiosh.Location = new System.Drawing.Point(244, 1726);
-            this.btncerrarNiosh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btncerrarNiosh.Margin = new System.Windows.Forms.Padding(4);
             this.btncerrarNiosh.Name = "btncerrarNiosh";
             this.btncerrarNiosh.Size = new System.Drawing.Size(155, 43);
             this.btncerrarNiosh.TabIndex = 200;
@@ -284,7 +284,7 @@
             this.btnGuardarNiosh1.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnGuardarNiosh1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarNiosh1.Location = new System.Drawing.Point(427, 1726);
-            this.btnGuardarNiosh1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardarNiosh1.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarNiosh1.Name = "btnGuardarNiosh1";
             this.btnGuardarNiosh1.Size = new System.Drawing.Size(155, 43);
             this.btnGuardarNiosh1.TabIndex = 198;
@@ -2089,7 +2089,7 @@
             this.btnObtenerFN.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnObtenerFN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnObtenerFN.Location = new System.Drawing.Point(613, 1589);
-            this.btnObtenerFN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnObtenerFN.Margin = new System.Windows.Forms.Padding(4);
             this.btnObtenerFN.Name = "btnObtenerFN";
             this.btnObtenerFN.Size = new System.Drawing.Size(121, 60);
             this.btnObtenerFN.TabIndex = 255;
@@ -2215,7 +2215,7 @@
             this.BarraTitulo.Controls.Add(this.pictureBox3);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1078, 65);
             this.BarraTitulo.TabIndex = 340;
@@ -2239,7 +2239,7 @@
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(1033, 17);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(33, 31);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

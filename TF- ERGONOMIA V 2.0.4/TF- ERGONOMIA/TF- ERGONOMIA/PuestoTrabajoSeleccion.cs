@@ -52,5 +52,17 @@ namespace TF.WIN
             oFrmVistaPuesto.BringToFront();
             oFrmVistaPuesto.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmAsociacionPuestosMultiples oFrmAsociacionPuestosMultiples = new FrmAsociacionPuestosMultiples();
+            AddOwnedForm(oFrmAsociacionPuestosMultiples);
+            oFrmAsociacionPuestosMultiples.TopLevel = false;
+            oFrmAsociacionPuestosMultiples.Dock = DockStyle.Fill;
+            this.Controls.Add(oFrmAsociacionPuestosMultiples);
+            this.Tag = oFrmAsociacionPuestosMultiples;
+            oFrmAsociacionPuestosMultiples.BringToFront();
+            oFrmAsociacionPuestosMultiples.Show();
+        }
     }
 }

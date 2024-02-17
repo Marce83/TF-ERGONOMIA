@@ -1288,7 +1288,7 @@ namespace TF.WIN
             this.Tag = ONIOSHRESULTADO;
             ONIOSHRESULTADO.BringToFront();
             ONIOSHRESULTADO.Show();
-            //Close();
+            Close();
 
         }
 

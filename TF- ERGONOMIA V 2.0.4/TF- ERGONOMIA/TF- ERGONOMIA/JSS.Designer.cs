@@ -129,6 +129,7 @@
             // 
             // materialLabel2
             // 
+            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -141,6 +142,7 @@
             // 
             // materialLabel3
             // 
+            this.materialLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -153,6 +155,7 @@
             // 
             // materialLabel5
             // 
+            this.materialLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -165,6 +168,7 @@
             // 
             // d1
             // 
+            this.d1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.d1.AutoResize = false;
             this.d1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.d1.Depth = 0;
@@ -189,6 +193,7 @@
             // 
             // d2
             // 
+            this.d2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.d2.AutoResize = false;
             this.d2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.d2.Depth = 0;
@@ -213,6 +218,7 @@
             // 
             // materialLabel4
             // 
+            this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -225,6 +231,7 @@
             // 
             // d3
             // 
+            this.d3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.d3.AutoResize = false;
             this.d3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.d3.Depth = 0;
@@ -249,6 +256,7 @@
             // 
             // materialLabel6
             // 
+            this.materialLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -261,6 +269,7 @@
             // 
             // d4
             // 
+            this.d4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.d4.AutoResize = false;
             this.d4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.d4.Depth = 0;
@@ -285,6 +294,7 @@
             // 
             // materialLabel7
             // 
+            this.materialLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -297,6 +307,7 @@
             // 
             // d5
             // 
+            this.d5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.d5.AutoResize = false;
             this.d5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.d5.Depth = 0;
@@ -321,6 +332,7 @@
             // 
             // materialLabel8
             // 
+            this.materialLabel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -333,6 +345,7 @@
             // 
             // materialLabel9
             // 
+            this.materialLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -345,6 +358,7 @@
             // 
             // c1
             // 
+            this.c1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.c1.AutoResize = false;
             this.c1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.c1.Depth = 0;
@@ -369,6 +383,7 @@
             // 
             // materialLabel10
             // 
+            this.materialLabel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel10.AutoSize = true;
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -381,6 +396,7 @@
             // 
             // materialLabel11
             // 
+            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -393,6 +409,7 @@
             // 
             // c2
             // 
+            this.c2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.c2.AutoResize = false;
             this.c2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.c2.Depth = 0;
@@ -417,6 +434,7 @@
             // 
             // materialLabel12
             // 
+            this.materialLabel12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel12.AutoSize = true;
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -429,6 +447,7 @@
             // 
             // c3
             // 
+            this.c3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.c3.AutoResize = false;
             this.c3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.c3.Depth = 0;
@@ -453,6 +472,7 @@
             // 
             // materialLabel13
             // 
+            this.materialLabel13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel13.AutoSize = true;
             this.materialLabel13.Depth = 0;
             this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -465,6 +485,7 @@
             // 
             // c4
             // 
+            this.c4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.c4.AutoResize = false;
             this.c4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.c4.Depth = 0;
@@ -489,6 +510,7 @@
             // 
             // materialLabel14
             // 
+            this.materialLabel14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel14.AutoSize = true;
             this.materialLabel14.Depth = 0;
             this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -501,6 +523,7 @@
             // 
             // c5
             // 
+            this.c5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.c5.AutoResize = false;
             this.c5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.c5.Depth = 0;
@@ -525,6 +548,7 @@
             // 
             // materialLabel17
             // 
+            this.materialLabel17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel17.AutoSize = true;
             this.materialLabel17.Depth = 0;
             this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -537,6 +561,7 @@
             // 
             // c6
             // 
+            this.c6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.c6.AutoResize = false;
             this.c6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.c6.Depth = 0;
@@ -561,6 +586,7 @@
             // 
             // materialLabel18
             // 
+            this.materialLabel18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel18.AutoSize = true;
             this.materialLabel18.Depth = 0;
             this.materialLabel18.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -573,6 +599,7 @@
             // 
             // materialLabel19
             // 
+            this.materialLabel19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel19.AutoSize = true;
             this.materialLabel19.Depth = 0;
             this.materialLabel19.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -585,6 +612,7 @@
             // 
             // materialLabel20
             // 
+            this.materialLabel20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel20.AutoSize = true;
             this.materialLabel20.Depth = 0;
             this.materialLabel20.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -597,6 +625,7 @@
             // 
             // as1
             // 
+            this.as1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.as1.AutoResize = false;
             this.as1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.as1.Depth = 0;
@@ -621,6 +650,7 @@
             // 
             // materialLabel21
             // 
+            this.materialLabel21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel21.AutoSize = true;
             this.materialLabel21.Depth = 0;
             this.materialLabel21.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -633,6 +663,7 @@
             // 
             // as2
             // 
+            this.as2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.as2.AutoResize = false;
             this.as2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.as2.Depth = 0;
@@ -657,6 +688,7 @@
             // 
             // materialLabel22
             // 
+            this.materialLabel22.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel22.AutoSize = true;
             this.materialLabel22.Depth = 0;
             this.materialLabel22.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -669,6 +701,7 @@
             // 
             // as3
             // 
+            this.as3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.as3.AutoResize = false;
             this.as3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.as3.Depth = 0;
@@ -693,6 +726,7 @@
             // 
             // materialLabel23
             // 
+            this.materialLabel23.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel23.AutoSize = true;
             this.materialLabel23.Depth = 0;
             this.materialLabel23.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -705,6 +739,7 @@
             // 
             // as4
             // 
+            this.as4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.as4.AutoResize = false;
             this.as4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.as4.Depth = 0;
@@ -729,6 +764,7 @@
             // 
             // materialLabel24
             // 
+            this.materialLabel24.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel24.AutoSize = true;
             this.materialLabel24.Depth = 0;
             this.materialLabel24.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -741,6 +777,7 @@
             // 
             // as5
             // 
+            this.as5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.as5.AutoResize = false;
             this.as5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.as5.Depth = 0;
@@ -765,6 +802,7 @@
             // 
             // materialLabel25
             // 
+            this.materialLabel25.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel25.AutoSize = true;
             this.materialLabel25.Depth = 0;
             this.materialLabel25.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -777,6 +815,7 @@
             // 
             // as6
             // 
+            this.as6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.as6.AutoResize = false;
             this.as6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.as6.Depth = 0;
@@ -801,6 +840,7 @@
             // 
             // materialLabel26
             // 
+            this.materialLabel26.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel26.AutoSize = true;
             this.materialLabel26.Depth = 0;
             this.materialLabel26.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -813,6 +853,7 @@
             // 
             // materialLabel27
             // 
+            this.materialLabel27.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel27.AutoSize = true;
             this.materialLabel27.Depth = 0;
             this.materialLabel27.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -825,6 +866,7 @@
             // 
             // materialLabel28
             // 
+            this.materialLabel28.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel28.AutoSize = true;
             this.materialLabel28.Depth = 0;
             this.materialLabel28.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -837,6 +879,7 @@
             // 
             // materialLabel29
             // 
+            this.materialLabel29.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel29.AutoSize = true;
             this.materialLabel29.Depth = 0;
             this.materialLabel29.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -849,6 +892,7 @@
             // 
             // materialLabel30
             // 
+            this.materialLabel30.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel30.AutoSize = true;
             this.materialLabel30.Depth = 0;
             this.materialLabel30.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -861,6 +905,7 @@
             // 
             // txtDemanda
             // 
+            this.txtDemanda.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDemanda.AnimateReadOnly = false;
             this.txtDemanda.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtDemanda.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -880,6 +925,7 @@
             // 
             // txtControl
             // 
+            this.txtControl.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtControl.AnimateReadOnly = false;
             this.txtControl.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -899,6 +945,7 @@
             // 
             // txtApoyoSocial
             // 
+            this.txtApoyoSocial.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtApoyoSocial.AnimateReadOnly = false;
             this.txtApoyoSocial.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtApoyoSocial.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -918,6 +965,7 @@
             // 
             // txtActuacionJSS
             // 
+            this.txtActuacionJSS.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtActuacionJSS.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtActuacionJSS.Enabled = false;
             this.txtActuacionJSS.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -930,6 +978,7 @@
             // 
             // materialLabel15
             // 
+            this.materialLabel15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel15.AutoSize = true;
             this.materialLabel15.Depth = 0;
             this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -942,6 +991,7 @@
             // 
             // btnResultado
             // 
+            this.btnResultado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnResultado.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnResultado.FlatAppearance.BorderSize = 0;
             this.btnResultado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -950,7 +1000,7 @@
             this.btnResultado.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnResultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnResultado.Location = new System.Drawing.Point(328, 1579);
-            this.btnResultado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnResultado.Margin = new System.Windows.Forms.Padding(4);
             this.btnResultado.Name = "btnResultado";
             this.btnResultado.Size = new System.Drawing.Size(100, 43);
             this.btnResultado.TabIndex = 250;
@@ -960,6 +1010,7 @@
             // 
             // btnSalir
             // 
+            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -968,7 +1019,7 @@
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.Location = new System.Drawing.Point(449, 2002);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(155, 43);
             this.btnSalir.TabIndex = 251;
@@ -978,6 +1029,7 @@
             // 
             // txtd1
             // 
+            this.txtd1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtd1.AnimateReadOnly = false;
             this.txtd1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtd1.Depth = 0;
@@ -997,6 +1049,7 @@
             // 
             // txtd2
             // 
+            this.txtd2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtd2.AnimateReadOnly = false;
             this.txtd2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtd2.Depth = 0;
@@ -1016,6 +1069,7 @@
             // 
             // txtd3
             // 
+            this.txtd3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtd3.AnimateReadOnly = false;
             this.txtd3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtd3.Depth = 0;
@@ -1035,6 +1089,7 @@
             // 
             // txtd4
             // 
+            this.txtd4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtd4.AnimateReadOnly = false;
             this.txtd4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtd4.Depth = 0;
@@ -1054,6 +1109,7 @@
             // 
             // txtd5
             // 
+            this.txtd5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtd5.AnimateReadOnly = false;
             this.txtd5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtd5.Depth = 0;
@@ -1073,6 +1129,7 @@
             // 
             // txtc1
             // 
+            this.txtc1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtc1.AnimateReadOnly = false;
             this.txtc1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtc1.Depth = 0;
@@ -1092,6 +1149,7 @@
             // 
             // txtc2
             // 
+            this.txtc2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtc2.AnimateReadOnly = false;
             this.txtc2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtc2.Depth = 0;
@@ -1111,6 +1169,7 @@
             // 
             // txtc3
             // 
+            this.txtc3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtc3.AnimateReadOnly = false;
             this.txtc3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtc3.Depth = 0;
@@ -1130,6 +1189,7 @@
             // 
             // txtc4
             // 
+            this.txtc4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtc4.AnimateReadOnly = false;
             this.txtc4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtc4.Depth = 0;
@@ -1149,6 +1209,7 @@
             // 
             // txtc5
             // 
+            this.txtc5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtc5.AnimateReadOnly = false;
             this.txtc5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtc5.Depth = 0;
@@ -1168,6 +1229,7 @@
             // 
             // txtc6
             // 
+            this.txtc6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtc6.AnimateReadOnly = false;
             this.txtc6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtc6.Depth = 0;
@@ -1187,6 +1249,7 @@
             // 
             // txtas1
             // 
+            this.txtas1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtas1.AnimateReadOnly = false;
             this.txtas1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtas1.Depth = 0;
@@ -1206,6 +1269,7 @@
             // 
             // txtas2
             // 
+            this.txtas2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtas2.AnimateReadOnly = false;
             this.txtas2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtas2.Depth = 0;
@@ -1225,6 +1289,7 @@
             // 
             // txtas3
             // 
+            this.txtas3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtas3.AnimateReadOnly = false;
             this.txtas3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtas3.Depth = 0;
@@ -1244,6 +1309,7 @@
             // 
             // txtas4
             // 
+            this.txtas4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtas4.AnimateReadOnly = false;
             this.txtas4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtas4.Depth = 0;
@@ -1263,6 +1329,7 @@
             // 
             // txtas5
             // 
+            this.txtas5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtas5.AnimateReadOnly = false;
             this.txtas5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtas5.Depth = 0;
@@ -1282,6 +1349,7 @@
             // 
             // txtas6
             // 
+            this.txtas6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtas6.AnimateReadOnly = false;
             this.txtas6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtas6.Depth = 0;
@@ -1301,6 +1369,7 @@
             // 
             // txtApoyoSocialrdo
             // 
+            this.txtApoyoSocialrdo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtApoyoSocialrdo.AnimateReadOnly = false;
             this.txtApoyoSocialrdo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtApoyoSocialrdo.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -1320,6 +1389,7 @@
             // 
             // txtControlrdo
             // 
+            this.txtControlrdo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtControlrdo.AnimateReadOnly = false;
             this.txtControlrdo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtControlrdo.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -1339,6 +1409,7 @@
             // 
             // txtDemandardo
             // 
+            this.txtDemandardo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDemandardo.AnimateReadOnly = false;
             this.txtDemandardo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtDemandardo.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -1358,6 +1429,7 @@
             // 
             // txtcargaidJSS
             // 
+            this.txtcargaidJSS.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcargaidJSS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtcargaidJSS.Location = new System.Drawing.Point(805, 2014);
             this.txtcargaidJSS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1368,6 +1440,7 @@
             // 
             // btnGuardarNiosh1
             // 
+            this.btnGuardarNiosh1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnGuardarNiosh1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnGuardarNiosh1.FlatAppearance.BorderSize = 0;
             this.btnGuardarNiosh1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -1376,7 +1449,7 @@
             this.btnGuardarNiosh1.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnGuardarNiosh1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarNiosh1.Location = new System.Drawing.Point(629, 2002);
-            this.btnGuardarNiosh1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardarNiosh1.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarNiosh1.Name = "btnGuardarNiosh1";
             this.btnGuardarNiosh1.Size = new System.Drawing.Size(155, 43);
             this.btnGuardarNiosh1.TabIndex = 272;
@@ -1386,15 +1459,15 @@
             // 
             // BarraTitulo
             // 
+            this.BarraTitulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BarraTitulo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BarraTitulo.Controls.Add(this.btnRestaurar);
             this.BarraTitulo.Controls.Add(this.btnMinimizar);
             this.BarraTitulo.Controls.Add(this.btnMaximizar);
             this.BarraTitulo.Controls.Add(this.btnCerrar);
             this.BarraTitulo.Controls.Add(this.materialLabel1);
-            this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1156, 65);
             this.BarraTitulo.TabIndex = 274;
@@ -1406,7 +1479,7 @@
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
             this.btnRestaurar.Location = new System.Drawing.Point(1069, 17);
-            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(33, 31);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1423,7 +1496,7 @@
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
             this.btnMinimizar.Location = new System.Drawing.Point(1028, 17);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(33, 31);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1438,7 +1511,7 @@
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
             this.btnMaximizar.Location = new System.Drawing.Point(1069, 17);
-            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(33, 31);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1452,7 +1525,7 @@
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
             this.btnCerrar.Location = new System.Drawing.Point(1109, 17);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(33, 31);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

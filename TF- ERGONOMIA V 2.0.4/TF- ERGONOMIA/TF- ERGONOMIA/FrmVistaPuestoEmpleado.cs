@@ -51,7 +51,6 @@ namespace TF.WIN
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-
             if (dgvVistaPuestoEmpleado.SelectedRows.Count == 1) // si selecciona una fila
             {
                 // Obtén el valor de la celda de la primera columna de la fila seleccionada

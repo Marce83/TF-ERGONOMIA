@@ -66,6 +66,12 @@
     <Compile Include="FrmAsociacionPuesto.Designer.cs">
       <DependentUpon>FrmAsociacionPuesto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAsociacionPuestosMultiples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsociacionPuestosMultiples.Designer.cs">
+      <DependentUpon>FrmAsociacionPuestosMultiples.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuscarEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +288,9 @@
     <EmbeddedResource Include="FrmAsociacionPuesto.resx">
       <DependentUpon>FrmAsociacionPuesto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsociacionPuestosMultiples.resx">
+      <DependentUpon>FrmAsociacionPuestosMultiples.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpleados.resx">
       <DependentUpon>frmBuscarEmpleados.cs</DependentUpon>
     </EmbeddedResource>
@@ -459,9 +468,10 @@
     <None Include="Resources\CARGA FUERZA GRUPO B.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\plantilla3.HTML" />
-    <None Include="Resources\plantilla2.HTML" />
-    <None Include="Resources\planilla1.html" />
+    <None Include="Resources\plantillaconsultaPuestosEmpleado.HTML" />
+    <Content Include="Resources\plantilla3.HTML" />
+    <Content Include="Resources\plantilla2.HTML" />
+    <Content Include="Resources\planilla1.html" />
     <Content Include="Resources\plantilla.html" />
   </ItemGroup>
   <ItemGroup>

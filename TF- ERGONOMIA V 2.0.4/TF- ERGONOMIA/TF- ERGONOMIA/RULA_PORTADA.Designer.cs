@@ -50,6 +50,7 @@
             // 
             // btnBuscarpuesto
             // 
+            this.btnBuscarpuesto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscarpuesto.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscarpuesto.FlatAppearance.BorderSize = 0;
             this.btnBuscarpuesto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -68,6 +69,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -80,6 +82,7 @@
             // 
             // materialLabel2
             // 
+            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel2.Depth = 0;
@@ -93,6 +96,7 @@
             // 
             // txtpuestotrabajoencontrado
             // 
+            this.txtpuestotrabajoencontrado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtpuestotrabajoencontrado.AnimateReadOnly = false;
             this.txtpuestotrabajoencontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtpuestotrabajoencontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -125,6 +129,7 @@
             // 
             // btnBuscarEmpleados
             // 
+            this.btnBuscarEmpleados.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscarEmpleados.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscarEmpleados.FlatAppearance.BorderSize = 0;
             this.btnBuscarEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -142,6 +147,7 @@
             // 
             // materialLabel1
             // 
+            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel1.Depth = 0;
@@ -155,6 +161,7 @@
             // 
             // txtDniEmpleadoRula
             // 
+            this.txtDniEmpleadoRula.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDniEmpleadoRula.AnimateReadOnly = false;
             this.txtDniEmpleadoRula.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtDniEmpleadoRula.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -187,6 +194,7 @@
             // 
             // btnBuscarCUIT
             // 
+            this.btnBuscarCUIT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscarCUIT.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscarCUIT.FlatAppearance.BorderSize = 0;
             this.btnBuscarCUIT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -204,6 +212,7 @@
             // 
             // materialLabel11
             // 
+            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
@@ -217,6 +226,7 @@
             // 
             // txtCUITEncontrado
             // 
+            this.txtCUITEncontrado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCUITEncontrado.AnimateReadOnly = false;
             this.txtCUITEncontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtCUITEncontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -249,6 +259,7 @@
             // 
             // BtnSalir
             // 
+            this.BtnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
             this.BtnSalir.FlatAppearance.BorderSize = 0;
             this.BtnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -267,6 +278,7 @@
             // 
             // btnCrear
             // 
+            this.btnCrear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCrear.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnCrear.FlatAppearance.BorderSize = 0;
             this.btnCrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -285,6 +297,7 @@
             // 
             // materialLabel3
             // 
+            this.materialLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel3.Depth = 0;
@@ -298,6 +311,7 @@
             // 
             // dtpRula
             // 
+            this.dtpRula.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpRula.CustomFormat = "";
             this.dtpRula.Location = new System.Drawing.Point(176, 458);
             this.dtpRula.Margin = new System.Windows.Forms.Padding(4);
@@ -309,6 +323,7 @@
             // 
             // materialLabel4
             // 
+            this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel4.Depth = 0;
@@ -322,6 +337,7 @@
             // 
             // txtNombreEmpresaRula
             // 
+            this.txtNombreEmpresaRula.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombreEmpresaRula.AnimateReadOnly = false;
             this.txtNombreEmpresaRula.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtNombreEmpresaRula.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -354,6 +370,7 @@
             // 
             // materialLabel5
             // 
+            this.materialLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel5.Depth = 0;
@@ -367,6 +384,7 @@
             // 
             // txtNombreEmpleadoRula
             // 
+            this.txtNombreEmpleadoRula.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombreEmpleadoRula.AnimateReadOnly = false;
             this.txtNombreEmpleadoRula.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtNombreEmpleadoRula.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;

@@ -1184,7 +1184,7 @@
             this.btncerrarReba.ForeColor = System.Drawing.Color.AliceBlue;
             this.btncerrarReba.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btncerrarReba.Location = new System.Drawing.Point(367, 2532);
-            this.btncerrarReba.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btncerrarReba.Margin = new System.Windows.Forms.Padding(4);
             this.btncerrarReba.Name = "btncerrarReba";
             this.btncerrarReba.Size = new System.Drawing.Size(155, 43);
             this.btncerrarReba.TabIndex = 197;
@@ -1212,7 +1212,7 @@
             this.btnGuardarReba1.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnGuardarReba1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarReba1.Location = new System.Drawing.Point(571, 2532);
-            this.btnGuardarReba1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardarReba1.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarReba1.Name = "btnGuardarReba1";
             this.btnGuardarReba1.Size = new System.Drawing.Size(155, 43);
             this.btnGuardarReba1.TabIndex = 195;
@@ -1423,7 +1423,7 @@
             this.BarraTitulo.Controls.Add(this.label7);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1095, 65);
             this.BarraTitulo.TabIndex = 342;
@@ -1435,7 +1435,7 @@
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(1050, 17);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(33, 31);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

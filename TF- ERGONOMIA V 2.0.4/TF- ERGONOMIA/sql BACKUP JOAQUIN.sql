@@ -2079,7 +2079,7 @@ GO
 USE ProyectoFinal;
 GO
 CREATE OR ALTER PROCEDURE SP_VistaPuesto_GetNombreEmpleado
-    @NombreEmpleado nvarchar (20)
+    @NombreEmpleado nvarchar (MAX)
 AS
 BEGIN
     SELECT NombreEmpleado, NombrePuesto,DNI
@@ -2094,7 +2094,7 @@ GO
 CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_VerReciente
 @FechaIngreso DATE,
 @FechaIngreso2 DATE,
-@NombreEmpleado NVARCHAR(40)
+@NombreEmpleado NVARCHAR(50)
 AS
 BEGIN
     SELECT * FROM VistaEmpleadosPuestos
