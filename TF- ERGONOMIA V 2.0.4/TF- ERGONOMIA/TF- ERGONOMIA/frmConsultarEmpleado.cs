@@ -141,6 +141,9 @@ namespace TF.WIN
                 DataTable dt = oEmpleadosBC.EmpleadosBC_GetAll();
                 dgvEmpleados.DataSource = null;
                 dgvEmpleados.DataSource = dt;
+                dgvEmpleados.Columns["Apellido"].DisplayIndex = 0;
+                dgvEmpleados.Columns["Nombre"].DisplayIndex = 1;
+                dgvEmpleados.Columns[10].Visible = false;
             }
             catch (Exception ex)
             {
