@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TF.BC;
 using TF.ENTITIES;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TF.WIN
 {
@@ -95,16 +96,16 @@ namespace TF.WIN
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
-            btnRestaurar.Visible = true;
+            //this.WindowState = FormWindowState.Maximized;
+            //btnMaximizar.Visible = false;
+            //btnRestaurar.Visible = true;
         }
 
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
+            //this.WindowState = FormWindowState.Normal;
+            //btnRestaurar.Visible = false;
+            //btnMaximizar.Visible = true;
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -154,6 +155,12 @@ namespace TF.WIN
             }
 
             REBA_RESULTADO OREBA_RESULTADO = new REBA_RESULTADO();
+            AddOwnedForm(OREBA_RESULTADO);
+            OREBA_RESULTADO.TopLevel = false;
+            OREBA_RESULTADO.Dock = DockStyle.Fill;
+            this.Controls.Add(OREBA_RESULTADO);
+            this.Tag = OREBA_RESULTADO;
+            OREBA_RESULTADO.BringToFront();
             OREBA_RESULTADO.Show();
             Close();
         }

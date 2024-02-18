@@ -37,6 +37,7 @@ namespace TF.WIN
             ConfigurarGraficoEmpLoc();
             ConfigurarGraficoEmpxemp();
             ContEmpresasPublPriv();
+            ContEmpleadosSexo();
 
             double SumaMetodos = 0;
 
@@ -94,6 +95,7 @@ namespace TF.WIN
         //        MessageBox.Show(ex.Message);
         //    }
         //}
+
         public void ContEmpleados()
         {
             EstadisticaBC oEstadisticaBC = new EstadisticaBC();
@@ -194,7 +196,7 @@ namespace TF.WIN
             Series series = new Series
             {
                 Name = "Cantidad",
-                ChartType = SeriesChartType.Column
+                ChartType = SeriesChartType.Bar
             };
 
             // Configura los ejes
@@ -214,8 +216,10 @@ namespace TF.WIN
             chartEmpresasProv.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
 
             // Establece el formato de la serie
-            series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+            series.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
 
+            //chartEmpresasProv.ChartAreas[0].Position.Width = 40; // Porcentaje del ancho del gráfico
+            //chartEmpresasProv.ChartAreas[0].Position.Height = 50; // Porcentaje de la altura del gráfico
 
 
             CargarDatosDesdeBDEmpxProv();
@@ -355,16 +359,16 @@ namespace TF.WIN
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
-            btnRestaurar.Visible = true;
+            //this.WindowState = FormWindowState.Maximized;
+            //btnMaximizar.Visible = false;
+            //btnRestaurar.Visible = true;
         }
 
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
+            //this.WindowState = FormWindowState.Normal;
+            //btnRestaurar.Visible = false;
+            //btnMaximizar.Visible = true;
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -379,59 +383,156 @@ namespace TF.WIN
 
         private void ContEmpresasPublPriv()
         {
-
+            try { 
             // Configura el gráfico aquí
-            // Por ejemplo, crea una serie de columnas
+            // Por ejemplo, crea una serie de pastel
             Series series = new Series
             {
-                Name = "Porcentaje",
-                ChartType = SeriesChartType.Pie
+                Name = "Cantidad de Empresas Por Tipo",
+                ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
             };
 
-            // Configura los ejes
+            // Configura los ejes (no es tan relevante para el gráfico de pastel)
             ChartArea chartArea = new ChartArea();
-            chartArea.AxisX.Title = "Tipo";
-            chartArea.AxisY.Title = "EmpresasporTipo";
+            chartArea.AxisX.Title = "Tipos de Empresas";
+            chartArea.AxisY.Title = "Cantidad";
 
             // Limpia las series existentes antes de agregar la nueva
-            chartempxemp.Series.Clear();
+            GraphEmpresasTipo.Series.Clear();
 
             // Asigna la serie y el área del gráfico
-            chartempxemp.Series.Add(series);
-            chartempxemp.ChartAreas.Add(chartArea);
+            GraphEmpresasTipo.Series.Add(series);
+            GraphEmpresasTipo.ChartAreas.Add(chartArea);
 
             // Agrega un título al gráfico
-            chartempxemp.Titles.Add("Cantidad de Empresas Publicas y Privadas");  // Cambia "Mi Título" al título que desees
-            chartempxemp.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+            GraphEmpresasTipo.Titles.Add("Tipos de Empresas");
+            GraphEmpresasTipo.Font = new Font("Arial", 14, FontStyle.Bold);
 
             // Establece el formato de la serie
-            series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+            series.Font = new Font("Arial", 10, FontStyle.Bold);
 
-
+            // Añade datos de ejemplo al gráfico de pastel
 
             DatosBDEmpxemp();
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         private void DatosBDEmpxemp()
         {
-            // Utiliza la instancia de EstadisticaBC para obtener los datos
-            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-            DataTable dt1004 = oEstadisticaBC.ContEmpleadosempresaBC();
-
+                // Utiliza la instancia de EstadisticaBC para obtener los datos
+                EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+                EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+                DataTable dt1999 = oEstadisticaBC.ContEmpresasPublPrivaBC();
             // Limpia los datos existentes en el gráfico
-            chartempxemp.Series[0].Points.Clear();
+            GraphEmpresasTipo.Series[0].Points.Clear();
 
-            // Agrega los nuevos datos desde el DataTable
-            foreach (DataRow row in dt1004.Rows)
-            {
-                string Empleadosporempresas = row["Nombre"].ToString();
-                int cantidadEmpleados1 = Convert.ToInt32(row["CantidadEmpleados"]);
+            // Configura la serie para un gráfico de pastel
+            GraphEmpresasTipo.Series[0].ChartType = SeriesChartType.Pie;
+
+                // Agrega los nuevos datos desde el DataTable
+                foreach (DataRow row in dt1999.Rows)
+                {
+                    string NivelRiesgo = row["Tipo"].ToString();
+                    int CantidadRiesgo = Convert.ToInt32(row["CantidadTipo"]);
 
                 // Agrega un punto a la serie para cada provincia
-                chartempxemp.Series[0].Points.AddXY(Empleadosporempresas, cantidadEmpleados1);
+                GraphEmpresasTipo.Series[0].Points.AddXY(NivelRiesgo, CantidadRiesgo);
+                }
+
+            // Agrega un título al gráfico de pastel
+            GraphEmpresasTipo.Titles.Clear();
+            GraphEmpresasTipo.Titles.Add("Distribución de Empresas por Tipo");
+
+            // Establece el formato de la serie
+            GraphEmpresasTipo.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
+
+            }
+        private void ContEmpleadosSexo()
+        {
+            try
+            {
+                // Configura el gráfico aquí
+                // Por ejemplo, crea una serie de pastel
+                Series series = new Series
+                {
+                    Name = "Cantidad de EmpleadosPor Genero",
+                    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
+                };
+
+                // Configura los ejes (no es tan relevante para el gráfico de pastel)
+                ChartArea chartArea = new ChartArea();
+                chartArea.AxisX.Title = "Genero";
+                chartArea.AxisY.Title = "Cantidad";
+
+                // Limpia las series existentes antes de agregar la nueva
+                chartsMujeresVarones.Series.Clear();
+
+                // Asigna la serie y el área del gráfico
+                chartsMujeresVarones.Series.Add(series);
+                chartsMujeresVarones.ChartAreas.Add(chartArea);
+
+                // Agrega un título al gráfico
+                chartsMujeresVarones.Titles.Add("Genero");
+                chartsMujeresVarones.Font = new Font("Arial", 10, FontStyle.Bold);
+
+                // Establece el formato de la serie
+                series.Font = new Font("Arial", 10, FontStyle.Bold);
+
+                // Añade datos de ejemplo al gráfico de pastel
+
+                DatosBDEmpleadosSexo();
+            }
+            catch (Exception ex)
+            {
+
             }
         }
 
+        private void DatosBDEmpleadosSexo()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+            DataTable dt6999 = oEstadisticaBC.ContEmpleadosSexoBC();
+            // Limpia los datos existentes en el gráfico
+            chartsMujeresVarones.Series[0].Points.Clear();
+
+            // Configura la serie para un gráfico de pastel
+            chartsMujeresVarones.Series[0].ChartType = SeriesChartType.Pie;
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt6999.Rows)
+            {
+                string NivelRiesgo = row["Genero"].ToString();
+                int CantidadRiesgo = Convert.ToInt32(row["CantidadTipo"]);
+
+                // Agrega un punto a la serie para cada provincia
+                chartsMujeresVarones.Series[0].Points.AddXY(NivelRiesgo, CantidadRiesgo);
+            }
+
+            // Agrega un título al gráfico de pastel
+            chartsMujeresVarones.Titles.Clear();
+            chartsMujeresVarones.Titles.Add("Generos");
+
+            // Establece el formato de la serie
+            chartsMujeresVarones.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
+
+        }
+
+
+
+
+
+
+
+
+
+
 
     }
-}
+
+        }

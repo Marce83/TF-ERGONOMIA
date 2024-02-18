@@ -54,6 +54,8 @@
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.txtHMiI = new MaterialSkin.Controls.MaterialTextBox2();
             this.label15 = new System.Windows.Forms.Label();
             this.txtVMi = new MaterialSkin.Controls.MaterialTextBox2();
@@ -95,15 +97,10 @@
             this.label22 = new System.Windows.Forms.Label();
             this.txtLCN = new MaterialSkin.Controls.MaterialComboBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.btnRestaurar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnMaximizar = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label23 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.advDH)).BeginInit();
@@ -115,9 +112,6 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.BarraTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,10 +119,10 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(460, 323);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(613, 398);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(332, 439);
+            this.pictureBox2.Size = new System.Drawing.Size(443, 540);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 57;
             this.pictureBox2.TabStop = false;
@@ -136,20 +130,18 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(22, 969);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(29, 1193);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(156, 13);
+            this.label12.Size = new System.Drawing.Size(189, 16);
             this.label12.TabIndex = 54;
             this.label12.Text = "FRECUENCIA ( Lev/Min) ( FN )";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(22, 912);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(29, 1122);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 13);
+            this.label11.Size = new System.Drawing.Size(127, 16);
             this.label11.TabIndex = 51;
             this.label11.Text = "DURACION TAREA";
             // 
@@ -157,10 +149,10 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(179, 58);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(239, 71);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(462, 206);
+            this.pictureBox1.Size = new System.Drawing.Size(616, 254);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
@@ -168,20 +160,18 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 186);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(13, 229);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(141, 13);
+            this.label9.Size = new System.Drawing.Size(172, 16);
             this.label9.TabIndex = 44;
             this.label9.Text = "DISTANCIA VERTICAL ( V )";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(22, 1309);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(29, 1611);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 13);
+            this.label6.Size = new System.Drawing.Size(179, 16);
             this.label6.TabIndex = 36;
             this.label6.Text = "MASA DE LA CARGA ( LCN )";
             // 
@@ -201,12 +191,12 @@
             this.cboDuraciontarea.ItemHeight = 43;
             this.cboDuraciontarea.Items.AddRange(new object[] {
             "0"});
-            this.cboDuraciontarea.Location = new System.Drawing.Point(289, 897);
-            this.cboDuraciontarea.Margin = new System.Windows.Forms.Padding(2);
+            this.cboDuraciontarea.Location = new System.Drawing.Point(385, 1104);
+            this.cboDuraciontarea.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboDuraciontarea.MaxDropDownItems = 4;
             this.cboDuraciontarea.MouseState = MaterialSkin.MouseState.OUT;
             this.cboDuraciontarea.Name = "cboDuraciontarea";
-            this.cboDuraciontarea.Size = new System.Drawing.Size(149, 49);
+            this.cboDuraciontarea.Size = new System.Drawing.Size(197, 49);
             this.cboDuraciontarea.StartIndex = 0;
             this.cboDuraciontarea.TabIndex = 73;
             this.cboDuraciontarea.SelectedIndexChanged += new System.EventHandler(this.cboDuraciontarea_SelectedIndexChanged);
@@ -246,12 +236,12 @@
             this.cboFrecuencia.ItemHeight = 43;
             this.cboFrecuencia.Items.AddRange(new object[] {
             "0"});
-            this.cboFrecuencia.Location = new System.Drawing.Point(289, 952);
-            this.cboFrecuencia.Margin = new System.Windows.Forms.Padding(2);
+            this.cboFrecuencia.Location = new System.Drawing.Point(385, 1172);
+            this.cboFrecuencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboFrecuencia.MaxDropDownItems = 4;
             this.cboFrecuencia.MouseState = MaterialSkin.MouseState.OUT;
             this.cboFrecuencia.Name = "cboFrecuencia";
-            this.cboFrecuencia.Size = new System.Drawing.Size(149, 49);
+            this.cboFrecuencia.Size = new System.Drawing.Size(197, 49);
             this.cboFrecuencia.StartIndex = 0;
             this.cboFrecuencia.TabIndex = 74;
             this.cboFrecuencia.SelectedIndexChanged += new System.EventHandler(this.cboFrecuencia_SelectedIndexChanged);
@@ -265,9 +255,10 @@
             this.btncerrarNiosh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncerrarNiosh.ForeColor = System.Drawing.Color.AliceBlue;
             this.btncerrarNiosh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncerrarNiosh.Location = new System.Drawing.Point(183, 1402);
+            this.btncerrarNiosh.Location = new System.Drawing.Point(244, 1726);
+            this.btncerrarNiosh.Margin = new System.Windows.Forms.Padding(4);
             this.btncerrarNiosh.Name = "btncerrarNiosh";
-            this.btncerrarNiosh.Size = new System.Drawing.Size(116, 35);
+            this.btncerrarNiosh.Size = new System.Drawing.Size(155, 43);
             this.btncerrarNiosh.TabIndex = 200;
             this.btncerrarNiosh.Text = "Salir";
             this.btncerrarNiosh.UseVisualStyleBackColor = false;
@@ -276,10 +267,10 @@
             // txtcargaidniosh
             // 
             this.txtcargaidniosh.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtcargaidniosh.Location = new System.Drawing.Point(452, 1410);
-            this.txtcargaidniosh.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcargaidniosh.Location = new System.Drawing.Point(603, 1735);
+            this.txtcargaidniosh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargaidniosh.Name = "txtcargaidniosh";
-            this.txtcargaidniosh.Size = new System.Drawing.Size(76, 20);
+            this.txtcargaidniosh.Size = new System.Drawing.Size(100, 22);
             this.txtcargaidniosh.TabIndex = 199;
             this.txtcargaidniosh.Visible = false;
             // 
@@ -292,9 +283,10 @@
             this.btnGuardarNiosh1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarNiosh1.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnGuardarNiosh1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarNiosh1.Location = new System.Drawing.Point(320, 1402);
+            this.btnGuardarNiosh1.Location = new System.Drawing.Point(427, 1726);
+            this.btnGuardarNiosh1.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarNiosh1.Name = "btnGuardarNiosh1";
-            this.btnGuardarNiosh1.Size = new System.Drawing.Size(116, 35);
+            this.btnGuardarNiosh1.Size = new System.Drawing.Size(155, 43);
             this.btnGuardarNiosh1.TabIndex = 198;
             this.btnGuardarNiosh1.Text = "Guardar";
             this.btnGuardarNiosh1.UseVisualStyleBackColor = false;
@@ -320,12 +312,12 @@
             this.cboCM.ItemHeight = 43;
             this.cboCM.Items.AddRange(new object[] {
             "0"});
-            this.cboCM.Location = new System.Drawing.Point(296, 1074);
-            this.cboCM.Margin = new System.Windows.Forms.Padding(2);
+            this.cboCM.Location = new System.Drawing.Point(395, 1322);
+            this.cboCM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboCM.MaxDropDownItems = 4;
             this.cboCM.MouseState = MaterialSkin.MouseState.OUT;
             this.cboCM.Name = "cboCM";
-            this.cboCM.Size = new System.Drawing.Size(141, 49);
+            this.cboCM.Size = new System.Drawing.Size(187, 49);
             this.cboCM.StartIndex = 0;
             this.cboCM.TabIndex = 211;
             this.cboCM.SelectedIndexChanged += new System.EventHandler(this.cboCM_SelectedIndexChanged);
@@ -335,10 +327,10 @@
             this.advDH.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.advDH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("advDH.BackgroundImage")));
             this.advDH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.advDH.Location = new System.Drawing.Point(367, 18);
-            this.advDH.Margin = new System.Windows.Forms.Padding(2);
+            this.advDH.Location = new System.Drawing.Point(489, 22);
+            this.advDH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.advDH.Name = "advDH";
-            this.advDH.Size = new System.Drawing.Size(25, 36);
+            this.advDH.Size = new System.Drawing.Size(33, 44);
             this.advDH.TabIndex = 212;
             this.advDH.TabStop = false;
             this.advDH.Tag = "";
@@ -349,10 +341,10 @@
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(367, 171);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Location = new System.Drawing.Point(489, 210);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 36);
+            this.pictureBox4.Size = new System.Drawing.Size(33, 44);
             this.pictureBox4.TabIndex = 213;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Tag = "";
@@ -363,10 +355,10 @@
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(367, 386);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Location = new System.Drawing.Point(489, 475);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(25, 40);
+            this.pictureBox5.Size = new System.Drawing.Size(33, 49);
             this.pictureBox5.TabIndex = 214;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Tag = "";
@@ -381,10 +373,10 @@
             this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(367, 67);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Location = new System.Drawing.Point(489, 82);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(25, 36);
+            this.pictureBox7.Size = new System.Drawing.Size(33, 44);
             this.pictureBox7.TabIndex = 236;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Tag = "";
@@ -395,10 +387,10 @@
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(367, 222);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox8.Location = new System.Drawing.Point(489, 273);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(25, 36);
+            this.pictureBox8.Size = new System.Drawing.Size(33, 44);
             this.pictureBox8.TabIndex = 239;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Tag = "";
@@ -409,10 +401,10 @@
             this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(367, 434);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox10.Location = new System.Drawing.Point(489, 534);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(25, 40);
+            this.pictureBox10.Size = new System.Drawing.Size(33, 49);
             this.pictureBox10.TabIndex = 244;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Tag = "";
@@ -431,8 +423,7 @@
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(22, 288);
-            this.materialLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel4.Location = new System.Drawing.Point(29, 354);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(373, 19);
@@ -442,10 +433,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 403);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(5, 496);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 13);
+            this.label1.Size = new System.Drawing.Size(180, 16);
             this.label1.TabIndex = 216;
             this.label1.Text = "ANGULO DE ASIMETRIA (A)";
             // 
@@ -483,14 +473,32 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.pictureBox5);
             this.groupBox1.Controls.Add(this.advDH);
-            this.groupBox1.Location = new System.Drawing.Point(25, 315);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(33, 388);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(413, 557);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(551, 686);
             this.groupBox1.TabIndex = 218;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Posicion";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(5, 50);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(194, 16);
+            this.label20.TabIndex = 254;
+            this.label20.Text = "DISTANCIA HORIZONTAL ( H )";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(5, 555);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(235, 16);
+            this.label25.TabIndex = 253;
+            this.label25.Text = "ANGULO DE ASIMETRIA ORIGEN (A)";
             // 
             // txtHMiI
             // 
@@ -504,8 +512,8 @@
             this.txtHMiI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtHMiI.HideSelection = true;
             this.txtHMiI.LeadingIcon = null;
-            this.txtHMiI.Location = new System.Drawing.Point(59, 119);
-            this.txtHMiI.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHMiI.Location = new System.Drawing.Point(79, 146);
+            this.txtHMiI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHMiI.MaxLength = 32767;
             this.txtHMiI.MouseState = MaterialSkin.MouseState.OUT;
             this.txtHMiI.Name = "txtHMiI";
@@ -517,7 +525,7 @@
             this.txtHMiI.SelectionLength = 0;
             this.txtHMiI.SelectionStart = 0;
             this.txtHMiI.ShortcutsEnabled = true;
-            this.txtHMiI.Size = new System.Drawing.Size(88, 48);
+            this.txtHMiI.Size = new System.Drawing.Size(117, 48);
             this.txtHMiI.TabIndex = 252;
             this.txtHMiI.TabStop = false;
             this.txtHMiI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -527,10 +535,9 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(11, 134);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(15, 165);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(29, 13);
+            this.label15.Size = new System.Drawing.Size(34, 16);
             this.label15.TabIndex = 251;
             this.label15.Text = " HMi";
             // 
@@ -546,8 +553,8 @@
             this.txtVMi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtVMi.HideSelection = true;
             this.txtVMi.LeadingIcon = null;
-            this.txtVMi.Location = new System.Drawing.Point(59, 276);
-            this.txtVMi.Margin = new System.Windows.Forms.Padding(2);
+            this.txtVMi.Location = new System.Drawing.Point(79, 340);
+            this.txtVMi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtVMi.MaxLength = 32767;
             this.txtVMi.MouseState = MaterialSkin.MouseState.OUT;
             this.txtVMi.Name = "txtVMi";
@@ -559,7 +566,7 @@
             this.txtVMi.SelectionLength = 0;
             this.txtVMi.SelectionStart = 0;
             this.txtVMi.ShortcutsEnabled = true;
-            this.txtVMi.Size = new System.Drawing.Size(88, 48);
+            this.txtVMi.Size = new System.Drawing.Size(117, 48);
             this.txtVMi.TabIndex = 250;
             this.txtVMi.TabStop = false;
             this.txtVMi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -569,10 +576,9 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(11, 292);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(15, 359);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(25, 13);
+            this.label18.Size = new System.Drawing.Size(30, 16);
             this.label18.TabIndex = 249;
             this.label18.Text = "VMi";
             // 
@@ -588,8 +594,8 @@
             this.txtAMi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtAMi.HideSelection = true;
             this.txtAMi.LeadingIcon = null;
-            this.txtAMi.Location = new System.Drawing.Point(59, 495);
-            this.txtAMi.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAMi.Location = new System.Drawing.Point(79, 609);
+            this.txtAMi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAMi.MaxLength = 32767;
             this.txtAMi.MouseState = MaterialSkin.MouseState.OUT;
             this.txtAMi.Name = "txtAMi";
@@ -601,7 +607,7 @@
             this.txtAMi.SelectionLength = 0;
             this.txtAMi.SelectionStart = 0;
             this.txtAMi.ShortcutsEnabled = true;
-            this.txtAMi.Size = new System.Drawing.Size(88, 48);
+            this.txtAMi.Size = new System.Drawing.Size(117, 48);
             this.txtAMi.TabIndex = 248;
             this.txtAMi.TabStop = false;
             this.txtAMi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -611,10 +617,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 510);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(13, 628);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(25, 13);
+            this.label7.Size = new System.Drawing.Size(30, 16);
             this.label7.TabIndex = 247;
             this.label7.Text = "AMi";
             // 
@@ -768,12 +773,12 @@
             this.cboAi.FormattingEnabled = true;
             this.cboAi.IntegralHeight = false;
             this.cboAi.ItemHeight = 43;
-            this.cboAi.Location = new System.Drawing.Point(208, 434);
-            this.cboAi.Margin = new System.Windows.Forms.Padding(2);
+            this.cboAi.Location = new System.Drawing.Point(277, 534);
+            this.cboAi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboAi.MaxDropDownItems = 4;
             this.cboAi.MouseState = MaterialSkin.MouseState.OUT;
             this.cboAi.Name = "cboAi";
-            this.cboAi.Size = new System.Drawing.Size(149, 49);
+            this.cboAi.Size = new System.Drawing.Size(197, 49);
             this.cboAi.StartIndex = 0;
             this.cboAi.TabIndex = 246;
             this.cboAi.SelectedIndexChanged += new System.EventHandler(this.cboAi_SelectedIndexChanged);
@@ -794,12 +799,12 @@
             this.cboVi.ItemHeight = 43;
             this.cboVi.Items.AddRange(new object[] {
             "0"});
-            this.cboVi.Location = new System.Drawing.Point(208, 222);
-            this.cboVi.Margin = new System.Windows.Forms.Padding(2);
+            this.cboVi.Location = new System.Drawing.Point(277, 273);
+            this.cboVi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboVi.MaxDropDownItems = 4;
             this.cboVi.MouseState = MaterialSkin.MouseState.OUT;
             this.cboVi.Name = "cboVi";
-            this.cboVi.Size = new System.Drawing.Size(149, 49);
+            this.cboVi.Size = new System.Drawing.Size(197, 49);
             this.cboVi.StartIndex = 0;
             this.cboVi.TabIndex = 240;
             this.cboVi.SelectedIndexChanged += new System.EventHandler(this.cboVi_SelectedIndexChanged);
@@ -807,10 +812,9 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(10, 237);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(13, 292);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(186, 13);
+            this.label14.Size = new System.Drawing.Size(227, 16);
             this.label14.TabIndex = 238;
             this.label14.Text = "DISTANCIA VERTICAL ORIGEN ( V )";
             // 
@@ -1006,12 +1010,12 @@
             this.cboHi.ItemHeight = 43;
             this.cboHi.Items.AddRange(new object[] {
             "0"});
-            this.cboHi.Location = new System.Drawing.Point(208, 67);
-            this.cboHi.Margin = new System.Windows.Forms.Padding(2);
+            this.cboHi.Location = new System.Drawing.Point(277, 82);
+            this.cboHi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboHi.MaxDropDownItems = 4;
             this.cboHi.MouseState = MaterialSkin.MouseState.OUT;
             this.cboHi.Name = "cboHi";
-            this.cboHi.Size = new System.Drawing.Size(149, 49);
+            this.cboHi.Size = new System.Drawing.Size(197, 49);
             this.cboHi.StartIndex = 0;
             this.cboHi.TabIndex = 237;
             this.cboHi.SelectedIndexChanged += new System.EventHandler(this.cboHi_SelectedIndexChanged);
@@ -1019,10 +1023,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 83);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(5, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 13);
+            this.label3.Size = new System.Drawing.Size(241, 16);
             this.label3.TabIndex = 235;
             this.label3.Text = "DISTANCIA HORIZONTAL INICIAL ( H )";
             // 
@@ -1038,8 +1041,8 @@
             this.txtAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtAM.HideSelection = true;
             this.txtAM.LeadingIcon = null;
-            this.txtAM.Location = new System.Drawing.Point(259, 495);
-            this.txtAM.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAM.Location = new System.Drawing.Point(345, 609);
+            this.txtAM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAM.MaxLength = 32767;
             this.txtAM.MouseState = MaterialSkin.MouseState.OUT;
             this.txtAM.Name = "txtAM";
@@ -1051,7 +1054,7 @@
             this.txtAM.SelectionLength = 0;
             this.txtAM.SelectionStart = 0;
             this.txtAM.ShortcutsEnabled = true;
-            this.txtAM.Size = new System.Drawing.Size(97, 48);
+            this.txtAM.Size = new System.Drawing.Size(129, 48);
             this.txtAM.TabIndex = 234;
             this.txtAM.TabStop = false;
             this.txtAM.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1061,10 +1064,9 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(210, 510);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(280, 628);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(23, 13);
+            this.label8.Size = new System.Drawing.Size(27, 16);
             this.label8.TabIndex = 233;
             this.label8.Text = "AM";
             // 
@@ -1080,8 +1082,8 @@
             this.txtDMNiosh.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDMNiosh.HideSelection = true;
             this.txtDMNiosh.LeadingIcon = null;
-            this.txtDMNiosh.Location = new System.Drawing.Point(259, 329);
-            this.txtDMNiosh.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDMNiosh.Location = new System.Drawing.Point(345, 405);
+            this.txtDMNiosh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDMNiosh.MaxLength = 32767;
             this.txtDMNiosh.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDMNiosh.Name = "txtDMNiosh";
@@ -1093,7 +1095,7 @@
             this.txtDMNiosh.SelectionLength = 0;
             this.txtDMNiosh.SelectionStart = 0;
             this.txtDMNiosh.ShortcutsEnabled = true;
-            this.txtDMNiosh.Size = new System.Drawing.Size(97, 48);
+            this.txtDMNiosh.Size = new System.Drawing.Size(129, 48);
             this.txtDMNiosh.TabIndex = 232;
             this.txtDMNiosh.TabStop = false;
             this.txtDMNiosh.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1103,10 +1105,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(211, 344);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(281, 423);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 13);
+            this.label5.Size = new System.Drawing.Size(28, 16);
             this.label5.TabIndex = 231;
             this.label5.Text = "DM";
             // 
@@ -1122,8 +1123,8 @@
             this.txtVM.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtVM.HideSelection = true;
             this.txtVM.LeadingIcon = null;
-            this.txtVM.Location = new System.Drawing.Point(259, 276);
-            this.txtVM.Margin = new System.Windows.Forms.Padding(2);
+            this.txtVM.Location = new System.Drawing.Point(345, 340);
+            this.txtVM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtVM.MaxLength = 32767;
             this.txtVM.MouseState = MaterialSkin.MouseState.OUT;
             this.txtVM.Name = "txtVM";
@@ -1135,7 +1136,7 @@
             this.txtVM.SelectionLength = 0;
             this.txtVM.SelectionStart = 0;
             this.txtVM.ShortcutsEnabled = true;
-            this.txtVM.Size = new System.Drawing.Size(97, 48);
+            this.txtVM.Size = new System.Drawing.Size(129, 48);
             this.txtVM.TabIndex = 230;
             this.txtVM.TabStop = false;
             this.txtVM.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1145,10 +1146,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(211, 292);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(281, 359);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 13);
+            this.label4.Size = new System.Drawing.Size(27, 16);
             this.label4.TabIndex = 229;
             this.label4.Text = "VM";
             // 
@@ -1164,8 +1164,8 @@
             this.txtHMD.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtHMD.HideSelection = true;
             this.txtHMD.LeadingIcon = null;
-            this.txtHMD.Location = new System.Drawing.Point(259, 119);
-            this.txtHMD.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHMD.Location = new System.Drawing.Point(345, 146);
+            this.txtHMD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHMD.MaxLength = 32767;
             this.txtHMD.MouseState = MaterialSkin.MouseState.OUT;
             this.txtHMD.Name = "txtHMD";
@@ -1177,7 +1177,7 @@
             this.txtHMD.SelectionLength = 0;
             this.txtHMD.SelectionStart = 0;
             this.txtHMD.ShortcutsEnabled = true;
-            this.txtHMD.Size = new System.Drawing.Size(97, 48);
+            this.txtHMD.Size = new System.Drawing.Size(129, 48);
             this.txtHMD.TabIndex = 228;
             this.txtHMD.TabStop = false;
             this.txtHMD.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1187,10 +1187,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(211, 134);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(281, 165);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 13);
+            this.label2.Size = new System.Drawing.Size(31, 16);
             this.label2.TabIndex = 223;
             this.label2.Text = " HM";
             // 
@@ -1344,12 +1343,12 @@
             this.cboA.FormattingEnabled = true;
             this.cboA.IntegralHeight = false;
             this.cboA.ItemHeight = 43;
-            this.cboA.Location = new System.Drawing.Point(208, 386);
-            this.cboA.Margin = new System.Windows.Forms.Padding(2);
+            this.cboA.Location = new System.Drawing.Point(277, 475);
+            this.cboA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboA.MaxDropDownItems = 4;
             this.cboA.MouseState = MaterialSkin.MouseState.OUT;
             this.cboA.Name = "cboA";
-            this.cboA.Size = new System.Drawing.Size(149, 49);
+            this.cboA.Size = new System.Drawing.Size(197, 49);
             this.cboA.StartIndex = 0;
             this.cboA.TabIndex = 222;
             this.cboA.SelectedIndexChanged += new System.EventHandler(this.cboA_SelectedIndexChanged);
@@ -1546,12 +1545,12 @@
             this.cboV.ItemHeight = 43;
             this.cboV.Items.AddRange(new object[] {
             "0"});
-            this.cboV.Location = new System.Drawing.Point(208, 171);
-            this.cboV.Margin = new System.Windows.Forms.Padding(2);
+            this.cboV.Location = new System.Drawing.Point(277, 210);
+            this.cboV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboV.MaxDropDownItems = 4;
             this.cboV.MouseState = MaterialSkin.MouseState.OUT;
             this.cboV.Name = "cboV";
-            this.cboV.Size = new System.Drawing.Size(149, 49);
+            this.cboV.Size = new System.Drawing.Size(197, 49);
             this.cboV.StartIndex = 0;
             this.cboV.TabIndex = 220;
             this.cboV.SelectedIndexChanged += new System.EventHandler(this.cboV_SelectedIndexChanged);
@@ -1748,12 +1747,12 @@
             this.cboH.ItemHeight = 43;
             this.cboH.Items.AddRange(new object[] {
             "0"});
-            this.cboH.Location = new System.Drawing.Point(208, 18);
-            this.cboH.Margin = new System.Windows.Forms.Padding(2);
+            this.cboH.Location = new System.Drawing.Point(277, 22);
+            this.cboH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboH.MaxDropDownItems = 4;
             this.cboH.MouseState = MaterialSkin.MouseState.OUT;
             this.cboH.Name = "cboH";
-            this.cboH.Size = new System.Drawing.Size(149, 49);
+            this.cboH.Size = new System.Drawing.Size(197, 49);
             this.cboH.StartIndex = 0;
             this.cboH.TabIndex = 219;
             this.cboH.SelectedIndexChanged += new System.EventHandler(this.cboH_SelectedIndexChanged);
@@ -1762,10 +1761,10 @@
             // 
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(460, 882);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Location = new System.Drawing.Point(613, 1086);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(332, 110);
+            this.pictureBox6.Size = new System.Drawing.Size(443, 135);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 219;
             this.pictureBox6.TabStop = false;
@@ -1773,10 +1772,9 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(294, 1029);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(392, 1266);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(24, 13);
+            this.label16.Size = new System.Drawing.Size(28, 16);
             this.label16.TabIndex = 220;
             this.label16.Text = " FN";
             // 
@@ -1792,8 +1790,8 @@
             this.txtFND.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFND.HideSelection = true;
             this.txtFND.LeadingIcon = null;
-            this.txtFND.Location = new System.Drawing.Point(340, 1016);
-            this.txtFND.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFND.Location = new System.Drawing.Point(453, 1250);
+            this.txtFND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFND.MaxLength = 32767;
             this.txtFND.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFND.Name = "txtFND";
@@ -1805,7 +1803,7 @@
             this.txtFND.SelectionLength = 0;
             this.txtFND.SelectionStart = 0;
             this.txtFND.ShortcutsEnabled = true;
-            this.txtFND.Size = new System.Drawing.Size(97, 48);
+            this.txtFND.Size = new System.Drawing.Size(129, 48);
             this.txtFND.TabIndex = 244;
             this.txtFND.TabStop = false;
             this.txtFND.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1824,8 +1822,8 @@
             this.txtFNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFNI.HideSelection = true;
             this.txtFNI.LeadingIcon = null;
-            this.txtFNI.Location = new System.Drawing.Point(114, 1016);
-            this.txtFNI.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFNI.Location = new System.Drawing.Point(152, 1250);
+            this.txtFNI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFNI.MaxLength = 32767;
             this.txtFNI.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFNI.Name = "txtFNI";
@@ -1837,7 +1835,7 @@
             this.txtFNI.SelectionLength = 0;
             this.txtFNI.SelectionStart = 0;
             this.txtFNI.ShortcutsEnabled = true;
-            this.txtFNI.Size = new System.Drawing.Size(97, 48);
+            this.txtFNI.Size = new System.Drawing.Size(129, 48);
             this.txtFNI.TabIndex = 246;
             this.txtFNI.TabStop = false;
             this.txtFNI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1847,10 +1845,9 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(86, 1029);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Location = new System.Drawing.Point(115, 1266);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(26, 13);
+            this.label19.Size = new System.Drawing.Size(31, 16);
             this.label19.TabIndex = 245;
             this.label19.Text = " FNi";
             // 
@@ -1866,8 +1863,8 @@
             this.txtduracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtduracion.HideSelection = true;
             this.txtduracion.LeadingIcon = null;
-            this.txtduracion.Location = new System.Drawing.Point(238, 897);
-            this.txtduracion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtduracion.Location = new System.Drawing.Point(317, 1104);
+            this.txtduracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtduracion.MaxLength = 32767;
             this.txtduracion.MouseState = MaterialSkin.MouseState.OUT;
             this.txtduracion.Name = "txtduracion";
@@ -1879,7 +1876,7 @@
             this.txtduracion.SelectionLength = 0;
             this.txtduracion.SelectionStart = 0;
             this.txtduracion.ShortcutsEnabled = true;
-            this.txtduracion.Size = new System.Drawing.Size(31, 48);
+            this.txtduracion.Size = new System.Drawing.Size(41, 48);
             this.txtduracion.TabIndex = 247;
             this.txtduracion.TabStop = false;
             this.txtduracion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1899,8 +1896,8 @@
             this.txtfrecuencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtfrecuencia.HideSelection = true;
             this.txtfrecuencia.LeadingIcon = null;
-            this.txtfrecuencia.Location = new System.Drawing.Point(236, 953);
-            this.txtfrecuencia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtfrecuencia.Location = new System.Drawing.Point(315, 1173);
+            this.txtfrecuencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtfrecuencia.MaxLength = 32767;
             this.txtfrecuencia.MouseState = MaterialSkin.MouseState.OUT;
             this.txtfrecuencia.Name = "txtfrecuencia";
@@ -1912,7 +1909,7 @@
             this.txtfrecuencia.SelectionLength = 0;
             this.txtfrecuencia.SelectionStart = 0;
             this.txtfrecuencia.ShortcutsEnabled = true;
-            this.txtfrecuencia.Size = new System.Drawing.Size(33, 48);
+            this.txtfrecuencia.Size = new System.Drawing.Size(44, 48);
             this.txtfrecuencia.TabIndex = 248;
             this.txtfrecuencia.TabStop = false;
             this.txtfrecuencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1932,8 +1929,8 @@
             this.difvertd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.difvertd.HideSelection = true;
             this.difvertd.LeadingIcon = null;
-            this.difvertd.Location = new System.Drawing.Point(236, 1016);
-            this.difvertd.Margin = new System.Windows.Forms.Padding(2);
+            this.difvertd.Location = new System.Drawing.Point(315, 1250);
+            this.difvertd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.difvertd.MaxLength = 32767;
             this.difvertd.MouseState = MaterialSkin.MouseState.OUT;
             this.difvertd.Name = "difvertd";
@@ -1945,7 +1942,7 @@
             this.difvertd.SelectionLength = 0;
             this.difvertd.SelectionStart = 0;
             this.difvertd.ShortcutsEnabled = true;
-            this.difvertd.Size = new System.Drawing.Size(34, 48);
+            this.difvertd.Size = new System.Drawing.Size(45, 48);
             this.difvertd.TabIndex = 249;
             this.difvertd.TabStop = false;
             this.difvertd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1965,8 +1962,8 @@
             this.difvertint.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.difvertint.HideSelection = true;
             this.difvertint.LeadingIcon = null;
-            this.difvertint.Location = new System.Drawing.Point(60, 1016);
-            this.difvertint.Margin = new System.Windows.Forms.Padding(2);
+            this.difvertint.Location = new System.Drawing.Point(80, 1250);
+            this.difvertint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.difvertint.MaxLength = 32767;
             this.difvertint.MouseState = MaterialSkin.MouseState.OUT;
             this.difvertint.Name = "difvertint";
@@ -1978,7 +1975,7 @@
             this.difvertint.SelectionLength = 0;
             this.difvertint.SelectionStart = 0;
             this.difvertint.ShortcutsEnabled = true;
-            this.difvertint.Size = new System.Drawing.Size(22, 48);
+            this.difvertint.Size = new System.Drawing.Size(29, 48);
             this.difvertint.TabIndex = 250;
             this.difvertint.TabStop = false;
             this.difvertint.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1998,8 +1995,8 @@
             this.txtCMD.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCMD.HideSelection = true;
             this.txtCMD.LeadingIcon = null;
-            this.txtCMD.Location = new System.Drawing.Point(238, 1074);
-            this.txtCMD.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMD.Location = new System.Drawing.Point(317, 1322);
+            this.txtCMD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMD.MaxLength = 32767;
             this.txtCMD.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCMD.Name = "txtCMD";
@@ -2011,7 +2008,7 @@
             this.txtCMD.SelectionLength = 0;
             this.txtCMD.SelectionStart = 0;
             this.txtCMD.ShortcutsEnabled = true;
-            this.txtCMD.Size = new System.Drawing.Size(31, 48);
+            this.txtCMD.Size = new System.Drawing.Size(41, 48);
             this.txtCMD.TabIndex = 251;
             this.txtCMD.TabStop = false;
             this.txtCMD.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -2031,8 +2028,8 @@
             this.txtCMI.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCMI.HideSelection = true;
             this.txtCMI.LeadingIcon = null;
-            this.txtCMI.Location = new System.Drawing.Point(239, 1181);
-            this.txtCMI.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMI.Location = new System.Drawing.Point(319, 1454);
+            this.txtCMI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMI.MaxLength = 32767;
             this.txtCMI.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCMI.Name = "txtCMI";
@@ -2044,7 +2041,7 @@
             this.txtCMI.SelectionLength = 0;
             this.txtCMI.SelectionStart = 0;
             this.txtCMI.ShortcutsEnabled = true;
-            this.txtCMI.Size = new System.Drawing.Size(30, 48);
+            this.txtCMI.Size = new System.Drawing.Size(40, 48);
             this.txtCMI.TabIndex = 252;
             this.txtCMI.TabStop = false;
             this.txtCMI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -2072,12 +2069,12 @@
             this.cboCMi.ItemHeight = 43;
             this.cboCMi.Items.AddRange(new object[] {
             "0"});
-            this.cboCMi.Location = new System.Drawing.Point(296, 1181);
-            this.cboCMi.Margin = new System.Windows.Forms.Padding(2);
+            this.cboCMi.Location = new System.Drawing.Point(395, 1454);
+            this.cboCMi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboCMi.MaxDropDownItems = 4;
             this.cboCMi.MouseState = MaterialSkin.MouseState.OUT;
             this.cboCMi.Name = "cboCMi";
-            this.cboCMi.Size = new System.Drawing.Size(141, 49);
+            this.cboCMi.Size = new System.Drawing.Size(187, 49);
             this.cboCMi.StartIndex = 0;
             this.cboCMi.TabIndex = 254;
             this.cboCMi.SelectedIndexChanged += new System.EventHandler(this.cboCMi_SelectedIndexChanged);
@@ -2091,9 +2088,10 @@
             this.btnObtenerFN.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnObtenerFN.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnObtenerFN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnObtenerFN.Location = new System.Drawing.Point(460, 1291);
+            this.btnObtenerFN.Location = new System.Drawing.Point(613, 1589);
+            this.btnObtenerFN.Margin = new System.Windows.Forms.Padding(4);
             this.btnObtenerFN.Name = "btnObtenerFN";
-            this.btnObtenerFN.Size = new System.Drawing.Size(91, 49);
+            this.btnObtenerFN.Size = new System.Drawing.Size(121, 60);
             this.btnObtenerFN.TabIndex = 255;
             this.btnObtenerFN.Text = "Obtener FN y FNi";
             this.btnObtenerFN.UseVisualStyleBackColor = false;
@@ -2111,8 +2109,8 @@
             this.txtCMDnumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCMDnumero.HideSelection = true;
             this.txtCMDnumero.LeadingIcon = null;
-            this.txtCMDnumero.Location = new System.Drawing.Point(340, 1125);
-            this.txtCMDnumero.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMDnumero.Location = new System.Drawing.Point(453, 1385);
+            this.txtCMDnumero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMDnumero.MaxLength = 32767;
             this.txtCMDnumero.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCMDnumero.Name = "txtCMDnumero";
@@ -2124,7 +2122,7 @@
             this.txtCMDnumero.SelectionLength = 0;
             this.txtCMDnumero.SelectionStart = 0;
             this.txtCMDnumero.ShortcutsEnabled = true;
-            this.txtCMDnumero.Size = new System.Drawing.Size(97, 48);
+            this.txtCMDnumero.Size = new System.Drawing.Size(129, 48);
             this.txtCMDnumero.TabIndex = 257;
             this.txtCMDnumero.TabStop = false;
             this.txtCMDnumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -2134,10 +2132,9 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(294, 1138);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Location = new System.Drawing.Point(392, 1401);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(31, 13);
+            this.label21.Size = new System.Drawing.Size(37, 16);
             this.label21.TabIndex = 256;
             this.label21.Text = "CMD";
             // 
@@ -2153,8 +2150,8 @@
             this.txtCMInumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCMInumero.HideSelection = true;
             this.txtCMInumero.LeadingIcon = null;
-            this.txtCMInumero.Location = new System.Drawing.Point(340, 1240);
-            this.txtCMInumero.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMInumero.Location = new System.Drawing.Point(453, 1526);
+            this.txtCMInumero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMInumero.MaxLength = 32767;
             this.txtCMInumero.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCMInumero.Name = "txtCMInumero";
@@ -2166,7 +2163,7 @@
             this.txtCMInumero.SelectionLength = 0;
             this.txtCMInumero.SelectionStart = 0;
             this.txtCMInumero.ShortcutsEnabled = true;
-            this.txtCMInumero.Size = new System.Drawing.Size(97, 48);
+            this.txtCMInumero.Size = new System.Drawing.Size(129, 48);
             this.txtCMInumero.TabIndex = 259;
             this.txtCMInumero.TabStop = false;
             this.txtCMInumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -2176,10 +2173,9 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(294, 1252);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Location = new System.Drawing.Point(392, 1541);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(25, 13);
+            this.label22.Size = new System.Drawing.Size(30, 16);
             this.label22.TabIndex = 258;
             this.label22.Text = "CMi";
             // 
@@ -2203,12 +2199,12 @@
             this.txtLCN.ItemHeight = 43;
             this.txtLCN.Items.AddRange(new object[] {
             "0"});
-            this.txtLCN.Location = new System.Drawing.Point(296, 1291);
-            this.txtLCN.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLCN.Location = new System.Drawing.Point(395, 1589);
+            this.txtLCN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLCN.MaxDropDownItems = 4;
             this.txtLCN.MouseState = MaterialSkin.MouseState.OUT;
             this.txtLCN.Name = "txtLCN";
-            this.txtLCN.Size = new System.Drawing.Size(141, 49);
+            this.txtLCN.Size = new System.Drawing.Size(187, 49);
             this.txtLCN.StartIndex = 0;
             this.txtLCN.TabIndex = 260;
             // 
@@ -2216,72 +2212,13 @@
             // 
             this.BarraTitulo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BarraTitulo.Controls.Add(this.label23);
-            this.BarraTitulo.Controls.Add(this.btnRestaurar);
-            this.BarraTitulo.Controls.Add(this.btnMinimizar);
-            this.BarraTitulo.Controls.Add(this.btnMaximizar);
             this.BarraTitulo.Controls.Add(this.pictureBox3);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(807, 53);
+            this.BarraTitulo.Size = new System.Drawing.Size(1078, 65);
             this.BarraTitulo.TabIndex = 340;
-            // 
-            // btnRestaurar
-            // 
-            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRestaurar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(742, 14);
-            this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
-            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRestaurar.TabIndex = 2;
-            this.btnRestaurar.TabStop = false;
-            this.btnRestaurar.Visible = false;
-            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
-            this.btnRestaurar.DoubleClick += new System.EventHandler(this.btnMaximizar_Click);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(711, 14);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 1;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximizar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(742, 14);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
-            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizar.TabIndex = 1;
-            this.btnMaximizar.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(773, 14);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // label23
             // 
@@ -2289,62 +2226,54 @@
             this.label23.AutoSize = true;
             this.label23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(210, 14);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Location = new System.Drawing.Point(281, 17);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(402, 31);
+            this.label23.Size = new System.Drawing.Size(485, 38);
             this.label23.TabIndex = 296;
             this.label23.Text = "METODO DE ANALISIS NIOSH";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1033, 17);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(22, 1092);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Location = new System.Drawing.Point(29, 1344);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(150, 13);
+            this.label24.Size = new System.Drawing.Size(183, 16);
             this.label24.TabIndex = 341;
             this.label24.Text = "CALIDAD DE AGARRE ( CM )";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(4, 451);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(192, 13);
-            this.label25.TabIndex = 253;
-            this.label25.Text = "ANGULO DE ASIMETRIA ORIGEN (A)";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(22, 1197);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Location = new System.Drawing.Point(29, 1473);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(195, 13);
+            this.label17.Size = new System.Drawing.Size(238, 16);
             this.label17.TabIndex = 342;
             this.label17.Text = "CALIDAD DE AGARRE ORIGEN ( CM )";
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(4, 41);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(160, 13);
-            this.label20.TabIndex = 254;
-            this.label20.Text = "DISTANCIA HORIZONTAL ( H )";
-            // 
             // NIOSH1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(824, 894);
+            this.ClientSize = new System.Drawing.Size(1099, 1100);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.BarraTitulo);
@@ -2380,7 +2309,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "NIOSH1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NIOSH1";
@@ -2398,9 +2327,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -2473,9 +2399,6 @@
         private System.Windows.Forms.Label label22;
         private MaterialSkin.Controls.MaterialComboBox txtLCN;
         private System.Windows.Forms.Panel BarraTitulo;
-        private System.Windows.Forms.PictureBox btnRestaurar;
-        private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;

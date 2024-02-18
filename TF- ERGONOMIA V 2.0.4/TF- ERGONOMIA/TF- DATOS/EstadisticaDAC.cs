@@ -405,7 +405,7 @@ namespace TF.DAC
 
         public DataTable ContEmpresasPublPrivaDAC()
         {
-            string sqlSentencia = "SP_STAT_ContEmpleadosEmpresas";
+            string sqlSentencia = "SP_STAT_EmpresaPubPriv";
             SqlConnection sqlCnn = new SqlConnection();
             sqlCnn.ConnectionString = conectionString;
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
@@ -419,6 +419,27 @@ namespace TF.DAC
 
             return ds.Tables[0];
         }
+
+
+        public DataTable ContEmpleadosSexoDAC()
+        {
+            string sqlSentencia = "SP_STAT_MujerVaronEmp";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
+
+            return ds.Tables[0];
+        }
+
+
+
 
 
 

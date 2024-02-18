@@ -37,23 +37,6 @@ namespace TF.WIN
         private int SumaGrupoTablaBReba = 0;
         private int SumaPuntuacionFinal = 0;
 
-
-
-
-        private void btnMaximizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
-            btnRestaurar.Visible = true;
-        }
-
-        private void btnRestaurar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
-        }
-
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -63,12 +46,6 @@ namespace TF.WIN
         {
 
         }
-
-
-
-
-
-
 
         private void btnpagant_Click(object sender, EventArgs e)
         {

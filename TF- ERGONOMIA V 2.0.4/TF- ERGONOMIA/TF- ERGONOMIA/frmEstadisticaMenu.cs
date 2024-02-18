@@ -25,12 +25,24 @@ namespace TF.WIN
         private void btnEstadisticageneral_Click(object sender, EventArgs e)
         {
             frmEstadisticas ofrmEstadisticas = new frmEstadisticas();
+            AddOwnedForm(ofrmEstadisticas);
+            ofrmEstadisticas.TopLevel = false;
+            ofrmEstadisticas.Dock = DockStyle.Fill;
+            this.Controls.Add(ofrmEstadisticas);
+            this.Tag = ofrmEstadisticas;
+            ofrmEstadisticas.BringToFront();
             ofrmEstadisticas.Show();
          }
 
         private void btnEstidisticaparticular_Click(object sender, EventArgs e)
         {
             frmEstadisticas2 ofrmEstadisticas2 = new frmEstadisticas2();
+            AddOwnedForm(ofrmEstadisticas2);
+            ofrmEstadisticas2.TopLevel = false;
+            ofrmEstadisticas2.Dock = DockStyle.Fill;
+            this.Controls.Add(ofrmEstadisticas2);
+            this.Tag = ofrmEstadisticas2;
+            ofrmEstadisticas2.BringToFront();
             ofrmEstadisticas2.Show();
           }
 

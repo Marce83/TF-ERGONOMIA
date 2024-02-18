@@ -21,5 +21,8 @@ namespace TF.ENTITIES
         public DateTime FechaEgreso { get; set; }
         public string Estado { get; set; }
         public int IdEmpresa { get; set; }
+
+        public string NombrePuesto { get; set; }
+
     }
 }

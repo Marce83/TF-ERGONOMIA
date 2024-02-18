@@ -410,6 +410,12 @@ namespace TF.WIN
             }
 
             JSSRESULTADO oJSSRESULTADO = new JSSRESULTADO();
+            AddOwnedForm(oJSSRESULTADO);
+            oJSSRESULTADO.TopLevel = false;
+            oJSSRESULTADO.Dock = DockStyle.Fill;
+            this.Controls.Add(oJSSRESULTADO);
+            this.Tag = oJSSRESULTADO;
+            oJSSRESULTADO.BringToFront();
             oJSSRESULTADO.Show();
             Close();
 

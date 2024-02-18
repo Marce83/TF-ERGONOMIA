@@ -12,14 +12,15 @@ using TF.ENTITIES;
 
 namespace TF.WIN
 {
-    public partial class frmBuscarEmpleados : Form
+    public partial class frmBuscarEmpleados2 : Form
     {
-        public frmBuscarEmpleados()
+        public frmBuscarEmpleados2()
         {
             InitializeComponent();
             Listar();
         }
-        public Empleados EmpleadoSeleccionado { get; set; }
+
+        public Empleados EmpleadoSeleccionado2 { get; set; }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -33,7 +34,6 @@ namespace TF.WIN
             //dgvempleados.Columns[0].Visible = false;
 
         }
-
         private void Listar()
         {
             try
@@ -48,12 +48,6 @@ namespace TF.WIN
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void frmBuscarEmpleados_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
 
@@ -61,7 +55,7 @@ namespace TF.WIN
             {
                 int DNI = Convert.ToInt32(dgvResultado.CurrentRow.Cells[2].Value);
                 EmpleadosBC oEmpleadosBC = new EmpleadosBC();
-                EmpleadoSeleccionado = oEmpleadosBC.EmpleadosObtenerDNI(DNI);
+                EmpleadoSeleccionado2 = oEmpleadosBC.EmpleadosConPuestoBC(DNI);
                 this.Close();
             }
             else
@@ -69,16 +63,25 @@ namespace TF.WIN
                 MessageBox.Show("Aun no ha seleccionado Ningun Empleado");
             }
 
-
-
-
-
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

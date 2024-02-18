@@ -55,6 +55,8 @@
             // 
             resources.ApplyResources(this.txtUsuario, "txtUsuario");
             this.txtUsuario.AnimateReadOnly = false;
+            this.txtUsuario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtUsuario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtUsuario.Depth = 0;
             this.txtUsuario.HideSelection = true;
@@ -92,6 +94,8 @@
             // 
             resources.ApplyResources(this.txtClave, "txtClave");
             this.txtClave.AnimateReadOnly = false;
+            this.txtClave.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtClave.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtClave.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtClave.Depth = 0;
             this.txtClave.HideSelection = true;
@@ -122,6 +126,8 @@
             // 
             resources.ApplyResources(this.txtNombre, "txtNombre");
             this.txtNombre.AnimateReadOnly = false;
+            this.txtNombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombre.Depth = 0;
             this.txtNombre.HideSelection = true;
@@ -152,6 +158,8 @@
             // 
             resources.ApplyResources(this.txtApellido, "txtApellido");
             this.txtApellido.AnimateReadOnly = false;
+            this.txtApellido.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtApellido.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtApellido.Depth = 0;
             this.txtApellido.HideSelection = true;
@@ -232,6 +240,8 @@
             // 
             resources.ApplyResources(this.txtConfClave, "txtConfClave");
             this.txtConfClave.AnimateReadOnly = false;
+            this.txtConfClave.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtConfClave.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtConfClave.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtConfClave.Depth = 0;
             this.txtConfClave.HideSelection = true;
@@ -261,6 +271,8 @@
             // 
             resources.ApplyResources(this.txtCorreo, "txtCorreo");
             this.txtCorreo.AnimateReadOnly = false;
+            this.txtCorreo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCorreo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtCorreo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCorreo.Depth = 0;
             this.txtCorreo.HideSelection = true;
@@ -290,7 +302,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.materialLabel6);
             this.Controls.Add(this.chbVisualizarClave);

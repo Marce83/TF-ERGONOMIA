@@ -70,6 +70,18 @@
             this.txtBuscador.TrailingIcon = null;
             this.txtBuscador.UseSystemPasswordChar = false;
             this.txtBuscador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscador_KeyPress);
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(12, 73);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(67, 19);
+            this.materialLabel1.TabIndex = 43;
+            this.materialLabel1.Text = "Empresa:";
             // 
             // btnAceptar
             // 
@@ -82,7 +94,7 @@
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAceptar.Location = new System.Drawing.Point(320, 269);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(116, 35);
+            this.btnAceptar.Size = new System.Drawing.Size(155, 43);
             this.btnAceptar.TabIndex = 52;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
@@ -116,7 +128,7 @@
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(118, 269);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(116, 35);
+            this.btnCancelar.Size = new System.Drawing.Size(155, 43);
             this.btnCancelar.TabIndex = 54;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -124,7 +136,7 @@
             // 
             // dgvResultado
             // 
-            this.dgvResultado.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.dgvResultado.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultado.Location = new System.Drawing.Point(12, 99);
             this.dgvResultado.Name = "dgvResultado";
@@ -136,13 +148,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DarkGray;
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F);
-            this.label1.Location = new System.Drawing.Point(112, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(149, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 31);
+            this.label1.Size = new System.Drawing.Size(347, 38);
             this.label1.TabIndex = 60;
             this.label1.Text = "BUSCAR EMPRESAS";
             // 
@@ -193,7 +204,7 @@
             // 
             // frmBuscarEmpresa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(556, 340);
@@ -206,6 +217,7 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtBuscador);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmBuscarEmpresa";
             this.Text = "BuscarEmpresa";
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultado)).EndInit();

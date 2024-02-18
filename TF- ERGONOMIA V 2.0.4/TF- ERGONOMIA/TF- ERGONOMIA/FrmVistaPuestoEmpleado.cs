@@ -33,20 +33,28 @@ namespace TF.WIN
                 DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC();
                 dgvVistaPuestoEmpleado.DataSource = null;
                 dgvVistaPuestoEmpleado.DataSource = dt;
+                dgvVistaPuestoEmpleado.Columns[2].HeaderText = "Puesto";
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
+
+           
+
+
+
+
+
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-
             if (dgvVistaPuestoEmpleado.SelectedRows.Count == 1) // si selecciona una fila
             {
-                // Obtén el valor de la celda de la primera columna
-                object cellValue = dgvVistaPuestoEmpleado.CurrentRow.Cells[0].Value;
+                // Obtén el valor de la celda de la primera columna de la fila seleccionada
+                object cellValue = dgvVistaPuestoEmpleado.SelectedRows[0].Cells[0].Value;
 
                 if (cellValue != null)
                 {
@@ -74,6 +82,11 @@ namespace TF.WIN
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void FrmVistaPuestoEmpleado_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

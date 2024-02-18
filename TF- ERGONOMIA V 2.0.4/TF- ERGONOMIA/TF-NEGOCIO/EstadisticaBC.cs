@@ -145,5 +145,29 @@ namespace TF.BC
             DataTable dt = oEstadisticaDAC.ContPersonxEmpDAC(oEstadisticasPersonales);
             return dt;
         }
+
+        public DataTable ContEmpresasPublPrivaBC()
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.ContEmpresasPublPrivaDAC();
+            return dt;
+        }
+
+
+
+
+        public DataTable ContEmpleadosSexoBC()
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.ContEmpleadosSexoDAC();
+            return dt;
+        }
+
+
+
+
+
+        
+
     }
 }

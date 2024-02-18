@@ -1,6 +1,6 @@
 ﻿namespace TF.WIN
 {
-    partial class frmBuscarEmpleados
+    partial class frmBuscarEmpleados2
     {
         /// <summary>
         /// Required designer variable.
@@ -44,23 +44,23 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(131, 9);
+            this.label1.Location = new System.Drawing.Point(130, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(249, 29);
-            this.label1.TabIndex = 76;
+            this.label1.TabIndex = 83;
             this.label1.Text = "BUSCAR EMPLEADO";
             // 
             // dgvResultado
             // 
             this.dgvResultado.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultado.Location = new System.Drawing.Point(10, 103);
+            this.dgvResultado.Location = new System.Drawing.Point(9, 103);
             this.dgvResultado.Name = "dgvResultado";
             this.dgvResultado.ReadOnly = true;
             this.dgvResultado.RowHeadersWidth = 51;
             this.dgvResultado.Size = new System.Drawing.Size(492, 148);
-            this.dgvResultado.TabIndex = 75;
+            this.dgvResultado.TabIndex = 82;
             // 
             // btnCancelar
             // 
@@ -71,10 +71,10 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(108, 257);
+            this.btnCancelar.Location = new System.Drawing.Point(107, 257);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(116, 35);
-            this.btnCancelar.TabIndex = 74;
+            this.btnCancelar.TabIndex = 81;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -88,10 +88,10 @@
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(264, 54);
+            this.btnBuscar.Location = new System.Drawing.Point(263, 54);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(116, 43);
-            this.btnBuscar.TabIndex = 73;
+            this.btnBuscar.TabIndex = 80;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -105,10 +105,10 @@
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAceptar.Location = new System.Drawing.Point(323, 257);
+            this.btnAceptar.Location = new System.Drawing.Point(322, 257);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(116, 35);
-            this.btnAceptar.TabIndex = 72;
+            this.btnAceptar.TabIndex = 79;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -119,12 +119,12 @@
             this.materialLabel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(8, 64);
+            this.materialLabel1.Location = new System.Drawing.Point(7, 64);
             this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(31, 19);
-            this.materialLabel1.TabIndex = 70;
+            this.materialLabel1.TabIndex = 77;
             this.materialLabel1.Text = "DNI:";
             // 
             // txtDNIempleado
@@ -138,8 +138,8 @@
             this.txtDNIempleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDNIempleado.HideSelection = true;
             this.txtDNIempleado.LeadingIcon = null;
-            this.txtDNIempleado.Location = new System.Drawing.Point(62, 50);
-            this.txtDNIempleado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDNIempleado.Location = new System.Drawing.Point(61, 50);
+            this.txtDNIempleado.Margin = new System.Windows.Forms.Padding(2);
             this.txtDNIempleado.MaxLength = 32767;
             this.txtDNIempleado.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDNIempleado.Name = "txtDNIempleado";
@@ -152,18 +152,19 @@
             this.txtDNIempleado.SelectionStart = 0;
             this.txtDNIempleado.ShortcutsEnabled = true;
             this.txtDNIempleado.Size = new System.Drawing.Size(188, 48);
-            this.txtDNIempleado.TabIndex = 71;
+            this.txtDNIempleado.TabIndex = 78;
             this.txtDNIempleado.TabStop = false;
             this.txtDNIempleado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtDNIempleado.TrailingIcon = null;
             this.txtDNIempleado.UseSystemPasswordChar = false;
             // 
-            // frmBuscarEmpleados
+            // frmBuscarEmpleados2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(514, 310);
+            this.ClientSize = new System.Drawing.Size(519, 318);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvResultado);
             this.Controls.Add(this.btnCancelar);
@@ -172,9 +173,8 @@
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.txtDNIempleado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmBuscarEmpleados";
-            this.Text = "frmBuscarEmpleados";
-            this.Load += new System.EventHandler(this.frmBuscarEmpleados_Load);
+            this.Name = "frmBuscarEmpleados2";
+            this.Text = "frmBuscarEmpleados2";
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -182,6 +182,7 @@
         }
 
         #endregion
+
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvResultado;
         private System.Windows.Forms.Button btnCancelar;

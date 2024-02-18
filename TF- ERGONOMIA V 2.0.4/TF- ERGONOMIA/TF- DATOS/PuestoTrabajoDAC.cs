@@ -183,8 +183,8 @@ namespace TF.DAC
             while (dr.Read())
             {
                 oPuestoTrabajo.NombreEmpleado = dr.GetString(0);
-                oPuestoTrabajo.NombrePuesto = dr.GetString(1);
-                oPuestoTrabajo.DNI = dr.GetString(2);
+                oPuestoTrabajo.DNI = dr.GetString(1);
+                oPuestoTrabajo.NombrePuesto = dr.GetString(2);
             }
             sqlCnn.Close();
             return oPuestoTrabajo;

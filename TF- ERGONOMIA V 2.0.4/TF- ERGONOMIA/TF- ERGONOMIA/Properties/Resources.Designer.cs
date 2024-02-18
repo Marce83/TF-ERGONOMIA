@@ -208,7 +208,7 @@ namespace TF.WIN.Properties {
         ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///&lt;head&gt;
-        ///    
+        ///
         ///&lt;/head&gt;
         ///&lt;body&gt;
         ///
@@ -223,11 +223,40 @@ namespace TF.WIN.Properties {
         ///                    &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;TEL: 3513091777&lt;/td&gt;&lt;/tr&gt;
         ///                &lt;/table&gt;
         ///            &lt;/td&gt;
-        ///            &lt;td style=&quot;width: 35%;&quot; [resto de la cadena truncado]&quot;;.
+        ///            &lt;td style=&quot;width: 35%;&quot;&gt;
+        ///  [resto de la cadena truncado]&quot;;.
         /// </summary>
         internal static string plantilla3 {
             get {
                 return ResourceManager.GetString("plantilla3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;head&gt;
+        ///
+        ///&lt;/head&gt;
+        ///&lt;body&gt;
+        ///
+        ///    &lt;table style=&quot;width: 100%;&quot;&gt;
+        ///
+        ///        &lt;tr&gt;
+        ///            &lt;td style=&quot;width: 35%;&quot;&gt;&lt;/td&gt;
+        ///            &lt;td style=&quot;width: 60%;&quot; align=&quot;center&quot;&gt;
+        ///                &lt;table&gt;
+        ///                    &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;ERGOASIST&lt;/td&gt;&lt;/tr&gt;
+        ///                    &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;AV. COLON 1250&lt;/td&gt;&lt;/tr&gt;
+        ///                    &lt;tr&gt;&lt;td align=&quot;center&quot;&gt;TEL: 3513091777&lt;/td&gt;&lt;/tr&gt;
+        ///                &lt;/table&gt;
+        ///            &lt;/td&gt;
+        ///            &lt;td style=&quot;width: 35%;&quot;&gt;
+        ///  [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string plantillaconsultaPuestosEmpleado {
+            get {
+                return ResourceManager.GetString("plantillaconsultaPuestosEmpleado", resourceCulture);
             }
         }
         

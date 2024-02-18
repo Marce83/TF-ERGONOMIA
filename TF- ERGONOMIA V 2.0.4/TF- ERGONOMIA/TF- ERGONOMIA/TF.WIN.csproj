@@ -42,8 +42,8 @@
     <Reference Include="itextsharp.xmlworker, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\itextsharp.xmlworker.5.5.13.3\lib\itextsharp.xmlworker.dll</HintPath>
     </Reference>
-    <Reference Include="MaterialSkin, Version=2.3.1.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.2.RTL.2.3.1.1\lib\net461\MaterialSkin.dll</HintPath>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.RTL.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -66,11 +66,23 @@
     <Compile Include="FrmAsociacionPuesto.Designer.cs">
       <DependentUpon>FrmAsociacionPuesto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAsociacionPuestosMultiples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsociacionPuestosMultiples.Designer.cs">
+      <DependentUpon>FrmAsociacionPuestosMultiples.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuscarEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBuscarEmpleados.Designer.cs">
       <DependentUpon>frmBuscarEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarEmpleados2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarEmpleados2.Designer.cs">
+      <DependentUpon>frmBuscarEmpleados2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmBuscarEmpresa.cs">
       <SubType>Form</SubType>
@@ -276,8 +288,14 @@
     <EmbeddedResource Include="FrmAsociacionPuesto.resx">
       <DependentUpon>FrmAsociacionPuesto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsociacionPuestosMultiples.resx">
+      <DependentUpon>FrmAsociacionPuestosMultiples.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpleados.resx">
       <DependentUpon>frmBuscarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarEmpleados2.resx">
+      <DependentUpon>frmBuscarEmpleados2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpresa.resx">
       <DependentUpon>frmBuscarEmpresa.cs</DependentUpon>
@@ -450,9 +468,10 @@
     <None Include="Resources\CARGA FUERZA GRUPO B.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\plantilla3.HTML" />
-    <None Include="Resources\plantilla2.HTML" />
-    <None Include="Resources\planilla1.html" />
+    <None Include="Resources\plantillaconsultaPuestosEmpleado.HTML" />
+    <Content Include="Resources\plantilla3.HTML" />
+    <Content Include="Resources\plantilla2.HTML" />
+    <Content Include="Resources\planilla1.html" />
     <Content Include="Resources\plantilla.html" />
   </ItemGroup>
   <ItemGroup>

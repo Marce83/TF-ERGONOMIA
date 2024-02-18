@@ -40,18 +40,30 @@ namespace TF.WIN
 
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
-            FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
+
+            frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
             oFrm.ShowDialog();
 
-            if (oFrm.PersonaSeleccionada != null)
+            if (oFrm.EmpleadoSeleccionado2 != null)
             {
-                txtDniEmpleadoReba.Text = oFrm.PersonaSeleccionada.DNI.ToString();
-
-                txtNombreEmpleadoReba.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
-
-                txtpuestotrabajoencontrado.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
-
+                txtDniEmpleadoReba.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
+                txtNombreEmpleadoReba.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
+                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
             }
+
+
+            //FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
+            //oFrm.ShowDialog();
+
+            //if (oFrm.PersonaSeleccionada != null)
+            //{
+            //    txtDniEmpleadoReba.Text = oFrm.PersonaSeleccionada.DNI.ToString();
+
+            //    txtNombreEmpleadoReba.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
+
+            //    txtpuestotrabajoencontrado.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
+
+            //}
 
         }
 
@@ -76,9 +88,15 @@ namespace TF.WIN
 
             // Pasar el ID de carga al siguiente formulario
             REBA1 OREBA1 = new REBA1();
+            AddOwnedForm(OREBA1);
+            OREBA1.TopLevel = false;
+            OREBA1.Dock = DockStyle.Fill;
+            this.Controls.Add(OREBA1);
+            this.Tag = OREBA1;
+            OREBA1.BringToFront();
             OREBA1.Show();
 
-            this.Close();
+            //this.Close();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)

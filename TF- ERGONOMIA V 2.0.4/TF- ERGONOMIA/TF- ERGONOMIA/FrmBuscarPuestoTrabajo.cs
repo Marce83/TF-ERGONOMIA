@@ -32,7 +32,10 @@ namespace TF.WIN
                 DataTable dt = oPuestoTrabajoBC.GetAll();
                     dgvResultadoPuesto.DataSource = null;
                     dgvResultadoPuesto.DataSource = dt;
-          }
+                dgvResultadoPuesto.Columns[0].Visible = false;
+                dgvResultadoPuesto.Columns[1].HeaderText = "Puesto";
+                dgvResultadoPuesto.Columns[2].HeaderText = "Area de la Empresa";
+            }
           catch (Exception ex)
           {
                     MessageBox.Show(ex.Message);
@@ -49,34 +52,20 @@ namespace TF.WIN
 
             if (dgvResultadoPuesto.SelectedRows.Count == 1) // si selecciona una fila
             {
-                // Obtén el valor de la celda de la primera columna
-                object cellValue = dgvResultadoPuesto.CurrentRow.Cells[0].Value;
+                int IdPuesto = Convert.ToInt32(dgvResultadoPuesto.CurrentRow.Cells[0].Value);
+                PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
+                PuestoSeleccionada = oPuestoTrabajoBC.ObtenerPuestoidBC(IdPuesto);
+                this.Close();
+ 
 
-                if (cellValue != null)
-                {
-                    // Intenta convertir el valor a un entero
-                    if (int.TryParse(cellValue.ToString(), out int IdPuesto))
-                    {
-                        PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
-                        PuestoSeleccionada = oPuestoTrabajoBC.ObtenerPuestoidBC(IdPuesto);
-                        this.Close();
-                    }
-                    else
-                    {
-                        // Manejar el caso en que la conversión no fue exitosa.
-                        MessageBox.Show("La celda no contiene un valor válido para IdPuesto.");
-                    }
-                }
-                else
-                {
-                    // Manejar el caso en que el valor es nulo.
-                    MessageBox.Show("La celda está vacía.");
-                }
             }
             else
             {
-                MessageBox.Show("Aún no ha seleccionado ningún Puesto de Trabajo");
+                    // Manejar el caso en que el valor es nulo.
+                    MessageBox.Show("No se ha Seleccionado Ninguna Fila");
             }
         }
+
+        }
     }
-}
+

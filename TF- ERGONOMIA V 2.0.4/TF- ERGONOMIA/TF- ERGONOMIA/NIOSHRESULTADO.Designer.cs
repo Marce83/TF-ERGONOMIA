@@ -83,16 +83,10 @@
             this.txtriesgoniosh = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.btnRestaurar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.userlabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.userlabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.BarraTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,11 +112,12 @@
             this.txtEmpleadoNiosh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtEmpleadoNiosh.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtEmpleadoNiosh.Depth = 0;
+            this.txtEmpleadoNiosh.Enabled = false;
             this.txtEmpleadoNiosh.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtEmpleadoNiosh.HideSelection = true;
             this.txtEmpleadoNiosh.LeadingIcon = null;
             this.txtEmpleadoNiosh.Location = new System.Drawing.Point(567, 64);
-            this.txtEmpleadoNiosh.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmpleadoNiosh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmpleadoNiosh.MaxLength = 32767;
             this.txtEmpleadoNiosh.MouseState = MaterialSkin.MouseState.OUT;
             this.txtEmpleadoNiosh.Name = "txtEmpleadoNiosh";
@@ -163,11 +158,12 @@
             this.txtEmpresaNiosh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtEmpresaNiosh.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtEmpresaNiosh.Depth = 0;
+            this.txtEmpresaNiosh.Enabled = false;
             this.txtEmpresaNiosh.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtEmpresaNiosh.HideSelection = true;
             this.txtEmpresaNiosh.LeadingIcon = null;
             this.txtEmpresaNiosh.Location = new System.Drawing.Point(136, 115);
-            this.txtEmpresaNiosh.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmpresaNiosh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmpresaNiosh.MaxLength = 32767;
             this.txtEmpresaNiosh.MouseState = MaterialSkin.MouseState.OUT;
             this.txtEmpresaNiosh.Name = "txtEmpresaNiosh";
@@ -208,11 +204,12 @@
             this.txtpuestotrabajoNiosh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtpuestotrabajoNiosh.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtpuestotrabajoNiosh.Depth = 0;
+            this.txtpuestotrabajoNiosh.Enabled = false;
             this.txtpuestotrabajoNiosh.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtpuestotrabajoNiosh.HideSelection = true;
             this.txtpuestotrabajoNiosh.LeadingIcon = null;
             this.txtpuestotrabajoNiosh.Location = new System.Drawing.Point(567, 115);
-            this.txtpuestotrabajoNiosh.Margin = new System.Windows.Forms.Padding(2);
+            this.txtpuestotrabajoNiosh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtpuestotrabajoNiosh.MaxLength = 32767;
             this.txtpuestotrabajoNiosh.MouseState = MaterialSkin.MouseState.OUT;
             this.txtpuestotrabajoNiosh.Name = "txtpuestotrabajoNiosh";
@@ -253,11 +250,12 @@
             this.txtCuit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtCuit.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCuit.Depth = 0;
+            this.txtCuit.Enabled = false;
             this.txtCuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCuit.HideSelection = true;
             this.txtCuit.LeadingIcon = null;
             this.txtCuit.Location = new System.Drawing.Point(136, 64);
-            this.txtCuit.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCuit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCuit.MaxLength = 32767;
             this.txtCuit.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCuit.Name = "txtCuit";
@@ -297,7 +295,7 @@
             // 
             this.txtcargaidrebaresultado.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtcargaidrebaresultado.Location = new System.Drawing.Point(751, 308);
-            this.txtcargaidrebaresultado.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcargaidrebaresultado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtcargaidrebaresultado.Name = "txtcargaidrebaresultado";
             this.txtcargaidrebaresultado.Size = new System.Drawing.Size(76, 20);
             this.txtcargaidrebaresultado.TabIndex = 202;
@@ -316,7 +314,7 @@
             this.txtLC.HideSelection = true;
             this.txtLC.LeadingIcon = null;
             this.txtLC.Location = new System.Drawing.Point(547, 285);
-            this.txtLC.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLC.MaxLength = 32767;
             this.txtLC.MouseState = MaterialSkin.MouseState.OUT;
             this.txtLC.Name = "txtLC";
@@ -373,7 +371,7 @@
             this.txtILNIOSH.HideSelection = true;
             this.txtILNIOSH.LeadingIcon = null;
             this.txtILNIOSH.Location = new System.Drawing.Point(254, 512);
-            this.txtILNIOSH.Margin = new System.Windows.Forms.Padding(2);
+            this.txtILNIOSH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtILNIOSH.MaxLength = 32767;
             this.txtILNIOSH.MouseState = MaterialSkin.MouseState.OUT;
             this.txtILNIOSH.Name = "txtILNIOSH";
@@ -424,7 +422,7 @@
             this.txtActuacionNIOSH.Enabled = false;
             this.txtActuacionNIOSH.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtActuacionNIOSH.Location = new System.Drawing.Point(24, 665);
-            this.txtActuacionNIOSH.Margin = new System.Windows.Forms.Padding(2);
+            this.txtActuacionNIOSH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtActuacionNIOSH.Multiline = true;
             this.txtActuacionNIOSH.Name = "txtActuacionNIOSH";
             this.txtActuacionNIOSH.Size = new System.Drawing.Size(802, 103);
@@ -457,7 +455,7 @@
             this.txtHMD.LeadingIcon = null;
             this.txtHMD.LeaveOnEnterKey = true;
             this.txtHMD.Location = new System.Drawing.Point(98, 233);
-            this.txtHMD.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHMD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHMD.MaxLength = 32767;
             this.txtHMD.MouseState = MaterialSkin.MouseState.OUT;
             this.txtHMD.Name = "txtHMD";
@@ -503,7 +501,7 @@
             this.txtHMI.LeadingIcon = null;
             this.txtHMI.LeaveOnEnterKey = true;
             this.txtHMI.Location = new System.Drawing.Point(98, 287);
-            this.txtHMI.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHMI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHMI.MaxLength = 32767;
             this.txtHMI.MouseState = MaterialSkin.MouseState.OUT;
             this.txtHMI.Name = "txtHMI";
@@ -549,7 +547,7 @@
             this.txtDM.LeadingIcon = null;
             this.txtDM.LeaveOnEnterKey = true;
             this.txtDM.Location = new System.Drawing.Point(98, 339);
-            this.txtDM.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDM.MaxLength = 32767;
             this.txtDM.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDM.Name = "txtDM";
@@ -595,7 +593,7 @@
             this.txtAMI.LeadingIcon = null;
             this.txtAMI.LeaveOnEnterKey = true;
             this.txtAMI.Location = new System.Drawing.Point(321, 285);
-            this.txtAMI.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAMI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAMI.MaxLength = 32767;
             this.txtAMI.MouseState = MaterialSkin.MouseState.OUT;
             this.txtAMI.Name = "txtAMI";
@@ -641,7 +639,7 @@
             this.txtAMD.LeadingIcon = null;
             this.txtAMD.LeaveOnEnterKey = true;
             this.txtAMD.Location = new System.Drawing.Point(321, 233);
-            this.txtAMD.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAMD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAMD.MaxLength = 32767;
             this.txtAMD.MouseState = MaterialSkin.MouseState.OUT;
             this.txtAMD.Name = "txtAMD";
@@ -687,7 +685,7 @@
             this.txtFMD.LeadingIcon = null;
             this.txtFMD.LeaveOnEnterKey = true;
             this.txtFMD.Location = new System.Drawing.Point(321, 339);
-            this.txtFMD.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFMD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFMD.MaxLength = 32767;
             this.txtFMD.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFMD.Name = "txtFMD";
@@ -733,7 +731,7 @@
             this.txtCMI.LeadingIcon = null;
             this.txtCMI.LeaveOnEnterKey = true;
             this.txtCMI.Location = new System.Drawing.Point(547, 233);
-            this.txtCMI.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCMI.MaxLength = 32767;
             this.txtCMI.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCMI.Name = "txtCMI";
@@ -779,7 +777,7 @@
             this.txtCMD.LeadingIcon = null;
             this.txtCMD.LeaveOnEnterKey = true;
             this.txtCMD.Location = new System.Drawing.Point(321, 442);
-            this.txtCMD.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCMD.MaxLength = 32767;
             this.txtCMD.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCMD.Name = "txtCMD";
@@ -825,7 +823,7 @@
             this.txtVMD.LeadingIcon = null;
             this.txtVMD.LeaveOnEnterKey = true;
             this.txtVMD.Location = new System.Drawing.Point(98, 388);
-            this.txtVMD.Margin = new System.Windows.Forms.Padding(2);
+            this.txtVMD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtVMD.MaxLength = 32767;
             this.txtVMD.MouseState = MaterialSkin.MouseState.OUT;
             this.txtVMD.Name = "txtVMD";
@@ -871,7 +869,7 @@
             this.txtVMI.LeadingIcon = null;
             this.txtVMI.LeaveOnEnterKey = true;
             this.txtVMI.Location = new System.Drawing.Point(98, 442);
-            this.txtVMI.Margin = new System.Windows.Forms.Padding(2);
+            this.txtVMI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtVMI.MaxLength = 32767;
             this.txtVMI.MouseState = MaterialSkin.MouseState.OUT;
             this.txtVMI.Name = "txtVMI";
@@ -917,7 +915,7 @@
             this.txtFMI.LeadingIcon = null;
             this.txtFMI.LeaveOnEnterKey = true;
             this.txtFMI.Location = new System.Drawing.Point(321, 388);
-            this.txtFMI.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFMI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFMI.MaxLength = 32767;
             this.txtFMI.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFMI.Name = "txtFMI";
@@ -966,7 +964,7 @@
             this.cboPoblacion.Items.AddRange(new object[] {
             "Seleccionar"});
             this.cboPoblacion.Location = new System.Drawing.Point(136, 174);
-            this.cboPoblacion.Margin = new System.Windows.Forms.Padding(2);
+            this.cboPoblacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboPoblacion.MaxDropDownItems = 4;
             this.cboPoblacion.MouseState = MaterialSkin.MouseState.OUT;
             this.cboPoblacion.Name = "cboPoblacion";
@@ -989,7 +987,7 @@
             this.txtPoblacion.LeadingIcon = null;
             this.txtPoblacion.LeaveOnEnterKey = true;
             this.txtPoblacion.Location = new System.Drawing.Point(547, 442);
-            this.txtPoblacion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPoblacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPoblacion.MaxLength = 32767;
             this.txtPoblacion.MouseState = MaterialSkin.MouseState.OUT;
             this.txtPoblacion.Name = "txtPoblacion";
@@ -1021,7 +1019,7 @@
             this.txtLPRD.HideSelection = true;
             this.txtLPRD.LeadingIcon = null;
             this.txtLPRD.Location = new System.Drawing.Point(547, 339);
-            this.txtLPRD.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLPRD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLPRD.MaxLength = 32767;
             this.txtLPRD.MouseState = MaterialSkin.MouseState.OUT;
             this.txtLPRD.Name = "txtLPRD";
@@ -1066,7 +1064,7 @@
             this.txtLPRI.HideSelection = true;
             this.txtLPRI.LeadingIcon = null;
             this.txtLPRI.Location = new System.Drawing.Point(547, 388);
-            this.txtLPRI.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLPRI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLPRI.MaxLength = 32767;
             this.txtLPRI.MouseState = MaterialSkin.MouseState.OUT;
             this.txtLPRI.Name = "txtLPRI";
@@ -1128,7 +1126,7 @@
             this.cboControl.Items.AddRange(new object[] {
             "Seleccionar"});
             this.cboControl.Location = new System.Drawing.Point(482, 174);
-            this.cboControl.Margin = new System.Windows.Forms.Padding(2);
+            this.cboControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboControl.MaxDropDownItems = 4;
             this.cboControl.MouseState = MaterialSkin.MouseState.OUT;
             this.cboControl.Name = "cboControl";
@@ -1196,7 +1194,7 @@
             this.txtriesgoniosh.HideSelection = true;
             this.txtriesgoniosh.LeadingIcon = null;
             this.txtriesgoniosh.Location = new System.Drawing.Point(254, 575);
-            this.txtriesgoniosh.Margin = new System.Windows.Forms.Padding(2);
+            this.txtriesgoniosh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtriesgoniosh.MaxLength = 32767;
             this.txtriesgoniosh.MouseState = MaterialSkin.MouseState.OUT;
             this.txtriesgoniosh.Name = "txtriesgoniosh";
@@ -1231,9 +1229,6 @@
             // BarraTitulo
             // 
             this.BarraTitulo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BarraTitulo.Controls.Add(this.btnRestaurar);
-            this.BarraTitulo.Controls.Add(this.btnMinimizar);
-            this.BarraTitulo.Controls.Add(this.btnMaximizar);
             this.BarraTitulo.Controls.Add(this.pictureBox3);
             this.BarraTitulo.Controls.Add(this.label1);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1242,56 +1237,13 @@
             this.BarraTitulo.Size = new System.Drawing.Size(963, 53);
             this.BarraTitulo.TabIndex = 341;
             // 
-            // btnRestaurar
-            // 
-            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRestaurar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(898, 14);
-            this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
-            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRestaurar.TabIndex = 2;
-            this.btnRestaurar.TabStop = false;
-            this.btnRestaurar.Visible = false;
-            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
-            this.btnRestaurar.DoubleClick += new System.EventHandler(this.btnMaximizar_Click);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(867, 14);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 1;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximizar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(898, 14);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
-            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizar.TabIndex = 1;
-            this.btnMaximizar.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(929, 14);
+            this.pictureBox3.Location = new System.Drawing.Point(930, 14);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1389,16 +1341,13 @@
             this.Controls.Add(this.materialLabel11);
             this.Controls.Add(this.txtCuit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "NIOSHRESULTADO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Load += new System.EventHandler(this.NIOSHRESULTADO_Load);
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1461,9 +1410,6 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtriesgoniosh;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
         private System.Windows.Forms.Panel BarraTitulo;
-        private System.Windows.Forms.PictureBox btnRestaurar;
-        private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private MaterialSkin.Controls.MaterialLabel userlabel2;
         private MaterialSkin.Controls.MaterialLabel userlabel1;
