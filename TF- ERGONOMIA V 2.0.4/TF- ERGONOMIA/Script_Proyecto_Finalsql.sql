@@ -178,10 +178,8 @@ go
 CREATE OR ALTER PROCEDURE SP_Empresas_GetAll
 AS
 BEGIN
-	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion) Dirección, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
-	WHERE FechaEgreso IS NULL
-	AND	Estado = 'A'
 END
 GO
 
@@ -192,7 +190,7 @@ CREATE OR ALTER PROCEDURE SP_Empresas_GetId
 @CUIT nvarchar(11)
 AS
 BEGIN
-	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion), Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
 	WHERE CUIT LIKE '%'+@CUIT+'%'
 END
@@ -202,7 +200,7 @@ CREATE OR ALTER PROCEDURE [dbo].[SP_Nombre_Empresa]
 @Nombre nvarchar(30)
 AS
 BEGIN
-	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion), Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
 	WHERE Nombre LIKE '%'+@Nombre+'%'
 END
@@ -222,11 +220,10 @@ GO
 CREATE OR ALTER PROCEDURE SP_Empleados_GetAll
 AS
 BEGIN
-	SELECT UPPER(Em.Nombre) Nombre, UPPER(Em.Apellido) Apellido, Em.DNI, UPPER(Em.Genero) Genero, Em.Peso, Em.Altura, Em.FechaNacimiento 'Fecha de Nacimiento', Em.FechaIngreso 'Fecha de Ingreso', Em.Estado, UPPER(empr.Nombre) Empresa, empr.CUIT
-	FROM dbo.Empleados Em
-	INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
-	WHERE Em.FechaEgreso IS NULL
-	AND Em.Estado = 'A'
+	SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
+	FROM Empleados
+	WHERE FechaEgreso IS NULL
+	AND Estado = 'A'
 END
 GO
 
@@ -259,7 +256,7 @@ CREATE OR ALTER PROCEDURE SP_Empleados_DNI
 @DNI nvarchar(8)
 AS
 BEGIN
-	SELECT UPPER(Nombre)Nombre, UPPER(Apellido) Apellido, DNI, UPPER(Genero) Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empleados
 	WHERE DNI LIKE '%'+@DNI+'%'
 END
@@ -274,13 +271,11 @@ CREATE OR ALTER PROCEDURE SP_Empleados_Update
 @Genero nvarchar(20),
 @Peso float,
 @Altura float,
-@FechaNacimiento DATE,
-@FechaIngreso DATE,
-@IdEmpresa INT
+@FechaNacimiento DATE
 
 AS
 BEGIN
-	update Empleados set Nombre=@Nombre, Apellido=@Apellido, DNI=@DNI ,Genero=@Genero, Peso=@Peso, Altura=@Altura, FechaNacimiento=@FechaNacimiento, FechaIngreso=@FechaIngreso, IdEmpresa =@IdEmpresa
+	update Empleados set Nombre=@Nombre, Apellido=@Apellido, DNI=@DNI ,Genero=@Genero, Peso=@Peso, Altura=@Altura, FechaNacimiento=@FechaNacimiento
 	where DNI=@DNI
 END
 GO
@@ -302,190 +297,28 @@ GO
 
 use ProyectoFinal
 go
-CREATE OR ALTER	PROCEDURE SP_Empleados_GetId
+CREATE PROCEDURE SP_Empleados_GetId
 @DNI nvarchar(8)
 AS
 BEGIN
-	--SELECT IdEmpleado, Nombre, Apellido, DNI, Genero
-	--FROM Empleados
-	--WHERE DNI = @DNI
-	SELECT E.IdEmpleado, E.Nombre, E.Apellido, E.DNI, E.Genero, PT.NombrePuesto
-	FROM Empleados E 
-	JOIN  PuestoEmpleado PE ON E.IdEmpleado = PE.IdEmpleado 
-	JOIN PuestoDeTrabajo PT ON PE.IdPuesto = PT.IdPuesto
-	WHERE E.DNI LIKE '%'+@DNI+'%'
-END
-GO
-
---------------------------------------------------------------------PUESTO DE TRABAJO--------------------------------------------------
-use ProyectoFinal
-go
-CREATE TABLE PuestoDeTrabajo(
-IdPuesto INT NOT NULL PRIMARY KEY IDENTITY(1,1),
-NombrePuesto NVARCHAR(20),
-AreaEmpresa NVARCHAR(20))
-GO
-
-use ProyectoFinal
-go
-CREATE OR ALTER PROCEDURE SP_PuestoTrabajo_Insert
-@NombrePuesto NVARCHAR(20),
-@AreaEmpresa NVARCHAR(20)
-AS
-BEGIN
-insert into PuestoDeTrabajo (NombrePuesto,AreaEmpresa) values (@NombrePuesto,@AreaEmpresa)
+	SELECT Nombre, Apellido, DNI, Genero, PuestoDeTrabajo
+	FROM Empleados
+	WHERE DNI = @DNI
 END
 GO
 
 
 use ProyectoFinal
 go
-CREATE OR ALTER PROCEDURE SP_PuestoTrabajo_GetAll
+CREATE PROCEDURE SP_Empleados_Puestotrabajo
+@DNI nvarchar(8)
 AS
 BEGIN
-Select * from PuestoDeTrabajo
+	SELECT PuestoDeTrabajo
+	FROM Empleados
+	WHERE DNI = @DNI
 END
 GO
-
-
-USE ProyectoFinal;
-GO
-
-CREATE OR ALTER PROCEDURE SP_PuestoTrabajo_GetId
-    @IdPuesto INT
-AS
-BEGIN
-    SELECT IdPuesto, NombrePuesto, AreaEmpresa
-    FROM PuestoDeTrabajo
-    WHERE IdPuesto = @IdPuesto;
-END
-GO
-
-
-use ProyectoFinal
-go
-create table PuestoEmpleado (
-Idpuestoempleado INT NOT NULL PRIMARY KEY IDENTITY(1,1),
-IdEmpleado int,
-IdPuesto int,
-FechaIngreso date,
-FechaEgreso date)
-GO
-
-
-use ProyectoFinal
-go
-CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_Insert
-@IdEmpleado int,
-@IdPuesto int,
-@FechaIngreso date
-AS
-BEGIN
-insert into PuestoEmpleado (IdEmpleado,IdPuesto,FechaIngreso) values (@IdEmpleado,@IdPuesto,@FechaIngreso)
-END
-GO
-
-use ProyectoFinal
-go
-CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_Update
-@IdEmpleado int,
-@FechaEgreso date
-AS
-BEGIN
-	update PuestoEmpleado set FechaEgreso=@FechaEgreso
-	WHERE idempleado = @idempleado
-END
-GO
-
-USE ProyectoFinal;
-GO
-CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_GetAll_SiNo
-    @IdEmpleado INT,
-    @IdPuesto INT
-AS
-BEGIN
-    SELECT TOP 1 1 AS ExisteMovimiento
-    FROM PuestoEmpleado
-    WHERE IdEmpleado = @IdEmpleado AND IdPuesto = @IdPuesto;
-END
-GO
-
-USE ProyectoFinal;
-GO
-CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_GetAll_Visor
-    @IdEmpleado INT,
-    @IdPuesto INT
-AS
-BEGIN
-    SELECT TOP 1 1 AS ExisteMovimiento
-    FROM PuestoEmpleado
-    WHERE IdEmpleado = @IdEmpleado AND IdPuesto = @IdPuesto;
-END
-GO
-
-USE ProyectoFinal;
-GO
-CREATE VIEW VistaEmpleadosPuestos AS
-SELECT
-    E.Nombre + ' ' + E.Apellido AS NombreEmpleado,
-    E.DNI AS DNI,
-    PT.NombrePuesto AS NombrePuesto,
-    PE.FechaIngreso AS FechaIngreso,
-    PE.FechaEgreso AS FechaEgreso
-FROM
-    Empleados E
-    JOIN PuestoEmpleado PE ON E.IdEmpleado = PE.IdEmpleado
-    JOIN PuestoDeTrabajo PT ON PE.IdPuesto = PT.IdPuesto;
-GO
-
-
-USE ProyectoFinal;
-GO
-CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_VerVista
-AS
-BEGIN
-    SELECT * FROM VistaEmpleadosPuestos where FechaEgreso is NULL  ORDER BY FechaIngreso DESC;
-END
-GO
-
-USE ProyectoFinal;
-GO
-CREATE OR ALTER PROCEDURE SP_VistaPuesto_GetNombreEmpleado
-    @NombreEmpleado nvarchar (20)
-AS
-BEGIN
-    SELECT NombreEmpleado, NombrePuesto,DNI
-    FROM VistaEmpleadosPuestos
-END
-GO
-
-
-USE ProyectoFinal;
-GO
-CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_VerReciente
-@FechaIngreso DATE,
-@FechaIngreso2 DATE,
-@NombreEmpleado NVARCHAR(40)
-AS
-BEGIN
-    SELECT * FROM VistaEmpleadosPuestos
-    WHERE (FechaIngreso BETWEEN @FechaIngreso AND @FechaIngreso2)
-    AND (NombreEmpleado LIKE '%' + @NombreEmpleado + '%' OR @NombreEmpleado IS NULL)
-    ORDER BY FechaIngreso DESC;
-END
-GO
-
---use ProyectoFinal
---go
---CREATE PROCEDURE SP_Empleados_Puestotrabajo
---@DNI nvarchar(8)
---AS
---BEGIN
---	SELECT PuestoDeTrabajo
---	FROM Empleados
---	WHERE DNI = @DNI
---END
---GO
 
 ---------------METODO DE ANALISIS RULA ------------------------- 
 
