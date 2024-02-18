@@ -35,28 +35,6 @@ namespace TF.WIN
                 txtNombrePuesto.Text = oFrm.PuestoSeleccionada.NombrePuesto.ToString();
             }
         }
-        private void btnBuscarPuesto2_Click(object sender, EventArgs e)
-        {
-            FrmBuscarPuestoTrabajo oFrm = new FrmBuscarPuestoTrabajo();
-            oFrm.ShowDialog();
-
-            if (oFrm.PuestoSeleccionada != null)
-            {
-                txtIdPuestoTrabajo2.Text = oFrm.PuestoSeleccionada.IdPuesto.ToString();
-                txtNombrePuesto2.Text = oFrm.PuestoSeleccionada.NombrePuesto.ToString();
-            }
-        }
-        private void btnBuscarPuesto3_Click(object sender, EventArgs e)
-        {
-            FrmBuscarPuestoTrabajo oFrm = new FrmBuscarPuestoTrabajo();
-            oFrm.ShowDialog();
-
-            if (oFrm.PuestoSeleccionada != null)
-            {
-                txtIdPuestoTrabajo3.Text = oFrm.PuestoSeleccionada.IdPuesto.ToString();
-                txtNombrePuesto3.Text = oFrm.PuestoSeleccionada.NombrePuesto.ToString();
-            }
-        }
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
             frmBuscarEmpleados oFrm = new frmBuscarEmpleados();
@@ -76,8 +54,6 @@ namespace TF.WIN
                 try
                 {
                     Carga1();
-                    Carga2();
-                    Carga3();
                     MessageBox.Show("Asociación Realizada con éxito");
                   
                 }
@@ -117,65 +93,6 @@ namespace TF.WIN
 
 
         }
-        private void Carga2()
-
-        {
-
-            try
-            {
-                PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
-                PuestoTrabajo oPuestoTrabajo = new PuestoTrabajo();
-                oPuestoTrabajo.IdEmpleado = int.Parse(txtIdEmpleado.Text);
-                oPuestoTrabajo.IdPuesto = int.Parse(txtIdPuestoTrabajo2.Text);
-
-                // Realizar inserción
-                oPuestoTrabajo.FechaIngreso = DateTime.Parse(DtpFechaIngreso.Text);
-                var res = oPuestoTrabajoBC.InsertPuestoEmpleadoBC(oPuestoTrabajo);
-                MessageBox.Show("Asociación Realizada con éxito");
-
-            }
-            catch (Exception ex)
-            {
-                // Manejar excepciones de manera apropiada
-                MessageBox.Show($"Error: {ex.Message}");
-            }
-
-
-
-
-
-
-        }
-        private void Carga3()
-
-        {
-
-            try
-            {
-                PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
-                PuestoTrabajo oPuestoTrabajo = new PuestoTrabajo();
-                oPuestoTrabajo.IdEmpleado = int.Parse(txtIdEmpleado.Text);
-                oPuestoTrabajo.IdPuesto = int.Parse(txtIdPuestoTrabajo3.Text);
-
-                // Realizar inserción
-                oPuestoTrabajo.FechaIngreso = DateTime.Parse(DtpFechaIngreso.Text);
-                var res = oPuestoTrabajoBC.InsertPuestoEmpleadoBC(oPuestoTrabajo);
-                MessageBox.Show("Asociación Realizada con éxito");
-
-            }
-            catch (Exception ex)
-            {
-                // Manejar excepciones de manera apropiada
-                MessageBox.Show($"Error: {ex.Message}");
-            }
-
-
-
-
-
-
-        }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
