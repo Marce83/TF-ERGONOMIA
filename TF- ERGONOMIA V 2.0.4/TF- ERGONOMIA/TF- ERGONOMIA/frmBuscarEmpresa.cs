@@ -18,47 +18,17 @@ namespace TF.WIN
         {
             InitializeComponent();
         }
-        
-        Empresas oBe = new Empresas();
-        public Empresas EmpresaSeleccionada { get; set; }
 
-        private void txtBuscador_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (cboBuscadorDinamico.Text == "CUIT")
-            {
-                if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-                    e.Handled = true;
-            }
-            else
-            {
-                if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space))
-                    e.Handled = true;
-            }
-        }
+        public Empresas EmpresaSeleccionada { get; set; }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            if (cboBuscadorDinamico.Text == "CUIT")
-            {               
-                oBe.CUIT = txtBuscador.Text;
-                EmpresasBC oEmpresasBC = new EmpresasBC();
-                DataTable dt = oEmpresasBC.ConsultarEmpresas(oBe);
-                dgvResultado.DataSource = null;
-                dgvResultado.DataSource = dt;
-            }
-            else
-                if (cboBuscadorDinamico.Text == "Razón Social")
-                    {
-                        oBe.Nombre = txtBuscador.Text;
-                        EmpresasBC oEmpresasBC = new EmpresasBC();
-                        DataTable dt = oEmpresasBC.ConsultarNombreEmpresa(oBe);
-                        dgvResultado.DataSource = null;
-                        dgvResultado.DataSource = dt;
-                    }
-            if (txtBuscador.Text == String.Empty)
-            {
-                Listar();
-            }
+            Empresas oBe = new Empresas();
+            oBe.CUIT = txtCUITEmpresa.Text;
+            EmpresasBC oEmpresasBC = new EmpresasBC();
+            DataTable dt = oEmpresasBC.ConsultarEmpresas(oBe);
+            dgvResultado.DataSource = null;
+            dgvResultado.DataSource = dt;
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -104,5 +74,9 @@ namespace TF.WIN
                 MessageBox.Show(ex.Message);
             }
         }
+
+
+
+
     }
 }
