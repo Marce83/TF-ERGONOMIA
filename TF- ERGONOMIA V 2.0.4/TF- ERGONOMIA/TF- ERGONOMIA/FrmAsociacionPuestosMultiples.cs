@@ -65,7 +65,6 @@ namespace TF.WIN
             }
         }
         private void Carga1()
-
         {
 
             try
@@ -78,7 +77,6 @@ namespace TF.WIN
                 // Realizar inserción
                 oPuestoTrabajo.FechaIngreso = DateTime.Parse(DtpFechaIngreso.Text);
                 var res = oPuestoTrabajoBC.InsertPuestoEmpleadoBC(oPuestoTrabajo);
-                MessageBox.Show("Asociación Realizada con éxito");
 
             }
             catch (Exception ex)
@@ -86,12 +84,6 @@ namespace TF.WIN
                 // Manejar excepciones de manera apropiada
                 MessageBox.Show($"Error: {ex.Message}");
             }
-
-
-
-
-
-
         }
         private void btnSalir_Click(object sender, EventArgs e)
         {
