@@ -270,6 +270,11 @@
     <Compile Include="NIOSHRESULTADO.Designer.cs">
       <DependentUpon>NIOSHRESULTADO.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="PuestoTrabajoSeleccion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -440,14 +445,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="RULARESULTADO.resx">
       <DependentUpon>RULARESULTADO.cs</DependentUpon>
     </EmbeddedResource>
@@ -486,6 +486,7 @@
     <None Include="Resources\antebrazo.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\CarpetaIntegradoraAdmProy.pdf" />
     <None Include="Resources\puntuacion muneca.jpg" />
   </ItemGroup>
   <ItemGroup>

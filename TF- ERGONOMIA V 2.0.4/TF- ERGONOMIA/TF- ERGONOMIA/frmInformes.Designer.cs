@@ -32,7 +32,7 @@
             this.btnEstadisticageneral = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAdmProy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -98,22 +98,23 @@
             this.button2.Text = "PRUEBAS DE TESTING";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnAdmProy
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.BackColor = System.Drawing.Color.DarkViolet;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(194, 341);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(294, 71);
-            this.button3.TabIndex = 75;
-            this.button3.Text = "ADMINISTRACION DE SISTEMAS";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAdmProy.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnAdmProy.BackColor = System.Drawing.Color.DarkViolet;
+            this.btnAdmProy.FlatAppearance.BorderSize = 0;
+            this.btnAdmProy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnAdmProy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdmProy.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAdmProy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdmProy.Location = new System.Drawing.Point(194, 341);
+            this.btnAdmProy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdmProy.Name = "btnAdmProy";
+            this.btnAdmProy.Size = new System.Drawing.Size(294, 71);
+            this.btnAdmProy.TabIndex = 75;
+            this.btnAdmProy.Text = "ADMINISTRACION DE PROYECTOS";
+            this.btnAdmProy.UseVisualStyleBackColor = false;
+            this.btnAdmProy.Click += new System.EventHandler(this.btnAdmProy_Click);
             // 
             // frmInformes
             // 
@@ -122,7 +123,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(675, 448);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnAdmProy);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEstadisticageneral);
@@ -143,6 +144,6 @@
         private System.Windows.Forms.Button btnEstadisticageneral;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAdmProy;
     }
 }
