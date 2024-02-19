@@ -29,10 +29,10 @@ namespace TF.WIN
 
         private void txtBuscador_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(cboBuscadorDinamico.Text == "DNI")
+            if (cboBuscadorDinamico.Text == "DNI")
             {
                 if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-                        e.Handled = true;
+                    e.Handled = true;
             }
             else
             {
@@ -57,7 +57,7 @@ namespace TF.WIN
                     oempl.Nombre = txtBuscador.Text;
                     DataTable dtNom = oEmpleadosBC.ConsultarEmpleadosPorNombre(oempl);
                     dgvEmpleados.DataSource = null;
-                    dgvEmpleados .DataSource = dtNom;
+                    dgvEmpleados.DataSource = dtNom;
                     break;
                 case "Apellido":
                     oempl.Apellido = txtBuscador.Text;
@@ -66,7 +66,7 @@ namespace TF.WIN
                     dgvEmpleados.DataSource = dtApe;
                     break;
             }
-            if(txtBuscador == null)
+            if (txtBuscador == null)
             {
                 Listar();
             }
@@ -89,7 +89,10 @@ namespace TF.WIN
                     oBe.Peso = float.Parse(txtPeso.Text);
                     oBe.Altura = float.Parse(txtAltura.Text);
                     oBe.FechaNacimiento = Convert.ToDateTime(dtpNacimiento.Text);
-
+                    oBe.FechaIngreso = dtpIngreso.Value;
+                    long CUIL = Convert.ToInt64(txtCUITEncontrado.Text);
+                    var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIL);
+                    oBe.IdEmpresa = Convert.ToInt32(BuscarId);
                     var res = oEmpleadosBC.EmpleadosUpdate(oBe);
                     MessageBox.Show("Empleado modificado exitosamente");
                     Listar();
@@ -138,6 +141,9 @@ namespace TF.WIN
                 DataTable dt = oEmpleadosBC.EmpleadosBC_GetAll();
                 dgvEmpleados.DataSource = null;
                 dgvEmpleados.DataSource = dt;
+                dgvEmpleados.Columns["Apellido"].DisplayIndex = 0;
+                dgvEmpleados.Columns["Nombre"].DisplayIndex = 1;
+                dgvEmpleados.Columns[10].Visible = false;
             }
             catch (Exception ex)
             {
@@ -158,7 +164,12 @@ namespace TF.WIN
             txtPeso.Text = string.Empty;
             txtAltura.Text = string.Empty;
             txtCUITEncontrado.Text = string.Empty;
-            //txtDNI.Focus();
+            txtNomEmp.Text = string.Empty;
+
+        }
+
+        private void btnBuscarCUIT_Click(object sender, EventArgs e)
+        {
 
         }
 
@@ -173,6 +184,10 @@ namespace TF.WIN
             txtAltura.Text = dgvEmpleados.CurrentRow.Cells[5].Value.ToString();
             dtpNacimiento.Text = dgvEmpleados.CurrentRow.Cells[6].Value.ToString();
             dtpIngreso.Text = dgvEmpleados.CurrentRow.Cells[7].Value.ToString();
+            txtNomEmp.Text = dgvEmpleados.CurrentRow.Cells[9].Value.ToString();
+            txtCUITEncontrado.Text = dgvEmpleados.CurrentRow.Cells[10].Value.ToString();
+            dgvEmpleados.Columns[10].Visible = false;
+            //txtNomEmp.Text = dgvEmpleados.CurrentRow.Cells[9].Value.ToString();
             //dtpIngreso.Enabled = false;
         }
 
