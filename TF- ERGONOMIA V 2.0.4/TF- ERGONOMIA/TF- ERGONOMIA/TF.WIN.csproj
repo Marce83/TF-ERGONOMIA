@@ -204,54 +204,6 @@
     <Compile Include="FrmSTATGgrafico5.Designer.cs">
       <DependentUpon>FrmSTATGgrafico5.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSTATPgrafico1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico1.Designer.cs">
-      <DependentUpon>FrmSTATPgrafico1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico2.Designer.cs">
-      <DependentUpon>FrmSTATPgrafico2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico3.Designer.cs">
-      <DependentUpon>FrmSTATPgrafico3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico4.Designer.cs">
-      <DependentUpon>FrmSTATPgrafico4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico5.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico5.Designer.cs">
-      <DependentUpon>FrmSTATPgrafico5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico6.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico6.Designer.cs">
-      <DependentUpon>FrmSTATPgrafico6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico7.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico7.Designer.cs">
-      <DependentUpon>FrmSTATPgrafico7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico8.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSTATPgrafico8.Designer.cs">
-      <DependentUpon>FrmSTATPgrafico8.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmVistaPuestoEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -434,30 +386,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSTATGgrafico5.resx">
       <DependentUpon>FrmSTATGgrafico5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSTATPgrafico1.resx">
-      <DependentUpon>FrmSTATPgrafico1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSTATPgrafico2.resx">
-      <DependentUpon>FrmSTATPgrafico2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSTATPgrafico3.resx">
-      <DependentUpon>FrmSTATPgrafico3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSTATPgrafico4.resx">
-      <DependentUpon>FrmSTATPgrafico4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSTATPgrafico5.resx">
-      <DependentUpon>FrmSTATPgrafico5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSTATPgrafico6.resx">
-      <DependentUpon>FrmSTATPgrafico6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSTATPgrafico7.resx">
-      <DependentUpon>FrmSTATPgrafico7.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSTATPgrafico8.resx">
-      <DependentUpon>FrmSTATPgrafico8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVistaPuestoEmpleado.resx">
       <DependentUpon>FrmVistaPuestoEmpleado.cs</DependentUpon>
