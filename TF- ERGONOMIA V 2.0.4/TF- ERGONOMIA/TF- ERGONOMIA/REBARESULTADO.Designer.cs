@@ -190,7 +190,7 @@
             this.txtagarrereba.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtagarrereba.LeadingIcon = null;
             this.txtagarrereba.Location = new System.Drawing.Point(831, 585);
-            this.txtagarrereba.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtagarrereba.Margin = new System.Windows.Forms.Padding(4);
             this.txtagarrereba.MaxLength = 50;
             this.txtagarrereba.MouseState = MaterialSkin.MouseState.OUT;
             this.txtagarrereba.Multiline = false;
@@ -211,7 +211,7 @@
             this.btnRecuperarCarga.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnRecuperarCarga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecuperarCarga.Location = new System.Drawing.Point(1059, 393);
-            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecuperarCarga.Name = "btnRecuperarCarga";
             this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 59);
             this.btnRecuperarCarga.TabIndex = 170;
@@ -630,7 +630,7 @@
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.Location = new System.Drawing.Point(1059, 585);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(155, 62);
             this.btnSalir.TabIndex = 214;
@@ -648,7 +648,7 @@
             this.btnobtenerinforme.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnobtenerinforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnobtenerinforme.Location = new System.Drawing.Point(1059, 516);
-            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4);
             this.btnobtenerinforme.Name = "btnobtenerinforme";
             this.btnobtenerinforme.Size = new System.Drawing.Size(155, 64);
             this.btnobtenerinforme.TabIndex = 212;
@@ -1120,7 +1120,7 @@
             this.BarraTitulo.Controls.Add(this.label1);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1318, 65);
             this.BarraTitulo.TabIndex = 343;
@@ -1132,7 +1132,7 @@
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(1274, 17);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(33, 31);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

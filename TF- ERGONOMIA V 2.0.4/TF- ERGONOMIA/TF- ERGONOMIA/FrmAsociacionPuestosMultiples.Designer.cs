@@ -54,6 +54,7 @@
             // 
             // DtpFechaEgreso
             // 
+            this.DtpFechaEgreso.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.DtpFechaEgreso.Enabled = false;
             this.DtpFechaEgreso.Location = new System.Drawing.Point(279, 291);
             this.DtpFechaEgreso.Margin = new System.Windows.Forms.Padding(4);
@@ -63,6 +64,7 @@
             // 
             // DtpFechaIngreso
             // 
+            this.DtpFechaIngreso.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.DtpFechaIngreso.Enabled = false;
             this.DtpFechaIngreso.Location = new System.Drawing.Point(279, 231);
             this.DtpFechaIngreso.Margin = new System.Windows.Forms.Padding(4);
@@ -72,6 +74,7 @@
             // 
             // materialLabel1
             // 
+            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel1.Depth = 0;
@@ -85,6 +88,7 @@
             // 
             // materialLabel5
             // 
+            this.materialLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel5.Depth = 0;
@@ -98,6 +102,7 @@
             // 
             // materialLabel3
             // 
+            this.materialLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel3.Depth = 0;
@@ -111,6 +116,7 @@
             // 
             // materialLabel2
             // 
+            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel2.Depth = 0;
@@ -124,6 +130,7 @@
             // 
             // txtNombreEmpleado
             // 
+            this.txtNombreEmpleado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombreEmpleado.AnimateReadOnly = false;
             this.txtNombreEmpleado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtNombreEmpleado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -183,6 +190,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -194,6 +202,7 @@
             // 
             // btnSalir
             // 
+            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -212,6 +221,7 @@
             // 
             // btnCargarPuesto
             // 
+            this.btnCargarPuesto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCargarPuesto.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnCargarPuesto.FlatAppearance.BorderSize = 0;
             this.btnCargarPuesto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -230,6 +240,7 @@
             // 
             // materialLabel4
             // 
+            this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel4.Depth = 0;
@@ -244,6 +255,7 @@
             // 
             // txtNombrePuesto
             // 
+            this.txtNombrePuesto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombrePuesto.AnimateReadOnly = false;
             this.txtNombrePuesto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtNombrePuesto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -275,6 +287,7 @@
             // 
             // btnBuscarEmpleados
             // 
+            this.btnBuscarEmpleados.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscarEmpleados.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscarEmpleados.FlatAppearance.BorderSize = 0;
             this.btnBuscarEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -292,6 +305,7 @@
             // 
             // txtIdEmpleado
             // 
+            this.txtIdEmpleado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtIdEmpleado.AnimateReadOnly = false;
             this.txtIdEmpleado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtIdEmpleado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -324,6 +338,7 @@
             // 
             // btnBuscarPuesto
             // 
+            this.btnBuscarPuesto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscarPuesto.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscarPuesto.FlatAppearance.BorderSize = 0;
             this.btnBuscarPuesto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -341,6 +356,7 @@
             // 
             // materialLabel11
             // 
+            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
@@ -355,6 +371,7 @@
             // 
             // txtIdPuestoTrabajo
             // 
+            this.txtIdPuestoTrabajo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtIdPuestoTrabajo.AnimateReadOnly = false;
             this.txtIdPuestoTrabajo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtIdPuestoTrabajo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;

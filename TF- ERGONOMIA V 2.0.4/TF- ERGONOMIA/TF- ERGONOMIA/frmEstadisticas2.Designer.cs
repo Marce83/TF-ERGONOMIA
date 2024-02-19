@@ -136,7 +136,7 @@
             // 
             this.FechaDesde.CustomFormat = "dd/mm/yyyy";
             this.FechaDesde.Location = new System.Drawing.Point(115, 188);
-            this.FechaDesde.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FechaDesde.Margin = new System.Windows.Forms.Padding(4);
             this.FechaDesde.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.FechaDesde.Name = "FechaDesde";
             this.FechaDesde.Size = new System.Drawing.Size(265, 22);
@@ -173,7 +173,7 @@
             // 
             this.FechaHasta.CustomFormat = "dd/mm/yyyy";
             this.FechaHasta.Location = new System.Drawing.Point(660, 183);
-            this.FechaHasta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FechaHasta.Margin = new System.Windows.Forms.Padding(4);
             this.FechaHasta.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.FechaHasta.Name = "FechaHasta";
             this.FechaHasta.Size = new System.Drawing.Size(265, 22);
@@ -191,7 +191,7 @@
             this.btnBuscarresultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarresultado.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnBuscarresultado.Location = new System.Drawing.Point(584, 247);
-            this.btnBuscarresultado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarresultado.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarresultado.Name = "btnBuscarresultado";
             this.btnBuscarresultado.Size = new System.Drawing.Size(429, 59);
             this.btnBuscarresultado.TabIndex = 59;
@@ -208,23 +208,26 @@
             this.chartPastelReba.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartPastelReba.Legends.Add(legend1);
-            this.chartPastelReba.Location = new System.Drawing.Point(29, 1195);
+            this.chartPastelReba.Location = new System.Drawing.Point(29, 1072);
             this.chartPastelReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPastelReba.Name = "chartPastelReba";
-            this.chartPastelReba.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.chartPastelReba.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.IsValueShownAsLabel = true;
+            series1.IsXValueIndexed = true;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartPastelReba.Series.Add(series1);
-            this.chartPastelReba.Size = new System.Drawing.Size(524, 420);
+            this.chartPastelReba.Size = new System.Drawing.Size(605, 305);
             this.chartPastelReba.TabIndex = 111;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel10.Controls.Add(this.label11);
-            this.panel10.Location = new System.Drawing.Point(29, 1132);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Location = new System.Drawing.Point(22, 997);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1383, 57);
             this.panel10.TabIndex = 110;
@@ -251,15 +254,16 @@
             this.ChartHistogramaRula2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.ChartHistogramaRula2.Legends.Add(legend2);
-            this.ChartHistogramaRula2.Location = new System.Drawing.Point(553, 741);
+            this.ChartHistogramaRula2.Location = new System.Drawing.Point(647, 740);
             this.ChartHistogramaRula2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartHistogramaRula2.Name = "ChartHistogramaRula2";
-            this.ChartHistogramaRula2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.ChartHistogramaRula2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series2.ChartArea = "ChartArea1";
+            series2.IsValueShownAsLabel = true;
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.ChartHistogramaRula2.Series.Add(series2);
-            this.ChartHistogramaRula2.Size = new System.Drawing.Size(859, 409);
+            this.ChartHistogramaRula2.Size = new System.Drawing.Size(685, 240);
             this.ChartHistogramaRula2.TabIndex = 109;
             // 
             // chartPastelRula
@@ -271,15 +275,19 @@
             this.chartPastelRula.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chartPastelRula.Legends.Add(legend3);
-            this.chartPastelRula.Location = new System.Drawing.Point(29, 741);
+            this.chartPastelRula.Location = new System.Drawing.Point(29, 740);
             this.chartPastelRula.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPastelRula.Name = "chartPastelRula";
             this.chartPastelRula.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.EmptyPointStyle.IsValueShownAsLabel = true;
+            series3.EmptyPointStyle.Label = "ZCXZCZXC";
+            series3.IsXValueIndexed = true;
             series3.Legend = "Legend1";
             series3.Name = "Series1";
             this.chartPastelRula.Series.Add(series3);
-            this.chartPastelRula.Size = new System.Drawing.Size(515, 410);
+            this.chartPastelRula.Size = new System.Drawing.Size(584, 240);
             this.chartPastelRula.TabIndex = 108;
             // 
             // panel9
@@ -289,7 +297,7 @@
             this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.TotalMetodoPerson);
             this.panel9.Location = new System.Drawing.Point(297, 325);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(259, 135);
             this.panel9.TabIndex = 103;
@@ -305,7 +313,7 @@
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.Location = new System.Drawing.Point(165, 4);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(91, 127);
             this.button5.TabIndex = 90;
@@ -340,7 +348,7 @@
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel8.Controls.Add(this.label7);
             this.panel8.Location = new System.Drawing.Point(29, 677);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1383, 57);
             this.panel8.TabIndex = 101;
@@ -365,7 +373,7 @@
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.txtjsscont);
             this.panel5.Location = new System.Drawing.Point(809, 533);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(259, 135);
             this.panel5.TabIndex = 107;
@@ -382,7 +390,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button3.Location = new System.Drawing.Point(141, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(117, 135);
             this.button3.TabIndex = 90;
@@ -419,7 +427,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtNioshCont);
             this.panel2.Location = new System.Drawing.Point(285, 533);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(259, 135);
             this.panel2.TabIndex = 105;
@@ -436,7 +444,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(147, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 135);
             this.button1.TabIndex = 90;
@@ -473,7 +481,7 @@
             this.panel7.Controls.Add(this.txtREBACont);
             this.panel7.Controls.Add(this.label10);
             this.panel7.Location = new System.Drawing.Point(553, 533);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(248, 135);
             this.panel7.TabIndex = 106;
@@ -490,7 +498,7 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
             this.button4.Location = new System.Drawing.Point(137, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(111, 135);
             this.button4.TabIndex = 87;
@@ -527,7 +535,7 @@
             this.panel3.Controls.Add(this.txtRulaCont);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Location = new System.Drawing.Point(29, 533);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(248, 135);
             this.panel3.TabIndex = 104;
@@ -544,7 +552,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Location = new System.Drawing.Point(137, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 135);
             this.button2.TabIndex = 87;
@@ -579,7 +587,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(29, 468);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1383, 57);
             this.panel1.TabIndex = 100;
@@ -604,7 +612,7 @@
             this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.txtcontempleados);
             this.panel6.Location = new System.Drawing.Point(29, 325);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(259, 135);
             this.panel6.TabIndex = 102;
@@ -620,7 +628,7 @@
             this.btnEmpleados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
             this.btnEmpleados.Location = new System.Drawing.Point(165, 4);
-            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(91, 127);
             this.btnEmpleados.TabIndex = 90;
@@ -659,7 +667,7 @@
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.Location = new System.Drawing.Point(167, 247);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(271, 59);
             this.btnSalir.TabIndex = 112;
@@ -721,7 +729,7 @@
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarCUIT.Location = new System.Drawing.Point(432, 86);
-            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
             this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 58);
             this.btnBuscarCUIT.TabIndex = 160;
@@ -783,15 +791,15 @@
             this.ChartHistogramaReba2.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.ChartHistogramaReba2.Legends.Add(legend4);
-            this.ChartHistogramaReba2.Location = new System.Drawing.Point(553, 1195);
+            this.ChartHistogramaReba2.Location = new System.Drawing.Point(647, 1060);
             this.ChartHistogramaReba2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartHistogramaReba2.Name = "ChartHistogramaReba2";
-            this.ChartHistogramaReba2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.ChartHistogramaReba2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series4.ChartArea = "ChartArea1";
             series4.Legend = "Legend1";
             series4.Name = "Series1";
             this.ChartHistogramaReba2.Series.Add(series4);
-            this.ChartHistogramaReba2.Size = new System.Drawing.Size(859, 420);
+            this.ChartHistogramaReba2.Size = new System.Drawing.Size(685, 330);
             this.ChartHistogramaReba2.TabIndex = 163;
             // 
             // label1
@@ -799,7 +807,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(592, 14);
+            this.label1.Location = new System.Drawing.Point(581, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(287, 28);
@@ -811,8 +819,8 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(29, 1621);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Location = new System.Drawing.Point(29, 1396);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1383, 57);
             this.panel4.TabIndex = 111;
@@ -826,7 +834,7 @@
             this.chartPastelNiosh.ChartAreas.Add(chartArea5);
             legend5.Name = "Legend1";
             this.chartPastelNiosh.Legends.Add(legend5);
-            this.chartPastelNiosh.Location = new System.Drawing.Point(39, 1684);
+            this.chartPastelNiosh.Location = new System.Drawing.Point(598, 1481);
             this.chartPastelNiosh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPastelNiosh.Name = "chartPastelNiosh";
             this.chartPastelNiosh.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -834,7 +842,7 @@
             series5.Legend = "Legend1";
             series5.Name = "Series1";
             this.chartPastelNiosh.Series.Add(series5);
-            this.chartPastelNiosh.Size = new System.Drawing.Size(515, 400);
+            this.chartPastelNiosh.Size = new System.Drawing.Size(223, 230);
             this.chartPastelNiosh.TabIndex = 164;
             // 
             // ChartHistogramaNiosh2
@@ -846,7 +854,7 @@
             this.ChartHistogramaNiosh2.ChartAreas.Add(chartArea6);
             legend6.Name = "Legend1";
             this.ChartHistogramaNiosh2.Legends.Add(legend6);
-            this.ChartHistogramaNiosh2.Location = new System.Drawing.Point(563, 1684);
+            this.ChartHistogramaNiosh2.Location = new System.Drawing.Point(827, 1472);
             this.ChartHistogramaNiosh2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartHistogramaNiosh2.Name = "ChartHistogramaNiosh2";
             this.ChartHistogramaNiosh2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -854,7 +862,7 @@
             series6.Legend = "Legend1";
             series6.Name = "Series1";
             this.ChartHistogramaNiosh2.Series.Add(series6);
-            this.ChartHistogramaNiosh2.Size = new System.Drawing.Size(849, 400);
+            this.ChartHistogramaNiosh2.Size = new System.Drawing.Size(477, 259);
             this.ChartHistogramaNiosh2.TabIndex = 165;
             // 
             // chartHistoJss2
@@ -866,7 +874,7 @@
             this.chartHistoJss2.ChartAreas.Add(chartArea7);
             legend7.Name = "Legend1";
             this.chartHistoJss2.Legends.Add(legend7);
-            this.chartHistoJss2.Location = new System.Drawing.Point(563, 2153);
+            this.chartHistoJss2.Location = new System.Drawing.Point(860, 1816);
             this.chartHistoJss2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartHistoJss2.Name = "chartHistoJss2";
             this.chartHistoJss2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -874,7 +882,7 @@
             series7.Legend = "Legend1";
             series7.Name = "Series1";
             this.chartHistoJss2.Series.Add(series7);
-            this.chartHistoJss2.Size = new System.Drawing.Size(849, 400);
+            this.chartHistoJss2.Size = new System.Drawing.Size(451, 240);
             this.chartHistoJss2.TabIndex = 168;
             // 
             // chartPastelJss2
@@ -886,7 +894,7 @@
             this.chartPastelJss2.ChartAreas.Add(chartArea8);
             legend8.Name = "Legend1";
             this.chartPastelJss2.Legends.Add(legend8);
-            this.chartPastelJss2.Location = new System.Drawing.Point(39, 2153);
+            this.chartPastelJss2.Location = new System.Drawing.Point(583, 1816);
             this.chartPastelJss2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPastelJss2.Name = "chartPastelJss2";
             this.chartPastelJss2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -894,15 +902,15 @@
             series8.Legend = "Legend1";
             series8.Name = "Series1";
             this.chartPastelJss2.Series.Add(series8);
-            this.chartPastelJss2.Size = new System.Drawing.Size(515, 400);
+            this.chartPastelJss2.Size = new System.Drawing.Size(182, 213);
             this.chartPastelJss2.TabIndex = 167;
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel11.Controls.Add(this.label4);
-            this.panel11.Location = new System.Drawing.Point(29, 2090);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Location = new System.Drawing.Point(35, 1753);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(1383, 57);
             this.panel11.TabIndex = 166;
@@ -927,9 +935,9 @@
             this.BarraTitulo.Controls.Add(this.btnCerrar);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1412, 65);
+            this.BarraTitulo.Size = new System.Drawing.Size(1418, 65);
             this.BarraTitulo.TabIndex = 169;
             // 
             // label12
@@ -949,8 +957,8 @@
             this.btnCerrar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1347, 15);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.Location = new System.Drawing.Point(1353, 15);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(33, 31);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -998,7 +1006,7 @@
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.FechaDesde);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEstadisticas2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEstadisticas2";

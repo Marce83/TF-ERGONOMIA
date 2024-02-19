@@ -29,21 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEstadisticas));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnEmpresa = new System.Windows.Forms.Button();
@@ -71,22 +56,15 @@
             this.button4 = new System.Windows.Forms.Button();
             this.txtREBACont = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.TotalMetodo = new System.Windows.Forms.Label();
-            this.chartEmpresasProv = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.ChartEmpLocal = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.chartempxemp = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.GraphEmpresasTipo = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chartsMujeresVarones = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.BtnEmpxProv = new System.Windows.Forms.Button();
+            this.BtnEmpresaTipo = new System.Windows.Forms.Button();
+            this.BtnEmplxGen = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -94,24 +72,18 @@
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartEmpresasProv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartEmpLocal)).BeginInit();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartempxemp)).BeginInit();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GraphEmpresasTipo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartsMujeresVarones)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(380, 17);
+            this.label1.Location = new System.Drawing.Point(426, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(253, 38);
             this.label1.TabIndex = 64;
@@ -119,12 +91,13 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel4.Controls.Add(this.btnEmpresa);
             this.panel4.Controls.Add(this.txtempresasregistradas);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(35, 73);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Location = new System.Drawing.Point(13, 73);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(248, 135);
             this.panel4.TabIndex = 86;
@@ -140,7 +113,7 @@
             this.btnEmpresa.ForeColor = System.Drawing.SystemColors.Control;
             this.btnEmpresa.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpresa.Image")));
             this.btnEmpresa.Location = new System.Drawing.Point(137, 4);
-            this.btnEmpresa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEmpresa.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmpresa.Name = "btnEmpresa";
             this.btnEmpresa.Size = new System.Drawing.Size(107, 127);
             this.btnEmpresa.TabIndex = 87;
@@ -172,12 +145,13 @@
             // 
             // panel6
             // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
             this.panel6.Controls.Add(this.btnEmpleados);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.txtcontempleados);
-            this.panel6.Location = new System.Drawing.Point(291, 73);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Location = new System.Drawing.Point(269, 73);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(259, 135);
             this.panel6.TabIndex = 89;
@@ -193,7 +167,7 @@
             this.btnEmpleados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
             this.btnEmpleados.Location = new System.Drawing.Point(165, 4);
-            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(91, 127);
             this.btnEmpleados.TabIndex = 90;
@@ -225,12 +199,13 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(35, 215);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(13, 216);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1844, 57);
+            this.panel1.Size = new System.Drawing.Size(1075, 57);
             this.panel1.TabIndex = 88;
             // 
             // label5
@@ -238,7 +213,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(775, 12);
+            this.label5.Location = new System.Drawing.Point(519, 16);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(220, 28);
@@ -248,12 +223,13 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.Olive;
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtNioshCont);
-            this.panel2.Location = new System.Drawing.Point(291, 281);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(286, 281);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(259, 135);
             this.panel2.TabIndex = 92;
@@ -270,7 +246,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(147, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 135);
             this.button1.TabIndex = 90;
@@ -302,12 +278,13 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.txtRulaCont);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Location = new System.Drawing.Point(35, 281);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Location = new System.Drawing.Point(30, 281);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(248, 135);
             this.panel3.TabIndex = 91;
@@ -324,7 +301,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Location = new System.Drawing.Point(137, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 135);
             this.button2.TabIndex = 87;
@@ -356,12 +333,13 @@
             // 
             // panel5
             // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel5.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.txtjsscont);
-            this.panel5.Location = new System.Drawing.Point(815, 281);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Location = new System.Drawing.Point(810, 281);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(259, 135);
             this.panel5.TabIndex = 94;
@@ -378,7 +356,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button3.Location = new System.Drawing.Point(141, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(117, 135);
             this.button3.TabIndex = 90;
@@ -401,7 +379,7 @@
             this.txtjsscont.AutoSize = true;
             this.txtjsscont.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.txtjsscont.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.txtjsscont.Location = new System.Drawing.Point(25, 39);
+            this.txtjsscont.Location = new System.Drawing.Point(26, 39);
             this.txtjsscont.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtjsscont.Name = "txtjsscont";
             this.txtjsscont.Size = new System.Drawing.Size(74, 57);
@@ -410,12 +388,13 @@
             // 
             // panel7
             // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel7.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel7.Controls.Add(this.button4);
             this.panel7.Controls.Add(this.txtREBACont);
             this.panel7.Controls.Add(this.label10);
-            this.panel7.Location = new System.Drawing.Point(559, 281);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Location = new System.Drawing.Point(554, 281);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(248, 135);
             this.panel7.TabIndex = 93;
@@ -432,7 +411,7 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
             this.button4.Location = new System.Drawing.Point(137, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(111, 135);
             this.button4.TabIndex = 87;
@@ -462,39 +441,17 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "REBA";
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Location = new System.Drawing.Point(35, 425);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1844, 57);
-            this.panel8.TabIndex = 89;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(756, 14);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(237, 28);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "ESTADISTICAS EMPRESAS";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel9
             // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel9.BackColor = System.Drawing.Color.Green;
             this.panel9.Controls.Add(this.button5);
             this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.TotalMetodo);
-            this.panel9.Location = new System.Drawing.Point(559, 73);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Location = new System.Drawing.Point(537, 73);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(259, 135);
+            this.panel9.Size = new System.Drawing.Size(248, 135);
             this.panel9.TabIndex = 91;
             // 
             // button5
@@ -507,8 +464,8 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(165, 4);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Location = new System.Drawing.Point(157, 3);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(91, 127);
             this.button5.TabIndex = 90;
@@ -539,113 +496,6 @@
             this.TotalMetodo.Text = "N°";
             this.TotalMetodo.Click += new System.EventHandler(this.TotalMetodo_Click);
             // 
-            // chartEmpresasProv
-            // 
-            this.chartEmpresasProv.BackColor = System.Drawing.Color.Transparent;
-            this.chartEmpresasProv.BorderlineColor = System.Drawing.Color.DarkGray;
-            this.chartEmpresasProv.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            this.chartEmpresasProv.BorderlineWidth = 0;
-            this.chartEmpresasProv.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            chartArea1.InnerPlotPosition.Auto = false;
-            chartArea1.InnerPlotPosition.Height = 86.36968F;
-            chartArea1.InnerPlotPosition.Width = 92.48918F;
-            chartArea1.InnerPlotPosition.X = 6.24655F;
-            chartArea1.InnerPlotPosition.Y = 3.35106F;
-            chartArea1.Name = "ChartArea1";
-            this.chartEmpresasProv.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartEmpresasProv.Legends.Add(legend1);
-            this.chartEmpresasProv.Location = new System.Drawing.Point(35, 487);
-            this.chartEmpresasProv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chartEmpresasProv.Name = "chartEmpresasProv";
-            this.chartEmpresasProv.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartEmpresasProv.Series.Add(series1);
-            this.chartEmpresasProv.Size = new System.Drawing.Size(1323, 457);
-            this.chartEmpresasProv.TabIndex = 95;
-            // 
-            // ChartEmpLocal
-            // 
-            this.ChartEmpLocal.BackColor = System.Drawing.Color.Transparent;
-            this.ChartEmpLocal.BorderlineColor = System.Drawing.Color.DarkGray;
-            this.ChartEmpLocal.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.ChartEmpLocal.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.ChartEmpLocal.Legends.Add(legend2);
-            this.ChartEmpLocal.Location = new System.Drawing.Point(52, 949);
-            this.ChartEmpLocal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ChartEmpLocal.Name = "ChartEmpLocal";
-            this.ChartEmpLocal.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.ChartEmpLocal.Series.Add(series2);
-            this.ChartEmpLocal.Size = new System.Drawing.Size(1315, 692);
-            this.ChartEmpLocal.TabIndex = 96;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.panel10.Controls.Add(this.label11);
-            this.panel10.Location = new System.Drawing.Point(52, 2137);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1844, 57);
-            this.panel10.TabIndex = 97;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label11.Location = new System.Drawing.Point(756, 15);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(252, 28);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "ESTADISTICAS EMPLEADOS";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // chartempxemp
-            // 
-            this.chartempxemp.BackColor = System.Drawing.Color.Transparent;
-            this.chartempxemp.BorderlineColor = System.Drawing.Color.DarkGray;
-            this.chartempxemp.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            chartArea3.Name = "ChartArea1";
-            this.chartempxemp.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartempxemp.Legends.Add(legend3);
-            this.chartempxemp.Location = new System.Drawing.Point(52, 2201);
-            this.chartempxemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chartempxemp.Name = "chartempxemp";
-            this.chartempxemp.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartempxemp.Series.Add(series3);
-            this.chartempxemp.Size = new System.Drawing.Size(647, 458);
-            this.chartempxemp.TabIndex = 98;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(905, 117);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(139, 57);
-            this.btnSalir.TabIndex = 99;
-            this.btnSalir.Text = "SALIR";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // BarraTitulo
             // 
             this.BarraTitulo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -653,9 +503,9 @@
             this.BarraTitulo.Controls.Add(this.label1);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1896, 65);
+            this.BarraTitulo.Size = new System.Drawing.Size(1096, 65);
             this.BarraTitulo.TabIndex = 100;
             // 
             // btnCerrar
@@ -664,8 +514,8 @@
             this.btnCerrar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1324, 17);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.Location = new System.Drawing.Point(1050, 13);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(33, 31);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -673,44 +523,59 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // GraphEmpresasTipo
+            // BtnEmpxProv
             // 
-            this.GraphEmpresasTipo.BackColor = System.Drawing.Color.Transparent;
-            this.GraphEmpresasTipo.BorderlineColor = System.Drawing.Color.DarkGray;
-            this.GraphEmpresasTipo.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            chartArea4.Name = "ChartArea1";
-            this.GraphEmpresasTipo.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.GraphEmpresasTipo.Legends.Add(legend4);
-            this.GraphEmpresasTipo.Location = new System.Drawing.Point(52, 1669);
-            this.GraphEmpresasTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GraphEmpresasTipo.Name = "GraphEmpresasTipo";
-            this.GraphEmpresasTipo.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.GraphEmpresasTipo.Series.Add(series4);
-            this.GraphEmpresasTipo.Size = new System.Drawing.Size(1305, 462);
-            this.GraphEmpresasTipo.TabIndex = 164;
+            this.BtnEmpxProv.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BtnEmpxProv.BackColor = System.Drawing.Color.Peru;
+            this.BtnEmpxProv.FlatAppearance.BorderSize = 0;
+            this.BtnEmpxProv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BtnEmpxProv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEmpxProv.ForeColor = System.Drawing.Color.Transparent;
+            this.BtnEmpxProv.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEmpxProv.Location = new System.Drawing.Point(793, 73);
+            this.BtnEmpxProv.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnEmpxProv.Name = "BtnEmpxProv";
+            this.BtnEmpxProv.Size = new System.Drawing.Size(99, 135);
+            this.BtnEmpxProv.TabIndex = 166;
+            this.BtnEmpxProv.Text = "EMPRESAS POR PROVINCIAS";
+            this.BtnEmpxProv.UseVisualStyleBackColor = false;
+            this.BtnEmpxProv.Click += new System.EventHandler(this.BtnEmpxProv_Click);
             // 
-            // chartsMujeresVarones
+            // BtnEmpresaTipo
             // 
-            this.chartsMujeresVarones.BackColor = System.Drawing.Color.Transparent;
-            this.chartsMujeresVarones.BorderlineColor = System.Drawing.Color.DarkGray;
-            this.chartsMujeresVarones.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            chartArea5.Name = "ChartArea1";
-            this.chartsMujeresVarones.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartsMujeresVarones.Legends.Add(legend5);
-            this.chartsMujeresVarones.Location = new System.Drawing.Point(741, 2201);
-            this.chartsMujeresVarones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chartsMujeresVarones.Name = "chartsMujeresVarones";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartsMujeresVarones.Series.Add(series5);
-            this.chartsMujeresVarones.Size = new System.Drawing.Size(647, 458);
-            this.chartsMujeresVarones.TabIndex = 165;
+            this.BtnEmpresaTipo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BtnEmpresaTipo.BackColor = System.Drawing.Color.Peru;
+            this.BtnEmpresaTipo.FlatAppearance.BorderSize = 0;
+            this.BtnEmpresaTipo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BtnEmpresaTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEmpresaTipo.ForeColor = System.Drawing.Color.Transparent;
+            this.BtnEmpresaTipo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEmpresaTipo.Location = new System.Drawing.Point(900, 73);
+            this.BtnEmpresaTipo.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnEmpresaTipo.Name = "BtnEmpresaTipo";
+            this.BtnEmpresaTipo.Size = new System.Drawing.Size(81, 135);
+            this.BtnEmpresaTipo.TabIndex = 167;
+            this.BtnEmpresaTipo.Text = "TIPO DE EMPRESA";
+            this.BtnEmpresaTipo.UseVisualStyleBackColor = false;
+            this.BtnEmpresaTipo.Click += new System.EventHandler(this.BtnEmpresaTipo_Click);
+            // 
+            // BtnEmplxGen
+            // 
+            this.BtnEmplxGen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BtnEmplxGen.BackColor = System.Drawing.Color.Peru;
+            this.BtnEmplxGen.FlatAppearance.BorderSize = 0;
+            this.BtnEmplxGen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BtnEmplxGen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEmplxGen.ForeColor = System.Drawing.Color.Transparent;
+            this.BtnEmplxGen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEmplxGen.Location = new System.Drawing.Point(989, 73);
+            this.BtnEmplxGen.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnEmplxGen.Name = "BtnEmplxGen";
+            this.BtnEmplxGen.Size = new System.Drawing.Size(99, 135);
+            this.BtnEmplxGen.TabIndex = 169;
+            this.BtnEmplxGen.Text = "EMPLEADOS POR GENERO";
+            this.BtnEmplxGen.UseVisualStyleBackColor = false;
+            this.BtnEmplxGen.Click += new System.EventHandler(this.BtnEmplxGen_Click);
             // 
             // frmEstadisticas
             // 
@@ -719,17 +584,12 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1325, 1100);
-            this.Controls.Add(this.chartsMujeresVarones);
-            this.Controls.Add(this.GraphEmpresasTipo);
+            this.ClientSize = new System.Drawing.Size(1096, 434);
+            this.Controls.Add(this.BtnEmplxGen);
+            this.Controls.Add(this.BtnEmpresaTipo);
+            this.Controls.Add(this.BtnEmpxProv);
             this.Controls.Add(this.BarraTitulo);
-            this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.chartempxemp);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.ChartEmpLocal);
-            this.Controls.Add(this.chartEmpresasProv);
             this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel7);
@@ -738,7 +598,7 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEstadisticas";
             this.Text = "frmEstadisticas";
             this.Load += new System.EventHandler(this.frmEstadisticas_Load);
@@ -756,20 +616,11 @@
             this.panel5.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartEmpresasProv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartEmpLocal)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartempxemp)).EndInit();
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GraphEmpresasTipo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartsMujeresVarones)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -803,21 +654,14 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label txtREBACont;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label TotalMetodo;
-        private System.Windows.Forms.DataVisualization.Charting.Chart ChartEmpLocal;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartempxemp;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Panel BarraTitulo;
+        private System.Windows.Forms.Button BtnEmpxProv;
+        private System.Windows.Forms.Button BtnEmpresaTipo;
+        private System.Windows.Forms.Button BtnEmplxGen;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.DataVisualization.Charting.Chart GraphEmpresasTipo;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartsMujeresVarones;
-        public System.Windows.Forms.DataVisualization.Charting.Chart chartEmpresasProv;
     }
 }

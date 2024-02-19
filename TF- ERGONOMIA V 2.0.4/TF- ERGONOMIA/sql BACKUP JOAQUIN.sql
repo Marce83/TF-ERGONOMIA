@@ -1865,6 +1865,22 @@ select NivelRiesgo,FechaCarga, Count(NivelRiesgo) as AnalisisxDia from RulaTabla
 END
 GO
 
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_HistoRulaPerson																																																		
+@CUIT NVARCHAR(11),
+@FechaCarga DATE,
+@FechaCarga2 DATE
+AS
+BEGIN
+select NivelRiesgo, Count(NivelRiesgo) as AnalisisxDia from RulaTablaCompleta WHERE CUIT = @CUIT and FechaCarga BETWEEN @FechaCarga AND @FechaCarga2 group by NivelRiesgo HAVING COUNT(NivelRiesgo) > 0;
+END
+GO
+
+
+
+
+
 
 use ProyectoFinal
 go
