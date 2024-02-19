@@ -731,7 +731,7 @@
             this.btnBuscarCUIT.Location = new System.Drawing.Point(432, 86);
             this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
-            this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 58);
+            this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 48);
             this.btnBuscarCUIT.TabIndex = 160;
             this.btnBuscarCUIT.Text = "...";
             this.btnBuscarCUIT.UseVisualStyleBackColor = false;

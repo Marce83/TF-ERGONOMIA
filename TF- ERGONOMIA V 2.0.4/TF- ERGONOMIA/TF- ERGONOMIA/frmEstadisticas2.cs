@@ -78,15 +78,15 @@ namespace TF.WIN
         }
         private void btnBuscarCUIT_Click(object sender, EventArgs e)
         {
-            frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
+              frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
             oFrm.ShowDialog();
 
             if (oFrm.EmpresaSeleccionada != null)
             {
                 txtCUIT.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
                 txtNombreEmpresa.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
-
             }
+
 
         }
         private void btnBuscarresultado_Click(object sender, EventArgs e)
