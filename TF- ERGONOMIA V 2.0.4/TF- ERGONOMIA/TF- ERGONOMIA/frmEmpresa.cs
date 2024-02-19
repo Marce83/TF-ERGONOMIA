@@ -86,7 +86,9 @@ namespace TF.WIN
                                                 {
                                                     if (txtTelefono.Text.Length == 10)
                                                     {
-                                                         if (txtCorreo.Text != string.Empty)
+                                                        if (txtWeb.Text != string.Empty)
+                                                        {
+                                                            if (txtCorreo.Text != string.Empty)
                                                             {
                                                                 if (ValidarCorreo.ValidarEmail(txtCorreo.Text))
                                                                 {
@@ -117,8 +119,10 @@ namespace TF.WIN
                                                                     }
                                                                 }
                                                                 else MessageBox.Show("El formato del Correo es inválido", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                                         }
-                                                          else MessageBox.Show("Debe ingresar el correo electrónico", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                            }
+                                                            else MessageBox.Show("Debe ingresar el correo electrónico", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                        }
+                                                        else MessageBox.Show("Debe ingresar el Sitio Web de la Empresa", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                                     }
                                                     else MessageBox.Show("Debe ingresar 10 digitos en el Teléfono", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                                 }

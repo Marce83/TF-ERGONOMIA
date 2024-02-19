@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBuscador = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtCUITEmpresa = new MaterialSkin.Controls.MaterialTextBox2();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.dgvResultado = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBuscartodo = new System.Windows.Forms.Button();
-            this.cboBuscadorDinamico = new MaterialSkin.Controls.MaterialComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +70,37 @@
             this.txtBuscador.TrailingIcon = null;
             this.txtBuscador.UseSystemPasswordChar = false;
             this.txtBuscador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscador_KeyPress);
+            // 
+            // txtCUITEmpresa
+            // 
+            this.txtCUITEmpresa.AnimateReadOnly = false;
+            this.txtCUITEmpresa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCUITEmpresa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtCUITEmpresa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtCUITEmpresa.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCUITEmpresa.Depth = 0;
+            this.txtCUITEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCUITEmpresa.HideSelection = true;
+            this.txtCUITEmpresa.LeadingIcon = null;
+            this.txtCUITEmpresa.Location = new System.Drawing.Point(101, 57);
+            this.txtCUITEmpresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCUITEmpresa.MaxLength = 32767;
+            this.txtCUITEmpresa.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCUITEmpresa.Name = "txtCUITEmpresa";
+            this.txtCUITEmpresa.PasswordChar = '\0';
+            this.txtCUITEmpresa.PrefixSuffixText = null;
+            this.txtCUITEmpresa.ReadOnly = false;
+            this.txtCUITEmpresa.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCUITEmpresa.SelectedText = "";
+            this.txtCUITEmpresa.SelectionLength = 0;
+            this.txtCUITEmpresa.SelectionStart = 0;
+            this.txtCUITEmpresa.ShortcutsEnabled = true;
+            this.txtCUITEmpresa.Size = new System.Drawing.Size(209, 48);
+            this.txtCUITEmpresa.TabIndex = 44;
+            this.txtCUITEmpresa.TabStop = false;
+            this.txtCUITEmpresa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCUITEmpresa.TrailingIcon = null;
+            this.txtCUITEmpresa.UseSystemPasswordChar = false;
             // 
             // btnAceptar
             // 
@@ -167,7 +198,6 @@
             this.btnBuscartodo.TabIndex = 61;
             this.btnBuscartodo.Text = "Buscar Todo";
             this.btnBuscartodo.UseVisualStyleBackColor = false;
-            this.btnBuscartodo.Visible = false;
             this.btnBuscartodo.Click += new System.EventHandler(this.btnBuscartodo_Click);
             // 
             // cboBuscadorDinamico
@@ -209,7 +239,8 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.txtBuscador);
+            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.txtCUITEmpresa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmBuscarEmpresa";
             this.Text = "BuscarEmpresa";
@@ -220,13 +251,14 @@
         }
 
         #endregion
-        private MaterialSkin.Controls.MaterialTextBox2 txtBuscador;
+
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialTextBox2 txtCUITEmpresa;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.DataGridView dgvResultado;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBuscartodo;
-        private MaterialSkin.Controls.MaterialComboBox cboBuscadorDinamico;
     }
 }

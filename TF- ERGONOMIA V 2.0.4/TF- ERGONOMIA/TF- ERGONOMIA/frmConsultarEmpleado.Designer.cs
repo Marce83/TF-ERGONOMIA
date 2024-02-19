@@ -30,17 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarEmpleado));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.grbEmpresa = new System.Windows.Forms.GroupBox();
-            this.txtNomEmp = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
-            this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
-            this.btnBuscarCUIT = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.cboBuscadorDinamico = new MaterialSkin.Controls.MaterialComboBox();
             this.cboAreaempresa = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.dtpIngreso = new System.Windows.Forms.DateTimePicker();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnBuscarCUIT = new System.Windows.Forms.Button();
             this.dtpNacimiento = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtAltura = new MaterialSkin.Controls.MaterialTextBox2();
@@ -48,6 +44,8 @@
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.txtPeso = new MaterialSkin.Controls.MaterialTextBox2();
             this.cboGenero = new MaterialSkin.Controls.MaterialComboBox();
+            this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.txtApellido = new MaterialSkin.Controls.MaterialTextBox2();
@@ -60,7 +58,6 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvEmpleados = new System.Windows.Forms.DataGridView();
             this.groupBox3.SuspendLayout();
-            this.grbEmpresa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
@@ -68,16 +65,18 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.grbEmpresa);
             this.groupBox3.Controls.Add(this.btnCerrar);
             this.groupBox3.Controls.Add(this.cboBuscadorDinamico);
             this.groupBox3.Controls.Add(this.cboAreaempresa);
             this.groupBox3.Controls.Add(this.materialLabel9);
             this.groupBox3.Controls.Add(this.dtpIngreso);
             this.groupBox3.Controls.Add(this.materialLabel7);
+            this.groupBox3.Controls.Add(this.btnBuscarCUIT);
             this.groupBox3.Controls.Add(this.dtpNacimiento);
             this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Controls.Add(this.cboGenero);
+            this.groupBox3.Controls.Add(this.materialLabel11);
+            this.groupBox3.Controls.Add(this.txtCUITEncontrado);
             this.groupBox3.Controls.Add(this.materialLabel4);
             this.groupBox3.Controls.Add(this.materialLabel8);
             this.groupBox3.Controls.Add(this.txtApellido);
@@ -327,6 +326,22 @@
             this.materialLabel7.TabIndex = 93;
             this.materialLabel7.Text = "Fecha de Ingreso";
             // 
+            // btnBuscarCUIT
+            // 
+            this.btnBuscarCUIT.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnBuscarCUIT.FlatAppearance.BorderSize = 0;
+            this.btnBuscarCUIT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarCUIT.Location = new System.Drawing.Point(1052, 373);
+            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarCUIT.Name = "btnBuscarCUIT";
+            this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 59);
+            this.btnBuscarCUIT.TabIndex = 91;
+            this.btnBuscarCUIT.Text = "...";
+            this.btnBuscarCUIT.UseVisualStyleBackColor = false;
+            // 
             // dtpNacimiento
             // 
             this.dtpNacimiento.CalendarMonthBackground = System.Drawing.SystemColors.ActiveCaption;
@@ -469,6 +484,50 @@
             this.cboGenero.Size = new System.Drawing.Size(190, 49);
             this.cboGenero.StartIndex = 0;
             this.cboGenero.TabIndex = 82;
+            // 
+            // materialLabel11
+            // 
+            this.materialLabel11.AutoSize = true;
+            this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.materialLabel11.Depth = 0;
+            this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel11.Location = new System.Drawing.Point(664, 389);
+            this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel11.Name = "materialLabel11";
+            this.materialLabel11.Size = new System.Drawing.Size(35, 19);
+            this.materialLabel11.TabIndex = 89;
+            this.materialLabel11.Text = "CUIT";
+            // 
+            // txtCUITEncontrado
+            // 
+            this.txtCUITEncontrado.AnimateReadOnly = false;
+            this.txtCUITEncontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCUITEncontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtCUITEncontrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtCUITEncontrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCUITEncontrado.Depth = 0;
+            this.txtCUITEncontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCUITEncontrado.HideSelection = true;
+            this.txtCUITEncontrado.LeadingIcon = null;
+            this.txtCUITEncontrado.Location = new System.Drawing.Point(728, 373);
+            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCUITEncontrado.MaxLength = 32767;
+            this.txtCUITEncontrado.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCUITEncontrado.Name = "txtCUITEncontrado";
+            this.txtCUITEncontrado.PasswordChar = '\0';
+            this.txtCUITEncontrado.PrefixSuffixText = null;
+            this.txtCUITEncontrado.ReadOnly = true;
+            this.txtCUITEncontrado.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCUITEncontrado.SelectedText = "";
+            this.txtCUITEncontrado.SelectionLength = 0;
+            this.txtCUITEncontrado.SelectionStart = 0;
+            this.txtCUITEncontrado.ShortcutsEnabled = true;
+            this.txtCUITEncontrado.Size = new System.Drawing.Size(295, 48);
+            this.txtCUITEncontrado.TabIndex = 83;
+            this.txtCUITEncontrado.TabStop = false;
+            this.txtCUITEncontrado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCUITEncontrado.TrailingIcon = null;
+            this.txtCUITEncontrado.UseSystemPasswordChar = false;
             // 
             // materialLabel4
             // 
@@ -697,8 +756,6 @@
             this.Load += new System.EventHandler(this.frmConsultarEmpleado_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.grbEmpresa.ResumeLayout(false);
-            this.grbEmpresa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -737,7 +794,5 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.PictureBox btnCerrar;
         private MaterialSkin.Controls.MaterialComboBox cboBuscadorDinamico;
-        private System.Windows.Forms.GroupBox grbEmpresa;
-        private MaterialSkin.Controls.MaterialTextBox2 txtNomEmp;
     }
 }
