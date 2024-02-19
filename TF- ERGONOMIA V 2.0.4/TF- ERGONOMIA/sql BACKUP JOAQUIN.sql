@@ -1852,19 +1852,6 @@ select NivelRiesgo, Count(NivelRiesgo) as CantidadRiesgo from RulaTablaCompleta 
 END
 GO
 
-
-use ProyectoFinal
-go
-CREATE or Alter PROCEDURE SP_STAT_HistoRulaPerson																																																		
-@CUIT NVARCHAR(11),
-@FechaCarga DATE,
-@FechaCarga2 DATE
-AS
-BEGIN
-select NivelRiesgo,FechaCarga, Count(NivelRiesgo) as AnalisisxDia from RulaTablaCompleta WHERE CUIT = @CUIT and FechaCarga BETWEEN @FechaCarga AND @FechaCarga2 group by NivelRiesgo, FechaCarga HAVING COUNT(NivelRiesgo) > 0;
-END
-GO
-
 use ProyectoFinal
 go
 CREATE or Alter PROCEDURE SP_STAT_HistoRulaPerson																																																		
@@ -1876,11 +1863,6 @@ BEGIN
 select NivelRiesgo, Count(NivelRiesgo) as AnalisisxDia from RulaTablaCompleta WHERE CUIT = @CUIT and FechaCarga BETWEEN @FechaCarga AND @FechaCarga2 group by NivelRiesgo HAVING COUNT(NivelRiesgo) > 0;
 END
 GO
-
-
-
-
-
 
 use ProyectoFinal
 go
@@ -1902,7 +1884,7 @@ CREATE or Alter PROCEDURE SP_STAT_HistoRebaPerson
 @FechaCargaReba2 DATE
 AS
 BEGIN
-select NivelRiesgo,FechaCargaReba, Count(NivelRiesgo) as AnalisisxDia from RebaTablaCompleta WHERE CUITReba = @CUITReba and FechaCargaReba BETWEEN @FechaCargaReba AND @FechaCargaReba2 group by NivelRiesgo, FechaCargaReba HAVING COUNT(NivelRiesgo) > 0;
+select NivelRiesgo, Count(NivelRiesgo) as AnalisisxDia from RebaTablaCompleta WHERE CUITReba = @CUITReba and FechaCargaReba BETWEEN @FechaCargaReba AND @FechaCargaReba2 group by NivelRiesgo HAVING COUNT(NivelRiesgo) > 0;
 END
 GO
 
@@ -1927,7 +1909,7 @@ CREATE or Alter PROCEDURE SP_STAT_HistoNioshPerson
 @FechaCargaNiosh2 DATE
 AS
 BEGIN
-select RiesgoNiosh,FechaCargaNiosh, Count(RiesgoNiosh) as AnalisisxDia from NioshTablaCompleta WHERE CUITNiosh = @CUITNiosh and FechaCargaNiosh BETWEEN @FechaCargaNiosh AND @FechaCargaNiosh2 group by RiesgoNiosh,FechaCargaNiosh HAVING COUNT(RiesgoNiosh) > 0;
+select RiesgoNiosh,Count(RiesgoNiosh) as AnalisisxDia from NioshTablaCompleta WHERE CUITNiosh = @CUITNiosh and FechaCargaNiosh BETWEEN @FechaCargaNiosh AND @FechaCargaNiosh2 group by RiesgoNiosh HAVING COUNT(RiesgoNiosh) > 0;
 END
 go
 
@@ -1943,7 +1925,6 @@ select ResultadoAnalisisJss, Count(ResultadoAnalisisJss) as CantidadRiesgo from 
 END
 GO
 
-
 use ProyectoFinal
 go
 CREATE or Alter PROCEDURE SP_STAT_HistoJSSPerson
@@ -1952,15 +1933,9 @@ CREATE or Alter PROCEDURE SP_STAT_HistoJSSPerson
 @FechaCargaJss2 DATE
 AS
 BEGIN
-select ResultadoAnalisisJss,FechaCargaJss, Count(ResultadoAnalisisJss) as AnalisisxDia from JssTablaCompleta WHERE CUITJSS = @CUITJSS and FechaCargaJss BETWEEN @FechaCargaJss AND @FechaCargaJss2 group by ResultadoAnalisisJss,FechaCargaJss HAVING COUNT(ResultadoAnalisisJss) > 0;
+select ResultadoAnalisisJss,Count(ResultadoAnalisisJss) as AnalisisxDia from JssTablaCompleta WHERE CUITJSS = @CUITJSS and FechaCargaJss BETWEEN @FechaCargaJss AND @FechaCargaJss2 group by ResultadoAnalisisJss HAVING COUNT(ResultadoAnalisisJss) > 0;
 END
 go
-
-
-
-
-
-
 
 --------------------------------------------------------------------PUESTO DE TRABAJO--------------------------------------------------
 use ProyectoFinal
