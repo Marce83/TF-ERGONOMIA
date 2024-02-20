@@ -93,7 +93,6 @@ namespace TF.WIN
             this.Tag = OJSS;
             OJSS.BringToFront();
             OJSS.Show();
-            //this.Close();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
