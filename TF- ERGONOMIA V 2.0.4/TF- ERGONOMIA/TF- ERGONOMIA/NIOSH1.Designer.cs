@@ -101,6 +101,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.advDH)).BeginInit();
@@ -267,7 +268,7 @@
             // txtcargaidniosh
             // 
             this.txtcargaidniosh.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtcargaidniosh.Location = new System.Drawing.Point(455, 1712);
+            this.txtcargaidniosh.Location = new System.Drawing.Point(534, 1829);
             this.txtcargaidniosh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargaidniosh.Name = "txtcargaidniosh";
             this.txtcargaidniosh.Size = new System.Drawing.Size(100, 22);
@@ -283,7 +284,7 @@
             this.btnGuardarNiosh1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarNiosh1.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnGuardarNiosh1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarNiosh1.Location = new System.Drawing.Point(883, 1331);
+            this.btnGuardarNiosh1.Location = new System.Drawing.Point(883, 1328);
             this.btnGuardarNiosh1.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarNiosh1.Name = "btnGuardarNiosh1";
             this.btnGuardarNiosh1.Size = new System.Drawing.Size(155, 43);
@@ -2265,6 +2266,15 @@
             this.label17.TabIndex = 342;
             this.label17.Text = "CALIDAD DE AGARRE ORIGEN ( CM )";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(559, 1911);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 343;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // NIOSH1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2274,6 +2284,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.BarraTitulo);
@@ -2405,5 +2416,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button1;
     }
 }
