@@ -115,5 +115,17 @@ namespace TF.WIN
             oJSSRESULTADO.BringToFront();
             oJSSRESULTADO.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmLMCPortada oFrmLMCPortada = new FrmLMCPortada();
+            AddOwnedForm(oFrmLMCPortada);
+            oFrmLMCPortada.TopLevel = false;
+            oFrmLMCPortada.Dock = DockStyle.Fill;
+            this.Controls.Add(oFrmLMCPortada);
+            this.Tag = oFrmLMCPortada;
+            oFrmLMCPortada.BringToFront();
+            oFrmLMCPortada.Show();
+        }
     }
 }

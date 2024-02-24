@@ -150,6 +150,18 @@
     <Compile Include="frmInformes.Designer.cs">
       <DependentUpon>frmInformes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLMCPortada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLMCPortada.Designer.cs">
+      <DependentUpon>FrmLMCPortada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLMCResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLMCResultado.Designer.cs">
+      <DependentUpon>FrmLMCResultado.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -364,6 +376,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInformes.resx">
       <DependentUpon>frmInformes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLMCPortada.resx">
+      <DependentUpon>FrmLMCPortada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLMCResultado.resx">
+      <DependentUpon>FrmLMCResultado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>

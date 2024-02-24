@@ -280,7 +280,7 @@
             this.btnRecuperarCarga.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnRecuperarCarga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecuperarCarga.Location = new System.Drawing.Point(947, 330);
-            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecuperarCarga.Name = "btnRecuperarCarga";
             this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 43);
             this.btnRecuperarCarga.TabIndex = 201;
@@ -418,7 +418,7 @@
             this.txtActuacionNIOSH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtActuacionNIOSH.Multiline = true;
             this.txtActuacionNIOSH.Name = "txtActuacionNIOSH";
-            this.txtActuacionNIOSH.Size = new System.Drawing.Size(1068, 126);
+            this.txtActuacionNIOSH.Size = new System.Drawing.Size(1070, 126);
             this.txtActuacionNIOSH.TabIndex = 247;
             // 
             // materialLabel14
@@ -1134,7 +1134,7 @@
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.Location = new System.Drawing.Point(947, 458);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(155, 43);
             this.btnSalir.TabIndex = 283;
@@ -1152,7 +1152,7 @@
             this.btnobtenerinforme.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnobtenerinforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnobtenerinforme.Location = new System.Drawing.Point(947, 407);
-            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4);
             this.btnobtenerinforme.Name = "btnobtenerinforme";
             this.btnobtenerinforme.Size = new System.Drawing.Size(155, 43);
             this.btnobtenerinforme.TabIndex = 284;
@@ -1211,9 +1211,9 @@
             this.BarraTitulo.Controls.Add(this.label1);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1286, 65);
+            this.BarraTitulo.Size = new System.Drawing.Size(1118, 65);
             this.BarraTitulo.TabIndex = 341;
             // 
             // pictureBox3
@@ -1222,8 +1222,8 @@
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1242, 17);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(1068, 13);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(33, 31);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1266,7 +1266,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1307, 918);
+            this.ClientSize = new System.Drawing.Size(1139, 918);
             this.Controls.Add(this.userlabel2);
             this.Controls.Add(this.userlabel1);
             this.Controls.Add(this.BarraTitulo);
