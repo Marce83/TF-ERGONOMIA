@@ -208,10 +208,10 @@
             this.panelEditor.Controls.Add(this.label6);
             this.panelEditor.Controls.Add(this.label8);
             this.panelEditor.Controls.Add(this.label10);
-            this.panelEditor.Location = new System.Drawing.Point(577, -1);
+            this.panelEditor.Location = new System.Drawing.Point(470, -1);
             this.panelEditor.Margin = new System.Windows.Forms.Padding(4);
             this.panelEditor.Name = "panelEditor";
-            this.panelEditor.Size = new System.Drawing.Size(492, 556);
+            this.panelEditor.Size = new System.Drawing.Size(483, 556);
             this.panelEditor.TabIndex = 11;
             this.panelEditor.Visible = false;
             // 
@@ -429,7 +429,7 @@
             // linkEditarPerfil
             // 
             this.linkEditarPerfil.AutoSize = true;
-            this.linkEditarPerfil.Location = new System.Drawing.Point(428, 406);
+            this.linkEditarPerfil.Location = new System.Drawing.Point(352, 406);
             this.linkEditarPerfil.Name = "linkEditarPerfil";
             this.linkEditarPerfil.Size = new System.Drawing.Size(75, 16);
             this.linkEditarPerfil.TabIndex = 12;
@@ -441,7 +441,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(958, 568);
             this.Controls.Add(this.linkEditarPerfil);
             this.Controls.Add(this.panelEditor);
             this.Controls.Add(this.lblCargo);

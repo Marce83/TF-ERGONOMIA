@@ -98,6 +98,7 @@ namespace TF.DAC
             catch (Exception ex)
             {
                 throw ex;
+
                 //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
                 //return null;
             }

@@ -45,7 +45,7 @@ namespace TF.WIN
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-           if(cboBuscadorDinamico.Text == "CUIT")
+            if (cboBuscadorDinamico.Text == "CUIT")
             {
                 oemp.CUIT = txtBuscador.Text;
 
@@ -56,8 +56,8 @@ namespace TF.WIN
                 dgvCargaEmpresas.DataSource = dt;
                 //dgvCargaEmpresas.Columns[0].Visible = false;
             }
-           else
-                if(cboBuscadorDinamico.Text == "Razón Social")
+            else
+                 if (cboBuscadorDinamico.Text == "Razón Social")
             {
                 oemp.Nombre = txtBuscador.Text;
                 EmpresasBC oEmpresasBC = new EmpresasBC();
@@ -66,7 +66,7 @@ namespace TF.WIN
                 dgvCargaEmpresas.DataSource = null;
                 dgvCargaEmpresas.DataSource = dt;
             }
-           if(txtBuscador.Text == String.Empty)
+            if (txtBuscador.Text == String.Empty)
             {
                 Listar();
             }

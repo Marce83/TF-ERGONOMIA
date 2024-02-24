@@ -132,9 +132,9 @@ namespace TF.WIN
 
         }
 
-        private void linkPerfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if(UserLoginCache.Cargo == "Administrador")
+            if (UserLoginCache.Cargo == "Administrador")
                 //AbrirFormHija(new frmEditUsrAdmin());
                 AbrirFormulario<frmEditUsrAdmin>();
             else
