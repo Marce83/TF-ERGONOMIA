@@ -158,7 +158,12 @@ namespace TF.WIN
                 else if (Demanda >= 15 && Control >= 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con Alto Apoyo Social"; txtSituacionJss.Text = "Alto Nivel de estrés"; }
 
             }
-            catch { }
+            catch 
+            {
+                MessageBox.Show("No se encontró un análisis realizado");
+            }
+
+
             GuardarResultado();
         }
 

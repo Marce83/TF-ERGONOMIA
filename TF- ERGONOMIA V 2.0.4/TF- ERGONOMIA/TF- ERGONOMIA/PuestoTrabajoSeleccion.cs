@@ -64,5 +64,17 @@ namespace TF.WIN
             oFrmAsociacionPuestosMultiples.BringToFront();
             oFrmAsociacionPuestosMultiples.Show();
         }
+
+        private void BtnEmpleadosporPuestos_Click(object sender, EventArgs e)
+        {
+            FrmEmpleadosXPuestos oFrmEmpleadosXPuestos = new FrmEmpleadosXPuestos();
+            AddOwnedForm(oFrmEmpleadosXPuestos);
+            oFrmEmpleadosXPuestos.TopLevel = false;
+            oFrmEmpleadosXPuestos.Dock = DockStyle.Fill;
+            this.Controls.Add(oFrmEmpleadosXPuestos);
+            this.Tag = oFrmEmpleadosXPuestos;
+            oFrmEmpleadosXPuestos.BringToFront();
+            oFrmEmpleadosXPuestos.Show();
+        }
     }
 }

@@ -336,7 +336,10 @@ namespace TF.WIN
                 string resultado = dt.Rows[0][19].ToString();
                 txtempresaRula.Text = resultado;
             }
-
+            else
+            {
+                MessageBox.Show("No se encontró un análisis realizado");
+            }
             ///////////                    RESULTADO TABLA A Y B                             ///////////
 
             DataTable dt1 = oRulaBC.RulaTablaARdoBC(oRula);
