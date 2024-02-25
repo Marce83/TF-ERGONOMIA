@@ -484,11 +484,11 @@
             this.label12.AutoSize = true;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(67, 15);
+            this.label12.Location = new System.Drawing.Point(141, 15);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(735, 38);
+            this.label12.Size = new System.Drawing.Size(683, 38);
             this.label12.TabIndex = 65;
-            this.label12.Text = "CONSULTAR MOVIMIENTOS POR EMPLEADO";
+            this.label12.Text = "CONSULTAR EMPLEADOS POR PUESTOS";
             // 
             // btnCerrar
             // 
@@ -532,6 +532,7 @@
             this.Controls.Add(this.materialLabel5);
             this.Controls.Add(this.btnBuscarEmpleado);
             this.Controls.Add(this.materialLabel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmEmpleadosXPuestos";
             this.Text = "FrmEmpleadosXPuestos";
             ((System.ComponentModel.ISupportInitialize)(this.DgvPuestosRecientes)).EndInit();
