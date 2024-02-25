@@ -193,7 +193,6 @@ namespace TF.WIN
                 string resultado22 = dt50.Rows[0][2].ToString();
                 txtpuestoReba.Text = resultado22;
             }
-
             if (dt50.Rows.Count > 0)
             {
                 string resultado = dt50.Rows[0][6].ToString();
@@ -239,7 +238,10 @@ namespace TF.WIN
                 string resultado = dt50.Rows[0][14].ToString();
                 txtpActividadRebaFinal.Text = resultado;
             }
-
+            else
+            {
+                MessageBox.Show("No se encontró un análisis realizado");
+            }
 
         }
         public void RebaTablaC()

@@ -32,6 +32,7 @@
             this.btnCargaPuesto = new System.Windows.Forms.Button();
             this.btnempleadosasociados = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.BtnEmpleadosporPuestos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAsociacionPuesto
@@ -43,7 +44,7 @@
             this.btnAsociacionPuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAsociacionPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAsociacionPuesto.Location = new System.Drawing.Point(16, 80);
-            this.btnAsociacionPuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAsociacionPuesto.Margin = new System.Windows.Forms.Padding(4);
             this.btnAsociacionPuesto.Name = "btnAsociacionPuesto";
             this.btnAsociacionPuesto.Size = new System.Drawing.Size(357, 58);
             this.btnAsociacionPuesto.TabIndex = 77;
@@ -60,7 +61,7 @@
             this.btnCargaPuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCargaPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCargaPuesto.Location = new System.Drawing.Point(16, 15);
-            this.btnCargaPuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCargaPuesto.Margin = new System.Windows.Forms.Padding(4);
             this.btnCargaPuesto.Name = "btnCargaPuesto";
             this.btnCargaPuesto.Size = new System.Drawing.Size(357, 58);
             this.btnCargaPuesto.TabIndex = 76;
@@ -77,11 +78,11 @@
             this.btnempleadosasociados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnempleadosasociados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnempleadosasociados.Location = new System.Drawing.Point(16, 212);
-            this.btnempleadosasociados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnempleadosasociados.Margin = new System.Windows.Forms.Padding(4);
             this.btnempleadosasociados.Name = "btnempleadosasociados";
             this.btnempleadosasociados.Size = new System.Drawing.Size(357, 58);
             this.btnempleadosasociados.TabIndex = 78;
-            this.btnempleadosasociados.Text = "VER EMPLEADOS ASOCIADOS";
+            this.btnempleadosasociados.Text = "VER EMPLEADOS POR PUESTOS";
             this.btnempleadosasociados.UseVisualStyleBackColor = false;
             this.btnempleadosasociados.Click += new System.EventHandler(this.btnempleadosasociados_Click);
             // 
@@ -102,18 +103,36 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // BtnEmpleadosporPuestos
+            // 
+            this.BtnEmpleadosporPuestos.BackColor = System.Drawing.Color.IndianRed;
+            this.BtnEmpleadosporPuestos.FlatAppearance.BorderSize = 0;
+            this.BtnEmpleadosporPuestos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BtnEmpleadosporPuestos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEmpleadosporPuestos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnEmpleadosporPuestos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEmpleadosporPuestos.Location = new System.Drawing.Point(16, 278);
+            this.BtnEmpleadosporPuestos.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnEmpleadosporPuestos.Name = "BtnEmpleadosporPuestos";
+            this.BtnEmpleadosporPuestos.Size = new System.Drawing.Size(357, 58);
+            this.BtnEmpleadosporPuestos.TabIndex = 80;
+            this.BtnEmpleadosporPuestos.Text = "VER PUESTOS POR EMPLEADOS";
+            this.BtnEmpleadosporPuestos.UseVisualStyleBackColor = false;
+            this.BtnEmpleadosporPuestos.Click += new System.EventHandler(this.BtnEmpleadosporPuestos_Click);
+            // 
             // PuestoTrabajoSeleccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(416, 305);
+            this.ClientSize = new System.Drawing.Size(401, 370);
+            this.Controls.Add(this.BtnEmpleadosporPuestos);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnempleadosasociados);
             this.Controls.Add(this.btnAsociacionPuesto);
             this.Controls.Add(this.btnCargaPuesto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PuestoTrabajoSeleccion";
             this.Text = "PuestoTrabajoSeleccion";
             this.ResumeLayout(false);
@@ -126,5 +145,6 @@
         private System.Windows.Forms.Button btnCargaPuesto;
         private System.Windows.Forms.Button btnempleadosasociados;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnEmpleadosporPuestos;
     }
 }

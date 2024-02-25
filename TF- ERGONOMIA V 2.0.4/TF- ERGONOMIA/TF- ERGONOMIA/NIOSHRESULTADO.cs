@@ -169,7 +169,10 @@ namespace TF.WIN
 
             }
 
-            catch { }
+            catch 
+            {
+             MessageBox.Show("No se encontró un análisis realizado");
+            }
 
         }
 
