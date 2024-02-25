@@ -2115,7 +2115,7 @@ GO
 USE ProyectoFinal;
 GO
 CREATE OR ALTER PROCEDURE SP_ConsultaPuesto_VerReciente
-@IdEmpresa int,
+@CuitEmpresa NVARCHAR(11),
 @NombrePuesto NVARCHAR(max)
 AS
 BEGIN
@@ -2124,7 +2124,7 @@ FROM dbo.PuestoEmpleado pe
 INNER JOIN dbo.PuestoDeTrabajo pt ON pt.IdPuesto = pe.IdPuesto
 INNER JOIN dbo.Empleados em ON em.IdEmpleado = pe.IdEmpleado
 INNER JOIN dbo.Empresas emp ON emp.IdEmpresa = em.IdEmpresa
-WHERE em.IdEmpresa = @IdEmpresa AND pt.NombrePuesto LIKE '%'+@NombrePuesto+'%'
+WHERE emp.CUIT = @CuitEmpresa AND pt.NombrePuesto LIKE '%'+@NombrePuesto+'%'
 GROUP BY pt.NombrePuesto, pt.AreaEmpresa
 END
 GO
