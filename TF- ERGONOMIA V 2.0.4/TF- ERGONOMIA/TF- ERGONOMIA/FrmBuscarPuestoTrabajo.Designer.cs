@@ -37,11 +37,12 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(105, 11);
+            this.label1.Location = new System.Drawing.Point(135, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(467, 36);
             this.label1.TabIndex = 84;
@@ -49,10 +50,11 @@
             // 
             // dgvResultadoPuesto
             // 
+            this.dgvResultadoPuesto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvResultadoPuesto.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvResultadoPuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultadoPuesto.Location = new System.Drawing.Point(19, 50);
-            this.dgvResultadoPuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvResultadoPuesto.Margin = new System.Windows.Forms.Padding(4);
             this.dgvResultadoPuesto.Name = "dgvResultadoPuesto";
             this.dgvResultadoPuesto.ReadOnly = true;
             this.dgvResultadoPuesto.RowHeadersWidth = 51;
@@ -61,6 +63,7 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -69,7 +72,7 @@
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(112, 316);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(155, 58);
             this.btnCancelar.TabIndex = 82;
@@ -79,6 +82,7 @@
             // 
             // btnAceptar
             // 
+            this.btnAceptar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAceptar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnAceptar.FlatAppearance.BorderSize = 0;
             this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -87,7 +91,7 @@
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAceptar.Location = new System.Drawing.Point(447, 316);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(155, 58);
             this.btnAceptar.TabIndex = 80;
@@ -99,15 +103,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(707, 425);
+            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ClientSize = new System.Drawing.Size(707, 389);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvResultadoPuesto);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmBuscarPuestoTrabajo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBuscarPuestoTrabajo";
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadoPuesto)).EndInit();
             this.ResumeLayout(false);

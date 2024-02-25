@@ -61,6 +61,7 @@
             this.ClientSize = new System.Drawing.Size(1271, 558);
             this.Controls.Add(this.chart1);
             this.Name = "FrmSTATGgrafico3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GRAFICO POR TIPO DE EMPRESA";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);

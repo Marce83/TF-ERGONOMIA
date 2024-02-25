@@ -72,6 +72,11 @@ namespace TF.BC
             return dt;
         }
 
-
+        public DataTable EmpleadoPuestoVerRecienteBC(PuestoTrabajo oPuestoTrabajo)
+        {
+            PuestoTrabajoDAC oPuestoTrabajoDAC = new PuestoTrabajoDAC();
+            DataTable dt = oPuestoTrabajoDAC.EmpleadoPuestoVerRecienteDAC(oPuestoTrabajo);
+            return dt;
+        }
     }
 }

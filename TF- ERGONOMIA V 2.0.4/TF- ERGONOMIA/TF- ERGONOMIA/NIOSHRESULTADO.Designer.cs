@@ -92,6 +92,7 @@
             // 
             // materialLabel4
             // 
+            this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel4.Depth = 0;
@@ -105,6 +106,7 @@
             // 
             // txtEmpleadoNiosh
             // 
+            this.txtEmpleadoNiosh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmpleadoNiosh.AnimateReadOnly = false;
             this.txtEmpleadoNiosh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtEmpleadoNiosh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -137,6 +139,7 @@
             // 
             // materialLabel3
             // 
+            this.materialLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel3.Depth = 0;
@@ -150,6 +153,7 @@
             // 
             // txtEmpresaNiosh
             // 
+            this.txtEmpresaNiosh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmpresaNiosh.AnimateReadOnly = false;
             this.txtEmpresaNiosh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtEmpresaNiosh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -182,6 +186,7 @@
             // 
             // materialLabel2
             // 
+            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel2.Depth = 0;
@@ -195,6 +200,7 @@
             // 
             // txtpuestotrabajoNiosh
             // 
+            this.txtpuestotrabajoNiosh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtpuestotrabajoNiosh.AnimateReadOnly = false;
             this.txtpuestotrabajoNiosh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtpuestotrabajoNiosh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -227,6 +233,7 @@
             // 
             // materialLabel11
             // 
+            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
@@ -240,6 +247,7 @@
             // 
             // txtCuit
             // 
+            this.txtCuit.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCuit.AnimateReadOnly = false;
             this.txtCuit.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtCuit.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -272,6 +280,7 @@
             // 
             // btnRecuperarCarga
             // 
+            this.btnRecuperarCarga.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnRecuperarCarga.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnRecuperarCarga.FlatAppearance.BorderSize = 0;
             this.btnRecuperarCarga.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -290,6 +299,7 @@
             // 
             // txtcargaidrebaresultado
             // 
+            this.txtcargaidrebaresultado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcargaidrebaresultado.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtcargaidrebaresultado.Location = new System.Drawing.Point(1001, 379);
             this.txtcargaidrebaresultado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -300,6 +310,7 @@
             // 
             // txtLC
             // 
+            this.txtLC.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLC.AnimateReadOnly = false;
             this.txtLC.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtLC.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -332,6 +343,7 @@
             // 
             // materialLabel8
             // 
+            this.materialLabel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -344,10 +356,11 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(313, 17);
+            this.label1.Location = new System.Drawing.Point(321, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(486, 38);
             this.label1.TabIndex = 239;
@@ -355,6 +368,7 @@
             // 
             // txtILNIOSH
             // 
+            this.txtILNIOSH.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtILNIOSH.AnimateReadOnly = false;
             this.txtILNIOSH.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtILNIOSH.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -387,6 +401,7 @@
             // 
             // materialLabel10
             // 
+            this.materialLabel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel10.AutoSize = true;
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -399,6 +414,7 @@
             // 
             // materialLabel12
             // 
+            this.materialLabel12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel12.AutoSize = true;
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -411,6 +427,7 @@
             // 
             // txtActuacionNIOSH
             // 
+            this.txtActuacionNIOSH.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtActuacionNIOSH.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtActuacionNIOSH.Enabled = false;
             this.txtActuacionNIOSH.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -423,6 +440,7 @@
             // 
             // materialLabel14
             // 
+            this.materialLabel14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel14.AutoSize = true;
             this.materialLabel14.Depth = 0;
             this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -435,6 +453,7 @@
             // 
             // txtHMD
             // 
+            this.txtHMD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtHMD.AnimateReadOnly = false;
             this.txtHMD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtHMD.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -468,6 +487,7 @@
             // 
             // materialLabel15
             // 
+            this.materialLabel15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel15.AutoSize = true;
             this.materialLabel15.Depth = 0;
             this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -480,6 +500,7 @@
             // 
             // txtHMI
             // 
+            this.txtHMI.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtHMI.AnimateReadOnly = false;
             this.txtHMI.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtHMI.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -513,6 +534,7 @@
             // 
             // materialLabel16
             // 
+            this.materialLabel16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel16.AutoSize = true;
             this.materialLabel16.Depth = 0;
             this.materialLabel16.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -525,6 +547,7 @@
             // 
             // txtDM
             // 
+            this.txtDM.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDM.AnimateReadOnly = false;
             this.txtDM.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtDM.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -558,6 +581,7 @@
             // 
             // materialLabel17
             // 
+            this.materialLabel17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel17.AutoSize = true;
             this.materialLabel17.Depth = 0;
             this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -570,6 +594,7 @@
             // 
             // txtAMI
             // 
+            this.txtAMI.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtAMI.AnimateReadOnly = false;
             this.txtAMI.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtAMI.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -603,6 +628,7 @@
             // 
             // materialLabel18
             // 
+            this.materialLabel18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel18.AutoSize = true;
             this.materialLabel18.Depth = 0;
             this.materialLabel18.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -615,6 +641,7 @@
             // 
             // txtAMD
             // 
+            this.txtAMD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtAMD.AnimateReadOnly = false;
             this.txtAMD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtAMD.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -648,6 +675,7 @@
             // 
             // materialLabel19
             // 
+            this.materialLabel19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel19.AutoSize = true;
             this.materialLabel19.Depth = 0;
             this.materialLabel19.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -660,6 +688,7 @@
             // 
             // txtFMD
             // 
+            this.txtFMD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtFMD.AnimateReadOnly = false;
             this.txtFMD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtFMD.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -693,6 +722,7 @@
             // 
             // materialLabel20
             // 
+            this.materialLabel20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel20.AutoSize = true;
             this.materialLabel20.Depth = 0;
             this.materialLabel20.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -705,6 +735,7 @@
             // 
             // txtCMI
             // 
+            this.txtCMI.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCMI.AnimateReadOnly = false;
             this.txtCMI.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtCMI.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -738,6 +769,7 @@
             // 
             // materialLabel21
             // 
+            this.materialLabel21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel21.AutoSize = true;
             this.materialLabel21.Depth = 0;
             this.materialLabel21.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -750,6 +782,7 @@
             // 
             // txtCMD
             // 
+            this.txtCMD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCMD.AnimateReadOnly = false;
             this.txtCMD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtCMD.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -783,6 +816,7 @@
             // 
             // materialLabel1
             // 
+            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -795,6 +829,7 @@
             // 
             // txtVMD
             // 
+            this.txtVMD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtVMD.AnimateReadOnly = false;
             this.txtVMD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtVMD.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -828,6 +863,7 @@
             // 
             // materialLabel5
             // 
+            this.materialLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -840,6 +876,7 @@
             // 
             // txtVMI
             // 
+            this.txtVMI.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtVMI.AnimateReadOnly = false;
             this.txtVMI.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtVMI.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -873,6 +910,7 @@
             // 
             // materialLabel6
             // 
+            this.materialLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -885,6 +923,7 @@
             // 
             // txtFMI
             // 
+            this.txtFMI.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtFMI.AnimateReadOnly = false;
             this.txtFMI.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtFMI.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -918,6 +957,7 @@
             // 
             // materialLabel7
             // 
+            this.materialLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -930,6 +970,7 @@
             // 
             // cboPoblacion
             // 
+            this.cboPoblacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cboPoblacion.AutoResize = false;
             this.cboPoblacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cboPoblacion.Depth = 0;
@@ -956,6 +997,7 @@
             // 
             // txtPoblacion
             // 
+            this.txtPoblacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPoblacion.AnimateReadOnly = false;
             this.txtPoblacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtPoblacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -989,6 +1031,7 @@
             // 
             // txtLPRD
             // 
+            this.txtLPRD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLPRD.AnimateReadOnly = false;
             this.txtLPRD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtLPRD.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -1021,6 +1064,7 @@
             // 
             // materialLabel22
             // 
+            this.materialLabel22.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel22.AutoSize = true;
             this.materialLabel22.Depth = 0;
             this.materialLabel22.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -1033,6 +1077,7 @@
             // 
             // txtLPRI
             // 
+            this.txtLPRI.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLPRI.AnimateReadOnly = false;
             this.txtLPRI.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtLPRI.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -1065,6 +1110,7 @@
             // 
             // materialLabel23
             // 
+            this.materialLabel23.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel23.AutoSize = true;
             this.materialLabel23.Depth = 0;
             this.materialLabel23.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -1077,6 +1123,7 @@
             // 
             // materialLabel24
             // 
+            this.materialLabel24.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel24.AutoSize = true;
             this.materialLabel24.Depth = 0;
             this.materialLabel24.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -1089,6 +1136,7 @@
             // 
             // cboControl
             // 
+            this.cboControl.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cboControl.AutoResize = false;
             this.cboControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cboControl.Depth = 0;
@@ -1114,6 +1162,7 @@
             // 
             // materialLabel25
             // 
+            this.materialLabel25.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel25.AutoSize = true;
             this.materialLabel25.Depth = 0;
             this.materialLabel25.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -1126,6 +1175,7 @@
             // 
             // btnSalir
             // 
+            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -1144,6 +1194,7 @@
             // 
             // btnobtenerinforme
             // 
+            this.btnobtenerinforme.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnobtenerinforme.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnobtenerinforme.FlatAppearance.BorderSize = 0;
             this.btnobtenerinforme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -1162,6 +1213,7 @@
             // 
             // txtriesgoniosh
             // 
+            this.txtriesgoniosh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtriesgoniosh.AnimateReadOnly = false;
             this.txtriesgoniosh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtriesgoniosh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -1194,6 +1246,7 @@
             // 
             // materialLabel9
             // 
+            this.materialLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -1233,6 +1286,7 @@
             // 
             // userlabel2
             // 
+            this.userlabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.userlabel2.AutoSize = true;
             this.userlabel2.Depth = 0;
             this.userlabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -1247,6 +1301,7 @@
             // 
             // userlabel1
             // 
+            this.userlabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.userlabel1.AutoSize = true;
             this.userlabel1.Depth = 0;
             this.userlabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);

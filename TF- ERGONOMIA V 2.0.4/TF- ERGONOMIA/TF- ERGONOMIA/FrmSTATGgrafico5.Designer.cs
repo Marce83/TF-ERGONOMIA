@@ -61,6 +61,7 @@
             this.ClientSize = new System.Drawing.Size(1271, 558);
             this.Controls.Add(this.chart1);
             this.Name = "FrmSTATGgrafico5";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GRAFICO EMPELADOS POR GENERO";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);

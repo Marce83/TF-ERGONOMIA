@@ -394,6 +394,7 @@
             this.BtnSalir.TabIndex = 147;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // btnCrear
             // 

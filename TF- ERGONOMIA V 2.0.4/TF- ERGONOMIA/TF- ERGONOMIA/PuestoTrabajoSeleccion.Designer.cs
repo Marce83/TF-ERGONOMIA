@@ -37,6 +37,7 @@
             // 
             // btnAsociacionPuesto
             // 
+            this.btnAsociacionPuesto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAsociacionPuesto.BackColor = System.Drawing.Color.IndianRed;
             this.btnAsociacionPuesto.FlatAppearance.BorderSize = 0;
             this.btnAsociacionPuesto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -54,6 +55,7 @@
             // 
             // btnCargaPuesto
             // 
+            this.btnCargaPuesto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCargaPuesto.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnCargaPuesto.FlatAppearance.BorderSize = 0;
             this.btnCargaPuesto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -71,6 +73,7 @@
             // 
             // btnempleadosasociados
             // 
+            this.btnempleadosasociados.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnempleadosasociados.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnempleadosasociados.FlatAppearance.BorderSize = 0;
             this.btnempleadosasociados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -88,6 +91,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button1.BackColor = System.Drawing.Color.OrangeRed;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -105,6 +109,7 @@
             // 
             // BtnEmpleadosporPuestos
             // 
+            this.BtnEmpleadosporPuestos.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnEmpleadosporPuestos.BackColor = System.Drawing.Color.IndianRed;
             this.BtnEmpleadosporPuestos.FlatAppearance.BorderSize = 0;
             this.BtnEmpleadosporPuestos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;

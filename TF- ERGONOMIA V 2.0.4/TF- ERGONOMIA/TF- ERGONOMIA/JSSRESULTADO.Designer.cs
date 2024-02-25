@@ -58,22 +58,16 @@
             this.btnobtenerinforme = new System.Windows.Forms.Button();
             this.txtSituacionJss = new MaterialSkin.Controls.MaterialTextBox2();
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.btnRestaurar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userlabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.userlabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.BarraTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDMAR
             // 
-            this.txtDMAR.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDMAR.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDMAR.AnimateReadOnly = false;
             this.txtDMAR.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtDMAR.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -107,7 +101,7 @@
             // 
             // materialLabel16
             // 
-            this.materialLabel16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialLabel16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel16.AutoSize = true;
             this.materialLabel16.Depth = 0;
             this.materialLabel16.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -120,7 +114,7 @@
             // 
             // txtAS
             // 
-            this.txtAS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtAS.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtAS.AnimateReadOnly = false;
             this.txtAS.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtAS.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -154,7 +148,7 @@
             // 
             // materialLabel15
             // 
-            this.materialLabel15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialLabel15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel15.AutoSize = true;
             this.materialLabel15.Depth = 0;
             this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -167,7 +161,7 @@
             // 
             // txtCTL
             // 
-            this.txtCTL.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCTL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCTL.AnimateReadOnly = false;
             this.txtCTL.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtCTL.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -201,7 +195,7 @@
             // 
             // materialLabel14
             // 
-            this.materialLabel14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialLabel14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel14.AutoSize = true;
             this.materialLabel14.Depth = 0;
             this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -214,7 +208,7 @@
             // 
             // txtDMA
             // 
-            this.txtDMA.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDMA.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDMA.AnimateReadOnly = false;
             this.txtDMA.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtDMA.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -248,7 +242,7 @@
             // 
             // txtActuacionJSS1
             // 
-            this.txtActuacionJSS1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtActuacionJSS1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtActuacionJSS1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtActuacionJSS1.Enabled = false;
             this.txtActuacionJSS1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -261,7 +255,7 @@
             // 
             // materialLabel12
             // 
-            this.materialLabel12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialLabel12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel12.AutoSize = true;
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -274,11 +268,11 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(280, 17);
+            this.label1.Location = new System.Drawing.Point(375, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(443, 38);
             this.label1.TabIndex = 295;
@@ -286,7 +280,7 @@
             // 
             // btnRecuperarCarga
             // 
-            this.btnRecuperarCarga.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRecuperarCarga.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnRecuperarCarga.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnRecuperarCarga.FlatAppearance.BorderSize = 0;
             this.btnRecuperarCarga.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -295,7 +289,7 @@
             this.btnRecuperarCarga.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnRecuperarCarga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecuperarCarga.Location = new System.Drawing.Point(941, 309);
-            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecuperarCarga.Name = "btnRecuperarCarga";
             this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 43);
             this.btnRecuperarCarga.TabIndex = 291;
@@ -305,7 +299,7 @@
             // 
             // materialLabel4
             // 
-            this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel4.Depth = 0;
@@ -319,7 +313,7 @@
             // 
             // txtEmpleadojss
             // 
-            this.txtEmpleadojss.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmpleadojss.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmpleadojss.AnimateReadOnly = false;
             this.txtEmpleadojss.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtEmpleadojss.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -352,7 +346,7 @@
             // 
             // materialLabel3
             // 
-            this.materialLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel3.Depth = 0;
@@ -366,7 +360,7 @@
             // 
             // txtEmpresajss
             // 
-            this.txtEmpresajss.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmpresajss.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmpresajss.AnimateReadOnly = false;
             this.txtEmpresajss.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtEmpresajss.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -399,7 +393,7 @@
             // 
             // materialLabel2
             // 
-            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel2.Depth = 0;
@@ -413,7 +407,7 @@
             // 
             // txtpuestotrabajojss
             // 
-            this.txtpuestotrabajojss.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtpuestotrabajojss.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtpuestotrabajojss.AnimateReadOnly = false;
             this.txtpuestotrabajojss.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtpuestotrabajojss.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -446,7 +440,7 @@
             // 
             // materialLabel11
             // 
-            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
@@ -460,7 +454,7 @@
             // 
             // txtCuit
             // 
-            this.txtCuit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCuit.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCuit.AnimateReadOnly = false;
             this.txtCuit.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtCuit.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -493,7 +487,7 @@
             // 
             // txtcargaidJSS
             // 
-            this.txtcargaidJSS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtcargaidJSS.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcargaidJSS.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtcargaidJSS.Location = new System.Drawing.Point(995, 249);
             this.txtcargaidJSS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -504,7 +498,7 @@
             // 
             // materialLabel6
             // 
-            this.materialLabel6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -517,7 +511,7 @@
             // 
             // materialLabel1
             // 
-            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -530,7 +524,7 @@
             // 
             // txtCTLR
             // 
-            this.txtCTLR.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCTLR.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCTLR.AnimateReadOnly = false;
             this.txtCTLR.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtCTLR.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -564,7 +558,7 @@
             // 
             // materialLabel5
             // 
-            this.materialLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -577,7 +571,7 @@
             // 
             // txtASR
             // 
-            this.txtASR.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtASR.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtASR.AnimateReadOnly = false;
             this.txtASR.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtASR.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -611,7 +605,7 @@
             // 
             // btncerrar
             // 
-            this.btncerrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btncerrar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btncerrar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btncerrar.FlatAppearance.BorderSize = 0;
             this.btncerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -620,7 +614,7 @@
             this.btncerrar.ForeColor = System.Drawing.Color.AliceBlue;
             this.btncerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btncerrar.Location = new System.Drawing.Point(941, 409);
-            this.btncerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btncerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(155, 43);
             this.btncerrar.TabIndex = 336;
@@ -630,7 +624,7 @@
             // 
             // btnobtenerinforme
             // 
-            this.btnobtenerinforme.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnobtenerinforme.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnobtenerinforme.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnobtenerinforme.FlatAppearance.BorderSize = 0;
             this.btnobtenerinforme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -639,7 +633,7 @@
             this.btnobtenerinforme.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnobtenerinforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnobtenerinforme.Location = new System.Drawing.Point(941, 359);
-            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4);
             this.btnobtenerinforme.Name = "btnobtenerinforme";
             this.btnobtenerinforme.Size = new System.Drawing.Size(155, 42);
             this.btnobtenerinforme.TabIndex = 337;
@@ -649,7 +643,7 @@
             // 
             // txtSituacionJss
             // 
-            this.txtSituacionJss.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSituacionJss.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSituacionJss.AnimateReadOnly = false;
             this.txtSituacionJss.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtSituacionJss.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -684,63 +678,14 @@
             // BarraTitulo
             // 
             this.BarraTitulo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BarraTitulo.Controls.Add(this.btnRestaurar);
-            this.BarraTitulo.Controls.Add(this.btnMinimizar);
-            this.BarraTitulo.Controls.Add(this.btnMaximizar);
             this.BarraTitulo.Controls.Add(this.pictureBox1);
             this.BarraTitulo.Controls.Add(this.label1);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1128, 65);
             this.BarraTitulo.TabIndex = 339;
-            // 
-            // btnRestaurar
-            // 
-            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRestaurar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(1041, 17);
-            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(33, 31);
-            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRestaurar.TabIndex = 2;
-            this.btnRestaurar.TabStop = false;
-            this.btnRestaurar.Visible = false;
-            this.btnRestaurar.Click += new System.EventHandler(this.btnRecuperarCarga_Click);
-            this.btnRestaurar.DoubleClick += new System.EventHandler(this.btnMaximizar_Click);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(1000, 17);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(33, 31);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 1;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximizar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(1041, 17);
-            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(33, 31);
-            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizar.TabIndex = 1;
-            this.btnMaximizar.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -749,7 +694,7 @@
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1083, 17);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(33, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -759,6 +704,7 @@
             // 
             // userlabel1
             // 
+            this.userlabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.userlabel1.AutoSize = true;
             this.userlabel1.Depth = 0;
             this.userlabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -773,6 +719,7 @@
             // 
             // userlabel2
             // 
+            this.userlabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.userlabel2.AutoSize = true;
             this.userlabel2.Depth = 0;
             this.userlabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -831,9 +778,6 @@
             this.Load += new System.EventHandler(this.JSSRESULTADO_Load);
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -870,9 +814,6 @@
         private System.Windows.Forms.Button btnobtenerinforme;
         private MaterialSkin.Controls.MaterialTextBox2 txtSituacionJss;
         private System.Windows.Forms.Panel BarraTitulo;
-        private System.Windows.Forms.PictureBox btnRestaurar;
-        private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private MaterialSkin.Controls.MaterialLabel userlabel1;
         private MaterialSkin.Controls.MaterialLabel userlabel2;

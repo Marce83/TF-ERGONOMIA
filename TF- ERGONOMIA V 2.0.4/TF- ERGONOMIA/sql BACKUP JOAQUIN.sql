@@ -214,16 +214,17 @@ BEGIN
 	WHERE CUIT = @CUIT
 END
 GO
+
 use ProyectoFinal
 GO
-
 CREATE OR ALTER PROCEDURE SP_Empleados_GetAll
 AS
 BEGIN
-	SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
-	FROM Empleados
-	WHERE FechaEgreso IS NULL
-	AND Estado = 'A'
+SELECT UPPER(Em.Nombre) Nombre, UPPER(Em.Apellido) Apellido, Em.DNI, UPPER(Em.Genero) Genero, Em.Peso, Em.Altura, Em.FechaNacimiento 'Fecha de Nacimiento', Em.FechaIngreso 'Fecha de Ingreso', Em.Estado, UPPER(empr.Nombre) Empresa, empr.CUIT
+	FROM dbo.Empleados Em
+	INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
+	WHERE Em.FechaEgreso IS NULL
+	AND Em.Estado = 'A'
 END
 GO
 
@@ -2092,6 +2093,39 @@ BEGIN
     WHERE (FechaIngreso BETWEEN @FechaIngreso AND @FechaIngreso2)
     AND (NombreEmpleado LIKE '%' + @NombreEmpleado + '%' OR @NombreEmpleado IS NULL)
     ORDER BY FechaIngreso DESC;
+END
+GO
+
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_VerReciente
+@FechaIngreso DATE,
+@FechaIngreso2 DATE,
+@NombreEmpleado NVARCHAR(50)
+AS
+BEGIN
+    SELECT * FROM VistaEmpleadosPuestos
+    WHERE (FechaIngreso BETWEEN @FechaIngreso AND @FechaIngreso2)
+    AND (NombreEmpleado LIKE '%' + @NombreEmpleado + '%' OR @NombreEmpleado IS NULL)
+    ORDER BY FechaIngreso DESC;
+END
+GO
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_ConsultaPuesto_VerReciente
+@IdEmpresa int,
+@NombrePuesto NVARCHAR(max)
+AS
+BEGIN
+    SELECT pt.NombrePuesto, pt.AreaEmpresa, COUNT(em.DNI) AS CantidadEmpleados
+FROM dbo.PuestoEmpleado pe
+INNER JOIN dbo.PuestoDeTrabajo pt ON pt.IdPuesto = pe.IdPuesto
+INNER JOIN dbo.Empleados em ON em.IdEmpleado = pe.IdEmpleado
+INNER JOIN dbo.Empresas emp ON emp.IdEmpresa = em.IdEmpresa
+WHERE em.IdEmpresa = @IdEmpresa AND pt.NombrePuesto LIKE '%'+@NombrePuesto+'%'
+GROUP BY pt.NombrePuesto, pt.AreaEmpresa
 END
 GO
 

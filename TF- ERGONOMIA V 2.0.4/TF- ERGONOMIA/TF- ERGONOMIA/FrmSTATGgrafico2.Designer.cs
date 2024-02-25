@@ -78,8 +78,8 @@
             this.ClientSize = new System.Drawing.Size(1280, 619);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.chart1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmSTATGgrafico2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmSTATGgrafico2cs";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
