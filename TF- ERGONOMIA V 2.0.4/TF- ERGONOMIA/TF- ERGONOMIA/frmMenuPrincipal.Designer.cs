@@ -79,10 +79,7 @@ namespace TF.WIN
             this.BarraTitulo.Controls.Add(this.btnCerrar);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-<<<<<<< HEAD
-=======
             this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1215, 53);
             this.BarraTitulo.TabIndex = 0;
@@ -167,12 +164,7 @@ namespace TF.WIN
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(248, 4);
-=======
-            this.button1.Location = new System.Drawing.Point(331, 5);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 35);
             this.button1.TabIndex = 4;
@@ -197,12 +189,7 @@ namespace TF.WIN
             this.btnRestaurar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-<<<<<<< HEAD
             this.btnRestaurar.Location = new System.Drawing.Point(1150, 14);
-=======
-            this.btnRestaurar.Location = new System.Drawing.Point(1573, 17);
-            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,12 +204,7 @@ namespace TF.WIN
             this.btnMinimizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-<<<<<<< HEAD
             this.btnMinimizar.Location = new System.Drawing.Point(1119, 14);
-=======
-            this.btnMinimizar.Location = new System.Drawing.Point(1532, 17);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -236,12 +218,7 @@ namespace TF.WIN
             this.btnMaximizar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-<<<<<<< HEAD
             this.btnMaximizar.Location = new System.Drawing.Point(1150, 14);
-=======
-            this.btnMaximizar.Location = new System.Drawing.Point(1573, 17);
-            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -255,12 +232,7 @@ namespace TF.WIN
             this.btnCerrar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-<<<<<<< HEAD
             this.btnCerrar.Location = new System.Drawing.Point(1181, 14);
-=======
-            this.btnCerrar.Location = new System.Drawing.Point(1615, 17);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(25, 25);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -281,12 +253,7 @@ namespace TF.WIN
             this.MenuVertical.Controls.Add(this.btnEmpleados);
             this.MenuVertical.Controls.Add(this.btnEmpresa);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
-<<<<<<< HEAD
             this.MenuVertical.Location = new System.Drawing.Point(0, 53);
-=======
-            this.MenuVertical.Location = new System.Drawing.Point(0, 65);
-            this.MenuVertical.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(240, 638);
             this.MenuVertical.TabIndex = 1;
@@ -315,12 +282,7 @@ namespace TF.WIN
             this.cerrarsesion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cerrarsesion.Image = ((System.Drawing.Image)(resources.GetObject("cerrarsesion.Image")));
             this.cerrarsesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< HEAD
             this.cerrarsesion.Location = new System.Drawing.Point(0, 535);
-=======
-            this.cerrarsesion.Location = new System.Drawing.Point(0, 658);
-            this.cerrarsesion.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.cerrarsesion.Name = "cerrarsesion";
             this.cerrarsesion.Size = new System.Drawing.Size(296, 69);
             this.cerrarsesion.TabIndex = 14;
@@ -339,13 +301,8 @@ namespace TF.WIN
             this.btnPuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnPuesto.Image = ((System.Drawing.Image)(resources.GetObject("btnPuesto.Image")));
             this.btnPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< HEAD
             this.btnPuesto.Location = new System.Drawing.Point(0, 156);
             this.btnPuesto.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.btnPuesto.Location = new System.Drawing.Point(0, 192);
-            this.btnPuesto.Margin = new System.Windows.Forms.Padding(5);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnPuesto.Name = "btnPuesto";
             this.btnPuesto.Size = new System.Drawing.Size(295, 86);
             this.btnPuesto.TabIndex = 16;
@@ -364,12 +321,7 @@ namespace TF.WIN
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< HEAD
             this.button2.Location = new System.Drawing.Point(-2, 2);
-=======
-            this.button2.Location = new System.Drawing.Point(-3, 2);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(285, 70);
             this.button2.TabIndex = 2;
@@ -390,12 +342,7 @@ namespace TF.WIN
             this.btnEstadisticas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEstadisticas.Image = ((System.Drawing.Image)(resources.GetObject("btnEstadisticas.Image")));
             this.btnEstadisticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< HEAD
             this.btnEstadisticas.Location = new System.Drawing.Point(5, 456);
-=======
-            this.btnEstadisticas.Location = new System.Drawing.Point(7, 561);
-            this.btnEstadisticas.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnEstadisticas.Name = "btnEstadisticas";
             this.btnEstadisticas.Size = new System.Drawing.Size(290, 70);
             this.btnEstadisticas.TabIndex = 13;
@@ -414,12 +361,7 @@ namespace TF.WIN
             this.btnInformes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnInformes.Image = ((System.Drawing.Image)(resources.GetObject("btnInformes.Image")));
             this.btnInformes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< HEAD
             this.btnInformes.Location = new System.Drawing.Point(3, 380);
-=======
-            this.btnInformes.Location = new System.Drawing.Point(4, 468);
-            this.btnInformes.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnInformes.Name = "btnInformes";
             this.btnInformes.Size = new System.Drawing.Size(290, 70);
             this.btnInformes.TabIndex = 11;
@@ -438,12 +380,7 @@ namespace TF.WIN
             this.btnMetodo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnMetodo.Image = ((System.Drawing.Image)(resources.GetObject("btnMetodo.Image")));
             this.btnMetodo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< HEAD
             this.btnMetodo.Location = new System.Drawing.Point(3, 304);
-=======
-            this.btnMetodo.Location = new System.Drawing.Point(4, 374);
-            this.btnMetodo.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnMetodo.Name = "btnMetodo";
             this.btnMetodo.Size = new System.Drawing.Size(290, 70);
             this.btnMetodo.TabIndex = 9;
@@ -462,12 +399,7 @@ namespace TF.WIN
             this.btnEmpleados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< HEAD
             this.btnEmpleados.Location = new System.Drawing.Point(3, 237);
-=======
-            this.btnEmpleados.Location = new System.Drawing.Point(4, 292);
-            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(290, 70);
             this.btnEmpleados.TabIndex = 7;
@@ -486,12 +418,7 @@ namespace TF.WIN
             this.btnEmpresa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEmpresa.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpresa.Image")));
             this.btnEmpresa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< HEAD
             this.btnEmpresa.Location = new System.Drawing.Point(0, 78);
-=======
-            this.btnEmpresa.Location = new System.Drawing.Point(0, 96);
-            this.btnEmpresa.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnEmpresa.Name = "btnEmpresa";
             this.btnEmpresa.Size = new System.Drawing.Size(284, 70);
             this.btnEmpresa.TabIndex = 1;
@@ -505,12 +432,7 @@ namespace TF.WIN
             this.PanelConector.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelConector.BackgroundImage")));
             this.PanelConector.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PanelConector.Dock = System.Windows.Forms.DockStyle.Fill;
-<<<<<<< HEAD
             this.PanelConector.Location = new System.Drawing.Point(240, 53);
-=======
-            this.PanelConector.Location = new System.Drawing.Point(320, 65);
-            this.PanelConector.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.PanelConector.Name = "PanelConector";
             this.PanelConector.Size = new System.Drawing.Size(975, 638);
             this.PanelConector.TabIndex = 2;
@@ -524,10 +446,6 @@ namespace TF.WIN
             this.Controls.Add(this.MenuVertical);
             this.Controls.Add(this.BarraTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-<<<<<<< HEAD
-=======
-            this.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.Name = "frmMenuPrincipal";
             this.Text = "MenuPrincipal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);

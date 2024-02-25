@@ -55,10 +55,9 @@
             // 
             // linkEditarClave
             // 
-            this.linkEditarClave.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.linkEditarClave.AutoSize = true;
             this.linkEditarClave.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.linkEditarClave.Location = new System.Drawing.Point(110, 257);
+            this.linkEditarClave.Location = new System.Drawing.Point(232, 260);
             this.linkEditarClave.Name = "linkEditarClave";
             this.linkEditarClave.Size = new System.Drawing.Size(45, 13);
             this.linkEditarClave.TabIndex = 33;
@@ -68,10 +67,9 @@
             // 
             // txtRepetirClave
             // 
-            this.txtRepetirClave.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtRepetirClave.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtRepetirClave.Location = new System.Drawing.Point(19, 315);
-            this.txtRepetirClave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRepetirClave.Location = new System.Drawing.Point(141, 318);
+            this.txtRepetirClave.Margin = new System.Windows.Forms.Padding(4);
             this.txtRepetirClave.Name = "txtRepetirClave";
             this.txtRepetirClave.PasswordChar = '*';
             this.txtRepetirClave.Size = new System.Drawing.Size(327, 20);
@@ -79,10 +77,9 @@
             // 
             // label15
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label15.Location = new System.Drawing.Point(18, 298);
+            this.label15.Location = new System.Drawing.Point(140, 301);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(104, 13);
@@ -91,10 +88,9 @@
             // 
             // txtClaveNueva
             // 
-            this.txtClaveNueva.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtClaveNueva.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtClaveNueva.Location = new System.Drawing.Point(19, 274);
-            this.txtClaveNueva.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClaveNueva.Location = new System.Drawing.Point(141, 277);
+            this.txtClaveNueva.Margin = new System.Windows.Forms.Padding(4);
             this.txtClaveNueva.Name = "txtClaveNueva";
             this.txtClaveNueva.PasswordChar = '*';
             this.txtClaveNueva.Size = new System.Drawing.Size(327, 20);
@@ -102,10 +98,9 @@
             // 
             // label14
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(18, 257);
+            this.label14.Location = new System.Drawing.Point(140, 260);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(69, 13);
@@ -114,10 +109,9 @@
             // 
             // txtClaveActual
             // 
-            this.txtClaveActual.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtClaveActual.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtClaveActual.Location = new System.Drawing.Point(19, 233);
-            this.txtClaveActual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClaveActual.Location = new System.Drawing.Point(141, 236);
+            this.txtClaveActual.Margin = new System.Windows.Forms.Padding(4);
             this.txtClaveActual.Name = "txtClaveActual";
             this.txtClaveActual.PasswordChar = '*';
             this.txtClaveActual.Size = new System.Drawing.Size(327, 20);
@@ -125,10 +119,9 @@
             // 
             // label13
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(16, 216);
+            this.label13.Location = new System.Drawing.Point(138, 219);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(67, 13);
@@ -137,20 +130,12 @@
             // 
             // btnGuardar
             // 
-<<<<<<< HEAD
-            this.btnGuardar.Location = new System.Drawing.Point(279, 390);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(90, 28);
-=======
-            this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnGuardar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGuardar.Location = new System.Drawing.Point(688, 482);
+            this.btnGuardar.Location = new System.Drawing.Point(670, 416);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(163, 60);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnGuardar.TabIndex = 42;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -158,20 +143,12 @@
             // 
             // btnCancelar
             // 
-<<<<<<< HEAD
-            this.btnCancelar.Location = new System.Drawing.Point(171, 390);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(90, 28);
-=======
-            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCancelar.Location = new System.Drawing.Point(487, 482);
+            this.btnCancelar.Location = new System.Drawing.Point(469, 416);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(5);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(163, 60);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnCancelar.TabIndex = 41;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -179,7 +156,6 @@
             // 
             // cboCargo
             // 
-            this.cboCargo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cboCargo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.cboCargo.FormattingEnabled = true;
             this.cboCargo.Items.AddRange(new object[] {
@@ -188,28 +164,26 @@
             "Profesional",
             "Recepcionista",
             "Usuario"});
-            this.cboCargo.Location = new System.Drawing.Point(21, 356);
-            this.cboCargo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboCargo.Location = new System.Drawing.Point(143, 359);
+            this.cboCargo.Margin = new System.Windows.Forms.Padding(4);
             this.cboCargo.Name = "cboCargo";
             this.cboCargo.Size = new System.Drawing.Size(162, 21);
             this.cboCargo.TabIndex = 40;
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCorreo.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtCorreo.Location = new System.Drawing.Point(19, 192);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorreo.Location = new System.Drawing.Point(141, 195);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(327, 20);
             this.txtCorreo.TabIndex = 39;
             // 
             // txtApellido
             // 
-            this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtApellido.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtApellido.Location = new System.Drawing.Point(20, 151);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApellido.Location = new System.Drawing.Point(142, 154);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(327, 20);
             this.txtApellido.TabIndex = 38;
@@ -217,10 +191,9 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombre.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtNombre.Location = new System.Drawing.Point(20, 110);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Location = new System.Drawing.Point(142, 113);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(327, 20);
             this.txtNombre.TabIndex = 37;
@@ -228,10 +201,9 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtUsuario.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtUsuario.Location = new System.Drawing.Point(19, 69);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsuario.Location = new System.Drawing.Point(141, 72);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(327, 20);
             this.txtUsuario.TabIndex = 36;
@@ -239,30 +211,21 @@
             // 
             // label12
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-<<<<<<< HEAD
-            this.label12.Location = new System.Drawing.Point(153, 9);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(108, 24);
-=======
-            this.label12.Location = new System.Drawing.Point(313, 9);
+            this.label12.Location = new System.Drawing.Point(313, 25);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(639, 36);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
+            this.label12.Size = new System.Drawing.Size(508, 29);
             this.label12.TabIndex = 35;
             this.label12.Text = "ADMINISTRADOR DE DATOS DE USUARIOS";
             // 
             // lblEditarCargo
             // 
-            this.lblEditarCargo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblEditarCargo.AutoSize = true;
             this.lblEditarCargo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblEditarCargo.Location = new System.Drawing.Point(18, 339);
+            this.lblEditarCargo.Location = new System.Drawing.Point(140, 342);
             this.lblEditarCargo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEditarCargo.Name = "lblEditarCargo";
             this.lblEditarCargo.Size = new System.Drawing.Size(35, 13);
@@ -271,10 +234,9 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(18, 175);
+            this.label5.Location = new System.Drawing.Point(140, 178);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 13);
@@ -283,10 +245,9 @@
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(18, 134);
+            this.label6.Location = new System.Drawing.Point(140, 137);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
@@ -295,10 +256,9 @@
             // 
             // label8
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(17, 93);
+            this.label8.Location = new System.Drawing.Point(139, 96);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 13);
@@ -307,10 +267,9 @@
             // 
             // label10
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(16, 49);
+            this.label10.Location = new System.Drawing.Point(138, 52);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(43, 13);
@@ -319,11 +278,10 @@
             // 
             // dgvEditarPerfil
             // 
-            this.dgvEditarPerfil.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvEditarPerfil.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvEditarPerfil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEditarPerfil.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvEditarPerfil.Location = new System.Drawing.Point(365, 69);
+            this.dgvEditarPerfil.Location = new System.Drawing.Point(487, 72);
             this.dgvEditarPerfil.Name = "dgvEditarPerfil";
             this.dgvEditarPerfil.RowHeadersWidth = 51;
             this.dgvEditarPerfil.Size = new System.Drawing.Size(604, 308);
@@ -332,10 +290,9 @@
             // 
             // button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(303, 482);
+            this.button1.Location = new System.Drawing.Point(285, 416);
             this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 60);
@@ -349,12 +306,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(982, 431);
-=======
             this.ClientSize = new System.Drawing.Size(1425, 556);
             this.Controls.Add(this.button1);
->>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.Controls.Add(this.dgvEditarPerfil);
             this.Controls.Add(this.linkEditarClave);
             this.Controls.Add(this.txtRepetirClave);
