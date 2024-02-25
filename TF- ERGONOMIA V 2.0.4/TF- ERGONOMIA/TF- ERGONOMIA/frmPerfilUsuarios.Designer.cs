@@ -66,127 +66,139 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(33, 23);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 24);
+            this.label1.Size = new System.Drawing.Size(192, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Perfil de Usuario";
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(37, 64);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 16);
+            this.label2.Size = new System.Drawing.Size(67, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Usuario";
             // 
             // lblUsuario
             // 
+            this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Location = new System.Drawing.Point(37, 93);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
+            this.lblUsuario.Size = new System.Drawing.Size(57, 17);
             this.lblUsuario.TabIndex = 2;
             this.lblUsuario.Text = "Usuario";
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(37, 133);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 16);
+            this.label4.Size = new System.Drawing.Size(68, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Nombre";
             // 
             // lblNombre
             // 
+            this.lblNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(37, 160);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(44, 13);
+            this.lblNombre.Size = new System.Drawing.Size(58, 17);
             this.lblNombre.TabIndex = 4;
             this.lblNombre.Text = "Nombre";
             // 
             // lblApellido
             // 
+            this.lblApellido.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.Location = new System.Drawing.Point(37, 224);
             this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(44, 13);
+            this.lblApellido.Size = new System.Drawing.Size(58, 17);
             this.lblApellido.TabIndex = 6;
             this.lblApellido.Text = "Apellido";
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(37, 197);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 16);
+            this.label7.Size = new System.Drawing.Size(68, 20);
             this.label7.TabIndex = 5;
             this.label7.Text = "Apellido";
             // 
             // lblCorreo
             // 
+            this.lblCorreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.Location = new System.Drawing.Point(37, 287);
             this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(94, 13);
+            this.lblCorreo.Size = new System.Drawing.Size(125, 17);
             this.lblCorreo.TabIndex = 8;
             this.lblCorreo.Text = "Correo Electrónico";
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(37, 260);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(118, 16);
+            this.label9.Size = new System.Drawing.Size(149, 20);
             this.label9.TabIndex = 7;
             this.label9.Text = "Correo Electrónico";
             // 
             // lblCargo
             // 
+            this.lblCargo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCargo.AutoSize = true;
             this.lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCargo.Location = new System.Drawing.Point(37, 354);
             this.lblCargo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(35, 13);
+            this.lblCargo.Size = new System.Drawing.Size(46, 17);
             this.lblCargo.TabIndex = 10;
             this.lblCargo.Text = "Cargo";
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(37, 327);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(44, 16);
+            this.label11.Size = new System.Drawing.Size(54, 20);
             this.label11.TabIndex = 9;
             this.label11.Text = "Cargo";
             // 
             // panelEditor
             // 
+            this.panelEditor.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panelEditor.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panelEditor.Controls.Add(this.linkEditarClave);
             this.panelEditor.Controls.Add(this.txtRepetirClave);
@@ -221,7 +233,7 @@
             this.linkEditarClave.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.linkEditarClave.Location = new System.Drawing.Point(119, 343);
             this.linkEditarClave.Name = "linkEditarClave";
-            this.linkEditarClave.Size = new System.Drawing.Size(58, 16);
+            this.linkEditarClave.Size = new System.Drawing.Size(72, 20);
             this.linkEditarClave.TabIndex = 13;
             this.linkEditarClave.TabStop = true;
             this.linkEditarClave.Text = "Cambiar";
@@ -233,7 +245,7 @@
             this.txtRepetirClave.Margin = new System.Windows.Forms.Padding(4);
             this.txtRepetirClave.Name = "txtRepetirClave";
             this.txtRepetirClave.PasswordChar = '*';
-            this.txtRepetirClave.Size = new System.Drawing.Size(441, 22);
+            this.txtRepetirClave.Size = new System.Drawing.Size(441, 26);
             this.txtRepetirClave.TabIndex = 28;
             // 
             // label15
@@ -243,7 +255,7 @@
             this.label15.Location = new System.Drawing.Point(27, 398);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(129, 16);
+            this.label15.Size = new System.Drawing.Size(159, 20);
             this.label15.TabIndex = 27;
             this.label15.Text = "Repetir Clave nueva";
             // 
@@ -253,7 +265,7 @@
             this.txtClaveNueva.Margin = new System.Windows.Forms.Padding(4);
             this.txtClaveNueva.Name = "txtClaveNueva";
             this.txtClaveNueva.PasswordChar = '*';
-            this.txtClaveNueva.Size = new System.Drawing.Size(441, 22);
+            this.txtClaveNueva.Size = new System.Drawing.Size(441, 26);
             this.txtClaveNueva.TabIndex = 26;
             // 
             // label14
@@ -263,7 +275,7 @@
             this.label14.Location = new System.Drawing.Point(27, 343);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(85, 16);
+            this.label14.Size = new System.Drawing.Size(103, 20);
             this.label14.TabIndex = 25;
             this.label14.Text = "Clave Nueva";
             // 
@@ -273,7 +285,7 @@
             this.txtClaveActual.Margin = new System.Windows.Forms.Padding(4);
             this.txtClaveActual.Name = "txtClaveActual";
             this.txtClaveActual.PasswordChar = '*';
-            this.txtClaveActual.Size = new System.Drawing.Size(441, 22);
+            this.txtClaveActual.Size = new System.Drawing.Size(441, 26);
             this.txtClaveActual.TabIndex = 24;
             // 
             // label13
@@ -283,7 +295,7 @@
             this.label13.Location = new System.Drawing.Point(27, 288);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 16);
+            this.label13.Size = new System.Drawing.Size(103, 20);
             this.label13.TabIndex = 23;
             this.label13.Text = "Clave Actual";
             // 
@@ -321,7 +333,7 @@
             this.cboCargo.Location = new System.Drawing.Point(32, 475);
             this.cboCargo.Margin = new System.Windows.Forms.Padding(4);
             this.cboCargo.Name = "cboCargo";
-            this.cboCargo.Size = new System.Drawing.Size(276, 24);
+            this.cboCargo.Size = new System.Drawing.Size(276, 28);
             this.cboCargo.TabIndex = 20;
             // 
             // txtCorreo
@@ -329,7 +341,7 @@
             this.txtCorreo.Location = new System.Drawing.Point(32, 256);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(441, 22);
+            this.txtCorreo.Size = new System.Drawing.Size(441, 26);
             this.txtCorreo.TabIndex = 19;
             // 
             // txtApellido
@@ -337,7 +349,7 @@
             this.txtApellido.Location = new System.Drawing.Point(32, 198);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(441, 22);
+            this.txtApellido.Size = new System.Drawing.Size(441, 26);
             this.txtApellido.TabIndex = 18;
             this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
@@ -346,7 +358,7 @@
             this.txtNombre.Location = new System.Drawing.Point(32, 141);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(441, 22);
+            this.txtNombre.Size = new System.Drawing.Size(441, 26);
             this.txtNombre.TabIndex = 17;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
@@ -355,7 +367,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(30, 85);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(441, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(441, 26);
             this.txtUsuario.TabIndex = 16;
             this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             // 
@@ -367,7 +379,7 @@
             this.label12.Location = new System.Drawing.Point(164, 25);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(108, 24);
+            this.label12.Size = new System.Drawing.Size(141, 29);
             this.label12.TabIndex = 15;
             this.label12.Text = "Editar datos";
             // 
@@ -378,7 +390,7 @@
             this.lblEditarCargo.Location = new System.Drawing.Point(29, 454);
             this.lblEditarCargo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEditarCargo.Name = "lblEditarCargo";
-            this.lblEditarCargo.Size = new System.Drawing.Size(44, 16);
+            this.lblEditarCargo.Size = new System.Drawing.Size(54, 20);
             this.lblEditarCargo.TabIndex = 14;
             this.lblEditarCargo.Text = "Cargo";
             // 
@@ -389,7 +401,7 @@
             this.label5.Location = new System.Drawing.Point(28, 236);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 16);
+            this.label5.Size = new System.Drawing.Size(149, 20);
             this.label5.TabIndex = 13;
             this.label5.Text = "Correo Electrónico";
             // 
@@ -400,7 +412,7 @@
             this.label6.Location = new System.Drawing.Point(29, 176);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 16);
+            this.label6.Size = new System.Drawing.Size(68, 20);
             this.label6.TabIndex = 12;
             this.label6.Text = "Apellido";
             // 
@@ -411,7 +423,7 @@
             this.label8.Location = new System.Drawing.Point(28, 121);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 16);
+            this.label8.Size = new System.Drawing.Size(68, 20);
             this.label8.TabIndex = 11;
             this.label8.Text = "Nombre";
             // 
@@ -422,16 +434,17 @@
             this.label10.Location = new System.Drawing.Point(27, 65);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 16);
+            this.label10.Size = new System.Drawing.Size(67, 20);
             this.label10.TabIndex = 10;
             this.label10.Text = "Usuario";
             // 
             // linkEditarPerfil
             // 
+            this.linkEditarPerfil.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.linkEditarPerfil.AutoSize = true;
             this.linkEditarPerfil.Location = new System.Drawing.Point(352, 406);
             this.linkEditarPerfil.Name = "linkEditarPerfil";
-            this.linkEditarPerfil.Size = new System.Drawing.Size(75, 16);
+            this.linkEditarPerfil.Size = new System.Drawing.Size(97, 20);
             this.linkEditarPerfil.TabIndex = 12;
             this.linkEditarPerfil.TabStop = true;
             this.linkEditarPerfil.Text = "Editar Perfil";
@@ -439,7 +452,7 @@
             // 
             // frmPerfilUsuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 568);
             this.Controls.Add(this.linkEditarPerfil);
@@ -459,6 +472,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPerfilUsuarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPerfilUsuarios";
             this.Load += new System.EventHandler(this.frmPerfilUsuarios_Load);
             this.panelEditor.ResumeLayout(false);

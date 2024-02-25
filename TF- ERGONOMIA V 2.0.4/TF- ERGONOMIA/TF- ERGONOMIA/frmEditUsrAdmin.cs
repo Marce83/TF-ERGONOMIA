@@ -198,5 +198,10 @@ namespace TF.WIN
             //panelEditor.Visible = false;
             Resetear();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -27,10 +27,6 @@ namespace TF.WIN
             if (oFrm.EmpresaSeleccionada != null)
             {
                 txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
-
-            }
-            if (oFrm.EmpresaSeleccionada != null)
-            {
                 txtNombreEmpresaNiosh.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
             }
         }
@@ -97,7 +93,6 @@ namespace TF.WIN
             this.Tag = OJSS;
             OJSS.BringToFront();
             OJSS.Show();
-            //this.Close();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)

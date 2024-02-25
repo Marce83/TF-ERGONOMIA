@@ -49,11 +49,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dgvEditarPerfil = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEditarPerfil)).BeginInit();
             this.SuspendLayout();
             // 
             // linkEditarClave
             // 
+            this.linkEditarClave.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.linkEditarClave.AutoSize = true;
             this.linkEditarClave.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.linkEditarClave.Location = new System.Drawing.Point(110, 257);
@@ -66,6 +68,7 @@
             // 
             // txtRepetirClave
             // 
+            this.txtRepetirClave.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtRepetirClave.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtRepetirClave.Location = new System.Drawing.Point(19, 315);
             this.txtRepetirClave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -76,6 +79,7 @@
             // 
             // label15
             // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label15.Location = new System.Drawing.Point(18, 298);
@@ -87,6 +91,7 @@
             // 
             // txtClaveNueva
             // 
+            this.txtClaveNueva.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtClaveNueva.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtClaveNueva.Location = new System.Drawing.Point(19, 274);
             this.txtClaveNueva.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -97,6 +102,7 @@
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.Location = new System.Drawing.Point(18, 257);
@@ -108,6 +114,7 @@
             // 
             // txtClaveActual
             // 
+            this.txtClaveActual.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtClaveActual.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtClaveActual.Location = new System.Drawing.Point(19, 233);
             this.txtClaveActual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -118,6 +125,7 @@
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label13.Location = new System.Drawing.Point(16, 216);
@@ -129,28 +137,49 @@
             // 
             // btnGuardar
             // 
+<<<<<<< HEAD
             this.btnGuardar.Location = new System.Drawing.Point(279, 390);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(90, 28);
+=======
+            this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnGuardar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnGuardar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnGuardar.Location = new System.Drawing.Point(688, 482);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(163, 60);
+>>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnGuardar.TabIndex = 42;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Text = "GUARDAR";
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
+<<<<<<< HEAD
             this.btnCancelar.Location = new System.Drawing.Point(171, 390);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(90, 28);
+=======
+            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCancelar.Location = new System.Drawing.Point(487, 482);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(163, 60);
+>>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.btnCancelar.TabIndex = 41;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // cboCargo
             // 
+            this.cboCargo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cboCargo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.cboCargo.FormattingEnabled = true;
             this.cboCargo.Items.AddRange(new object[] {
@@ -167,6 +196,7 @@
             // 
             // txtCorreo
             // 
+            this.txtCorreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCorreo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtCorreo.Location = new System.Drawing.Point(19, 192);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -176,6 +206,7 @@
             // 
             // txtApellido
             // 
+            this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtApellido.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtApellido.Location = new System.Drawing.Point(20, 151);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -186,6 +217,7 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombre.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtNombre.Location = new System.Drawing.Point(20, 110);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -196,6 +228,7 @@
             // 
             // txtUsuario
             // 
+            this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtUsuario.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtUsuario.Location = new System.Drawing.Point(19, 69);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -206,18 +239,27 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+<<<<<<< HEAD
             this.label12.Location = new System.Drawing.Point(153, 9);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(108, 24);
+=======
+            this.label12.Location = new System.Drawing.Point(313, 9);
+            this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(639, 36);
+>>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.label12.TabIndex = 35;
-            this.label12.Text = "Editar datos";
+            this.label12.Text = "ADMINISTRADOR DE DATOS DE USUARIOS";
             // 
             // lblEditarCargo
             // 
+            this.lblEditarCargo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblEditarCargo.AutoSize = true;
             this.lblEditarCargo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblEditarCargo.Location = new System.Drawing.Point(18, 339);
@@ -229,6 +271,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(18, 175);
@@ -240,6 +283,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(18, 134);
@@ -251,6 +295,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label8.Location = new System.Drawing.Point(17, 93);
@@ -262,6 +307,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label10.Location = new System.Drawing.Point(16, 49);
@@ -273,6 +319,7 @@
             // 
             // dgvEditarPerfil
             // 
+            this.dgvEditarPerfil.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvEditarPerfil.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvEditarPerfil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEditarPerfil.GridColor = System.Drawing.SystemColors.ActiveCaption;
@@ -283,12 +330,31 @@
             this.dgvEditarPerfil.TabIndex = 49;
             this.dgvEditarPerfil.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEditarPerfil_CellContentClick);
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(303, 482);
+            this.button1.Margin = new System.Windows.Forms.Padding(5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(163, 60);
+            this.button1.TabIndex = 50;
+            this.button1.Text = "SALIR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmEditUsrAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(982, 431);
+=======
+            this.ClientSize = new System.Drawing.Size(1425, 556);
+            this.Controls.Add(this.button1);
+>>>>>>> ff3cbafab246a38e45ccb78e4d8ae193295cb9de
             this.Controls.Add(this.dgvEditarPerfil);
             this.Controls.Add(this.linkEditarClave);
             this.Controls.Add(this.txtRepetirClave);
@@ -343,5 +409,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dgvEditarPerfil;
+        private System.Windows.Forms.Button button1;
     }
 }

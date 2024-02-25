@@ -134,8 +134,9 @@
             // 
             // FechaDesde
             // 
+            this.FechaDesde.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FechaDesde.CustomFormat = "dd/mm/yyyy";
-            this.FechaDesde.Location = new System.Drawing.Point(115, 188);
+            this.FechaDesde.Location = new System.Drawing.Point(100, 188);
             this.FechaDesde.Margin = new System.Windows.Forms.Padding(4);
             this.FechaDesde.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.FechaDesde.Name = "FechaDesde";
@@ -145,10 +146,11 @@
             // 
             // materialLabel1
             // 
+            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(27, 188);
+            this.materialLabel1.Location = new System.Drawing.Point(12, 188);
             this.materialLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
@@ -158,10 +160,11 @@
             // 
             // materialLabel2
             // 
+            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(580, 182);
+            this.materialLabel2.Location = new System.Drawing.Point(565, 182);
             this.materialLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
@@ -171,8 +174,9 @@
             // 
             // FechaHasta
             // 
+            this.FechaHasta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FechaHasta.CustomFormat = "dd/mm/yyyy";
-            this.FechaHasta.Location = new System.Drawing.Point(660, 183);
+            this.FechaHasta.Location = new System.Drawing.Point(645, 183);
             this.FechaHasta.Margin = new System.Windows.Forms.Padding(4);
             this.FechaHasta.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.FechaHasta.Name = "FechaHasta";
@@ -182,6 +186,7 @@
             // 
             // btnBuscarresultado
             // 
+            this.btnBuscarresultado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscarresultado.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscarresultado.FlatAppearance.BorderSize = 0;
             this.btnBuscarresultado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -190,7 +195,7 @@
             this.btnBuscarresultado.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnBuscarresultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarresultado.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBuscarresultado.Location = new System.Drawing.Point(584, 247);
+            this.btnBuscarresultado.Location = new System.Drawing.Point(569, 247);
             this.btnBuscarresultado.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarresultado.Name = "btnBuscarresultado";
             this.btnBuscarresultado.Size = new System.Drawing.Size(429, 59);
@@ -201,6 +206,7 @@
             // 
             // chartPastelReba
             // 
+            this.chartPastelReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chartPastelReba.BackColor = System.Drawing.Color.Transparent;
             this.chartPastelReba.BorderlineColor = System.Drawing.Color.DarkGray;
             this.chartPastelReba.BorderSkin.BackColor = System.Drawing.Color.Transparent;
@@ -208,28 +214,28 @@
             this.chartPastelReba.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartPastelReba.Legends.Add(legend1);
-            this.chartPastelReba.Location = new System.Drawing.Point(29, 1072);
+            this.chartPastelReba.Location = new System.Drawing.Point(24, 1142);
             this.chartPastelReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPastelReba.Name = "chartPastelReba";
             this.chartPastelReba.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.IsValueShownAsLabel = true;
             series1.IsXValueIndexed = true;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartPastelReba.Series.Add(series1);
-            this.chartPastelReba.Size = new System.Drawing.Size(605, 305);
+            this.chartPastelReba.Size = new System.Drawing.Size(605, 333);
             this.chartPastelReba.TabIndex = 111;
             // 
             // panel10
             // 
+            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel10.Controls.Add(this.label11);
-            this.panel10.Location = new System.Drawing.Point(22, 997);
+            this.panel10.Location = new System.Drawing.Point(14, 1079);
             this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1383, 57);
+            this.panel10.Size = new System.Drawing.Size(1373, 57);
             this.panel10.TabIndex = 110;
             // 
             // label11
@@ -247,6 +253,7 @@
             // 
             // ChartHistogramaRula2
             // 
+            this.ChartHistogramaRula2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ChartHistogramaRula2.BackColor = System.Drawing.Color.Transparent;
             this.ChartHistogramaRula2.BorderlineColor = System.Drawing.Color.DarkGray;
             this.ChartHistogramaRula2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
@@ -254,7 +261,7 @@
             this.ChartHistogramaRula2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.ChartHistogramaRula2.Legends.Add(legend2);
-            this.ChartHistogramaRula2.Location = new System.Drawing.Point(647, 740);
+            this.ChartHistogramaRula2.Location = new System.Drawing.Point(632, 740);
             this.ChartHistogramaRula2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartHistogramaRula2.Name = "ChartHistogramaRula2";
             this.ChartHistogramaRula2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -263,11 +270,12 @@
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.ChartHistogramaRula2.Series.Add(series2);
-            this.ChartHistogramaRula2.Size = new System.Drawing.Size(685, 240);
+            this.ChartHistogramaRula2.Size = new System.Drawing.Size(685, 333);
             this.ChartHistogramaRula2.TabIndex = 109;
             // 
             // chartPastelRula
             // 
+            this.chartPastelRula.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chartPastelRula.BackColor = System.Drawing.Color.Transparent;
             this.chartPastelRula.BorderlineColor = System.Drawing.Color.DarkGray;
             this.chartPastelRula.BorderSkin.BackColor = System.Drawing.Color.Transparent;
@@ -275,7 +283,7 @@
             this.chartPastelRula.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chartPastelRula.Legends.Add(legend3);
-            this.chartPastelRula.Location = new System.Drawing.Point(29, 740);
+            this.chartPastelRula.Location = new System.Drawing.Point(14, 740);
             this.chartPastelRula.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPastelRula.Name = "chartPastelRula";
             this.chartPastelRula.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -287,16 +295,17 @@
             series3.Legend = "Legend1";
             series3.Name = "Series1";
             this.chartPastelRula.Series.Add(series3);
-            this.chartPastelRula.Size = new System.Drawing.Size(584, 240);
+            this.chartPastelRula.Size = new System.Drawing.Size(605, 333);
             this.chartPastelRula.TabIndex = 108;
             // 
             // panel9
             // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel9.BackColor = System.Drawing.Color.Green;
             this.panel9.Controls.Add(this.button5);
             this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.TotalMetodoPerson);
-            this.panel9.Location = new System.Drawing.Point(297, 325);
+            this.panel9.Location = new System.Drawing.Point(282, 325);
             this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(259, 135);
@@ -345,9 +354,10 @@
             // 
             // panel8
             // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel8.Controls.Add(this.label7);
-            this.panel8.Location = new System.Drawing.Point(29, 677);
+            this.panel8.Location = new System.Drawing.Point(14, 677);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1383, 57);
@@ -368,11 +378,12 @@
             // 
             // panel5
             // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel5.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.txtjsscont);
-            this.panel5.Location = new System.Drawing.Point(809, 533);
+            this.panel5.Location = new System.Drawing.Point(794, 533);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(259, 135);
@@ -422,11 +433,12 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.Olive;
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtNioshCont);
-            this.panel2.Location = new System.Drawing.Point(285, 533);
+            this.panel2.Location = new System.Drawing.Point(270, 533);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(259, 135);
@@ -476,11 +488,12 @@
             // 
             // panel7
             // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel7.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel7.Controls.Add(this.button4);
             this.panel7.Controls.Add(this.txtREBACont);
             this.panel7.Controls.Add(this.label10);
-            this.panel7.Location = new System.Drawing.Point(553, 533);
+            this.panel7.Location = new System.Drawing.Point(538, 533);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(248, 135);
@@ -530,11 +543,12 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.txtRulaCont);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Location = new System.Drawing.Point(29, 533);
+            this.panel3.Location = new System.Drawing.Point(14, 533);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(248, 135);
@@ -584,9 +598,10 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(29, 468);
+            this.panel1.Location = new System.Drawing.Point(14, 468);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1383, 57);
@@ -607,11 +622,12 @@
             // 
             // panel6
             // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
             this.panel6.Controls.Add(this.btnEmpleados);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.txtcontempleados);
-            this.panel6.Location = new System.Drawing.Point(29, 325);
+            this.panel6.Location = new System.Drawing.Point(14, 325);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(259, 135);
@@ -660,13 +676,14 @@
             // 
             // btnSalir
             // 
+            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(167, 247);
+            this.btnSalir.Location = new System.Drawing.Point(152, 247);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(271, 59);
@@ -677,11 +694,12 @@
             // 
             // materialLabel3
             // 
+            this.materialLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(568, 105);
+            this.materialLabel3.Location = new System.Drawing.Point(553, 105);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(73, 19);
@@ -690,6 +708,7 @@
             // 
             // txtNombreEmpresa
             // 
+            this.txtNombreEmpresa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombreEmpresa.AnimateReadOnly = false;
             this.txtNombreEmpresa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtNombreEmpresa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -700,7 +719,7 @@
             this.txtNombreEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpresa.HideSelection = true;
             this.txtNombreEmpresa.LeadingIcon = null;
-            this.txtNombreEmpresa.Location = new System.Drawing.Point(724, 86);
+            this.txtNombreEmpresa.Location = new System.Drawing.Point(709, 86);
             this.txtNombreEmpresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreEmpresa.MaxLength = 32767;
             this.txtNombreEmpresa.MouseState = MaterialSkin.MouseState.OUT;
@@ -722,13 +741,14 @@
             // 
             // btnBuscarCUIT
             // 
+            this.btnBuscarCUIT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscarCUIT.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscarCUIT.FlatAppearance.BorderSize = 0;
             this.btnBuscarCUIT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarCUIT.Location = new System.Drawing.Point(432, 86);
+            this.btnBuscarCUIT.Location = new System.Drawing.Point(417, 86);
             this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
             this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 48);
@@ -739,11 +759,12 @@
             // 
             // materialLabel11
             // 
+            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(25, 101);
+            this.materialLabel11.Location = new System.Drawing.Point(10, 101);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(35, 19);
@@ -752,6 +773,7 @@
             // 
             // txtCUIT
             // 
+            this.txtCUIT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCUIT.AnimateReadOnly = false;
             this.txtCUIT.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtCUIT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -762,7 +784,7 @@
             this.txtCUIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCUIT.HideSelection = true;
             this.txtCUIT.LeadingIcon = null;
-            this.txtCUIT.Location = new System.Drawing.Point(81, 85);
+            this.txtCUIT.Location = new System.Drawing.Point(66, 85);
             this.txtCUIT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCUIT.MaxLength = 32767;
             this.txtCUIT.MouseState = MaterialSkin.MouseState.OUT;
@@ -784,6 +806,7 @@
             // 
             // ChartHistogramaReba2
             // 
+            this.ChartHistogramaReba2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ChartHistogramaReba2.BackColor = System.Drawing.Color.Transparent;
             this.ChartHistogramaReba2.BorderlineColor = System.Drawing.Color.DarkGray;
             this.ChartHistogramaReba2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
@@ -791,15 +814,16 @@
             this.ChartHistogramaReba2.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.ChartHistogramaReba2.Legends.Add(legend4);
-            this.ChartHistogramaReba2.Location = new System.Drawing.Point(647, 1060);
+            this.ChartHistogramaReba2.Location = new System.Drawing.Point(642, 1142);
             this.ChartHistogramaReba2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartHistogramaReba2.Name = "ChartHistogramaReba2";
             this.ChartHistogramaReba2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series4.ChartArea = "ChartArea1";
+            series4.IsXValueIndexed = true;
             series4.Legend = "Legend1";
             series4.Name = "Series1";
             this.ChartHistogramaReba2.Series.Add(series4);
-            this.ChartHistogramaReba2.Size = new System.Drawing.Size(685, 330);
+            this.ChartHistogramaReba2.Size = new System.Drawing.Size(685, 333);
             this.ChartHistogramaReba2.TabIndex = 163;
             // 
             // label1
@@ -817,16 +841,18 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(29, 1396);
+            this.panel4.Location = new System.Drawing.Point(14, 1481);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1383, 57);
+            this.panel4.Size = new System.Drawing.Size(1396, 57);
             this.panel4.TabIndex = 111;
             // 
             // chartPastelNiosh
             // 
+            this.chartPastelNiosh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chartPastelNiosh.BackColor = System.Drawing.Color.Transparent;
             this.chartPastelNiosh.BorderlineColor = System.Drawing.Color.DarkGray;
             this.chartPastelNiosh.BorderSkin.BackColor = System.Drawing.Color.Transparent;
@@ -834,19 +860,22 @@
             this.chartPastelNiosh.ChartAreas.Add(chartArea5);
             legend5.Name = "Legend1";
             this.chartPastelNiosh.Legends.Add(legend5);
-            this.chartPastelNiosh.Location = new System.Drawing.Point(598, 1481);
+            this.chartPastelNiosh.Location = new System.Drawing.Point(27, 1544);
             this.chartPastelNiosh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPastelNiosh.Name = "chartPastelNiosh";
-            this.chartPastelNiosh.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.chartPastelNiosh.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series5.IsXValueIndexed = true;
             series5.Legend = "Legend1";
             series5.Name = "Series1";
             this.chartPastelNiosh.Series.Add(series5);
-            this.chartPastelNiosh.Size = new System.Drawing.Size(223, 230);
+            this.chartPastelNiosh.Size = new System.Drawing.Size(605, 333);
             this.chartPastelNiosh.TabIndex = 164;
             // 
             // ChartHistogramaNiosh2
             // 
+            this.ChartHistogramaNiosh2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ChartHistogramaNiosh2.BackColor = System.Drawing.Color.Transparent;
             this.ChartHistogramaNiosh2.BorderlineColor = System.Drawing.Color.DarkGray;
             this.ChartHistogramaNiosh2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
@@ -854,19 +883,21 @@
             this.ChartHistogramaNiosh2.ChartAreas.Add(chartArea6);
             legend6.Name = "Legend1";
             this.ChartHistogramaNiosh2.Legends.Add(legend6);
-            this.ChartHistogramaNiosh2.Location = new System.Drawing.Point(827, 1472);
+            this.ChartHistogramaNiosh2.Location = new System.Drawing.Point(675, 1544);
             this.ChartHistogramaNiosh2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartHistogramaNiosh2.Name = "ChartHistogramaNiosh2";
-            this.ChartHistogramaNiosh2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.ChartHistogramaNiosh2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series6.ChartArea = "ChartArea1";
+            series6.IsXValueIndexed = true;
             series6.Legend = "Legend1";
             series6.Name = "Series1";
             this.ChartHistogramaNiosh2.Series.Add(series6);
-            this.ChartHistogramaNiosh2.Size = new System.Drawing.Size(477, 259);
+            this.ChartHistogramaNiosh2.Size = new System.Drawing.Size(685, 333);
             this.ChartHistogramaNiosh2.TabIndex = 165;
             // 
             // chartHistoJss2
             // 
+            this.chartHistoJss2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chartHistoJss2.BackColor = System.Drawing.Color.Transparent;
             this.chartHistoJss2.BorderlineColor = System.Drawing.Color.DarkGray;
             this.chartHistoJss2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
@@ -874,19 +905,22 @@
             this.chartHistoJss2.ChartAreas.Add(chartArea7);
             legend7.Name = "Legend1";
             this.chartHistoJss2.Legends.Add(legend7);
-            this.chartHistoJss2.Location = new System.Drawing.Point(860, 1816);
+            this.chartHistoJss2.Location = new System.Drawing.Point(675, 1989);
             this.chartHistoJss2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartHistoJss2.Name = "chartHistoJss2";
-            this.chartHistoJss2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.chartHistoJss2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series7.ChartArea = "ChartArea1";
+            series7.IsValueShownAsLabel = true;
+            series7.IsXValueIndexed = true;
             series7.Legend = "Legend1";
             series7.Name = "Series1";
             this.chartHistoJss2.Series.Add(series7);
-            this.chartHistoJss2.Size = new System.Drawing.Size(451, 240);
+            this.chartHistoJss2.Size = new System.Drawing.Size(605, 333);
             this.chartHistoJss2.TabIndex = 168;
             // 
             // chartPastelJss2
             // 
+            this.chartPastelJss2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chartPastelJss2.BackColor = System.Drawing.Color.Transparent;
             this.chartPastelJss2.BorderlineColor = System.Drawing.Color.DarkGray;
             this.chartPastelJss2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
@@ -894,25 +928,28 @@
             this.chartPastelJss2.ChartAreas.Add(chartArea8);
             legend8.Name = "Legend1";
             this.chartPastelJss2.Legends.Add(legend8);
-            this.chartPastelJss2.Location = new System.Drawing.Point(583, 1816);
+            this.chartPastelJss2.Location = new System.Drawing.Point(42, 1989);
             this.chartPastelJss2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPastelJss2.Name = "chartPastelJss2";
-            this.chartPastelJss2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.chartPastelJss2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series8.IsXValueIndexed = true;
             series8.Legend = "Legend1";
             series8.Name = "Series1";
             this.chartPastelJss2.Series.Add(series8);
-            this.chartPastelJss2.Size = new System.Drawing.Size(182, 213);
+            this.chartPastelJss2.Size = new System.Drawing.Size(605, 333);
             this.chartPastelJss2.TabIndex = 167;
             // 
             // panel11
             // 
+            this.panel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel11.Controls.Add(this.label4);
-            this.panel11.Location = new System.Drawing.Point(35, 1753);
+            this.panel11.Location = new System.Drawing.Point(14, 1926);
             this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1383, 57);
+            this.panel11.Size = new System.Drawing.Size(1396, 57);
             this.panel11.TabIndex = 166;
             // 
             // label4
@@ -937,7 +974,7 @@
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1418, 65);
+            this.BarraTitulo.Size = new System.Drawing.Size(1394, 65);
             this.BarraTitulo.TabIndex = 169;
             // 
             // label12
@@ -957,7 +994,7 @@
             this.btnCerrar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1353, 15);
+            this.btnCerrar.Location = new System.Drawing.Point(1329, 15);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(33, 31);
@@ -973,7 +1010,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1415, 1100);
+            this.ClientSize = new System.Drawing.Size(1415, 1102);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.chartHistoJss2);
             this.Controls.Add(this.ChartHistogramaNiosh2);

@@ -42,10 +42,10 @@
             this.btnEstidisticaparticular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstidisticaparticular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEstidisticaparticular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstidisticaparticular.Location = new System.Drawing.Point(108, 134);
-            this.btnEstidisticaparticular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEstidisticaparticular.Location = new System.Drawing.Point(179, 160);
+            this.btnEstidisticaparticular.Margin = new System.Windows.Forms.Padding(4);
             this.btnEstidisticaparticular.Name = "btnEstidisticaparticular";
-            this.btnEstidisticaparticular.Size = new System.Drawing.Size(357, 43);
+            this.btnEstidisticaparticular.Size = new System.Drawing.Size(357, 71);
             this.btnEstidisticaparticular.TabIndex = 75;
             this.btnEstidisticaparticular.Text = "ESTADISTICAS POR EMPRESA";
             this.btnEstidisticaparticular.UseVisualStyleBackColor = false;
@@ -57,11 +57,11 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 11);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(485, 38);
+            this.label1.Size = new System.Drawing.Size(696, 38);
             this.label1.TabIndex = 73;
-            this.label1.Text = "SELECCION DE ESTADISTICA";
+            this.label1.Text = "SELECCIONE ESTADISTICA A CONSULTAR";
             // 
             // btnEstadisticageneral
             // 
@@ -72,10 +72,10 @@
             this.btnEstadisticageneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstadisticageneral.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEstadisticageneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstadisticageneral.Location = new System.Drawing.Point(108, 65);
-            this.btnEstadisticageneral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEstadisticageneral.Location = new System.Drawing.Point(179, 64);
+            this.btnEstadisticageneral.Margin = new System.Windows.Forms.Padding(4);
             this.btnEstadisticageneral.Name = "btnEstadisticageneral";
-            this.btnEstadisticageneral.Size = new System.Drawing.Size(357, 43);
+            this.btnEstadisticageneral.Size = new System.Drawing.Size(357, 71);
             this.btnEstadisticageneral.TabIndex = 71;
             this.btnEstadisticageneral.Text = "ESTADISTICA GENERAL";
             this.btnEstadisticageneral.UseVisualStyleBackColor = false;
@@ -86,13 +86,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(565, 218);
+            this.ClientSize = new System.Drawing.Size(719, 274);
             this.Controls.Add(this.btnEstidisticaparticular);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEstadisticageneral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEstadisticaMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEstadisticaMenu";
             this.ResumeLayout(false);
             this.PerformLayout();
