@@ -131,11 +131,7 @@ namespace TF.WIN
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            DialogResult resp = MessageBox.Show("¿Desea salir de la aplicación?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (resp == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            Close();
         }
 
 
