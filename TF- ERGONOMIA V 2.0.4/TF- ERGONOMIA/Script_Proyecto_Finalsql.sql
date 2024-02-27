@@ -178,8 +178,10 @@ go
 CREATE OR ALTER PROCEDURE SP_Empresas_GetAll
 AS
 BEGIN
-	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion) Dirección, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
+	WHERE FechaEgreso IS NULL
+	AND	Estado = 'A'
 END
 GO
 
@@ -190,7 +192,7 @@ CREATE OR ALTER PROCEDURE SP_Empresas_GetId
 @CUIT nvarchar(11)
 AS
 BEGIN
-	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion), Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
 	WHERE CUIT LIKE '%'+@CUIT+'%'
 END
@@ -200,7 +202,7 @@ CREATE OR ALTER PROCEDURE [dbo].[SP_Nombre_Empresa]
 @Nombre nvarchar(30)
 AS
 BEGIN
-	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion), Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
 	WHERE Nombre LIKE '%'+@Nombre+'%'
 END
@@ -220,10 +222,11 @@ GO
 CREATE OR ALTER PROCEDURE SP_Empleados_GetAll
 AS
 BEGIN
-	SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
-	FROM Empleados
-	WHERE FechaEgreso IS NULL
-	AND Estado = 'A'
+	SELECT UPPER(Em.Nombre) Nombre, UPPER(Em.Apellido) Apellido, Em.DNI, UPPER(Em.Genero) Genero, Em.Peso, Em.Altura, Em.FechaNacimiento 'Fecha de Nacimiento', Em.FechaIngreso 'Fecha de Ingreso', Em.Estado, UPPER(empr.Nombre) Empresa, empr.CUIT
+	FROM dbo.Empleados Em
+	INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
+	WHERE Em.FechaEgreso IS NULL
+	AND Em.Estado = 'A'
 END
 GO
 
@@ -256,7 +259,7 @@ CREATE OR ALTER PROCEDURE SP_Empleados_DNI
 @DNI nvarchar(8)
 AS
 BEGIN
-	SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT UPPER(Nombre)Nombre, UPPER(Apellido) Apellido, DNI, UPPER(Genero) Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empleados
 	WHERE DNI LIKE '%'+@DNI+'%'
 END
@@ -301,9 +304,14 @@ CREATE PROCEDURE SP_Empleados_GetId
 @DNI nvarchar(8)
 AS
 BEGIN
-	SELECT Nombre, Apellido, DNI, Genero, PuestoDeTrabajo
-	FROM Empleados
-	WHERE DNI = @DNI
+	--SELECT Nombre, Apellido, DNI, Genero, PuestoDeTrabajo
+	--FROM Empleados
+	--WHERE DNI = @DNI
+	SELECT E.IdEmpleado, UPPER(E.Nombre)Nombre, UPPER(E.Apellido) Apellido, E.DNI, UPPER(E.Genero) Genero, PT.NombrePuesto
+	FROM Empleados E 
+	JOIN  PuestoEmpleado PE ON E.IdEmpleado = PE.IdEmpleado 
+	JOIN PuestoDeTrabajo PT ON PE.IdPuesto = PT.IdPuesto
+	WHERE E.DNI LIKE '%'+@DNI+'%'
 END
 GO
 
