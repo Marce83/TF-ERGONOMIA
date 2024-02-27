@@ -11,11 +11,17 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using TF.BC;
 using TF.ENTITIES;
+using System.Runtime.InteropServices;
 
 namespace TF.WIN
 {
     public partial class frmLogin : Form
     {
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
         UsuariosBC oUsuarioBC = new UsuariosBC();
         Usuarios oBe = new Usuarios();
        //frmMenuPrincipal frmMenu = new frmMenuPrincipal();
@@ -23,6 +29,22 @@ namespace TF.WIN
         //MenuPrincipal oMenuP = new MenuPrincipal();
 
         //readonly MaterialSkin.MaterialSkinManager materialSkinManager;
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void frmLogin_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
 
         public frmLogin()
         {
@@ -35,17 +57,10 @@ namespace TF.WIN
             //materialSkinManager.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Blue500, MaterialSkin.Primary.Blue500, MaterialSkin.Primary.Amber400, MaterialSkin.Accent.Amber200, MaterialSkin.TextShade.BLACK);
 
         }
-        private void Login_Load(object sender, EventArgs e)
-        {
-        }
         private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && !(char.IsNumber(e.KeyChar)))
                 e.Handled = true;
-        }
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void btnIniciar_Click(object sender, EventArgs e)
