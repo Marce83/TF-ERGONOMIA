@@ -28,10 +28,6 @@ namespace TF.WIN
             if (oFrm.EmpresaSeleccionada != null)
             {
                 txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
-                
-            }
-            if (oFrm.EmpresaSeleccionada != null)
-            {
                 txtNombreEmpresaReba.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
             }
 
@@ -65,11 +61,6 @@ namespace TF.WIN
 
             //}
 
-        }
-
-        private void btnBuscarpuesto_Click(object sender, EventArgs e)
-        {
-           
         }
 
         private void btnCrear_Click(object sender, EventArgs e)

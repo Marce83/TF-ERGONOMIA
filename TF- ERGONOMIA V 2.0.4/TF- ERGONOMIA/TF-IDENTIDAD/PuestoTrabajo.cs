@@ -20,6 +20,7 @@ namespace TF.ENTITIES
         // Puesto Empleado
 
         public int IdEmpleado { get; set; }
+        public int IdEmpresa { get; set; }
 
 
         //vista Puesto de Trabajo
@@ -28,5 +29,8 @@ namespace TF.ENTITIES
         public string NombreEmpleado { get; set; }
 
         public DateTime FechaIngreso2 { get; set; }
+
+        public string CUITEMPRESAPUESTO { get; set; }
+
     }
 }

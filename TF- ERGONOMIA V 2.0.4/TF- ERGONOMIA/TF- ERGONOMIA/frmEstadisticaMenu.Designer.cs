@@ -35,15 +35,17 @@
             // 
             // btnEstidisticaparticular
             // 
+            this.btnEstidisticaparticular.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnEstidisticaparticular.BackColor = System.Drawing.Color.IndianRed;
             this.btnEstidisticaparticular.FlatAppearance.BorderSize = 0;
             this.btnEstidisticaparticular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnEstidisticaparticular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstidisticaparticular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEstidisticaparticular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstidisticaparticular.Location = new System.Drawing.Point(81, 109);
+            this.btnEstidisticaparticular.Location = new System.Drawing.Point(179, 160);
+            this.btnEstidisticaparticular.Margin = new System.Windows.Forms.Padding(4);
             this.btnEstidisticaparticular.Name = "btnEstidisticaparticular";
-            this.btnEstidisticaparticular.Size = new System.Drawing.Size(268, 35);
+            this.btnEstidisticaparticular.Size = new System.Drawing.Size(357, 71);
             this.btnEstidisticaparticular.TabIndex = 75;
             this.btnEstidisticaparticular.Text = "ESTADISTICAS POR EMPRESA";
             this.btnEstidisticaparticular.UseVisualStyleBackColor = false;
@@ -51,27 +53,29 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(404, 31);
+            this.label1.Size = new System.Drawing.Size(696, 38);
             this.label1.TabIndex = 73;
-            this.label1.Text = "SELECCION DE ESTADISTICA";
+            this.label1.Text = "SELECCIONE ESTADISTICA A CONSULTAR";
             // 
             // btnEstadisticageneral
             // 
+            this.btnEstadisticageneral.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnEstadisticageneral.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnEstadisticageneral.FlatAppearance.BorderSize = 0;
             this.btnEstadisticageneral.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnEstadisticageneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstadisticageneral.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEstadisticageneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstadisticageneral.Location = new System.Drawing.Point(81, 53);
+            this.btnEstadisticageneral.Location = new System.Drawing.Point(179, 64);
+            this.btnEstadisticageneral.Margin = new System.Windows.Forms.Padding(4);
             this.btnEstadisticageneral.Name = "btnEstadisticageneral";
-            this.btnEstadisticageneral.Size = new System.Drawing.Size(268, 35);
+            this.btnEstadisticageneral.Size = new System.Drawing.Size(357, 71);
             this.btnEstadisticageneral.TabIndex = 71;
             this.btnEstadisticageneral.Text = "ESTADISTICA GENERAL";
             this.btnEstadisticageneral.UseVisualStyleBackColor = false;
@@ -79,15 +83,17 @@
             // 
             // frmEstadisticaMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(424, 177);
+            this.ClientSize = new System.Drawing.Size(719, 274);
             this.Controls.Add(this.btnEstidisticaparticular);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEstadisticageneral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmEstadisticaMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEstadisticaMenu";
             this.ResumeLayout(false);
             this.PerformLayout();

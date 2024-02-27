@@ -25,6 +25,7 @@ namespace TF.WIN
             timer.Interval = 1000; // Intervalo de actualización en milisegundos (1 segundo en este ejemplo)
             timer.Tick += Timer_Tick;
             timer.Start();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -132,9 +133,9 @@ namespace TF.WIN
 
         }
 
-        private void linkPerfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if(UserLoginCache.Cargo == "Administrador")
+            if (UserLoginCache.Cargo == "Administrador")
                 //AbrirFormHija(new frmEditUsrAdmin());
                 AbrirFormulario<frmEditUsrAdmin>();
             else
@@ -215,6 +216,13 @@ namespace TF.WIN
 
            AbrirFormulario<PuestoTrabajoSeleccion>();
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal ofrmMenuPrincipal = new frmMenuPrincipal();
+            ofrmMenuPrincipal.Show();
+            this.Close();
         }
     }
 }

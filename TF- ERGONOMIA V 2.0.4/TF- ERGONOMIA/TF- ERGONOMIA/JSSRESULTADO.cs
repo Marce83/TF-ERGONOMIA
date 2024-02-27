@@ -32,31 +32,8 @@ namespace TF.WIN
 
         private void JSSRESULTADO_Load(object sender, EventArgs e)
         {
-
-           
-
-
-
-
-
-
         }
-
-        private void btnMaximizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
-            btnRestaurar.Visible = true;
-        }
-
-        private void btnRestaurar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
-        }
-
-        private void btnMinimizar_Click(object sender, EventArgs e)
+         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
@@ -158,7 +135,12 @@ namespace TF.WIN
                 else if (Demanda >= 15 && Control >= 18 && ApoyoSocial >= 18) { txtActuacionJSS1.Text = "Alto Nivel de estrés y perjudicial para la salud y con Alto Apoyo Social"; txtSituacionJss.Text = "Alto Nivel de estrés"; }
 
             }
-            catch { }
+            catch 
+            {
+                MessageBox.Show("No se encontró un análisis realizado");
+            }
+
+
             GuardarResultado();
         }
 

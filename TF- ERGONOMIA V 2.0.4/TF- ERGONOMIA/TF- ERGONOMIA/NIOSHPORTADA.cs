@@ -50,7 +50,6 @@ namespace TF.WIN
             this.Tag = ONIOSH1;
             ONIOSH1.BringToFront();
             ONIOSH1.Show();
-            this.Close();
         }
 
         private void btnBuscarCUIT_Click(object sender, EventArgs e)
@@ -61,10 +60,6 @@ namespace TF.WIN
             if (oFrm.EmpresaSeleccionada != null)
             {
                 txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
-
-            }
-            if (oFrm.EmpresaSeleccionada != null)
-            {
                 txtNombreEmpresaNiosh.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
             }
         }

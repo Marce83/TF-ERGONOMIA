@@ -94,6 +94,7 @@
             // 
             // TotalTablaB
             // 
+            this.TotalTablaB.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TotalTablaB.AnimateReadOnly = false;
             this.TotalTablaB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.TotalTablaB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -105,7 +106,7 @@
             this.TotalTablaB.HideSelection = true;
             this.TotalTablaB.LeadingIcon = null;
             this.TotalTablaB.LeaveOnEnterKey = true;
-            this.TotalTablaB.Location = new System.Drawing.Point(831, 521);
+            this.TotalTablaB.Location = new System.Drawing.Point(821, 521);
             this.TotalTablaB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TotalTablaB.MaxLength = 32767;
             this.TotalTablaB.MouseState = MaterialSkin.MouseState.OUT;
@@ -127,6 +128,7 @@
             // 
             // TotalTablaA
             // 
+            this.TotalTablaA.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TotalTablaA.AnimateReadOnly = false;
             this.TotalTablaA.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.TotalTablaA.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -137,7 +139,7 @@
             this.TotalTablaA.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.TotalTablaA.HideSelection = true;
             this.TotalTablaA.LeadingIcon = null;
-            this.TotalTablaA.Location = new System.Drawing.Point(324, 523);
+            this.TotalTablaA.Location = new System.Drawing.Point(314, 523);
             this.TotalTablaA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TotalTablaA.MaxLength = 32767;
             this.TotalTablaA.MouseState = MaterialSkin.MouseState.OUT;
@@ -159,10 +161,11 @@
             // 
             // materialLabel24
             // 
+            this.materialLabel24.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel24.AutoSize = true;
             this.materialLabel24.Depth = 0;
             this.materialLabel24.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel24.Location = new System.Drawing.Point(36, 535);
+            this.materialLabel24.Location = new System.Drawing.Point(26, 535);
             this.materialLabel24.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel24.Name = "materialLabel24";
             this.materialLabel24.Size = new System.Drawing.Size(118, 19);
@@ -171,10 +174,11 @@
             // 
             // materialLabel22
             // 
+            this.materialLabel22.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel22.AutoSize = true;
             this.materialLabel22.Depth = 0;
             this.materialLabel22.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel22.Location = new System.Drawing.Point(540, 602);
+            this.materialLabel22.Location = new System.Drawing.Point(530, 602);
             this.materialLabel22.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel22.Name = "materialLabel22";
             this.materialLabel22.Size = new System.Drawing.Size(126, 19);
@@ -183,14 +187,15 @@
             // 
             // txtagarrereba
             // 
+            this.txtagarrereba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtagarrereba.AnimateReadOnly = false;
             this.txtagarrereba.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtagarrereba.Depth = 0;
             this.txtagarrereba.Enabled = false;
             this.txtagarrereba.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtagarrereba.LeadingIcon = null;
-            this.txtagarrereba.Location = new System.Drawing.Point(831, 585);
-            this.txtagarrereba.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtagarrereba.Location = new System.Drawing.Point(821, 585);
+            this.txtagarrereba.Margin = new System.Windows.Forms.Padding(4);
             this.txtagarrereba.MaxLength = 50;
             this.txtagarrereba.MouseState = MaterialSkin.MouseState.OUT;
             this.txtagarrereba.Multiline = false;
@@ -203,6 +208,7 @@
             // 
             // btnRecuperarCarga
             // 
+            this.btnRecuperarCarga.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnRecuperarCarga.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnRecuperarCarga.FlatAppearance.BorderSize = 0;
             this.btnRecuperarCarga.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -210,8 +216,8 @@
             this.btnRecuperarCarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecuperarCarga.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnRecuperarCarga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecuperarCarga.Location = new System.Drawing.Point(1059, 393);
-            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRecuperarCarga.Location = new System.Drawing.Point(1049, 393);
+            this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecuperarCarga.Name = "btnRecuperarCarga";
             this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 59);
             this.btnRecuperarCarga.TabIndex = 170;
@@ -221,8 +227,9 @@
             // 
             // txtcargaidrebaresultado
             // 
+            this.txtcargaidrebaresultado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcargaidrebaresultado.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtcargaidrebaresultado.Location = new System.Drawing.Point(1109, 471);
+            this.txtcargaidrebaresultado.Location = new System.Drawing.Point(1099, 471);
             this.txtcargaidrebaresultado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargaidrebaresultado.Name = "txtcargaidrebaresultado";
             this.txtcargaidrebaresultado.Size = new System.Drawing.Size(100, 22);
@@ -231,6 +238,7 @@
             // 
             // txtpuestoReba
             // 
+            this.txtpuestoReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtpuestoReba.AnimateReadOnly = false;
             this.txtpuestoReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtpuestoReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -241,7 +249,7 @@
             this.txtpuestoReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtpuestoReba.HideSelection = true;
             this.txtpuestoReba.LeadingIcon = null;
-            this.txtpuestoReba.Location = new System.Drawing.Point(675, 146);
+            this.txtpuestoReba.Location = new System.Drawing.Point(665, 146);
             this.txtpuestoReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpuestoReba.MaxLength = 32767;
             this.txtpuestoReba.MouseState = MaterialSkin.MouseState.OUT;
@@ -263,10 +271,11 @@
             // 
             // materialLabel19
             // 
+            this.materialLabel19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel19.AutoSize = true;
             this.materialLabel19.Depth = 0;
             this.materialLabel19.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel19.Location = new System.Drawing.Point(540, 158);
+            this.materialLabel19.Location = new System.Drawing.Point(530, 158);
             this.materialLabel19.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel19.Name = "materialLabel19";
             this.materialLabel19.Size = new System.Drawing.Size(61, 19);
@@ -275,6 +284,7 @@
             // 
             // txtempresaReba
             // 
+            this.txtempresaReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtempresaReba.AnimateReadOnly = false;
             this.txtempresaReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtempresaReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -285,7 +295,7 @@
             this.txtempresaReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtempresaReba.HideSelection = true;
             this.txtempresaReba.LeadingIcon = null;
-            this.txtempresaReba.Location = new System.Drawing.Point(175, 146);
+            this.txtempresaReba.Location = new System.Drawing.Point(165, 146);
             this.txtempresaReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtempresaReba.MaxLength = 32767;
             this.txtempresaReba.MouseState = MaterialSkin.MouseState.OUT;
@@ -307,10 +317,11 @@
             // 
             // materialLabel18
             // 
+            this.materialLabel18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel18.AutoSize = true;
             this.materialLabel18.Depth = 0;
             this.materialLabel18.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel18.Location = new System.Drawing.Point(47, 160);
+            this.materialLabel18.Location = new System.Drawing.Point(37, 160);
             this.materialLabel18.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel18.Name = "materialLabel18";
             this.materialLabel18.Size = new System.Drawing.Size(73, 19);
@@ -319,6 +330,7 @@
             // 
             // txtantebrazoreba
             // 
+            this.txtantebrazoreba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtantebrazoreba.AnimateReadOnly = false;
             this.txtantebrazoreba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtantebrazoreba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -329,7 +341,7 @@
             this.txtantebrazoreba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtantebrazoreba.HideSelection = true;
             this.txtantebrazoreba.LeadingIcon = null;
-            this.txtantebrazoreba.Location = new System.Drawing.Point(831, 329);
+            this.txtantebrazoreba.Location = new System.Drawing.Point(821, 329);
             this.txtantebrazoreba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtantebrazoreba.MaxLength = 32767;
             this.txtantebrazoreba.MouseState = MaterialSkin.MouseState.OUT;
@@ -351,6 +363,7 @@
             // 
             // txtmunecareba
             // 
+            this.txtmunecareba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtmunecareba.AnimateReadOnly = false;
             this.txtmunecareba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtmunecareba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -362,7 +375,7 @@
             this.txtmunecareba.HideSelection = true;
             this.txtmunecareba.LeadingIcon = null;
             this.txtmunecareba.LeaveOnEnterKey = true;
-            this.txtmunecareba.Location = new System.Drawing.Point(831, 393);
+            this.txtmunecareba.Location = new System.Drawing.Point(821, 393);
             this.txtmunecareba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmunecareba.MaxLength = 32767;
             this.txtmunecareba.MouseState = MaterialSkin.MouseState.OUT;
@@ -384,6 +397,7 @@
             // 
             // txtbrazoreba
             // 
+            this.txtbrazoreba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtbrazoreba.AnimateReadOnly = false;
             this.txtbrazoreba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtbrazoreba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -395,7 +409,7 @@
             this.txtbrazoreba.HideSelection = true;
             this.txtbrazoreba.LeadingIcon = null;
             this.txtbrazoreba.LeaveOnEnterKey = true;
-            this.txtbrazoreba.Location = new System.Drawing.Point(831, 457);
+            this.txtbrazoreba.Location = new System.Drawing.Point(821, 457);
             this.txtbrazoreba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbrazoreba.MaxLength = 32767;
             this.txtbrazoreba.MouseState = MaterialSkin.MouseState.OUT;
@@ -417,6 +431,7 @@
             // 
             // txtpiernareba
             // 
+            this.txtpiernareba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtpiernareba.AnimateReadOnly = false;
             this.txtpiernareba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtpiernareba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -428,7 +443,7 @@
             this.txtpiernareba.HideSelection = true;
             this.txtpiernareba.LeadingIcon = null;
             this.txtpiernareba.LeaveOnEnterKey = true;
-            this.txtpiernareba.Location = new System.Drawing.Point(324, 459);
+            this.txtpiernareba.Location = new System.Drawing.Point(314, 459);
             this.txtpiernareba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpiernareba.MaxLength = 32767;
             this.txtpiernareba.MouseState = MaterialSkin.MouseState.OUT;
@@ -450,6 +465,7 @@
             // 
             // txtcuelloreba
             // 
+            this.txtcuelloreba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcuelloreba.AnimateReadOnly = false;
             this.txtcuelloreba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtcuelloreba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -461,7 +477,7 @@
             this.txtcuelloreba.HideSelection = true;
             this.txtcuelloreba.LeadingIcon = null;
             this.txtcuelloreba.LeaveOnEnterKey = true;
-            this.txtcuelloreba.Location = new System.Drawing.Point(324, 393);
+            this.txtcuelloreba.Location = new System.Drawing.Point(314, 393);
             this.txtcuelloreba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcuelloreba.MaxLength = 32767;
             this.txtcuelloreba.MouseState = MaterialSkin.MouseState.OUT;
@@ -483,6 +499,7 @@
             // 
             // txttroncoreba
             // 
+            this.txttroncoreba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txttroncoreba.AnimateReadOnly = false;
             this.txttroncoreba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txttroncoreba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -493,7 +510,7 @@
             this.txttroncoreba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txttroncoreba.HideSelection = true;
             this.txttroncoreba.LeadingIcon = null;
-            this.txttroncoreba.Location = new System.Drawing.Point(324, 329);
+            this.txttroncoreba.Location = new System.Drawing.Point(314, 329);
             this.txttroncoreba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttroncoreba.MaxLength = 32767;
             this.txttroncoreba.MouseState = MaterialSkin.MouseState.OUT;
@@ -515,10 +532,11 @@
             // 
             // materialLabel17
             // 
+            this.materialLabel17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel17.AutoSize = true;
             this.materialLabel17.Depth = 0;
             this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel17.Location = new System.Drawing.Point(395, 236);
+            this.materialLabel17.Location = new System.Drawing.Point(385, 236);
             this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel17.Name = "materialLabel17";
             this.materialLabel17.Size = new System.Drawing.Size(241, 19);
@@ -527,10 +545,11 @@
             // 
             // materialLabel9
             // 
+            this.materialLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(547, 473);
+            this.materialLabel9.Location = new System.Drawing.Point(537, 473);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(127, 19);
@@ -539,10 +558,11 @@
             // 
             // materialLabel10
             // 
+            this.materialLabel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel10.AutoSize = true;
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel10.Location = new System.Drawing.Point(547, 405);
+            this.materialLabel10.Location = new System.Drawing.Point(537, 405);
             this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel10.Name = "materialLabel10";
             this.materialLabel10.Size = new System.Drawing.Size(143, 19);
@@ -551,10 +571,11 @@
             // 
             // materialLabel11
             // 
+            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(547, 347);
+            this.materialLabel11.Location = new System.Drawing.Point(537, 347);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(159, 19);
@@ -563,10 +584,11 @@
             // 
             // materialLabel3
             // 
+            this.materialLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(37, 473);
+            this.materialLabel3.Location = new System.Drawing.Point(27, 473);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(131, 19);
@@ -575,10 +597,11 @@
             // 
             // materialLabel2
             // 
+            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(36, 405);
+            this.materialLabel2.Location = new System.Drawing.Point(26, 405);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(130, 19);
@@ -587,10 +610,11 @@
             // 
             // materialLabel1
             // 
+            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(37, 347);
+            this.materialLabel1.Location = new System.Drawing.Point(27, 347);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(136, 19);
@@ -599,10 +623,11 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(325, 17);
+            this.label1.Location = new System.Drawing.Point(391, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(472, 38);
             this.label1.TabIndex = 184;
@@ -610,10 +635,11 @@
             // 
             // txtActuacionReba
             // 
+            this.txtActuacionReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtActuacionReba.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtActuacionReba.Enabled = false;
             this.txtActuacionReba.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtActuacionReba.Location = new System.Drawing.Point(40, 1083);
+            this.txtActuacionReba.Location = new System.Drawing.Point(30, 1083);
             this.txtActuacionReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtActuacionReba.Multiline = true;
             this.txtActuacionReba.Name = "txtActuacionReba";
@@ -622,6 +648,7 @@
             // 
             // btnSalir
             // 
+            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -629,8 +656,8 @@
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(1059, 585);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Location = new System.Drawing.Point(1049, 585);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(155, 62);
             this.btnSalir.TabIndex = 214;
@@ -640,6 +667,7 @@
             // 
             // btnobtenerinforme
             // 
+            this.btnobtenerinforme.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnobtenerinforme.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnobtenerinforme.FlatAppearance.BorderSize = 0;
             this.btnobtenerinforme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -647,8 +675,8 @@
             this.btnobtenerinforme.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnobtenerinforme.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnobtenerinforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnobtenerinforme.Location = new System.Drawing.Point(1059, 516);
-            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnobtenerinforme.Location = new System.Drawing.Point(1049, 516);
+            this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4);
             this.btnobtenerinforme.Name = "btnobtenerinforme";
             this.btnobtenerinforme.Size = new System.Drawing.Size(155, 64);
             this.btnobtenerinforme.TabIndex = 212;
@@ -658,6 +686,7 @@
             // 
             // txtPuntuacionReba
             // 
+            this.txtPuntuacionReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPuntuacionReba.AnimateReadOnly = false;
             this.txtPuntuacionReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtPuntuacionReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -668,7 +697,7 @@
             this.txtPuntuacionReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtPuntuacionReba.HideSelection = true;
             this.txtPuntuacionReba.LeadingIcon = null;
-            this.txtPuntuacionReba.Location = new System.Drawing.Point(275, 927);
+            this.txtPuntuacionReba.Location = new System.Drawing.Point(265, 927);
             this.txtPuntuacionReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPuntuacionReba.MaxLength = 32767;
             this.txtPuntuacionReba.MouseState = MaterialSkin.MouseState.OUT;
@@ -690,6 +719,7 @@
             // 
             // txtniveldeaccionReba
             // 
+            this.txtniveldeaccionReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtniveldeaccionReba.AnimateReadOnly = false;
             this.txtniveldeaccionReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtniveldeaccionReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -700,7 +730,7 @@
             this.txtniveldeaccionReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtniveldeaccionReba.HideSelection = true;
             this.txtniveldeaccionReba.LeadingIcon = null;
-            this.txtniveldeaccionReba.Location = new System.Drawing.Point(784, 927);
+            this.txtniveldeaccionReba.Location = new System.Drawing.Point(774, 927);
             this.txtniveldeaccionReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtniveldeaccionReba.MaxLength = 32767;
             this.txtniveldeaccionReba.MouseState = MaterialSkin.MouseState.OUT;
@@ -722,10 +752,11 @@
             // 
             // materialLabel13
             // 
+            this.materialLabel13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel13.AutoSize = true;
             this.materialLabel13.Depth = 0;
             this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel13.Location = new System.Drawing.Point(36, 1057);
+            this.materialLabel13.Location = new System.Drawing.Point(26, 1057);
             this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel13.Name = "materialLabel13";
             this.materialLabel13.Size = new System.Drawing.Size(72, 19);
@@ -734,10 +765,11 @@
             // 
             // materialLabel14
             // 
+            this.materialLabel14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel14.AutoSize = true;
             this.materialLabel14.Depth = 0;
             this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel14.Location = new System.Drawing.Point(547, 944);
+            this.materialLabel14.Location = new System.Drawing.Point(537, 944);
             this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel14.Name = "materialLabel14";
             this.materialLabel14.Size = new System.Drawing.Size(109, 19);
@@ -746,10 +778,11 @@
             // 
             // materialLabel15
             // 
+            this.materialLabel15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel15.AutoSize = true;
             this.materialLabel15.Depth = 0;
             this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel15.Location = new System.Drawing.Point(37, 943);
+            this.materialLabel15.Location = new System.Drawing.Point(27, 943);
             this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel15.Name = "materialLabel15";
             this.materialLabel15.Size = new System.Drawing.Size(125, 19);
@@ -758,10 +791,11 @@
             // 
             // materialLabel16
             // 
+            this.materialLabel16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel16.AutoSize = true;
             this.materialLabel16.Depth = 0;
             this.materialLabel16.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel16.Location = new System.Drawing.Point(36, 885);
+            this.materialLabel16.Location = new System.Drawing.Point(26, 885);
             this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel16.Name = "materialLabel16";
             this.materialLabel16.Size = new System.Drawing.Size(261, 19);
@@ -770,10 +804,11 @@
             // 
             // materialLabel25
             // 
+            this.materialLabel25.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel25.AutoSize = true;
             this.materialLabel25.Depth = 0;
             this.materialLabel25.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel25.Location = new System.Drawing.Point(37, 293);
+            this.materialLabel25.Location = new System.Drawing.Point(27, 293);
             this.materialLabel25.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel25.Name = "materialLabel25";
             this.materialLabel25.Size = new System.Drawing.Size(334, 19);
@@ -782,6 +817,7 @@
             // 
             // txtcargafuerzareba
             // 
+            this.txtcargafuerzareba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtcargafuerzareba.AnimateReadOnly = false;
             this.txtcargafuerzareba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtcargafuerzareba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -793,7 +829,7 @@
             this.txtcargafuerzareba.HideSelection = true;
             this.txtcargafuerzareba.LeadingIcon = null;
             this.txtcargafuerzareba.LeaveOnEnterKey = true;
-            this.txtcargafuerzareba.Location = new System.Drawing.Point(324, 587);
+            this.txtcargafuerzareba.Location = new System.Drawing.Point(314, 587);
             this.txtcargafuerzareba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcargafuerzareba.MaxLength = 32767;
             this.txtcargafuerzareba.MouseState = MaterialSkin.MouseState.OUT;
@@ -815,10 +851,11 @@
             // 
             // materialLabel4
             // 
+            this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(36, 602);
+            this.materialLabel4.Location = new System.Drawing.Point(26, 602);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(209, 19);
@@ -827,10 +864,11 @@
             // 
             // materialLabel20
             // 
+            this.materialLabel20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel20.AutoSize = true;
             this.materialLabel20.Depth = 0;
             this.materialLabel20.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel20.Location = new System.Drawing.Point(547, 293);
+            this.materialLabel20.Location = new System.Drawing.Point(537, 293);
             this.materialLabel20.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel20.Name = "materialLabel20";
             this.materialLabel20.Size = new System.Drawing.Size(320, 19);
@@ -839,6 +877,7 @@
             // 
             // txtnivelderiesgoreba
             // 
+            this.txtnivelderiesgoreba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtnivelderiesgoreba.AnimateReadOnly = false;
             this.txtnivelderiesgoreba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtnivelderiesgoreba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -849,7 +888,7 @@
             this.txtnivelderiesgoreba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtnivelderiesgoreba.HideSelection = true;
             this.txtnivelderiesgoreba.LeadingIcon = null;
-            this.txtnivelderiesgoreba.Location = new System.Drawing.Point(275, 991);
+            this.txtnivelderiesgoreba.Location = new System.Drawing.Point(265, 991);
             this.txtnivelderiesgoreba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtnivelderiesgoreba.MaxLength = 32767;
             this.txtnivelderiesgoreba.MouseState = MaterialSkin.MouseState.OUT;
@@ -871,10 +910,11 @@
             // 
             // materialLabel6
             // 
+            this.materialLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.Location = new System.Drawing.Point(37, 1004);
+            this.materialLabel6.Location = new System.Drawing.Point(27, 1004);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(109, 19);
@@ -883,6 +923,7 @@
             // 
             // TotalGrupoAReba
             // 
+            this.TotalGrupoAReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TotalGrupoAReba.AnimateReadOnly = false;
             this.TotalGrupoAReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.TotalGrupoAReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -893,7 +934,7 @@
             this.TotalGrupoAReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.TotalGrupoAReba.HideSelection = true;
             this.TotalGrupoAReba.LeadingIcon = null;
-            this.TotalGrupoAReba.Location = new System.Drawing.Point(324, 651);
+            this.TotalGrupoAReba.Location = new System.Drawing.Point(314, 651);
             this.TotalGrupoAReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TotalGrupoAReba.MaxLength = 32767;
             this.TotalGrupoAReba.MouseState = MaterialSkin.MouseState.OUT;
@@ -915,10 +956,11 @@
             // 
             // materialLabel7
             // 
+            this.materialLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.Location = new System.Drawing.Point(36, 667);
+            this.materialLabel7.Location = new System.Drawing.Point(26, 667);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(112, 19);
@@ -927,6 +969,7 @@
             // 
             // txtTotalGrupoBReba
             // 
+            this.txtTotalGrupoBReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtTotalGrupoBReba.AnimateReadOnly = false;
             this.txtTotalGrupoBReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtTotalGrupoBReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -937,7 +980,7 @@
             this.txtTotalGrupoBReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTotalGrupoBReba.HideSelection = true;
             this.txtTotalGrupoBReba.LeadingIcon = null;
-            this.txtTotalGrupoBReba.Location = new System.Drawing.Point(831, 651);
+            this.txtTotalGrupoBReba.Location = new System.Drawing.Point(821, 651);
             this.txtTotalGrupoBReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTotalGrupoBReba.MaxLength = 32767;
             this.txtTotalGrupoBReba.MouseState = MaterialSkin.MouseState.OUT;
@@ -959,10 +1002,11 @@
             // 
             // materialLabel8
             // 
+            this.materialLabel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel8.Location = new System.Drawing.Point(547, 535);
+            this.materialLabel8.Location = new System.Drawing.Point(537, 535);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(118, 19);
@@ -971,6 +1015,7 @@
             // 
             // txtTotalTablaCReba
             // 
+            this.txtTotalTablaCReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtTotalTablaCReba.AnimateReadOnly = false;
             this.txtTotalTablaCReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtTotalTablaCReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -981,7 +1026,7 @@
             this.txtTotalTablaCReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTotalTablaCReba.HideSelection = true;
             this.txtTotalTablaCReba.LeadingIcon = null;
-            this.txtTotalTablaCReba.Location = new System.Drawing.Point(324, 715);
+            this.txtTotalTablaCReba.Location = new System.Drawing.Point(314, 715);
             this.txtTotalTablaCReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTotalTablaCReba.MaxLength = 32767;
             this.txtTotalTablaCReba.MouseState = MaterialSkin.MouseState.OUT;
@@ -1003,10 +1048,11 @@
             // 
             // materialLabel12
             // 
+            this.materialLabel12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel12.AutoSize = true;
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel12.Location = new System.Drawing.Point(36, 731);
+            this.materialLabel12.Location = new System.Drawing.Point(26, 731);
             this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel12.Name = "materialLabel12";
             this.materialLabel12.Size = new System.Drawing.Size(118, 19);
@@ -1015,10 +1061,11 @@
             // 
             // materialLabel28
             // 
+            this.materialLabel28.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel28.AutoSize = true;
             this.materialLabel28.Depth = 0;
             this.materialLabel28.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel28.Location = new System.Drawing.Point(540, 731);
+            this.materialLabel28.Location = new System.Drawing.Point(530, 731);
             this.materialLabel28.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel28.Name = "materialLabel28";
             this.materialLabel28.Size = new System.Drawing.Size(152, 19);
@@ -1027,6 +1074,7 @@
             // 
             // txtpActividadRebaFinal
             // 
+            this.txtpActividadRebaFinal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtpActividadRebaFinal.AnimateReadOnly = false;
             this.txtpActividadRebaFinal.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtpActividadRebaFinal.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -1037,7 +1085,7 @@
             this.txtpActividadRebaFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtpActividadRebaFinal.HideSelection = false;
             this.txtpActividadRebaFinal.LeadingIcon = null;
-            this.txtpActividadRebaFinal.Location = new System.Drawing.Point(831, 716);
+            this.txtpActividadRebaFinal.Location = new System.Drawing.Point(821, 716);
             this.txtpActividadRebaFinal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpActividadRebaFinal.MaxLength = 32767;
             this.txtpActividadRebaFinal.MouseState = MaterialSkin.MouseState.OUT;
@@ -1059,10 +1107,11 @@
             // 
             // materialLabel5
             // 
+            this.materialLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel5.Location = new System.Drawing.Point(540, 667);
+            this.materialLabel5.Location = new System.Drawing.Point(530, 667);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(112, 19);
@@ -1071,6 +1120,7 @@
             // 
             // txtpuntuacionTCAC
             // 
+            this.txtpuntuacionTCAC.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtpuntuacionTCAC.AnimateReadOnly = false;
             this.txtpuntuacionTCAC.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtpuntuacionTCAC.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -1081,7 +1131,7 @@
             this.txtpuntuacionTCAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtpuntuacionTCAC.HideSelection = true;
             this.txtpuntuacionTCAC.LeadingIcon = null;
-            this.txtpuntuacionTCAC.Location = new System.Drawing.Point(324, 779);
+            this.txtpuntuacionTCAC.Location = new System.Drawing.Point(314, 779);
             this.txtpuntuacionTCAC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpuntuacionTCAC.MaxLength = 32767;
             this.txtpuntuacionTCAC.MouseState = MaterialSkin.MouseState.OUT;
@@ -1103,10 +1153,11 @@
             // 
             // materialLabel21
             // 
+            this.materialLabel21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel21.AutoSize = true;
             this.materialLabel21.Depth = 0;
             this.materialLabel21.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel21.Location = new System.Drawing.Point(36, 802);
+            this.materialLabel21.Location = new System.Drawing.Point(26, 802);
             this.materialLabel21.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel21.Name = "materialLabel21";
             this.materialLabel21.Size = new System.Drawing.Size(179, 19);
@@ -1120,9 +1171,9 @@
             this.BarraTitulo.Controls.Add(this.label1);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1318, 65);
+            this.BarraTitulo.Size = new System.Drawing.Size(1224, 65);
             this.BarraTitulo.TabIndex = 343;
             // 
             // pictureBox9
@@ -1131,8 +1182,8 @@
             this.pictureBox9.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(1274, 17);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Location = new System.Drawing.Point(1178, 13);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(33, 31);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1142,6 +1193,7 @@
             // 
             // txtCuitReba
             // 
+            this.txtCuitReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCuitReba.AnimateReadOnly = false;
             this.txtCuitReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtCuitReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -1152,7 +1204,7 @@
             this.txtCuitReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCuitReba.HideSelection = true;
             this.txtCuitReba.LeadingIcon = null;
-            this.txtCuitReba.Location = new System.Drawing.Point(175, 71);
+            this.txtCuitReba.Location = new System.Drawing.Point(165, 71);
             this.txtCuitReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCuitReba.MaxLength = 32767;
             this.txtCuitReba.MouseState = MaterialSkin.MouseState.OUT;
@@ -1174,10 +1226,11 @@
             // 
             // materialLabel23
             // 
+            this.materialLabel23.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel23.AutoSize = true;
             this.materialLabel23.Depth = 0;
             this.materialLabel23.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel23.Location = new System.Drawing.Point(47, 85);
+            this.materialLabel23.Location = new System.Drawing.Point(37, 85);
             this.materialLabel23.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel23.Name = "materialLabel23";
             this.materialLabel23.Size = new System.Drawing.Size(35, 19);
@@ -1186,11 +1239,12 @@
             // 
             // materialLabel26
             // 
+            this.materialLabel26.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel26.AutoSize = true;
             this.materialLabel26.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel26.Depth = 0;
             this.materialLabel26.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel26.Location = new System.Drawing.Point(540, 85);
+            this.materialLabel26.Location = new System.Drawing.Point(530, 85);
             this.materialLabel26.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel26.Name = "materialLabel26";
             this.materialLabel26.Size = new System.Drawing.Size(84, 19);
@@ -1199,6 +1253,7 @@
             // 
             // txtEmpleadoReba
             // 
+            this.txtEmpleadoReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmpleadoReba.AnimateReadOnly = false;
             this.txtEmpleadoReba.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtEmpleadoReba.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -1209,7 +1264,7 @@
             this.txtEmpleadoReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtEmpleadoReba.HideSelection = true;
             this.txtEmpleadoReba.LeadingIcon = null;
-            this.txtEmpleadoReba.Location = new System.Drawing.Point(675, 71);
+            this.txtEmpleadoReba.Location = new System.Drawing.Point(665, 71);
             this.txtEmpleadoReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmpleadoReba.MaxLength = 32767;
             this.txtEmpleadoReba.MouseState = MaterialSkin.MouseState.OUT;
@@ -1231,10 +1286,11 @@
             // 
             // userlabel2
             // 
+            this.userlabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.userlabel2.AutoSize = true;
             this.userlabel2.Depth = 0;
             this.userlabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.userlabel2.Location = new System.Drawing.Point(540, 1326);
+            this.userlabel2.Location = new System.Drawing.Point(530, 1326);
             this.userlabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.userlabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.userlabel2.Name = "userlabel2";
@@ -1245,10 +1301,11 @@
             // 
             // userlabel1
             // 
+            this.userlabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.userlabel1.AutoSize = true;
             this.userlabel1.Depth = 0;
             this.userlabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.userlabel1.Location = new System.Drawing.Point(320, 1326);
+            this.userlabel1.Location = new System.Drawing.Point(310, 1326);
             this.userlabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.userlabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.userlabel1.Name = "userlabel1";
@@ -1263,7 +1320,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1339, 1100);
+            this.ClientSize = new System.Drawing.Size(1245, 1100);
             this.Controls.Add(this.userlabel2);
             this.Controls.Add(this.userlabel1);
             this.Controls.Add(this.materialLabel26);

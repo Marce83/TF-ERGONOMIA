@@ -44,11 +44,6 @@ namespace TF.WIN
 
         }
 
-
-
-
-
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
@@ -66,8 +61,8 @@ namespace TF.WIN
             {
                 txtCUIT.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
                 txtNombreEmpresa.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
-
             }
+
 
         }
         private void btnBuscarresultado_Click(object sender, EventArgs e)
@@ -206,34 +201,34 @@ namespace TF.WIN
         {
             try
             {
-                // Configura el gráfico aquí
-                // Por ejemplo, crea una serie de pastel
-                Series series = new Series
-                {
-                    Name = "Cantidad de Riesgo",
-                    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
-                };
+                //// Configura el gráfico aquí
+                //// Por ejemplo, crea una serie de pastel
+                //Series series = new Series
+                //{
+                //    Name = "Cantidad de Riesgo",
+                //    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
+                //};
 
-                // Configura los ejes (no es tan relevante para el gráfico de pastel)
-                ChartArea chartArea = new ChartArea();
-                chartArea.AxisX.Title = "Nivel de Riesgo";
-                chartArea.AxisY.Title = "Cantidad de Riesgo";
+                //// Configura los ejes (no es tan relevante para el gráfico de pastel)
+                //ChartArea chartArea = new ChartArea();
+                //chartArea.AxisX.Title = "Nivel de Riesgo";
+                //chartArea.AxisY.Title = "Cantidad de Riesgo";
 
-                // Limpia las series existentes antes de agregar la nueva
-                chartPastelRula.Series.Clear();
+                //// Limpia las series existentes antes de agregar la nueva
+                //chartPastelRula.Series.Clear();
 
-                // Asigna la serie y el área del gráfico
-                chartPastelRula.Series.Add(series);
-                chartPastelRula.ChartAreas.Add(chartArea);
+                //// Asigna la serie y el área del gráfico
+                //chartPastelRula.Series.Add(series);
+                //chartPastelRula.ChartAreas.Add(chartArea);
 
-                // Agrega un título al gráfico
-                chartPastelRula.Titles.Add("Riesgos obtenidos");
-                chartPastelRula.Font = new Font("Arial", 14, FontStyle.Bold);
+                //// Agrega un título al gráfico
+                //chartPastelRula.Titles.Add("Riesgos obtenidos");
+                //chartPastelRula.Font = new Font("Arial", 14, FontStyle.Bold);
 
-                // Establece el formato de la serie
-                series.Font = new Font("Arial", 10, FontStyle.Bold);
+                //// Establece el formato de la serie
+                //series.Font = new Font("Arial", 10, FontStyle.Bold);
 
-                // Añade datos de ejemplo al gráfico de pastel
+                //// Añade datos de ejemplo al gráfico de pastel
 
                 GraficoPastelRulaDATOS();
             }
@@ -248,33 +243,33 @@ namespace TF.WIN
             {
                 // Configura el gráfico aquí
                 // Por ejemplo, crea una serie de barras
-                Series series = new Series
-                {
-                    Name = "Cantidad de riesgos por día",
-                    ChartType = SeriesChartType.Bar // Cambiado a SeriesChartType.Bar para el gráfico de barras
-                };
+                //Series series = new Series
+                //{
+                //    Name = "Cantidad de riesgos por día",
+                //    ChartType = SeriesChartType.Bar // Cambiado a SeriesChartType.Bar para el gráfico de barras
+                //};
 
-                // Configura los ejes
-                ChartArea chartArea = new ChartArea();
-                chartArea.AxisX.Title = "Fecha y Cantidad por día";
-                chartArea.AxisY.Title = "Niveles";
+                //// Configura los ejes
+                //ChartArea chartArea = new ChartArea();
+                //chartArea.AxisX.Title = "Fecha y Cantidad por día";
+                //chartArea.AxisY.Title = "Niveles";
 
-                // Limpia las series existentes antes de agregar la nueva
-                ChartHistogramaRula2.Series.Clear();
+                //// Limpia las series existentes antes de agregar la nueva
+                //ChartHistogramaRula2.Series.Clear();
 
-                // Asigna la serie y el área del gráfico
-                ChartHistogramaRula2.Series.Add(series);
-                ChartHistogramaRula2.ChartAreas.Add(chartArea);
+                //// Asigna la serie y el área del gráfico
+                //ChartHistogramaRula2.Series.Add(series);
+                //ChartHistogramaRula2.ChartAreas.Add(chartArea);
 
-                // Agrega un título al gráfico
-                ChartHistogramaRula2.Titles.Clear();
-                ChartHistogramaRula2.Titles.Add("Cantidad de Riesgos por día");
-                ChartHistogramaRula2.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+                //// Agrega un título al gráfico
+                //ChartHistogramaRula2.Titles.Clear();
+                //ChartHistogramaRula2.Titles.Add("Cantidad de Riesgos por día");
+                //ChartHistogramaRula2.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
 
-                // Establece el formato de la serie
-                series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+                //// Establece el formato de la serie
+                //series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
 
-                // Añade datos al gráfico
+                //// Añade datos al gráfico
                 GraficoHistRulaDATOS();
             }
             catch (Exception ex)
@@ -298,24 +293,28 @@ namespace TF.WIN
             // Configura la serie para un gráfico de pastel
             chartPastelRula.Series[0].ChartType = SeriesChartType.Pie;
 
-            // Agrega los nuevos datos desde el DataTable
+            //// Agrega los nuevos datos desde el DataTable
             foreach (DataRow row in dt1200.Rows)
             {
                 string NivelRiesgo = row["NivelRiesgo"].ToString();
                 int CantidadRiesgo = Convert.ToInt32(row["CantidadRiesgo"]);
 
+
                 // Agrega un punto a la serie para cada provincia
                 chartPastelRula.Series[0].Points.AddXY(NivelRiesgo, CantidadRiesgo);
+
+
             }
 
             // Agrega un título al gráfico de pastel
             chartPastelRula.Titles.Clear();
-            chartPastelRula.Titles.Add("Distribución de Riesgo por nivel");
+            chartPastelRula.Titles.Add("Riesgo por nivel de Analisis");
 
-            // Establece el formato de la serie
-            chartPastelRula.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
+            //// Establece el formato de la serie
+            //chartPastelRula.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
 
         }
+       
         private void GraficoHistRulaDATOS()
         {
             try
@@ -333,22 +332,22 @@ namespace TF.WIN
 
                 // Configura las series para un gráfico de barras
                 Series series = new Series();
-                series.ChartType = SeriesChartType.Bar;
-                series.Name = "Analisis x Dia";
+                //series.ChartType = SeriesChartType.Bar;
+                series.Name = "NIVEL DE RIESGO";
 
                 // Agrega las series al gráfico
                 ChartHistogramaRula2.Series.Add(series);
 
-                // Agrega los nuevos datos desde el DataTable
+                //Agrega los nuevos datos desde el DataTable
                 foreach (DataRow row in dt1201.Rows)
                 {
-                    DateTime fecha = Convert.ToDateTime(row["FechaCarga"]);
+                    //DateTime fecha = Convert.ToDateTime(row["FechaCarga"]);
                     int nivelRiesgo = Convert.ToInt32(row["NivelRiesgo"]);
                     int Analisisxdia = Convert.ToInt32(row["AnalisisxDia"]);
 
                     // Combina la fecha y AnalisisxDia para obtener un nombre único
-                    string nombrePunto = $"{fecha.ToShortDateString()} - {Analisisxdia}";
-
+                    //string nombrePunto = $"{fecha.ToShortDateString()} - {Analisisxdia}";
+                    string nombrePunto = $"{Analisisxdia}";
                     // Agrega un punto a la serie para cada fecha, nivel de riesgo y AnalisisxDia
                     series.Points.AddXY(nombrePunto, nivelRiesgo);
                 }
@@ -358,20 +357,20 @@ namespace TF.WIN
                 chartArea.AxisX.Title = "Fecha de Carga y Analisis x Dia";
                 chartArea.AxisY.Title = "Nivel de Riesgo";
 
-                // Ajusta las etiquetas del eje X para mostrar cada barra
-                chartArea.AxisX.Interval = 1;
-                chartArea.AxisX.IntervalType = DateTimeIntervalType.Days;
-                chartArea.AxisX.LabelStyle.Format = "dd/MM/yyyy";
+                //// Ajusta las etiquetas del eje X para mostrar cada barra
+                //chartArea.AxisX.Interval = 1;
+                //chartArea.AxisX.IntervalType = DateTimeIntervalType.Days;
+                //chartArea.AxisX.LabelStyle.Format = "dd/MM/yyyy";
 
-                // Asigna el área del gráfico
-                ChartHistogramaRula2.ChartAreas.Add(chartArea);
+                //// Asigna el área del gráfico
+                //ChartHistogramaRula2.ChartAreas.Add(chartArea);
 
-                // Agrega un título al gráfico de barras
-                ChartHistogramaRula2.Titles.Clear();
-                ChartHistogramaRula2.Titles.Add("Distribución de Riesgo por Nivel y Fecha");
+                //// Agrega un título al gráfico de barras
+                //ChartHistogramaRula2.Titles.Clear();
+                //ChartHistogramaRula2.Titles.Add("Distribución de Riesgo por Nivel y Fecha");
 
-                // Establece el formato de la serie
-                series.Font = new Font("Arial", 10, FontStyle.Bold);
+                //// Establece el formato de la serie
+                //series.Font = new Font("Arial", 10, FontStyle.Bold);
             }
             catch (Exception ex)
             {
@@ -383,34 +382,34 @@ namespace TF.WIN
         {
             try
             {
-                // Configura el gráfico aquí
-                // Por ejemplo, crea una serie de pastel
-                Series series = new Series
-                {
-                    Name = "Cantidad de Riesgo",
-                    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
-                };
+                //// Configura el gráfico aquí
+                //// Por ejemplo, crea una serie de pastel
+                //Series series = new Series
+                //{
+                //    Name = "Cantidad de Riesgo",
+                //    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
+                //};
 
-                // Configura los ejes (no es tan relevante para el gráfico de pastel)
-                ChartArea chartArea = new ChartArea();
-                chartArea.AxisX.Title = "Nivel de Riesgo";
-                chartArea.AxisY.Title = "Cantidad de Riesgo";
+                //// Configura los ejes (no es tan relevante para el gráfico de pastel)
+                //ChartArea chartArea = new ChartArea();
+                //chartArea.AxisX.Title = "Nivel de Riesgo";
+                //chartArea.AxisY.Title = "Cantidad de Riesgo";
 
-                // Limpia las series existentes antes de agregar la nueva
-                chartPastelReba.Series.Clear();
+                //// Limpia las series existentes antes de agregar la nueva
+                //chartPastelReba.Series.Clear();
 
-                // Asigna la serie y el área del gráfico
-                chartPastelReba.Series.Add(series);
-                chartPastelReba.ChartAreas.Add(chartArea);
+                //// Asigna la serie y el área del gráfico
+                //chartPastelReba.Series.Add(series);
+                //chartPastelReba.ChartAreas.Add(chartArea);
 
-                // Agrega un título al gráfico
-                chartPastelReba.Titles.Add("Riesgos obtenidos");
-                chartPastelReba.Font = new Font("Arial", 14, FontStyle.Bold);
+                //// Agrega un título al gráfico
+                //chartPastelReba.Titles.Add("Riesgos obtenidos");
+                //chartPastelReba.Font = new Font("Arial", 14, FontStyle.Bold);
 
-                // Establece el formato de la serie
-                series.Font = new Font("Arial", 10, FontStyle.Bold);
+                //// Establece el formato de la serie
+                //series.Font = new Font("Arial", 10, FontStyle.Bold);
 
-                // Añade datos de ejemplo al gráfico de pastel
+                //// Añade datos de ejemplo al gráfico de pastel
 
                 GraficoPastelRebaDATOS();
             }
@@ -423,35 +422,35 @@ namespace TF.WIN
         {
             try
             {
-                // Configura el gráfico aquí
-                // Por ejemplo, crea una serie de barras
-                Series series = new Series
-                {
-                    Name = "Cantidad de riesgos por día",
-                    ChartType = SeriesChartType.Bar // Cambiado a SeriesChartType.Bar para el gráfico de barras
-                };
+                ////// Configura el gráfico aquí
+                ////// Por ejemplo, crea una serie de barras
+                //Series series = new Series
+                //{
+                //    Name = "Cantidad de riesgos por día",
+                //    ChartType = SeriesChartType.Column // Cambiado a SeriesChartType.Bar para el gráfico de barras
+                //};
 
-                // Configura los ejes
-                ChartArea chartArea = new ChartArea();
-                chartArea.AxisX.Title = "Fecha y Cantidad por día";
-                chartArea.AxisY.Title = "Niveles";
+                //// Configura los ejes
+                //ChartArea chartArea = new ChartArea();
+                //chartArea.AxisX.Title = "Fecha y Cantidad por día";
+                //chartArea.AxisY.Title = "Niveles";
 
-                // Limpia las series existentes antes de agregar la nueva
-                ChartHistogramaReba2.Series.Clear();
+                //// Limpia las series existentes antes de agregar la nueva
+                //ChartHistogramaReba2.Series.Clear();
 
-                // Asigna la serie y el área del gráfico
-                ChartHistogramaReba2.Series.Add(series);
-                ChartHistogramaReba2.ChartAreas.Add(chartArea);
+                //// Asigna la serie y el área del gráfico
+                //ChartHistogramaReba2.Series.Add(series);
+                //ChartHistogramaReba2.ChartAreas.Add(chartArea);
 
-                // Agrega un título al gráfico
-                ChartHistogramaReba2.Titles.Clear();
-                ChartHistogramaReba2.Titles.Add("Cantidad de Riesgos por día");
-                ChartHistogramaReba2.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+                //// Agrega un título al gráfico
+                //ChartHistogramaReba2.Titles.Clear();
+                //ChartHistogramaReba2.Titles.Add("Cantidad de Riesgos por día");
+                //ChartHistogramaReba2.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
 
-                // Establece el formato de la serie
-                series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+                //// Establece el formato de la serie
+                //series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
 
-                // Añade datos al gráfico
+                //// Añade datos al gráfico
                 HistoRebaPersonDATOS();
             }
             catch (Exception ex)
@@ -510,8 +509,8 @@ namespace TF.WIN
 
                 // Configura las series para un gráfico de barras
                 Series series = new Series();
-                series.ChartType = SeriesChartType.Bar;
-                series.Name = "Analisis x Dia";
+                series.ChartType = SeriesChartType.Column;
+                series.Name = "DISTRIBUCION DEL RIESGO POR ANALISIS REALIZADOS";
 
                 // Agrega las series al gráfico
                 ChartHistogramaReba2.Series.Add(series);
@@ -519,12 +518,15 @@ namespace TF.WIN
                 // Agrega los nuevos datos desde el DataTable
                 foreach (DataRow row in dt1201.Rows)
                 {
-                    DateTime fecha = Convert.ToDateTime(row["FechaCargaReba"]);
+                    //DateTime fecha = Convert.ToDateTime(row["FechaCargaReba"]);
                     string nivelRiesgo = row["NivelRiesgo"].ToString();
                     int Analisisxdia = Convert.ToInt32(row["AnalisisxDia"]);
 
+                    //// Combina la fecha y AnalisisxDia para obtener un nombre único
+                    //string nombrePunto = $"{fecha.ToShortDateString()} - {nivelRiesgo}";
+
                     // Combina la fecha y AnalisisxDia para obtener un nombre único
-                    string nombrePunto = $"{fecha.ToShortDateString()} - {nivelRiesgo}";
+                    string nombrePunto = $"{nivelRiesgo}";
 
                     // Agrega un punto a la serie para cada fecha, nivel de riesgo y AnalisisxDia
                     series.Points.AddXY(nombrePunto, Analisisxdia);
@@ -535,20 +537,20 @@ namespace TF.WIN
                 chartArea.AxisX.Title = "Fecha de Carga y Analisis x Dia";
                 chartArea.AxisY.Title = "Nivel de Riesgo";
 
-                // Ajusta las etiquetas del eje X para mostrar cada barra
-                chartArea.AxisX.Interval = 1;
-                chartArea.AxisX.IntervalType = DateTimeIntervalType.Days;
-                chartArea.AxisX.LabelStyle.Format = "dd/MM/yyyy";
+                //// Ajusta las etiquetas del eje X para mostrar cada barra
+                //chartArea.AxisX.Interval = 1;
+                //chartArea.AxisX.IntervalType = DateTimeIntervalType.Days;
+                //chartArea.AxisX.LabelStyle.Format = "dd/MM/yyyy";
 
-                // Asigna el área del gráfico
-                ChartHistogramaReba2.ChartAreas.Add(chartArea);
+                //// Asigna el área del gráfico
+                //ChartHistogramaReba2.ChartAreas.Add(chartArea);
 
-                // Agrega un título al gráfico de barras
-                ChartHistogramaReba2.Titles.Clear();
-                ChartHistogramaReba2.Titles.Add("Distribución de Riesgo por Nivel y Fecha");
+                //// Agrega un título al gráfico de barras
+                //ChartHistogramaReba2.Titles.Clear();
+                //ChartHistogramaReba2.Titles.Add("Distribución de Riesgo por Nivel y Fecha");
 
-                // Establece el formato de la serie
-                series.Font = new Font("Arial", 10, FontStyle.Bold);
+                //// Establece el formato de la serie
+                //series.Font = new Font("Arial", 10, FontStyle.Bold);
             }
             catch (Exception ex)
             {
@@ -560,34 +562,34 @@ namespace TF.WIN
         {
             try
             {
-                // Configura el gráfico aquí
-                // Por ejemplo, crea una serie de pastel
-                Series series = new Series
-                {
-                    Name = "Cantidad de Riesgo",
-                    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
-                };
+                //// Configura el gráfico aquí
+                //// Por ejemplo, crea una serie de pastel
+                //Series series = new Series
+                //{
+                //    Name = "Cantidad de Riesgo",
+                //    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
+                //};
 
-                // Configura los ejes (no es tan relevante para el gráfico de pastel)
-                ChartArea chartArea = new ChartArea();
-                chartArea.AxisX.Title = "Nivel de Riesgo";
-                chartArea.AxisY.Title = "Cantidad de Riesgo";
+                //// Configura los ejes (no es tan relevante para el gráfico de pastel)
+                //ChartArea chartArea = new ChartArea();
+                //chartArea.AxisX.Title = "Nivel de Riesgo";
+                //chartArea.AxisY.Title = "Cantidad de Riesgo";
 
-                // Limpia las series existentes antes de agregar la nueva
-                chartPastelNiosh.Series.Clear();
+                //// Limpia las series existentes antes de agregar la nueva
+                //chartPastelNiosh.Series.Clear();
 
-                // Asigna la serie y el área del gráfico
-                chartPastelNiosh.Series.Add(series);
-                chartPastelNiosh.ChartAreas.Add(chartArea);
+                //// Asigna la serie y el área del gráfico
+                //chartPastelNiosh.Series.Add(series);
+                //chartPastelNiosh.ChartAreas.Add(chartArea);
 
-                // Agrega un título al gráfico
-                chartPastelNiosh.Titles.Add("Riesgos obtenidos");
-                chartPastelNiosh.Font = new Font("Arial", 14, FontStyle.Bold);
+                //// Agrega un título al gráfico
+                //chartPastelNiosh.Titles.Add("Riesgos obtenidos");
+                //chartPastelNiosh.Font = new Font("Arial", 14, FontStyle.Bold);
 
-                // Establece el formato de la serie
-                series.Font = new Font("Arial", 10, FontStyle.Bold);
+                //// Establece el formato de la serie
+                //series.Font = new Font("Arial", 10, FontStyle.Bold);
 
-                // Añade datos de ejemplo al gráfico de pastel
+                //// Añade datos de ejemplo al gráfico de pastel
 
                 GraficoPastelNIOSHDATOS();
             }
@@ -608,8 +610,8 @@ namespace TF.WIN
             // Limpia los datos existentes en el gráfico
             chartPastelNiosh.Series[0].Points.Clear();
 
-            // Configura la serie para un gráfico de pastel
-            chartPastelNiosh.Series[0].ChartType = SeriesChartType.Pie;
+            //// Configura la serie para un gráfico de pastel
+            //chartPastelNiosh.Series[0].ChartType = SeriesChartType.Pie;
 
             // Agrega los nuevos datos desde el DataTable
             foreach (DataRow row in dt1215.Rows)
@@ -633,35 +635,35 @@ namespace TF.WIN
         {
             try
             {
-                // Configura el gráfico aquí
-                // Por ejemplo, crea una serie de barras
-                Series series = new Series
-                {
-                    Name = "Cantidad de riesgos por día",
-                    ChartType = SeriesChartType.Bar // Cambiado a SeriesChartType.Bar para el gráfico de barras
-                };
+                //// Configura el gráfico aquí
+                //// Por ejemplo, crea una serie de barras
+                //Series series = new Series
+                //{
+                //    Name = "Cantidad de riesgos por día",
+                //    ChartType = SeriesChartType.Bar // Cambiado a SeriesChartType.Bar para el gráfico de barras
+                //};
 
-                // Configura los ejes
-                ChartArea chartArea = new ChartArea();
-                chartArea.AxisX.Title = "Fecha y Cantidad por día";
-                chartArea.AxisY.Title = "Niveles";
+                //// Configura los ejes
+                //ChartArea chartArea = new ChartArea();
+                //chartArea.AxisX.Title = "Fecha y Cantidad por día";
+                //chartArea.AxisY.Title = "Niveles";
 
-                // Limpia las series existentes antes de agregar la nueva
-                ChartHistogramaNiosh2.Series.Clear();
+                //// Limpia las series existentes antes de agregar la nueva
+                //ChartHistogramaNiosh2.Series.Clear();
 
-                // Asigna la serie y el área del gráfico
-                ChartHistogramaNiosh2.Series.Add(series);
-                ChartHistogramaNiosh2.ChartAreas.Add(chartArea);
+                //// Asigna la serie y el área del gráfico
+                //ChartHistogramaNiosh2.Series.Add(series);
+                //ChartHistogramaNiosh2.ChartAreas.Add(chartArea);
 
-                // Agrega un título al gráfico
-                ChartHistogramaNiosh2.Titles.Clear();
-                ChartHistogramaNiosh2.Titles.Add("Cantidad de Riesgos por día");
-                ChartHistogramaNiosh2.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+                //// Agrega un título al gráfico
+                //ChartHistogramaNiosh2.Titles.Clear();
+                //ChartHistogramaNiosh2.Titles.Add("Cantidad de Riesgos por día");
+                //ChartHistogramaNiosh2.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
 
-                // Establece el formato de la serie
-                series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+                //// Establece el formato de la serie
+                //series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
 
-                // Añade datos al gráfico
+                //// Añade datos al gráfico
                 HistoNioshPersonDATOS();
             }
             catch (Exception ex)
@@ -687,25 +689,25 @@ namespace TF.WIN
 
                 // Configura las series para un gráfico de barras
                 Series series = new Series();
-                series.ChartType = SeriesChartType.Bar;
-                series.Name = "Analisis x Dia";
+                //series.ChartType = SeriesChartType.Bar;
+                series.Name = "DISTRIBUCION DEL RIESGO POR ANALISIS REALIZADO";
 
                 // Agrega las series al gráfico
                 ChartHistogramaNiosh2.Series.Add(series);
-                ChartHistogramaNiosh2.Refresh();
+                //ChartHistogramaNiosh2.Refresh();
 
                 // Agrega los nuevos datos desde el DataTable
                 foreach (DataRow row in dt1209.Rows)
                 {
-                    DateTime fecha = Convert.ToDateTime(row["FechaCargaNiosh"]);
-                    string nivelRiesgo = row["RiesgoNiosh"].ToString();
+                    //DateTime fecha = Convert.ToDateTime(row["FechaCargaNiosh"]);
+                    string nivelRiesgo1 = row["RiesgoNiosh"].ToString();
                     int Analisisxdia1 = Convert.ToInt32(row["AnalisisxDia"]);
 
                     // Combina la fecha y AnalisisxDia para obtener un nombre único
-                    string nombrePunto = $"{fecha.ToShortDateString()} - {nivelRiesgo}";
-
+                    //string nombrePunto = $"{fecha.ToShortDateString()} - {nivelRiesgo}";
+                    string nombrePunto = $"{Analisisxdia1}";
                     // Agrega un punto a la serie para cada fecha, nivel de riesgo y AnalisisxDia
-                    series.Points.AddXY(nombrePunto, Analisisxdia1);
+                    series.Points.AddXY(nivelRiesgo1, Analisisxdia1);
                 }
 
                 // Configura los ejes
@@ -713,20 +715,20 @@ namespace TF.WIN
                 chartArea.AxisX.Title = "Fecha de Carga y Analisis x Dia";
                 chartArea.AxisY.Title = "Nivel de Riesgo";
 
-                // Ajusta las etiquetas del eje X para mostrar cada barra
-                chartArea.AxisX.Interval = 1;
-                chartArea.AxisX.IntervalType = DateTimeIntervalType.Days;
-                //chartArea.AxisX.LabelStyle.Format = "dd/MM/yyyy";
+                //// Ajusta las etiquetas del eje X para mostrar cada barra
+                //chartArea.AxisX.Interval = 1;
+                //chartArea.AxisX.IntervalType = DateTimeIntervalType.Days;
+                ////chartArea.AxisX.LabelStyle.Format = "dd/MM/yyyy";
 
-                // Asigna el área del gráfico
-                ChartHistogramaNiosh2.ChartAreas.Add(chartArea);
+                //// Asigna el área del gráfico
+                //ChartHistogramaNiosh2.ChartAreas.Add(chartArea);
 
-                // Agrega un título al gráfico de barras
-                ChartHistogramaNiosh2.Titles.Clear();
-                ChartHistogramaNiosh2.Titles.Add("Distribución de Riesgo por Nivel y Fecha");
+                //// Agrega un título al gráfico de barras
+                //ChartHistogramaNiosh2.Titles.Clear();
+                //ChartHistogramaNiosh2.Titles.Add("Distribución de Riesgo por Nivel y Fecha");
 
-                // Establece el formato de la serie
-                series.Font = new Font("Arial", 10, FontStyle.Bold);
+                //// Establece el formato de la serie
+                //series.Font = new Font("Arial", 10, FontStyle.Bold);
             }
             catch (Exception ex)
             {
@@ -738,34 +740,34 @@ namespace TF.WIN
         {
             try
             {
-                // Configura el gráfico aquí
-                // Por ejemplo, crea una serie de pastel
-                Series series = new Series
-                {
-                    Name = "Cantidad de Riesgo",
-                    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
-                };
+                //// Configura el gráfico aquí
+                //// Por ejemplo, crea una serie de pastel
+                //Series series = new Series
+                //{
+                //    Name = "Cantidad de Riesgo",
+                //    ChartType = SeriesChartType.Pie, // Cambiado a SeriesChartType.Pie para el gráfico de pastel
+                //};
 
-                // Configura los ejes (no es tan relevante para el gráfico de pastel)
-                ChartArea chartArea = new ChartArea();
-                chartArea.AxisX.Title = "Nivel de Riesgo";
-                chartArea.AxisY.Title = "Cantidad de Riesgo";
+                //// Configura los ejes (no es tan relevante para el gráfico de pastel)
+                //ChartArea chartArea = new ChartArea();
+                //chartArea.AxisX.Title = "Nivel de Riesgo";
+                //chartArea.AxisY.Title = "Cantidad de Riesgo";
 
-                // Limpia las series existentes antes de agregar la nueva
-                chartPastelJss2.Series.Clear();
+                //// Limpia las series existentes antes de agregar la nueva
+                //chartPastelJss2.Series.Clear();
 
-                // Asigna la serie y el área del gráfico
-                chartPastelJss2.Series.Add(series);
-                chartPastelJss2.ChartAreas.Add(chartArea);
+                //// Asigna la serie y el área del gráfico
+                //chartPastelJss2.Series.Add(series);
+                //chartPastelJss2.ChartAreas.Add(chartArea);
 
-                // Agrega un título al gráfico
-                chartPastelJss2.Titles.Add("Riesgos obtenidos");
-                chartPastelJss2.Font = new Font("Arial", 14, FontStyle.Bold);
+                //// Agrega un título al gráfico
+                //chartPastelJss2.Titles.Add("Riesgos obtenidos");
+                //chartPastelJss2.Font = new Font("Arial", 14, FontStyle.Bold);
 
-                // Establece el formato de la serie
-                series.Font = new Font("Arial", 10, FontStyle.Bold);
+                //// Establece el formato de la serie
+                //series.Font = new Font("Arial", 10, FontStyle.Bold);
 
-                // Añade datos de ejemplo al gráfico de pastel
+                //// Añade datos de ejemplo al gráfico de pastel
 
                 GraficoPastelJSSDATOS();
             }
@@ -786,8 +788,8 @@ namespace TF.WIN
             // Limpia los datos existentes en el gráfico
             chartPastelJss2.Series[0].Points.Clear();
 
-            // Configura la serie para un gráfico de pastel
-            chartPastelJss2.Series[0].ChartType = SeriesChartType.Pie;
+            //// Configura la serie para un gráfico de pastel
+            //chartPastelJss2.Series[0].ChartType = SeriesChartType.Pie;
 
             // Agrega los nuevos datos desde el DataTable
             foreach (DataRow row in dt1214.Rows)
@@ -811,35 +813,35 @@ namespace TF.WIN
         {
             try
             {
-                // Configura el gráfico aquí
-                // Por ejemplo, crea una serie de barras
-                Series series = new Series
-                {
-                    Name = "Cantidad de riesgos por día",
-                    ChartType = SeriesChartType.Bar // Cambiado a SeriesChartType.Bar para el gráfico de barras
-                };
+                //// Configura el gráfico aquí
+                //// Por ejemplo, crea una serie de barras
+                //Series series = new Series
+                //{
+                //    Name = "Cantidad de riesgos por día",
+                //    ChartType = SeriesChartType.Column // Cambiado a SeriesChartType.Bar para el gráfico de barras
+                //};
 
-                // Configura los ejes
-                ChartArea chartArea = new ChartArea();
-                chartArea.AxisX.Title = "Fecha y Cantidad por día";
-                chartArea.AxisY.Title = "Niveles";
+                //// Configura los ejes
+                //ChartArea chartArea = new ChartArea();
+                //chartArea.AxisX.Title = "Fecha y Cantidad por día";
+                //chartArea.AxisY.Title = "Niveles";
 
-                // Limpia las series existentes antes de agregar la nueva
-                chartHistoJss2.Series.Clear();
+                //// Limpia las series existentes antes de agregar la nueva
+                //chartHistoJss2.Series.Clear();
 
-                // Asigna la serie y el área del gráfico
-                chartHistoJss2.Series.Add(series);
-                chartHistoJss2.ChartAreas.Add(chartArea);
+                //// Asigna la serie y el área del gráfico
+                //chartHistoJss2.Series.Add(series);
+                //chartHistoJss2.ChartAreas.Add(chartArea);
 
-                // Agrega un título al gráfico
-                chartHistoJss2.Titles.Clear();
-                chartHistoJss2.Titles.Add("Cantidad de Riesgos por día");
-                chartHistoJss2.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+                //// Agrega un título al gráfico
+                //chartHistoJss2.Titles.Clear();
+                //chartHistoJss2.Titles.Add("Cantidad de Riesgos por día");
+                //chartHistoJss2.Font = new Font("Arial", 14, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
 
-                // Establece el formato de la serie
-                series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
+                //// Establece el formato de la serie
+                //series.Font = new Font("Arial", 10, FontStyle.Bold); // Cambia el nombre de la fuente, tamaño y estilo según tus preferencias
 
-                // Añade datos al gráfico
+                //// Añade datos al gráfico
                 HistoJSSPersonDATOS();
             }
             catch (Exception ex)
@@ -865,22 +867,22 @@ namespace TF.WIN
 
                 // Configura las series para un gráfico de barras
                 Series series = new Series();
-                series.ChartType = SeriesChartType.Bar;
+                //series.ChartType = SeriesChartType.Bar;
                 series.Name = "Analisis x Dia";
 
                 // Agrega las series al gráfico
                 chartHistoJss2.Series.Add(series);
-                chartHistoJss2.Refresh();
+                //chartHistoJss2.Refresh();
 
                 // Agrega los nuevos datos desde el DataTable
                 foreach (DataRow row in dt1225.Rows)
                 {
-                    DateTime fecha = Convert.ToDateTime(row["FechaCargaJss"]);
+                    //DateTime fecha = Convert.ToDateTime(row["FechaCargaJss"]);
                     string nivelRiesgo = row["ResultadoAnalisisJss"].ToString();
                     int Analisisxdia1 = Convert.ToInt32(row["AnalisisxDia"]);
 
                     // Combina la fecha y AnalisisxDia para obtener un nombre único
-                    string nombrePunto = $"{fecha.ToShortDateString()} - {nivelRiesgo}";
+                    string nombrePunto = $"{nivelRiesgo}";
 
                     // Agrega un punto a la serie para cada fecha, nivel de riesgo y AnalisisxDia
                     series.Points.AddXY(nombrePunto, Analisisxdia1);
@@ -891,17 +893,17 @@ namespace TF.WIN
                 chartArea.AxisX.Title = "Fecha de Carga y Analisis x Dia";
                 chartArea.AxisY.Title = "Nivel de Riesgo";
 
-                // Ajusta las etiquetas del eje X para mostrar cada barra
-                chartArea.AxisX.Interval = 1;
-                chartArea.AxisX.IntervalType = DateTimeIntervalType.Days;
-                //chartArea.AxisX.LabelStyle.Format = "dd/MM/yyyy";
+                //// Ajusta las etiquetas del eje X para mostrar cada barra
+                //chartArea.AxisX.Interval = 1;
+                //chartArea.AxisX.IntervalType = DateTimeIntervalType.Days;
+                ////chartArea.AxisX.LabelStyle.Format = "dd/MM/yyyy";
 
-                // Asigna el área del gráfico
-                chartHistoJss2.ChartAreas.Add(chartArea);
+                //// Asigna el área del gráfico
+                //chartHistoJss2.ChartAreas.Add(chartArea);
 
-                // Agrega un título al gráfico de barras
-                chartHistoJss2.Titles.Clear();
-                chartHistoJss2.Titles.Add("Distribución de Riesgo por Nivel y Fecha");
+                //// Agrega un título al gráfico de barras
+                //chartHistoJss2.Titles.Clear();
+                //chartHistoJss2.Titles.Add("Distribución de Riesgo por Nivel y Fecha");
 
                 // Establece el formato de la serie
                 series.Font = new Font("Arial", 10, FontStyle.Bold);
@@ -936,14 +938,30 @@ namespace TF.WIN
             {
                 MessageBox.Show("Error al realizar la búsqueda: Verifique que posea Analisis bajo este Metodo Realizadas ");
             }
-
-
-
-
-
-
         }
 
+        private void btnpuestoRula_Click(object sender, EventArgs e)
+        {
+            FrmPersonRULA OFrmPersonRULA = new FrmPersonRULA();
+            OFrmPersonRULA.ShowDialog();
+        }
 
+        private void BtnpuestoReba_Click(object sender, EventArgs e)
+        {
+            FrmPersonReba OFrmPersonReba = new FrmPersonReba();
+            OFrmPersonReba.ShowDialog();
+        }
+
+        private void BtnpuestoNiosh_Click(object sender, EventArgs e)
+        {
+            FrmPersonNiosh OFrmPersonNiosh = new FrmPersonNiosh();
+            OFrmPersonNiosh.ShowDialog();
+        }
+
+        private void BtnPuestoJss_Click(object sender, EventArgs e)
+        {
+            FrmPersonJSS OFrmPersonJSS = new FrmPersonJSS();
+            OFrmPersonJSS.ShowDialog();
+        }
     }
 }

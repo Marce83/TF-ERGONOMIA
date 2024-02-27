@@ -214,16 +214,17 @@ BEGIN
 	WHERE CUIT = @CUIT
 END
 GO
+
 use ProyectoFinal
 GO
-
 CREATE OR ALTER PROCEDURE SP_Empleados_GetAll
 AS
 BEGIN
-	SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
-	FROM Empleados
-	WHERE FechaEgreso IS NULL
-	AND Estado = 'A'
+SELECT UPPER(Em.Nombre) Nombre, UPPER(Em.Apellido) Apellido, Em.DNI, UPPER(Em.Genero) Genero, Em.Peso, Em.Altura, Em.FechaNacimiento 'Fecha de Nacimiento', Em.FechaIngreso 'Fecha de Ingreso', Em.Estado, UPPER(empr.Nombre) Empresa, empr.CUIT
+	FROM dbo.Empleados Em
+	INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
+	WHERE Em.FechaEgreso IS NULL
+	AND Em.Estado = 'A'
 END
 GO
 
@@ -1852,7 +1853,6 @@ select NivelRiesgo, Count(NivelRiesgo) as CantidadRiesgo from RulaTablaCompleta 
 END
 GO
 
-
 use ProyectoFinal
 go
 CREATE or Alter PROCEDURE SP_STAT_HistoRulaPerson																																																		
@@ -1861,10 +1861,9 @@ CREATE or Alter PROCEDURE SP_STAT_HistoRulaPerson
 @FechaCarga2 DATE
 AS
 BEGIN
-select NivelRiesgo,FechaCarga, Count(NivelRiesgo) as AnalisisxDia from RulaTablaCompleta WHERE CUIT = @CUIT and FechaCarga BETWEEN @FechaCarga AND @FechaCarga2 group by NivelRiesgo, FechaCarga HAVING COUNT(NivelRiesgo) > 0;
+select NivelRiesgo, Count(NivelRiesgo) as AnalisisxDia from RulaTablaCompleta WHERE CUIT = @CUIT and FechaCarga BETWEEN @FechaCarga AND @FechaCarga2 group by NivelRiesgo HAVING COUNT(NivelRiesgo) > 0;
 END
 GO
-
 
 use ProyectoFinal
 go
@@ -1886,7 +1885,7 @@ CREATE or Alter PROCEDURE SP_STAT_HistoRebaPerson
 @FechaCargaReba2 DATE
 AS
 BEGIN
-select NivelRiesgo,FechaCargaReba, Count(NivelRiesgo) as AnalisisxDia from RebaTablaCompleta WHERE CUITReba = @CUITReba and FechaCargaReba BETWEEN @FechaCargaReba AND @FechaCargaReba2 group by NivelRiesgo, FechaCargaReba HAVING COUNT(NivelRiesgo) > 0;
+select NivelRiesgo, Count(NivelRiesgo) as AnalisisxDia from RebaTablaCompleta WHERE CUITReba = @CUITReba and FechaCargaReba BETWEEN @FechaCargaReba AND @FechaCargaReba2 group by NivelRiesgo HAVING COUNT(NivelRiesgo) > 0;
 END
 GO
 
@@ -1911,7 +1910,7 @@ CREATE or Alter PROCEDURE SP_STAT_HistoNioshPerson
 @FechaCargaNiosh2 DATE
 AS
 BEGIN
-select RiesgoNiosh,FechaCargaNiosh, Count(RiesgoNiosh) as AnalisisxDia from NioshTablaCompleta WHERE CUITNiosh = @CUITNiosh and FechaCargaNiosh BETWEEN @FechaCargaNiosh AND @FechaCargaNiosh2 group by RiesgoNiosh,FechaCargaNiosh HAVING COUNT(RiesgoNiosh) > 0;
+select RiesgoNiosh,Count(RiesgoNiosh) as AnalisisxDia from NioshTablaCompleta WHERE CUITNiosh = @CUITNiosh and FechaCargaNiosh BETWEEN @FechaCargaNiosh AND @FechaCargaNiosh2 group by RiesgoNiosh HAVING COUNT(RiesgoNiosh) > 0;
 END
 go
 
@@ -1927,7 +1926,6 @@ select ResultadoAnalisisJss, Count(ResultadoAnalisisJss) as CantidadRiesgo from 
 END
 GO
 
-
 use ProyectoFinal
 go
 CREATE or Alter PROCEDURE SP_STAT_HistoJSSPerson
@@ -1936,12 +1934,58 @@ CREATE or Alter PROCEDURE SP_STAT_HistoJSSPerson
 @FechaCargaJss2 DATE
 AS
 BEGIN
-select ResultadoAnalisisJss,FechaCargaJss, Count(ResultadoAnalisisJss) as AnalisisxDia from JssTablaCompleta WHERE CUITJSS = @CUITJSS and FechaCargaJss BETWEEN @FechaCargaJss AND @FechaCargaJss2 group by ResultadoAnalisisJss,FechaCargaJss HAVING COUNT(ResultadoAnalisisJss) > 0;
+select ResultadoAnalisisJss,Count(ResultadoAnalisisJss) as AnalisisxDia from JssTablaCompleta WHERE CUITJSS = @CUITJSS and FechaCargaJss BETWEEN @FechaCargaJss AND @FechaCargaJss2 group by ResultadoAnalisisJss HAVING COUNT(ResultadoAnalisisJss) > 0;
+END
+go
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PuestoJSSPerson
+@CUITJSS NVARCHAR(11),
+@FechaCargaJss DATE,
+@FechaCargaJss2 DATE
+AS
+BEGIN
+select PuestoDeTrabajoJSS,Count(PuestoDeTrabajoJSS) as PuestoAnalizado from JssTablaCompleta WHERE CUITJSS = @CUITJSS and FechaCargaJss BETWEEN @FechaCargaJss AND @FechaCargaJss2 group by PuestoDeTrabajoJSS HAVING COUNT(PuestoDeTrabajoJSS) > 0;
+END
+go
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PuestoRULAPerson																																																		
+@CUIT NVARCHAR(11),
+@FechaCarga DATE,
+@FechaCarga2 DATE
+AS
+BEGIN
+select PuestoDeTrabajo, Count(PuestoDeTrabajo) as PuestoAnalizado from RulaTablaCompleta WHERE CUIT = @CUIT and FechaCarga BETWEEN @FechaCarga AND @FechaCarga2 group by PuestoDeTrabajo HAVING COUNT(PuestoDeTrabajo) > 0;
+END
+GO
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PuestoNioshPerson
+@CUITNiosh NVARCHAR(11),
+@FechaCargaNiosh DATE,
+@FechaCargaNiosh2 DATE
+AS
+BEGIN
+select PuestoDeTrabajoNiosh,Count(PuestoDeTrabajoNiosh) as PuestoAnalizado from NioshTablaCompleta WHERE CUITNiosh = @CUITNiosh and FechaCargaNiosh BETWEEN @FechaCargaNiosh AND @FechaCargaNiosh2 group by PuestoDeTrabajoNiosh HAVING COUNT(PuestoDeTrabajoNiosh) > 0;
 END
 go
 
 
-
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PuestoRebaPerson																																																		
+@CUITReba NVARCHAR(11),
+@FechaCargaReba DATE,
+@FechaCargaReba2 DATE
+AS
+BEGIN
+select PuestoDeTrabajoReba, Count(PuestoDeTrabajoReba) as PuestoAnalizado from RebaTablaCompleta WHERE CUITReba = @CUITReba and FechaCargaReba BETWEEN @FechaCargaReba AND @FechaCargaReba2 group by PuestoDeTrabajoReba HAVING COUNT(PuestoDeTrabajoReba) > 0;
+END
+GO
 
 
 
@@ -2101,6 +2145,39 @@ BEGIN
     WHERE (FechaIngreso BETWEEN @FechaIngreso AND @FechaIngreso2)
     AND (NombreEmpleado LIKE '%' + @NombreEmpleado + '%' OR @NombreEmpleado IS NULL)
     ORDER BY FechaIngreso DESC;
+END
+GO
+
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_PuestoEmpleado_VerReciente
+@FechaIngreso DATE,
+@FechaIngreso2 DATE,
+@NombreEmpleado NVARCHAR(50)
+AS
+BEGIN
+    SELECT * FROM VistaEmpleadosPuestos
+    WHERE (FechaIngreso BETWEEN @FechaIngreso AND @FechaIngreso2)
+    AND (NombreEmpleado LIKE '%' + @NombreEmpleado + '%' OR @NombreEmpleado IS NULL)
+    ORDER BY FechaIngreso DESC;
+END
+GO
+
+USE ProyectoFinal;
+GO
+CREATE OR ALTER PROCEDURE SP_ConsultaPuesto_VerReciente
+@CuitEmpresa NVARCHAR(11),
+@NombrePuesto NVARCHAR(max)
+AS
+BEGIN
+    SELECT pt.NombrePuesto, pt.AreaEmpresa, COUNT(em.DNI) AS CantidadEmpleados
+FROM dbo.PuestoEmpleado pe
+INNER JOIN dbo.PuestoDeTrabajo pt ON pt.IdPuesto = pe.IdPuesto
+INNER JOIN dbo.Empleados em ON em.IdEmpleado = pe.IdEmpleado
+INNER JOIN dbo.Empresas emp ON emp.IdEmpresa = em.IdEmpresa
+WHERE emp.CUIT = @CuitEmpresa AND pt.NombrePuesto LIKE '%'+@NombrePuesto+'%'
+GROUP BY pt.NombrePuesto, pt.AreaEmpresa
 END
 GO
 

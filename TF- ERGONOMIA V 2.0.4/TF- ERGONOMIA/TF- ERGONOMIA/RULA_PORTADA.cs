@@ -39,26 +39,29 @@ namespace TF.WIN
 
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
-
-            frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
-            oFrm.ShowDialog();
-
-            if (oFrm.EmpleadoSeleccionado2 != null)
+            try
             {
-                txtDniEmpleadoRula.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
-                txtNombreEmpleadoRula.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
-                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
+                frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
+                oFrm.ShowDialog();
+
+                if (oFrm.EmpleadoSeleccionado2 != null)
+                {
+                    txtDniEmpleadoRula.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
+                    txtNombreEmpleadoRula.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
+                    txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
+                }
+
+                //FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
+                //oFrm.ShowDialog();
+
+                //if (oFrm.PersonaSeleccionada != null)
+                //{
+                //    txtDniEmpleadoRula.Text = oFrm.PersonaSeleccionada.DNI.ToString();
+                //    txtNombreEmpleadoRula.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
+                //    txtpuestotrabajoencontrado.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
+                //}
             }
-
-            //FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
-            //oFrm.ShowDialog();
-
-            //if (oFrm.PersonaSeleccionada != null)
-            //{
-            //    txtDniEmpleadoRula.Text = oFrm.PersonaSeleccionada.DNI.ToString();
-            //    txtNombreEmpleadoRula.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
-            //    txtpuestotrabajoencontrado.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
-            //}
+            catch { }
         }
 
         private void btnBuscarpuesto_Click(object sender, EventArgs e)

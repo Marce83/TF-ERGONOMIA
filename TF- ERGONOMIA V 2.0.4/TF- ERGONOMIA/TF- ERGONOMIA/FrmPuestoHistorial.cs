@@ -152,6 +152,7 @@ namespace TF.WIN
                 TxtCuitEmpresa.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
                 TxtNombreEmpresa.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
             }
+
         }
 
         private void BtnImprimir_Click(object sender, EventArgs e)

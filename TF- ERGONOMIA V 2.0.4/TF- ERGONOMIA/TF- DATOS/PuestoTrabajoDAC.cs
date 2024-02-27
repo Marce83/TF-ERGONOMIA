@@ -209,7 +209,23 @@ namespace TF.DAC
             return ds.Tables[0];
         }
 
-
+        public DataTable EmpleadoPuestoVerRecienteDAC(PuestoTrabajo oPuestoTrabajo)
+        {
+            string sqlSentencia = "SP_ConsultaPuesto_VerReciente";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CuitEmpresa", SqlDbType.NVarChar).Value = oPuestoTrabajo.CUITEMPRESAPUESTO.ToString();
+            sqlComm.Parameters.Add("@NombrePuesto", SqlDbType.NVarChar).Value = oPuestoTrabajo.NombrePuesto.ToString();
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
+            return ds.Tables[0];
+        }
 
 
 

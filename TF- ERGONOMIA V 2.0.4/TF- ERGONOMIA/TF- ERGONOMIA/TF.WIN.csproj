@@ -114,6 +114,12 @@
     <Compile Include="frmEditUsrAdmin.Designer.cs">
       <DependentUpon>frmEditUsrAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEmpleadosXPuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpleadosXPuestos.Designer.cs">
+      <DependentUpon>FrmEmpleadosXPuestos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,18 @@
     <Compile Include="frmInformes.Designer.cs">
       <DependentUpon>frmInformes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLMCPortada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLMCPortada.Designer.cs">
+      <DependentUpon>FrmLMCPortada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLMCResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLMCResultado.Designer.cs">
+      <DependentUpon>FrmLMCResultado.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +180,30 @@
     <Compile Include="frmPerfilUsuarios.Designer.cs">
       <DependentUpon>frmPerfilUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPersonJSS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonJSS.Designer.cs">
+      <DependentUpon>FrmPersonJSS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonNiosh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonNiosh.Designer.cs">
+      <DependentUpon>FrmPersonNiosh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonReba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonReba.Designer.cs">
+      <DependentUpon>FrmPersonReba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonRULA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonRULA.Designer.cs">
+      <DependentUpon>FrmPersonRULA.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPuestoTrabajo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +215,36 @@
     </Compile>
     <Compile Include="frmRecuperarClave.Designer.cs">
       <DependentUpon>frmRecuperarClave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSTATGgrafico1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSTATGgrafico1.Designer.cs">
+      <DependentUpon>FrmSTATGgrafico1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSTATGgrafico2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSTATGgrafico2.Designer.cs">
+      <DependentUpon>FrmSTATGgrafico2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSTATGgrafico3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSTATGgrafico3.Designer.cs">
+      <DependentUpon>FrmSTATGgrafico3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSTATGgrafico4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSTATGgrafico4.Designer.cs">
+      <DependentUpon>FrmSTATGgrafico4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSTATGgrafico5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSTATGgrafico5.Designer.cs">
+      <DependentUpon>FrmSTATGgrafico5.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmVistaPuestoEmpleado.cs">
       <SubType>Form</SubType>
@@ -239,6 +311,11 @@
     </Compile>
     <Compile Include="NIOSHRESULTADO.Designer.cs">
       <DependentUpon>NIOSHRESULTADO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="PuestoTrabajoSeleccion.cs">
       <SubType>Form</SubType>
@@ -312,6 +389,9 @@
     <EmbeddedResource Include="frmEditUsrAdmin.resx">
       <DependentUpon>frmEditUsrAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpleadosXPuestos.resx">
+      <DependentUpon>FrmEmpleadosXPuestos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEmpresa.resx">
       <DependentUpon>frmEmpresa.cs</DependentUpon>
     </EmbeddedResource>
@@ -330,17 +410,50 @@
     <EmbeddedResource Include="frmInformes.resx">
       <DependentUpon>frmInformes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLMCPortada.resx">
+      <DependentUpon>FrmLMCPortada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLMCResultado.resx">
+      <DependentUpon>FrmLMCResultado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPerfilUsuarios.resx">
       <DependentUpon>frmPerfilUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonJSS.resx">
+      <DependentUpon>FrmPersonJSS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonNiosh.resx">
+      <DependentUpon>FrmPersonNiosh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonReba.resx">
+      <DependentUpon>FrmPersonReba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonRULA.resx">
+      <DependentUpon>FrmPersonRULA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPuestoTrabajo.resx">
       <DependentUpon>FrmPuestoTrabajo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRecuperarClave.resx">
       <DependentUpon>frmRecuperarClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSTATGgrafico1.resx">
+      <DependentUpon>FrmSTATGgrafico1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSTATGgrafico2.resx">
+      <DependentUpon>FrmSTATGgrafico2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSTATGgrafico3.resx">
+      <DependentUpon>FrmSTATGgrafico3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSTATGgrafico4.resx">
+      <DependentUpon>FrmSTATGgrafico4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSTATGgrafico5.resx">
+      <DependentUpon>FrmSTATGgrafico5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVistaPuestoEmpleado.resx">
       <DependentUpon>FrmVistaPuestoEmpleado.cs</DependentUpon>
@@ -395,14 +508,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="RULARESULTADO.resx">
       <DependentUpon>RULARESULTADO.cs</DependentUpon>
     </EmbeddedResource>
@@ -441,6 +549,7 @@
     <None Include="Resources\antebrazo.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\CarpetaIntegradoraAdmProy.pdf" />
     <None Include="Resources\puntuacion muneca.jpg" />
   </ItemGroup>
   <ItemGroup>

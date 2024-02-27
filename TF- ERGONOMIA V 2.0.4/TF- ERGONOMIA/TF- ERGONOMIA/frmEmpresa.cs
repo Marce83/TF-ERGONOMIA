@@ -74,7 +74,7 @@ namespace TF.WIN
                         {
                             if (cboActEmpr.Text != string.Empty)
                             {
-                                if(cboTipo.Text != string.Empty)
+                                if (cboTipo.Text != string.Empty)
                                 {
                                     if (txtCalle.Text != string.Empty)
                                     {
@@ -86,43 +86,39 @@ namespace TF.WIN
                                                 {
                                                     if (txtTelefono.Text.Length == 10)
                                                     {
-                                                        if (txtWeb.Text != string.Empty)
+                                                        if (txtCorreo.Text != string.Empty)
                                                         {
-                                                            if (txtCorreo.Text != string.Empty)
+                                                            if (ValidarCorreo.ValidarEmail(txtCorreo.Text))
                                                             {
-                                                                if (ValidarCorreo.ValidarEmail(txtCorreo.Text))
+                                                                try
                                                                 {
-                                                                    try
-                                                                    {
-                                                                        oemp.CUIT = txtCUIT.Text;
-                                                                        oemp.Nombre = txtNombreEmpresa.Text;
-                                                                        oemp.Condicion_Fiscal = cboCondFiscal.Text;
-                                                                        oemp.Actividad_Empresarial = cboActEmpr.Text;
-                                                                        oemp.Tipo = cboTipo.Text;
-                                                                        oemp.Direccion = txtCalle.Text;
-                                                                        oemp.Provincia = cboProvincia.Text;
-                                                                        oemp.Localidad = cboLocalidad.Text;
-                                                                        oemp.Telefono = txtTelefono.Text;
-                                                                        oemp.Correo = txtCorreo.Text;
-                                                                        oemp.Web = txtWeb.Text;
-                                                                        oemp.FechaIngreso = dtpFechaAlta.Value;
-                                                                        oempresaBC.BuscarEmpresa(oemp);
-                                                                        var res = oempresaBC.Insertempresa(oemp);
-                                                                        MessageBox.Show("Empresa cargada exitosamente");
-                                                                        Limpiar();
-                                                                        Listar();
-                                                                    }
-                                                                    catch (Exception ex)
-                                                                    {
-                                                                        MessageBox.Show(ex.Message);
-                                                                        Limpiar();
-                                                                    }
+                                                                    oemp.CUIT = txtCUIT.Text;
+                                                                    oemp.Nombre = txtNombreEmpresa.Text;
+                                                                    oemp.Condicion_Fiscal = cboCondFiscal.Text;
+                                                                    oemp.Actividad_Empresarial = cboActEmpr.Text;
+                                                                    oemp.Tipo = cboTipo.Text;
+                                                                    oemp.Direccion = txtCalle.Text;
+                                                                    oemp.Provincia = cboProvincia.Text;
+                                                                    oemp.Localidad = cboLocalidad.Text;
+                                                                    oemp.Telefono = txtTelefono.Text;
+                                                                    oemp.Correo = txtCorreo.Text;
+                                                                    oemp.Web = txtWeb.Text;
+                                                                    oemp.FechaIngreso = dtpFechaAlta.Value;
+                                                                    oempresaBC.BuscarEmpresa(oemp);
+                                                                    var res = oempresaBC.Insertempresa(oemp);
+                                                                    MessageBox.Show("Empresa cargada exitosamente");
+                                                                    Limpiar();
+                                                                    Listar();
                                                                 }
-                                                                else MessageBox.Show("El formato del Correo es inválido", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                                catch (Exception ex)
+                                                                {
+                                                                    MessageBox.Show(ex.Message);
+                                                                    Limpiar();
+                                                                }
                                                             }
-                                                            else MessageBox.Show("Debe ingresar el correo electrónico", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                            else MessageBox.Show("El formato del Correo es inválido", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                                         }
-                                                        else MessageBox.Show("Debe ingresar el Sitio Web de la Empresa", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                        else MessageBox.Show("Debe ingresar el correo electrónico", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                                     }
                                                     else MessageBox.Show("Debe ingresar 10 digitos en el Teléfono", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                                 }
@@ -134,13 +130,13 @@ namespace TF.WIN
                                     }
                                     else MessageBox.Show("Debe ingresar la dirección", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
-                                else MessageBox.Show("Debe ingresar el Tipo de Empresa","Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                else MessageBox.Show("Debe ingresar el Tipo de Empresa", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                             else MessageBox.Show("Debe ingresar la Actividad Empresarial", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else MessageBox.Show("Debe ingresar la Condición Fiscal", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                    else MessageBox.Show("Debe ingresar la Razón Social", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);                
+                    else MessageBox.Show("Debe ingresar la Razón Social", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else MessageBox.Show("Debe ingresar 11 digitos en el CUIT", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

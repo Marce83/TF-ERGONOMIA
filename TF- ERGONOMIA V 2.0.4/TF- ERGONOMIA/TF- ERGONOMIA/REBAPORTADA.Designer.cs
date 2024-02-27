@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBuscarpuesto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.txtpuestotrabajoencontrado = new MaterialSkin.Controls.MaterialTextBox2();
@@ -47,25 +46,6 @@
             this.dtpReba = new System.Windows.Forms.DateTimePicker();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
-            // 
-            // btnBuscarpuesto
-            // 
-            this.btnBuscarpuesto.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnBuscarpuesto.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnBuscarpuesto.FlatAppearance.BorderSize = 0;
-            this.btnBuscarpuesto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnBuscarpuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarpuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBuscarpuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarpuesto.Location = new System.Drawing.Point(456, 357);
-            this.btnBuscarpuesto.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBuscarpuesto.Name = "btnBuscarpuesto";
-            this.btnBuscarpuesto.Size = new System.Drawing.Size(89, 59);
-            this.btnBuscarpuesto.TabIndex = 139;
-            this.btnBuscarpuesto.Text = "...";
-            this.btnBuscarpuesto.UseVisualStyleBackColor = false;
-            this.btnBuscarpuesto.Visible = false;
-            this.btnBuscarpuesto.Click += new System.EventHandler(this.btnBuscarpuesto_Click);
             // 
             // label1
             // 
@@ -139,7 +119,7 @@
             this.btnBuscarEmpleados.Location = new System.Drawing.Point(456, 197);
             this.btnBuscarEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarEmpleados.Name = "btnBuscarEmpleados";
-            this.btnBuscarEmpleados.Size = new System.Drawing.Size(89, 59);
+            this.btnBuscarEmpleados.Size = new System.Drawing.Size(76, 48);
             this.btnBuscarEmpleados.TabIndex = 135;
             this.btnBuscarEmpleados.Text = "...";
             this.btnBuscarEmpleados.UseVisualStyleBackColor = false;
@@ -204,7 +184,7 @@
             this.btnBuscarCUIT.Location = new System.Drawing.Point(456, 63);
             this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
-            this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 59);
+            this.btnBuscarCUIT.Size = new System.Drawing.Size(76, 48);
             this.btnBuscarCUIT.TabIndex = 132;
             this.btnBuscarCUIT.Text = "...";
             this.btnBuscarCUIT.UseVisualStyleBackColor = false;
@@ -427,7 +407,6 @@
             this.Controls.Add(this.txtNombreEmpleadoReba);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.txtNombreEmpresaReba);
-            this.Controls.Add(this.btnBuscarpuesto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.txtpuestotrabajoencontrado);
@@ -451,8 +430,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBuscarpuesto;
         private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialTextBox2 txtpuestotrabajoencontrado;

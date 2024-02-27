@@ -190,8 +190,8 @@ namespace TF.WIN
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Tag = "";
-            this.toolTip1.SetToolTip(this.pictureBox3, "Caso contrario, apriete en el Boton \"Nuevo Usuario\" \r\ne ingrese la informacion qu" +
-        "e le solicite.");
+            this.toolTip1.SetToolTip(this.pictureBox3, "Caso contrario, apriete en el Boton \"Registrate\" \r\ne ingrese la informacion que l" +
+        "e solicite.");
             // 
             // pictureBox4
             // 
@@ -205,8 +205,8 @@ namespace TF.WIN
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Tag = "";
-            this.toolTip2.SetToolTip(this.pictureBox4, "Caso contrario, apriete en el Boton \"Nuevo Usuario\" \r\ne ingrese la informacion qu" +
-        "e le solicite.\r\n");
+            this.toolTip2.SetToolTip(this.pictureBox4, "Caso contrario, apriete en el Boton \"Registrate\" \r\ne ingrese la informacion que l" +
+        "e solicite.\r\n");
             // 
             // toolTip1
             // 

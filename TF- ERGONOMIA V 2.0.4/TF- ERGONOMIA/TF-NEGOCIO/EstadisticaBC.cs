@@ -152,22 +152,38 @@ namespace TF.BC
             DataTable dt = oEstadisticaDAC.ContEmpresasPublPrivaDAC();
             return dt;
         }
-
-
-
-
         public DataTable ContEmpleadosSexoBC()
         {
             EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
             DataTable dt = oEstadisticaDAC.ContEmpleadosSexoDAC();
             return dt;
         }
+        public DataTable PuestoRulaPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.PuestoRulaPersonDAC(oEstadisticasPersonales);
+            return dt;
+        }
+        public DataTable PuestoRebaPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.PuestoRebaPersonDAC(oEstadisticasPersonales);
+            return dt;
+        }
+        public DataTable PuestoNioshPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.PuestoNioshPersonDAC(oEstadisticasPersonales);
+            return dt;
+        }
+        public DataTable PuestoJSSPersonBC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            EstadisticaDAC oEstadisticaDAC = new EstadisticaDAC();
+            DataTable dt = oEstadisticaDAC.PuestoJSSPersonDAC(oEstadisticasPersonales);
+            return dt;
+        }
 
 
-
-
-
-        
 
     }
 }

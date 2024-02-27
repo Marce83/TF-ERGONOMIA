@@ -438,11 +438,83 @@ namespace TF.DAC
             return ds.Tables[0];
         }
 
+        public DataTable PuestoRulaPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_PuestoRULAPerson";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUIT", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitRula;
+            sqlComm.Parameters.Add("@FechaCarga", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaRula;
+            sqlComm.Parameters.Add("@FechaCarga2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Rula;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
 
+            return ds.Tables[0];
+        }
 
+        public DataTable PuestoRebaPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_PuestoRebaPerson";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUITReba", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitReba;
+            sqlComm.Parameters.Add("@FechaCargaReba", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaReba;
+            sqlComm.Parameters.Add("@FechaCargaReba2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Reba;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
 
+            return ds.Tables[0];
+        }
+        public DataTable PuestoJSSPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_PuestoJSSPerson";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUITJSS", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitJss;
+            sqlComm.Parameters.Add("@FechaCargaJss", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaJss;
+            sqlComm.Parameters.Add("@FechaCargaJss2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Jss;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
 
+            return ds.Tables[0];
+        }
+        public DataTable PuestoNioshPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
+        {
+            string sqlSentencia = "SP_STAT_PuestoNioshPerson";
+            SqlConnection sqlCnn = new SqlConnection();
+            sqlCnn.ConnectionString = conectionString;
+            SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
+            sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@CUITNiosh", SqlDbType.NVarChar).Value = oEstadisticasPersonales.CuitNiosh;
+            sqlComm.Parameters.Add("@FechaCargaNiosh", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCargaNiosh;
+            sqlComm.Parameters.Add("@FechaCargaNiosh2", SqlDbType.DateTime).Value = oEstadisticasPersonales.FechaCarga2Niosh;
+            sqlCnn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
+            DA.SelectCommand = sqlComm;
+            DA.Fill(ds);
+            sqlCnn.Close();
 
+            return ds.Tables[0];
+        }
 
 
     }
