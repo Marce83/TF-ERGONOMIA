@@ -939,6 +939,29 @@ namespace TF.WIN
                 MessageBox.Show("Error al realizar la búsqueda: Verifique que posea Analisis bajo este Metodo Realizadas ");
             }
         }
-      
+
+        private void btnpuestoRula_Click(object sender, EventArgs e)
+        {
+            FrmPersonRULA OFrmPersonRULA = new FrmPersonRULA();
+            OFrmPersonRULA.ShowDialog();
+        }
+
+        private void BtnpuestoReba_Click(object sender, EventArgs e)
+        {
+            FrmPersonReba OFrmPersonReba = new FrmPersonReba();
+            OFrmPersonReba.ShowDialog();
+        }
+
+        private void BtnpuestoNiosh_Click(object sender, EventArgs e)
+        {
+            FrmPersonNiosh OFrmPersonNiosh = new FrmPersonNiosh();
+            OFrmPersonNiosh.ShowDialog();
+        }
+
+        private void BtnPuestoJss_Click(object sender, EventArgs e)
+        {
+            FrmPersonJSS OFrmPersonJSS = new FrmPersonJSS();
+            OFrmPersonJSS.ShowDialog();
+        }
     }
 }

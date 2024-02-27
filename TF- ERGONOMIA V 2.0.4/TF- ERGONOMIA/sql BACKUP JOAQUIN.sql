@@ -1938,6 +1938,58 @@ select ResultadoAnalisisJss,Count(ResultadoAnalisisJss) as AnalisisxDia from Jss
 END
 go
 
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PuestoJSSPerson
+@CUITJSS NVARCHAR(11),
+@FechaCargaJss DATE,
+@FechaCargaJss2 DATE
+AS
+BEGIN
+select PuestoDeTrabajoJSS,Count(PuestoDeTrabajoJSS) as PuestoAnalizado from JssTablaCompleta WHERE CUITJSS = @CUITJSS and FechaCargaJss BETWEEN @FechaCargaJss AND @FechaCargaJss2 group by PuestoDeTrabajoJSS HAVING COUNT(PuestoDeTrabajoJSS) > 0;
+END
+go
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PuestoRULAPerson																																																		
+@CUIT NVARCHAR(11),
+@FechaCarga DATE,
+@FechaCarga2 DATE
+AS
+BEGIN
+select PuestoDeTrabajo, Count(PuestoDeTrabajo) as PuestoAnalizado from RulaTablaCompleta WHERE CUIT = @CUIT and FechaCarga BETWEEN @FechaCarga AND @FechaCarga2 group by PuestoDeTrabajo HAVING COUNT(PuestoDeTrabajo) > 0;
+END
+GO
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PuestoNioshPerson
+@CUITNiosh NVARCHAR(11),
+@FechaCargaNiosh DATE,
+@FechaCargaNiosh2 DATE
+AS
+BEGIN
+select PuestoDeTrabajoNiosh,Count(PuestoDeTrabajoNiosh) as PuestoAnalizado from NioshTablaCompleta WHERE CUITNiosh = @CUITNiosh and FechaCargaNiosh BETWEEN @FechaCargaNiosh AND @FechaCargaNiosh2 group by PuestoDeTrabajoNiosh HAVING COUNT(PuestoDeTrabajoNiosh) > 0;
+END
+go
+
+
+use ProyectoFinal
+go
+CREATE or Alter PROCEDURE SP_STAT_PuestoRebaPerson																																																		
+@CUITReba NVARCHAR(11),
+@FechaCargaReba DATE,
+@FechaCargaReba2 DATE
+AS
+BEGIN
+select PuestoDeTrabajoReba, Count(PuestoDeTrabajoReba) as PuestoAnalizado from RebaTablaCompleta WHERE CUITReba = @CUITReba and FechaCargaReba BETWEEN @FechaCargaReba AND @FechaCargaReba2 group by PuestoDeTrabajoReba HAVING COUNT(PuestoDeTrabajoReba) > 0;
+END
+GO
+
+
+
+
 --------------------------------------------------------------------PUESTO DE TRABAJO--------------------------------------------------
 use ProyectoFinal
 go

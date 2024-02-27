@@ -7,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
 using TF.BC;
+using TF.ENTITIES;
 
 namespace TF.WIN
 {
-    public partial class FrmSTATGgrafico1 : Form
+    public partial class FrmPersonNiosh : Form
     {
-        public FrmSTATGgrafico1()
+        public FrmPersonNiosh()
         {
             InitializeComponent();
             ConfigurarGraficoEmpxProv();
@@ -27,22 +27,17 @@ namespace TF.WIN
         {
             // Utiliza la instancia de EstadisticaBC para obtener los datos
             EstadisticaBC oEstadisticaBC = new EstadisticaBC();
-            DataTable dt1001 = oEstadisticaBC.ContEmpresasprovBC();
+            EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+            DataTable dt26001 = oEstadisticaBC.PuestoNioshPersonBC(oEstadisticasPersonales);
 
             // Agrega los nuevos datos desde el DataTable
-            foreach (DataRow row in dt1001.Rows)
+            foreach (DataRow row in dt26001.Rows)
             {
-                string provincia = row["Provincia"].ToString();
-                int cantidadEmpresas = Convert.ToInt32(row["CantidadEmpresas"]);
+                string PuestoDeTrabajoNiosh = row["PuestoDeTrabajoNiosh"].ToString();
+                int PuestoAnalizado = Convert.ToInt32(row["PuestoAnalizado"]);
                 // Agrega un punto a la serie para cada provincia
-                chart1.Series[0].Points.AddXY(provincia, cantidadEmpresas);
+                chart1.Series[0].Points.AddXY(PuestoDeTrabajoNiosh, PuestoAnalizado);
             }
-
-        }
-
-        private void BtnSalir_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }
