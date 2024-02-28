@@ -62,8 +62,6 @@ namespace TF.WIN
                 txtCUIT.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
                 txtNombreEmpresa.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
             }
-
-
         }
         private void btnBuscarresultado_Click(object sender, EventArgs e)
         {
@@ -83,6 +81,10 @@ namespace TF.WIN
                 HistoNioshPerson();
                 GraficoPastelJSS();
                 HistoJSSPerson();
+                ultPuestoRulaPerson();
+                PuestoJSSPersonal();
+                PersonNioshPuesto();
+                PuestoRebaPerson();
             }
             catch { }
         }
@@ -314,8 +316,7 @@ namespace TF.WIN
             //chartPastelRula.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
 
         }
-       
-        private void GraficoHistRulaDATOS()
+         private void GraficoHistRulaDATOS()
         {
             try
             {
@@ -914,8 +915,6 @@ namespace TF.WIN
                 MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
         private void CantEmpleadosEmpresa()
         {
             try
@@ -939,29 +938,98 @@ namespace TF.WIN
                 MessageBox.Show("Error al realizar la búsqueda: Verifique que posea Analisis bajo este Metodo Realizadas ");
             }
         }
-
-        private void btnpuestoRula_Click(object sender, EventArgs e)
+        private void ultPuestoRulaPerson()
         {
-            FrmPersonRULA OFrmPersonRULA = new FrmPersonRULA();
-            OFrmPersonRULA.ShowDialog();
+            PuestoRulaPersonal();
+        }
+        private void PuestoRulaPersonal()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+            oEstadisticasPersonales.CuitRula = txtCUIT.Text;
+            oEstadisticasPersonales.FechaCargaRula = FechaDesde.Text;
+            oEstadisticasPersonales.FechaCarga2Rula = FechaHasta.Text;
+            DataTable dt26003 = oEstadisticaBC.PuestoRulaPersonBC(oEstadisticasPersonales);
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt26003.Rows)
+            {
+                string PuestoDeTrabajo = row["PuestoDeTrabajo"].ToString();
+                int PuestoAnalizado = Convert.ToInt32(row["PuestoAnalizado"]);
+                // Agrega un punto a la serie para cada provincia
+                ChartHistogramaRula3.Series[0].Points.AddXY(PuestoDeTrabajo, PuestoAnalizado) ;
+            }
+        }
+        private void PuestoJSSPersonal()
+        {
+            PuestoJSSPersonalDato();
+        }
+        private void PuestoJSSPersonalDato()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+            oEstadisticasPersonales.CuitJss = txtCUIT.Text;
+            oEstadisticasPersonales.FechaCargaJss = FechaDesde.Text;
+            oEstadisticasPersonales.FechaCarga2Jss = FechaHasta.Text;
+            DataTable dt26000 = oEstadisticaBC.PuestoJSSPersonBC(oEstadisticasPersonales);
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt26000.Rows)
+            {
+                string PuestoDeTrabajoJSS = row["PuestoDeTrabajoJSS"].ToString();
+                int PuestoAnalizado = Convert.ToInt32(row["PuestoAnalizado"]);
+                // Agrega un punto a la serie para cada provincia
+                chartHistoJss3.Series[0].Points.AddXY(PuestoDeTrabajoJSS, PuestoAnalizado);
+            }
+        }
+        private void PersonNioshPuesto()
+        {
+            PersonNioshPuestoDato();
+        }
+        private void PersonNioshPuestoDato()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+            oEstadisticasPersonales.CuitNiosh = txtCUIT.Text;
+            oEstadisticasPersonales.FechaCargaNiosh = FechaDesde.Text;
+            oEstadisticasPersonales.FechaCarga2Niosh = FechaHasta.Text;
+            DataTable dt26001 = oEstadisticaBC.PuestoNioshPersonBC(oEstadisticasPersonales);
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt26001.Rows)
+            {
+                string PuestoDeTrabajoNiosh = row["PuestoDeTrabajoNiosh"].ToString();
+                int PuestoAnalizado = Convert.ToInt32(row["PuestoAnalizado"]);
+                // Agrega un punto a la serie para cada provincia
+                ChartHistogramaNiosh3.Series[0].Points.AddXY(PuestoDeTrabajoNiosh, PuestoAnalizado);
+            }
+        }
+        private void PuestoRebaPerson()
+        {
+            PuestoRebaPersonDato();
+        }
+        private void PuestoRebaPersonDato()
+        {
+            // Utiliza la instancia de EstadisticaBC para obtener los datos
+            EstadisticaBC oEstadisticaBC = new EstadisticaBC();
+            EstadisticasPersonales oEstadisticasPersonales = new EstadisticasPersonales();
+            oEstadisticasPersonales.CuitReba = txtCUIT.Text;
+            oEstadisticasPersonales.FechaCargaReba = FechaDesde.Text;
+            oEstadisticasPersonales.FechaCarga2Reba = FechaHasta.Text;
+            DataTable dt26002 = oEstadisticaBC.PuestoRebaPersonBC(oEstadisticasPersonales);
+
+            // Agrega los nuevos datos desde el DataTable
+            foreach (DataRow row in dt26002.Rows)
+            {
+                string PuestoDeTrabajoReba = row["PuestoDeTrabajoReba"].ToString();
+                int PuestoAnalizado = Convert.ToInt32(row["PuestoAnalizado"]);
+                // Agrega un punto a la serie para cada provincia
+                ChartHistogramaReba3.Series[0].Points.AddXY(PuestoDeTrabajoReba, PuestoAnalizado);
+            }
         }
 
-        private void BtnpuestoReba_Click(object sender, EventArgs e)
-        {
-            FrmPersonReba OFrmPersonReba = new FrmPersonReba();
-            OFrmPersonReba.ShowDialog();
-        }
-
-        private void BtnpuestoNiosh_Click(object sender, EventArgs e)
-        {
-            FrmPersonNiosh OFrmPersonNiosh = new FrmPersonNiosh();
-            OFrmPersonNiosh.ShowDialog();
-        }
-
-        private void BtnPuestoJss_Click(object sender, EventArgs e)
-        {
-            FrmPersonJSS OFrmPersonJSS = new FrmPersonJSS();
-            OFrmPersonJSS.ShowDialog();
-        }
     }
 }
