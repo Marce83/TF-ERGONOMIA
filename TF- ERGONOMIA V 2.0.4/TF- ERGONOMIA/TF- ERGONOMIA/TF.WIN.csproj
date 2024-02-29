@@ -180,29 +180,11 @@
     <Compile Include="frmPerfilUsuarios.Designer.cs">
       <DependentUpon>frmPerfilUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPersonJSS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPersonJSS.Designer.cs">
-      <DependentUpon>FrmPersonJSS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPersonNiosh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPersonNiosh.Designer.cs">
-      <DependentUpon>FrmPersonNiosh.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmPersonReba.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPersonReba.Designer.cs">
       <DependentUpon>FrmPersonReba.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPersonRULA.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPersonRULA.Designer.cs">
-      <DependentUpon>FrmPersonRULA.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPuestoTrabajo.cs">
       <SubType>Form</SubType>
@@ -422,17 +404,8 @@
     <EmbeddedResource Include="frmPerfilUsuarios.resx">
       <DependentUpon>frmPerfilUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPersonJSS.resx">
-      <DependentUpon>FrmPersonJSS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPersonNiosh.resx">
-      <DependentUpon>FrmPersonNiosh.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmPersonReba.resx">
       <DependentUpon>FrmPersonReba.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPersonRULA.resx">
-      <DependentUpon>FrmPersonRULA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPuestoTrabajo.resx">
       <DependentUpon>FrmPuestoTrabajo.cs</DependentUpon>

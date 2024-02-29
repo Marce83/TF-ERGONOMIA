@@ -17,13 +17,13 @@ namespace TF.WIN
         public FrmPersonReba()
         {
             InitializeComponent();
-            ConfigurarGraficoEmpxProv();
+            PuestoRebaPerson();
         }
-        private void ConfigurarGraficoEmpxProv()
+        private void PuestoRebaPerson()
         {
-            CargarDatosDesdeBDEmpxProv();
+            PuestoRebaPersonDato();
         }
-        private void CargarDatosDesdeBDEmpxProv()
+        private void PuestoRebaPersonDato()
         {
             // Utiliza la instancia de EstadisticaBC para obtener los datos
             EstadisticaBC oEstadisticaBC = new EstadisticaBC();
