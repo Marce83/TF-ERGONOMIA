@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,12 +29,22 @@ namespace TF.WIN
         {
             InitializeComponent();
 
-
             //materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
             //materialSkinManager.EnforceBackcolorOnAllComponents = true;
             //materialSkinManager.AddFormToManage(this);
             //materialSkinManager.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
             //materialSkinManager.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Blue500, MaterialSkin.Primary.Blue500, MaterialSkin.Primary.Amber400, MaterialSkin.Accent.Amber200, MaterialSkin.TextShade.BLACK);
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void frmNuevoUsuario_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
         private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)

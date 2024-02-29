@@ -112,7 +112,7 @@ namespace TF.WIN
         private void btnNuevoUsuario_Click(object sender, EventArgs e)
         {
             frmNuevoUsuario oNuevoUsr = new frmNuevoUsuario();
-            oNuevoUsr.Show();
+            oNuevoUsr.ShowDialog();
             this.Hide();
             //frmMenu.Show();
             //NuevoUsr();

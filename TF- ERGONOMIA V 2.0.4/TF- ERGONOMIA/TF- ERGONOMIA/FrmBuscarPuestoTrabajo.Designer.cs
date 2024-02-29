@@ -42,9 +42,10 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(135, 10);
+            this.label1.Location = new System.Drawing.Point(101, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(467, 36);
+            this.label1.Size = new System.Drawing.Size(372, 29);
             this.label1.TabIndex = 84;
             this.label1.Text = "BUSCAR PUESTO DE TRABAJO";
             // 
@@ -53,12 +54,11 @@
             this.dgvResultadoPuesto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvResultadoPuesto.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvResultadoPuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadoPuesto.Location = new System.Drawing.Point(19, 50);
-            this.dgvResultadoPuesto.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvResultadoPuesto.Location = new System.Drawing.Point(14, 41);
             this.dgvResultadoPuesto.Name = "dgvResultadoPuesto";
             this.dgvResultadoPuesto.ReadOnly = true;
             this.dgvResultadoPuesto.RowHeadersWidth = 51;
-            this.dgvResultadoPuesto.Size = new System.Drawing.Size(656, 258);
+            this.dgvResultadoPuesto.Size = new System.Drawing.Size(492, 210);
             this.dgvResultadoPuesto.TabIndex = 83;
             // 
             // btnCancelar
@@ -71,10 +71,9 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(112, 316);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar.Location = new System.Drawing.Point(84, 257);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(155, 58);
+            this.btnCancelar.Size = new System.Drawing.Size(116, 47);
             this.btnCancelar.TabIndex = 82;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -90,10 +89,9 @@
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAceptar.Location = new System.Drawing.Point(447, 316);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAceptar.Location = new System.Drawing.Point(335, 257);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(155, 58);
+            this.btnAceptar.Size = new System.Drawing.Size(116, 47);
             this.btnAceptar.TabIndex = 80;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
@@ -101,19 +99,19 @@
             // 
             // FrmBuscarPuestoTrabajo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(707, 389);
+            this.ClientSize = new System.Drawing.Size(530, 316);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvResultadoPuesto);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmBuscarPuestoTrabajo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBuscarPuestoTrabajo";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmBuscarPuestoTrabajo_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadoPuesto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

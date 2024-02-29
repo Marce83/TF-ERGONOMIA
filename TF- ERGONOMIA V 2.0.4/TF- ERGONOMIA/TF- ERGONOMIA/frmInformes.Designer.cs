@@ -41,9 +41,10 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 9);
+            this.label1.Location = new System.Drawing.Point(57, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(647, 38);
+            this.label1.Size = new System.Drawing.Size(531, 31);
             this.label1.TabIndex = 63;
             this.label1.Text = "DOCUMENTOS ANEXOS AL PROYECTO";
             // 
@@ -56,10 +57,9 @@
             this.btnEstadisticageneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstadisticageneral.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEstadisticageneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstadisticageneral.Location = new System.Drawing.Point(194, 68);
-            this.btnEstadisticageneral.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEstadisticageneral.Location = new System.Drawing.Point(190, 55);
             this.btnEstadisticageneral.Name = "btnEstadisticageneral";
-            this.btnEstadisticageneral.Size = new System.Drawing.Size(294, 71);
+            this.btnEstadisticageneral.Size = new System.Drawing.Size(220, 58);
             this.btnEstadisticageneral.TabIndex = 72;
             this.btnEstadisticageneral.Text = "PROYECTO TESIS";
             this.btnEstadisticageneral.UseVisualStyleBackColor = false;
@@ -73,10 +73,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(194, 159);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(190, 129);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(294, 71);
+            this.button1.Size = new System.Drawing.Size(220, 58);
             this.button1.TabIndex = 73;
             this.button1.Text = "MANUAL DE USUARIO";
             this.button1.UseVisualStyleBackColor = false;
@@ -90,10 +89,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(194, 249);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(190, 202);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(294, 71);
+            this.button2.Size = new System.Drawing.Size(220, 58);
             this.button2.TabIndex = 74;
             this.button2.Text = "PRUEBAS DE TESTING";
             this.button2.UseVisualStyleBackColor = false;
@@ -107,10 +105,9 @@
             this.btnAdmProy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdmProy.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAdmProy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmProy.Location = new System.Drawing.Point(194, 341);
-            this.btnAdmProy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdmProy.Location = new System.Drawing.Point(190, 277);
             this.btnAdmProy.Name = "btnAdmProy";
-            this.btnAdmProy.Size = new System.Drawing.Size(294, 71);
+            this.btnAdmProy.Size = new System.Drawing.Size(220, 58);
             this.btnAdmProy.TabIndex = 75;
             this.btnAdmProy.Text = "ADMINISTRACION DE PROYECTOS";
             this.btnAdmProy.UseVisualStyleBackColor = false;
@@ -118,18 +115,17 @@
             // 
             // frmInformes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(675, 448);
+            this.ClientSize = new System.Drawing.Size(595, 364);
             this.Controls.Add(this.btnAdmProy);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEstadisticageneral);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInformes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmInformes";

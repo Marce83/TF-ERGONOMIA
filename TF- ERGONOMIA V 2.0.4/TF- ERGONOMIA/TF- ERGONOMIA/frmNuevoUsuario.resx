@@ -129,7 +129,7 @@
     <value>Microsoft Sans Serif, 16px</value>
   </data>
   <data name="txtUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 98</value>
+    <value>108, 78</value>
   </data>
   <data name="txtUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -141,7 +141,7 @@
     <value>No</value>
   </data>
   <data name="txtUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>286, 48</value>
+    <value>229, 48</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtUsuario.TabIndex" type="System.Int32, mscorlib">
@@ -151,7 +151,7 @@
     <value>txtUsuario</value>
   </data>
   <data name="&gt;&gt;txtUsuario.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtUsuario.Parent" xml:space="preserve">
     <value>$this</value>
@@ -169,7 +169,7 @@
     <value>Roboto, 14px</value>
   </data>
   <data name="materialLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 109</value>
+    <value>11, 87</value>
   </data>
   <data name="materialLabel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -187,7 +187,7 @@
     <value>materialLabel1</value>
   </data>
   <data name="&gt;&gt;materialLabel1.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;materialLabel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -205,7 +205,7 @@
     <value>Roboto, 14px</value>
   </data>
   <data name="materialLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 416</value>
+    <value>10, 333</value>
   </data>
   <data name="materialLabel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -223,7 +223,7 @@
     <value>materialLabel2</value>
   </data>
   <data name="&gt;&gt;materialLabel2.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;materialLabel2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -241,7 +241,7 @@
     <value>Microsoft Sans Serif, 16px</value>
   </data>
   <data name="txtClave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 405</value>
+    <value>108, 324</value>
   </data>
   <data name="txtClave.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -253,7 +253,7 @@
     <value>No</value>
   </data>
   <data name="txtClave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>286, 48</value>
+    <value>229, 48</value>
   </data>
   <data name="txtClave.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -262,7 +262,7 @@
     <value>txtClave</value>
   </data>
   <data name="&gt;&gt;txtClave.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtClave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -280,7 +280,7 @@
     <value>Roboto, 14px</value>
   </data>
   <data name="materialLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 254</value>
+    <value>10, 203</value>
   </data>
   <data name="materialLabel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -298,7 +298,7 @@
     <value>materialLabel3</value>
   </data>
   <data name="&gt;&gt;materialLabel3.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;materialLabel3.Parent" xml:space="preserve">
     <value>$this</value>
@@ -316,7 +316,7 @@
     <value>Microsoft Sans Serif, 16px</value>
   </data>
   <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 169</value>
+    <value>107, 135</value>
   </data>
   <data name="txtNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -328,7 +328,7 @@
     <value>No</value>
   </data>
   <data name="txtNombre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 48</value>
+    <value>230, 48</value>
   </data>
   <data name="txtNombre.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -337,7 +337,7 @@
     <value>txtNombre</value>
   </data>
   <data name="&gt;&gt;txtNombre.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtNombre.Parent" xml:space="preserve">
     <value>$this</value>
@@ -355,7 +355,7 @@
     <value>Roboto, 14px</value>
   </data>
   <data name="materialLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 180</value>
+    <value>11, 144</value>
   </data>
   <data name="materialLabel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -373,7 +373,7 @@
     <value>materialLabel4</value>
   </data>
   <data name="&gt;&gt;materialLabel4.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;materialLabel4.Parent" xml:space="preserve">
     <value>$this</value>
@@ -391,7 +391,7 @@
     <value>Microsoft Sans Serif, 16px</value>
   </data>
   <data name="txtApellido.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 242</value>
+    <value>107, 194</value>
   </data>
   <data name="txtApellido.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -403,7 +403,7 @@
     <value>No</value>
   </data>
   <data name="txtApellido.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 48</value>
+    <value>230, 48</value>
   </data>
   <data name="txtApellido.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -412,7 +412,7 @@
     <value>txtApellido</value>
   </data>
   <data name="&gt;&gt;txtApellido.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtApellido.Parent" xml:space="preserve">
     <value>$this</value>
@@ -427,10 +427,10 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="btnCargarUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 615</value>
+    <value>108, 492</value>
   </data>
   <data name="btnCargarUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
+    <value>3, 5, 3, 5</value>
   </data>
   <data name="btnCargarUsuario.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 36</value>
@@ -445,7 +445,7 @@
     <value>btnCargarUsuario</value>
   </data>
   <data name="&gt;&gt;btnCargarUsuario.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnCargarUsuario.Parent" xml:space="preserve">
     <value>$this</value>
@@ -460,10 +460,10 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="btnSalir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 615</value>
+    <value>248, 492</value>
   </data>
   <data name="btnSalir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
+    <value>3, 5, 3, 5</value>
   </data>
   <data name="btnSalir.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 36</value>
@@ -478,7 +478,7 @@
     <value>btnSalir</value>
   </data>
   <data name="&gt;&gt;btnSalir.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnSalir.Parent" xml:space="preserve">
     <value>$this</value>
@@ -971,13 +971,13 @@
     <value>Stretch</value>
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 405</value>
+    <value>347, 324</value>
   </data>
   <data name="pictureBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 49</value>
+    <value>42, 39</value>
   </data>
   <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1015,13 +1015,13 @@ Al menos un caracter especial
     <value>Microsoft Sans Serif, 19.8pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 11</value>
+    <value>94, 9</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>294, 38</value>
+    <value>243, 31</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -1054,7 +1054,7 @@ Al menos un caracter especial
     <value>NoControl</value>
   </data>
   <data name="materialLabel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 508</value>
+    <value>11, 406</value>
   </data>
   <data name="materialLabel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -1072,7 +1072,7 @@ Al menos un caracter especial
     <value>materialLabel5</value>
   </data>
   <data name="&gt;&gt;materialLabel5.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;materialLabel5.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1090,7 +1090,7 @@ Al menos un caracter especial
     <value>Microsoft Sans Serif, 16px</value>
   </data>
   <data name="txtConfClave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 491</value>
+    <value>108, 393</value>
   </data>
   <data name="txtConfClave.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1102,7 +1102,7 @@ Al menos un caracter especial
     <value>No</value>
   </data>
   <data name="txtConfClave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>286, 48</value>
+    <value>229, 48</value>
   </data>
   <data name="txtConfClave.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1111,7 +1111,7 @@ Al menos un caracter especial
     <value>txtConfClave</value>
   </data>
   <data name="&gt;&gt;txtConfClave.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtConfClave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1126,13 +1126,10 @@ Al menos un caracter especial
     <value>True</value>
   </data>
   <data name="chbVisualizarClave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>281, 569</value>
-  </data>
-  <data name="chbVisualizarClave.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>225, 455</value>
   </data>
   <data name="chbVisualizarClave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 20</value>
+    <value>91, 17</value>
   </data>
   <data name="chbVisualizarClave.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1162,7 +1159,7 @@ Al menos un caracter especial
     <value>Microsoft Sans Serif, 16px</value>
   </data>
   <data name="txtCorreo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 322</value>
+    <value>108, 258</value>
   </data>
   <data name="txtCorreo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1174,7 +1171,7 @@ Al menos un caracter especial
     <value>No</value>
   </data>
   <data name="txtCorreo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>286, 48</value>
+    <value>229, 48</value>
   </data>
   <data name="txtCorreo.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -1183,7 +1180,7 @@ Al menos un caracter especial
     <value>txtCorreo</value>
   </data>
   <data name="&gt;&gt;txtCorreo.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtCorreo.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1204,7 +1201,7 @@ Al menos un caracter especial
     <value>NoControl</value>
   </data>
   <data name="materialLabel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 334</value>
+    <value>11, 267</value>
   </data>
   <data name="materialLabel6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -1222,7 +1219,7 @@ Al menos un caracter especial
     <value>materialLabel6</value>
   </data>
   <data name="&gt;&gt;materialLabel6.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.1, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;materialLabel6.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1237,10 +1234,10 @@ Al menos un caracter especial
     <value>57</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>120, 120</value>
+    <value>96, 96</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>491, 744</value>
+    <value>393, 595</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
