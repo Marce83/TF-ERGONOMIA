@@ -54,13 +54,11 @@ namespace TF.WIN
                 try
                 {
                     Carga1();
-                    MessageBox.Show("Asociación Realizada con éxito");
-                  
                 }
                 catch (Exception ex)
                 {
                     // Manejar excepciones de manera apropiada
-                    MessageBox.Show($"Error: {ex.Message}");
+                    MessageBox.Show($"Error: Por favor, ingresar el Puesto y/o Empleado a Asociar");
                 }
             }
         }
@@ -78,11 +76,12 @@ namespace TF.WIN
                 oPuestoTrabajo.FechaIngreso = DateTime.Parse(DtpFechaIngreso.Text);
                 var res = oPuestoTrabajoBC.InsertPuestoEmpleadoBC(oPuestoTrabajo);
 
+                MessageBox.Show("Asociación Realizada con éxito");
             }
             catch (Exception ex)
             {
                 // Manejar excepciones de manera apropiada
-                MessageBox.Show($"Error: {ex.Message}");
+                MessageBox.Show($"Error: Por favor, ingresar Puesto y/o Empleado a Asociar");
             }
         }
         private void btnSalir_Click(object sender, EventArgs e)
