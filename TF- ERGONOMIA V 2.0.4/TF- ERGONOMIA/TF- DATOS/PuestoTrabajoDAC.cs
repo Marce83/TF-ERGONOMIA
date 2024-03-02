@@ -150,13 +150,14 @@ namespace TF.DAC
 
 
 
-        public DataTable GetAllVistaPuestoDAC()
+        public DataTable GetAllVistaPuestoDAC(PuestoTrabajo oPuestoTrabajo)
         {
             string sqlSentencia = "SP_PuestoEmpleado_VerVista";
             SqlConnection sqlCnn = new SqlConnection();
             sqlCnn.ConnectionString = conectionString;
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
             sqlComm.CommandType = CommandType.StoredProcedure;
+            sqlComm.Parameters.Add("@IdEmpresa", SqlDbType.Int).Value = oPuestoTrabajo.IdEmpresa;
             sqlCnn.Open();
             DataSet ds = new DataSet();
             SqlDataAdapter DA = new SqlDataAdapter();

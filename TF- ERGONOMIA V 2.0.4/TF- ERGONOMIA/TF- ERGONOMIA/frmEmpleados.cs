@@ -52,8 +52,8 @@ namespace TF.WIN
                         oBe.Peso = float.Parse(txtPeso.Text);
                         oBe.Altura = float.Parse(txtAltura.Text);
                         //oBe.AreaEmpresa = cboAreaempresa.Text;
-                        long CUIL = Convert.ToInt64(txtCUITEncontrado.Text);
-                        var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIL);
+                        long CUIT = Convert.ToInt64(txtCUITEncontrado.Text);
+                        var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIT);
                         oBe.IdEmpresa = Convert.ToInt32(BuscarId);
                         oEmpleadosBC.BuscarEmpleado(oBe);
                         var res = oEmpleadosBC.InsertEmpleadosBC(oBe);

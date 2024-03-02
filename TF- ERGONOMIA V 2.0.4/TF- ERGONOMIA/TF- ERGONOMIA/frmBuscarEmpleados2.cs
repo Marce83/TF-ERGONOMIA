@@ -44,14 +44,15 @@ namespace TF.WIN
             dgvResultado.DataSource = null;
             dgvResultado.DataSource = dt;
             //dgvempleados.Columns[0].Visible = false;
-
         }
         private void Listar()
         {
+            PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
+            PuestoTrabajo oPuestoTrabajo = new PuestoTrabajo();
             try
             {
-                EmpleadosBC oEmpleadosBC = new EmpleadosBC();
-                DataTable dt = oEmpleadosBC.EmpleadosBC_GetAll();
+                oPuestoTrabajo.IdEmpresa = RULA_PORTADA.IdEmpresa;
+                DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
                 dgvResultado.DataSource = null;
                 dgvResultado.DataSource = dt;
             }
@@ -62,10 +63,9 @@ namespace TF.WIN
         }
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-
             if (dgvResultado.SelectedRows.Count == 1) // BUSQUEDA DE EMPLEADOS 
             {
-                int DNI = Convert.ToInt32(dgvResultado.CurrentRow.Cells[2].Value);
+                int DNI = Convert.ToInt32(dgvResultado.CurrentRow.Cells[1].Value);
                 EmpleadosBC oEmpleadosBC = new EmpleadosBC();
                 EmpleadoSeleccionado2 = oEmpleadosBC.EmpleadosConPuestoBC(DNI);
                 this.Close();

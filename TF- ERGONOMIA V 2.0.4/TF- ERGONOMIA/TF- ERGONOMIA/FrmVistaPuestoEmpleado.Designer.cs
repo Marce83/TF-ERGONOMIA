@@ -109,7 +109,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmVistaPuestoEmpleado";
             this.Text = "FrmVistaPuestoEmpleado";
-            this.Load += new System.EventHandler(this.FrmVistaPuestoEmpleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVistaPuestoEmpleado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

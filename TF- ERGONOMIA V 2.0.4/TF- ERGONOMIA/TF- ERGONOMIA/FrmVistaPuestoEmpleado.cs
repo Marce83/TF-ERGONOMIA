@@ -18,9 +18,10 @@ namespace TF.WIN
         {
             InitializeComponent();
             Listar();
-
-
         }
+
+        PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
+        PuestoTrabajo oPuestoTrabajo = new PuestoTrabajo();
 
         public PuestoTrabajo PersonaSeleccionada { get; set; }
 
@@ -28,9 +29,8 @@ namespace TF.WIN
         {
             try
             {
-                PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
-                PuestoTrabajo oPuestoTrabajo = new PuestoTrabajo();
-                DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC();
+                oPuestoTrabajo.IdEmpresa = FrmPuestoHistorial.IdEmpresa;
+                DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
                 dgvVistaPuestoEmpleado.DataSource = null;
                 dgvVistaPuestoEmpleado.DataSource = dt;
                 dgvVistaPuestoEmpleado.Columns[2].HeaderText = "Puesto";
@@ -39,14 +39,6 @@ namespace TF.WIN
             {
                 MessageBox.Show(ex.Message);
             }
-
-
-           
-
-
-
-
-
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -75,18 +67,11 @@ namespace TF.WIN
             {
                 MessageBox.Show("Aún no ha seleccionado ningún empleado");
             }
-
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void FrmVistaPuestoEmpleado_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

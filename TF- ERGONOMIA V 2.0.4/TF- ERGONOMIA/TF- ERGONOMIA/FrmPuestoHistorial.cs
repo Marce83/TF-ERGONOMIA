@@ -21,7 +21,7 @@ namespace TF.WIN
     {
 
         public PuestoTrabajo PersonaSeleccionada { get; set; }
-
+        public static int IdEmpresa { get; set; }
 
         public FrmPuestoHistorial()
         {
@@ -62,14 +62,19 @@ namespace TF.WIN
 
         private void btnBuscarEmpleado_Click(object sender, EventArgs e)
         {
-            FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
-            oFrm.ShowDialog();
-
-            if (oFrm.PersonaSeleccionada != null)
+            if (TxtCuitEmpresa.Text == string.Empty)
+                MessageBox.Show("Tiene que Ingresar una Empresa antes");
+            else
             {
-                txtNombreEmpleado.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
-                //txtNombrePuesto.Text = oFrm.PuestoSeleccionada.NombrePuesto.ToString();
-            }
+                FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
+                oFrm.ShowDialog();
+
+                if (oFrm.PersonaSeleccionada != null)
+                {
+                    txtNombreEmpleado.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
+                    //txtNombrePuesto.Text = oFrm.PuestoSeleccionada.NombrePuesto.ToString();
+                }
+            }         
 
         }
 
@@ -104,6 +109,7 @@ namespace TF.WIN
                             DgvPuestosRecientes.Columns[2].HeaderText = "Puesto";
                             DgvPuestosRecientes.Columns[3].HeaderText = "Fecha de Ingreso";
                             DgvPuestosRecientes.Columns[4].HeaderText = "Fecha de Egreso";
+                            DgvPuestosRecientes.Columns[5].Visible = false;
                         }
                         else
                         {
@@ -126,7 +132,6 @@ namespace TF.WIN
             }
         }
 
-
         private void AdjustColumnSizes(DataGridView dataGridView)
         {
             int totalWidth = dataGridView.Width - dataGridView.RowHeadersWidth;
@@ -146,13 +151,15 @@ namespace TF.WIN
         {
             frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
             oFrm.ShowDialog();
-
+            EmpleadosBC oEmpleadosBC = new EmpleadosBC();
             if (oFrm.EmpresaSeleccionada != null)
-            {
+            {   
                 TxtCuitEmpresa.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
                 TxtNombreEmpresa.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
+                long CUIT = Convert.ToInt64(TxtCuitEmpresa.Text);
+                var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIT);
+                IdEmpresa = Convert.ToInt32(BuscarId);
             }
-
         }
 
         private void BtnImprimir_Click(object sender, EventArgs e)
@@ -261,5 +268,19 @@ namespace TF.WIN
 
         private int fileCounter = 0;
 
+        private void Limpiar()
+        {
+            TxtCuitEmpresa.Text = string.Empty;
+            TxtNombreEmpresa.Text = string.Empty;
+            txtNombreEmpleado.Text = string.Empty;
+            DtpFechadesde.Text = string.Empty;
+            DtpFechahasta.Text = string.Empty;
+            DgvPuestosRecientes.DataSource = null;
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
     }
 }
