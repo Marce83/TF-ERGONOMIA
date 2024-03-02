@@ -159,7 +159,7 @@
             // 
             this.FechaDesde.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FechaDesde.CustomFormat = "dd/mm/yyyy";
-            this.FechaDesde.Location = new System.Drawing.Point(4, 162);
+            this.FechaDesde.Location = new System.Drawing.Point(-6, 162);
             this.FechaDesde.Margin = new System.Windows.Forms.Padding(4);
             this.FechaDesde.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.FechaDesde.Name = "FechaDesde";
@@ -173,7 +173,7 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(-84, 162);
+            this.materialLabel1.Location = new System.Drawing.Point(-94, 162);
             this.materialLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
@@ -187,7 +187,7 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(451, 161);
+            this.materialLabel2.Location = new System.Drawing.Point(441, 161);
             this.materialLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
@@ -199,7 +199,7 @@
             // 
             this.FechaHasta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FechaHasta.CustomFormat = "dd/mm/yyyy";
-            this.FechaHasta.Location = new System.Drawing.Point(531, 162);
+            this.FechaHasta.Location = new System.Drawing.Point(521, 162);
             this.FechaHasta.Margin = new System.Windows.Forms.Padding(4);
             this.FechaHasta.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.FechaHasta.Name = "FechaHasta";
@@ -218,7 +218,7 @@
             this.btnBuscarresultado.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnBuscarresultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarresultado.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBuscarresultado.Location = new System.Drawing.Point(466, 219);
+            this.btnBuscarresultado.Location = new System.Drawing.Point(456, 219);
             this.btnBuscarresultado.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarresultado.Name = "btnBuscarresultado";
             this.btnBuscarresultado.Size = new System.Drawing.Size(429, 59);
@@ -237,7 +237,7 @@
             this.chartPastelReba.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartPastelReba.Legends.Add(legend1);
-            this.chartPastelReba.Location = new System.Drawing.Point(-8, 1489);
+            this.chartPastelReba.Location = new System.Drawing.Point(-18, 1489);
             this.chartPastelReba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPastelReba.Name = "chartPastelReba";
             this.chartPastelReba.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -255,7 +255,7 @@
             this.panel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel10.Controls.Add(this.label11);
-            this.panel10.Location = new System.Drawing.Point(-26, 1426);
+            this.panel10.Location = new System.Drawing.Point(-36, 1426);
             this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1373, 57);
@@ -284,7 +284,7 @@
             this.ChartHistogramaRula2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.ChartHistogramaRula2.Legends.Add(legend2);
-            this.ChartHistogramaRula2.Location = new System.Drawing.Point(611, 740);
+            this.ChartHistogramaRula2.Location = new System.Drawing.Point(601, 740);
             this.ChartHistogramaRula2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartHistogramaRula2.Name = "ChartHistogramaRula2";
             this.ChartHistogramaRula2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -306,7 +306,7 @@
             this.chartPastelRula.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chartPastelRula.Legends.Add(legend3);
-            this.chartPastelRula.Location = new System.Drawing.Point(-8, 740);
+            this.chartPastelRula.Location = new System.Drawing.Point(-18, 740);
             this.chartPastelRula.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPastelRula.Name = "chartPastelRula";
             this.chartPastelRula.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -328,7 +328,7 @@
             this.panel9.Controls.Add(this.button5);
             this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.TotalMetodoPerson);
-            this.panel9.Location = new System.Drawing.Point(182, 325);
+            this.panel9.Location = new System.Drawing.Point(172, 325);
             this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(259, 135);
@@ -380,7 +380,7 @@
             this.panel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel8.Controls.Add(this.label7);
-            this.panel8.Location = new System.Drawing.Point(-87, 677);
+            this.panel8.Location = new System.Drawing.Point(-97, 677);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1513, 57);
@@ -406,7 +406,7 @@
             this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.txtjsscont);
-            this.panel5.Location = new System.Drawing.Point(694, 533);
+            this.panel5.Location = new System.Drawing.Point(684, 533);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(259, 135);
@@ -461,7 +461,7 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtNioshCont);
-            this.panel2.Location = new System.Drawing.Point(169, 533);
+            this.panel2.Location = new System.Drawing.Point(159, 533);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(259, 135);
@@ -516,7 +516,7 @@
             this.panel7.Controls.Add(this.button4);
             this.panel7.Controls.Add(this.txtREBACont);
             this.panel7.Controls.Add(this.label10);
-            this.panel7.Location = new System.Drawing.Point(438, 533);
+            this.panel7.Location = new System.Drawing.Point(428, 533);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(248, 135);
@@ -571,7 +571,7 @@
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.txtRulaCont);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Location = new System.Drawing.Point(-87, 533);
+            this.panel3.Location = new System.Drawing.Point(-97, 533);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(248, 135);
@@ -624,7 +624,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(-87, 468);
+            this.panel1.Location = new System.Drawing.Point(-97, 468);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1513, 57);
@@ -650,7 +650,7 @@
             this.panel6.Controls.Add(this.btnEmpleados);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.txtcontempleados);
-            this.panel6.Location = new System.Drawing.Point(-87, 325);
+            this.panel6.Location = new System.Drawing.Point(-97, 325);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(259, 135);
@@ -706,7 +706,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(4, 219);
+            this.btnSalir.Location = new System.Drawing.Point(-6, 219);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(271, 59);
@@ -722,7 +722,7 @@
             this.materialLabel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(453, 105);
+            this.materialLabel3.Location = new System.Drawing.Point(443, 105);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(73, 19);
@@ -742,7 +742,7 @@
             this.txtNombreEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpresa.HideSelection = true;
             this.txtNombreEmpresa.LeadingIcon = null;
-            this.txtNombreEmpresa.Location = new System.Drawing.Point(609, 86);
+            this.txtNombreEmpresa.Location = new System.Drawing.Point(599, 86);
             this.txtNombreEmpresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreEmpresa.MaxLength = 32767;
             this.txtNombreEmpresa.MouseState = MaterialSkin.MouseState.OUT;
@@ -771,7 +771,7 @@
             this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarCUIT.Location = new System.Drawing.Point(317, 86);
+            this.btnBuscarCUIT.Location = new System.Drawing.Point(307, 86);
             this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
             this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 48);
@@ -787,7 +787,7 @@
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(-90, 101);
+            this.materialLabel11.Location = new System.Drawing.Point(-100, 101);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(35, 19);
@@ -807,7 +807,7 @@
             this.txtCUIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCUIT.HideSelection = true;
             this.txtCUIT.LeadingIcon = null;
-            this.txtCUIT.Location = new System.Drawing.Point(-34, 85);
+            this.txtCUIT.Location = new System.Drawing.Point(-44, 85);
             this.txtCUIT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCUIT.MaxLength = 32767;
             this.txtCUIT.MouseState = MaterialSkin.MouseState.OUT;
@@ -837,7 +837,7 @@
             this.ChartHistogramaReba2.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.ChartHistogramaReba2.Legends.Add(legend4);
-            this.ChartHistogramaReba2.Location = new System.Drawing.Point(626, 1489);
+            this.ChartHistogramaReba2.Location = new System.Drawing.Point(616, 1489);
             this.ChartHistogramaReba2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartHistogramaReba2.Name = "ChartHistogramaReba2";
             this.ChartHistogramaReba2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -867,7 +867,7 @@
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(-21, 2212);
+            this.panel4.Location = new System.Drawing.Point(-31, 2212);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1396, 57);
@@ -883,7 +883,7 @@
             this.chartPastelNiosh.ChartAreas.Add(chartArea5);
             legend5.Name = "Legend1";
             this.chartPastelNiosh.Legends.Add(legend5);
-            this.chartPastelNiosh.Location = new System.Drawing.Point(-8, 2274);
+            this.chartPastelNiosh.Location = new System.Drawing.Point(-18, 2274);
             this.chartPastelNiosh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPastelNiosh.Name = "chartPastelNiosh";
             this.chartPastelNiosh.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -906,7 +906,7 @@
             this.ChartHistogramaNiosh2.ChartAreas.Add(chartArea6);
             legend6.Name = "Legend1";
             this.ChartHistogramaNiosh2.Legends.Add(legend6);
-            this.ChartHistogramaNiosh2.Location = new System.Drawing.Point(640, 2274);
+            this.ChartHistogramaNiosh2.Location = new System.Drawing.Point(630, 2274);
             this.ChartHistogramaNiosh2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartHistogramaNiosh2.Name = "ChartHistogramaNiosh2";
             this.ChartHistogramaNiosh2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -928,7 +928,7 @@
             this.chartHistoJss2.ChartAreas.Add(chartArea7);
             legend7.Name = "Legend1";
             this.chartHistoJss2.Legends.Add(legend7);
-            this.chartHistoJss2.Location = new System.Drawing.Point(633, 3064);
+            this.chartHistoJss2.Location = new System.Drawing.Point(623, 3064);
             this.chartHistoJss2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartHistoJss2.Name = "chartHistoJss2";
             this.chartHistoJss2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -951,7 +951,7 @@
             this.chartPastelJss2.ChartAreas.Add(chartArea8);
             legend8.Name = "Legend1";
             this.chartPastelJss2.Legends.Add(legend8);
-            this.chartPastelJss2.Location = new System.Drawing.Point(-18, 3064);
+            this.chartPastelJss2.Location = new System.Drawing.Point(-28, 3064);
             this.chartPastelJss2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartPastelJss2.Name = "chartPastelJss2";
             this.chartPastelJss2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -969,7 +969,7 @@
             this.panel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel11.Controls.Add(this.label4);
-            this.panel11.Location = new System.Drawing.Point(-28, 3001);
+            this.panel11.Location = new System.Drawing.Point(-38, 3001);
             this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(1396, 57);
@@ -1037,7 +1037,7 @@
             this.button6.ForeColor = System.Drawing.Color.AliceBlue;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button6.Location = new System.Drawing.Point(452, 3960);
+            this.button6.Location = new System.Drawing.Point(442, 3960);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(429, 59);
@@ -1052,7 +1052,7 @@
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(448, 3895);
+            this.materialLabel4.Location = new System.Drawing.Point(438, 3895);
             this.materialLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
@@ -1065,7 +1065,7 @@
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dateTimePicker1.CustomFormat = "dd/mm/yyyy";
-            this.dateTimePicker1.Location = new System.Drawing.Point(528, 3896);
+            this.dateTimePicker1.Location = new System.Drawing.Point(518, 3896);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
@@ -1084,7 +1084,7 @@
             this.ChartHistogramaRula3.ChartAreas.Add(chartArea9);
             legend9.Name = "Legend1";
             this.ChartHistogramaRula3.Legends.Add(legend9);
-            this.ChartHistogramaRula3.Location = new System.Drawing.Point(-8, 1078);
+            this.ChartHistogramaRula3.Location = new System.Drawing.Point(-18, 1078);
             this.ChartHistogramaRula3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartHistogramaRula3.Name = "ChartHistogramaRula3";
             this.ChartHistogramaRula3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -1107,7 +1107,7 @@
             this.ChartHistogramaReba3.ChartAreas.Add(chartArea10);
             legend10.Name = "Legend1";
             this.ChartHistogramaReba3.Legends.Add(legend10);
-            this.ChartHistogramaReba3.Location = new System.Drawing.Point(-8, 1873);
+            this.ChartHistogramaReba3.Location = new System.Drawing.Point(-18, 1873);
             this.ChartHistogramaReba3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartHistogramaReba3.Name = "ChartHistogramaReba3";
             this.ChartHistogramaReba3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -1129,7 +1129,7 @@
             this.ChartHistogramaNiosh3.ChartAreas.Add(chartArea11);
             legend11.Name = "Legend1";
             this.ChartHistogramaNiosh3.Legends.Add(legend11);
-            this.ChartHistogramaNiosh3.Location = new System.Drawing.Point(43, 2640);
+            this.ChartHistogramaNiosh3.Location = new System.Drawing.Point(33, 2640);
             this.ChartHistogramaNiosh3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartHistogramaNiosh3.Name = "ChartHistogramaNiosh3";
             this.ChartHistogramaNiosh3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -1151,7 +1151,7 @@
             this.chartHistoJss3.ChartAreas.Add(chartArea12);
             legend12.Name = "Legend1";
             this.chartHistoJss3.Legends.Add(legend12);
-            this.chartHistoJss3.Location = new System.Drawing.Point(-18, 3477);
+            this.chartHistoJss3.Location = new System.Drawing.Point(-28, 3477);
             this.chartHistoJss3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartHistoJss3.Name = "chartHistoJss3";
             this.chartHistoJss3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
