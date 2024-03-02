@@ -36,6 +36,11 @@ namespace TF.WIN
             txtpuestotrabajoencontrado.Text = DatosCompartidos.PuestoRula;
         }
 
+        private void linkLimpiar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Limpiar();
+        }
+
         private void btnBuscarCUIT_Click(object sender, EventArgs e)
         {
             frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
@@ -144,11 +149,6 @@ namespace TF.WIN
             txtNombreEmpleadoRula.Text = string.Empty;
             txtpuestotrabajoencontrado.Text = string.Empty;
             dtpRula.Text = string.Empty;
-        }
-
-        private void linkLimpiar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Limpiar();
         }
     }
 }
