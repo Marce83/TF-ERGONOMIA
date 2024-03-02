@@ -65,28 +65,41 @@ namespace TF.WIN
         }
         private void btnBuscarresultado_Click(object sender, EventArgs e)
         {
-            try
+
+            if (string.IsNullOrEmpty(txtNombreEmpresa.Text) || string.IsNullOrEmpty(txtCUIT.Text))
             {
-                ContNIOSH();
-                CantEmpleadosEmpresa();
-                ContREBA();
-                ContRULA();
-                ContJSS();
-                ContMetodos();
-                GraficoPastelRula();
-                HistoRulaPerson();
-                GraficoPastelReba();
-                HistoRebaPerson();
-                GraficoPasteLNIOSH();
-                HistoNioshPerson();
-                GraficoPastelJSS();
-                HistoJSSPerson();
-                ultPuestoRulaPerson();
-                PuestoJSSPersonal();
-                PersonNioshPuesto();
-                PuestoRebaPerson();
+
+                MessageBox.Show("El Cuit y Nombre de la Empresa no puede estar vacio");
+
             }
-            catch { }
+            else
+            {
+
+
+                try
+                {
+                    ContNIOSH();
+                    CantEmpleadosEmpresa();
+                    ContREBA();
+                    ContRULA();
+                    ContJSS();
+                    ContMetodos();
+                    GraficoPastelRula();
+                    HistoRulaPerson();
+                    GraficoPastelReba();
+                    HistoRebaPerson();
+                    GraficoPasteLNIOSH();
+                    HistoNioshPerson();
+                    GraficoPastelJSS();
+                    HistoJSSPerson();
+                    ultPuestoRulaPerson();
+                    PuestoJSSPersonal();
+                    PersonNioshPuesto();
+                    PuestoRebaPerson();
+                }
+                catch { }
+
+            }
         }
         public void ContNIOSH()
         {

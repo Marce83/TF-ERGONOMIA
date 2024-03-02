@@ -77,6 +77,9 @@ namespace TF.WIN
             DialogResult resp = MessageBox.Show("¿Estas seguro que deseas Realizar la Asociación? No realizarlo mas de una vez", "Aviso de Acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (resp == DialogResult.Yes)
             {
+
+
+
                     try
                     {
                         PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
