@@ -18,6 +18,7 @@ namespace TF.WIN
         public frmEstadisticas2()
         {
             InitializeComponent();
+            FechaHasta.Value = DateTime.Now;
         }
 
         private void btnMaximizar_Click(object sender, EventArgs e)

@@ -56,8 +56,7 @@
             this.materialLabel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(12, 239);
-            this.materialLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel4.Location = new System.Drawing.Point(16, 294);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(84, 19);
@@ -77,8 +76,8 @@
             this.txtNombreEmpleadoJss.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpleadoJss.HideSelection = true;
             this.txtNombreEmpleadoJss.LeadingIcon = null;
-            this.txtNombreEmpleadoJss.Location = new System.Drawing.Point(116, 227);
-            this.txtNombreEmpleadoJss.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreEmpleadoJss.Location = new System.Drawing.Point(155, 279);
+            this.txtNombreEmpleadoJss.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreEmpleadoJss.MaxLength = 32767;
             this.txtNombreEmpleadoJss.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreEmpleadoJss.Name = "txtNombreEmpleadoJss";
@@ -90,7 +89,7 @@
             this.txtNombreEmpleadoJss.SelectionLength = 0;
             this.txtNombreEmpleadoJss.SelectionStart = 0;
             this.txtNombreEmpleadoJss.ShortcutsEnabled = true;
-            this.txtNombreEmpleadoJss.Size = new System.Drawing.Size(208, 48);
+            this.txtNombreEmpleadoJss.Size = new System.Drawing.Size(277, 48);
             this.txtNombreEmpleadoJss.TabIndex = 174;
             this.txtNombreEmpleadoJss.TabStop = false;
             this.txtNombreEmpleadoJss.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -104,8 +103,7 @@
             this.materialLabel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(12, 118);
-            this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel3.Location = new System.Drawing.Point(16, 145);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(73, 19);
@@ -125,8 +123,8 @@
             this.txtNombreEmpresaJss.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpresaJss.HideSelection = true;
             this.txtNombreEmpresaJss.LeadingIcon = null;
-            this.txtNombreEmpresaJss.Location = new System.Drawing.Point(116, 105);
-            this.txtNombreEmpresaJss.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreEmpresaJss.Location = new System.Drawing.Point(155, 129);
+            this.txtNombreEmpresaJss.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreEmpresaJss.MaxLength = 32767;
             this.txtNombreEmpresaJss.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreEmpresaJss.Name = "txtNombreEmpresaJss";
@@ -138,7 +136,7 @@
             this.txtNombreEmpresaJss.SelectionLength = 0;
             this.txtNombreEmpresaJss.SelectionStart = 0;
             this.txtNombreEmpresaJss.ShortcutsEnabled = true;
-            this.txtNombreEmpresaJss.Size = new System.Drawing.Size(208, 48);
+            this.txtNombreEmpresaJss.Size = new System.Drawing.Size(277, 48);
             this.txtNombreEmpresaJss.TabIndex = 172;
             this.txtNombreEmpresaJss.TabStop = false;
             this.txtNombreEmpresaJss.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -154,9 +152,10 @@
             this.btnBuscarpuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarpuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarpuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarpuesto.Location = new System.Drawing.Point(329, 293);
+            this.btnBuscarpuesto.Location = new System.Drawing.Point(439, 361);
+            this.btnBuscarpuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscarpuesto.Name = "btnBuscarpuesto";
-            this.btnBuscarpuesto.Size = new System.Drawing.Size(67, 48);
+            this.btnBuscarpuesto.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarpuesto.TabIndex = 171;
             this.btnBuscarpuesto.Text = "...";
             this.btnBuscarpuesto.UseVisualStyleBackColor = false;
@@ -170,10 +169,9 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F);
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(16, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(402, 31);
+            this.label1.Size = new System.Drawing.Size(488, 38);
             this.label1.TabIndex = 170;
             this.label1.Text = "FORMULARIO DE CARGA JSS";
             // 
@@ -184,8 +182,7 @@
             this.materialLabel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(12, 309);
-            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel2.Location = new System.Drawing.Point(16, 380);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(61, 19);
@@ -205,8 +202,8 @@
             this.txtpuestotrabajoencontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtpuestotrabajoencontrado.HideSelection = true;
             this.txtpuestotrabajoencontrado.LeadingIcon = null;
-            this.txtpuestotrabajoencontrado.Location = new System.Drawing.Point(116, 293);
-            this.txtpuestotrabajoencontrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpuestotrabajoencontrado.Location = new System.Drawing.Point(155, 361);
+            this.txtpuestotrabajoencontrado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpuestotrabajoencontrado.MaxLength = 32767;
             this.txtpuestotrabajoencontrado.MouseState = MaterialSkin.MouseState.OUT;
             this.txtpuestotrabajoencontrado.Name = "txtpuestotrabajoencontrado";
@@ -218,7 +215,7 @@
             this.txtpuestotrabajoencontrado.SelectionLength = 0;
             this.txtpuestotrabajoencontrado.SelectionStart = 0;
             this.txtpuestotrabajoencontrado.ShortcutsEnabled = true;
-            this.txtpuestotrabajoencontrado.Size = new System.Drawing.Size(207, 48);
+            this.txtpuestotrabajoencontrado.Size = new System.Drawing.Size(276, 48);
             this.txtpuestotrabajoencontrado.TabIndex = 168;
             this.txtpuestotrabajoencontrado.TabStop = false;
             this.txtpuestotrabajoencontrado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -234,9 +231,10 @@
             this.btnBuscarEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarEmpleados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarEmpleados.Location = new System.Drawing.Point(329, 163);
+            this.btnBuscarEmpleados.Location = new System.Drawing.Point(439, 201);
+            this.btnBuscarEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscarEmpleados.Name = "btnBuscarEmpleados";
-            this.btnBuscarEmpleados.Size = new System.Drawing.Size(67, 48);
+            this.btnBuscarEmpleados.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarEmpleados.TabIndex = 167;
             this.btnBuscarEmpleados.Text = "...";
             this.btnBuscarEmpleados.UseVisualStyleBackColor = false;
@@ -249,8 +247,7 @@
             this.materialLabel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(12, 179);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel1.Location = new System.Drawing.Point(16, 220);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(27, 19);
@@ -270,8 +267,8 @@
             this.txtDniEmpleadoJss.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDniEmpleadoJss.HideSelection = true;
             this.txtDniEmpleadoJss.LeadingIcon = null;
-            this.txtDniEmpleadoJss.Location = new System.Drawing.Point(116, 163);
-            this.txtDniEmpleadoJss.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDniEmpleadoJss.Location = new System.Drawing.Point(155, 201);
+            this.txtDniEmpleadoJss.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDniEmpleadoJss.MaxLength = 32767;
             this.txtDniEmpleadoJss.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDniEmpleadoJss.Name = "txtDniEmpleadoJss";
@@ -283,7 +280,7 @@
             this.txtDniEmpleadoJss.SelectionLength = 0;
             this.txtDniEmpleadoJss.SelectionStart = 0;
             this.txtDniEmpleadoJss.ShortcutsEnabled = true;
-            this.txtDniEmpleadoJss.Size = new System.Drawing.Size(208, 48);
+            this.txtDniEmpleadoJss.Size = new System.Drawing.Size(277, 48);
             this.txtDniEmpleadoJss.TabIndex = 165;
             this.txtDniEmpleadoJss.TabStop = false;
             this.txtDniEmpleadoJss.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -299,9 +296,10 @@
             this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarCUIT.Location = new System.Drawing.Point(329, 53);
+            this.btnBuscarCUIT.Location = new System.Drawing.Point(439, 65);
+            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
-            this.btnBuscarCUIT.Size = new System.Drawing.Size(67, 48);
+            this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarCUIT.TabIndex = 164;
             this.btnBuscarCUIT.Text = "...";
             this.btnBuscarCUIT.UseVisualStyleBackColor = false;
@@ -314,8 +312,7 @@
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(12, 69);
-            this.materialLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel11.Location = new System.Drawing.Point(16, 85);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(35, 19);
@@ -335,8 +332,8 @@
             this.txtCUITEncontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCUITEncontrado.HideSelection = true;
             this.txtCUITEncontrado.LeadingIcon = null;
-            this.txtCUITEncontrado.Location = new System.Drawing.Point(116, 53);
-            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCUITEncontrado.Location = new System.Drawing.Point(155, 65);
+            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCUITEncontrado.MaxLength = 32767;
             this.txtCUITEncontrado.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCUITEncontrado.Name = "txtCUITEncontrado";
@@ -348,7 +345,7 @@
             this.txtCUITEncontrado.SelectionLength = 0;
             this.txtCUITEncontrado.SelectionStart = 0;
             this.txtCUITEncontrado.ShortcutsEnabled = true;
-            this.txtCUITEncontrado.Size = new System.Drawing.Size(208, 48);
+            this.txtCUITEncontrado.Size = new System.Drawing.Size(277, 48);
             this.txtCUITEncontrado.TabIndex = 162;
             this.txtCUITEncontrado.TabStop = false;
             this.txtCUITEncontrado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -365,11 +362,12 @@
             this.BtnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.Location = new System.Drawing.Point(63, 444);
+            this.BtnSalir.Location = new System.Drawing.Point(84, 546);
+            this.BtnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(116, 40);
+            this.BtnSalir.Size = new System.Drawing.Size(155, 49);
             this.BtnSalir.TabIndex = 161;
-            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.Text = "SALIR";
             this.BtnSalir.UseVisualStyleBackColor = false;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
@@ -383,11 +381,12 @@
             this.btnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrear.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrear.Location = new System.Drawing.Point(242, 444);
+            this.btnCrear.Location = new System.Drawing.Point(373, 546);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(116, 40);
+            this.btnCrear.Size = new System.Drawing.Size(155, 49);
             this.btnCrear.TabIndex = 160;
-            this.btnCrear.Text = "Crear y Siguiente Formulario";
+            this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
@@ -395,10 +394,11 @@
             // 
             this.dtpJss.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpJss.CustomFormat = "";
-            this.dtpJss.Location = new System.Drawing.Point(116, 380);
+            this.dtpJss.Location = new System.Drawing.Point(155, 468);
+            this.dtpJss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpJss.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpJss.Name = "dtpJss";
-            this.dtpJss.Size = new System.Drawing.Size(208, 20);
+            this.dtpJss.Size = new System.Drawing.Size(276, 22);
             this.dtpJss.TabIndex = 177;
             this.dtpJss.Value = new System.DateTime(2023, 12, 21, 20, 52, 44, 0);
             // 
@@ -409,8 +409,7 @@
             this.materialLabel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel5.Location = new System.Drawing.Point(12, 381);
-            this.materialLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel5.Location = new System.Drawing.Point(16, 469);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(50, 19);
@@ -421,9 +420,10 @@
             // 
             this.linkLimpiar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.linkLimpiar.AutoSize = true;
-            this.linkLimpiar.Location = new System.Drawing.Point(318, 418);
+            this.linkLimpiar.Location = new System.Drawing.Point(424, 514);
+            this.linkLimpiar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLimpiar.Name = "linkLimpiar";
-            this.linkLimpiar.Size = new System.Drawing.Size(40, 13);
+            this.linkLimpiar.Size = new System.Drawing.Size(51, 16);
             this.linkLimpiar.TabIndex = 178;
             this.linkLimpiar.TabStop = true;
             this.linkLimpiar.Text = "Limpiar";
@@ -431,10 +431,10 @@
             // 
             // JSSPORTADA
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(425, 521);
+            this.ClientSize = new System.Drawing.Size(567, 641);
             this.Controls.Add(this.linkLimpiar);
             this.Controls.Add(this.dtpJss);
             this.Controls.Add(this.materialLabel5);
@@ -455,7 +455,7 @@
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.btnCrear);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "JSSPORTADA";
             this.Text = "JSSPORTADA";
             this.ResumeLayout(false);
