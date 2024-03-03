@@ -18,76 +18,78 @@ namespace TF.WIN
         public REBA_PORTADA()
         {
             InitializeComponent();
+            dtpReba.Value = DateTime.Now;
         }
+
+        public static int IdEmpresa { get; set; }
 
         private void btnBuscarCUIT_Click(object sender, EventArgs e)
         {
             frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
+            EmpleadosBC oEmpleadosBC = new EmpleadosBC();
             oFrm.ShowDialog();
 
             if (oFrm.EmpresaSeleccionada != null)
             {
                 txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
                 txtNombreEmpresaReba.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
+                long CUIT = Convert.ToInt64(txtCUITEncontrado.Text);
+                var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIT);
+                IdEmpresa = Convert.ToInt32(BuscarId);
             }
-
-
         }
 
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
-
-            frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
-            oFrm.ShowDialog();
-
-            if (oFrm.EmpleadoSeleccionado2 != null)
+            if (txtCUITEncontrado.Text == string.Empty)
+                MessageBox.Show("Tiene que Ingresar una Empresa antes");
+            else
             {
-                txtDniEmpleadoReba.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
-                txtNombreEmpleadoReba.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
-                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
+                try
+                {
+                    frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
+                    oFrm.ShowDialog();
+
+                    if (oFrm.EmpleadoSeleccionado2 != null)
+                    {
+                        txtDniEmpleadoReba.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
+                        txtNombreEmpleadoReba.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
+                        txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
+                    }
+                }
+                catch { }
             }
-
-
-            //FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
-            //oFrm.ShowDialog();
-
-            //if (oFrm.PersonaSeleccionada != null)
-            //{
-            //    txtDniEmpleadoReba.Text = oFrm.PersonaSeleccionada.DNI.ToString();
-
-            //    txtNombreEmpleadoReba.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
-
-            //    txtpuestotrabajoencontrado.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
-
-            //}
-
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            Reba oReba = new Reba();
-            RebaBC oRebaBC = new RebaBC();
-            oReba.CUITReba = txtCUITEncontrado.Text;
-            oReba.PuestoDeTrabajoReba = txtpuestotrabajoencontrado.Text;
-            oReba.DniEmpleadoReba = txtDniEmpleadoReba.Text;
-            oReba.EmpleadoReba = txtNombreEmpleadoReba.Text;
-            oReba.EmpresaReba = txtNombreEmpresaReba.Text;
-            oReba.FechaCargaReba = DateTime.Parse(dtpReba.Text);
+            if (txtDniEmpleadoReba.Text != string.Empty)
+            {
+                Reba oReba = new Reba();
+                RebaBC oRebaBC = new RebaBC();
+                oReba.CUITReba = txtCUITEncontrado.Text;
+                oReba.PuestoDeTrabajoReba = txtpuestotrabajoencontrado.Text;
+                oReba.DniEmpleadoReba = txtDniEmpleadoReba.Text;
+                oReba.EmpleadoReba = txtNombreEmpleadoReba.Text;
+                oReba.EmpresaReba = txtNombreEmpresaReba.Text;
+                oReba.FechaCargaReba = DateTime.Parse(dtpReba.Text);
+                var res = oRebaBC.InsertRebaPORTADABC(oReba);
+                //MessageBox.Show("Analisis REBA creado con éxito");
+                Limpiar();
+                // Pasar el ID de carga al siguiente formulario
+                REBA1 OREBA1 = new REBA1();
+                AddOwnedForm(OREBA1);
+                OREBA1.TopLevel = false;
+                OREBA1.Dock = DockStyle.Fill;
+                this.Controls.Add(OREBA1);
+                this.Tag = OREBA1;
+                OREBA1.BringToFront();
+                OREBA1.Show();
 
-            var res = oRebaBC.InsertRebaPORTADABC(oReba);
-            MessageBox.Show("Analisis REBA creado con éxito");
-
-            // Pasar el ID de carga al siguiente formulario
-            REBA1 OREBA1 = new REBA1();
-            AddOwnedForm(OREBA1);
-            OREBA1.TopLevel = false;
-            OREBA1.Dock = DockStyle.Fill;
-            this.Controls.Add(OREBA1);
-            this.Tag = OREBA1;
-            OREBA1.BringToFront();
-            OREBA1.Show();
-
-            //this.Close();
+                //this.Close();
+            }
+            else
+                MessageBox.Show("Debe ingresar datos de Empresa, Empleado y Puesto previamente");
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
@@ -95,9 +97,19 @@ namespace TF.WIN
             Close();
         }
 
-        private void REBA_PORTADA_Load(object sender, EventArgs e)
+        private void Limpiar()
         {
+            txtCUITEncontrado.Text = string.Empty;
+            txtNombreEmpresaReba.Text = string.Empty;
+            txtDniEmpleadoReba.Text = string.Empty;
+            txtNombreEmpleadoReba.Text = string.Empty;
+            txtpuestotrabajoencontrado.Text = string.Empty;
+            dtpReba.Text = string.Empty;
+        }
 
+        private void linkLimpiar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Limpiar();
         }
     }
 }

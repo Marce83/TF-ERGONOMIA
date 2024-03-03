@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TF.BC;
+using TF.ENTITIES;
 
 namespace TF.WIN
 {
@@ -15,31 +17,46 @@ namespace TF.WIN
         public FrmLMCPortada()
         {
             InitializeComponent();
+            dtpReba.Value = DateTime.Now;
         }
+
+        public static int IdEmpresa { get; set; }
 
         private void btnBuscarCUIT_Click(object sender, EventArgs e)
         {
             frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
             oFrm.ShowDialog();
+            EmpleadosBC oEmpleadosBC = new EmpleadosBC();
 
             if (oFrm.EmpresaSeleccionada != null)
             {
                 txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
                 txtNombreEmpresaReba.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
+                long CUIT = Convert.ToInt64(txtCUITEncontrado.Text);
+                var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIT);
+                IdEmpresa = Convert.ToInt32(BuscarId);
             }
         }
 
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
-
-            frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
-            oFrm.ShowDialog();
-
-            if (oFrm.EmpleadoSeleccionado2 != null)
+            if (txtCUITEncontrado.Text == string.Empty)
+                MessageBox.Show("Tiene que Ingresar una Empresa antes");
+            else
             {
-                txtDniEmpleadoReba.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
-                txtNombreEmpleadoReba.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
-                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
+                try
+                {
+                    frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
+                    oFrm.ShowDialog();
+
+                    if (oFrm.EmpleadoSeleccionado2 != null)
+                    {
+                        txtDniEmpleadoReba.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
+                        txtNombreEmpleadoReba.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
+                        txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
+                    }
+                }
+                catch { }
             }
         }
 
@@ -50,20 +67,41 @@ namespace TF.WIN
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Analisis LMC creado con éxito");
-            NIOSH1 ONIOSH1 = new NIOSH1();
-            AddOwnedForm(ONIOSH1);
-            ONIOSH1.TopLevel = false;
-            ONIOSH1.Dock = DockStyle.Fill;
-            this.Controls.Add(ONIOSH1);
-            this.Tag = ONIOSH1;
-            ONIOSH1.BringToFront();
-            ONIOSH1.Show();
+            if (txtDniEmpleadoReba.Text != string.Empty)
+            {
+                Limpiar();
+                //MessageBox.Show("Analisis LMC creado con éxito");
+                NIOSH1 ONIOSH1 = new NIOSH1();
+                AddOwnedForm(ONIOSH1);
+                ONIOSH1.TopLevel = false;
+                ONIOSH1.Dock = DockStyle.Fill;
+                this.Controls.Add(ONIOSH1);
+                this.Tag = ONIOSH1;
+                ONIOSH1.BringToFront();
+                ONIOSH1.Show();
+            }
+            else
+                MessageBox.Show("Debe ingresar datos de Empresa, Empleado y Puesto previamente");
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Limpiar()
+        {
+            txtCUITEncontrado.Text = string.Empty;
+            txtNombreEmpresaReba.Text = string.Empty;
+            txtDniEmpleadoReba.Text = string.Empty;
+            txtNombreEmpleadoReba.Text = string.Empty;
+            txtpuestotrabajoencontrado.Text = string.Empty;
+            dtpReba.Text = string.Empty;
+        }
+
+        private void linkLimpiar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Limpiar();
         }
     }
 }

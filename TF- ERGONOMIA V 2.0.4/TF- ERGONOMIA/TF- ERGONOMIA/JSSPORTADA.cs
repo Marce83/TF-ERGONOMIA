@@ -17,51 +17,47 @@ namespace TF.WIN
         public JSSPORTADA()
         {
             InitializeComponent();
+            dtpJss.Value = DateTime.Now;
         }
+
+        public static int IdEmpresa { get; set; }
 
         private void btnBuscarCUIT_Click(object sender, EventArgs e)
         {
             frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
             oFrm.ShowDialog();
+            EmpleadosBC oEmpleadosBC = new EmpleadosBC();
 
             if (oFrm.EmpresaSeleccionada != null)
             {
                 txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
-                txtNombreEmpresaNiosh.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
+                txtNombreEmpresaJss.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
+                long CUIT = Convert.ToInt64(txtCUITEncontrado.Text);
+                var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIT);
+                IdEmpresa = Convert.ToInt32(BuscarId);
             }
         }
 
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
         {
-
-            frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
-            oFrm.ShowDialog();
-
-            if (oFrm.EmpleadoSeleccionado2 != null)
+            if (txtCUITEncontrado.Text == string.Empty)
+                MessageBox.Show("Tiene que Ingresar una Empresa antes");
+            else
             {
-                txtDniEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
-                txtNombreEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
-                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
+                try
+                {
+                    frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
+                    oFrm.ShowDialog();
+
+                    if (oFrm.EmpleadoSeleccionado2 != null)
+                    {
+                        txtDniEmpleadoJss.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
+                        txtNombreEmpleadoJss.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
+                        txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
+                    }
+                }
+                catch { }
             }
-
-
-            //FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
-            //oFrm.ShowDialog();
-
-            //if (oFrm.PersonaSeleccionada != null)
-            //{
-            //    txtDniEmpleadoNiosh.Text = oFrm.PersonaSeleccionada.DNI.ToString();
-            //    txtNombreEmpleadoNiosh.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
-            //    txtpuestotrabajoencontrado.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
-
-
-            //}
-
-            //if (oFrm.EmpleadoSeleccionado != null)
-            //{
-            //    //txtNombreEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado.Apellido.ToString() + " " + oFrm.EmpleadoSeleccionado.Nombre.ToString();
-
-            //}
         }
 
         private void btnBuscarpuesto_Click(object sender, EventArgs e)
@@ -71,33 +67,52 @@ namespace TF.WIN
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            jss Ojss = new jss();
-            JssBC oJssBC = new JssBC();
-            Ojss.CUITJSS = txtCUITEncontrado.Text;
-            Ojss.PuestoDeTrabajoJSS = txtpuestotrabajoencontrado.Text;
-            Ojss.DniEmpleadoJSS = txtDniEmpleadoNiosh.Text;
-            Ojss.EmpleadoJSS = txtNombreEmpleadoNiosh.Text;
-            Ojss.EmpresaJSS = txtNombreEmpresaNiosh.Text;
-            Ojss.FechaCargaJss = DateTime.Parse(dtpJss.Text);
-            var res = oJssBC.InserJssPORTADABC(Ojss);
-            MessageBox.Show("Análisis JSS creado con éxito");
-
-            // Pasar el ID de carga al siguiente formulario
-
-            this.Close();
-            JSS OJSS = new JSS();
-            AddOwnedForm(OJSS);
-            OJSS.TopLevel = false;
-            OJSS.Dock = DockStyle.Fill;
-            this.Controls.Add(OJSS);
-            this.Tag = OJSS;
-            OJSS.BringToFront();
-            OJSS.Show();
+            if (txtDniEmpleadoJss.Text != string.Empty)
+            {
+                jss Ojss = new jss();
+                JssBC oJssBC = new JssBC();
+                Ojss.CUITJSS = txtCUITEncontrado.Text;
+                Ojss.PuestoDeTrabajoJSS = txtpuestotrabajoencontrado.Text;
+                Ojss.DniEmpleadoJSS = txtDniEmpleadoJss.Text;
+                Ojss.EmpleadoJSS = txtNombreEmpleadoJss.Text;
+                Ojss.EmpresaJSS = txtNombreEmpresaJss.Text;
+                Ojss.FechaCargaJss = DateTime.Parse(dtpJss.Text);
+                var res = oJssBC.InserJssPORTADABC(Ojss);
+                //MessageBox.Show("Análisis JSS creado con éxito");
+                Limpiar();
+                // Pasar el ID de carga al siguiente formulario
+                this.Close();
+                JSS OJSS = new JSS();
+                AddOwnedForm(OJSS);
+                OJSS.TopLevel = false;
+                OJSS.Dock = DockStyle.Fill;
+                this.Controls.Add(OJSS);
+                this.Tag = OJSS;
+                OJSS.BringToFront();
+                OJSS.Show();
+            }
+            else
+                MessageBox.Show("Debe ingresar datos de Empresa, Empleado y Puesto previamente");
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Limpiar()
+        {
+            txtCUITEncontrado.Text = string.Empty;
+            txtNombreEmpresaJss.Text = string.Empty;
+            txtDniEmpleadoJss.Text = string.Empty;
+            txtNombreEmpleadoJss.Text = string.Empty;
+            txtpuestotrabajoencontrado.Text = string.Empty;
+            dtpJss.Text = string.Empty;
+        }
+
+        private void linkLimpiar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Limpiar();
         }
     }
 }

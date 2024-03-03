@@ -275,7 +275,7 @@ namespace TF.DAC
             sqlCnn.Close();
             return count > 0;
         }
-        public Empleados EmpleadosConPuestoDAC(int DNI)
+        public Empleados EmpleadosConPuestoDAC(PuestoTrabajo oBe)
         {
             Empleados oEmpleados = new Empleados();
             string sqlSentencia = "SP_Empleados_Conpuestoscargado";
@@ -283,7 +283,8 @@ namespace TF.DAC
             sqlCnn.ConnectionString = conectionString;
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
             sqlComm.CommandType = CommandType.StoredProcedure;
-            sqlComm.Parameters.Add("@DNI", SqlDbType.NVarChar).Value = DNI;
+            sqlComm.Parameters.Add("@DNI", SqlDbType.NVarChar).Value = oBe.DNI;
+            sqlComm.Parameters.Add("@NombrePuesto", SqlDbType.NVarChar).Value = oBe.NombrePuesto;
             sqlCnn.Open();
 
             SqlDataReader dr = sqlComm.ExecuteReader();

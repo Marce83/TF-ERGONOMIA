@@ -33,6 +33,8 @@ namespace TF.WIN
         }
 
         public Empleados EmpleadoSeleccionado2 { get; set; }
+        PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
+        PuestoTrabajo oPuestoTrabajo = new PuestoTrabajo();
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -47,14 +49,46 @@ namespace TF.WIN
         }
         private void Listar()
         {
-            PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
-            PuestoTrabajo oPuestoTrabajo = new PuestoTrabajo();
             try
             {
-                oPuestoTrabajo.IdEmpresa = RULA_PORTADA.IdEmpresa;
-                DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
-                dgvResultado.DataSource = null;
-                dgvResultado.DataSource = dt;
+                if(RULA_PORTADA.IdEmpresa != 0) 
+                {
+                    oPuestoTrabajo.IdEmpresa = RULA_PORTADA.IdEmpresa;
+                    DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
+                    dgvResultado.DataSource = null;
+                    dgvResultado.DataSource = dt;
+                }
+                else
+                    if(REBA_PORTADA.IdEmpresa!= 0)
+                {
+                        oPuestoTrabajo.IdEmpresa = REBA_PORTADA.IdEmpresa;
+                        DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
+                        dgvResultado.DataSource = null;
+                        dgvResultado.DataSource = dt;
+                }
+                    else
+                        if(NIOSHPORTADA.IdEmpresa != 0)
+                    {
+                            oPuestoTrabajo.IdEmpresa = NIOSHPORTADA.IdEmpresa;
+                            DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
+                            dgvResultado.DataSource = null;
+                            dgvResultado.DataSource = dt;
+                    }
+                        else
+                            if(JSSPORTADA.IdEmpresa != 0)
+                        {
+                                oPuestoTrabajo.IdEmpresa = JSSPORTADA.IdEmpresa;
+                                DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
+                                dgvResultado.DataSource = null;
+                                dgvResultado.DataSource = dt;
+                        }
+                            else
+                            {
+                                oPuestoTrabajo.IdEmpresa = FrmLMCPortada.IdEmpresa;
+                                DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
+                                dgvResultado.DataSource = null;
+                                dgvResultado.DataSource = dt;
+                            }
             }
             catch (Exception ex)
             {
@@ -65,16 +99,17 @@ namespace TF.WIN
         {
             if (dgvResultado.SelectedRows.Count == 1) // BUSQUEDA DE EMPLEADOS 
             {
-                int DNI = Convert.ToInt32(dgvResultado.CurrentRow.Cells[1].Value);
+                //int DNI = Convert.ToInt32(dgvResultado.CurrentRow.Cells[1].Value);
+                oPuestoTrabajo.DNI = dgvResultado.CurrentRow.Cells[1].Value.ToString();
+                oPuestoTrabajo.NombrePuesto = dgvResultado.CurrentRow.Cells[2].Value.ToString();
                 EmpleadosBC oEmpleadosBC = new EmpleadosBC();
-                EmpleadoSeleccionado2 = oEmpleadosBC.EmpleadosConPuestoBC(DNI);
+                EmpleadoSeleccionado2 = oEmpleadosBC.EmpleadosConPuestoBC(oPuestoTrabajo);
                 this.Close();
             }
             else
             {
                 MessageBox.Show("Aun no ha seleccionado Ningun Empleado");
             }
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

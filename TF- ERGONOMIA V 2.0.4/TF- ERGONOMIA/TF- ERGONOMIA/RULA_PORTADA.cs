@@ -74,16 +74,6 @@ namespace TF.WIN
                         txtNombreEmpleadoRula.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
                         txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
                     }
-
-                    //FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
-                    //oFrm.ShowDialog();
-
-                    //if (oFrm.PersonaSeleccionada != null)
-                    //{
-                    //    txtDniEmpleadoRula.Text = oFrm.PersonaSeleccionada.DNI.ToString();
-                    //    txtNombreEmpleadoRula.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
-                    //    txtpuestotrabajoencontrado.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
-                    //}
                 }
                 catch { }
             }

@@ -46,6 +46,7 @@
             this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.btnCrear = new System.Windows.Forms.Button();
+            this.linkLimpiar = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // dtpReba
@@ -103,7 +104,7 @@
             this.txtNombreEmpleadoReba.HideSelection = true;
             this.txtNombreEmpleadoReba.LeadingIcon = null;
             this.txtNombreEmpleadoReba.Location = new System.Drawing.Point(168, 224);
-            this.txtNombreEmpleadoReba.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreEmpleadoReba.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreEmpleadoReba.MaxLength = 32767;
             this.txtNombreEmpleadoReba.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreEmpleadoReba.Name = "txtNombreEmpleadoReba";
@@ -151,7 +152,7 @@
             this.txtNombreEmpresaReba.HideSelection = true;
             this.txtNombreEmpresaReba.LeadingIcon = null;
             this.txtNombreEmpresaReba.Location = new System.Drawing.Point(168, 102);
-            this.txtNombreEmpresaReba.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreEmpresaReba.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreEmpresaReba.MaxLength = 32767;
             this.txtNombreEmpresaReba.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreEmpresaReba.Name = "txtNombreEmpresaReba";
@@ -231,7 +232,7 @@
             this.txtpuestotrabajoencontrado.HideSelection = true;
             this.txtpuestotrabajoencontrado.LeadingIcon = null;
             this.txtpuestotrabajoencontrado.Location = new System.Drawing.Point(168, 289);
-            this.txtpuestotrabajoencontrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpuestotrabajoencontrado.Margin = new System.Windows.Forms.Padding(2);
             this.txtpuestotrabajoencontrado.MaxLength = 32767;
             this.txtpuestotrabajoencontrado.MouseState = MaterialSkin.MouseState.OUT;
             this.txtpuestotrabajoencontrado.Name = "txtpuestotrabajoencontrado";
@@ -296,7 +297,7 @@
             this.txtDniEmpleadoReba.HideSelection = true;
             this.txtDniEmpleadoReba.LeadingIcon = null;
             this.txtDniEmpleadoReba.Location = new System.Drawing.Point(168, 159);
-            this.txtDniEmpleadoReba.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDniEmpleadoReba.Margin = new System.Windows.Forms.Padding(2);
             this.txtDniEmpleadoReba.MaxLength = 32767;
             this.txtDniEmpleadoReba.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDniEmpleadoReba.Name = "txtDniEmpleadoReba";
@@ -361,7 +362,7 @@
             this.txtCUITEncontrado.HideSelection = true;
             this.txtCUITEncontrado.LeadingIcon = null;
             this.txtCUITEncontrado.Location = new System.Drawing.Point(168, 50);
-            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2);
             this.txtCUITEncontrado.MaxLength = 32767;
             this.txtCUITEncontrado.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCUITEncontrado.Name = "txtCUITEncontrado";
@@ -416,12 +417,25 @@
             this.btnCrear.UseVisualStyleBackColor = false;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
+            // linkLimpiar
+            // 
+            this.linkLimpiar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.linkLimpiar.AutoSize = true;
+            this.linkLimpiar.Location = new System.Drawing.Point(409, 390);
+            this.linkLimpiar.Name = "linkLimpiar";
+            this.linkLimpiar.Size = new System.Drawing.Size(40, 13);
+            this.linkLimpiar.TabIndex = 164;
+            this.linkLimpiar.TabStop = true;
+            this.linkLimpiar.Text = "Limpiar";
+            this.linkLimpiar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLimpiar_LinkClicked);
+            // 
             // FrmLMCPortada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(508, 473);
+            this.Controls.Add(this.linkLimpiar);
             this.Controls.Add(this.dtpReba);
             this.Controls.Add(this.materialLabel5);
             this.Controls.Add(this.materialLabel4);
@@ -441,7 +455,7 @@
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.btnCrear);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmLMCPortada";
             this.Text = "FrmLMCPortada";
             this.ResumeLayout(false);
@@ -469,5 +483,6 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtCUITEncontrado;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button btnCrear;
+        private System.Windows.Forms.LinkLabel linkLimpiar;
     }
 }

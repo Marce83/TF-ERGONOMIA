@@ -75,10 +75,10 @@ namespace TF.BC
                 throw new Exception("El empleado ya existe, por favor cargue otro.");
             }
         }
-        public Empleados EmpleadosConPuestoBC(int DNI)
+        public Empleados EmpleadosConPuestoBC(PuestoTrabajo oBe)
         {
             EmpleadosDAC oEmpleadosDAC = new EmpleadosDAC();
-            return oEmpleadosDAC.EmpleadosConPuestoDAC(DNI);
+            return oEmpleadosDAC.EmpleadosConPuestoDAC(oBe);
         }
 
 

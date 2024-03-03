@@ -17,7 +17,10 @@ namespace TF.WIN
         public NIOSHPORTADA()
         {
             InitializeComponent();
+            dtpNiosh.Value = DateTime.Now;
         }
+
+        public static int IdEmpresa { get; set; }
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
@@ -26,77 +29,90 @@ namespace TF.WIN
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            Niosh oNiosh = new Niosh();
-            NioshBC oNioshBC = new NioshBC();
-            oNiosh.CUITNiosh = txtCUITEncontrado.Text;
-            oNiosh.PuestoDeTrabajoNiosh = txtpuestotrabajoencontrado.Text;
-            oNiosh.DniEmpleadoNiosh = txtDniEmpleadoNiosh.Text;
-            oNiosh.EmpleadoNiosh = txtNombreEmpleadoNiosh.Text;
-            oNiosh.EmpresaNiosh = txtNombreEmpresaNiosh.Text;
-            oNiosh.FechaCargaNiosh = DateTime.Parse(dtpNiosh.Text);
-            var res = oNioshBC.InsertNioshPORTADABC(oNiosh);
-            MessageBox.Show("Análisis NIOSH creado con éxito");
-
-            // Pasar el ID de carga al siguiente formulario
-
-            //this.Close();
-
-
-            NIOSH1 ONIOSH1 = new NIOSH1();
-            AddOwnedForm(ONIOSH1);
-            ONIOSH1.TopLevel = false;
-            ONIOSH1.Dock = DockStyle.Fill;
-            this.Controls.Add(ONIOSH1);
-            this.Tag = ONIOSH1;
-            ONIOSH1.BringToFront();
-            ONIOSH1.Show();
+            if (txtDniEmpleadoNiosh.Text != string.Empty)
+            {
+                Niosh oNiosh = new Niosh();
+                NioshBC oNioshBC = new NioshBC();
+                oNiosh.CUITNiosh = txtCUITEncontrado.Text;
+                oNiosh.PuestoDeTrabajoNiosh = txtpuestotrabajoencontrado.Text;
+                oNiosh.DniEmpleadoNiosh = txtDniEmpleadoNiosh.Text;
+                oNiosh.EmpleadoNiosh = txtNombreEmpleadoNiosh.Text;
+                oNiosh.EmpresaNiosh = txtNombreEmpresaNiosh.Text;
+                oNiosh.FechaCargaNiosh = DateTime.Parse(dtpNiosh.Text);
+                var res = oNioshBC.InsertNioshPORTADABC(oNiosh);
+                //MessageBox.Show("Análisis NIOSH creado con éxito");
+                Limpiar();
+                // Pasar el ID de carga al siguiente formulario
+                //this.Close();
+                NIOSH1 ONIOSH1 = new NIOSH1();
+                AddOwnedForm(ONIOSH1);
+                ONIOSH1.TopLevel = false;
+                ONIOSH1.Dock = DockStyle.Fill;
+                this.Controls.Add(ONIOSH1);
+                this.Tag = ONIOSH1;
+                ONIOSH1.BringToFront();
+                ONIOSH1.Show();
+            }
+            else
+                MessageBox.Show("Debe ingresar datos de Empresa, Empleado y Puesto previamente");
         }
 
         private void btnBuscarCUIT_Click(object sender, EventArgs e)
         {
             frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
             oFrm.ShowDialog();
+            EmpleadosBC oEmpleadosBC = new EmpleadosBC();
 
             if (oFrm.EmpresaSeleccionada != null)
             {
                 txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
                 txtNombreEmpresaNiosh.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
+                long CUIT = Convert.ToInt64(txtCUITEncontrado.Text);
+                var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIT);
+                IdEmpresa = Convert.ToInt32(BuscarId);
             }
         }
 
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
-        {
-
-            frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
-            oFrm.ShowDialog();
-
-            if (oFrm.EmpleadoSeleccionado2 != null)
+        {           
+            if (txtCUITEncontrado.Text == string.Empty)
+                MessageBox.Show("Tiene que Ingresar una Empresa antes");
+            else
             {
-                txtDniEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
-                txtNombreEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
-                txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
+                try
+                {
+                    frmBuscarEmpleados2 oFrm = new frmBuscarEmpleados2();
+                    oFrm.ShowDialog();
+
+                    if (oFrm.EmpleadoSeleccionado2 != null)
+                    {
+                        txtDniEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado2.DNI.ToString();
+                        txtNombreEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado2.Nombre.ToString() + " " + oFrm.EmpleadoSeleccionado2.Apellido.ToString();
+                        txtpuestotrabajoencontrado.Text = oFrm.EmpleadoSeleccionado2.NombrePuesto.ToString();
+                    }
+                }
+                catch { }
             }
-
-            //FrmVistaPuestoEmpleado oFrm = new FrmVistaPuestoEmpleado();
-            //oFrm.ShowDialog();
-
-            //if (oFrm.PersonaSeleccionada != null)
-            //{
-            //    txtDniEmpleadoNiosh.Text = oFrm.PersonaSeleccionada.DNI.ToString();
-            //    txtNombreEmpleadoNiosh.Text = oFrm.PersonaSeleccionada.NombreEmpleado.ToString();
-            //    txtpuestotrabajoencontrado.Text = oFrm.PersonaSeleccionada.NombrePuesto.ToString();
-            //}
-
-            //if (oFrm.EmpleadoSeleccionado != null)
-            //{
-            //    txtNombreEmpleadoNiosh.Text = oFrm.EmpleadoSeleccionado.Apellido.ToString() + " " + oFrm.EmpleadoSeleccionado.Nombre.ToString();
-
-            //}
         }
 
         private void btnBuscarpuesto_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void Limpiar()
+        {
+            txtCUITEncontrado.Text = string.Empty;
+            txtNombreEmpresaNiosh.Text = string.Empty;
+            txtDniEmpleadoNiosh.Text = string.Empty;
+            txtNombreEmpleadoNiosh.Text = string.Empty;
+            txtpuestotrabajoencontrado.Text = string.Empty;
+            dtpNiosh.Text = string.Empty;
+        }
+
+        private void linkLimpiar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Limpiar();
         }
     }
 }
