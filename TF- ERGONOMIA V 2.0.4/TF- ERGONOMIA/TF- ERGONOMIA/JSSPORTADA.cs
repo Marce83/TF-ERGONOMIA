@@ -81,7 +81,6 @@ namespace TF.WIN
                 //MessageBox.Show("Análisis JSS creado con éxito");
                 Limpiar();
                 // Pasar el ID de carga al siguiente formulario
-                this.Close();
                 JSS OJSS = new JSS();
                 AddOwnedForm(OJSS);
                 OJSS.TopLevel = false;
