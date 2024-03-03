@@ -118,7 +118,7 @@
             this.btnBuscarEmpleados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarEmpleados.Location = new System.Drawing.Point(456, 197);
-            this.btnBuscarEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarEmpleados.Name = "btnBuscarEmpleados";
             this.btnBuscarEmpleados.Size = new System.Drawing.Size(76, 48);
             this.btnBuscarEmpleados.TabIndex = 135;
@@ -133,7 +133,7 @@
             this.materialLabel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(19, 210);
+            this.materialLabel1.Location = new System.Drawing.Point(19, 213);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(27, 19);
@@ -183,7 +183,7 @@
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarCUIT.Location = new System.Drawing.Point(456, 63);
-            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
             this.btnBuscarCUIT.Size = new System.Drawing.Size(76, 48);
             this.btnBuscarCUIT.TabIndex = 132;
@@ -198,7 +198,7 @@
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(24, 74);
+            this.materialLabel11.Location = new System.Drawing.Point(19, 79);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(35, 19);
@@ -248,8 +248,8 @@
             this.BtnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.Location = new System.Drawing.Point(23, 512);
-            this.BtnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnSalir.Location = new System.Drawing.Point(22, 512);
+            this.BtnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(155, 49);
             this.BtnSalir.TabIndex = 129;
@@ -268,7 +268,7 @@
             this.btnCrear.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCrear.Location = new System.Drawing.Point(377, 512);
-            this.btnCrear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(155, 49);
             this.btnCrear.TabIndex = 128;
@@ -375,7 +375,7 @@
             this.dtpReba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpReba.CustomFormat = "";
             this.dtpReba.Location = new System.Drawing.Point(172, 452);
-            this.dtpReba.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpReba.Margin = new System.Windows.Forms.Padding(4);
             this.dtpReba.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpReba.Name = "dtpReba";
             this.dtpReba.Size = new System.Drawing.Size(276, 22);

@@ -153,7 +153,7 @@
             this.btnBuscarpuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarpuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarpuesto.Location = new System.Drawing.Point(465, 345);
-            this.btnBuscarpuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarpuesto.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarpuesto.Name = "btnBuscarpuesto";
             this.btnBuscarpuesto.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarpuesto.TabIndex = 155;
@@ -182,7 +182,7 @@
             this.materialLabel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(33, 364);
+            this.materialLabel2.Location = new System.Drawing.Point(25, 366);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(61, 19);
@@ -232,7 +232,7 @@
             this.btnBuscarEmpleados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarEmpleados.Location = new System.Drawing.Point(473, 217);
-            this.btnBuscarEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarEmpleados.Name = "btnBuscarEmpleados";
             this.btnBuscarEmpleados.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarEmpleados.TabIndex = 151;
@@ -247,7 +247,7 @@
             this.materialLabel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(33, 236);
+            this.materialLabel1.Location = new System.Drawing.Point(25, 238);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(27, 19);
@@ -297,7 +297,7 @@
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarCUIT.Location = new System.Drawing.Point(473, 89);
-            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
             this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarCUIT.TabIndex = 148;
@@ -312,7 +312,7 @@
             this.materialLabel11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(33, 105);
+            this.materialLabel11.Location = new System.Drawing.Point(25, 100);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(35, 19);
@@ -362,8 +362,8 @@
             this.BtnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.BtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalir.Location = new System.Drawing.Point(37, 500);
-            this.BtnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnSalir.Location = new System.Drawing.Point(18, 500);
+            this.BtnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(155, 49);
             this.BtnSalir.TabIndex = 145;
@@ -382,7 +382,7 @@
             this.btnCrear.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCrear.Location = new System.Drawing.Point(399, 500);
-            this.btnCrear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(155, 49);
             this.btnCrear.TabIndex = 144;
@@ -395,7 +395,7 @@
             this.dtpNiosh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpNiosh.CustomFormat = "";
             this.dtpNiosh.Location = new System.Drawing.Point(181, 439);
-            this.dtpNiosh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpNiosh.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNiosh.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpNiosh.Name = "dtpNiosh";
             this.dtpNiosh.Size = new System.Drawing.Size(284, 22);
