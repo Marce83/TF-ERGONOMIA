@@ -110,9 +110,9 @@
             this.materialLabel3.Location = new System.Drawing.Point(19, 163);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(186, 19);
+            this.materialLabel3.Size = new System.Drawing.Size(84, 19);
             this.materialLabel3.TabIndex = 365;
-            this.materialLabel3.Text = "NOMBRE DEL EMPLEADO";
+            this.materialLabel3.Text = "EMPLEADO";
             // 
             // materialLabel2
             // 
@@ -124,9 +124,9 @@
             this.materialLabel2.Location = new System.Drawing.Point(20, 105);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(122, 19);
+            this.materialLabel2.Size = new System.Drawing.Size(61, 19);
             this.materialLabel2.TabIndex = 364;
-            this.materialLabel2.Text = "PRIMER PUESTO";
+            this.materialLabel2.Text = "PUESTO";
             // 
             // txtNombreEmpleado
             // 

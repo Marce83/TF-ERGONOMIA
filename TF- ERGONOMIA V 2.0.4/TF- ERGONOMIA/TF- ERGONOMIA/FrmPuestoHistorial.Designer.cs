@@ -84,7 +84,7 @@
             this.btnBuscarEmpleado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarEmpleado.Location = new System.Drawing.Point(928, 222);
-            this.btnBuscarEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarEmpleado.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarEmpleado.Name = "btnBuscarEmpleado";
             this.btnBuscarEmpleado.Size = new System.Drawing.Size(89, 48);
             this.btnBuscarEmpleado.TabIndex = 352;
@@ -96,7 +96,7 @@
             // 
             this.DtpFechahasta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.DtpFechahasta.Location = new System.Drawing.Point(316, 350);
-            this.DtpFechahasta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DtpFechahasta.Margin = new System.Windows.Forms.Padding(4);
             this.DtpFechahasta.Name = "DtpFechahasta";
             this.DtpFechahasta.Size = new System.Drawing.Size(303, 22);
             this.DtpFechahasta.TabIndex = 356;
@@ -105,7 +105,7 @@
             // 
             this.DtpFechadesde.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.DtpFechadesde.Location = new System.Drawing.Point(316, 289);
-            this.DtpFechadesde.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DtpFechadesde.Margin = new System.Windows.Forms.Padding(4);
             this.DtpFechadesde.Name = "DtpFechadesde";
             this.DtpFechadesde.Size = new System.Drawing.Size(303, 22);
             this.DtpFechadesde.TabIndex = 355;
@@ -178,10 +178,11 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(104, 412);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 59);
             this.button1.TabIndex = 362;
@@ -201,7 +202,7 @@
             this.btnBuscarresultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarresultado.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnBuscarresultado.Location = new System.Drawing.Point(789, 414);
-            this.btnBuscarresultado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarresultado.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarresultado.Name = "btnBuscarresultado";
             this.btnBuscarresultado.Size = new System.Drawing.Size(227, 59);
             this.btnBuscarresultado.TabIndex = 361;
@@ -216,7 +217,7 @@
             this.BarraTitulo.Controls.Add(this.btnCerrar);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1135, 65);
             this.BarraTitulo.TabIndex = 364;
@@ -240,7 +241,7 @@
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
             this.btnCerrar.Location = new System.Drawing.Point(1069, 15);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(33, 31);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -253,7 +254,7 @@
             this.DgvPuestosRecientes.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.DgvPuestosRecientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvPuestosRecientes.Location = new System.Drawing.Point(104, 502);
-            this.DgvPuestosRecientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DgvPuestosRecientes.Margin = new System.Windows.Forms.Padding(4);
             this.DgvPuestosRecientes.Name = "DgvPuestosRecientes";
             this.DgvPuestosRecientes.RowHeadersWidth = 51;
             this.DgvPuestosRecientes.Size = new System.Drawing.Size(913, 194);
@@ -271,7 +272,7 @@
             this.BtnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnImprimir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BtnImprimir.Location = new System.Drawing.Point(844, 736);
-            this.BtnImprimir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnImprimir.Margin = new System.Windows.Forms.Padding(4);
             this.BtnImprimir.Name = "BtnImprimir";
             this.BtnImprimir.Size = new System.Drawing.Size(173, 59);
             this.BtnImprimir.TabIndex = 366;
@@ -322,7 +323,7 @@
             this.BtnBuscarempresa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnBuscarempresa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnBuscarempresa.Location = new System.Drawing.Point(929, 89);
-            this.BtnBuscarempresa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnBuscarempresa.Margin = new System.Windows.Forms.Padding(4);
             this.BtnBuscarempresa.Name = "BtnBuscarempresa";
             this.BtnBuscarempresa.Size = new System.Drawing.Size(89, 48);
             this.BtnBuscarempresa.TabIndex = 368;
@@ -523,7 +524,7 @@
             this.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBorrar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnBorrar.Location = new System.Drawing.Point(888, 335);
-            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(128, 39);
             this.btnBorrar.TabIndex = 378;
@@ -562,7 +563,7 @@
             this.Controls.Add(this.btnBuscarEmpleado);
             this.Controls.Add(this.materialLabel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPuestoHistorial";
             this.Text = "FrmVistaPuestoEmpleadocs";
             this.BarraTitulo.ResumeLayout(false);

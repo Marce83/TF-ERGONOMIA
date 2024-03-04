@@ -65,6 +65,9 @@
             this.BtnEmpxProv = new System.Windows.Forms.Button();
             this.BtnEmpresaTipo = new System.Windows.Forms.Button();
             this.BtnEmplxGen = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -75,6 +78,9 @@
             this.panel9.SuspendLayout();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.panel8.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -83,11 +89,11 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(426, 13);
+            this.label1.Location = new System.Drawing.Point(321, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 38);
+            this.label1.Size = new System.Drawing.Size(464, 38);
             this.label1.TabIndex = 64;
-            this.label1.Text = "ESTADISTICAS";
+            this.label1.Text = "ESTADISTICAS GENERALES";
             // 
             // panel4
             // 
@@ -150,7 +156,7 @@
             this.panel6.Controls.Add(this.btnEmpleados);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.txtcontempleados);
-            this.panel6.Location = new System.Drawing.Point(269, 73);
+            this.panel6.Location = new System.Drawing.Point(425, 73);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(259, 135);
@@ -202,7 +208,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(13, 216);
+            this.panel1.Location = new System.Drawing.Point(13, 375);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1075, 57);
@@ -228,7 +234,7 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtNioshCont);
-            this.panel2.Location = new System.Drawing.Point(286, 281);
+            this.panel2.Location = new System.Drawing.Point(278, 440);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(259, 135);
@@ -283,7 +289,7 @@
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.txtRulaCont);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Location = new System.Drawing.Point(30, 281);
+            this.panel3.Location = new System.Drawing.Point(13, 440);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(248, 135);
@@ -338,7 +344,7 @@
             this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.txtjsscont);
-            this.panel5.Location = new System.Drawing.Point(810, 281);
+            this.panel5.Location = new System.Drawing.Point(829, 440);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(259, 135);
@@ -393,7 +399,7 @@
             this.panel7.Controls.Add(this.button4);
             this.panel7.Controls.Add(this.txtREBACont);
             this.panel7.Controls.Add(this.label10);
-            this.panel7.Location = new System.Drawing.Point(554, 281);
+            this.panel7.Location = new System.Drawing.Point(559, 440);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(248, 135);
@@ -448,7 +454,7 @@
             this.panel9.Controls.Add(this.button5);
             this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.TotalMetodo);
-            this.panel9.Location = new System.Drawing.Point(537, 73);
+            this.panel9.Location = new System.Drawing.Point(835, 73);
             this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(248, 135);
@@ -505,7 +511,7 @@
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1096, 65);
+            this.BarraTitulo.Size = new System.Drawing.Size(1095, 65);
             this.BarraTitulo.TabIndex = 100;
             // 
             // btnCerrar
@@ -525,17 +531,18 @@
             // 
             // BtnEmpxProv
             // 
-            this.BtnEmpxProv.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BtnEmpxProv.BackColor = System.Drawing.Color.Peru;
+            this.BtnEmpxProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.BtnEmpxProv.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEmpxProv.FlatAppearance.BorderSize = 0;
             this.BtnEmpxProv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BtnEmpxProv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEmpxProv.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEmpxProv.ForeColor = System.Drawing.Color.Transparent;
             this.BtnEmpxProv.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEmpxProv.Location = new System.Drawing.Point(793, 73);
+            this.BtnEmpxProv.Location = new System.Drawing.Point(17, 20);
             this.BtnEmpxProv.Margin = new System.Windows.Forms.Padding(4);
             this.BtnEmpxProv.Name = "BtnEmpxProv";
-            this.BtnEmpxProv.Size = new System.Drawing.Size(99, 135);
+            this.BtnEmpxProv.Size = new System.Drawing.Size(210, 97);
             this.BtnEmpxProv.TabIndex = 166;
             this.BtnEmpxProv.Text = "EMPRESAS POR PROVINCIAS";
             this.BtnEmpxProv.UseVisualStyleBackColor = false;
@@ -543,17 +550,17 @@
             // 
             // BtnEmpresaTipo
             // 
-            this.BtnEmpresaTipo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BtnEmpresaTipo.BackColor = System.Drawing.Color.Peru;
+            this.BtnEmpresaTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.BtnEmpresaTipo.FlatAppearance.BorderSize = 0;
             this.BtnEmpresaTipo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BtnEmpresaTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEmpresaTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEmpresaTipo.ForeColor = System.Drawing.Color.Transparent;
             this.BtnEmpresaTipo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEmpresaTipo.Location = new System.Drawing.Point(900, 73);
+            this.BtnEmpresaTipo.Location = new System.Drawing.Point(24, 20);
             this.BtnEmpresaTipo.Margin = new System.Windows.Forms.Padding(4);
             this.BtnEmpresaTipo.Name = "BtnEmpresaTipo";
-            this.BtnEmpresaTipo.Size = new System.Drawing.Size(81, 135);
+            this.BtnEmpresaTipo.Size = new System.Drawing.Size(210, 97);
             this.BtnEmpresaTipo.TabIndex = 167;
             this.BtnEmpresaTipo.Text = "TIPO DE EMPRESA";
             this.BtnEmpresaTipo.UseVisualStyleBackColor = false;
@@ -561,21 +568,54 @@
             // 
             // BtnEmplxGen
             // 
-            this.BtnEmplxGen.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BtnEmplxGen.BackColor = System.Drawing.Color.Peru;
+            this.BtnEmplxGen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
             this.BtnEmplxGen.FlatAppearance.BorderSize = 0;
             this.BtnEmplxGen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BtnEmplxGen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEmplxGen.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEmplxGen.ForeColor = System.Drawing.Color.Transparent;
             this.BtnEmplxGen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEmplxGen.Location = new System.Drawing.Point(989, 73);
+            this.BtnEmplxGen.Location = new System.Drawing.Point(17, 20);
             this.BtnEmplxGen.Margin = new System.Windows.Forms.Padding(4);
             this.BtnEmplxGen.Name = "BtnEmplxGen";
-            this.BtnEmplxGen.Size = new System.Drawing.Size(99, 135);
+            this.BtnEmplxGen.Size = new System.Drawing.Size(210, 97);
             this.BtnEmplxGen.TabIndex = 169;
             this.BtnEmplxGen.Text = "EMPLEADOS POR GENERO";
             this.BtnEmplxGen.UseVisualStyleBackColor = false;
             this.BtnEmplxGen.Click += new System.EventHandler(this.BtnEmplxGen_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.panel8.Controls.Add(this.BtnEmpxProv);
+            this.panel8.Location = new System.Drawing.Point(13, 232);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(248, 135);
+            this.panel8.TabIndex = 88;
+            // 
+            // panel10
+            // 
+            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.panel10.Controls.Add(this.BtnEmpresaTipo);
+            this.panel10.Location = new System.Drawing.Point(425, 232);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(259, 135);
+            this.panel10.TabIndex = 167;
+            // 
+            // panel11
+            // 
+            this.panel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
+            this.panel11.Controls.Add(this.BtnEmplxGen);
+            this.panel11.Location = new System.Drawing.Point(835, 232);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(248, 135);
+            this.panel11.TabIndex = 167;
             // 
             // frmEstadisticas
             // 
@@ -584,10 +624,10 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1096, 434);
-            this.Controls.Add(this.BtnEmplxGen);
-            this.Controls.Add(this.BtnEmpresaTipo);
-            this.Controls.Add(this.BtnEmpxProv);
+            this.ClientSize = new System.Drawing.Size(1095, 588);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel5);
@@ -621,6 +661,9 @@
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -663,5 +706,8 @@
         private System.Windows.Forms.Button BtnEmpresaTipo;
         private System.Windows.Forms.Button BtnEmplxGen;
         private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel11;
     }
 }
