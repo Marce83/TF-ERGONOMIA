@@ -388,6 +388,8 @@ namespace TF.WIN
 
                 //// Establece el formato de la serie
                 //series.Font = new Font("Arial", 10, FontStyle.Bold);
+                ChartHistogramaRula2.Titles.Clear();
+                ChartHistogramaRula2.Titles.Add("NUMERO DE ANALISIS EJECUTADOR POR NIVEL DE RIESGO");
             }
             catch (Exception ex)
             {
@@ -503,7 +505,7 @@ namespace TF.WIN
 
             // Agrega un título al gráfico de pastel
             chartPastelReba.Titles.Clear();
-            chartPastelReba.Titles.Add("Distribución de Riesgo por nivel");
+            chartPastelReba.Titles.Add("DISTRIBUCION DEL RIESGO POR NIVEL");
 
             // Establece el formato de la serie
             chartPastelReba.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
@@ -527,7 +529,7 @@ namespace TF.WIN
                 // Configura las series para un gráfico de barras
                 Series series = new Series();
                 series.ChartType = SeriesChartType.Column;
-                series.Name = "DISTRIBUCION DEL RIESGO POR ANALISIS REALIZADOS";
+                series.Name = "DISTRIBUCION DEL RIESGO POR NIVEL";
 
                 // Agrega las series al gráfico
                 ChartHistogramaReba2.Series.Add(series);
@@ -642,7 +644,7 @@ namespace TF.WIN
 
             // Agrega un título al gráfico de pastel
             chartPastelNiosh.Titles.Clear();
-            chartPastelNiosh.Titles.Add("Distribución de Riesgo por nivel");
+            chartPastelNiosh.Titles.Add("DISTRIBUCION POR NIVEL DE RIESGO");
 
             // Establece el formato de la serie
             chartPastelNiosh.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
@@ -707,7 +709,7 @@ namespace TF.WIN
                 // Configura las series para un gráfico de barras
                 Series series = new Series();
                 //series.ChartType = SeriesChartType.Bar;
-                series.Name = "DISTRIBUCION DEL RIESGO POR ANALISIS REALIZADO";
+                series.Name = "NUMERO DE METODOS REALIZADOS SEGUN EL NIVELD E RIESGO";
 
                 // Agrega las series al gráfico
                 ChartHistogramaNiosh2.Series.Add(series);
@@ -820,7 +822,7 @@ namespace TF.WIN
 
             // Agrega un título al gráfico de pastel
             chartPastelJss2.Titles.Clear();
-            chartPastelJss2.Titles.Add("Distribución de Riesgo por nivel");
+            chartPastelJss2.Titles.Add("DISTRIBUCION DE LOS NIVELES DE RIESGO");
 
             // Establece el formato de la serie
             chartPastelJss2.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
@@ -885,7 +887,7 @@ namespace TF.WIN
                 // Configura las series para un gráfico de barras
                 Series series = new Series();
                 //series.ChartType = SeriesChartType.Bar;
-                series.Name = "Analisis x Dia";
+                series.Name = "CANTIDAD DE ANALISIS POR NIVEL DE RIESGO";
 
                 // Agrega las series al gráfico
                 chartHistoJss2.Series.Add(series);
@@ -924,6 +926,9 @@ namespace TF.WIN
 
                 // Establece el formato de la serie
                 series.Font = new Font("Arial", 10, FontStyle.Bold);
+
+                chartHistoJss2.Titles.Clear();
+                chartHistoJss2.Titles.Add("ANALISIS EJECUTADOS POR NIVEL DE RIESGO");
             }
             catch (Exception ex)
             {
@@ -976,6 +981,9 @@ namespace TF.WIN
                 // Agrega un punto a la serie para cada provincia
                 ChartHistogramaRula3.Series[0].Points.AddXY(PuestoDeTrabajo, PuestoAnalizado) ;
             }
+            ChartHistogramaRula3.Titles.Clear();
+            ChartHistogramaRula3.Titles.Add("EMPLEADOS EN CADA PUESTO");
+
         }
         private void PuestoJSSPersonal()
         {
@@ -999,6 +1007,8 @@ namespace TF.WIN
                 // Agrega un punto a la serie para cada provincia
                 chartHistoJss3.Series[0].Points.AddXY(PuestoDeTrabajoJSS, PuestoAnalizado);
             }
+            chartHistoJss3.Titles.Clear();
+            chartHistoJss3.Titles.Add("EMPLEADOS EN CADA PUESTO");
         }
         private void PersonNioshPuesto()
         {
@@ -1022,6 +1032,11 @@ namespace TF.WIN
                 // Agrega un punto a la serie para cada provincia
                 ChartHistogramaNiosh3.Series[0].Points.AddXY(PuestoDeTrabajoNiosh, PuestoAnalizado);
             }
+            // Agrega un título al gráfico de pastel
+            ChartHistogramaNiosh3.Titles.Clear();
+            ChartHistogramaNiosh3.Titles.Add("EMPLEADOS EN CADA PUESTO");
+
+
         }
         private void PuestoRebaPerson()
         {
@@ -1045,6 +1060,9 @@ namespace TF.WIN
                 // Agrega un punto a la serie para cada provincia
                 ChartHistogramaReba3.Series[0].Points.AddXY(PuestoDeTrabajoReba, PuestoAnalizado);
             }
+            // Agrega un título al gráfico de pastel
+            ChartHistogramaReba3.Titles.Clear();
+            ChartHistogramaReba3.Titles.Add("EMPLEADOS EN CADA PUESTO");
         }
 
     }
