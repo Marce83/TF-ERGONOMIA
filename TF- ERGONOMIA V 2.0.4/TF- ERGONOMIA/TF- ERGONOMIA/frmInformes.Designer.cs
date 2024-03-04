@@ -41,7 +41,7 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(166, 9);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(479, 38);
             this.label1.TabIndex = 63;
@@ -56,7 +56,7 @@
             this.btnEstadisticageneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstadisticageneral.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEstadisticageneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstadisticageneral.Location = new System.Drawing.Point(253, 68);
+            this.btnEstadisticageneral.Location = new System.Drawing.Point(104, 61);
             this.btnEstadisticageneral.Margin = new System.Windows.Forms.Padding(4);
             this.btnEstadisticageneral.Name = "btnEstadisticageneral";
             this.btnEstadisticageneral.Size = new System.Drawing.Size(293, 71);
@@ -73,7 +73,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(253, 159);
+            this.button1.Location = new System.Drawing.Point(104, 152);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(293, 71);
@@ -90,7 +90,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(253, 249);
+            this.button2.Location = new System.Drawing.Point(104, 242);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(293, 71);
@@ -107,7 +107,7 @@
             this.btnAdmProy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdmProy.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAdmProy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmProy.Location = new System.Drawing.Point(253, 341);
+            this.btnAdmProy.Location = new System.Drawing.Point(104, 334);
             this.btnAdmProy.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdmProy.Name = "btnAdmProy";
             this.btnAdmProy.Size = new System.Drawing.Size(293, 71);
@@ -122,7 +122,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(793, 448);
+            this.ClientSize = new System.Drawing.Size(503, 429);
             this.Controls.Add(this.btnAdmProy);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

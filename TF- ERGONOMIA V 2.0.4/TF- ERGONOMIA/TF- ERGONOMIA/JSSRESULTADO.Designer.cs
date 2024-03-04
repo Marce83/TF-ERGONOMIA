@@ -291,9 +291,9 @@
             this.btnRecuperarCarga.Location = new System.Drawing.Point(941, 309);
             this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecuperarCarga.Name = "btnRecuperarCarga";
-            this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 43);
+            this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 54);
             this.btnRecuperarCarga.TabIndex = 291;
-            this.btnRecuperarCarga.Text = "Resultado";
+            this.btnRecuperarCarga.Text = "RESULTADO";
             this.btnRecuperarCarga.UseVisualStyleBackColor = false;
             this.btnRecuperarCarga.Click += new System.EventHandler(this.btnRecuperarCarga_Click);
             // 
@@ -606,38 +606,38 @@
             // btncerrar
             // 
             this.btncerrar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btncerrar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btncerrar.BackColor = System.Drawing.Color.Red;
             this.btncerrar.FlatAppearance.BorderSize = 0;
             this.btncerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncerrar.ForeColor = System.Drawing.Color.AliceBlue;
             this.btncerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncerrar.Location = new System.Drawing.Point(941, 409);
+            this.btncerrar.Location = new System.Drawing.Point(941, 439);
             this.btncerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(155, 43);
+            this.btncerrar.Size = new System.Drawing.Size(155, 59);
             this.btncerrar.TabIndex = 336;
-            this.btncerrar.Text = "Volver al Menu Principal";
+            this.btncerrar.Text = "SALIR";
             this.btncerrar.UseVisualStyleBackColor = false;
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // btnobtenerinforme
             // 
             this.btnobtenerinforme.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnobtenerinforme.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnobtenerinforme.BackColor = System.Drawing.Color.DarkGreen;
             this.btnobtenerinforme.FlatAppearance.BorderSize = 0;
             this.btnobtenerinforme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnobtenerinforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnobtenerinforme.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnobtenerinforme.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnobtenerinforme.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnobtenerinforme.Location = new System.Drawing.Point(941, 359);
+            this.btnobtenerinforme.Location = new System.Drawing.Point(941, 371);
             this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4);
             this.btnobtenerinforme.Name = "btnobtenerinforme";
-            this.btnobtenerinforme.Size = new System.Drawing.Size(155, 42);
+            this.btnobtenerinforme.Size = new System.Drawing.Size(155, 60);
             this.btnobtenerinforme.TabIndex = 337;
-            this.btnobtenerinforme.Text = "Obtener Informe";
+            this.btnobtenerinforme.Text = "EXPORTAR A PDF";
             this.btnobtenerinforme.UseVisualStyleBackColor = false;
             this.btnobtenerinforme.Click += new System.EventHandler(this.btnobtenerinforme_Click);
             // 

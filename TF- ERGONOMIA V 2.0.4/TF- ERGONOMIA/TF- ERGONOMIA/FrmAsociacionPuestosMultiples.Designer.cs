@@ -203,7 +203,7 @@
             // btnSalir
             // 
             this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSalir.BackColor = System.Drawing.Color.Red;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -215,7 +215,7 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(155, 59);
             this.btnSalir.TabIndex = 361;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
@@ -234,7 +234,7 @@
             this.btnCargarPuesto.Name = "btnCargarPuesto";
             this.btnCargarPuesto.Size = new System.Drawing.Size(155, 59);
             this.btnCargarPuesto.TabIndex = 360;
-            this.btnCargarPuesto.Text = "Cargar";
+            this.btnCargarPuesto.Text = "CARGAR";
             this.btnCargarPuesto.UseVisualStyleBackColor = false;
             this.btnCargarPuesto.Click += new System.EventHandler(this.btnCargarPuesto_Click);
             // 

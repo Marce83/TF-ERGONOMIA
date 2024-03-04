@@ -261,7 +261,7 @@
             // BtnSalir
             // 
             this.BtnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BtnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.BtnSalir.BackColor = System.Drawing.Color.Red;
             this.BtnSalir.FlatAppearance.BorderSize = 0;
             this.BtnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -271,7 +271,7 @@
             this.BtnSalir.Location = new System.Drawing.Point(22, 535);
             this.BtnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(155, 43);
+            this.BtnSalir.Size = new System.Drawing.Size(155, 56);
             this.BtnSalir.TabIndex = 117;
             this.BtnSalir.Text = "SALIR";
             this.BtnSalir.UseVisualStyleBackColor = false;
@@ -290,7 +290,7 @@
             this.btnCrear.Location = new System.Drawing.Point(442, 535);
             this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(155, 43);
+            this.btnCrear.Size = new System.Drawing.Size(155, 56);
             this.btnCrear.TabIndex = 116;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;

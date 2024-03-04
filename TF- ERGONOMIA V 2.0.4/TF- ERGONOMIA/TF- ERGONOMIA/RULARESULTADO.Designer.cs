@@ -148,12 +148,12 @@ namespace TF.WIN
             this.btnRecuperarCarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecuperarCarga.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnRecuperarCarga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecuperarCarga.Location = new System.Drawing.Point(1025, 318);
+            this.btnRecuperarCarga.Location = new System.Drawing.Point(1025, 308);
             this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecuperarCarga.Name = "btnRecuperarCarga";
-            this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 43);
+            this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 56);
             this.btnRecuperarCarga.TabIndex = 0;
-            this.btnRecuperarCarga.Text = "Resultado";
+            this.btnRecuperarCarga.Text = "RESULTADO";
             this.btnRecuperarCarga.UseVisualStyleBackColor = false;
             this.btnRecuperarCarga.Click += new System.EventHandler(this.btnRecuperarCarga_Click);
             // 
@@ -263,26 +263,26 @@ namespace TF.WIN
             // btnSalir
             // 
             this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSalir.BackColor = System.Drawing.Color.Red;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(1025, 481);
+            this.btnSalir.Location = new System.Drawing.Point(1025, 480);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(155, 43);
+            this.btnSalir.Size = new System.Drawing.Size(155, 56);
             this.btnSalir.TabIndex = 19;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnobtenerinforme
             // 
             this.btnobtenerinforme.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnobtenerinforme.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnobtenerinforme.BackColor = System.Drawing.Color.DarkGreen;
             this.btnobtenerinforme.FlatAppearance.BorderSize = 0;
             this.btnobtenerinforme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnobtenerinforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -292,9 +292,9 @@ namespace TF.WIN
             this.btnobtenerinforme.Location = new System.Drawing.Point(1025, 416);
             this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4);
             this.btnobtenerinforme.Name = "btnobtenerinforme";
-            this.btnobtenerinforme.Size = new System.Drawing.Size(155, 43);
+            this.btnobtenerinforme.Size = new System.Drawing.Size(155, 56);
             this.btnobtenerinforme.TabIndex = 17;
-            this.btnobtenerinforme.Text = "Obtener Informe";
+            this.btnobtenerinforme.Text = "EXPORTAR A PDF";
             this.btnobtenerinforme.UseVisualStyleBackColor = false;
             this.btnobtenerinforme.Click += new System.EventHandler(this.btnobtenerinforme_Click);
             // 

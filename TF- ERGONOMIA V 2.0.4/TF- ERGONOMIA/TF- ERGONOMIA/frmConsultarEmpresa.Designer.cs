@@ -659,7 +659,7 @@
             // btnBaja
             // 
             this.btnBaja.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnBaja.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnBaja.BackColor = System.Drawing.Color.Red;
             this.btnBaja.FlatAppearance.BorderSize = 0;
             this.btnBaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnBaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -672,7 +672,7 @@
             this.btnBaja.Name = "btnBaja";
             this.btnBaja.Size = new System.Drawing.Size(155, 60);
             this.btnBaja.TabIndex = 66;
-            this.btnBaja.Text = "Baja";
+            this.btnBaja.Text = "BAJA";
             this.btnBaja.UseVisualStyleBackColor = false;
             this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click);
             // 
@@ -692,7 +692,7 @@
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(155, 59);
             this.btnModificar.TabIndex = 65;
-            this.btnModificar.Text = "Modificar";
+            this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
@@ -784,11 +784,11 @@
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnBuscar.Location = new System.Drawing.Point(740, 31);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(163, 59);
             this.btnBuscar.TabIndex = 1;
-            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
@@ -801,7 +801,7 @@
             this.ClientSize = new System.Drawing.Size(1308, 761);
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmConsultarEmpresa";
             this.Text = "frmConsultarEmpresa";
             this.Load += new System.EventHandler(this.frmConsultarEmpresa_Load);

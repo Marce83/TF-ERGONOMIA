@@ -158,7 +158,7 @@
             // 
             // btnobtenerinforme
             // 
-            this.btnobtenerinforme.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnobtenerinforme.BackColor = System.Drawing.Color.DarkGreen;
             this.btnobtenerinforme.FlatAppearance.BorderSize = 0;
             this.btnobtenerinforme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnobtenerinforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -168,26 +168,26 @@
             this.btnobtenerinforme.Location = new System.Drawing.Point(953, 429);
             this.btnobtenerinforme.Margin = new System.Windows.Forms.Padding(4);
             this.btnobtenerinforme.Name = "btnobtenerinforme";
-            this.btnobtenerinforme.Size = new System.Drawing.Size(155, 43);
+            this.btnobtenerinforme.Size = new System.Drawing.Size(155, 55);
             this.btnobtenerinforme.TabIndex = 393;
-            this.btnobtenerinforme.Text = "Obtener Informe";
+            this.btnobtenerinforme.Text = "EXPORTAR A PDF";
             this.btnobtenerinforme.UseVisualStyleBackColor = false;
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSalir.BackColor = System.Drawing.Color.Red;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(953, 480);
+            this.btnSalir.Location = new System.Drawing.Point(953, 492);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(155, 43);
+            this.btnSalir.Size = new System.Drawing.Size(155, 56);
             this.btnSalir.TabIndex = 392;
-            this.btnSalir.Text = "Volver al Menu Principal";
+            this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
             // 
             // cboControl
@@ -1013,12 +1013,12 @@
             this.btnRecuperarCarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecuperarCarga.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnRecuperarCarga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecuperarCarga.Location = new System.Drawing.Point(953, 352);
+            this.btnRecuperarCarga.Location = new System.Drawing.Point(953, 347);
             this.btnRecuperarCarga.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecuperarCarga.Name = "btnRecuperarCarga";
-            this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 43);
+            this.btnRecuperarCarga.Size = new System.Drawing.Size(155, 48);
             this.btnRecuperarCarga.TabIndex = 352;
-            this.btnRecuperarCarga.Text = "Resultado";
+            this.btnRecuperarCarga.Text = "RESULTADO";
             this.btnRecuperarCarga.UseVisualStyleBackColor = false;
             // 
             // txtcargaidrebaresultado

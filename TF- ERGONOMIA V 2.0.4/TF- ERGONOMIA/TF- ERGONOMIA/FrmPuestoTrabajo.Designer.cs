@@ -105,26 +105,26 @@
             this.btnCargarPuesto.Name = "btnCargarPuesto";
             this.btnCargarPuesto.Size = new System.Drawing.Size(155, 60);
             this.btnCargarPuesto.TabIndex = 74;
-            this.btnCargarPuesto.Text = "Cargar";
+            this.btnCargarPuesto.Text = "CARGAR";
             this.btnCargarPuesto.UseVisualStyleBackColor = false;
             this.btnCargarPuesto.Click += new System.EventHandler(this.btnCargarPuesto_Click);
             // 
             // btnSalir
             // 
             this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSalir.BackColor = System.Drawing.Color.Red;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(764, 198);
+            this.btnSalir.Location = new System.Drawing.Point(764, 187);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(155, 60);
             this.btnSalir.TabIndex = 75;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
@@ -134,7 +134,7 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(75, 218);
+            this.materialLabel2.Location = new System.Drawing.Point(75, 207);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(163, 19);
@@ -169,7 +169,7 @@
             "Informática",
             "Mantenimiento",
             "Legales"});
-            this.CboAreaempresa.Location = new System.Drawing.Point(336, 198);
+            this.CboAreaempresa.Location = new System.Drawing.Point(336, 187);
             this.CboAreaempresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CboAreaempresa.MaxDropDownItems = 4;
             this.CboAreaempresa.MouseState = MaterialSkin.MouseState.OUT;
@@ -222,7 +222,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1000, 325);
+            this.ClientSize = new System.Drawing.Size(1000, 288);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.CboAreaempresa);
             this.Controls.Add(this.materialLabel2);
