@@ -42,19 +42,18 @@ namespace TF.WIN
             {
                 TxtCuitEmpresa.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
                 TxtNombreEmpresa.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
-
             }
         }
 
         private void btnBuscarEmpleado_Click(object sender, EventArgs e)
         {
-            FrmBuscarPuestoTrabajo oFrm = new FrmBuscarPuestoTrabajo();
-            oFrm.ShowDialog();
+            //FrmBuscarPuestoTrabajo oFrm = new FrmBuscarPuestoTrabajo();
+            //oFrm.ShowDialog();
 
-            if (oFrm.PuestoSeleccionada != null)
-            {
-              txtNombrePuesto.Text = oFrm.PuestoSeleccionada.NombrePuesto.ToString();
-            }
+            //if (oFrm.PuestoSeleccionada != null)
+            //{
+            //  txtNombrePuesto.Text = oFrm.PuestoSeleccionada.NombrePuesto.ToString();
+            //}
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -69,7 +68,6 @@ namespace TF.WIN
                 PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
                 PuestoTrabajo oPuestoTrabajo = new PuestoTrabajo();
                 oPuestoTrabajo.CUITEMPRESAPUESTO = TxtCuitEmpresa.Text;
-                oPuestoTrabajo.NombrePuesto = txtNombrePuesto.Text;
                 DataTable dt18000= oPuestoTrabajoBC.EmpleadoPuestoVerRecienteBC(oPuestoTrabajo);
                 DgvPuestosRecientes.DataSource = null;
                 DgvPuestosRecientes.DataSource = dt18000;

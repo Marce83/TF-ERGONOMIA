@@ -218,7 +218,6 @@ namespace TF.DAC
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);
             sqlComm.CommandType = CommandType.StoredProcedure;
             sqlComm.Parameters.Add("@CuitEmpresa", SqlDbType.NVarChar).Value = oPuestoTrabajo.CUITEMPRESAPUESTO.ToString();
-            sqlComm.Parameters.Add("@NombrePuesto", SqlDbType.NVarChar).Value = oPuestoTrabajo.NombrePuesto.ToString();
             sqlCnn.Open();
             DataSet ds = new DataSet();
             SqlDataAdapter DA = new SqlDataAdapter();
