@@ -253,6 +253,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -311,7 +312,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialTextBox2 TxtNombreEmpresa;
         private MaterialSkin.Controls.MaterialTextBox2 TxtCuitEmpresa;
-        private System.Windows.Forms.ComboBox cboBuscadorDinamico;
+      //  private System.Windows.Forms.ComboBox cboBuscadorDinamico;
         private System.Windows.Forms.Button BtnBuscarempresa;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private System.Windows.Forms.DataGridView DgvPuestosRecientes;

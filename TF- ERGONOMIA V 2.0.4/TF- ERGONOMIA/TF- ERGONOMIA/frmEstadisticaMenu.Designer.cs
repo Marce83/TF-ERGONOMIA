@@ -106,6 +106,6 @@
         private System.Windows.Forms.Button btnEstidisticaparticular;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnEstadisticageneral;
-        private System.Windows.Forms.Panel PanelConector;
+        //private System.Windows.Forms.Panel PanelConector;
     }
 }
