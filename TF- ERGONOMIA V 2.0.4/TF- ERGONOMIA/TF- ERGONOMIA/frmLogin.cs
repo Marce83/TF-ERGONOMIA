@@ -1,4 +1,5 @@
-﻿using MaterialSkin.Controls;
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -59,8 +60,11 @@ namespace TF.WIN
         }
         private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && !(char.IsNumber(e.KeyChar)))
-                e.Handled = true;
+            if (e.KeyChar == (char)(Keys.Enter))
+            {
+                e.Handled = true; // Esto evita el sonido predeterminado
+                btnIniciar_Click(sender, e); // Llama al evento Click del botón
+            }
         }
 
         private void btnIniciar_Click(object sender, EventArgs e)

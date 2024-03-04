@@ -126,6 +126,7 @@ namespace TF.WIN
             this.txtClave.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtClave.TrailingIcon = null;
             this.txtClave.UseSystemPasswordChar = false;
+            this.txtClave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             // 
             // pictureBox2
             // 
@@ -327,6 +328,7 @@ namespace TF.WIN
             this.btnIniciar.Text = "ACCEDER";
             this.btnIniciar.UseVisualStyleBackColor = false;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            this.btnIniciar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             // 
             // frmLogin
             // 

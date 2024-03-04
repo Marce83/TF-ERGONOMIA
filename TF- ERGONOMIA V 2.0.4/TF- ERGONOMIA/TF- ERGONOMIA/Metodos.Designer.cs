@@ -48,6 +48,7 @@
             this.btnRula.FlatAppearance.BorderSize = 0;
             this.btnRula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnRula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRula.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnRula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRula.Location = new System.Drawing.Point(37, 69);
@@ -78,6 +79,7 @@
             this.btnResultado.FlatAppearance.BorderSize = 0;
             this.btnResultado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnResultado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResultado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnResultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnResultado.Location = new System.Drawing.Point(294, 69);
@@ -96,6 +98,7 @@
             this.btnRebaResultado.FlatAppearance.BorderSize = 0;
             this.btnRebaResultado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnRebaResultado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRebaResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRebaResultado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnRebaResultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRebaResultado.Location = new System.Drawing.Point(294, 151);
@@ -114,6 +117,7 @@
             this.btnReba.FlatAppearance.BorderSize = 0;
             this.btnReba.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnReba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReba.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReba.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnReba.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReba.Location = new System.Drawing.Point(37, 151);
@@ -132,6 +136,7 @@
             this.btnNioshResultado.FlatAppearance.BorderSize = 0;
             this.btnNioshResultado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnNioshResultado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNioshResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNioshResultado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnNioshResultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNioshResultado.Location = new System.Drawing.Point(295, 234);
@@ -150,6 +155,7 @@
             this.btnNiosh.FlatAppearance.BorderSize = 0;
             this.btnNiosh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnNiosh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNiosh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNiosh.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnNiosh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNiosh.Location = new System.Drawing.Point(37, 234);
@@ -168,6 +174,7 @@
             this.JSSRESULTADO.FlatAppearance.BorderSize = 0;
             this.JSSRESULTADO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.JSSRESULTADO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.JSSRESULTADO.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JSSRESULTADO.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.JSSRESULTADO.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.JSSRESULTADO.Location = new System.Drawing.Point(294, 316);
@@ -186,6 +193,7 @@
             this.JSS.FlatAppearance.BorderSize = 0;
             this.JSS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.JSS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.JSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JSS.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.JSS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.JSS.Location = new System.Drawing.Point(37, 316);
@@ -204,6 +212,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(293, 399);
@@ -221,6 +230,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(36, 399);

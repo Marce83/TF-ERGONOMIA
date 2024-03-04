@@ -40,9 +40,10 @@
             this.btnEstidisticaparticular.FlatAppearance.BorderSize = 0;
             this.btnEstidisticaparticular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnEstidisticaparticular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstidisticaparticular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstidisticaparticular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEstidisticaparticular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstidisticaparticular.Location = new System.Drawing.Point(179, 160);
+            this.btnEstidisticaparticular.Location = new System.Drawing.Point(179, 143);
             this.btnEstidisticaparticular.Margin = new System.Windows.Forms.Padding(4);
             this.btnEstidisticaparticular.Name = "btnEstidisticaparticular";
             this.btnEstidisticaparticular.Size = new System.Drawing.Size(357, 71);
@@ -70,6 +71,7 @@
             this.btnEstadisticageneral.FlatAppearance.BorderSize = 0;
             this.btnEstadisticageneral.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnEstadisticageneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstadisticageneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstadisticageneral.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEstadisticageneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEstadisticageneral.Location = new System.Drawing.Point(179, 64);

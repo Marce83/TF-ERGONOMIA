@@ -41,11 +41,11 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(76, 9);
+            this.label1.Location = new System.Drawing.Point(166, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(647, 38);
+            this.label1.Size = new System.Drawing.Size(479, 38);
             this.label1.TabIndex = 63;
-            this.label1.Text = "DOCUMENTOS ANEXOS AL PROYECTO";
+            this.label1.Text = "DOCUMENTACION GENERAL";
             // 
             // btnEstadisticageneral
             // 
@@ -57,7 +57,7 @@
             this.btnEstadisticageneral.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEstadisticageneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEstadisticageneral.Location = new System.Drawing.Point(253, 68);
-            this.btnEstadisticageneral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEstadisticageneral.Margin = new System.Windows.Forms.Padding(4);
             this.btnEstadisticageneral.Name = "btnEstadisticageneral";
             this.btnEstadisticageneral.Size = new System.Drawing.Size(293, 71);
             this.btnEstadisticageneral.TabIndex = 72;
@@ -74,7 +74,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(253, 159);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(293, 71);
             this.button1.TabIndex = 73;
@@ -91,7 +91,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(253, 249);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(293, 71);
             this.button2.TabIndex = 74;
@@ -108,7 +108,7 @@
             this.btnAdmProy.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAdmProy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdmProy.Location = new System.Drawing.Point(253, 341);
-            this.btnAdmProy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdmProy.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdmProy.Name = "btnAdmProy";
             this.btnAdmProy.Size = new System.Drawing.Size(293, 71);
             this.btnAdmProy.TabIndex = 75;
@@ -129,7 +129,7 @@
             this.Controls.Add(this.btnEstadisticageneral);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInformes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmInformes";
