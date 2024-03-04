@@ -16,9 +16,9 @@ using TF.ENTITIES;
 
 namespace TF.WIN
 {
-    public partial class JSS : Form
+    public partial class txtApoyoSocial : Form
     {
-        public JSS()
+        public txtApoyoSocial()
         {
             InitializeComponent();
 
@@ -340,7 +340,7 @@ namespace TF.WIN
                 txtDemanda.Text = Demanda.ToString();
 
                 int ApoyoSocial = as1 + as2 + as3 + as4 + as5 + as6;
-                txtApoyoSocial.Text = ApoyoSocial.ToString();
+                txtApoyoSocial1.Text = ApoyoSocial.ToString();
 
 
                 if (Control < 18) { txtControlrdo.Text = "Bajo Control"; }
@@ -378,7 +378,7 @@ namespace TF.WIN
                 Ojss.cargaIdJSS = int.Parse(txtcargaidJSS.Text);
                 Ojss.DemandaJss = int.Parse(txtDemanda.Text);
                 Ojss.ControlJss = int.Parse(txtControl.Text);
-                Ojss.ApoyoSocialJss = int.Parse(txtApoyoSocial.Text);
+                Ojss.ApoyoSocialJss = int.Parse(txtApoyoSocial1.Text);
                 Ojss.DemandaRdo = txtDemandardo.Text;
                 Ojss.ControlRdo = txtControlrdo.Text;
                 Ojss.ApoyoSocialRdo = txtApoyoSocialrdo.Text;

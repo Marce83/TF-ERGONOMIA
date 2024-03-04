@@ -155,7 +155,7 @@
             this.btnBuscarpuesto.Location = new System.Drawing.Point(439, 361);
             this.btnBuscarpuesto.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarpuesto.Name = "btnBuscarpuesto";
-            this.btnBuscarpuesto.Size = new System.Drawing.Size(89, 59);
+            this.btnBuscarpuesto.Size = new System.Drawing.Size(89, 48);
             this.btnBuscarpuesto.TabIndex = 171;
             this.btnBuscarpuesto.Text = "...";
             this.btnBuscarpuesto.UseVisualStyleBackColor = false;
