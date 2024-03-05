@@ -54,18 +54,27 @@ namespace TF.WIN
                     DataTable dt = oEmpleadosBC.ConsultarEmpleadosDNI(oempl);
                     dgvEmpleados.DataSource = null;
                     dgvEmpleados.DataSource = dt;
+                    dgvEmpleados.Columns["Apellido"].DisplayIndex = 0;
+                    dgvEmpleados.Columns["Nombre"].DisplayIndex = 1;
+                    dgvEmpleados.Columns[10].Visible = false;
                     break;
                 case "Nombre":
                     oempl.Nombre = txtBuscador.Text;
                     DataTable dtNom = oEmpleadosBC.ConsultarEmpleadosPorNombre(oempl);
                     dgvEmpleados.DataSource = null;
                     dgvEmpleados.DataSource = dtNom;
+                    dgvEmpleados.Columns["Apellido"].DisplayIndex = 0;
+                    dgvEmpleados.Columns["Nombre"].DisplayIndex = 1;
+                    dgvEmpleados.Columns[10].Visible = false;
                     break;
                 case "Apellido":
                     oempl.Apellido = txtBuscador.Text;
                     DataTable dtApe = oEmpleadosBC.ConsultarEmpleadosPorApellido(oempl);
                     dgvEmpleados.DataSource = null;
                     dgvEmpleados.DataSource = dtApe;
+                    dgvEmpleados.Columns["Apellido"].DisplayIndex = 0;
+                    dgvEmpleados.Columns["Nombre"].DisplayIndex = 1;
+                    dgvEmpleados.Columns[10].Visible = false;
                     break;
             }
             if (txtBuscador == null)

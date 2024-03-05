@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using TF.ENTITIES;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
+using System.Reflection;
 
 namespace TF.DAC
 {
@@ -113,7 +115,10 @@ namespace TF.DAC
         {
             try
             {
-                string sqlSentencia = "SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado FROM Empleados WHERE Nombre LIKE '"+"%"+oempl.Nombre+"%"+ "' AND Estado = 'A'";
+                string sqlSentencia = "SELECT UPPER(Em.Nombre) Nombre, UPPER(Em.Apellido) Apellido, Em.DNI, UPPER(Em.Genero) Genero, " +
+                    "Em.Peso, Em.Altura, Em.FechaNacimiento 'Fecha de Nacimiento', Em.FechaIngreso 'Fecha de Ingreso', Em.Estado, " +
+                    "UPPER(empr.Nombre) Empresa, empr.CUIT FROM dbo.Empleados Em INNER JOIN dbo.Empresas empr " +
+                    "ON empr.IdEmpresa = Em.IdEmpresa WHERE Em.Nombre LIKE '"+"%"+oempl.Nombre+"%"+ "' AND Em.Estado = 'A' ORDER BY 2 ASC";
                 SqlConnection sqlCnn = new SqlConnection();
                 sqlCnn.ConnectionString = conectionString;
                 SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
@@ -137,7 +142,9 @@ namespace TF.DAC
         {
             try
             {
-                string sqlSentencia = "SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado FROM Empleados WHERE Apellido LIKE '"+"%"+oempl.Apellido+"%"+"' AND Estado = 'A'";
+                string sqlSentencia = "SELECT UPPER(Em.Nombre) Nombre, UPPER(Em.Apellido) Apellido, Em.DNI, UPPER(Em.Genero) Genero, Em.Peso, Em.Altura, Em.FechaNacimiento 'Fecha de Nacimiento', Em.FechaIngreso 'Fecha de Ingreso', Em.Estado, UPPER(empr.Nombre) Empresa, empr.CUIT " +
+                    "FROM Empleados Em INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa " +
+                    "WHERE Em.Apellido LIKE '"+"%"+oempl.Apellido+"%"+ "' AND Em.Estado = 'A' ORDER BY 2 ASC";
                 SqlConnection sqlCnn = new SqlConnection();
                 sqlCnn.ConnectionString = conectionString;
                 SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);

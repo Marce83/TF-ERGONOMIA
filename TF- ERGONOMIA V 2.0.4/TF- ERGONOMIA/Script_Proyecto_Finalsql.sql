@@ -178,7 +178,7 @@ go
 CREATE OR ALTER PROCEDURE SP_Empresas_GetAll
 AS
 BEGIN
-	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion) Dirección, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion) Dirección, UPPER(Localidad) Localidad, UPPER(Provincia) Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
 	WHERE FechaEgreso IS NULL
 	AND	Estado = 'A'
@@ -259,9 +259,11 @@ CREATE OR ALTER PROCEDURE SP_Empleados_DNI
 @DNI nvarchar(8)
 AS
 BEGIN
-	SELECT UPPER(Nombre)Nombre, UPPER(Apellido) Apellido, DNI, UPPER(Genero) Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
-	FROM Empleados
+	SELECT UPPER(Em.Nombre) Nombre, UPPER(Em.Apellido) Apellido, Em.DNI, UPPER(Em.Genero) Genero, Em.Peso, Em.Altura, Em.FechaNacimiento 'Fecha de Nacimiento', Em.FechaIngreso 'Fecha de Ingreso', Em.Estado, UPPER(empr.Nombre) Empresa, empr.CUIT
+	FROM dbo.Empleados Em
+	INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
 	WHERE DNI LIKE '%'+@DNI+'%'
+	AND Em.Estado = 'A'
 END
 GO
 
