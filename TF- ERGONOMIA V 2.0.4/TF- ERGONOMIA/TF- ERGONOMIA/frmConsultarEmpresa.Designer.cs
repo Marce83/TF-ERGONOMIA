@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarEmpresa));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvCargaEmpresas = new System.Windows.Forms.DataGridView();
@@ -109,9 +110,22 @@
             // 
             // dgvCargaEmpresas
             // 
-            this.dgvCargaEmpresas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCargaEmpresas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvCargaEmpresas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCargaEmpresas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCargaEmpresas.ColumnHeadersHeight = 25;
+            this.dgvCargaEmpresas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvCargaEmpresas.EnableHeadersVisualStyles = false;
             this.dgvCargaEmpresas.Location = new System.Drawing.Point(7, 92);
             this.dgvCargaEmpresas.Name = "dgvCargaEmpresas";
+            this.dgvCargaEmpresas.RowHeadersVisible = false;
             this.dgvCargaEmpresas.Size = new System.Drawing.Size(944, 188);
             this.dgvCargaEmpresas.TabIndex = 165;
             this.dgvCargaEmpresas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCargaEmpresas_CellContentClick);
