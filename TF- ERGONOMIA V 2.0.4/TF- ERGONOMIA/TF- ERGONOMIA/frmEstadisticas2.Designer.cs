@@ -1034,7 +1034,7 @@
             series9.IsValueShownAsLabel = true;
             series9.IsXValueIndexed = true;
             series9.Legend = "Legend1";
-            series9.Name = "Series1";
+            series9.Name = "CANTIDAD";
             this.ChartHistogramaRula3.Series.Add(series9);
             this.ChartHistogramaRula3.Size = new System.Drawing.Size(685, 334);
             this.ChartHistogramaRula3.TabIndex = 177;
@@ -1078,7 +1078,7 @@
             series11.ChartArea = "ChartArea1";
             series11.IsXValueIndexed = true;
             series11.Legend = "Legend1";
-            series11.Name = "Series1";
+            series11.Name = "CANTIDAD";
             this.ChartHistogramaNiosh3.Series.Add(series11);
             this.ChartHistogramaNiosh3.Size = new System.Drawing.Size(685, 334);
             this.ChartHistogramaNiosh3.TabIndex = 179;
@@ -1101,7 +1101,7 @@
             series12.IsValueShownAsLabel = true;
             series12.IsXValueIndexed = true;
             series12.Legend = "Legend1";
-            series12.Name = "Series1";
+            series12.Name = "CANTIDAD";
             this.chartHistoJss3.Series.Add(series12);
             this.chartHistoJss3.Size = new System.Drawing.Size(605, 334);
             this.chartHistoJss3.TabIndex = 180;
