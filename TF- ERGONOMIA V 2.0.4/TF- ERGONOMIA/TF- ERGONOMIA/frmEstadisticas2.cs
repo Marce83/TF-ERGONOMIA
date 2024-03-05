@@ -326,7 +326,7 @@ namespace TF.WIN
 
             // Agrega un título al gráfico de pastel
             chartPastelRula.Titles.Clear();
-            chartPastelRula.Titles.Add("Riesgo por nivel de Analisis");
+            chartPastelRula.Titles.Add("DISTRIBUCION DEL RIESGO POR NIVEL");
 
             //// Establece el formato de la serie
             //chartPastelRula.Series[0].Font = new Font("Arial", 10, FontStyle.Bold);
@@ -389,7 +389,7 @@ namespace TF.WIN
                 //// Establece el formato de la serie
                 //series.Font = new Font("Arial", 10, FontStyle.Bold);
                 ChartHistogramaRula2.Titles.Clear();
-                ChartHistogramaRula2.Titles.Add("NUMERO DE ANALISIS EJECUTADOR POR NIVEL DE RIESGO");
+                ChartHistogramaRula2.Titles.Add("NUMERO DE ANALISIS EJECUTADOS POR NIVEL DE RIESGO");
             }
             catch (Exception ex)
             {
@@ -529,7 +529,7 @@ namespace TF.WIN
                 // Configura las series para un gráfico de barras
                 Series series = new Series();
                 series.ChartType = SeriesChartType.Column;
-                series.Name = "DISTRIBUCION DEL RIESGO POR NIVEL";
+                series.Name = "CANTIDAD";
 
                 // Agrega las series al gráfico
                 ChartHistogramaReba2.Series.Add(series);
@@ -549,6 +549,9 @@ namespace TF.WIN
 
                     // Agrega un punto a la serie para cada fecha, nivel de riesgo y AnalisisxDia
                     series.Points.AddXY(nombrePunto, Analisisxdia);
+                    // Agrega un título al gráfico de pastel
+                    ChartHistogramaReba2.Titles.Clear();
+                    ChartHistogramaReba2.Titles.Add("ANALISIS EJECUTADOS POR NIVEL");
                 }
 
                 // Configura los ejes
@@ -709,7 +712,7 @@ namespace TF.WIN
                 // Configura las series para un gráfico de barras
                 Series series = new Series();
                 //series.ChartType = SeriesChartType.Bar;
-                series.Name = "NUMERO DE METODOS REALIZADOS SEGUN EL NIVELD E RIESGO";
+                series.Name = "CANTIDAD";
 
                 // Agrega las series al gráfico
                 ChartHistogramaNiosh2.Series.Add(series);
@@ -748,6 +751,9 @@ namespace TF.WIN
 
                 //// Establece el formato de la serie
                 //series.Font = new Font("Arial", 10, FontStyle.Bold);
+
+                ChartHistogramaNiosh2.Titles.Clear();
+                ChartHistogramaNiosh2.Titles.Add("ANALISIS EJECUTADOS POR NIVEL");
             }
             catch (Exception ex)
             {
@@ -982,7 +988,7 @@ namespace TF.WIN
                 ChartHistogramaRula3.Series[0].Points.AddXY(PuestoDeTrabajo, PuestoAnalizado) ;
             }
             ChartHistogramaRula3.Titles.Clear();
-            ChartHistogramaRula3.Titles.Add("EMPLEADOS EN CADA PUESTO");
+            ChartHistogramaRula3.Titles.Add("EMPLEADOS POR PUESTOS");
 
         }
         private void PuestoJSSPersonal()
@@ -1008,7 +1014,9 @@ namespace TF.WIN
                 chartHistoJss3.Series[0].Points.AddXY(PuestoDeTrabajoJSS, PuestoAnalizado);
             }
             chartHistoJss3.Titles.Clear();
-            chartHistoJss3.Titles.Add("EMPLEADOS EN CADA PUESTO");
+            chartHistoJss3.Titles.Add("EMPLEADOS POR PUESTOS");
+            Series series = new Series();
+            series.Name = "CANTIDAD";
         }
         private void PersonNioshPuesto()
         {
@@ -1034,8 +1042,9 @@ namespace TF.WIN
             }
             // Agrega un título al gráfico de pastel
             ChartHistogramaNiosh3.Titles.Clear();
-            ChartHistogramaNiosh3.Titles.Add("EMPLEADOS EN CADA PUESTO");
-
+            ChartHistogramaNiosh3.Titles.Add("EMPLEADOS POR PUESTOS");
+            Series series = new Series();
+            series.Name = "CANTIDAD";
 
         }
         private void PuestoRebaPerson()
@@ -1062,7 +1071,9 @@ namespace TF.WIN
             }
             // Agrega un título al gráfico de pastel
             ChartHistogramaReba3.Titles.Clear();
-            ChartHistogramaReba3.Titles.Add("EMPLEADOS EN CADA PUESTO");
+            ChartHistogramaReba3.Titles.Add("EMPLEADOS POR PUESTOS");
+            Series series = new Series();
+            series.Name = "CANTIDAD";
         }
 
     }
