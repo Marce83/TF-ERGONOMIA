@@ -168,10 +168,12 @@ namespace TF.WIN
             cboActEmpr.SelectedIndex = 0;
             txtCalle.Text = string.Empty;
             //cboLocalidad.SelectedIndex = 0;
-            //cboProvincia.SelectedIndex = 0;
+            cboTipo.SelectedIndex = 0;
+            cboProvincia.SelectedIndex = 0;
             txtTelefono.Text = string.Empty;
             txtCorreo.Text = string.Empty;
             txtWeb.Text = string.Empty;
+            dtpFechaAlta.Value = DateTime.Now;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

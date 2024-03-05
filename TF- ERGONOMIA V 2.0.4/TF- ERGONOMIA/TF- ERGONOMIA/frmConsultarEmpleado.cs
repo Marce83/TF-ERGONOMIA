@@ -161,6 +161,7 @@ namespace TF.WIN
             dtpNacimiento.Text = string.Empty;
             dtpIngreso.Text = string.Empty;
             dtpIngreso.Enabled = true;
+            dtpIngreso.Value = DateTime.Now;
             cboGenero.SelectedIndex = 0;
             //cbopuestotrabajo.SelectedIndex = 0;
             txtPeso.Text = string.Empty;
@@ -214,6 +215,11 @@ namespace TF.WIN
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void linkLimpiar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Limpiar();
         }
     }
 }

@@ -31,6 +31,11 @@ namespace TF.WIN
             Limpiar();
         }
 
+        private void linkLimpiar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Limpiar();
+        }
+
         private void txtBuscador_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (cboBuscadorDinamico.Text == "CUIT")
@@ -77,8 +82,6 @@ namespace TF.WIN
 
         private void dgvCargaEmpresas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //txtCUIT.Text = dgvCargaEmpresas.CurrentRow.Cells[0].Value.ToString();
-            //txtCUIT.ReadOnly = true;
             txtNombreEmpresa.Text = dgvCargaEmpresas.CurrentRow.Cells[1].Value.ToString();
             cboCondFiscal.Text = dgvCargaEmpresas.CurrentRow.Cells[2].Value.ToString();
             cboActEmpr.Text = dgvCargaEmpresas.CurrentRow.Cells[3].Value.ToString();
@@ -90,8 +93,24 @@ namespace TF.WIN
             txtCorreo.Text = dgvCargaEmpresas.CurrentRow.Cells[9].Value.ToString();
             txtWeb.Text = dgvCargaEmpresas.CurrentRow.Cells[10].Value.ToString();
             dtpFechaAlta.Text = dgvCargaEmpresas.CurrentRow.Cells[11].Value.ToString();
-
         }
+        //private void dgvCargaEmpresas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    //txtCUIT.Text = dgvCargaEmpresas.CurrentRow.Cells[0].Value.ToString();
+        //    //txtCUIT.ReadOnly = true;
+        //    txtNombreEmpresa.Text = dgvCargaEmpresas.CurrentRow.Cells[1].Value.ToString();
+        //    cboCondFiscal.Text = dgvCargaEmpresas.CurrentRow.Cells[2].Value.ToString();
+        //    cboActEmpr.Text = dgvCargaEmpresas.CurrentRow.Cells[3].Value.ToString();
+        //    cboTipo.Text = dgvCargaEmpresas.CurrentRow.Cells[4].Value.ToString();
+        //    txtCalle.Text = dgvCargaEmpresas.CurrentRow.Cells[5].Value.ToString();
+        //    cboProvincia.Text = dgvCargaEmpresas.CurrentRow.Cells[7].Value.ToString();
+        //    cboLocalidad.Text = dgvCargaEmpresas.CurrentRow.Cells[6].Value.ToString();
+        //    txtTelefono.Text = dgvCargaEmpresas.CurrentRow.Cells[8].Value.ToString();
+        //    txtCorreo.Text = dgvCargaEmpresas.CurrentRow.Cells[9].Value.ToString();
+        //    txtWeb.Text = dgvCargaEmpresas.CurrentRow.Cells[10].Value.ToString();
+        //    dtpFechaAlta.Text = dgvCargaEmpresas.CurrentRow.Cells[11].Value.ToString();
+
+        //}
 
         private void RolesCargo()
         {
@@ -113,18 +132,17 @@ namespace TF.WIN
 
         private void Limpiar()
         {
-            //txtCUIT.Text = string.Empty;
-            //txtCUIT.ReadOnly = false;
-            //txtCUIT.Focus();
             txtNombreEmpresa.Text = string.Empty;
             cboCondFiscal.SelectedIndex = 0;
             cboActEmpr.SelectedIndex = 0;
             txtCalle.Text = string.Empty;
             //cboLocalidad.SelectedIndex = 0;
-            //cboProvincia.SelectedIndex = 0;
+            cboTipo.SelectedIndex = 0;
+            cboProvincia.SelectedIndex = 0;
             txtTelefono.Text = string.Empty;
             txtCorreo.Text = string.Empty;
             txtWeb.Text = string.Empty;
+            dtpFechaAlta.Value = DateTime.Now;
         }
 
         private void Listar()
