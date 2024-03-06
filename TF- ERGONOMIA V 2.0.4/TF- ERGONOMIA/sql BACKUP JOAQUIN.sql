@@ -68,7 +68,9 @@ GO
 insert into Usuarios values ('MLEON','Abc123','Marco','Leon','Administrador','marcodarioleon@hotmail.com')
 go
 
-CREATE PROCEDURE SP_Login
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_Login
 @Usuario nvarchar(15),
 @Clave nvarchar(10)
 AS
@@ -79,7 +81,9 @@ BEGIN
 END
 GO
 
-CREATE PROCEDURE SP_ExisteUsr
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_ExisteUsr
 @Usuario NVARCHAR(15)
 AS
 BEGIN
@@ -88,7 +92,9 @@ WHERE Usuario LIKE @Usuario
 END
 GO
 
-CREATE PROCEDURE SP_ExisteCorreo
+use ProyectoFinal
+go
+CREATE OR ALTER PROCEDURE SP_ExisteCorreo
 @Correo NVARCHAR(20)
 AS
 BEGIN
@@ -97,6 +103,8 @@ WHERE Correo LIKE @Correo
 END
 GO
 
+use ProyectoFinal
+go
 CREATE OR ALTER PROCEDURE SP_makeLogin
 @Usuario nvarchar(15),
 @Clave nvarchar(10),
@@ -136,7 +144,6 @@ GO
 
 use ProyectoFinal
 go
-
 CREATE OR ALTER PROCEDURE SP_Empresas_Update
 @CUIT nvarchar(11),
 @Nombre nvarchar(30),
@@ -171,41 +178,47 @@ BEGIN
 END
 GO
 
-
 use ProyectoFinal
 go
-
 CREATE OR ALTER PROCEDURE SP_Empresas_GetAll
 AS
 BEGIN
-	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
-	FROM Empresas WHERE Estado ='A'
+    SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion) Dirección, UPPER(Localidad) Localidad, UPPER(Provincia) Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+    FROM Empresas
+    WHERE FechaEgreso IS NULL
+    AND    Estado = 'A'
+    ORDER BY 2 ASC
 END
 GO
 
 use ProyectoFinal
 GO
-
 CREATE OR ALTER PROCEDURE SP_Empresas_GetId
 @CUIT nvarchar(11)
 AS
 BEGIN
-	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
-	FROM Empresas
-	WHERE CUIT LIKE '%'+@CUIT+'%' and Estado ='A'
+    SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion) Dirección, UPPER(Localidad) Localidad, UPPER(Provincia) Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+    FROM Empresas
+    WHERE CUIT LIKE '%'+@CUIT+'%'
+    ORDER BY 2 ASC
 END
 GO
 
+use ProyectoFinal
+GO
 CREATE OR ALTER PROCEDURE [dbo].[SP_Nombre_Empresa]
 @Nombre nvarchar(30)
 AS
 BEGIN
-	SELECT CUIT, Nombre, Condicion_Fiscal 'Condicion Fiscal', Actividad_Empresarial 'Actividad Empresarial', Tipo, Direccion, Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
-	FROM Empresas
-	WHERE Nombre LIKE '%'+@Nombre+'%'
+    SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion) Dirección, UPPER(Localidad) Localidad, UPPER(Provincia) Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+    FROM Empresas
+    WHERE Nombre LIKE '%'+@Nombre+'%'
+    ORDER BY 2 ASC
 END
 GO
 
+use ProyectoFinal
+go
 CREATE OR ALTER PROCEDURE SP_Empresas_Solo_GetId
 @CUIT NVARCHAR(11)
 AS
@@ -221,16 +234,16 @@ CREATE OR ALTER PROCEDURE SP_Empleados_GetAll
 AS
 BEGIN
 SELECT UPPER(Em.Nombre) Nombre, UPPER(Em.Apellido) Apellido, Em.DNI, UPPER(Em.Genero) Genero, Em.Peso, Em.Altura, Em.FechaNacimiento 'Fecha de Nacimiento', Em.FechaIngreso 'Fecha de Ingreso', Em.Estado, UPPER(empr.Nombre) Empresa, empr.CUIT
-	FROM dbo.Empleados Em
-	INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
-	WHERE Em.FechaEgreso IS NULL
-	AND Em.Estado = 'A'
+    FROM dbo.Empleados Em
+    INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
+    WHERE Em.FechaEgreso IS NULL
+    AND Em.Estado = 'A'
+    ORDER BY 2 ASC
 END
 GO
 
 USE ProyectoFinal
 GO
-
 CREATE OR ALTER PROCEDURE SP_Empleados_Insert
 @Nombre NVARCHAR(20),
 @Apellido NVARCHAR(20),
@@ -257,9 +270,12 @@ CREATE OR ALTER PROCEDURE SP_Empleados_DNI
 @DNI nvarchar(8)
 AS
 BEGIN
-	SELECT Nombre, Apellido, DNI, Genero, Peso, Altura, FechaNacimiento 'Fecha de Nacimiento', FechaIngreso 'Fecha de Ingreso', Estado
-	FROM Empleados
-	WHERE DNI LIKE '%'+@DNI+'%'
+	SELECT UPPER(Em.Nombre) Nombre, UPPER(Em.Apellido) Apellido, Em.DNI, UPPER(Em.Genero) Genero, Em.Peso, Em.Altura, Em.FechaNacimiento 'Fecha de Nacimiento', Em.FechaIngreso 'Fecha de Ingreso', Em.Estado, UPPER(empr.Nombre) Empresa, empr.CUIT
+    FROM dbo.Empleados Em
+    INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
+    WHERE DNI LIKE '%'+@DNI+'%'
+    AND Em.Estado = 'A'
+    ORDER BY 2 ASC
 END
 GO
 
@@ -273,7 +289,6 @@ CREATE OR ALTER PROCEDURE SP_Empleados_Update
 @Peso float,
 @Altura float,
 @FechaNacimiento DATE
-
 AS
 BEGIN
 	update Empleados set Nombre=@Nombre, Apellido=@Apellido, DNI=@DNI ,Genero=@Genero, Peso=@Peso, Altura=@Altura, FechaNacimiento=@FechaNacimiento
@@ -281,13 +296,14 @@ BEGIN
 END
 GO
 
+use ProyectoFinal
+go
 CREATE OR ALTER PROCEDURE SP_Empleado_Delete
 	@DNI nvarchar(8),
 	@Estado NVARCHAR(1),
 	@FechaEgreso DATE
 AS
 BEGIN
-
 	SET NOCOUNT ON;
 	--DELETE FROM Empresas WHERE CUIT = @CUIT
 	UPDATE dbo.Empleados
@@ -302,11 +318,9 @@ CREATE OR ALTER PROCEDURE SP_Empleados_GetId
 @DNI nvarchar(8)
 AS
 BEGIN
-
 	SELECT IdEmpleado, Nombre, Apellido, DNI, Genero
 	FROM Empleados
     WHERE DNI = @DNI
-
 END
 GO
 
@@ -317,7 +331,6 @@ CREATE OR ALTER PROCEDURE SP_Empleados_Conpuestoscargado
 @DNI nvarchar(8)
 AS
 BEGIN
-
 SELECT A.IdEmpleado, A.Nombre, A.Apellido, A.DNI, A.Genero, PT.NombrePuesto
 FROM Empleados A JOIN  PuestoEmpleado PE ON A.IdEmpleado = PE.IdEmpleado JOIN PuestoDeTrabajo PT ON PE.IdPuesto = PT.IdPuesto 
 WHERE  A.DNI = @DNI AND PE.FechaEgreso is null
@@ -411,8 +424,7 @@ GO
 
 use ProyectoFinal
 go
-
-CREATE PROCEDURE SP_Rula_Resultado
+CREATE OR ALTER PROCEDURE SP_Rula_Resultado
 @cargaId int
 AS
 BEGIN
@@ -463,7 +475,6 @@ and TablaB =@ValorTablaB
 END
 GO
 
-
 use ProyectoFinal
 go
 CREATE OR ALTER PROCEDURE SP_RULA_GetAll
@@ -489,7 +500,7 @@ GO
 
 use ProyectoFinal
 go
-CREATE PROCEDURE SP_Rula_Eliminar
+CREATE OR ALTER PROCEDURE SP_Rula_Eliminar
 @CUIT nvarchar(11)
 AS
 BEGIN
@@ -499,7 +510,7 @@ GO
 
 use ProyectoFinal
 go
-CREATE PROCEDURE SP_Rula_maxidrulacarga
+CREATE OR ALTER PROCEDURE SP_Rula_maxidrulacarga
 AS
 BEGIN
 	select max(cargaId)as cargaId from RulaTablaCompleta
@@ -2099,15 +2110,10 @@ GO
 USE ProyectoFinal;
 GO
 CREATE OR ALTER VIEW VistaEmpleadosPuestos AS
-SELECT
-    E.Apellido +' '+ E.Nombre as NombreEmpleado, E.DNI AS DNI,
-    PT.NombrePuesto AS NombrePuesto,
-    PE.FechaIngreso AS FechaIngreso,
-    PE.FechaEgreso AS FechaEgreso
-FROM
-    Empleados E
-    JOIN PuestoEmpleado PE ON E.IdEmpleado = PE.IdEmpleado
-    JOIN PuestoDeTrabajo PT ON PE.IdPuesto = PT.IdPuesto;
+SELECT TOP (100) PERCENT E.Apellido + ' ' + E.Nombre AS NombreEmpleado, E.DNI, PT.NombrePuesto, PE.FechaIngreso, PE.FechaEgreso, E.IdEmpresa AS Empresa
+FROM     dbo.Empleados AS E INNER JOIN
+                  dbo.PuestoEmpleado AS PE ON E.IdEmpleado = PE.IdEmpleado INNER JOIN
+                  dbo.PuestoDeTrabajo AS PT ON PE.IdPuesto = PT.IdPuesto
 GO
 
 
@@ -2123,12 +2129,13 @@ GO
 USE ProyectoFinal;
 GO
 CREATE OR ALTER PROCEDURE SP_VistaPuesto_GetNombreEmpleado
-    @NombreEmpleado nvarchar (MAX)
+@NombreEmpleado nvarchar (MAX)
 AS
 BEGIN
     SELECT NombreEmpleado, NombrePuesto,DNI
     FROM VistaEmpleadosPuestos
-	where NombreEmpleado = @NombreEmpleado
+	WHERE NombreEmpleado = @NombreEmpleado
+	ORDER BY 1 ASC
 END
 GO
 
