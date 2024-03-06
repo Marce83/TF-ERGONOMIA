@@ -182,6 +182,7 @@ BEGIN
 	FROM Empresas
 	WHERE FechaEgreso IS NULL
 	AND	Estado = 'A'
+	ORDER BY 2 ASC
 END
 GO
 
@@ -192,9 +193,10 @@ CREATE OR ALTER PROCEDURE SP_Empresas_GetId
 @CUIT nvarchar(11)
 AS
 BEGIN
-	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion), Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion), UPPER(Localidad) Localidad, UPPER(Provincia) Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
 	WHERE CUIT LIKE '%'+@CUIT+'%'
+	ORDER BY 2 ASC
 END
 GO
 
@@ -227,6 +229,7 @@ BEGIN
 	INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
 	WHERE Em.FechaEgreso IS NULL
 	AND Em.Estado = 'A'
+	ORDER BY 2 ASC
 END
 GO
 
@@ -264,6 +267,7 @@ BEGIN
 	INNER JOIN dbo.Empresas empr ON empr.IdEmpresa = Em.IdEmpresa 
 	WHERE DNI LIKE '%'+@DNI+'%'
 	AND Em.Estado = 'A'
+	ORDER BY 2 ASC
 END
 GO
 

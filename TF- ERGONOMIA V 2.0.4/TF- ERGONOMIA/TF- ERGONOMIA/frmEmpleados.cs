@@ -106,6 +106,7 @@ namespace TF.WIN
             txtPeso.Text = string.Empty;
             txtAltura.Text = string.Empty;
             txtCUITEncontrado.Text = string.Empty;
+            txtNomEmpr.Text = string.Empty;
             dtpIngreso.Value = DateTime.Now;
             txtDNI.Focus();
 

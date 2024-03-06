@@ -72,10 +72,9 @@
             this.btnCargar.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnCargar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCargar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnCargar.Location = new System.Drawing.Point(245, 528);
-            this.btnCargar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCargar.Location = new System.Drawing.Point(184, 429);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(155, 60);
+            this.btnCargar.Size = new System.Drawing.Size(116, 49);
             this.btnCargar.TabIndex = 0;
             this.btnCargar.Text = "CARGAR";
             this.btnCargar.UseVisualStyleBackColor = false;
@@ -89,7 +88,8 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel1.Location = new System.Drawing.Point(33, 65);
+            this.materialLabel1.Location = new System.Drawing.Point(25, 53);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(35, 19);
@@ -103,7 +103,8 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel2.Location = new System.Drawing.Point(33, 130);
+            this.materialLabel2.Location = new System.Drawing.Point(25, 106);
+            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(94, 19);
@@ -122,8 +123,8 @@
             this.txtCUIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCUIT.HideSelection = true;
             this.txtCUIT.LeadingIcon = null;
-            this.txtCUIT.Location = new System.Drawing.Point(245, 49);
-            this.txtCUIT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCUIT.Location = new System.Drawing.Point(184, 40);
+            this.txtCUIT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCUIT.MaxLength = 11;
             this.txtCUIT.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCUIT.Name = "txtCUIT";
@@ -135,7 +136,7 @@
             this.txtCUIT.SelectionLength = 0;
             this.txtCUIT.SelectionStart = 0;
             this.txtCUIT.ShortcutsEnabled = true;
-            this.txtCUIT.Size = new System.Drawing.Size(367, 48);
+            this.txtCUIT.Size = new System.Drawing.Size(275, 48);
             this.txtCUIT.TabIndex = 0;
             this.txtCUIT.TabStop = false;
             this.txtCUIT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -155,8 +156,8 @@
             this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCorreo.HideSelection = true;
             this.txtCorreo.LeadingIcon = null;
-            this.txtCorreo.Location = new System.Drawing.Point(901, 311);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCorreo.Location = new System.Drawing.Point(676, 253);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCorreo.MaxLength = 32767;
             this.txtCorreo.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCorreo.Name = "txtCorreo";
@@ -168,7 +169,7 @@
             this.txtCorreo.SelectionLength = 0;
             this.txtCorreo.SelectionStart = 0;
             this.txtCorreo.ShortcutsEnabled = true;
-            this.txtCorreo.Size = new System.Drawing.Size(367, 48);
+            this.txtCorreo.Size = new System.Drawing.Size(285, 48);
             this.txtCorreo.TabIndex = 7;
             this.txtCorreo.TabStop = false;
             this.txtCorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -187,8 +188,8 @@
             this.txtNombreEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpresa.HideSelection = true;
             this.txtNombreEmpresa.LeadingIcon = null;
-            this.txtNombreEmpresa.Location = new System.Drawing.Point(245, 113);
-            this.txtNombreEmpresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombreEmpresa.Location = new System.Drawing.Point(184, 92);
+            this.txtNombreEmpresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombreEmpresa.MaxLength = 32767;
             this.txtNombreEmpresa.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreEmpresa.Name = "txtNombreEmpresa";
@@ -200,7 +201,7 @@
             this.txtNombreEmpresa.SelectionLength = 0;
             this.txtNombreEmpresa.SelectionStart = 0;
             this.txtNombreEmpresa.ShortcutsEnabled = true;
-            this.txtNombreEmpresa.Size = new System.Drawing.Size(367, 48);
+            this.txtNombreEmpresa.Size = new System.Drawing.Size(275, 48);
             this.txtNombreEmpresa.TabIndex = 1;
             this.txtNombreEmpresa.TabStop = false;
             this.txtNombreEmpresa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -215,7 +216,8 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel3.Location = new System.Drawing.Point(33, 193);
+            this.materialLabel3.Location = new System.Drawing.Point(25, 157);
+            this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(118, 19);
@@ -229,7 +231,8 @@
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel8.Location = new System.Drawing.Point(692, 247);
+            this.materialLabel8.Location = new System.Drawing.Point(519, 201);
+            this.materialLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(68, 19);
@@ -248,8 +251,8 @@
             this.txtWeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtWeb.HideSelection = true;
             this.txtWeb.LeadingIcon = null;
-            this.txtWeb.Location = new System.Drawing.Point(901, 249);
-            this.txtWeb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtWeb.Location = new System.Drawing.Point(676, 202);
+            this.txtWeb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtWeb.MaxLength = 32767;
             this.txtWeb.MouseState = MaterialSkin.MouseState.OUT;
             this.txtWeb.Name = "txtWeb";
@@ -261,7 +264,7 @@
             this.txtWeb.SelectionLength = 0;
             this.txtWeb.SelectionStart = 0;
             this.txtWeb.ShortcutsEnabled = true;
-            this.txtWeb.Size = new System.Drawing.Size(367, 48);
+            this.txtWeb.Size = new System.Drawing.Size(285, 48);
             this.txtWeb.TabIndex = 6;
             this.txtWeb.TabStop = false;
             this.txtWeb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -288,12 +291,12 @@
             "Responsable Inscripto",
             "Monotributo",
             "Consumidor Final"});
-            this.cboCondFiscal.Location = new System.Drawing.Point(245, 177);
-            this.cboCondFiscal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboCondFiscal.Location = new System.Drawing.Point(184, 144);
+            this.cboCondFiscal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboCondFiscal.MaxDropDownItems = 4;
             this.cboCondFiscal.MouseState = MaterialSkin.MouseState.OUT;
             this.cboCondFiscal.Name = "cboCondFiscal";
-            this.cboCondFiscal.Size = new System.Drawing.Size(365, 49);
+            this.cboCondFiscal.Size = new System.Drawing.Size(275, 49);
             this.cboCondFiscal.StartIndex = 0;
             this.cboCondFiscal.TabIndex = 2;
             // 
@@ -304,7 +307,8 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel4.Location = new System.Drawing.Point(33, 254);
+            this.materialLabel4.Location = new System.Drawing.Point(25, 206);
+            this.materialLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(154, 19);
@@ -318,7 +322,8 @@
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel7.Location = new System.Drawing.Point(692, 313);
+            this.materialLabel7.Location = new System.Drawing.Point(519, 254);
+            this.materialLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(129, 19);
@@ -337,8 +342,8 @@
             this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTelefono.HideSelection = true;
             this.txtTelefono.LeadingIcon = null;
-            this.txtTelefono.Location = new System.Drawing.Point(245, 373);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTelefono.Location = new System.Drawing.Point(184, 303);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTelefono.MaxLength = 10;
             this.txtTelefono.MouseState = MaterialSkin.MouseState.OUT;
             this.txtTelefono.Name = "txtTelefono";
@@ -350,7 +355,7 @@
             this.txtTelefono.SelectionLength = 0;
             this.txtTelefono.SelectionStart = 0;
             this.txtTelefono.ShortcutsEnabled = true;
-            this.txtTelefono.Size = new System.Drawing.Size(367, 48);
+            this.txtTelefono.Size = new System.Drawing.Size(275, 48);
             this.txtTelefono.TabIndex = 5;
             this.txtTelefono.TabStop = false;
             this.txtTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -365,7 +370,8 @@
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel5.Location = new System.Drawing.Point(692, 193);
+            this.materialLabel5.Location = new System.Drawing.Point(519, 157);
+            this.materialLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(36, 19);
@@ -379,7 +385,8 @@
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel6.Location = new System.Drawing.Point(33, 385);
+            this.materialLabel6.Location = new System.Drawing.Point(25, 313);
+            this.materialLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(64, 19);
@@ -398,8 +405,8 @@
             this.txtCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCalle.HideSelection = true;
             this.txtCalle.LeadingIcon = null;
-            this.txtCalle.Location = new System.Drawing.Point(901, 190);
-            this.txtCalle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCalle.Location = new System.Drawing.Point(676, 154);
+            this.txtCalle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCalle.MaxLength = 32767;
             this.txtCalle.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCalle.Name = "txtCalle";
@@ -411,7 +418,7 @@
             this.txtCalle.SelectionLength = 0;
             this.txtCalle.SelectionStart = 0;
             this.txtCalle.ShortcutsEnabled = true;
-            this.txtCalle.Size = new System.Drawing.Size(367, 48);
+            this.txtCalle.Size = new System.Drawing.Size(285, 48);
             this.txtCalle.TabIndex = 4;
             this.txtCalle.TabStop = false;
             this.txtCalle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -425,9 +432,10 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F);
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(468, 9);
+            this.label1.Location = new System.Drawing.Point(351, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(382, 38);
+            this.label1.Size = new System.Drawing.Size(313, 31);
             this.label1.TabIndex = 59;
             this.label1.Text = "CARGA DE EMPRESAS";
             // 
@@ -461,11 +469,11 @@
             this.groupBox1.Controls.Add(this.materialLabel3);
             this.groupBox1.Controls.Add(this.txtCorreo);
             this.groupBox1.Controls.Add(this.txtNombreEmpresa);
-            this.groupBox1.Location = new System.Drawing.Point(29, 71);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(22, 58);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1300, 633);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(975, 514);
             this.groupBox1.TabIndex = 60;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "REGISTRAR EMPRESA";
@@ -482,10 +490,9 @@
             this.btnConsultar.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsultar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnConsultar.Location = new System.Drawing.Point(516, 528);
-            this.btnConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConsultar.Location = new System.Drawing.Point(387, 429);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(155, 60);
+            this.btnConsultar.Size = new System.Drawing.Size(116, 49);
             this.btnConsultar.TabIndex = 81;
             this.btnConsultar.Text = "CONSULTAR";
             this.btnConsultar.UseVisualStyleBackColor = false;
@@ -503,10 +510,9 @@
             this.btnLimpiar.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLimpiar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLimpiar.Location = new System.Drawing.Point(780, 528);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpiar.Location = new System.Drawing.Point(585, 429);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(155, 60);
+            this.btnLimpiar.Size = new System.Drawing.Size(116, 49);
             this.btnLimpiar.TabIndex = 62;
             this.btnLimpiar.Text = "LIMPIAR";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -517,11 +523,11 @@
             this.dtpFechaAlta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpFechaAlta.CalendarMonthBackground = System.Drawing.SystemColors.ActiveCaption;
             this.dtpFechaAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dtpFechaAlta.Location = new System.Drawing.Point(901, 400);
-            this.dtpFechaAlta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpFechaAlta.Location = new System.Drawing.Point(676, 325);
+            this.dtpFechaAlta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpFechaAlta.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpFechaAlta.Name = "dtpFechaAlta";
-            this.dtpFechaAlta.Size = new System.Drawing.Size(365, 26);
+            this.dtpFechaAlta.Size = new System.Drawing.Size(285, 26);
             this.dtpFechaAlta.TabIndex = 75;
             // 
             // materialLabel13
@@ -530,7 +536,8 @@
             this.materialLabel13.AutoSize = true;
             this.materialLabel13.Depth = 0;
             this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel13.Location = new System.Drawing.Point(692, 400);
+            this.materialLabel13.Location = new System.Drawing.Point(519, 325);
+            this.materialLabel13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel13.Name = "materialLabel13";
             this.materialLabel13.Size = new System.Drawing.Size(97, 19);
@@ -556,12 +563,12 @@
             "Seleccione",
             "PUBLICA",
             "PRIVADA"});
-            this.cboTipo.Location = new System.Drawing.Point(245, 308);
-            this.cboTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboTipo.Location = new System.Drawing.Point(184, 250);
+            this.cboTipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboTipo.MaxDropDownItems = 4;
             this.cboTipo.MouseState = MaterialSkin.MouseState.OUT;
             this.cboTipo.Name = "cboTipo";
-            this.cboTipo.Size = new System.Drawing.Size(365, 49);
+            this.cboTipo.Size = new System.Drawing.Size(275, 49);
             this.cboTipo.StartIndex = 0;
             this.cboTipo.TabIndex = 50;
             // 
@@ -572,7 +579,8 @@
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel12.Location = new System.Drawing.Point(33, 319);
+            this.materialLabel12.Location = new System.Drawing.Point(25, 259);
+            this.materialLabel12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel12.Name = "materialLabel12";
             this.materialLabel12.Size = new System.Drawing.Size(33, 19);
@@ -620,12 +628,12 @@
             "Santiago del Estero",
             "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
             "Tucumán"});
-            this.cboProvincia.Location = new System.Drawing.Point(901, 62);
-            this.cboProvincia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboProvincia.Location = new System.Drawing.Point(676, 50);
+            this.cboProvincia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboProvincia.MaxDropDownItems = 4;
             this.cboProvincia.MouseState = MaterialSkin.MouseState.OUT;
             this.cboProvincia.Name = "cboProvincia";
-            this.cboProvincia.Size = new System.Drawing.Size(365, 49);
+            this.cboProvincia.Size = new System.Drawing.Size(285, 49);
             this.cboProvincia.StartIndex = 0;
             this.cboProvincia.TabIndex = 48;
             this.cboProvincia.SelectedIndexChanged += new System.EventHandler(this.cboProvincia_SelectedIndexChanged);
@@ -645,12 +653,12 @@
             this.cboLocalidad.FormattingEnabled = true;
             this.cboLocalidad.IntegralHeight = false;
             this.cboLocalidad.ItemHeight = 43;
-            this.cboLocalidad.Location = new System.Drawing.Point(901, 123);
-            this.cboLocalidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboLocalidad.Location = new System.Drawing.Point(676, 100);
+            this.cboLocalidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboLocalidad.MaxDropDownItems = 4;
             this.cboLocalidad.MouseState = MaterialSkin.MouseState.OUT;
             this.cboLocalidad.Name = "cboLocalidad";
-            this.cboLocalidad.Size = new System.Drawing.Size(365, 49);
+            this.cboLocalidad.Size = new System.Drawing.Size(285, 49);
             this.cboLocalidad.StartIndex = 0;
             this.cboLocalidad.TabIndex = 47;
             // 
@@ -661,7 +669,8 @@
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel11.Location = new System.Drawing.Point(692, 65);
+            this.materialLabel11.Location = new System.Drawing.Point(519, 53);
+            this.materialLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(67, 19);
@@ -695,12 +704,12 @@
             "Salud",
             "Telecomunicaciones",
             "Transporte"});
-            this.cboActEmpr.Location = new System.Drawing.Point(245, 242);
-            this.cboActEmpr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboActEmpr.Location = new System.Drawing.Point(184, 197);
+            this.cboActEmpr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboActEmpr.MaxDropDownItems = 4;
             this.cboActEmpr.MouseState = MaterialSkin.MouseState.OUT;
             this.cboActEmpr.Name = "cboActEmpr";
-            this.cboActEmpr.Size = new System.Drawing.Size(365, 49);
+            this.cboActEmpr.Size = new System.Drawing.Size(275, 49);
             this.cboActEmpr.StartIndex = 0;
             this.cboActEmpr.TabIndex = 42;
             // 
@@ -711,7 +720,8 @@
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel9.Location = new System.Drawing.Point(692, 128);
+            this.materialLabel9.Location = new System.Drawing.Point(519, 104);
+            this.materialLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(71, 19);
@@ -720,15 +730,15 @@
             // 
             // frmEmpresa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1344, 725);
+            this.ClientSize = new System.Drawing.Size(1008, 589);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "10";
