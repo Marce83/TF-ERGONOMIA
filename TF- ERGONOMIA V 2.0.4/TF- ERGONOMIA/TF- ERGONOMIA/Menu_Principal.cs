@@ -13,19 +13,10 @@ namespace TF__ERGONOMIA
 {
     public partial class Menu_Principal : Form
     {
-        //readonly MaterialSkin.MaterialSkinManager materialSkinManager;
-
-
+  
         public Menu_Principal()
         {
             InitializeComponent();
-
-            //materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
-            //materialSkinManager.EnforceBackcolorOnAllComponents = true;
-            //materialSkinManager.AddFormToManage(this);
-            //materialSkinManager.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            //materialSkinManager.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Blue500, MaterialSkin.Primary.Blue500, MaterialSkin.Primary.Amber400, MaterialSkin.Accent.Amber200, MaterialSkin.TextShade.BLACK);
-
         }
 
         private void cargaDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
