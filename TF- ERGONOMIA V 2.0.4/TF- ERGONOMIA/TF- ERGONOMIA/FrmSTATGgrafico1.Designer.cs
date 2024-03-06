@@ -52,7 +52,7 @@
             series1.IsValueShownAsLabel = true;
             series1.IsXValueIndexed = true;
             series1.Legend = "Legend1";
-            series1.Name = "Serie1";
+            series1.Name = "EMPRESAS";
             this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(1257, 543);
             this.chart1.TabIndex = 168;

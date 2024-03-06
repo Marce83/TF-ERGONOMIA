@@ -116,7 +116,7 @@
             this.btnEmpresa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpresa.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.btnEmpresa.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpresa.Image")));
             this.btnEmpresa.Location = new System.Drawing.Point(137, 4);
             this.btnEmpresa.Margin = new System.Windows.Forms.Padding(4);
@@ -170,7 +170,7 @@
             this.btnEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpleados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEmpleados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
             this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
             this.btnEmpleados.Location = new System.Drawing.Point(165, 4);
             this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4);
@@ -468,7 +468,7 @@
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button5.ForeColor = System.Drawing.Color.Green;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.Location = new System.Drawing.Point(157, 3);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
@@ -551,6 +551,7 @@
             // BtnEmpresaTipo
             // 
             this.BtnEmpresaTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.BtnEmpresaTipo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEmpresaTipo.FlatAppearance.BorderSize = 0;
             this.BtnEmpresaTipo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BtnEmpresaTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -569,6 +570,7 @@
             // BtnEmplxGen
             // 
             this.BtnEmplxGen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
+            this.BtnEmplxGen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEmplxGen.FlatAppearance.BorderSize = 0;
             this.BtnEmplxGen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BtnEmplxGen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

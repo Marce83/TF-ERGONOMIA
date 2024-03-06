@@ -80,7 +80,7 @@
             this.Controls.Add(this.chart1);
             this.Name = "FrmSTATGgrafico2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmSTATGgrafico2cs";
+            this.Text = "TIPO DE EMPRESAS";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
