@@ -43,23 +43,23 @@
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grbEmpresa = new System.Windows.Forms.GroupBox();
             this.txtNomEmpr = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
+            this.btnBuscarCUIT = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.dtpIngreso = new System.Windows.Forms.DateTimePicker();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
-            this.btnBuscarCUIT = new System.Windows.Forms.Button();
             this.dtpNacimiento = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.txtAltura = new MaterialSkin.Controls.MaterialTextBox2();
-            this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
             this.label1 = new System.Windows.Forms.Label();
-            this.grbEmpresa = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.grbEmpresa.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCargar
@@ -122,7 +122,7 @@
             this.txtNombre.HideSelection = true;
             this.txtNombre.LeadingIcon = null;
             this.txtNombre.Location = new System.Drawing.Point(180, 137);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.MaxLength = 32767;
             this.txtNombre.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombre.Name = "txtNombre";
@@ -154,7 +154,7 @@
             this.txtApellido.HideSelection = true;
             this.txtApellido.LeadingIcon = null;
             this.txtApellido.Location = new System.Drawing.Point(180, 81);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido.MaxLength = 32767;
             this.txtApellido.MouseState = MaterialSkin.MouseState.OUT;
             this.txtApellido.Name = "txtApellido";
@@ -218,11 +218,11 @@
             this.cboGenero.ItemHeight = 43;
             this.cboGenero.Items.AddRange(new object[] {
             "Seleccione",
-            "Masculino",
-            "Femenino",
-            "Otros"});
+            "MASCULINO",
+            "FEMENINO",
+            "OTROS"});
             this.cboGenero.Location = new System.Drawing.Point(180, 231);
-            this.cboGenero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboGenero.Margin = new System.Windows.Forms.Padding(2);
             this.cboGenero.MaxDropDownItems = 4;
             this.cboGenero.MouseState = MaterialSkin.MouseState.OUT;
             this.cboGenero.Name = "cboGenero";
@@ -257,7 +257,7 @@
             this.txtPeso.HideSelection = true;
             this.txtPeso.LeadingIcon = null;
             this.txtPeso.Location = new System.Drawing.Point(93, 26);
-            this.txtPeso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPeso.Margin = new System.Windows.Forms.Padding(2);
             this.txtPeso.MaxLength = 32767;
             this.txtPeso.MouseState = MaterialSkin.MouseState.OUT;
             this.txtPeso.Name = "txtPeso";
@@ -289,7 +289,7 @@
             this.txtDNI.HideSelection = true;
             this.txtDNI.LeadingIcon = null;
             this.txtDNI.Location = new System.Drawing.Point(180, 27);
-            this.txtDNI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDNI.Margin = new System.Windows.Forms.Padding(2);
             this.txtDNI.MaxLength = 32767;
             this.txtDNI.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDNI.Name = "txtDNI";
@@ -372,13 +372,29 @@
             this.groupBox1.Controls.Add(this.materialLabel2);
             this.groupBox1.Controls.Add(this.materialLabel1);
             this.groupBox1.Location = new System.Drawing.Point(25, 52);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(906, 421);
             this.groupBox1.TabIndex = 61;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "REGISTRAR EMPLEADOS";
+            // 
+            // grbEmpresa
+            // 
+            this.grbEmpresa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.grbEmpresa.Controls.Add(this.materialLabel11);
+            this.grbEmpresa.Controls.Add(this.txtNomEmpr);
+            this.grbEmpresa.Controls.Add(this.txtCUITEncontrado);
+            this.grbEmpresa.Controls.Add(this.btnBuscarCUIT);
+            this.grbEmpresa.Location = new System.Drawing.Point(466, 21);
+            this.grbEmpresa.Margin = new System.Windows.Forms.Padding(2);
+            this.grbEmpresa.Name = "grbEmpresa";
+            this.grbEmpresa.Padding = new System.Windows.Forms.Padding(2);
+            this.grbEmpresa.Size = new System.Drawing.Size(436, 137);
+            this.grbEmpresa.TabIndex = 112;
+            this.grbEmpresa.TabStop = false;
+            this.grbEmpresa.Text = "Empresa";
             // 
             // txtNomEmpr
             // 
@@ -394,7 +410,7 @@
             this.txtNomEmpr.HideSelection = true;
             this.txtNomEmpr.LeadingIcon = null;
             this.txtNomEmpr.Location = new System.Drawing.Point(52, 73);
-            this.txtNomEmpr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomEmpr.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomEmpr.MaxLength = 32767;
             this.txtNomEmpr.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNomEmpr.Name = "txtNomEmpr";
@@ -412,6 +428,55 @@
             this.txtNomEmpr.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtNomEmpr.TrailingIcon = null;
             this.txtNomEmpr.UseSystemPasswordChar = false;
+            // 
+            // txtCUITEncontrado
+            // 
+            this.txtCUITEncontrado.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtCUITEncontrado.AnimateReadOnly = false;
+            this.txtCUITEncontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCUITEncontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtCUITEncontrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtCUITEncontrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCUITEncontrado.Depth = 0;
+            this.txtCUITEncontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCUITEncontrado.HideSelection = true;
+            this.txtCUITEncontrado.LeadingIcon = null;
+            this.txtCUITEncontrado.Location = new System.Drawing.Point(52, 21);
+            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCUITEncontrado.MaxLength = 32767;
+            this.txtCUITEncontrado.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCUITEncontrado.Name = "txtCUITEncontrado";
+            this.txtCUITEncontrado.PasswordChar = '\0';
+            this.txtCUITEncontrado.PrefixSuffixText = null;
+            this.txtCUITEncontrado.ReadOnly = true;
+            this.txtCUITEncontrado.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCUITEncontrado.SelectedText = "";
+            this.txtCUITEncontrado.SelectionLength = 0;
+            this.txtCUITEncontrado.SelectionStart = 0;
+            this.txtCUITEncontrado.ShortcutsEnabled = true;
+            this.txtCUITEncontrado.Size = new System.Drawing.Size(324, 48);
+            this.txtCUITEncontrado.TabIndex = 5;
+            this.txtCUITEncontrado.TabStop = false;
+            this.txtCUITEncontrado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCUITEncontrado.TrailingIcon = null;
+            this.txtCUITEncontrado.UseSystemPasswordChar = false;
+            // 
+            // btnBuscarCUIT
+            // 
+            this.btnBuscarCUIT.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBuscarCUIT.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnBuscarCUIT.FlatAppearance.BorderSize = 0;
+            this.btnBuscarCUIT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarCUIT.Location = new System.Drawing.Point(381, 23);
+            this.btnBuscarCUIT.Name = "btnBuscarCUIT";
+            this.btnBuscarCUIT.Size = new System.Drawing.Size(50, 39);
+            this.btnBuscarCUIT.TabIndex = 72;
+            this.btnBuscarCUIT.Text = "...";
+            this.btnBuscarCUIT.UseVisualStyleBackColor = false;
+            this.btnBuscarCUIT.Click += new System.EventHandler(this.btnBuscarCUIT_Click);
             // 
             // btnConsultar
             // 
@@ -456,7 +521,7 @@
             this.dtpIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dtpIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpIngreso.Location = new System.Drawing.Point(180, 292);
-            this.dtpIngreso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpIngreso.Margin = new System.Windows.Forms.Padding(2);
             this.dtpIngreso.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpIngreso.Name = "dtpIngreso";
             this.dtpIngreso.Size = new System.Drawing.Size(250, 26);
@@ -476,23 +541,6 @@
             this.materialLabel7.TabIndex = 74;
             this.materialLabel7.Text = "Fecha de Ingreso";
             // 
-            // btnBuscarCUIT
-            // 
-            this.btnBuscarCUIT.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnBuscarCUIT.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnBuscarCUIT.FlatAppearance.BorderSize = 0;
-            this.btnBuscarCUIT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarCUIT.Location = new System.Drawing.Point(381, 23);
-            this.btnBuscarCUIT.Name = "btnBuscarCUIT";
-            this.btnBuscarCUIT.Size = new System.Drawing.Size(50, 39);
-            this.btnBuscarCUIT.TabIndex = 72;
-            this.btnBuscarCUIT.Text = "...";
-            this.btnBuscarCUIT.UseVisualStyleBackColor = false;
-            this.btnBuscarCUIT.Click += new System.EventHandler(this.btnBuscarCUIT_Click);
-            // 
             // dtpNacimiento
             // 
             this.dtpNacimiento.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -500,7 +548,7 @@
             this.dtpNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dtpNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNacimiento.Location = new System.Drawing.Point(180, 194);
-            this.dtpNacimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpNacimiento.Margin = new System.Windows.Forms.Padding(2);
             this.dtpNacimiento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpNacimiento.Name = "dtpNacimiento";
             this.dtpNacimiento.Size = new System.Drawing.Size(249, 26);
@@ -516,9 +564,9 @@
             this.groupBox2.Controls.Add(this.materialLabel5);
             this.groupBox2.Controls.Add(this.txtPeso);
             this.groupBox2.Location = new System.Drawing.Point(466, 205);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(435, 94);
             this.groupBox2.TabIndex = 61;
             this.groupBox2.TabStop = false;
@@ -565,7 +613,7 @@
             this.txtAltura.HideSelection = true;
             this.txtAltura.LeadingIcon = null;
             this.txtAltura.Location = new System.Drawing.Point(283, 26);
-            this.txtAltura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAltura.Margin = new System.Windows.Forms.Padding(2);
             this.txtAltura.MaxLength = 32767;
             this.txtAltura.MouseState = MaterialSkin.MouseState.OUT;
             this.txtAltura.Name = "txtAltura";
@@ -584,38 +632,6 @@
             this.txtAltura.TrailingIcon = null;
             this.txtAltura.UseSystemPasswordChar = false;
             // 
-            // txtCUITEncontrado
-            // 
-            this.txtCUITEncontrado.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtCUITEncontrado.AnimateReadOnly = false;
-            this.txtCUITEncontrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtCUITEncontrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtCUITEncontrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtCUITEncontrado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtCUITEncontrado.Depth = 0;
-            this.txtCUITEncontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtCUITEncontrado.HideSelection = true;
-            this.txtCUITEncontrado.LeadingIcon = null;
-            this.txtCUITEncontrado.Location = new System.Drawing.Point(52, 21);
-            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtCUITEncontrado.MaxLength = 32767;
-            this.txtCUITEncontrado.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtCUITEncontrado.Name = "txtCUITEncontrado";
-            this.txtCUITEncontrado.PasswordChar = '\0';
-            this.txtCUITEncontrado.PrefixSuffixText = null;
-            this.txtCUITEncontrado.ReadOnly = true;
-            this.txtCUITEncontrado.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtCUITEncontrado.SelectedText = "";
-            this.txtCUITEncontrado.SelectionLength = 0;
-            this.txtCUITEncontrado.SelectionStart = 0;
-            this.txtCUITEncontrado.ShortcutsEnabled = true;
-            this.txtCUITEncontrado.Size = new System.Drawing.Size(324, 48);
-            this.txtCUITEncontrado.TabIndex = 5;
-            this.txtCUITEncontrado.TabStop = false;
-            this.txtCUITEncontrado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCUITEncontrado.TrailingIcon = null;
-            this.txtCUITEncontrado.UseSystemPasswordChar = false;
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -628,22 +644,6 @@
             this.label1.Size = new System.Drawing.Size(331, 31);
             this.label1.TabIndex = 62;
             this.label1.Text = "CARGA DE EMPLEADOS";
-            // 
-            // grbEmpresa
-            // 
-            this.grbEmpresa.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.grbEmpresa.Controls.Add(this.materialLabel11);
-            this.grbEmpresa.Controls.Add(this.txtNomEmpr);
-            this.grbEmpresa.Controls.Add(this.txtCUITEncontrado);
-            this.grbEmpresa.Controls.Add(this.btnBuscarCUIT);
-            this.grbEmpresa.Location = new System.Drawing.Point(466, 21);
-            this.grbEmpresa.Margin = new System.Windows.Forms.Padding(2);
-            this.grbEmpresa.Name = "grbEmpresa";
-            this.grbEmpresa.Padding = new System.Windows.Forms.Padding(2);
-            this.grbEmpresa.Size = new System.Drawing.Size(436, 137);
-            this.grbEmpresa.TabIndex = 112;
-            this.grbEmpresa.TabStop = false;
-            this.grbEmpresa.Text = "Empresa";
             // 
             // frmEmpleados
             // 
@@ -661,10 +661,10 @@
             this.Load += new System.EventHandler(this.Empleadoss_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.grbEmpresa.ResumeLayout(false);
             this.grbEmpresa.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

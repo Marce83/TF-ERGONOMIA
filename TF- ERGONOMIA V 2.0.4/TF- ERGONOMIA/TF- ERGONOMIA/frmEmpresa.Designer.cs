@@ -288,9 +288,10 @@
             this.cboCondFiscal.ItemHeight = 43;
             this.cboCondFiscal.Items.AddRange(new object[] {
             "Seleccione",
-            "Responsable Inscripto",
-            "Monotributo",
-            "Consumidor Final"});
+            "RESPONSABLE INSCRIPTO",
+            "MONOTRIBUTO",
+            "COMSUMIDOR FINAL",
+            ""});
             this.cboCondFiscal.Location = new System.Drawing.Point(184, 144);
             this.cboCondFiscal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboCondFiscal.MaxDropDownItems = 4;
@@ -694,16 +695,16 @@
             this.cboActEmpr.ItemHeight = 43;
             this.cboActEmpr.Items.AddRange(new object[] {
             "Seleccione",
-            "Agricultura",
-            "Alimentación y Bebidas",
-            "Aeroespacial",
-            "Automotriz",
-            "Comercio",
-            "Construcción",
-            "Manufactura",
-            "Salud",
-            "Telecomunicaciones",
-            "Transporte"});
+            "AGRICULTURA",
+            "ALIMENTACIÓN Y BEBIDAS",
+            "AEROESPACIAL",
+            "AUTOMOTRIZ",
+            "COMERCIO",
+            "CONSTRUCCION",
+            "MANUFACTURA",
+            "SALUD",
+            "TELECOMUNICACIONES",
+            "TRANSPORTE"});
             this.cboActEmpr.Location = new System.Drawing.Point(184, 197);
             this.cboActEmpr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboActEmpr.MaxDropDownItems = 4;

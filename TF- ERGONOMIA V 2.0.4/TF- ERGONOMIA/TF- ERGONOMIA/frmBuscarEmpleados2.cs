@@ -40,13 +40,11 @@ namespace TF.WIN
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            Empleados oempl = new Empleados();
-            oempl.DNI = txtDNIempleado.Text;
-            EmpleadosBC oEmpleadosBC = new EmpleadosBC();
-            DataTable dt = oEmpleadosBC.ConsultarEmpleadosDNI(oempl);
-
-            dgvResultado.DataSource = null;
-            dgvResultado.DataSource = dt;
+            Listar();
+            //Empleados oempl = new Empleados();
+            //oempl.DNI = txtDNIempleado.Text;
+            //EmpleadosBC oEmpleadosBC = new EmpleadosBC();
+            //DataTable dt = oEmpleadosBC.ConsultarEmpleadosDNI(oempl);
             //dgvempleados.Columns[0].Visible = false;
         }
         private void Listar()

@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarEmpleado));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.linkLimpiar = new System.Windows.Forms.LinkLabel();
             this.grbEmpresa = new System.Windows.Forms.GroupBox();
             this.txtNomEmp = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
@@ -63,7 +64,6 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvEmpleados = new System.Windows.Forms.DataGridView();
-            this.linkLimpiar = new System.Windows.Forms.LinkLabel();
             this.groupBox3.SuspendLayout();
             this.grbEmpresa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -98,13 +98,25 @@
             this.groupBox3.Controls.Add(this.btnBuscar);
             this.groupBox3.Controls.Add(this.dgvEmpleados);
             this.groupBox3.Location = new System.Drawing.Point(11, 11);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(929, 640);
             this.groupBox3.TabIndex = 64;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "CONSULTAR EMPLEADOS CARGADOS";
+            // 
+            // linkLimpiar
+            // 
+            this.linkLimpiar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.linkLimpiar.AutoSize = true;
+            this.linkLimpiar.Location = new System.Drawing.Point(886, 615);
+            this.linkLimpiar.Name = "linkLimpiar";
+            this.linkLimpiar.Size = new System.Drawing.Size(40, 13);
+            this.linkLimpiar.TabIndex = 165;
+            this.linkLimpiar.TabStop = true;
+            this.linkLimpiar.Text = "Limpiar";
+            this.linkLimpiar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLimpiar_LinkClicked);
             // 
             // grbEmpresa
             // 
@@ -114,9 +126,9 @@
             this.grbEmpresa.Controls.Add(this.txtCUITEncontrado);
             this.grbEmpresa.Controls.Add(this.button1);
             this.grbEmpresa.Location = new System.Drawing.Point(427, 301);
-            this.grbEmpresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbEmpresa.Margin = new System.Windows.Forms.Padding(2);
             this.grbEmpresa.Name = "grbEmpresa";
-            this.grbEmpresa.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbEmpresa.Padding = new System.Windows.Forms.Padding(2);
             this.grbEmpresa.Size = new System.Drawing.Size(461, 145);
             this.grbEmpresa.TabIndex = 111;
             this.grbEmpresa.TabStop = false;
@@ -135,7 +147,7 @@
             this.txtNomEmp.HideSelection = true;
             this.txtNomEmp.LeadingIcon = null;
             this.txtNomEmp.Location = new System.Drawing.Point(50, 84);
-            this.txtNomEmp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomEmp.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomEmp.MaxLength = 32767;
             this.txtNomEmp.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNomEmp.Name = "txtNomEmp";
@@ -182,7 +194,7 @@
             this.txtCUITEncontrado.HideSelection = true;
             this.txtCUITEncontrado.LeadingIcon = null;
             this.txtCUITEncontrado.Location = new System.Drawing.Point(50, 31);
-            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCUITEncontrado.Margin = new System.Windows.Forms.Padding(2);
             this.txtCUITEncontrado.MaxLength = 32767;
             this.txtCUITEncontrado.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCUITEncontrado.Name = "txtCUITEncontrado";
@@ -211,7 +223,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(390, 31);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 39);
             this.button1.TabIndex = 91;
@@ -225,7 +237,7 @@
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
             this.btnCerrar.Location = new System.Drawing.Point(906, 17);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(19, 20);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -250,16 +262,17 @@
             this.cboBuscadorDinamico.ItemHeight = 43;
             this.cboBuscadorDinamico.Items.AddRange(new object[] {
             "DNI",
-            "Nombre",
-            "Apellido"});
+            "NOMBRE",
+            "APELLIDO"});
             this.cboBuscadorDinamico.Location = new System.Drawing.Point(21, 45);
-            this.cboBuscadorDinamico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboBuscadorDinamico.Margin = new System.Windows.Forms.Padding(2);
             this.cboBuscadorDinamico.MaxDropDownItems = 4;
             this.cboBuscadorDinamico.MouseState = MaterialSkin.MouseState.OUT;
             this.cboBuscadorDinamico.Name = "cboBuscadorDinamico";
             this.cboBuscadorDinamico.Size = new System.Drawing.Size(146, 49);
             this.cboBuscadorDinamico.StartIndex = 0;
             this.cboBuscadorDinamico.TabIndex = 108;
+            this.cboBuscadorDinamico.SelectedIndexChanged += new System.EventHandler(this.cboBuscadorDinamico_SelectedIndexChanged);
             // 
             // cboAreaempresa
             // 
@@ -291,7 +304,7 @@
             "Mantenimiento",
             "Legales"});
             this.cboAreaempresa.Location = new System.Drawing.Point(595, 584);
-            this.cboAreaempresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboAreaempresa.Margin = new System.Windows.Forms.Padding(2);
             this.cboAreaempresa.MaxDropDownItems = 4;
             this.cboAreaempresa.MouseState = MaterialSkin.MouseState.OUT;
             this.cboAreaempresa.Name = "cboAreaempresa";
@@ -324,7 +337,7 @@
             this.dtpIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dtpIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpIngreso.Location = new System.Drawing.Point(164, 556);
-            this.dtpIngreso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpIngreso.Margin = new System.Windows.Forms.Padding(2);
             this.dtpIngreso.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpIngreso.Name = "dtpIngreso";
             this.dtpIngreso.Size = new System.Drawing.Size(218, 26);
@@ -353,7 +366,7 @@
             this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarCUIT.Location = new System.Drawing.Point(1052, 373);
-            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCUIT.Name = "btnBuscarCUIT";
             this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 59);
             this.btnBuscarCUIT.TabIndex = 91;
@@ -367,7 +380,7 @@
             this.dtpNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dtpNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNacimiento.Location = new System.Drawing.Point(163, 440);
-            this.dtpNacimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpNacimiento.Margin = new System.Windows.Forms.Padding(2);
             this.dtpNacimiento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpNacimiento.Name = "dtpNacimiento";
             this.dtpNacimiento.Size = new System.Drawing.Size(219, 26);
@@ -383,9 +396,9 @@
             this.groupBox2.Controls.Add(this.materialLabel5);
             this.groupBox2.Controls.Add(this.txtPeso);
             this.groupBox2.Location = new System.Drawing.Point(427, 481);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(462, 94);
             this.groupBox2.TabIndex = 90;
             this.groupBox2.TabStop = false;
@@ -432,7 +445,7 @@
             this.txtAltura.HideSelection = true;
             this.txtAltura.LeadingIcon = null;
             this.txtAltura.Location = new System.Drawing.Point(300, 24);
-            this.txtAltura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAltura.Margin = new System.Windows.Forms.Padding(2);
             this.txtAltura.MaxLength = 32767;
             this.txtAltura.MouseState = MaterialSkin.MouseState.OUT;
             this.txtAltura.Name = "txtAltura";
@@ -492,7 +505,7 @@
             this.txtPeso.HideSelection = true;
             this.txtPeso.LeadingIcon = null;
             this.txtPeso.Location = new System.Drawing.Point(108, 24);
-            this.txtPeso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPeso.Margin = new System.Windows.Forms.Padding(2);
             this.txtPeso.MaxLength = 32767;
             this.txtPeso.MouseState = MaterialSkin.MouseState.OUT;
             this.txtPeso.Name = "txtPeso";
@@ -528,11 +541,11 @@
             this.cboGenero.ItemHeight = 43;
             this.cboGenero.Items.AddRange(new object[] {
             "Seleccione",
-            "Masculino",
-            "Femenino",
-            "Otros"});
+            "MASCULINO",
+            "FEMENINO",
+            "OTROS"});
             this.cboGenero.Location = new System.Drawing.Point(162, 487);
-            this.cboGenero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboGenero.Margin = new System.Windows.Forms.Padding(2);
             this.cboGenero.MaxDropDownItems = 4;
             this.cboGenero.MouseState = MaterialSkin.MouseState.OUT;
             this.cboGenero.Name = "cboGenero";
@@ -581,7 +594,7 @@
             this.txtApellido.HideSelection = true;
             this.txtApellido.LeadingIcon = null;
             this.txtApellido.Location = new System.Drawing.Point(163, 315);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido.MaxLength = 32767;
             this.txtApellido.MouseState = MaterialSkin.MouseState.OUT;
             this.txtApellido.Name = "txtApellido";
@@ -613,7 +626,7 @@
             this.txtNombre.HideSelection = true;
             this.txtNombre.LeadingIcon = null;
             this.txtNombre.Location = new System.Drawing.Point(162, 377);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.MaxLength = 32767;
             this.txtNombre.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombre.Name = "txtNombre";
@@ -674,7 +687,7 @@
             this.txtBuscador.HideSelection = true;
             this.txtBuscador.LeadingIcon = null;
             this.txtBuscador.Location = new System.Drawing.Point(194, 46);
-            this.txtBuscador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscador.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscador.MaxLength = 32767;
             this.txtBuscador.MouseState = MaterialSkin.MouseState.OUT;
             this.txtBuscador.Name = "txtBuscador";
@@ -766,25 +779,13 @@
             this.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvEmpleados.EnableHeadersVisualStyles = false;
             this.dgvEmpleados.Location = new System.Drawing.Point(20, 108);
-            this.dgvEmpleados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvEmpleados.Margin = new System.Windows.Forms.Padding(2);
             this.dgvEmpleados.Name = "dgvEmpleados";
             this.dgvEmpleados.RowHeadersVisible = false;
             this.dgvEmpleados.RowTemplate.Height = 24;
             this.dgvEmpleados.Size = new System.Drawing.Size(868, 177);
             this.dgvEmpleados.TabIndex = 57;
             this.dgvEmpleados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleados_CellContentClick);
-            // 
-            // linkLimpiar
-            // 
-            this.linkLimpiar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.linkLimpiar.AutoSize = true;
-            this.linkLimpiar.Location = new System.Drawing.Point(886, 615);
-            this.linkLimpiar.Name = "linkLimpiar";
-            this.linkLimpiar.Size = new System.Drawing.Size(40, 13);
-            this.linkLimpiar.TabIndex = 165;
-            this.linkLimpiar.TabStop = true;
-            this.linkLimpiar.Text = "Limpiar";
-            this.linkLimpiar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLimpiar_LinkClicked);
             // 
             // frmConsultarEmpleado
             // 

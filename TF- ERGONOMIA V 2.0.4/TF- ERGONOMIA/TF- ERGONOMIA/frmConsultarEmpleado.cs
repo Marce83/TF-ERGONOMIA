@@ -58,7 +58,7 @@ namespace TF.WIN
                     dgvEmpleados.Columns["Nombre"].DisplayIndex = 1;
                     dgvEmpleados.Columns[10].Visible = false;
                     break;
-                case "Nombre":
+                case "NOMBRE":
                     oempl.Nombre = txtBuscador.Text;
                     DataTable dtNom = oEmpleadosBC.ConsultarEmpleadosPorNombre(oempl);
                     dgvEmpleados.DataSource = null;
@@ -67,7 +67,7 @@ namespace TF.WIN
                     dgvEmpleados.Columns["Nombre"].DisplayIndex = 1;
                     dgvEmpleados.Columns[10].Visible = false;
                     break;
-                case "Apellido":
+                case "APELLIDO":
                     oempl.Apellido = txtBuscador.Text;
                     DataTable dtApe = oEmpleadosBC.ConsultarEmpleadosPorApellido(oempl);
                     dgvEmpleados.DataSource = null;
@@ -81,6 +81,20 @@ namespace TF.WIN
             {
                 Listar();
             }
+        }
+
+        private void cboBuscadorDinamico_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboBuscadorDinamico.Text == "DNI")
+            {
+                txtBuscador.Text = string.Empty;
+            }
+            else if (cboBuscadorDinamico.Text == "NOMBRE")
+            {
+                txtBuscador.Text = string.Empty;
+            }
+            else
+                txtBuscador.Text = string.Empty;
         }
 
         private void btnModificar_Click(object sender, EventArgs e)

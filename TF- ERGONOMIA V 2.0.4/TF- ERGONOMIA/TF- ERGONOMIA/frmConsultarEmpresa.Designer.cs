@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarEmpresa));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvCargaEmpresas = new System.Windows.Forms.DataGridView();
@@ -112,14 +112,14 @@
             // 
             this.dgvCargaEmpresas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvCargaEmpresas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCargaEmpresas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCargaEmpresas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCargaEmpresas.ColumnHeadersHeight = 25;
             this.dgvCargaEmpresas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvCargaEmpresas.EnableHeadersVisualStyles = false;
@@ -196,6 +196,7 @@
             this.cboBuscadorDinamico.Size = new System.Drawing.Size(181, 49);
             this.cboBuscadorDinamico.StartIndex = 0;
             this.cboBuscadorDinamico.TabIndex = 107;
+            this.cboBuscadorDinamico.SelectedIndexChanged += new System.EventHandler(this.cboBuscadorDinamico_SelectedIndexChanged);
             // 
             // materialLabel13
             // 
@@ -361,16 +362,16 @@
             this.cboActEmpr.ItemHeight = 43;
             this.cboActEmpr.Items.AddRange(new object[] {
             "Seleccione",
-            "Agricultura",
-            "Alimentación y Bebidas",
-            "Aeroespacial",
-            "Automotriz",
-            "Comercio",
-            "Construcción",
-            "Manufactura",
-            "Salud",
-            "Telecomunicaciones",
-            "Transporte"});
+            "AGRICULTURA",
+            "ALIMENTACIÓN Y BEBIDAS",
+            "AEROESPACIAL",
+            "AUTOMOTRIZ",
+            "COMERCIO",
+            "CONSTRUCCION",
+            "MANUFACTURA",
+            "SALUD",
+            "TELECOMUNICACIONES",
+            "TRANSPORTE"});
             this.cboActEmpr.Location = new System.Drawing.Point(163, 411);
             this.cboActEmpr.Margin = new System.Windows.Forms.Padding(2);
             this.cboActEmpr.MaxDropDownItems = 4;
@@ -536,9 +537,9 @@
             this.cboCondFiscal.ItemHeight = 43;
             this.cboCondFiscal.Items.AddRange(new object[] {
             "Seleccione",
-            "Responsable Inscripto",
-            "Monotributo",
-            "Consumidor Final"});
+            "RESPONSABLE INSCRIPTO",
+            "MONOTRIBUTO",
+            "COMSUMIDOR FINAL"});
             this.cboCondFiscal.Location = new System.Drawing.Point(163, 358);
             this.cboCondFiscal.Margin = new System.Windows.Forms.Padding(2);
             this.cboCondFiscal.MaxDropDownItems = 4;

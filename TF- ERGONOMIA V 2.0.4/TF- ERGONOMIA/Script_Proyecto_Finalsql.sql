@@ -193,7 +193,7 @@ CREATE OR ALTER PROCEDURE SP_Empresas_GetId
 @CUIT nvarchar(11)
 AS
 BEGIN
-	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion), UPPER(Localidad) Localidad, UPPER(Provincia) Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion) Dirección, UPPER(Localidad) Localidad, UPPER(Provincia) Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
 	WHERE CUIT LIKE '%'+@CUIT+'%'
 	ORDER BY 2 ASC
@@ -204,9 +204,10 @@ CREATE OR ALTER PROCEDURE [dbo].[SP_Nombre_Empresa]
 @Nombre nvarchar(30)
 AS
 BEGIN
-	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion), Localidad, Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
+	SELECT CUIT, UPPER(Nombre) Nombre, UPPER(Condicion_Fiscal) 'Condicion Fiscal', UPPER(Actividad_Empresarial) 'Actividad Empresarial', Tipo, UPPER(Direccion) Dirección, UPPER(Localidad) Localidad, UPPER(Provincia) Provincia, Telefono, Correo, Web, FechaIngreso 'Fecha de Ingreso', Estado
 	FROM Empresas
 	WHERE Nombre LIKE '%'+@Nombre+'%'
+	ORDER BY 2 ASC
 END
 GO
 

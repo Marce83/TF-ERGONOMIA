@@ -58,10 +58,9 @@ namespace TF.WIN
 
                 EmpresasBC oEmpresasBC = new EmpresasBC();
                 DataTable dt = oEmpresasBC.ConsultarEmpresas(oemp);
-
+                //dgvCargaEmpresas.Columns[0].Visible = false;
                 dgvCargaEmpresas.DataSource = null;
                 dgvCargaEmpresas.DataSource = dt;
-                //dgvCargaEmpresas.Columns[0].Visible = false;
             }
             else
                  if (cboBuscadorDinamico.Text == "Razón Social")
@@ -69,15 +68,25 @@ namespace TF.WIN
                 oemp.Nombre = txtBuscador.Text;
                 EmpresasBC oEmpresasBC = new EmpresasBC();
                 DataTable dt = oEmpresasBC.ConsultarNombreEmpresa(oemp);
-
                 dgvCargaEmpresas.DataSource = null;
                 dgvCargaEmpresas.DataSource = dt;
+                // Limpiar el contenido del textbox
+                
             }
             if (txtBuscador.Text == String.Empty)
             {
                 Listar();
             }
+        }
 
+        private void cboBuscadorDinamico_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboBuscadorDinamico.Text == "CUIT")
+            {
+                txtBuscador.Text = string.Empty;
+            }
+            else
+                txtBuscador.Text = string.Empty;
         }
 
         private void dgvCargaEmpresas_CellContentClick(object sender, DataGridViewCellEventArgs e)
