@@ -781,7 +781,7 @@
             this.dgvEmpleados.Location = new System.Drawing.Point(20, 108);
             this.dgvEmpleados.Margin = new System.Windows.Forms.Padding(2);
             this.dgvEmpleados.Name = "dgvEmpleados";
-            this.dgvEmpleados.RowHeadersVisible = false;
+            this.dgvEmpleados.ReadOnly = true;
             this.dgvEmpleados.RowTemplate.Height = 24;
             this.dgvEmpleados.Size = new System.Drawing.Size(868, 177);
             this.dgvEmpleados.TabIndex = 57;

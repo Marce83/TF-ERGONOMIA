@@ -40,30 +40,37 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(191, 9);
+            this.label1.Location = new System.Drawing.Point(122, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(315, 36);
+            this.label1.Size = new System.Drawing.Size(249, 29);
             this.label1.TabIndex = 83;
             this.label1.Text = "BUSCAR EMPLEADO";
             // 
             // dgvResultado
             // 
+            this.dgvResultado.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dgvResultado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvResultado.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultado.Location = new System.Drawing.Point(12, 127);
-            this.dgvResultado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvResultado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvResultado.ColumnHeadersHeight = 25;
+            this.dgvResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvResultado.EnableHeadersVisualStyles = false;
+            this.dgvResultado.Location = new System.Drawing.Point(4, 104);
             this.dgvResultado.Name = "dgvResultado";
             this.dgvResultado.ReadOnly = true;
             this.dgvResultado.RowHeadersWidth = 51;
-            this.dgvResultado.Size = new System.Drawing.Size(656, 182);
+            this.dgvResultado.Size = new System.Drawing.Size(513, 160);
             this.dgvResultado.TabIndex = 82;
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelar.BackColor = System.Drawing.Color.Red;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -71,10 +78,9 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(143, 316);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Location = new System.Drawing.Point(51, 270);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(155, 51);
+            this.btnCancelar.Size = new System.Drawing.Size(116, 41);
             this.btnCancelar.TabIndex = 81;
             this.btnCancelar.Text = "SALIR";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -82,6 +88,7 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -89,10 +96,9 @@
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(351, 61);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Location = new System.Drawing.Point(267, 51);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(155, 53);
+            this.btnBuscar.Size = new System.Drawing.Size(116, 43);
             this.btnBuscar.TabIndex = 80;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -100,6 +106,7 @@
             // 
             // btnAceptar
             // 
+            this.btnAceptar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAceptar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnAceptar.FlatAppearance.BorderSize = 0;
             this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -107,10 +114,9 @@
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAceptar.Location = new System.Drawing.Point(429, 316);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAceptar.Location = new System.Drawing.Point(359, 270);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(155, 51);
+            this.btnAceptar.Size = new System.Drawing.Size(116, 41);
             this.btnAceptar.TabIndex = 79;
             this.btnAceptar.Text = "ACEPTAR";
             this.btnAceptar.UseVisualStyleBackColor = false;
@@ -118,11 +124,13 @@
             // 
             // materialLabel1
             // 
+            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(9, 79);
+            this.materialLabel1.Location = new System.Drawing.Point(11, 65);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(31, 19);
@@ -131,6 +139,7 @@
             // 
             // txtDNIempleado
             // 
+            this.txtDNIempleado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDNIempleado.AnimateReadOnly = false;
             this.txtDNIempleado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtDNIempleado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -140,8 +149,8 @@
             this.txtDNIempleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDNIempleado.HideSelection = true;
             this.txtDNIempleado.LeadingIcon = null;
-            this.txtDNIempleado.Location = new System.Drawing.Point(81, 62);
-            this.txtDNIempleado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDNIempleado.Location = new System.Drawing.Point(65, 51);
+            this.txtDNIempleado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDNIempleado.MaxLength = 32767;
             this.txtDNIempleado.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDNIempleado.Name = "txtDNIempleado";
@@ -153,7 +162,7 @@
             this.txtDNIempleado.SelectionLength = 0;
             this.txtDNIempleado.SelectionStart = 0;
             this.txtDNIempleado.ShortcutsEnabled = true;
-            this.txtDNIempleado.Size = new System.Drawing.Size(251, 48);
+            this.txtDNIempleado.Size = new System.Drawing.Size(188, 48);
             this.txtDNIempleado.TabIndex = 78;
             this.txtDNIempleado.TabStop = false;
             this.txtDNIempleado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -162,11 +171,11 @@
             // 
             // frmBuscarEmpleados2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(692, 391);
+            this.ClientSize = new System.Drawing.Size(520, 324);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvResultado);
             this.Controls.Add(this.btnCancelar);
@@ -175,7 +184,6 @@
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.txtDNIempleado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmBuscarEmpleados2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBuscarEmpleados2";

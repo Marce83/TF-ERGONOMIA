@@ -33,6 +33,16 @@ namespace TF.WIN
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        private void cboBuscadorDinamico_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboBuscadorDinamico.Text == "CUIT")
+            {
+                txtBuscador.Text = string.Empty;
+            }
+            else
+                txtBuscador.Text = string.Empty;
+        }
+
         Empresas oBe = new Empresas();
         public Empresas EmpresaSeleccionada { get; set; }
 

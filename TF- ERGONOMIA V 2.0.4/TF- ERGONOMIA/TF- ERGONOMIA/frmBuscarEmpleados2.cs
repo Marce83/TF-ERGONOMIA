@@ -57,6 +57,7 @@ namespace TF.WIN
                     DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
                     dgvResultado.DataSource = null;
                     dgvResultado.DataSource = dt;
+                    dgvResultado.Columns[5].Visible = false;
                 }
                 else
                     if(REBA_PORTADA.IdEmpresa!= 0)
@@ -65,6 +66,7 @@ namespace TF.WIN
                         DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
                         dgvResultado.DataSource = null;
                         dgvResultado.DataSource = dt;
+                        dgvResultado.Columns[5].Visible = false;
                 }
                     else
                         if(NIOSHPORTADA.IdEmpresa != 0)
@@ -73,7 +75,8 @@ namespace TF.WIN
                             DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
                             dgvResultado.DataSource = null;
                             dgvResultado.DataSource = dt;
-                    }
+                            dgvResultado.Columns[5].Visible = false;
+                }
                         else
                             if(JSSPORTADA.IdEmpresa != 0)
                         {
@@ -81,14 +84,16 @@ namespace TF.WIN
                                 DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
                                 dgvResultado.DataSource = null;
                                 dgvResultado.DataSource = dt;
-                        }
+                                dgvResultado.Columns[5].Visible = false;
+                }
                             else
                             {
                                 oPuestoTrabajo.IdEmpresa = FrmLMCPortada.IdEmpresa;
                                 DataTable dt = oPuestoTrabajoBC.GetAllVistaPuestoBC(oPuestoTrabajo);
                                 dgvResultado.DataSource = null;
                                 dgvResultado.DataSource = dt;
-                            }
+                                dgvResultado.Columns[5].Visible = false;
+                }
             }
             catch (Exception ex)
             {
