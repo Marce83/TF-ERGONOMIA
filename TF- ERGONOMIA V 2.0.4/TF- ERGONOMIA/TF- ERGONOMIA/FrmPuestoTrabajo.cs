@@ -21,7 +21,10 @@ namespace TF.WIN
             InitializeComponent();
         }
 
-
+        private void CboPuestoTrabajo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CboAreaempresa.SelectedIndex = 0;
+        }
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {

@@ -1,4 +1,5 @@
-﻿using MaterialSkin;
+﻿using iTextSharp.tool.xml.html;
+using MaterialSkin;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
@@ -131,6 +132,8 @@ namespace TF.WIN
                 DataTable dt = oUsuarioBC.UsuariosGetAll();
                 dgvEditarPerfil.DataSource = null;
                 dgvEditarPerfil.DataSource = dt;
+                dgvEditarPerfil.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+                dgvEditarPerfil.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
             catch (Exception ex)
             {

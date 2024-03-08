@@ -112,6 +112,7 @@ namespace TF.WIN
                             DgvPuestosRecientes.Columns[3].HeaderText = "Fecha de Ingreso";
                             DgvPuestosRecientes.Columns[4].HeaderText = "Fecha de Egreso";
                             DgvPuestosRecientes.Columns[5].Visible = false;
+                            DgvPuestosRecientes.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                         }
                         else
                         {
@@ -161,6 +162,7 @@ namespace TF.WIN
                 long CUIT = Convert.ToInt64(TxtCuitEmpresa.Text);
                 var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIT);
                 IdEmpresa = Convert.ToInt32(BuscarId);
+                txtNombreEmpleado.Text = string.Empty;
             }
         }
 

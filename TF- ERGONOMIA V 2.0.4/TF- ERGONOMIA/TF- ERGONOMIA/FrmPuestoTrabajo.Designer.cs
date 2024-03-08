@@ -68,14 +68,15 @@
             "Director",
             "Vicepresidente",
             "Presidente"});
-            this.CboPuestoTrabajo.Location = new System.Drawing.Point(336, 98);
-            this.CboPuestoTrabajo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CboPuestoTrabajo.Location = new System.Drawing.Point(252, 80);
+            this.CboPuestoTrabajo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CboPuestoTrabajo.MaxDropDownItems = 4;
             this.CboPuestoTrabajo.MouseState = MaterialSkin.MouseState.OUT;
             this.CboPuestoTrabajo.Name = "CboPuestoTrabajo";
-            this.CboPuestoTrabajo.Size = new System.Drawing.Size(352, 49);
+            this.CboPuestoTrabajo.Size = new System.Drawing.Size(265, 49);
             this.CboPuestoTrabajo.StartIndex = 0;
             this.CboPuestoTrabajo.TabIndex = 0;
+            this.CboPuestoTrabajo.SelectedIndexChanged += new System.EventHandler(this.CboPuestoTrabajo_SelectedIndexChanged);
             // 
             // materialLabel1
             // 
@@ -83,7 +84,8 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(75, 118);
+            this.materialLabel1.Location = new System.Drawing.Point(56, 96);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(61, 19);
@@ -100,10 +102,9 @@
             this.btnCargarPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargarPuesto.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnCargarPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargarPuesto.Location = new System.Drawing.Point(764, 98);
-            this.btnCargarPuesto.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCargarPuesto.Location = new System.Drawing.Point(573, 80);
             this.btnCargarPuesto.Name = "btnCargarPuesto";
-            this.btnCargarPuesto.Size = new System.Drawing.Size(155, 60);
+            this.btnCargarPuesto.Size = new System.Drawing.Size(116, 49);
             this.btnCargarPuesto.TabIndex = 74;
             this.btnCargarPuesto.Text = "CARGAR";
             this.btnCargarPuesto.UseVisualStyleBackColor = false;
@@ -119,10 +120,9 @@
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(764, 187);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalir.Location = new System.Drawing.Point(573, 152);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(155, 60);
+            this.btnSalir.Size = new System.Drawing.Size(116, 49);
             this.btnSalir.TabIndex = 75;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -134,7 +134,8 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(75, 207);
+            this.materialLabel2.Location = new System.Drawing.Point(56, 168);
+            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(163, 19);
@@ -169,12 +170,12 @@
             "Informática",
             "Mantenimiento",
             "Legales"});
-            this.CboAreaempresa.Location = new System.Drawing.Point(336, 187);
-            this.CboAreaempresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CboAreaempresa.Location = new System.Drawing.Point(252, 152);
+            this.CboAreaempresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CboAreaempresa.MaxDropDownItems = 4;
             this.CboAreaempresa.MouseState = MaterialSkin.MouseState.OUT;
             this.CboAreaempresa.Name = "CboAreaempresa";
-            this.CboAreaempresa.Size = new System.Drawing.Size(352, 49);
+            this.CboAreaempresa.Size = new System.Drawing.Size(265, 49);
             this.CboAreaempresa.StartIndex = 0;
             this.CboAreaempresa.TabIndex = 77;
             // 
@@ -185,9 +186,8 @@
             this.BarraTitulo.Controls.Add(this.label1);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1000, 65);
+            this.BarraTitulo.Size = new System.Drawing.Size(750, 53);
             this.BarraTitulo.TabIndex = 342;
             // 
             // pictureBox3
@@ -196,10 +196,9 @@
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(955, 17);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(716, 14);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
@@ -211,18 +210,19 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(261, 11);
+            this.label1.Location = new System.Drawing.Point(196, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(497, 38);
+            this.label1.Size = new System.Drawing.Size(408, 31);
             this.label1.TabIndex = 239;
             this.label1.Text = "CARGA PUESTO DE TRABAJO";
             // 
             // FrmPuestoTrabajo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1000, 288);
+            this.ClientSize = new System.Drawing.Size(750, 234);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.CboAreaempresa);
             this.Controls.Add(this.materialLabel2);
@@ -232,7 +232,7 @@
             this.Controls.Add(this.CboPuestoTrabajo);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmPuestoTrabajo";
             this.Text = "FrmPuestoTrabajocs";
             this.BarraTitulo.ResumeLayout(false);

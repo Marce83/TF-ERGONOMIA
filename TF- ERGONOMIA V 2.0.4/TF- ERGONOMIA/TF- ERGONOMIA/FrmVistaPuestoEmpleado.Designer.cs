@@ -41,22 +41,25 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 9);
+            this.label1.Location = new System.Drawing.Point(25, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(617, 36);
+            this.label1.Size = new System.Drawing.Size(495, 29);
             this.label1.TabIndex = 88;
             this.label1.Text = "HISTORIAL DE PUESTOS POR EMPLEADO";
             // 
             // dgvVistaPuestoEmpleado
             // 
+            this.dgvVistaPuestoEmpleado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvVistaPuestoEmpleado.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvVistaPuestoEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVistaPuestoEmpleado.Location = new System.Drawing.Point(16, 60);
-            this.dgvVistaPuestoEmpleado.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvVistaPuestoEmpleado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvVistaPuestoEmpleado.ColumnHeadersHeight = 25;
+            this.dgvVistaPuestoEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvVistaPuestoEmpleado.Location = new System.Drawing.Point(12, 49);
             this.dgvVistaPuestoEmpleado.Name = "dgvVistaPuestoEmpleado";
             this.dgvVistaPuestoEmpleado.ReadOnly = true;
             this.dgvVistaPuestoEmpleado.RowHeadersWidth = 51;
-            this.dgvVistaPuestoEmpleado.Size = new System.Drawing.Size(656, 258);
+            this.dgvVistaPuestoEmpleado.Size = new System.Drawing.Size(492, 210);
             this.dgvVistaPuestoEmpleado.TabIndex = 87;
             // 
             // btnCancelar
@@ -68,10 +71,9 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(109, 326);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar.Location = new System.Drawing.Point(82, 265);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(155, 58);
+            this.btnCancelar.Size = new System.Drawing.Size(116, 47);
             this.btnCancelar.TabIndex = 86;
             this.btnCancelar.Text = "SALIR";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -86,10 +88,9 @@
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAceptar.Location = new System.Drawing.Point(444, 326);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAceptar.Location = new System.Drawing.Point(333, 265);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(155, 58);
+            this.btnAceptar.Size = new System.Drawing.Size(116, 47);
             this.btnAceptar.TabIndex = 85;
             this.btnAceptar.Text = "ACEPTAR";
             this.btnAceptar.UseVisualStyleBackColor = false;
@@ -97,16 +98,15 @@
             // 
             // FrmVistaPuestoEmpleado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(711, 401);
+            this.ClientSize = new System.Drawing.Size(533, 326);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvVistaPuestoEmpleado);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmVistaPuestoEmpleado";
             this.Text = "FrmVistaPuestoEmpleado";
             ((System.ComponentModel.ISupportInitialize)(this.dgvVistaPuestoEmpleado)).EndInit();

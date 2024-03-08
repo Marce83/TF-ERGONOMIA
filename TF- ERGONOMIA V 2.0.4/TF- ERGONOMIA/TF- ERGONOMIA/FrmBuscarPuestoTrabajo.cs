@@ -48,6 +48,8 @@ namespace TF.WIN
                 dgvResultadoPuesto.Columns[0].Visible = false;
                 dgvResultadoPuesto.Columns[1].HeaderText = "Puesto";
                 dgvResultadoPuesto.Columns[2].HeaderText = "Area de la Empresa";
+                dgvResultadoPuesto.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+                dgvResultadoPuesto.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
           catch (Exception ex)
           {

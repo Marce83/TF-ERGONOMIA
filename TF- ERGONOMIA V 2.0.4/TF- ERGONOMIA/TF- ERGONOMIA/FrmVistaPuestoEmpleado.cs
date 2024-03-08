@@ -36,6 +36,8 @@ namespace TF.WIN
                 dgvVistaPuestoEmpleado.DataSource = null;
                 dgvVistaPuestoEmpleado.DataSource = dt;
                 dgvVistaPuestoEmpleado.Columns[2].HeaderText = "Puesto";
+                dgvVistaPuestoEmpleado.Columns[5].Visible = false;
+                dgvVistaPuestoEmpleado.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
             }
             catch (Exception ex)
             {

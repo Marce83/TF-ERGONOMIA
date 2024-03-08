@@ -35,6 +35,7 @@ namespace TF.WIN
             {
                 txtIdPuestoTrabajo.Text = oFrm.PuestoSeleccionada.IdPuesto.ToString();
                 txtNombrePuesto.Text = oFrm.PuestoSeleccionada.NombrePuesto.ToString();
+                txtNombreEmpleado.Text = string.Empty;
             }
         }
         private void btnBuscarEmpleados_Click(object sender, EventArgs e)
