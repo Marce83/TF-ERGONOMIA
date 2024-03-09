@@ -176,22 +176,6 @@ namespace TF.WIN
             dtpFechaAlta.Value = DateTime.Now;
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void dgvCargaEmpresas_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-        }
-
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();

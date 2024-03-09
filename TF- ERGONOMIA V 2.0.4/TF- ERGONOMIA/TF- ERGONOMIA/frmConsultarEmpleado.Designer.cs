@@ -36,14 +36,13 @@
             this.txtNomEmp = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.txtCUITEncontrado = new MaterialSkin.Controls.MaterialTextBox2();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBuscarCUIT = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.cboBuscadorDinamico = new MaterialSkin.Controls.MaterialComboBox();
             this.cboAreaempresa = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.dtpIngreso = new System.Windows.Forms.DateTimePicker();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
-            this.btnBuscarCUIT = new System.Windows.Forms.Button();
             this.dtpNacimiento = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
@@ -82,7 +81,6 @@
             this.groupBox3.Controls.Add(this.materialLabel9);
             this.groupBox3.Controls.Add(this.dtpIngreso);
             this.groupBox3.Controls.Add(this.materialLabel7);
-            this.groupBox3.Controls.Add(this.btnBuscarCUIT);
             this.groupBox3.Controls.Add(this.dtpNacimiento);
             this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Controls.Add(this.cboGenero);
@@ -124,7 +122,7 @@
             this.grbEmpresa.Controls.Add(this.txtNomEmp);
             this.grbEmpresa.Controls.Add(this.materialLabel11);
             this.grbEmpresa.Controls.Add(this.txtCUITEncontrado);
-            this.grbEmpresa.Controls.Add(this.button1);
+            this.grbEmpresa.Controls.Add(this.btnBuscarCUIT);
             this.grbEmpresa.Location = new System.Drawing.Point(427, 301);
             this.grbEmpresa.Margin = new System.Windows.Forms.Padding(2);
             this.grbEmpresa.Name = "grbEmpresa";
@@ -213,22 +211,23 @@
             this.txtCUITEncontrado.TrailingIcon = null;
             this.txtCUITEncontrado.UseSystemPasswordChar = false;
             // 
-            // button1
+            // btnBuscarCUIT
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(390, 31);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 39);
-            this.button1.TabIndex = 91;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBuscarCUIT.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBuscarCUIT.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnBuscarCUIT.FlatAppearance.BorderSize = 0;
+            this.btnBuscarCUIT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarCUIT.Location = new System.Drawing.Point(390, 31);
+            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscarCUIT.Name = "btnBuscarCUIT";
+            this.btnBuscarCUIT.Size = new System.Drawing.Size(50, 39);
+            this.btnBuscarCUIT.TabIndex = 91;
+            this.btnBuscarCUIT.Text = "...";
+            this.btnBuscarCUIT.UseVisualStyleBackColor = false;
+            this.btnBuscarCUIT.Click += new System.EventHandler(this.btnBuscarCUIT_Click);
             // 
             // btnCerrar
             // 
@@ -356,22 +355,6 @@
             this.materialLabel7.Size = new System.Drawing.Size(121, 19);
             this.materialLabel7.TabIndex = 93;
             this.materialLabel7.Text = "Fecha de Ingreso";
-            // 
-            // btnBuscarCUIT
-            // 
-            this.btnBuscarCUIT.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnBuscarCUIT.FlatAppearance.BorderSize = 0;
-            this.btnBuscarCUIT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnBuscarCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarCUIT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBuscarCUIT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarCUIT.Location = new System.Drawing.Point(1052, 373);
-            this.btnBuscarCUIT.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBuscarCUIT.Name = "btnBuscarCUIT";
-            this.btnBuscarCUIT.Size = new System.Drawing.Size(89, 59);
-            this.btnBuscarCUIT.TabIndex = 91;
-            this.btnBuscarCUIT.Text = "...";
-            this.btnBuscarCUIT.UseVisualStyleBackColor = false;
             // 
             // dtpNacimiento
             // 
@@ -823,7 +806,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
         private System.Windows.Forms.DateTimePicker dtpIngreso;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
-        private System.Windows.Forms.Button btnBuscarCUIT;
+        //private System.Windows.Forms.Button btnBuscarCUIT;
         private System.Windows.Forms.DateTimePicker dtpNacimiento;
         private System.Windows.Forms.GroupBox groupBox2;
         private MaterialSkin.Controls.MaterialTextBox2 txtAltura;
@@ -843,7 +826,7 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtNomEmp;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
         private MaterialSkin.Controls.MaterialTextBox2 txtCUITEncontrado;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBuscarCUIT;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel10;
         private System.Windows.Forms.LinkLabel linkLimpiar;

@@ -140,6 +140,7 @@
             this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtNombre.TrailingIcon = null;
             this.txtNombre.UseSystemPasswordChar = false;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // txtApellido
             // 
@@ -172,6 +173,7 @@
             this.txtApellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtApellido.TrailingIcon = null;
             this.txtApellido.UseSystemPasswordChar = false;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
             // materialLabel3
             // 
@@ -258,7 +260,7 @@
             this.txtPeso.LeadingIcon = null;
             this.txtPeso.Location = new System.Drawing.Point(93, 26);
             this.txtPeso.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPeso.MaxLength = 32767;
+            this.txtPeso.MaxLength = 3;
             this.txtPeso.MouseState = MaterialSkin.MouseState.OUT;
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.PasswordChar = '\0';
@@ -275,6 +277,7 @@
             this.txtPeso.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtPeso.TrailingIcon = null;
             this.txtPeso.UseSystemPasswordChar = false;
+            this.txtPeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeso_KeyPress);
             // 
             // txtDNI
             // 
@@ -290,7 +293,7 @@
             this.txtDNI.LeadingIcon = null;
             this.txtDNI.Location = new System.Drawing.Point(180, 27);
             this.txtDNI.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDNI.MaxLength = 32767;
+            this.txtDNI.MaxLength = 8;
             this.txtDNI.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.PasswordChar = '\0';
@@ -307,6 +310,7 @@
             this.txtDNI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtDNI.TrailingIcon = null;
             this.txtDNI.UseSystemPasswordChar = false;
+            this.txtDNI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDNI_KeyPress);
             // 
             // materialLabel5
             // 
@@ -614,7 +618,7 @@
             this.txtAltura.LeadingIcon = null;
             this.txtAltura.Location = new System.Drawing.Point(283, 26);
             this.txtAltura.Margin = new System.Windows.Forms.Padding(2);
-            this.txtAltura.MaxLength = 32767;
+            this.txtAltura.MaxLength = 3;
             this.txtAltura.MouseState = MaterialSkin.MouseState.OUT;
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.PasswordChar = '\0';
@@ -631,6 +635,7 @@
             this.txtAltura.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtAltura.TrailingIcon = null;
             this.txtAltura.UseSystemPasswordChar = false;
+            this.txtAltura.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAltura_KeyPress);
             // 
             // label1
             // 

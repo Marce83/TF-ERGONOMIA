@@ -27,6 +27,7 @@ namespace TF.WIN
             timer.Interval = 1000; // Intervalo de actualización en milisegundos (1 segundo en este ejemplo)
             timer.Tick += Timer_Tick;
             timer.Start();
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
         }
 

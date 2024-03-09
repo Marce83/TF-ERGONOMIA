@@ -22,6 +22,36 @@ namespace TF.WIN
             InitializeComponent();
         }
 
+        private void txtDNI_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                e.Handled = true;
+        }
+
+        private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space))
+                e.Handled = true;
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space))
+                e.Handled = true;
+        }
+
+        private void txtPeso_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                e.Handled = true;
+        }
+
+        private void txtAltura_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                e.Handled = true;
+        }
+
         private void btnBuscarCUIT_Click(object sender, EventArgs e)
         {
             frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
@@ -43,35 +73,69 @@ namespace TF.WIN
             {
                 if (txtDNI.Text != string.Empty)
                 {
-                    try
+                    if (txtDNI.Text.Length == 8)
                     {
-                        oBe.DNI = txtDNI.Text;
-                        oBe.Apellido = txtApellido.Text;
-                        oBe.Nombre = txtNombre.Text;
-                        oBe.FechaNacimiento = Convert.ToDateTime(dtpNacimiento.Text);
-                        oBe.Genero = cboGenero.Text;
-                        oBe.FechaIngreso = Convert.ToDateTime(dtpIngreso.Text);
-                        oBe.Peso = float.Parse(txtPeso.Text);
-                        oBe.Altura = float.Parse(txtAltura.Text);
-                        //oBe.AreaEmpresa = cboAreaempresa.Text;
-                        long CUIT = Convert.ToInt64(txtCUITEncontrado.Text);
-                        var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIT);
-                        oBe.IdEmpresa = Convert.ToInt32(BuscarId);
-                        oEmpleadosBC.BuscarEmpleado(oBe);
-                        var res = oEmpleadosBC.InsertEmpleadosBC(oBe);
-                        MessageBox.Show("Empleado cargado exitosamente");
-                        Listar();
-                        Limpiar();
+                        if (txtApellido.Text != string.Empty)
+                        {
+                            if (txtNombre.Text != string.Empty)
+                            {
+                                if (dtpNacimiento.Value != DateTime.Now)
+                                {
+                                    if (cboGenero.SelectedIndex != 0)
+                                    {
+                                        if (dtpIngreso.Value >= DateTime.Today)
+                                        {
+                                            if (txtCUITEncontrado.Text != string.Empty)
+                                            {
+                                                if (txtPeso.Text != string.Empty)
+                                                {
+                                                    if (txtAltura.Text != string.Empty)
+                                                    {
+                                                        try
+                                                        {
+                                                            oBe.DNI = txtDNI.Text;
+                                                            oBe.Apellido = txtApellido.Text;
+                                                            oBe.Nombre = txtNombre.Text;
+                                                            oBe.FechaNacimiento = Convert.ToDateTime(dtpNacimiento.Text);
+                                                            oBe.Genero = cboGenero.Text;
+                                                            oBe.FechaIngreso = Convert.ToDateTime(dtpIngreso.Text);
+                                                            oBe.Peso = float.Parse(txtPeso.Text);
+                                                            oBe.Altura = float.Parse(txtAltura.Text);
+                                                            //oBe.AreaEmpresa = cboAreaempresa.Text;
+                                                            long CUIT = Convert.ToInt64(txtCUITEncontrado.Text);
+                                                            var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIT);
+                                                            oBe.IdEmpresa = Convert.ToInt32(BuscarId);
+                                                            oEmpleadosBC.BuscarEmpleado(oBe);
+                                                            var res = oEmpleadosBC.InsertEmpleadosBC(oBe);
+                                                            MessageBox.Show("Empleado cargado exitosamente");
+                                                            Listar();
+                                                            Limpiar();
+                                                        }
+                                                        catch (Exception ex)
+                                                        {
+                                                            MessageBox.Show(ex.Message);
+                                                        }
+                                                    }
+                                                    else MessageBox.Show("Debe ingresar la altura del Empleado");
+                                                }
+                                                else MessageBox.Show("Debe ingresar el peso del Empleado");
+                                            }
+                                            else MessageBox.Show("Debe ingresar datos de la Empresa");
+                                        }
+                                        else MessageBox.Show("Fecha invalida, no se puede seleccionar una fecha pasada");
+                                    }
+                                    else MessageBox.Show("Debe ingresar el Genero");
+                                }
+                                else MessageBox.Show("Debe ingresar Fecha de Nacimiento");
+                            }
+                            else MessageBox.Show("Debe ingresar el Nombre");
+                        }
+                        else MessageBox.Show("Debe ingresar el Apellido");
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
+                    else MessageBox.Show("Debe ingresar 8 digitos en el DNI");
                 }
-                else MessageBox.Show("Debe ingresar el DNI");
+                else MessageBox.Show("Debe ingresar el DNI");               
             }
-            Listar();
-            Limpiar();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -111,9 +175,6 @@ namespace TF.WIN
             txtDNI.Focus();
 
         }
-        private void dgvempleados_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-        }
 
         private void Empleadoss_Load(object sender, EventArgs e)
         {
@@ -129,10 +190,6 @@ namespace TF.WIN
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
         }
 
         private void RolesCargo()
@@ -151,10 +208,6 @@ namespace TF.WIN
             //{
             //    btnEliminar.Enabled = false;
             //}
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)

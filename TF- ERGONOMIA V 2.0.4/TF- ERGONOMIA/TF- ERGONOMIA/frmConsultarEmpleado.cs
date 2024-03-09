@@ -83,6 +83,18 @@ namespace TF.WIN
             }
         }
 
+        private void btnBuscarCUIT_Click(object sender, EventArgs e)
+        {
+            frmBuscarEmpresa oFrm = new frmBuscarEmpresa();
+            oFrm.ShowDialog();
+
+            if (oFrm.EmpresaSeleccionada != null)
+            {
+                txtCUITEncontrado.Text = oFrm.EmpresaSeleccionada.CUIT.ToString();
+                txtNomEmp.Text = oFrm.EmpresaSeleccionada.Nombre.ToString();
+            }
+        }
+
         private void cboBuscadorDinamico_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboBuscadorDinamico.Text == "DNI")
@@ -104,6 +116,10 @@ namespace TF.WIN
             DialogResult resp = MessageBox.Show("¿Está seguro que desea modificar este Empleado?", "Modificar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (resp == DialogResult.Yes)
             {
+                if(txtNombre.Text == string.Empty)
+                {
+
+                }
                 try
                 {
                     oBe.Nombre = txtNombre.Text;
@@ -191,11 +207,6 @@ namespace TF.WIN
             txtAltura.Text = string.Empty;
             txtCUITEncontrado.Text = string.Empty;
             txtNomEmp.Text = string.Empty;
-
-        }
-
-        private void btnBuscarCUIT_Click(object sender, EventArgs e)
-        {
 
         }
 
