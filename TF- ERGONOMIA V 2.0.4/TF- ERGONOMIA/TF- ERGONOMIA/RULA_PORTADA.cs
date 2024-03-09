@@ -56,6 +56,10 @@ namespace TF.WIN
                 long CUIT = Convert.ToInt64(txtCUITEncontrado.Text);
                 var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIT);
                 IdEmpresa = Convert.ToInt32(BuscarId);
+                txtDniEmpleadoRula.Text = string.Empty;
+                txtNombreEmpleadoRula.Text = string.Empty;
+                txtpuestotrabajoencontrado.Text = string.Empty;
+                dtpRula.Value = DateTime.Now;
             }
         }
 
@@ -140,7 +144,7 @@ namespace TF.WIN
             txtDniEmpleadoRula.Text = string.Empty;
             txtNombreEmpleadoRula.Text = string.Empty;
             txtpuestotrabajoencontrado.Text = string.Empty;
-            dtpRula.Text = string.Empty;
+            dtpRula.Value = DateTime.Now;
         }
     }
 }

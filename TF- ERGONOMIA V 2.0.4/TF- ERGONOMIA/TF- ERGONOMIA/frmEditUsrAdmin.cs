@@ -28,6 +28,7 @@ namespace TF.WIN
         private void frmEditUsrAdmin_Load(object sender, EventArgs e)
         {
             Resetear();
+            Limpiar();
         }
 
         private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
@@ -46,6 +47,13 @@ namespace TF.WIN
         {
             if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space))
                 e.Handled = true;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            //panelEditor.Visible = false;
+            Resetear();
+            Limpiar();
         }
 
         //private void CargaDatosUser()
@@ -143,7 +151,14 @@ namespace TF.WIN
 
         private void Limpiar()
         {
-
+            txtUsuario.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtApellido.Text = string.Empty;
+            txtCorreo.Text = string.Empty;
+            txtClaveActual.Text = string.Empty;
+            txtClaveNueva.Text = string.Empty;
+            txtRepetirClave.Text = string.Empty;
+            cboCargo.Text = string.Empty;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -196,17 +211,6 @@ namespace TF.WIN
                 else MessageBox.Show("Debe ingresar el nombre del usuario", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else MessageBox.Show("Debe ingresar un nombre de Usuario", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            //panelEditor.Visible = false;
-            Resetear();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

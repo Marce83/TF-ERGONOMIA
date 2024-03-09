@@ -37,6 +37,10 @@ namespace TF.WIN
                 long CUIT = Convert.ToInt64(txtCUITEncontrado.Text);
                 var BuscarId = oEmpleadosBC.ObtenerSoloIdEmpresa(CUIT);
                 IdEmpresa = Convert.ToInt32(BuscarId);
+                txtDniEmpleadoJss.Text = string.Empty;
+                txtNombreEmpleadoJss.Text = string.Empty;
+                txtpuestotrabajoencontrado.Text = string.Empty;
+                dtpJss.Value = DateTime.Now;
             }
         }
 
@@ -108,7 +112,7 @@ namespace TF.WIN
             txtDniEmpleadoJss.Text = string.Empty;
             txtNombreEmpleadoJss.Text = string.Empty;
             txtpuestotrabajoencontrado.Text = string.Empty;
-            dtpJss.Text = string.Empty;
+            dtpJss.Value = DateTime.Now;
         }
 
         private void linkLimpiar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

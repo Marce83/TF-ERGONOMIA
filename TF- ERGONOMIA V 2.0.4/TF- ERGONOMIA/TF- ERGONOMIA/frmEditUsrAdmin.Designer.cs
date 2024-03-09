@@ -36,7 +36,7 @@
             this.txtClaveActual = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.cboCargo = new System.Windows.Forms.ComboBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
@@ -56,7 +56,7 @@
             // 
             this.linkEditarClave.AutoSize = true;
             this.linkEditarClave.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.linkEditarClave.Location = new System.Drawing.Point(107, 252);
+            this.linkEditarClave.Location = new System.Drawing.Point(100, 252);
             this.linkEditarClave.Name = "linkEditarClave";
             this.linkEditarClave.Size = new System.Drawing.Size(45, 13);
             this.linkEditarClave.TabIndex = 33;
@@ -68,7 +68,7 @@
             // 
             this.txtRepetirClave.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtRepetirClave.Location = new System.Drawing.Point(16, 310);
-            this.txtRepetirClave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRepetirClave.Margin = new System.Windows.Forms.Padding(4);
             this.txtRepetirClave.Name = "txtRepetirClave";
             this.txtRepetirClave.PasswordChar = '*';
             this.txtRepetirClave.Size = new System.Drawing.Size(327, 20);
@@ -89,7 +89,7 @@
             // 
             this.txtClaveNueva.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtClaveNueva.Location = new System.Drawing.Point(16, 269);
-            this.txtClaveNueva.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClaveNueva.Margin = new System.Windows.Forms.Padding(4);
             this.txtClaveNueva.Name = "txtClaveNueva";
             this.txtClaveNueva.PasswordChar = '*';
             this.txtClaveNueva.Size = new System.Drawing.Size(327, 20);
@@ -110,7 +110,7 @@
             // 
             this.txtClaveActual.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtClaveActual.Location = new System.Drawing.Point(16, 228);
-            this.txtClaveActual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClaveActual.Margin = new System.Windows.Forms.Padding(4);
             this.txtClaveActual.Name = "txtClaveActual";
             this.txtClaveActual.PasswordChar = '*';
             this.txtClaveActual.Size = new System.Drawing.Size(327, 20);
@@ -133,7 +133,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnGuardar.Location = new System.Drawing.Point(545, 408);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(163, 60);
             this.btnGuardar.TabIndex = 42;
@@ -141,19 +141,19 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnCancelar
+            // btnLimpiar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.Red;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCancelar.Location = new System.Drawing.Point(344, 408);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(163, 60);
-            this.btnCancelar.TabIndex = 41;
-            this.btnCancelar.Text = "RESETEAR";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.btnLimpiar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnLimpiar.Location = new System.Drawing.Point(344, 408);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(163, 60);
+            this.btnLimpiar.TabIndex = 41;
+            this.btnLimpiar.Text = "LIMPIAR";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // cboCargo
             // 
@@ -166,7 +166,7 @@
             "Recepcionista",
             "Usuario"});
             this.cboCargo.Location = new System.Drawing.Point(18, 351);
-            this.cboCargo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboCargo.Margin = new System.Windows.Forms.Padding(4);
             this.cboCargo.Name = "cboCargo";
             this.cboCargo.Size = new System.Drawing.Size(162, 21);
             this.cboCargo.TabIndex = 40;
@@ -175,7 +175,7 @@
             // 
             this.txtCorreo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtCorreo.Location = new System.Drawing.Point(16, 187);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(327, 20);
             this.txtCorreo.TabIndex = 39;
@@ -184,7 +184,7 @@
             // 
             this.txtApellido.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtApellido.Location = new System.Drawing.Point(17, 146);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(327, 20);
             this.txtApellido.TabIndex = 38;
@@ -194,7 +194,7 @@
             // 
             this.txtNombre.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtNombre.Location = new System.Drawing.Point(17, 105);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(327, 20);
             this.txtNombre.TabIndex = 37;
@@ -204,7 +204,7 @@
             // 
             this.txtUsuario.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtUsuario.Location = new System.Drawing.Point(16, 64);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(327, 20);
             this.txtUsuario.TabIndex = 36;
@@ -305,7 +305,7 @@
             this.Controls.Add(this.txtClaveActual);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.cboCargo);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtApellido);
@@ -337,7 +337,7 @@
         private System.Windows.Forms.TextBox txtClaveActual;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.ComboBox cboCargo;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.TextBox txtApellido;
