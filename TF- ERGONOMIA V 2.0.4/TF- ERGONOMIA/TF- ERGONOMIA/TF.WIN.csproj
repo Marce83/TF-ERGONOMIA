@@ -349,6 +349,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAsociacionPuestosMultiples.resx">
       <DependentUpon>FrmAsociacionPuestosMultiples.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpleados.resx">
       <DependentUpon>frmBuscarEmpleados.cs</DependentUpon>

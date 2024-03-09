@@ -211,6 +211,8 @@ namespace TF.WIN
             if (UserLoginCache.Cargo == Cargos.Contador)
             {
                 btnMetodo.Enabled = false;
+                btnEmpresa.Enabled = false;
+                btnEmpleados.Enabled = false;
             }
         }
 
