@@ -196,33 +196,47 @@ namespace TF.WIN
             //txtDNI.Text = string.Empty;
             //txtDNI.ReadOnly = false;
             txtNombre.Text = string.Empty;
+            txtNombre.ReadOnly = true;
             txtApellido.Text = string.Empty;
+            txtApellido.ReadOnly = true;
             dtpNacimiento.Text = string.Empty;
+            dtpNacimiento.Enabled = false;
             dtpIngreso.Text = string.Empty;
-            dtpIngreso.Enabled = true;
+            dtpIngreso.Enabled = false;
             dtpIngreso.Value = DateTime.Now;
             cboGenero.SelectedIndex = 0;
+            cboGenero.Enabled = false;
             //cbopuestotrabajo.SelectedIndex = 0;
             txtPeso.Text = string.Empty;
+            txtPeso.ReadOnly = true;
             txtAltura.Text = string.Empty;
+            txtAltura.ReadOnly = true;
             txtCUITEncontrado.Text = string.Empty;
+            txtCUITEncontrado.ReadOnly = true;
             txtNomEmp.Text = string.Empty;
-
+            txtNomEmp.ReadOnly = true;
         }
 
         private void dgvEmpleados_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txtNombre.Text = dgvEmpleados.CurrentRow.Cells[0].Value.ToString();
+            txtNombre.ReadOnly = false;
             txtApellido.Text = dgvEmpleados.CurrentRow.Cells[1].Value.ToString();
-            //txtDNI.Text = dgvEmpleados.CurrentRow.Cells[2].Value.ToString();
-            //txtDNI.ReadOnly = true;
+            txtApellido.ReadOnly = false;
             cboGenero.Text = dgvEmpleados.CurrentRow.Cells[3].Value.ToString();
+            cboGenero.Enabled = true;
             txtPeso.Text = dgvEmpleados.CurrentRow.Cells[4].Value.ToString();
+            txtPeso.ReadOnly=false;
             txtAltura.Text = dgvEmpleados.CurrentRow.Cells[5].Value.ToString();
+            txtAltura.ReadOnly=false;
             dtpNacimiento.Text = dgvEmpleados.CurrentRow.Cells[6].Value.ToString();
+            dtpNacimiento.Enabled = true;
             dtpIngreso.Text = dgvEmpleados.CurrentRow.Cells[7].Value.ToString();
+            dtpIngreso.Enabled = true;
             txtNomEmp.Text = dgvEmpleados.CurrentRow.Cells[9].Value.ToString();
+            txtNomEmp.ReadOnly=false;
             txtCUITEncontrado.Text = dgvEmpleados.CurrentRow.Cells[10].Value.ToString();
+            txtCUITEncontrado.ReadOnly=false;
             dgvEmpleados.Columns[10].Visible = false;
             //txtNomEmp.Text = dgvEmpleados.CurrentRow.Cells[9].Value.ToString();
             //dtpIngreso.Enabled = false;

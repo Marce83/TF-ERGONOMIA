@@ -124,7 +124,7 @@
             this.txtCUIT.HideSelection = true;
             this.txtCUIT.LeadingIcon = null;
             this.txtCUIT.Location = new System.Drawing.Point(184, 40);
-            this.txtCUIT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCUIT.Margin = new System.Windows.Forms.Padding(2);
             this.txtCUIT.MaxLength = 11;
             this.txtCUIT.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCUIT.Name = "txtCUIT";
@@ -157,7 +157,7 @@
             this.txtCorreo.HideSelection = true;
             this.txtCorreo.LeadingIcon = null;
             this.txtCorreo.Location = new System.Drawing.Point(676, 253);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreo.MaxLength = 32767;
             this.txtCorreo.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCorreo.Name = "txtCorreo";
@@ -189,7 +189,7 @@
             this.txtNombreEmpresa.HideSelection = true;
             this.txtNombreEmpresa.LeadingIcon = null;
             this.txtNombreEmpresa.Location = new System.Drawing.Point(184, 92);
-            this.txtNombreEmpresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreEmpresa.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreEmpresa.MaxLength = 32767;
             this.txtNombreEmpresa.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreEmpresa.Name = "txtNombreEmpresa";
@@ -231,7 +231,7 @@
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel8.Location = new System.Drawing.Point(519, 201);
+            this.materialLabel8.Location = new System.Drawing.Point(519, 206);
             this.materialLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
@@ -252,7 +252,7 @@
             this.txtWeb.HideSelection = true;
             this.txtWeb.LeadingIcon = null;
             this.txtWeb.Location = new System.Drawing.Point(676, 202);
-            this.txtWeb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtWeb.Margin = new System.Windows.Forms.Padding(2);
             this.txtWeb.MaxLength = 32767;
             this.txtWeb.MouseState = MaterialSkin.MouseState.OUT;
             this.txtWeb.Name = "txtWeb";
@@ -293,7 +293,7 @@
             "COMSUMIDOR FINAL",
             ""});
             this.cboCondFiscal.Location = new System.Drawing.Point(184, 144);
-            this.cboCondFiscal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboCondFiscal.Margin = new System.Windows.Forms.Padding(2);
             this.cboCondFiscal.MaxDropDownItems = 4;
             this.cboCondFiscal.MouseState = MaterialSkin.MouseState.OUT;
             this.cboCondFiscal.Name = "cboCondFiscal";
@@ -323,7 +323,7 @@
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel7.Location = new System.Drawing.Point(519, 254);
+            this.materialLabel7.Location = new System.Drawing.Point(519, 259);
             this.materialLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
@@ -344,7 +344,7 @@
             this.txtTelefono.HideSelection = true;
             this.txtTelefono.LeadingIcon = null;
             this.txtTelefono.Location = new System.Drawing.Point(184, 303);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefono.MaxLength = 10;
             this.txtTelefono.MouseState = MaterialSkin.MouseState.OUT;
             this.txtTelefono.Name = "txtTelefono";
@@ -407,7 +407,7 @@
             this.txtCalle.HideSelection = true;
             this.txtCalle.LeadingIcon = null;
             this.txtCalle.Location = new System.Drawing.Point(676, 154);
-            this.txtCalle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCalle.Margin = new System.Windows.Forms.Padding(2);
             this.txtCalle.MaxLength = 32767;
             this.txtCalle.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCalle.Name = "txtCalle";
@@ -471,9 +471,9 @@
             this.groupBox1.Controls.Add(this.txtCorreo);
             this.groupBox1.Controls.Add(this.txtNombreEmpresa);
             this.groupBox1.Location = new System.Drawing.Point(22, 58);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(975, 514);
             this.groupBox1.TabIndex = 60;
             this.groupBox1.TabStop = false;
@@ -525,7 +525,7 @@
             this.dtpFechaAlta.CalendarMonthBackground = System.Drawing.SystemColors.ActiveCaption;
             this.dtpFechaAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dtpFechaAlta.Location = new System.Drawing.Point(676, 325);
-            this.dtpFechaAlta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpFechaAlta.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFechaAlta.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpFechaAlta.Name = "dtpFechaAlta";
             this.dtpFechaAlta.Size = new System.Drawing.Size(285, 26);
@@ -565,7 +565,7 @@
             "PUBLICA",
             "PRIVADA"});
             this.cboTipo.Location = new System.Drawing.Point(184, 250);
-            this.cboTipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboTipo.Margin = new System.Windows.Forms.Padding(2);
             this.cboTipo.MaxDropDownItems = 4;
             this.cboTipo.MouseState = MaterialSkin.MouseState.OUT;
             this.cboTipo.Name = "cboTipo";
@@ -630,7 +630,7 @@
             "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
             "Tucumán"});
             this.cboProvincia.Location = new System.Drawing.Point(676, 50);
-            this.cboProvincia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboProvincia.Margin = new System.Windows.Forms.Padding(2);
             this.cboProvincia.MaxDropDownItems = 4;
             this.cboProvincia.MouseState = MaterialSkin.MouseState.OUT;
             this.cboProvincia.Name = "cboProvincia";
@@ -655,7 +655,7 @@
             this.cboLocalidad.IntegralHeight = false;
             this.cboLocalidad.ItemHeight = 43;
             this.cboLocalidad.Location = new System.Drawing.Point(676, 100);
-            this.cboLocalidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboLocalidad.Margin = new System.Windows.Forms.Padding(2);
             this.cboLocalidad.MaxDropDownItems = 4;
             this.cboLocalidad.MouseState = MaterialSkin.MouseState.OUT;
             this.cboLocalidad.Name = "cboLocalidad";
@@ -706,7 +706,7 @@
             "TELECOMUNICACIONES",
             "TRANSPORTE"});
             this.cboActEmpr.Location = new System.Drawing.Point(184, 197);
-            this.cboActEmpr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboActEmpr.Margin = new System.Windows.Forms.Padding(2);
             this.cboActEmpr.MaxDropDownItems = 4;
             this.cboActEmpr.MouseState = MaterialSkin.MouseState.OUT;
             this.cboActEmpr.Name = "cboActEmpr";
@@ -721,7 +721,7 @@
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.materialLabel9.Location = new System.Drawing.Point(519, 104);
+            this.materialLabel9.Location = new System.Drawing.Point(519, 106);
             this.materialLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
@@ -739,7 +739,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "10";
