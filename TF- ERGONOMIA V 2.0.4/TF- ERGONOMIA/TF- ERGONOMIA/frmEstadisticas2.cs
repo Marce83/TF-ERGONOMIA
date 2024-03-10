@@ -314,8 +314,8 @@ namespace TF.WIN
             //// Agrega los nuevos datos desde el DataTable
             foreach (DataRow row in dt1200.Rows)
             {
-                string NivelRiesgo = row["NivelRiesgo"].ToString();
-                int CantidadRiesgo = Convert.ToInt32(row["CantidadRiesgo"]);
+                string NivelRiesgo = row["NivelRiesgoEtiqueta"].ToString();
+                int CantidadRiesgo = Convert.ToInt32(row["AnalisisxDia"]);
 
 
                 // Agrega un punto a la serie para cada provincia
