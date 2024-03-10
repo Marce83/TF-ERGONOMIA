@@ -33,12 +33,22 @@ namespace TF.WIN
         {
             if (cboBuscadorDinamico.Text == "DNI")
             {
-                if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                // Permitir solo dígitos y la tecla de retroceso
+                if (!(char.IsDigit(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                    e.Handled = true;
+
+                // Limitar la longitud a 8 caracteres
+                if (txtBuscador.Text.Length >= 8 && e.KeyChar != (char)Keys.Back)
                     e.Handled = true;
             }
             else
             {
+                // Permitir letras, espacios y la tecla de retroceso
                 if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space))
+                    e.Handled = true;
+
+                // Limitar la longitud a 100 caracteres
+                if (txtBuscador.Text.Length >= 100 && e.KeyChar != (char)Keys.Back)
                     e.Handled = true;
             }
         }

@@ -227,6 +227,58 @@ namespace TF.DAC
             return ds.Tables[0];
         }
 
+        public DataTable BuscarPuestoEmpleadoEmpresaPorDNI(PuestoTrabajo oBe)
+        {
+            try
+            {
+                string sqlSentencia = "SELECT * FROM dbo.VistaEmpleadosPuestos " +
+                    "WHERE Empresa = '"+ oBe.IdEmpresa +"' AND DNI LIKE '"+"%"+oBe.DNI+"%"+"'" +
+                    "ORDER BY NombreEmpleado ASC";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
+        }
+
+        public DataTable BuscarPuestoEmpleadoEmpresaPorNombre(PuestoTrabajo oBe)
+        {
+            try
+            {
+                string sqlSentencia = "SELECT * FROM dbo.VistaEmpleadosPuestos " +
+                    "WHERE Empresa = '" + oBe.IdEmpresa + "' AND NombreEmpleado LIKE '" + "%" + oBe.NombreEmpleado + "%" + "'" +
+                    "ORDER BY NombreEmpleado ASC";
+                SqlConnection sqlCnn = new SqlConnection();
+                sqlCnn.ConnectionString = conectionString;
+                SqlCommand sqlCom = new SqlCommand(sqlSentencia, sqlCnn);
+                sqlCnn.Open();
+                DataSet ds = new DataSet();
+                SqlDataAdapter DA = new SqlDataAdapter();
+                DA.SelectCommand = sqlCom;
+                DA.Fill(ds);
+                sqlCnn.Close();
+                return ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                //Console.WriteLine("Error al validar el DNI del Empleado: " + ex.Message);
+                //return null;
+            }
+        }
+
 
 
 

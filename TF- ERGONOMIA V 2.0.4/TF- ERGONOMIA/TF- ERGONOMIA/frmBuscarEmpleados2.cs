@@ -38,15 +38,57 @@ namespace TF.WIN
         PuestoTrabajoBC oPuestoTrabajoBC = new PuestoTrabajoBC();
         PuestoTrabajo oPuestoTrabajo = new PuestoTrabajo();
 
+        private void txtBuscador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (cboBuscadorDinamico.Text == "DNI")
+            {
+                // Permitir solo dígitos y la tecla de retroceso
+                if (!(char.IsDigit(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                    e.Handled = true;
+
+                // Limitar la longitud a 8 caracteres
+                if (txtBuscador.Text.Length >= 8 && e.KeyChar != (char)Keys.Back)
+                    e.Handled = true;
+            }
+            else
+            {
+                // Permitir letras, espacios y la tecla de retroceso
+                if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space))
+                    e.Handled = true;
+
+                // Limitar la longitud a 100 caracteres
+                if (txtBuscador.Text.Length >= 100 && e.KeyChar != (char)Keys.Back)
+                    e.Handled = true;
+            }
+        }
+
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            Listar();
-            //Empleados oempl = new Empleados();
-            //oempl.DNI = txtDNIempleado.Text;
-            //EmpleadosBC oEmpleadosBC = new EmpleadosBC();
-            //DataTable dt = oEmpleadosBC.ConsultarEmpleadosDNI(oempl);
-            //dgvempleados.Columns[0].Visible = false;
+            CargarEmpresa();
+            switch (cboBuscadorDinamico.Text)
+            {
+                case "DNI":
+                    oPuestoTrabajo.DNI = txtBuscador.Text;
+                    CargarEmpresa();
+                    DataTable dt = oPuestoTrabajoBC.BuscarPuestoEmpleadoEmpresaPorDNI(oPuestoTrabajo);
+                    dgvResultado.DataSource = null;
+                    dgvResultado.DataSource = dt;
+                    dgvResultado.Columns[5].Visible = false;
+                    break;
+                case "NOMBRE":
+                    oPuestoTrabajo.NombreEmpleado = txtBuscador.Text;
+                    DataTable dtNom = oPuestoTrabajoBC.BuscarPuestoEmpleadoEmpresaPorNombre(oPuestoTrabajo);
+                    dgvResultado.DataSource = null;
+                    dgvResultado.DataSource = dtNom;
+                    dgvResultado.Columns[5].Visible = false;
+                    break;
+            }
+            if (txtBuscador == null)
+            {
+                Listar();
+            }
         }
+        
         private void Listar()
         {
             try
@@ -100,6 +142,20 @@ namespace TF.WIN
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void CargarEmpresa()
+        {
+            if (RULA_PORTADA.IdEmpresa != 0)
+                oPuestoTrabajo.IdEmpresa = RULA_PORTADA.IdEmpresa;
+            else if (REBA_PORTADA.IdEmpresa != 0)
+                oPuestoTrabajo.IdEmpresa = REBA_PORTADA.IdEmpresa;
+            else if (NIOSHPORTADA.IdEmpresa != 0)
+                oPuestoTrabajo.IdEmpresa = NIOSHPORTADA.IdEmpresa;
+            else if (JSSPORTADA.IdEmpresa != 0)
+                oPuestoTrabajo.IdEmpresa = JSSPORTADA.IdEmpresa;
+            else oPuestoTrabajo.IdEmpresa = FrmLMCPortada.IdEmpresa;
+        }
+
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             if (dgvResultado.SelectedRows.Count == 1) // BUSQUEDA DE EMPLEADOS 
@@ -120,6 +176,12 @@ namespace TF.WIN
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void cboBuscadorDinamico_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtBuscador.Text = string.Empty; 
+            txtBuscador.Focus();
         }
     }
 }
