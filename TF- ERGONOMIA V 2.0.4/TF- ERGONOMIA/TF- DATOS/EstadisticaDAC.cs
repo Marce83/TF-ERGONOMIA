@@ -233,7 +233,7 @@ namespace TF.DAC
         }
         public DataTable PastelRulaPersonDAC(EstadisticasPersonales oEstadisticasPersonales)
         {
-            string sqlSentencia = "SP_STAT_PastelRulaPerson";
+            string sqlSentencia = "SP_STAT_PastelRulaPerson2";
             SqlConnection sqlCnn = new SqlConnection();
             sqlCnn.ConnectionString = conectionString;
             SqlCommand sqlComm = new SqlCommand(sqlSentencia, sqlCnn);

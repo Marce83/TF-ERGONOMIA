@@ -313,6 +313,7 @@
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series3.EmptyPointStyle.IsValueShownAsLabel = true;
             series3.EmptyPointStyle.Label = "ZCXZCZXC";
+            series3.IsValueShownAsLabel = true;
             series3.IsXValueIndexed = true;
             series3.Legend = "Legend1";
             series3.Name = "Series1";
@@ -933,6 +934,7 @@
             this.chartPastelJss2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series8.ChartArea = "ChartArea1";
             series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series8.IsValueShownAsLabel = true;
             series8.IsXValueIndexed = true;
             series8.Legend = "Legend1";
             series8.Name = "Series1";
