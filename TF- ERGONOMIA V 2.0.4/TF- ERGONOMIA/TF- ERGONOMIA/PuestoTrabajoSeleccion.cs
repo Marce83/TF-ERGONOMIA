@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TF.COMMON.Cache;
 
 namespace TF.WIN
 {
@@ -17,6 +18,12 @@ namespace TF.WIN
         public PuestoTrabajoSeleccion()
         {
             InitializeComponent();
+        }
+
+
+        private void PuestoTrabajoSeleccion_Load(object sender, EventArgs e)
+        {
+            RolesCargo();
         }
 
         private void btnCargaPuesto_Click(object sender, EventArgs e)
@@ -77,6 +84,16 @@ namespace TF.WIN
             this.Tag = oFrmEmpleadosXPuestos;
             oFrmEmpleadosXPuestos.BringToFront();
             oFrmEmpleadosXPuestos.Show();
+        }
+
+        private void RolesCargo()
+        {
+            if (UserLoginCache.Cargo == Cargos.Contador)
+            {
+                btnCargaPuesto.Enabled = false;
+                btnAsociacionPuesto.Enabled = false;
+                button1.Enabled = false;
+            }
         }
     }
 }

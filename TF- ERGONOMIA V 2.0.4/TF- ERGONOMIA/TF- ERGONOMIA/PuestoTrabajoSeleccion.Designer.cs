@@ -46,10 +46,9 @@
             this.btnAsociacionPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAsociacionPuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAsociacionPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAsociacionPuesto.Location = new System.Drawing.Point(13, 153);
-            this.btnAsociacionPuesto.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAsociacionPuesto.Location = new System.Drawing.Point(10, 124);
             this.btnAsociacionPuesto.Name = "btnAsociacionPuesto";
-            this.btnAsociacionPuesto.Size = new System.Drawing.Size(357, 79);
+            this.btnAsociacionPuesto.Size = new System.Drawing.Size(268, 64);
             this.btnAsociacionPuesto.TabIndex = 77;
             this.btnAsociacionPuesto.Text = "ASOCIACION DE PUESTOS";
             this.btnAsociacionPuesto.UseVisualStyleBackColor = false;
@@ -65,10 +64,9 @@
             this.btnCargaPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargaPuesto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCargaPuesto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargaPuesto.Location = new System.Drawing.Point(13, 66);
-            this.btnCargaPuesto.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCargaPuesto.Location = new System.Drawing.Point(10, 54);
             this.btnCargaPuesto.Name = "btnCargaPuesto";
-            this.btnCargaPuesto.Size = new System.Drawing.Size(357, 79);
+            this.btnCargaPuesto.Size = new System.Drawing.Size(268, 64);
             this.btnCargaPuesto.TabIndex = 76;
             this.btnCargaPuesto.Text = "CARGA PUESTO DE TRABAJO";
             this.btnCargaPuesto.UseVisualStyleBackColor = false;
@@ -84,10 +82,9 @@
             this.btnempleadosasociados.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnempleadosasociados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnempleadosasociados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnempleadosasociados.Location = new System.Drawing.Point(13, 327);
-            this.btnempleadosasociados.Margin = new System.Windows.Forms.Padding(4);
+            this.btnempleadosasociados.Location = new System.Drawing.Point(10, 266);
             this.btnempleadosasociados.Name = "btnempleadosasociados";
-            this.btnempleadosasociados.Size = new System.Drawing.Size(357, 79);
+            this.btnempleadosasociados.Size = new System.Drawing.Size(268, 64);
             this.btnempleadosasociados.TabIndex = 78;
             this.btnempleadosasociados.Text = "VER EMPLEADOS POR PUESTOS";
             this.btnempleadosasociados.UseVisualStyleBackColor = false;
@@ -103,10 +100,9 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(13, 240);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(10, 195);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(357, 79);
+            this.button1.Size = new System.Drawing.Size(268, 64);
             this.button1.TabIndex = 79;
             this.button1.Text = "ASOCIACION DE PUESTOS MULTIPLES";
             this.button1.UseVisualStyleBackColor = false;
@@ -122,10 +118,9 @@
             this.BtnEmpleadosporPuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEmpleadosporPuestos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnEmpleadosporPuestos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEmpleadosporPuestos.Location = new System.Drawing.Point(13, 414);
-            this.BtnEmpleadosporPuestos.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnEmpleadosporPuestos.Location = new System.Drawing.Point(10, 336);
             this.BtnEmpleadosporPuestos.Name = "BtnEmpleadosporPuestos";
-            this.BtnEmpleadosporPuestos.Size = new System.Drawing.Size(357, 79);
+            this.BtnEmpleadosporPuestos.Size = new System.Drawing.Size(268, 64);
             this.BtnEmpleadosporPuestos.TabIndex = 80;
             this.BtnEmpleadosporPuestos.Text = "VER PUESTOS POR EMPLEADOS";
             this.BtnEmpleadosporPuestos.UseVisualStyleBackColor = false;
@@ -137,18 +132,19 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(9, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(392, 38);
+            this.label1.Size = new System.Drawing.Size(322, 31);
             this.label1.TabIndex = 81;
             this.label1.Text = "PUESTOS DE TRABAJO";
             // 
             // PuestoTrabajoSeleccion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(401, 523);
+            this.ClientSize = new System.Drawing.Size(301, 425);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnEmpleadosporPuestos);
             this.Controls.Add(this.button1);
@@ -156,9 +152,9 @@
             this.Controls.Add(this.btnAsociacionPuesto);
             this.Controls.Add(this.btnCargaPuesto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PuestoTrabajoSeleccion";
             this.Text = "PuestoTrabajoSeleccion";
+            this.Load += new System.EventHandler(this.PuestoTrabajoSeleccion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

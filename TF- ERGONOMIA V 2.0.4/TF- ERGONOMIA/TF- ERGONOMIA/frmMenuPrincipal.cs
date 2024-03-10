@@ -199,6 +199,7 @@ namespace TF.WIN
             {
                 btnEmpresa.Enabled = false;
                 btnEmpleados.Enabled = false;
+                btnPuesto.Enabled = false;
                 btnMetodo.Enabled = false;
                 btnInformes.Enabled = false;
                 btnEstadisticas.Enabled = false;
