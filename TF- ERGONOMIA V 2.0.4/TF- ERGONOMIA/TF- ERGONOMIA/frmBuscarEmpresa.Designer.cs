@@ -50,7 +50,7 @@
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAceptar.Location = new System.Drawing.Point(416, 281);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(116, 45);
             this.btnAceptar.TabIndex = 52;
@@ -69,7 +69,7 @@
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.Location = new System.Drawing.Point(392, 48);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(87, 40);
             this.btnBuscar.TabIndex = 53;
@@ -88,7 +88,7 @@
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(40, 281);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(116, 45);
             this.btnCancelar.TabIndex = 54;
@@ -122,7 +122,7 @@
             this.btnBuscartodo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscartodo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnBuscartodo.Location = new System.Drawing.Point(206, 288);
-            this.btnBuscartodo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscartodo.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscartodo.Name = "btnBuscartodo";
             this.btnBuscartodo.Size = new System.Drawing.Size(82, 38);
             this.btnBuscartodo.TabIndex = 61;
@@ -150,7 +150,7 @@
             "CUIT",
             "Razón Social"});
             this.cboBuscadorDinamico.Location = new System.Drawing.Point(2, 48);
-            this.cboBuscadorDinamico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboBuscadorDinamico.Margin = new System.Windows.Forms.Padding(2);
             this.cboBuscadorDinamico.MaxDropDownItems = 4;
             this.cboBuscadorDinamico.MouseState = MaterialSkin.MouseState.OUT;
             this.cboBuscadorDinamico.Name = "cboBuscadorDinamico";
@@ -172,7 +172,7 @@
             this.txtBuscador.HideSelection = true;
             this.txtBuscador.LeadingIcon = null;
             this.txtBuscador.Location = new System.Drawing.Point(160, 49);
-            this.txtBuscador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscador.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscador.MaxLength = 32767;
             this.txtBuscador.MouseState = MaterialSkin.MouseState.OUT;
             this.txtBuscador.Name = "txtBuscador";
@@ -190,6 +190,7 @@
             this.txtBuscador.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtBuscador.TrailingIcon = null;
             this.txtBuscador.UseSystemPasswordChar = false;
+            this.txtBuscador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscador_KeyPress);
             // 
             // dgvResultado
             // 

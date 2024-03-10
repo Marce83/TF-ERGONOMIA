@@ -43,22 +43,33 @@ namespace TF.WIN
                 txtBuscador.Text = string.Empty;
         }
 
-        Empresas oBe = new Empresas();
-        public Empresas EmpresaSeleccionada { get; set; }
-
         private void txtBuscador_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (cboBuscadorDinamico.Text == "CUIT")
             {
-                if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                // Permitir solo dígitos y la tecla de retroceso
+                if (!(char.IsDigit(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+                    e.Handled = true;
+
+                // Limitar la longitud a 11 caracteres
+                if (txtBuscador.Text.Length >= 11 && e.KeyChar != (char)Keys.Back)
                     e.Handled = true;
             }
             else
             {
+                // Permitir letras, espacios y la tecla de retroceso
                 if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space))
+                    e.Handled = true;
+
+                // Limitar la longitud a 100 caracteres
+                if (txtBuscador.Text.Length >= 100 && e.KeyChar != (char)Keys.Back)
                     e.Handled = true;
             }
         }
+
+        Empresas oBe = new Empresas();
+        public Empresas EmpresaSeleccionada { get; set; }
+
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {

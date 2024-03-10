@@ -108,7 +108,9 @@
             this.Controls.Add(this.btnAceptar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmVistaPuestoEmpleado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmVistaPuestoEmpleado";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmVistaPuestoEmpleado_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVistaPuestoEmpleado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
