@@ -54,6 +54,7 @@
             this.btnEstadisticageneral.FlatAppearance.BorderSize = 0;
             this.btnEstadisticageneral.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnEstadisticageneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstadisticageneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstadisticageneral.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEstadisticageneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEstadisticageneral.Location = new System.Drawing.Point(104, 61);
@@ -63,6 +64,7 @@
             this.btnEstadisticageneral.TabIndex = 72;
             this.btnEstadisticageneral.Text = "PRODUCTO";
             this.btnEstadisticageneral.UseVisualStyleBackColor = false;
+            this.btnEstadisticageneral.Click += new System.EventHandler(this.btnEstadisticageneral_Click);
             // 
             // button1
             // 
@@ -71,6 +73,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(104, 152);
@@ -80,6 +83,7 @@
             this.button1.TabIndex = 73;
             this.button1.Text = "MANUAL DE USUARIO";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -88,6 +92,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(104, 242);
@@ -97,6 +102,7 @@
             this.button2.TabIndex = 74;
             this.button2.Text = "PRUEBAS DE TESTING";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnAdmProy
             // 
@@ -105,6 +111,7 @@
             this.btnAdmProy.FlatAppearance.BorderSize = 0;
             this.btnAdmProy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnAdmProy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdmProy.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmProy.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAdmProy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdmProy.Location = new System.Drawing.Point(104, 334);

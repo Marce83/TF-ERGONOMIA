@@ -524,6 +524,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\CarpetaIntegradoraAdmProy.pdf" />
+    <EmbeddedResource Include="Resources\ProductoSistema.pdf" />
+    <EmbeddedResource Include="Resources\ManualdeUsuario.pdf" />
+    <EmbeddedResource Include="Resources\TesteoSistema.pdf" />
     <None Include="Resources\puntuacion muneca.jpg" />
   </ItemGroup>
   <ItemGroup>

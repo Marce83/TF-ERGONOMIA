@@ -131,6 +131,16 @@ namespace TF.WIN.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] ManualdeUsuario {
+            get {
+                object obj = ResourceManager.GetObject("ManualdeUsuario", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///&lt;head&gt;
@@ -271,6 +281,16 @@ namespace TF.WIN.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] ProductoSistema {
+            get {
+                object obj = ResourceManager.GetObject("ProductoSistema", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap puntuacion_carga_fuerza {
@@ -337,6 +357,16 @@ namespace TF.WIN.Properties {
             get {
                 object obj = ResourceManager.GetObject("puntuacion tronco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] TesteoSistema {
+            get {
+                object obj = ResourceManager.GetObject("TesteoSistema", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }
