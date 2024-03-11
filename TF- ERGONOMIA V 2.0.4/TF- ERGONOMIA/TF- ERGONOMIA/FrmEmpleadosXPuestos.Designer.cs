@@ -282,6 +282,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(993, 621);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.userlabel2);

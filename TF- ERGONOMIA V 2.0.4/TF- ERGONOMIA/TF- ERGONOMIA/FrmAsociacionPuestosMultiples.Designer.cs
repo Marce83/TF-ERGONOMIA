@@ -406,6 +406,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1034, 340);
             this.Controls.Add(this.DtpFechaEgreso);
             this.Controls.Add(this.DtpFechaIngreso);

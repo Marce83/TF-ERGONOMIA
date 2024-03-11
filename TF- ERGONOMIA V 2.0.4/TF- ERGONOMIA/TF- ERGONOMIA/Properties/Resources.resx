@@ -175,4 +175,16 @@
   <data name="CarpetaIntegradoraAdmProy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CarpetaIntegradoraAdmProy.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ManualdeUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ManualdeUsuario.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ProductoSistema" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProductoSistema.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TesteoSistema" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TesteoSistema.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iconoprograma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoprograma.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
