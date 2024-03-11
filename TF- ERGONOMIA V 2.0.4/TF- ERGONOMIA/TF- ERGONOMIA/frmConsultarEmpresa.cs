@@ -92,15 +92,25 @@ namespace TF.WIN
         private void dgvCargaEmpresas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txtNombreEmpresa.Text = dgvCargaEmpresas.CurrentRow.Cells[1].Value.ToString();
+            txtNombreEmpresa.ReadOnly = false;
             cboCondFiscal.Text = dgvCargaEmpresas.CurrentRow.Cells[2].Value.ToString();
+            cboCondFiscal.Enabled = true;
             cboActEmpr.Text = dgvCargaEmpresas.CurrentRow.Cells[3].Value.ToString();
+            cboActEmpr.Enabled = true;
             cboTipo.Text = dgvCargaEmpresas.CurrentRow.Cells[4].Value.ToString();
+            cboTipo.Enabled = true;
             txtCalle.Text = dgvCargaEmpresas.CurrentRow.Cells[5].Value.ToString();
+            txtCalle.ReadOnly = false;
             cboProvincia.Text = dgvCargaEmpresas.CurrentRow.Cells[7].Value.ToString();
+            cboProvincia.Enabled = true;
             cboLocalidad.Text = dgvCargaEmpresas.CurrentRow.Cells[6].Value.ToString();
+            cboLocalidad.Enabled = true;
             txtTelefono.Text = dgvCargaEmpresas.CurrentRow.Cells[8].Value.ToString();
+            txtTelefono.ReadOnly = false;
             txtCorreo.Text = dgvCargaEmpresas.CurrentRow.Cells[9].Value.ToString();
+            txtCorreo.ReadOnly = false;
             txtWeb.Text = dgvCargaEmpresas.CurrentRow.Cells[10].Value.ToString();
+            txtWeb.ReadOnly = false;
             dtpFechaAlta.Text = dgvCargaEmpresas.CurrentRow.Cells[11].Value.ToString();
         }
         //private void dgvCargaEmpresas_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -142,16 +152,26 @@ namespace TF.WIN
         private void Limpiar()
         {
             txtNombreEmpresa.Text = string.Empty;
+            txtNombreEmpresa.ReadOnly = true;
             cboCondFiscal.SelectedIndex = 0;
+            cboCondFiscal.Enabled = false;
             cboActEmpr.SelectedIndex = 0;
+            cboActEmpr.Enabled = false;
             txtCalle.Text = string.Empty;
+            txtCalle.ReadOnly = true;
             //cboLocalidad.SelectedIndex = 0;
             cboTipo.SelectedIndex = 0;
+            cboTipo.Enabled = false;
             cboProvincia.SelectedIndex = 0;
+            cboProvincia.Enabled = false;
             txtTelefono.Text = string.Empty;
+            txtTelefono.ReadOnly = true;
             txtCorreo.Text = string.Empty;
+            txtCorreo.ReadOnly = true;
             txtWeb.Text = string.Empty;
+            txtWeb.ReadOnly = true;
             dtpFechaAlta.Value = DateTime.Now;
+            dtpFechaAlta.Enabled = false;
         }
 
         private void Listar()

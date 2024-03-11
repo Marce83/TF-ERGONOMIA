@@ -92,31 +92,35 @@ namespace TF.WIN
                                                         {
                                                             if (ValidarCorreo.ValidarEmail(txtCorreo.Text))
                                                             {
-                                                                try
+                                                                if(dtpFechaAlta.Value >= DateTime.Today)
                                                                 {
-                                                                    oemp.CUIT = txtCUIT.Text;
-                                                                    oemp.Nombre = txtNombreEmpresa.Text;
-                                                                    oemp.Condicion_Fiscal = cboCondFiscal.Text;
-                                                                    oemp.Actividad_Empresarial = cboActEmpr.Text;
-                                                                    oemp.Tipo = cboTipo.Text;
-                                                                    oemp.Direccion = txtCalle.Text;
-                                                                    oemp.Provincia = cboProvincia.Text;
-                                                                    oemp.Localidad = cboLocalidad.Text;
-                                                                    oemp.Telefono = txtTelefono.Text;
-                                                                    oemp.Correo = txtCorreo.Text;
-                                                                    oemp.Web = txtWeb.Text;
-                                                                    oemp.FechaIngreso = dtpFechaAlta.Value;
-                                                                    oempresaBC.BuscarEmpresa(oemp);
-                                                                    var res = oempresaBC.Insertempresa(oemp);
-                                                                    MessageBox.Show("Empresa cargada exitosamente");
-                                                                    Limpiar();
-                                                                    Listar();
+                                                                    try
+                                                                    {
+                                                                        oemp.CUIT = txtCUIT.Text;
+                                                                        oemp.Nombre = txtNombreEmpresa.Text;
+                                                                        oemp.Condicion_Fiscal = cboCondFiscal.Text;
+                                                                        oemp.Actividad_Empresarial = cboActEmpr.Text;
+                                                                        oemp.Tipo = cboTipo.Text;
+                                                                        oemp.Direccion = txtCalle.Text;
+                                                                        oemp.Provincia = cboProvincia.Text;
+                                                                        oemp.Localidad = cboLocalidad.Text;
+                                                                        oemp.Telefono = txtTelefono.Text;
+                                                                        oemp.Correo = txtCorreo.Text;
+                                                                        oemp.Web = txtWeb.Text;
+                                                                        oemp.FechaIngreso = dtpFechaAlta.Value;
+                                                                        oempresaBC.BuscarEmpresa(oemp);
+                                                                        var res = oempresaBC.Insertempresa(oemp);
+                                                                        MessageBox.Show("Empresa cargada exitosamente");
+                                                                        Limpiar();
+                                                                        Listar();
+                                                                    }
+                                                                    catch (Exception ex)
+                                                                    {
+                                                                        MessageBox.Show(ex.Message);
+                                                                        Limpiar();
+                                                                    }
                                                                 }
-                                                                catch (Exception ex)
-                                                                {
-                                                                    MessageBox.Show(ex.Message);
-                                                                    Limpiar();
-                                                                }
+                                                                else MessageBox.Show("Fecha invalida, no se puede seleccionar una fecha pasada");
                                                             }
                                                             else MessageBox.Show("El formato del Correo es inválido", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                                         }
